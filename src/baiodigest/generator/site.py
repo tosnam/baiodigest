@@ -34,16 +34,34 @@ def _write(path: Path, content: str) -> None:
     path.write_text(content, encoding="utf-8")
 
 
+def _build_site_url(site_prefix: str, path: str) -> str:
+    cleaned_path = path.lstrip("/")
+    if not cleaned_path:
+        return site_prefix or "/"
+    if site_prefix:
+        return f"{site_prefix}/{cleaned_path}"
+    return f"/{cleaned_path}"
+
+
 class StaticSiteGenerator:
-    def __init__(self, template_dir: Path, static_dir: Path, data_dir: Path, docs_dir: Path) -> None:
+    def __init__(
+        self,
+        template_dir: Path,
+        static_dir: Path,
+        data_dir: Path,
+        docs_dir: Path,
+        site_prefix: str,
+    ) -> None:
         self.template_dir = template_dir
         self.static_dir = static_dir
         self.data_dir = data_dir
         self.docs_dir = docs_dir
+        self.site_prefix = site_prefix
         self.env = Environment(
             loader=FileSystemLoader(str(template_dir)),
             autoescape=select_autoescape(["html", "xml"]),
         )
+        self.env.globals["url_for"] = lambda path: _build_site_url(self.site_prefix, path)
 
     def generate(self) -> None:
         digests = _load_digests(self.data_dir)

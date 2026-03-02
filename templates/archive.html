@@ -14,7 +14,7 @@
     <tr>
       <td>{{ digest.date }}</td>
       <td>{{ digest.entries|length }}</td>
-      <td><a href="/daily/{{ digest.date }}.html">open</a></td>
+      <td><a href="{{ url_for('daily/' ~ digest.date ~ '.html') }}">open</a></td>
     </tr>
     {% endfor %}
   </tbody>

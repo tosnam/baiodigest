@@ -22,6 +22,15 @@ def _resolve_dir(env_var: str, default_name: str) -> Path:
     return (root / default_name).resolve()
 
 
+def _normalize_site_prefix(value: str) -> str:
+    raw = value.strip()
+    if not raw or raw == "/":
+        return ""
+    if not raw.startswith("/"):
+        raw = f"/{raw}"
+    return raw.rstrip("/")
+
+
 @dataclass(slots=True)
 class Settings:
     ollama_base_url: str = field(default_factory=lambda: os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"))
@@ -81,6 +90,9 @@ class Settings:
     docs_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_DOCS_DIR", "docs"))
     template_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_TEMPLATE_DIR", "templates"))
     static_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_STATIC_DIR", "static"))
+    site_prefix: str = field(
+        default_factory=lambda: _normalize_site_prefix(os.getenv("BAIODIGEST_SITE_PREFIX", "/baiodigest"))
+    )
 
 
 DEFAULT_SCHEMA_VERSION = "1.0"

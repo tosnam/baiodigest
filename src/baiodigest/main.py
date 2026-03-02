@@ -144,6 +144,7 @@ def _generate_site() -> None:
         static_dir=settings.static_dir,
         data_dir=settings.data_dir,
         docs_dir=settings.docs_dir,
+        site_prefix=settings.site_prefix,
     )
     generator.generate()
     logger.info("Static site generated at %s", settings.docs_dir)
