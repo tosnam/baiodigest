@@ -1,0 +1,20 @@
+[[queries]]
+name = "enzyme/protein engineering + AI"
+terms = """("enzyme engineering" OR "protein engineering") AND ("bioinformatics" OR "machine learning" OR "deep learning" OR "artificial intelligence")"""
+
+[[queries]]
+name = "metabolic engineering + AI"
+terms = """("metabolic engineering") AND ("bioinformatics" OR "machine learning" OR "deep learning" OR "artificial intelligence")"""
+
+[[queries]]
+name = "ancestral sequence reconstruction"
+terms = '''"ancestral sequence reconstruction"'''
+
+[[queries]]
+name = "expression optimization"
+terms = """("expression optimization" OR "rbs engineering" OR "promoter engineering")"""
+
+[[queries]]
+name = "omics + AI (top journals)"
+terms = """("omics" OR "genome" OR "transcriptome" OR "proteome" OR "metabolome" OR "epigenome") AND ("bioinformatics" OR "machine learning" OR "deep learning" OR "artificial intelligence")"""
+pubmed_filter = "(Nature[Journal] OR Science[Journal] OR Cell[Journal])"

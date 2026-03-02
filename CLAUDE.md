@@ -1,4 +1,4 @@
-# BioDigest - 생명과학 논문 다이제스트 서비스
+# baioDigest - 생명과학 논문 다이제스트 서비스
 
 PubMed/bioRxiv에서 생명과학 논문을 매일 수집하고, 로컬 LLM(Ollama + Qwen3:8b)으로 한국어 요약을 생성하여 GitHub Pages에 정적 사이트로 배포하는 자동화 서비스.
 

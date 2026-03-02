@@ -20,6 +20,8 @@ def title_hash(title: str) -> str:
 
 
 def dedup_key(paper: Paper) -> str:
+    if paper.source == "pubmed" and paper.source_id:
+        return f"pmid::{paper.source_id.strip()}"
     if paper.doi:
         return f"doi::{paper.doi.lower().strip()}"
     return f"title::{title_hash(paper.title)}"

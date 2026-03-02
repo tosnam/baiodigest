@@ -76,7 +76,7 @@ class StaticSiteGenerator:
 
     def _render_index(self, context: SiteContext) -> None:
         template = self.env.get_template("index.html")
-        output = template.render(latest=context.latest, digests=context.digests, title="BioDigest")
+        output = template.render(latest=context.latest, digests=context.digests, title="baioDigest")
         _write(self.docs_dir / "index.html", output)
 
     def _render_archive(self, context: SiteContext) -> None:

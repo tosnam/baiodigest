@@ -9,7 +9,7 @@ import xml.etree.ElementTree as ET
 import httpx
 from tenacity import retry, stop_after_attempt, wait_exponential
 
-from baiodigest.config import Settings
+from baiodigest.config import SearchQuery, Settings
 from baiodigest.models import Paper
 
 logger = logging.getLogger(__name__)
@@ -148,6 +148,8 @@ class PubmedClient:
         self.settings = settings
         self.client = httpx.Client(timeout=30.0)
         self._last_request_at = 0.0
+        self.last_query_hit_counts: dict[str, int] = {}
+        self.last_id_query_names: dict[str, set[str]] = {}
 
     def _throttle(self) -> None:
         min_interval = 1 / 3
@@ -173,28 +175,74 @@ class PubmedClient:
         resp.raise_for_status()
         return resp.text
 
-    def search_ids(self, start: date, end: date) -> list[str]:
-        term = (
-            f"({self.settings.pubmed_query}) AND "
-            f"({start.isoformat()}[Date - Publication] : {end.isoformat()}[Date - Publication])"
-        )
-        payload = self._get_json(
-            "esearch.fcgi",
-            {
-                "db": "pubmed",
-                "retmode": "json",
-                "retmax": "200",
-                "sort": "pub_date",
-                "term": term,
-            },
-        )
+    def _build_search_term(self, query: SearchQuery, start: date, end: date) -> str:
+        query_clause = f"({query.terms})"
+        if query.pubmed_filter:
+            query_clause = f"{query_clause} AND ({query.pubmed_filter})"
 
-        id_list = payload.get("esearchresult", {}).get("idlist", [])
-        return [str(item) for item in id_list]
+        date_clause = f"({start.isoformat()}[Date - Publication] : {end.isoformat()}[Date - Publication])"
+        return f"{query_clause} AND {date_clause}"
+
+    def search_ids(self, query: SearchQuery, start: date, end: date) -> list[str]:
+        term = self._build_search_term(query, start, end)
+        retstart = 0
+        retmax = 200
+        collected: list[str] = []
+
+        while True:
+            payload = self._get_json(
+                "esearch.fcgi",
+                {
+                    "db": "pubmed",
+                    "retmode": "json",
+                    "retmax": str(retmax),
+                    "retstart": str(retstart),
+                    "sort": "pub_date",
+                    "term": term,
+                },
+            )
+
+            esearch = payload.get("esearchresult", {})
+            raw_count = esearch.get("count", "0")
+            try:
+                total_count = int(raw_count)
+            except (TypeError, ValueError):
+                total_count = 0
+
+            page_ids = [str(item) for item in esearch.get("idlist", [])]
+            if not page_ids:
+                break
+
+            collected.extend(page_ids)
+            retstart += len(page_ids)
+            if retstart >= total_count:
+                break
+
+        return collected
+
+    def collect_ids(self, start: date, end: date) -> list[str]:
+        unique_ids: list[str] = []
+        seen: set[str] = set()
+        self.last_query_hit_counts = {}
+        self.last_id_query_names = {}
+
+        for query in self.settings.pubmed_queries:
+            ids = self.search_ids(query, start, end)
+            self.last_query_hit_counts[query.name] = len(ids)
+
+            for pmid in ids:
+                self.last_id_query_names.setdefault(pmid, set()).add(query.name)
+                if pmid in seen:
+                    continue
+                seen.add(pmid)
+                unique_ids.append(pmid)
+
+        return unique_ids
 
     def fetch_papers(self, start: date, end: date) -> list[Paper]:
-        ids = self.search_ids(start, end)
+        ids = self.collect_ids(start, end)
         if not ids:
+            logger.info("No PubMed papers matched configured queries")
             return []
 
         papers: list[Paper] = []
@@ -211,7 +259,12 @@ class PubmedClient:
             )
             papers.extend(parse_pubmed_xml(xml_text))
 
-        logger.info("Fetched %d PubMed papers", len(papers))
+        for paper in papers:
+            if paper.source_id:
+                query_names = self.last_id_query_names.get(paper.source_id, set())
+                paper.matched_query_names = sorted(query_names)
+
+        logger.info("Fetched %d PubMed papers (query hits=%s)", len(papers), self.last_query_hit_counts)
         return papers
 
     def close(self) -> None:

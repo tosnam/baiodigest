@@ -23,31 +23,47 @@ class _ValidOllama:
         return self.Decision()
 
 
-def _paper(title: str, abstract: str) -> Paper:
+def _paper(title: str, abstract: str, matched_query_names: list[str] | None = None) -> Paper:
     return Paper(
         title=title,
         abstract=abstract,
         authors=["A"],
         affiliations=[],
         doi=None,
-        source="biorxiv",
-        source_type="preprint",
-        journal="bioRxiv",
+        source="pubmed",
+        source_type="published",
+        journal="Journal",
         url="https://example.org",
         category="bioengineering",
         date="2026-03-01",
         mesh_terms=[],
+        matched_query_names=matched_query_names or [],
     )
 
 
-def test_keyword_filter_requires_two_matches() -> None:
+def test_prefilter_passes_when_no_excluded_keyword() -> None:
     settings = Settings()
-    paper = _paper("Protein engineering study", "this work improves enzyme activity")
+    paper = _paper(
+        "Interesting study",
+        "This study improves enzyme production in yeast",
+        matched_query_names=["enzyme/protein engineering + AI"],
+    )
 
     result = keyword_filter(paper, settings)
 
     assert result.relevant
-    assert len(result.matched_keywords) >= 2
+    assert result.category == "prefilter"
+    assert result.matched_keywords == ["enzyme/protein engineering + AI"]
+
+
+def test_prefilter_blocks_excluded_keyword() -> None:
+    settings = Settings()
+    paper = _paper("Clinical trial report", "A randomized clinical trial with epidemiology data")
+
+    result = keyword_filter(paper, settings)
+
+    assert not result.relevant
+    assert result.category == "excluded"
 
 
 def test_llm_filter_fail_open_after_parse_errors() -> None:
@@ -57,9 +73,9 @@ def test_llm_filter_fail_open_after_parse_errors() -> None:
         "This enzyme project applies machine learning and directed evolution to improve activity.",
     )
 
-    passed, keyword_count = filter_papers([paper], settings, _BrokenThenValidOllama())
+    passed, prefilter_count = filter_papers([paper], settings, _BrokenThenValidOllama())
 
-    assert keyword_count == 1
+    assert prefilter_count == 1
     assert len(passed) == 1
     assert passed[0][1].category == "fallback"
 
@@ -71,8 +87,8 @@ def test_llm_filter_accepts_high_confidence() -> None:
         "This enzyme project applies machine learning and directed evolution to improve activity.",
     )
 
-    passed, keyword_count = filter_papers([paper], settings, _ValidOllama())
+    passed, prefilter_count = filter_papers([paper], settings, _ValidOllama())
 
-    assert keyword_count == 1
+    assert prefilter_count == 1
     assert len(passed) == 1
     assert passed[0][1].category == "ai_enzyme"

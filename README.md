@@ -1,4 +1,4 @@
-# BioDigest
+# baioDigest
 
 PubMed/bioRxiv에서 생명과학 논문을 매일 자동 수집하고, 로컬 LLM으로 한국어 요약을 생성하여 정적 사이트로 배포하는 파이프라인.
 

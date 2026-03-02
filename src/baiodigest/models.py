@@ -9,7 +9,7 @@ from typing import Literal
 from baiodigest.config import DEFAULT_SCHEMA_VERSION
 
 
-Source = Literal["pubmed", "biorxiv"]
+Source = Literal["pubmed"]
 SourceType = Literal["preprint", "published"]
 
 
@@ -28,6 +28,7 @@ class Paper:
     date: str
     mesh_terms: list[str] = field(default_factory=list)
     source_id: str | None = None
+    matched_query_names: list[str] = field(default_factory=list)
 
     def preferred_affiliation(self) -> str | None:
         if self.affiliations:
@@ -53,6 +54,7 @@ class Paper:
             date=data.get("date", ""),
             mesh_terms=list(data.get("mesh_terms", [])),
             source_id=data.get("source_id"),
+            matched_query_names=list(data.get("matched_query_names", [])),
         )
 
 

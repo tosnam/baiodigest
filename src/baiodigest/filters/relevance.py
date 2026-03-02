@@ -16,8 +16,8 @@ def _contains(text: str, keyword: str) -> bool:
 
 def keyword_filter(paper: Paper, settings: Settings) -> FilterResult:
     haystack = f"{paper.title} {paper.abstract}".lower()
-    matched = [kw for kw in settings.include_keywords if _contains(haystack, kw)]
     excluded = [kw for kw in settings.exclude_keywords if _contains(haystack, kw)]
+    matched_queries = sorted(set(paper.matched_query_names))
 
     if excluded:
         return FilterResult(
@@ -25,24 +25,15 @@ def keyword_filter(paper: Paper, settings: Settings) -> FilterResult:
             confidence=1.0,
             category="excluded",
             reason=f"Excluded keyword matched: {', '.join(excluded)}",
-            matched_keywords=matched,
-        )
-
-    if len(matched) < 2:
-        return FilterResult(
-            relevant=False,
-            confidence=min(0.59, len(matched) * 0.2),
-            category="keyword",
-            reason="Not enough include keyword matches",
-            matched_keywords=matched,
+            matched_keywords=matched_queries,
         )
 
     return FilterResult(
         relevant=True,
-        confidence=min(0.95, 0.5 + (len(matched) * 0.08)),
-        category="keyword",
-        reason="Keyword filter passed",
-        matched_keywords=matched,
+        confidence=1.0,
+        category="prefilter",
+        reason="Exclude prefilter passed",
+        matched_keywords=matched_queries,
     )
 
 
@@ -96,16 +87,16 @@ def filter_papers(
     ollama: OllamaClient,
 ) -> tuple[list[tuple[Paper, FilterResult]], int]:
     passed: list[tuple[Paper, FilterResult]] = []
-    keyword_pass_count = 0
+    prefilter_pass_count = 0
 
     for paper in papers:
         keyword_result = keyword_filter(paper, settings)
         if not keyword_result.relevant:
             continue
 
-        keyword_pass_count += 1
+        prefilter_pass_count += 1
         llm_result = llm_relevance_filter(paper, keyword_result, ollama, settings)
         if llm_result.relevant:
             passed.append((paper, llm_result))
 
-    return passed, keyword_pass_count
+    return passed, prefilter_pass_count

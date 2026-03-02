@@ -6,9 +6,8 @@ import json
 import logging
 from pathlib import Path
 
-from baiodigest.config import get_settings
+from baiodigest.config import Settings, get_settings
 from baiodigest.fetchers import merge_papers
-from baiodigest.fetchers.biorxiv import BiorxivClient
 from baiodigest.fetchers.pubmed import PubmedClient
 from baiodigest.filters.relevance import filter_papers
 from baiodigest.generator.site import StaticSiteGenerator
@@ -63,11 +62,10 @@ def _target_dates(data_dir: Path, explicit_date: date | None, max_backfill_days:
     return dates
 
 
-def _fetch_papers(target: date) -> list[Paper]:
-    with BiorxivClient(get_settings()) as biorxiv, PubmedClient(get_settings()) as pubmed:
-        biorxiv_papers = biorxiv.fetch_papers(target, target)
+def _fetch_papers(target: date, settings: Settings) -> list[Paper]:
+    with PubmedClient(settings) as pubmed:
         pubmed_papers = pubmed.fetch_papers(target, target)
-    merged = merge_papers([biorxiv_papers, pubmed_papers])
+    merged = merge_papers([pubmed_papers])
 
     for paper in merged:
         if not paper.date:
@@ -95,7 +93,7 @@ def _run_pipeline_for_date(target: date, force: bool, fetch_only: bool) -> bool:
         logger.info("Digest already exists for %s; skipping", target.isoformat())
         return False
 
-    papers = _fetch_papers(target)
+    papers = _fetch_papers(target, settings)
     logger.info("Collected %d merged papers for %s", len(papers), target.isoformat())
 
     if fetch_only:
@@ -104,7 +102,7 @@ def _run_pipeline_for_date(target: date, force: bool, fetch_only: bool) -> bool:
         return True
 
     with OllamaClient(settings) as ollama:
-        filtered, keyword_pass_count = filter_papers(papers, settings, ollama)
+        filtered, prefilter_pass_count = filter_papers(papers, settings, ollama)
         entries: list[DigestEntry] = []
 
         for paper, filter_result in filtered:
@@ -119,7 +117,7 @@ def _run_pipeline_for_date(target: date, force: bool, fetch_only: bool) -> bool:
         entries=entries,
         stats={
             "collected": len(papers),
-            "keyword_passed": keyword_pass_count,
+            "prefilter_passed": prefilter_pass_count,
             "llm_passed": len(filtered),
             "summarized": len(entries),
         },
@@ -127,10 +125,10 @@ def _run_pipeline_for_date(target: date, force: bool, fetch_only: bool) -> bool:
     digest.to_file(digest_path)
 
     logger.info(
-        "Finished %s: collected=%d keyword_passed=%d llm_passed=%d summarized=%d",
+        "Finished %s: collected=%d prefilter_passed=%d llm_passed=%d summarized=%d",
         target.isoformat(),
         len(papers),
-        keyword_pass_count,
+        prefilter_pass_count,
         len(filtered),
         len(entries),
     )
@@ -151,7 +149,7 @@ def _generate_site() -> None:
 
 
 def build_arg_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(description="BioDigest pipeline")
+    parser = argparse.ArgumentParser(description="baioDigest pipeline")
     parser.add_argument("--fetch-only", action="store_true", help="Fetch papers only")
     parser.add_argument("--generate-only", action="store_true", help="Generate static site only")
     parser.add_argument("--date", type=_parse_date, help="Target date in YYYY-MM-DD")

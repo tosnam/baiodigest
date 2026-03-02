@@ -7,7 +7,7 @@ LOG_DIR="$PROJECT_DIR/logs"
 
 cd "$PROJECT_DIR"
 
-echo "=== BioDigest daily run: $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG_DIR/daily.log"
+echo "=== baioDigest daily run: $(date '+%Y-%m-%d %H:%M:%S') ===" >> "$LOG_DIR/daily.log"
 
 # Ollama 실행 확인 — 미실행 시 백그라운드 시작
 if ! curl -sf http://localhost:11434/api/tags > /dev/null 2>&1; then
