@@ -1,0 +1,772 @@
+{
+  "date": "2026-03-02",
+  "entries": [
+    {
+      "paper": {
+        "title": "Integrated scRNA-seq and bulk transcriptomics identify an amino acid metabolism-associated prognostic signature and highlight FUS as a potential driver in prostate cancer progression.",
+        "abstract": "Prostate cancer (PCa) exhibits marked metabolic heterogeneity, yet the prognostic implications of amino acid metabolism remain insufficiently characterized. In this study, we developed a 9-gene amino acid metabolic risk signature through an integrative analysis of single-cell and bulk transcriptomic datasets, leveraging machine learning to stratify patients into distinct prognostic subgroups. The model demonstrated robust predictive accuracy in both TCGA and independent GEO cohorts, with significant associations to immune microenvironment remodeling and therapeutic vulnerabilities. Mechanistically, multi-omics analyses (SCENIC, CellChat, pseudotime trajectory) delineated regulatory networks underlying amino acid metabolic dysregulation, highlighting FUS as a potential oncogenic regulator. Experimental validation across cellular, murine, and human models supported a role for FUS in promoting tumor aggressiveness. Through bioinformatic analysis, we identified potential signaling pathways underlying FUS involvement in prostate cancer progression. Our study establishes a clinically actionable amino acid metabolic signature and nomogram for PCa risk stratification, while suggesting FUS as a candidate therapeutic target. These findings bridge computational discovery with mechanistic validation, providing novel insights into the amino acid metabolic dependencies that govern prostate cancer (PCa) progression.",
+        "authors": [
+          "Yuan J",
+          "Shen D",
+          "Pan Z",
+          "Lv F",
+          "Zhao Y",
+          "Zheng W",
+          "Yin Q",
+          "Wu L",
+          "Yu J",
+          "Xu C",
+          "He Q",
+          "Pan H"
+        ],
+        "affiliations": [
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China. yuanjiangbei@163.com.",
+          "Department of Infectious Diseases, Affiliated Banan Hospital of Chongqing Medical University, Chongqing, 400016, China. yuanjiangbei@163.com.",
+          "Hepato-Pancreato-Biliary Surgery, Peking University Shenzhen Hospital, Shenzhen, 518036, Guangdong, China. yuanjiangbei@163.com.",
+          "College of Basic Medicine, Chongqing Medical University, Chongqing, 400016, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "The Second Clinical Medical College, Zhejiang Chinese Medical University, Hangzhou, 310053, Zhejiang, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China.",
+          "Department of Nephrology, The First Affiliated Hospital of Zhejiang Chinese Medical University (Zhejiang Provincial Hospital of Chinese Medicine), Hangzhou, 310006, Zhejiang, China. qianghe1973@126.com.",
+          "Center for General Practice Medicine, Department of Infectious Diseases, Zhejiang Provincial People's Hospital (Affiliated People's Hospital), Hangzhou Medical College, Hangzhou, 310014, Zhejiang, China. hypanzjsrmyy@126.com."
+        ],
+        "doi": "10.1007/s10142-026-01824-0",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Functional & integrative genomics",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41766003/",
+        "category": null,
+        "date": "2026-03-02",
+        "mesh_terms": [],
+        "source_id": "41766003"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "Identifies a prognostic signature and therapeutic target for prostate cancer, applicable to pharmaceuticals.",
+        "matched_keywords": [
+          "ai",
+          "machine learning",
+          "pathway"
+        ]
+      },
+      "summary": {
+        "background": "전립선암(PCa)은 대사 다양성(metabolic heterogeneity)이 두드러지지만, 아미노산 대사와의 예후 관련성은 충분히 규명되지 않았다. 이 연구는 단일세포 및 bulk 전사체 데이터를 통합 분석해 9개 유전자 아미노산 대사 위험 서명을 개발하였다.",
+        "method": "머신러닝 기반의 분석을 통해 환자를 예후 서브그룹으로 분류하고, SCENIC, CellChat, пс튜도타임 트라젝토리 등의 다중 옴ิก스 분석을 통해 조절 네트워크를 규명하였다. TCGA 및 독립적 GEO 코호트에서 모델의 예측 정확도를 검증하였다.",
+        "result": "모델은 면역 마이크로환경 재구성과 치료 약물 민감도와의 유의한 연관성을 보였으며, FUS가 종양 진행에 관여하는 잠재적 원癌성 조절자임을 밝혔다. 세포, 마우스 및 인간 모델에서 FUS의 종양 악화 촉진 역할을 실험적으로 입증하였다.",
+        "significance": "이 연구는 아미노산 대사 관련 임상적 행동 서명과 노모그램을 제시하며, FUS를 치료 표적 후보로 제시하였다. 계산적 발견과 기전 검증을 연결해 전립선암 진행에 대한 아미노산 대사 의존성에 대한 새로운 통찰을 제공하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Transcriptional adaptation of rumen papillae to high-grain diet reveals distinct temporal phases and SARA susceptibility signatures.",
+        "abstract": "Transitioning to a high-grain (HG) diet significantly alters rumen fermentation by increasing the production of short-chain fatty acids (SCFAs) and lowering rumen pH, which may contribute to subacute ruminal acidosis (SARA) and damage to the ruminal epithelium. Rapid adaptation of rumen epithelium to these metabolic shifts is essential to maintain homeostasis, but the transcriptional mechanisms underlying this adaptation remain poorly understood. We analyzed the temporal progression of gene expression and metabolomic profile in rumen papillae collected during low-grain feeding (LG) and one week after transitioning to a HG diet (HG1), or four weeks after (HG4) in cows classified as susceptible or resistant to SARA. RNA sequencing identified 955 differentially expressed genes (DEGs) across time points, revealing a biphasic adaptation pattern. Early responses (HG1) showed moderate transcriptional changes, while HG4 was characterized by substantial transcriptional remodeling. Pathway analysis indicated three major functional categories affected during adaptation: cellular stress response, metabolic adaptation, and protein processing. Notably, sterol biosynthesis genes showed transient upregulation at HG1 followed by downregulation at HG4, coinciding with morphological changes in rumen wall thickness and n-butyrate concentration in rumen fluid. Correlation analyses comparing gene expression patterns and metabolite level changes triggered by the dietary transition revealed potential links between metabolic and transcriptional adaptation. Of particular interest, valerate levels at HG1 correlated with genes involved in tissue remodeling at HG4, implying that valerate may contribute to delayed epithelial responses. Next, transcriptional differences between SARA-susceptible and SARA-resistant animals included genes related to inflammation, cell structure, and metabolism that persisted across all time points, suggesting underlying intrinsic differences in SARA susceptibility that are present before and persist during dietary challenge. Key genes consistently differentially under-expressed in SARA-susceptible animals, CCDC196 and MYO7B, represent potential biomarkers for SARA predisposition. Finally, the SARA-resistant group showed a greater number of transcriptome-metabolome correlations, suggesting more coordinated epithelial responses to diet change compared to the SARA-susceptible group. Our findings provide insights into the molecular mechanisms underlying rumen adaptation to HG diets and individual variation in SARA susceptibility, providing a basis for developing strategies to optimize dietary transitions in ruminant production systems.",
+        "authors": [
+          "Duszka K",
+          "Castillo-Lopez E",
+          "Hartinger T",
+          "Redmer T",
+          "Wagner N",
+          "Biber P",
+          "Atif RM",
+          "Aigensberger M",
+          "Schwartz-Zimmermann H",
+          "Kvalem Soto E",
+          "Dengler F",
+          "Berthiller F",
+          "Reisinger N",
+          "Zebeli Q",
+          "Kreuzer-Redmer S"
+        ],
+        "affiliations": [
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria. Kalina.Duszka@vetmeduni.ac.at.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Institute of Animal Science, University of Bonn, Katzenburgweg 7-9, Bonn, 53115, Germany.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Institute of Physiology and Pathophysiology, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Department of Agricultural Sciences, BOKU University, Institute of Bioanalytics and Agro-Metabolomics, Konrad-Lorenz-Str. 20, Tulln, 3430, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Department of Agricultural Sciences, BOKU University, Institute of Bioanalytics and Agro-Metabolomics, Konrad-Lorenz-Str. 20, Tulln, 3430, Austria.",
+          "Biocenter, Institute of Bioinformatics, Medical University of Innsbruck, Innrain 80-82, Innsbruck, 6020, Austria.",
+          "Institute of Physiology and Pathophysiology, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Institute of Animal Science, University of Hohenheim, Fruwirthstraße 35, Stuttgart, 70599, Germany.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Department of Agricultural Sciences, BOKU University, Institute of Bioanalytics and Agro-Metabolomics, Konrad-Lorenz-Str. 20, Tulln, 3430, Austria.",
+          "DSM-Firmenich, Animal Nutrition & Health R&D Center Tulln, Tulln an Der Donau, 3430, Austria.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Christian Doppler Laboratory for Innovative Gut Health Concepts of Livestock, Veterinaerplatz 1, Vienna, 1210, Austria.",
+          "Centre for Animal Nutrition and Welfare, University of Veterinary Medicine, Vienna, Veterinaerplatz 1, Vienna, 1210, Austria."
+        ],
+        "doi": "10.1186/s40104-026-01352-8",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of animal science and biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41765993/",
+        "category": null,
+        "date": "2026-03-02",
+        "mesh_terms": [],
+        "source_id": "41765993"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "논문은 대사 적응 및 유전자 발현 분석을 통해 SARA 감수성 예측 biomarker를 제시함. 식품 산업의 가축 사육 관리에 유용한 데이터를 제공함.",
+        "matched_keywords": [
+          "ai",
+          "pathway"
+        ]
+      },
+      "summary": {
+        "background": "고직물(高粒) 식이 전환은 루멘 발효를 변화시키며, 단쇄 지방산(SCFAs) 증가와 루멘 pH 저하를 유발해 열안정성(thermostability) 및 상부루멘 산증(SARA) 위험을 증가시킨다. 이에 대한 루멘 상피의 신속한 적응 메커니즘은 아직 미해결된 문제이다.",
+        "method": "저직물(LG) 식이 및 고직물(HG) 식이 전환 후 1주(HG1)와 4주(HG4)의 루멘 파피루스 샘플을 분석하여 유전자 발현과 대사체 프로파일을 추적했다. RNA 시퀀싱과 대사체 분석을 통해 시간에 따른 유전자 차이를 파악했다.",
+        "result": "HG1에서는 중간적인 전사 변화가 나타났으나, HG4에서는 대규모 전사 재구성이 관찰되었다. 세포 스트레스 반응, 대사 적응, 단백질 처리 경로가 주요 영향을 미쳤으며, 스테롤 생합성 유전자와 관련된 대사 변화가 관찰되었다.",
+        "significance": "SARA 저항성 동물에서 지속적인 전사-대사체 상관관계가 나타나며, CCDC196 및 MYO7B 유전자를 SARA 유전적 소인으로 제안했다. 이는 루멘 적응 메커니즘과 개체 간 SARA 취약성 차이를 이해하는 데 기여하며, 루멘 생산 시스템 최적화 전략 개발에 기초를 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "KCTD1 stabilizes c-Myc to upregulate PD-L1 and suppress anti-tumor immunity in hepatocellular carcinoma.",
+        "abstract": "Hepatocellular carcinoma (HCC) is the predominant histologic subtype of primary liver cancer and accounts for approximately 90% of cases worldwide. Although immune checkpoint blockade (ICB) therapies targeting the PD-1/PD-L1 axis have demonstrated clinical promise in advanced HCC, therapeutic responses remain heterogeneous, underscoring the need to elucidate the mechanisms governing PD-L1 expression. Here, we identify potassium channel tetramerization domain-containing protein 1 (KCTD1) as a previously unrecognized regulator of PD-L1 in HCC. Mechanistically, KCTD1 enhances PD-L1 expression through stabilizing of the oncoprotein c-Myc. Immunofluorescence and co-immunoprecipitation assays reveal a direct interaction between KCTD1 and c-Myc, mediated by the BTB domain of KCTD1 and the BR-HLH-LZ domain of c-Myc. Knockdown of KCTD1 leads to decreased c-Myc and PD-L1 protein levels, concomitant with increased production of pro-inflammatory cytokines, including IFN-γ and TNF-α, and augmented CD8⁺ T cell cytotoxic activity in vitro. In a murine intrahepatic tumor model, KCTD1 knockdown synergizes with anti-PD-1 therapy, resulting in enhanced tumor infiltration by CD4⁺ and CD8⁺ T lymphocytes and improved anti-tumor efficacy. These findings establish KCTD1 as a key modulator of immune evasion in HCC and a promising target to potentiate immune checkpoint therapy.",
+        "authors": [
+          "Zhong D",
+          "Long S",
+          "Dai Y",
+          "Yin Y",
+          "Zhang Z",
+          "Ouyang M",
+          "Zhu X",
+          "Hou A",
+          "Qin Y",
+          "Wang Q",
+          "Gong M",
+          "Ding X"
+        ],
+        "affiliations": [
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "Institute of Interdisciplinary Studies, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "Institute of Interdisciplinary Studies, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "Institute of Interdisciplinary Studies, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "Institute of Interdisciplinary Studies, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China.",
+          "Institute of Interdisciplinary Studies, Hunan Normal University, Changsha, China.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China. gmt20130219@hotmail.com.",
+          "College of Physical Education, Hunan University of Finance and Economics, Changsha, China. gmt20130219@hotmail.com.",
+          "The National & Local Joint Engineering Laboratory of Animal Peptide Drug Development, College of Life Science, Hunan Normal University, Changsha, China. dingxiaofeng@hunnu.edu.cn.",
+          "Institute of Interdisciplinary Studies, Hunan Normal University, Changsha, China. dingxiaofeng@hunnu.edu.cn."
+        ],
+        "doi": "10.1038/s41420-026-02975-6",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell death discovery",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41765960/",
+        "category": null,
+        "date": "2026-03-02",
+        "mesh_terms": [],
+        "source_id": "41765960"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "KCTD1 is a therapeutic target for enhancing immune checkpoint therapy in cancer. Its role in modulating PD-L1 expression has direct implications for pharmaceutical drug development.",
+        "matched_keywords": [
+          "activity",
+          "ai"
+        ]
+      },
+      "summary": {
+        "background": "간세포암(HCC)은 주요 간암의 90%를 차지하는 조직학적 subtype으로, PD-1/PD-L1 축 타겟팅 면역 검출 차단(ICB) 치료는 진행성 HCC에서 임상적 잠재력을 보였으나, 치료 반응은 다양하여 PD-L1 발현 조절 메커니즘 규명이 필요하다.",
+        "method": "KCTD1이 PD-L1에 미치는 역할을 규명하기 위해 면역 형광 및 상호작용 분석을 통한 KCTD1과 c-Myc의 직접적 상호작용을 확인하였다. BTB 영역과 BR-HLH-LZ 영역의 상호작용을 규명하였다.",
+        "result": "KCTD1 발현 저하 시 c-Myc 및 PD-L1 단백질 수준이 감소하고, IFN-γ 및 TNF-α 생성 증가 및 CD8⁺ T 세포 세포독성 활성 증가를 유발하였다. 마우스 간종양 모델에서 KCTD1 발현 저하가 항-PD-1 치료와 시너지 효과를 유발하였다.",
+        "significance": "KCTD1은 HCC의 면역 회피 메커니즘에서 핵심 조절자로 작용하며, 면역 검출 차단 치료 강화를 위한 유망 표적임을 입증하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Schisandrin B targets CD44 to inhibit glioblastoma multiforme.",
+        "abstract": "Glioblastoma multiforme (GBM), the most common malignant primary brain tumor, responds poorly to surgery, radiotherapy, chemotherapy, and immunotherapy, with dismal prognosis and short median survival. There is an urgent need for improved therapies, with supportive and palliative care integral to the multimodal treatment strategy. Traditional Chinese medicine (TCM) exerts antitumor effects via multi-target and multi-pathway mechanisms. Thus, screening and validation of candidate natural small molecules for the therapy and adjuvant therapy of glioblastoma multiforme (GBM) are of great significance. In this study, bioinformatics analysis identified cluster of differentiation 44 (CD44) as a positive correlate of glioblastoma multiforme (GBM). Using cluster of differentiation 44 (CD44) protein structure from the AlphaFold Protein Structure Database, we combined network pharmacology, virtual screening, and molecular docking to pinpoint Schisandrin B (Sch B) as a candidate natural small molecule against glioblastoma multiforme (GBM). In vitro assays verified that Schisandrin B (Sch B) potently inhibited glioblastoma multiforme (GBM) cell proliferation, migration, and invasion. In vivo glioblastoma multiforme (GBM) xenograft models confirmed that Schisandrin B (Sch B) reduced tumor volume, improved mouse survival, and enhanced autonomous activity. Safety evaluations further demonstrated that Schisandrin B (Sch B) had no adverse effects on mouse body weight, autonomous activity, organ index, or tissue morphology. Taken together, Schisandrin B (Sch B) targets cluster of differentiation 44 (CD44) to inhibit glioblastoma multiforme (GBM), and it has relatively good safety performance. This study can provide a research foundation for the therapy and adjuvant therapy of glioblastoma multiforme (GBM).",
+        "authors": [
+          "Wang N",
+          "Xie Y",
+          "Chen J",
+          "Chen W",
+          "Zhang D",
+          "Li H"
+        ],
+        "affiliations": [
+          "Department of Neurology, Shang Qiu First People's Hospital, Shangqiu, 476100, China.",
+          "School of Pharmacy, Henan University, Kaifeng, 475004, China.",
+          "School of Pharmacy, Henan University, Kaifeng, 475004, China.",
+          "School of Pharmacy, Henan University, Kaifeng, 475004, China.",
+          "School of Pharmacy, Henan University, Kaifeng, 475004, China.",
+          "School of Pharmacy, Henan University, Kaifeng, 475004, China. lihong@vip.henu.edu.cn."
+        ],
+        "doi": "10.1007/s00210-026-05132-z",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Naunyn-Schmiedeberg's archives of pharmacology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41765945/",
+        "category": null,
+        "date": "2026-03-02",
+        "mesh_terms": [],
+        "source_id": "41765945"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "The study uses bioinformatics and computational methods to identify a natural compound for cancer therapy, which has pharmaceutical relevance.",
+        "matched_keywords": [
+          "bioinformatics",
+          "activity",
+          "ai",
+          "pathway"
+        ]
+      },
+      "summary": {
+        "background": "glioblastoma multiforme(GBM)은 수술, 방사선, 화학요법, 면역요법에 모두 저항성이 있어 낮은 생존율을 보인다. 전통 중국 의학(TCM)은 다목표 다경로 메커니즘을 통해 항암 효과를 발휘한다.",
+        "method": "생물정보학 분석을 통해 CD44를 GBM과의 상관관계를 규명하고, AlphaFold 단백질 구조 데이터베이스를 활용해 네트워크 약물학, 가상 스크리닝, 분자 도킹을 결합해 Schisandrin B(Sch B)를 후보 물질로 선정했다.",
+        "result": "체내 실험에서 Sch B는 종양 부피 감소와 생존율 향상, 자율 활동 증가를 유도했으며, 안전성 평가에서는 체중, 기관 지수, 조직 형태에 이상이 없음을 확인했다.",
+        "significance": "Sch B는 CD44를 표적으로 GBM을 억제하며 상대적으로 안전한 치료제로, GBM 치료 및 보조 치료에 대한 연구 기초를 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Stepwise assembly of α-hemolysin from intermediates to the mature pore in native erythrocytes.",
+        "abstract": "Alpha-hemolysin (α-HL) is a small pore-forming toxin secreted by pathogenic Staphylococcus aureus, inducing cell death process by forming pores in membrane. So far, detergents or artificial lipid environments have been utilized to characterize the toxin structure. The toxin-induced changes in the membrane, membrane remodeling after toxin treatment, and the role of the toxin during pore formation process remain ambiguous. Thus, understanding pore formation in the cellular environment, including the roles of the plasma membrane and lipid composition, is crucial for drug development. In this study, we captured step-by-step oligomerization of α-HL and membrane rupture of erythrocyte cells using confocal microscopy, cryo-EM imaging, and single-particle analysis. We resolved 3.1-3.8 Å resolution structures of pore, prepore, and immature pore conformations in cellular environment. Furthermore, mass spectrometry analysis demonstrated key erythrocyte lipid components interacting with α-HL. Our findings indicate that shorter or unsaturated lipid chains facilitate pore formation and the role of phosphatidylcholine with varying physical properties in modulating the toxin's activity.",
+        "authors": [
+          "Chatterjee A",
+          "Roy A",
+          "Das PP",
+          "Chakraborty D",
+          "Ghoshal B",
+          "Jhunjhunwala S",
+          "Dutta S"
+        ],
+        "affiliations": [
+          "Molecular Biophysics Unit, Indian Institute of Science , Bengaluru, India.",
+          "Molecular Biophysics Unit, Indian Institute of Science , Bengaluru, India.",
+          "Molecular Biophysics Unit, Indian Institute of Science , Bengaluru, India.",
+          "Molecular Biophysics Unit, Indian Institute of Science , Bengaluru, India.",
+          "Department of Bioengineering, Indian Institute of Science, Bengaluru, India.",
+          "Department of Bioengineering, Indian Institute of Science, Bengaluru, India.",
+          "Molecular Biophysics Unit, Indian Institute of Science , Bengaluru, India."
+        ],
+        "doi": "10.1083/jcb.202506129",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "The Journal of cell biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41524690/",
+        "category": "hemolysin proteins",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Hemolysin Proteins",
+          "Bacterial Toxins",
+          "Erythrocytes",
+          "Humans",
+          "Erythrocyte Membrane",
+          "Cryoelectron Microscopy",
+          "Staphylococcus aureus",
+          "Hemolysis",
+          "Protein Multimerization"
+        ],
+        "source_id": "41524690"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "protein_engineering",
+        "reason": "α-HL의 구조적 변화와 세포막 상호작용 메커니즘을 밝혀, 항생제 개발에 기여 가능. 세포막 리포ид 조성에 따른 독소 활성 조절 메커니즘 제공.",
+        "matched_keywords": [
+          "activity",
+          "ai"
+        ]
+      },
+      "summary": {
+        "background": "알파-헤모로시н(α-HL)은 병원성 황색포도구균에서 분비되는 작은 구멍 형성 독소로, 세포 사멸을 유도하는 구멍을 형성합니다. 이전 연구에서는 계면활성제 또는 인공 리포좀 환경을 사용해 독소 구조를 분석했으나, 독소가 세포막에 미치는 변화 및 구멍 형성 과정에서의 역할에 대한 이해는 부족했습니다.",
+        "method": "초점 형광 현미경, 냉동전자현미경(cryo-EM) 및 단일 입자 분석을 통해 α-HL의 단계적 다중체화와 적혈구 세포막 파괴를 관찰했습니다. 질량 분석을 통해 α-HL과 상호작용하는 주요 적혈구 리포좀 성분을 규명했습니다.",
+        "result": "세포 내 환경에서 구멍, 전구멍, 미성숙 구멍의 3.1-3.8 Å 해상도 구조를 해명했습니다. 단쇄 또는 불포화 리포좀 사슬이 구멍 형성을 촉진하고, 리포좀 물성에 따라 변하는 인ositidylcholine의 역할이 독소 활성 조절에 관여함을 밝혔습니다.",
+        "significance": "세포막 구성과 리포좀 물성의 영향을 명확히 함으로써 독소 억제제 개발에 기초 자료를 제공합니다. 리포좀-독소 상호작용 메커니즘의 이해는 항생제 저항성 극복에 기여할 수 있습니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Claudin 1-mediated positioning of DC1 to mTECs is essential for maintenance of central tolerance.",
+        "abstract": "Central tolerance, which relies on the presentation of self-antigens by mTECs and DCs, prevents autoimmunity by eliminating self-reactive T cells. While mTECs produce self-antigens autonomously, DCs acquire them from mTECs via cooperative antigen transfer (CAT). We previously showed that mTEC and DC subsets exhibit preferential pairing in CAT, providing a rationale for the existence of molecular determinants underpinning this pairing and its outcome. Here, we compared the transcriptomes of CAT-experienced and CAT-inexperienced DCs and identified Claudin 1 as a molecule involved in CAT and type 1 DC (DC1) maturation. DC1-specific ablation of Claudin 1 resulted in decreased CAT to late mature DC1s and dramatically diminished DC1 maturation. These phenotypes correlated with the displacement of DC1s from mTECs and their decreased expression of MHCII pathway genes. This translated into impaired Treg selection and clonal deletion, ultimately manifesting in symptoms of multiorgan autoimmunity and shortened lifespan. Collectively, our results identify thymic DC1-derived Claudin 1 as a regulator of immune tolerance.",
+        "authors": [
+          "Březina J",
+          "Brabec T",
+          "Machač D",
+          "Vobořil M",
+          "Ballek O",
+          "Pačes J",
+          "Sýkora V",
+          "Jančovičová K",
+          "Valter E",
+          "Kováčová K",
+          "Manning J",
+          "Tahtahová V",
+          "Čepková A",
+          "Dobešová M",
+          "Dobeš J",
+          "Kubovčiak J",
+          "Kolář M",
+          "Kašpárek P",
+          "Sedlacek R",
+          "Štepánek O",
+          "Černý J",
+          "Tsukita S",
+          "Malissen B",
+          "Anderson G",
+          "Filipp D"
+        ],
+        "affiliations": [
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Laboratory of Genomics and Bioinformatics, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Laboratory of Genomics and Bioinformatics, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Czech Centre of Phenogenomics and Laboratory of Transgenic Models of Diseases, Institute of Molecular Genetics of the Czech Academy of Sciences , Vestec, Czech Republic.",
+          "Czech Centre of Phenogenomics and Laboratory of Transgenic Models of Diseases, Institute of Molecular Genetics of the Czech Academy of Sciences , Vestec, Czech Republic.",
+          "Laboratory of Adaptive Immunity, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic.",
+          "Department of Cell Biology, Faculty of Science, Charles University, Prague, Czech Republic.",
+          "Advanced Comprehensive Research Organization, Teikyo University , Tokyo, Japan.",
+          "Centre d'Immunologie de Marseille-Luminy, Aix Marseille Universite´, Inserm, CNRS , Marseille, France.",
+          "Institute of Immunology and Immunotherapy, University of Birmingham , Birmingham, UK.",
+          "Laboratory of Immunobiology, Institute of Molecular Genetics of the Czech Academy of Sciences , Prague, Czech Republic."
+        ],
+        "doi": "10.1084/jem.20250970",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "The Journal of experimental medicine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41481333/",
+        "category": "animals",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Animals",
+          "Immune Tolerance",
+          "Dendritic Cells",
+          "Claudin-1",
+          "T-Lymphocytes, Regulatory",
+          "Mice",
+          "Mice, Inbred C57BL",
+          "Autoimmunity",
+          "Thymus Gland",
+          "Mice, Knockout",
+          "Autoantigens",
+          "Antigen Presentation"
+        ],
+        "source_id": "41481333"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "Claudin 1's role in immune tolerance could inform pharmaceutical therapies for autoimmune diseases. The study focuses on immunology rather than direct food/chemical applications.",
+        "matched_keywords": [
+          "ai",
+          "pathway"
+        ]
+      },
+      "summary": {
+        "background": "중심적 면역내용물 (central tolerance)은 mTECs와 DC가 자가항원을 제시하여 자가면역을 예방하는 과정으로, mTEC는 자가항원을 자가적으로 생성하지만 DC는 협동 항원 전달 (cooperative antigen transfer, CAT)을 통해 항원을 획득한다.",
+        "method": "CAT 경험자와 비경험자 DC의 전사체를 비교하여 Claudin 1을 CAT 및 DC1 성숙에 관여하는 분자로 확인하였다. DC1 특이적 Claudin 1 제거를 통해 CAT 및 성숙 과정에 대한 영향을 분석하였다.",
+        "result": "Claudin 1 제거로 인한 DC1의 mTEC 이동 감소와 MHCII 경로 유전자 발현 저하로 Treg 선택 및 클로날 삭제 기능이 손상되어 다기관 자가면역 증상과 수명 단축이 발생하였다.",
+        "significance": "thymic DC1에서 유래한 Claudin 1은 면역 내성 조절에 핵심적인 역할을 하며, 자가면역 질환 치료에 대한 새로운 표적을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Synergistic antibacterial activity and mechanism of surfactin and Ag NPs against Pseudomonas fluorescens.",
+        "abstract": "Pseudomonas fluorescens (P. fluorescens) is an important specific spoilage organism in aquatic products, which has caused serious food waste due to its extreme environmental resistance and spoilage capacity. This study aimed to explore a novel composite antibacterial agent that combined surfactin and silver nanoparticles (Ag NPs) to form surfactin-Ag NPs and to investigate its synergistic antibacterial mechanism against P. fluorescens. The results showed that surfactin-Ag NPs can effectively enhance the antibacterial activity against P. fluorescens, and the minimum inhibitory concentration when synergized was only 1/8 of that when each was used alone. This might be the change of carboxyl conformation in surfactin and the presence of more lipophilic groups around surfactin-Ag NPs made it easier to enter the cell membrane. Surfactin-Ag NPs can alter outer/inner membrane permeability and cell membrane integrity, causing leakage of intracellular contents and eventually leading to bacterial death. Transcriptomic analysis indicated that surfactin-Ag NPs disrupted energy metabolism and ABC transporters in P. fluorescens, affecting nutrient acquisition. Moreover, surfactin-Ag NPs disrupted ribosome transcription and translation, and led to excessive synthesis of certain amino acids. This investigation not only revealed the synergistic antibacterial mechanism of surfactin-Ag NPs against P. fluorescens at the cellular structure level, but also conducted in-depth research at the molecular level, providing new ideas for the effective preservation of aquatic products.",
+        "authors": [
+          "Wu Y",
+          "Li Y",
+          "Dong Z",
+          "Li Y",
+          "Yang H",
+          "Wu L",
+          "Lou Y",
+          "Fu S"
+        ],
+        "affiliations": [
+          "Key Laboratory of Animal Protein Food Deep Processing Technology of Zhejiang Province, Zhejiang-Malaysia Joint Research Laboratory for Agricultural Product Processing and Nutrition, College of Food Science and Engineering, Ningbo University, Ningbo, 315800, China.",
+          "Key Laboratory of Animal Protein Food Deep Processing Technology of Zhejiang Province, Zhejiang-Malaysia Joint Research Laboratory for Agricultural Product Processing and Nutrition, College of Food Science and Engineering, Ningbo University, Ningbo, 315800, China.",
+          "Zhejiang Wanli University, Ningbo, 315100, China.",
+          "Key Laboratory of Animal Protein Food Deep Processing Technology of Zhejiang Province, Zhejiang-Malaysia Joint Research Laboratory for Agricultural Product Processing and Nutrition, College of Food Science and Engineering, Ningbo University, Ningbo, 315800, China.",
+          "Zhejiang Marine Development Research Institute, Zhoushan, 316021, China.",
+          "Zhejiang Yulin Technology Co., Ltd., Ningbo, 315021, China.",
+          "Key Laboratory of Animal Protein Food Deep Processing Technology of Zhejiang Province, Zhejiang-Malaysia Joint Research Laboratory for Agricultural Product Processing and Nutrition, College of Food Science and Engineering, Ningbo University, Ningbo, 315800, China.",
+          "Key Laboratory of Animal Protein Food Deep Processing Technology of Zhejiang Province, Zhejiang-Malaysia Joint Research Laboratory for Agricultural Product Processing and Nutrition, College of Food Science and Engineering, Ningbo University, Ningbo, 315800, China. Electronic address: fushiqian@nbu.edu.cn."
+        ],
+        "doi": "10.1016/j.ijfoodmicro.2025.111601",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of food microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41442896/",
+        "category": "pseudomonas fluorescens",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Pseudomonas fluorescens",
+          "Anti-Bacterial Agents",
+          "Lipopeptides",
+          "Microbial Sensitivity Tests",
+          "Silver",
+          "Metal Nanoparticles",
+          "Drug Synergism",
+          "Peptides, Cyclic",
+          "Cell Membrane"
+        ],
+        "source_id": "41442896"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "The study presents a novel composite antibacterial agent for food preservation against spoilage bacteria.",
+        "matched_keywords": [
+          "activity",
+          "ai"
+        ]
+      },
+      "summary": {
+        "background": "Pseudomonas fluorescens(P. fluorescens)은 수산물에서 중요한 특정 부패 미생물로, 극한 환경 저항성과 부패 능력으로 인해 심각한 식품 폐기로 이어지고 있다.",
+        "method": "이 연구는 수산물 보존을 위한 새로운 복합 항균제로 수면(Surfactin)과 은 나노입자(Ag NPs)를 결합한 수면-Ag NPs를 제조하고, 이들의 상호작용 항균 메커니즘을 조사하였다.",
+        "result": "수면-Ag NPs는 P. fluorescens에 대해 항균 활성에 효과적이었으며, 협력적 사용 시 최소 억제 농도(MIC)는 단독 사용 시의 1/8로 나타났다. 이는 수면의 카르복실 구조 변화와 수면-Ag NPs의 더 많은 지방족 그룹이 세포막에 쉽게 침투하게 만드는 것으로 추정된다.",
+        "significance": "이 연구는 수면-Ag NPs가 세포 구조 수준에서 P. fluorescens에 대한 상호작용 항균 메커니즘을 밝히고, 분자 수준에서의 심층 연구를 통해 수산물의 효과적인 보존을 위한 새로운 아이디어를 제공하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Unraveling the antibacterial mechanism of eucalyptol against Escherichia coli O157:H7 through transcriptomics and its application in beef broth.",
+        "abstract": "Escherichia coli O157:H7 poses a significant threat to human health and food safety. Traditional agents used for antibacterial control can be hazardous to health and cause environmental pollution, consequently, plant-derived antimicrobials have attracted considerable interest as promising alternatives. In the study, the antimicrobial activity and mechanisms of the terpenoid eucalyptol (1,8-cineole) against E. coli O157:H7 were investigated for the first time, based on transcriptomics and molecular docking analyses. Eucalyptol was demonstrated to inhibit the growth of E. coli O157:H7 with minimum inhibitory and bactericidal concentrations of 1.8 and 3.0 μL/mL, respectively. In addition, results indicated that eucalyptol altered E. coli O157:H7 cell morphology, disrupted cell membrane integrity, and contributed to the leakage of nucleic acids and proteins. Transcriptomic analysis revealed that exposure to eucalyptol interfered with the bacterial quorum sensing system, inhibited flagellar motility and adhesion, and resulted in the differential expression of 38 genes closely associated with bacterial biofilm formation, virulence, and survival. Furthermore, molecular docking results indicated that gadA-encoded glutamate decarboxylase B (GadB) and autoinducer-2 degrading protein (LsrG) in E. coli O157:H7 could represent potential targets for eucalyptol. Hemolysis assays showed that the hemolysis rate below 5 %, demonstrating acceptable in vitro safety. Moreover, the E. coli O157:H7 in beef broth was completely eradicated by 2 × MIC of eucalyptol during storage. These findings revealed the potential of eucalayptol as a new natural food antibacterial agent and preliminarily elucidated the antibacterial mechanism, providing a new strategy for controlling E. coli O157:H7 in the food industry.",
+        "authors": [
+          "He Y",
+          "Wang Y",
+          "He Y",
+          "Hu H",
+          "Hu Y",
+          "Hua Q",
+          "Wu Y",
+          "Li D",
+          "Liu Z"
+        ],
+        "affiliations": [
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai, 200237, China.",
+          "Hubei Juhui Agriculture Co., Ltd, Jingmen, 431821, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, Hubei University of Technology, Wuhan, 430068, China. Electronic address: zjliu@hbut.edu.cn."
+        ],
+        "doi": "10.1016/j.ijfoodmicro.2025.111580",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of food microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41406565/",
+        "category": "eucalyptol",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Eucalyptol",
+          "Escherichia coli O157",
+          "Anti-Bacterial Agents",
+          "Microbial Sensitivity Tests",
+          "Molecular Docking Simulation",
+          "Quorum Sensing",
+          "Biofilms",
+          "Gene Expression Profiling",
+          "Red Meat",
+          "Transcriptome",
+          "Escherichia coli Proteins"
+        ],
+        "source_id": "41406565"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "Eucalyptol shows potential as a natural food preservative against E. coli O157:H7, with mechanistic insights for food safety applications.",
+        "matched_keywords": [
+          "activity",
+          "ai"
+        ]
+      },
+      "summary": {
+        "background": "Escherichia coli O157:H7은 인간 건강과 식품 안전에 심각한 위협을 가진 병원체이다. 전통적인 항균제는 건강에 해로울 수 있고 환경 오염을 유발하므로, 식물 유래 항균제에 대한 관심이 증가하고 있다.",
+        "method": "전사체 분석과 분자 도킹을 통해 eucalyptol의 항균 활성과 메커니즘을 조사하였다. 최소 억제 농도(MIC)와 살균 농도를 측정하고, 세포 형태 변화 및 막 무결성 손상 등을 관찰하였다.",
+        "result": "eucalyptol은 E. coli O157:H7의 성장 억제를 나타내며, 1.8 μL/mL의 MIC와 3.0 μL/mL의 살균 농도를 보였다. 전사체 분석은 병원체의 퀀텀 센싱 시스템 및 비부착성 유전자 발현에 영향을 주는 38개의 유전자 변이를 확인하였다.",
+        "significance": "이 연구는 eucalyptol이 새로운 자연 항균제로 활용될 가능성을 제시하며, 식품 산업에서 E. coli O157:H7 제어에 새로운 전략을 제공한다. 혈구 용해율 5% 이하로 안전성이 입증되었다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Genomic characterization of five novel Salmonella phages and the assessment of their biocontrol potential for the preservation of chicken meat.",
+        "abstract": "The rise of multidrug-resistant Salmonella poses a significant threat to food safety and public health, necessitating novel antimicrobial strategies. The primary objective of this study was to characterize novel bacteriophages and assess their biocontrol potential against predominant Salmonella serotypes. A total of 84 lytic bacteriophages specific to various Salmonella enterica serotypes were isolated from wastewater sources across Türkiye. Five phages (S.Hadar 4-5-1, S.Inf 5-2, S.Typ Adana, S.Ent 1-35-3, and S.Kent 1-2-1) demonstrating broad lytic activity to tested major serotypes (S. Enteritidis, S. Typhimurium, S. Infantis, S. Kentucky, S. Newport, S. Hadar, S. Gallinarum and S. Pullorum) and genetic diversity were selected for detailed phenotypic and genomic analysis. These phages, four from Siphoviridae and one from Podoviridae, exhibited tolerance to thermal (up to 60 °C) and mildly acidic conditions (pH 4), as well as 12-month stability when stored in Tris-Buffered Saline (TBS) with 20 % (v/v) glycerol at -20 °C and - 80 °C. Whole-genome sequencing confirmed their novelty and the absence of antimicrobial resistance and virulence genes. A cocktail formulated from these phages was applied against Salmonella Enteritidis both in-vitro (at 37 °C) and on artificially contaminated chicken wings (at 4 °C). The phage cocktail effectively reduced Salmonella counts in both environments, keeping levels below the detection limit (< 1 log CFU/g) over 24 h. For chicken wings food model, bacterial reductions reached 3.30 log CFU/g and 4.86 log CFU/g. These results underscore the potential of the newly characterized Salmonella phages as effective tools for controlling bacterial contamination on chicken meat, supporting their use as a natural, and antibiotic-free strategy in modern food safety management.",
+        "authors": [
+          "Cufaoglu G",
+          "Cengiz G",
+          "Onaran Acar B",
+          "Kardogan O",
+          "Ertas Onmaz N",
+          "Unal G",
+          "Eser E",
+          "Alpaslan Kocamemi B",
+          "Goncuoglu M",
+          "Erol I",
+          "TÜBİTAK-121Z447 project scholars and consultants",
+          "Ayaz ND"
+        ],
+        "affiliations": [
+          "Department of Food Hygiene and Technology, Faculty of Veterinary Medicine, Kırıkkale University, Kırıkkale, Türkiye. Electronic address: gizemcufaoglu@kku.edu.tr.",
+          "Department of Food Hygiene and Technology, Faculty of Veterinary Medicine, Ankara University, Ankara, Türkiye. Electronic address: grkmcengiz@ankara.edu.tr.",
+          "Department of Food Hygiene and Technology, Faculty of Veterinary Medicine, Ankara University, Ankara, Türkiye. Electronic address: bonaran@ankara.edu.tr.",
+          "Poultry Disease Diagnosis and Research Laboratory, Veterinary Control Central Research Institute, Ministry of Agriculture and Forestry, Ankara, Türkiye. Electronic address: ozlem.kardogan@tarimorman.gov.tr.",
+          "Department of Food Hygiene and Technology, Faculty of Veterinary Medicine, Erciyes University, Kayseri, Türkiye. Electronic address: nertas@erciyes.edu.tr.",
+          "Department of Microbiology, Faculty of Veterinary Medicine, Ankara University, Ankara, Türkiye. Electronic address: gultekinnunal@gmail.com.",
+          "Department of Biostatistics, Faculty of Veterinary Medicine, Kırıkkale University, Kırıkkale, Türkiye. Electronic address: ervaeser@kku.edu.tr.",
+          "Environmental Engineering Department, Marmara University, Göztepe, Istanbul, Türkiye. Electronic address: bilge.alpaslan@marmara.edu.tr.",
+          "Department of Food Hygiene and Technology, Faculty of Veterinary Medicine, Ankara University, Ankara, Türkiye. Electronic address: goncu@veterinary.ankara.edu.tr.",
+          "Department of Nutrition and Dietetics, Faculty of Health Sciences, Atılım University, Ankara, Türkiye. Electronic address: proferol@yahoo.com.",
+          "Department of Food Hygiene and Technology, Faculty of Veterinary Medicine, Kırıkkale University, Kırıkkale, Türkiye. Electronic address: naimdenizayaz@kku.edu.tr."
+        ],
+        "doi": "10.1016/j.ijfoodmicro.2025.111574",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of food microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41389789/",
+        "category": "animals",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Animals",
+          "Chickens",
+          "Salmonella Phages",
+          "Meat",
+          "Genome, Viral",
+          "Food Preservation",
+          "Salmonella enterica",
+          "Food Microbiology",
+          "Salmonella",
+          "Siphoviridae",
+          "Wastewater",
+          "Podoviridae",
+          "Genomics"
+        ],
+        "source_id": "41389789"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "Salmonella phages show promise as biocontrol agents for food safety. Their efficacy in reducing bacterial contamination on chicken meat supports application in food preservation.",
+        "matched_keywords": [
+          "activity",
+          "ai"
+        ]
+      },
+      "summary": {
+        "background": "다중 항생제 내성 Salmonella의 증가가 식품 안전과 공중보건에 심각한 위협을 가하고 있다(thermostability). 새로운 항균 전략이 필요하다는 점에서 본 연구는 새로운 바이러스를 특성화하고 생물제어 잠재력을 평가하였다.",
+        "method": "터키의 하수에서 다양한 Salmonella enterica serotypes에 특이적인 84개의 라이시크 바이러스를 분리하였다. 5개의 광범위한 라이시크 활성과 유전적 다양성을 가진 바이러스를 선정하여 분석하였다.",
+        "result": "4개는 시포비리다이와 1개는 포도비리다이에 속하며, 60°C 열안정성(thermostability)과 약산성 조건(pH 4)을 견뎠다. TBS와 20% 글리세롤로 -20°C 및 -80°C에서 12개월간 안정성을 유지하였다.",
+        "significance": "바이러스 혼합물은 Salmonella Enteritidis를 24시간 동안 검출 한계 이하로 감소시켰다. 닭 가슴살 모델에서 3.30~4.86 log CFU/g의 감소를 나타내어 식품 안전 관리에 자연적 항균 전략으로 활용 가능성을 제시하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "High-throughput sequencing reveals microbial transitions in refrigerated sturgeon meat: Implications for quality assurance.",
+        "abstract": "This study investigated the microbially driven spoilage mechanism of sturgeon (Acipenser baerii) under refrigerated (4 °C) aerobic storage. High-throughput sequencing analysis revealed that Pseudomonas and Shewanella dominated late-stage spoilage, which was strongly positively correlated with volatile base nitrogen (VBN) accumulation and microbial metabolic shifts toward amino acid degradation pathways. By applying machine learning (random forest coupled with SHAP analysis, AUROC = 0.96) and graph neural networks (GAT, recall = 89.7 %), we pinpointed key spoilage-associated taxa and their interaction dynamics. Furthermore, numerous chemical descriptors have revealed that spoilage-associated enzymes present elevated molecular electrostatic potential (MEPs >25 kcal/mol), which facilitates the nucleophilic attack of amino acids and accelerates spoilage reactions. Time series forecasting (multivariate Prophet model) accurately predicted critical spoilage thresholds (96.5 ± 4.2 h postprocessing) with high accuracy (MAPE = 12.3 %). Additionally, metabolic modeling has demonstrated microbial cold-adapted energy strategies, including a significant increase in succinate fermentation flux (3.8 ± 0.5 mmol·g-1 DW·h-1) and the suppression of TCA cycle activity. This study establishes a multiscale framework linking microbial ecology, enzymatic quantum mechanics, and metabolic dynamics, offering mechanistic insight into spoilage and providing a foundation for precise sturgeon preservation strategies in cold chain logistics.",
+        "authors": [
+          "Pei J",
+          "Gong J",
+          "Liu Z",
+          "Jin W",
+          "Hou M",
+          "Abd El-Aty AM",
+          "Deng Q"
+        ],
+        "affiliations": [
+          "College of Food Science and Technology, School of Mechanical Engineering, Guangdong Ocean University, Guangdong Provincial Key Laboratory of Aquatic Product Processing and Safety, Guangdong Province Engineering Laboratory for Marine Biological Products, Guangdong Provincial Engineering Technology Research Center of Seafood, Guangdong Provincial Engineering Technology Research Center of Prefabricated Seafood Processing and Quality Control, Zhanjiang, 524088, China.",
+          "College of Food Science and Technology, School of Mechanical Engineering, Guangdong Ocean University, Guangdong Provincial Key Laboratory of Aquatic Product Processing and Safety, Guangdong Province Engineering Laboratory for Marine Biological Products, Guangdong Provincial Engineering Technology Research Center of Seafood, Guangdong Provincial Engineering Technology Research Center of Prefabricated Seafood Processing and Quality Control, Zhanjiang, 524088, China.",
+          "College of Bioscience and Bioengineering, Shaanxi University of Technology, 723001, Hanzhong, Shaanxi, China.",
+          "College of Bioscience and Bioengineering, Shaanxi University of Technology, 723001, Hanzhong, Shaanxi, China.",
+          "School of Mechanical Engineering, Guangdong Ocean University, Zhanjiang, Guangdong, 524088, China. Electronic address: houmx@gdou.edu.cn.",
+          "Department of Pharmacology, Faculty of Veterinary Medicine, Cairo University, Giza, 12211, Egypt; Department of Medical Pharmacology, Faculty of Medicine, Atatürk University, Erzurum, 25240, Türkiye. Electronic address: abdelaty44@hotmail.com.",
+          "College of Food Science and Technology, School of Mechanical Engineering, Guangdong Ocean University, Guangdong Provincial Key Laboratory of Aquatic Product Processing and Safety, Guangdong Province Engineering Laboratory for Marine Biological Products, Guangdong Provincial Engineering Technology Research Center of Seafood, Guangdong Provincial Engineering Technology Research Center of Prefabricated Seafood Processing and Quality Control, Zhanjiang, 524088, China. Electronic address: dengqi1024@163.com."
+        ],
+        "doi": "10.1016/j.ijfoodmicro.2025.111542",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of food microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41389787/",
+        "category": "animals",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Animals",
+          "Fishes",
+          "Bacteria",
+          "Food Microbiology",
+          "High-Throughput Nucleotide Sequencing",
+          "Refrigeration",
+          "Seafood",
+          "Meat"
+        ],
+        "source_id": "41389787"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "미생물 분해 메커니즘 분석과 AI 기반 예측 모델 제공으로 식품 신선도 관리에 활용 가능. 메타볼릭 데이터와 화학 특성 연결해 식품 보존 전략 개발에 기여.",
+        "matched_keywords": [
+          "enzyme",
+          "activity",
+          "ai",
+          "machine learning",
+          "pathway"
+        ]
+      },
+      "summary": {
+        "background": "냉장 저장된 연어(Acipenser baerii)의 미생물에 의한 부패 메커니즘을 조사하였다. Pseudomonas와 Shewanella가 후기 단계 부패에서 우세하며, 이는 산화질소기 질소(VBN) 축적과 아미노산 분해 경로로의 대사 전환과 강한 상관관계를 보인다.",
+        "method": "고속 염기서열 분석과 머신러닝(random forest와 SHAP 분석, AUROC = 0.96) 및 그래프 신경망(GAT, recall = 89.7%)을 적용하여 주요 부패 관련 미생물과 상호작용 동역학을 식별하였다. 화학적 특성 분석과 시계열 예측(multivariate Prophet 모델)을 통해 부패 임계점을 예측하였다.",
+        "result": "부패 관련 효소는 분자 전기적 잠재력(MEPs >25 kcal/mol)이 높아 아미노산의 친전자 공격을 촉진하며, 부패 임계시간은 96.5 ± 4.2시간으로 예측되었다. 대사 모델링은 추운 환경에 적응한 에너지 전략으로 succinate 발효 유동량 증가와 TCA 사이클 활성 억제를 나타냈다.",
+        "significance": "미생물 생태학, 효소 양자역학, 대사 동역학을 연결한 다중 규모 프레임워크를 제시하며, 부패 메커니즘에 대한 기전적 통찰을 제공한다. 이는 냉장 물류에서 정밀한 연어 보존 전략을 위한 기초를 마련한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Mechanometabolism instructs hematopoietic stem cell specification.",
+        "abstract": "Mechanical force generated by blood flow stimulates emergence of the first hematopoietic stem cells (HSCs) that populate the blood system. Force drives the transition of HSC precursors from an endothelial to hematopoietic identity, yet the molecular regulation of this fate switch remains poorly understood. We report that shear stress triggers adaptation in mitochondrial composition, ultrastructure, and function, which are essential for hematopoietic fate and engraftment potential. Shear stress remodels mitochondria in hemogenic endothelium by promoting mitochondrial gene transcription and protein synthesis. Laminar flow selectively initiates translation of 5' terminal polypyrimidine (5'TOP) motif-containing transcripts, which commonly encode ribosome and translation machinery. Flow-responsive metabolic reprogramming depends upon mechanistic target of rapamycin (mTOR) activation and is stymied when ribosome activity or mTOR is blocked. Conversely, chemical induction of mTOR mimics the effects of force on mitochondria and blood reconstituting potential and also partially rescues hematopoiesis in heartbeat mutants in utero. These findings identify mechanometabolism as a determinant of hematopoietic fate that could inform engineering of HSCs for disease modeling and treatment.",
+        "authors": [
+          "Horton PD",
+          "Syed A",
+          "Winkler M",
+          "Vaidya AB",
+          "Rariden M",
+          "Arora N",
+          "Zhou Y",
+          "Kobayashi M",
+          "Yoshimoto M",
+          "Lee HJ",
+          "Kim HE",
+          "Hagan JP",
+          "Denicourt C",
+          "Moore TI",
+          "Wenzel PL"
+        ],
+        "affiliations": [
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Center for Stem Cell and Regenerative Medicine, Brown Foundation Institute of Molecular Medicine, The University of Texas Health Science Center at Houston , Houston, TX, USA.",
+          "Immunology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Immunology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Center for Stem Cell and Regenerative Medicine, Brown Foundation Institute of Molecular Medicine, The University of Texas Health Science Center at Houston , Houston, TX, USA.",
+          "Center for Stem Cell and Regenerative Medicine, Brown Foundation Institute of Molecular Medicine, The University of Texas Health Science Center at Houston , Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Molecular and Translational Biology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Center for Stem Cell and Regenerative Medicine, Brown Foundation Institute of Molecular Medicine, The University of Texas Health Science Center at Houston , Houston, TX, USA.",
+          "Center for Stem Cell and Regenerative Medicine, Brown Foundation Institute of Molecular Medicine, The University of Texas Health Science Center at Houston , Houston, TX, USA.",
+          "Department of Anatomy and Cell Biology, College of Medicine, Chung-Ang University, Seoul, South Korea.",
+          "Department of Global Innovative Drugs, Graduate School of Chung-Ang University, Seoul, South Korea.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Molecular and Translational Biology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Molecular and Translational Biology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Department of Neurosurgery, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Molecular and Translational Biology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Molecular and Translational Biology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Department of Integrative Biology & Pharmacology, McGovern Medical School, The University of Texas Health Science Center at Houston, Houston, TX, USA.",
+          "Center for Stem Cell and Regenerative Medicine, Brown Foundation Institute of Molecular Medicine, The University of Texas Health Science Center at Houston , Houston, TX, USA.",
+          "Immunology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA.",
+          "Molecular and Translational Biology Program, The University of Texas MD Anderson UTHealth Graduate School of Biomedical Sciences , Houston, TX, USA."
+        ],
+        "doi": "10.1084/jem.20250607",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "The Journal of experimental medicine",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41364073/",
+        "category": "hematopoietic stem cells",
+        "date": "2026-03-02",
+        "mesh_terms": [
+          "Hematopoietic Stem Cells",
+          "Animals",
+          "Mitochondria",
+          "Mice",
+          "Hematopoiesis",
+          "TOR Serine-Threonine Kinases",
+          "Stress, Mechanical",
+          "Cell Differentiation",
+          "Mice, Inbred C57BL"
+        ],
+        "source_id": "41364073"
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "The study links mechanical forces to metabolic reprogramming in HSCs, which could inform metabolic engineering for therapeutic applications.",
+        "matched_keywords": [
+          "activity",
+          "ai"
+        ]
+      },
+      "summary": {
+        "background": "혈류로 인한 기계적 힘은 첫 번째 혈액계를 채택하는 혈구 줄기세포(HSCs)의 발생을 촉진한다. HSC 전구세포가 엔도트elial에서 혈구세포로 전환하는 과정에서 분자적 조절은 여전히 불확실하다.",
+        "method": "수평 흐름은 혈구 생성 내피세포에서 미토콘드리아의 구성, 초미세구조, 기능을 조절하여 혈구 운명과 이식 잠재력을 결정한다. 흐름은 미토콘드리아 유전자 전사 및 단백질 합성을 촉진하여 미토콘드리아를 재구성한다.",
+        "result": "5' 말단 폴리프리미딘(5'TOP) 모티프를 포함하는 전사를 선택적으로 번역하여 리보솜 및 번역 기구의 단백질을 증가시킨다. mTOR 활성화가 흐름에 반응하는 대사 재편성에 필수적이며, 리보솜 활동 또는 mTOR 차단 시 이 과정이 억제된다.",
+        "significance": "기계-대사학(메카노메타볼리즘)이 혈구 운명 결정에 핵심적인 요소임이 밝혀졌다. 이는 HSC 공학을 통한 질병 모델링 및 치료법 개발에 기여할 수 있는 잠재력을 가진다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 21,
+    "keyword_passed": 11,
+    "llm_passed": 11,
+    "summarized": 11
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-02T09:34:59.401490+00:00"
+}
