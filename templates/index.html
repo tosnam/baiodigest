@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block content %}
+<section>
+  <h2>최신 다이제스트</h2>
+  {% if latest %}
+    <p><a href="/daily/{{ latest.date }}.html">{{ latest.date }} 다이제스트 보기</a></p>
+    <p>논문 {{ latest.entries|length }}편 요약</p>
+  {% else %}
+    <p>아직 생성된 다이제스트가 없습니다.</p>
+  {% endif %}
+</section>
+
+<section>
+  <h3>최근 기록</h3>
+  <ul>
+    {% for digest in digests[:14] %}
+      <li><a href="/daily/{{ digest.date }}.html">{{ digest.date }}</a> ({{ digest.entries|length }}편)</li>
+    {% endfor %}
+  </ul>
+</section>
+{% endblock %}

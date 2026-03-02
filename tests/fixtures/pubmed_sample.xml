@@ -1,0 +1,44 @@
+<?xml version="1.0" ?>
+<PubmedArticleSet>
+  <PubmedArticle>
+    <MedlineCitation>
+      <PMID>12345678</PMID>
+      <Article>
+        <Journal>
+          <Title>Journal of Enzyme Engineering</Title>
+          <JournalIssue>
+            <PubDate>
+              <Year>2026</Year>
+              <Month>03</Month>
+              <Day>01</Day>
+            </PubDate>
+          </JournalIssue>
+        </Journal>
+        <ArticleTitle>Metabolic engineering for improved product titer in yeast</ArticleTitle>
+        <Abstract>
+          <AbstractText>We engineered yeast metabolism for higher production titer.</AbstractText>
+          <AbstractText>Machine learning identified key pathway bottlenecks.</AbstractText>
+        </Abstract>
+        <AuthorList>
+          <Author>
+            <LastName>Park</LastName>
+            <Initials>HJ</Initials>
+            <AffiliationInfo>
+              <Affiliation>Department of Chemical Biology, Example University</Affiliation>
+            </AffiliationInfo>
+          </Author>
+        </AuthorList>
+      </Article>
+      <MeshHeadingList>
+        <MeshHeading>
+          <DescriptorName>Metabolic Engineering</DescriptorName>
+        </MeshHeading>
+      </MeshHeadingList>
+    </MedlineCitation>
+    <PubmedData>
+      <ArticleIdList>
+        <ArticleId IdType="doi">10.1000/example-doi</ArticleId>
+      </ArticleIdList>
+    </PubmedData>
+  </PubmedArticle>
+</PubmedArticleSet>

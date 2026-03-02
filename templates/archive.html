@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>Archive</h2>
+<table>
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Papers</th>
+      <th>Link</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for digest in digests %}
+    <tr>
+      <td>{{ digest.date }}</td>
+      <td>{{ digest.entries|length }}</td>
+      <td><a href="/daily/{{ digest.date }}.html">open</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}

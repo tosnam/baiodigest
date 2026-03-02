@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+*.egg-info/
+.venv/
+.pytest_cache/
+
+# Tooling
+.coverage
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Runtime outputs
+logs/
+*.log
+
+# Generated data/docs
+*.DS_Store

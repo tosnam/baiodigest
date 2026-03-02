@@ -1,0 +1,30 @@
+:root {
+  --bd-muted: #5f6a73;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.site-header h1 {
+  margin-bottom: 0;
+}
+
+.site-header a {
+  text-decoration: none;
+}
+
+article h4 {
+  margin-bottom: 0.3rem;
+}
+
+article p {
+  margin-top: 0.2rem;
+}
+
+small {
+  color: var(--bd-muted);
+}

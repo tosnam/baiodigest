@@ -1,0 +1,80 @@
+from __future__ import annotations
+
+from dataclasses import dataclass
+from pathlib import Path
+import shutil
+
+from jinja2 import Environment, FileSystemLoader, select_autoescape
+
+from baiodigest.models import DailyDigest
+
+
+@dataclass(slots=True)
+class SiteContext:
+    digests: list[DailyDigest]
+
+    @property
+    def latest(self) -> DailyDigest | None:
+        return self.digests[0] if self.digests else None
+
+
+def _load_digests(data_dir: Path) -> list[DailyDigest]:
+    digests: list[DailyDigest] = []
+    for path in sorted(data_dir.glob("*.json"), reverse=True):
+        try:
+            digests.append(DailyDigest.from_file(path))
+        except Exception:
+            continue
+    digests.sort(key=lambda item: item.date, reverse=True)
+    return digests
+
+
+def _write(path: Path, content: str) -> None:
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text(content, encoding="utf-8")
+
+
+class StaticSiteGenerator:
+    def __init__(self, template_dir: Path, static_dir: Path, data_dir: Path, docs_dir: Path) -> None:
+        self.template_dir = template_dir
+        self.static_dir = static_dir
+        self.data_dir = data_dir
+        self.docs_dir = docs_dir
+        self.env = Environment(
+            loader=FileSystemLoader(str(template_dir)),
+            autoescape=select_autoescape(["html", "xml"]),
+        )
+
+    def generate(self) -> None:
+        digests = _load_digests(self.data_dir)
+        context = SiteContext(digests=digests)
+
+        self.docs_dir.mkdir(parents=True, exist_ok=True)
+        self._copy_static_assets()
+
+        self._render_archive(context)
+        self._render_daily_pages(context)
+        self._render_index(context)
+
+    def _render_index(self, context: SiteContext) -> None:
+        template = self.env.get_template("index.html")
+        output = template.render(latest=context.latest, digests=context.digests, title="BioDigest")
+        _write(self.docs_dir / "index.html", output)
+
+    def _render_archive(self, context: SiteContext) -> None:
+        template = self.env.get_template("archive.html")
+        output = template.render(digests=context.digests, title="Archive")
+        _write(self.docs_dir / "archive.html", output)
+
+    def _render_daily_pages(self, context: SiteContext) -> None:
+        template = self.env.get_template("daily.html")
+        for digest in context.digests:
+            output = template.render(digest=digest, title=f"Digest {digest.date}")
+            _write(self.docs_dir / "daily" / f"{digest.date}.html", output)
+
+    def _copy_static_assets(self) -> None:
+        target = self.docs_dir / "static"
+        if target.exists():
+            shutil.rmtree(target)
+        if self.static_dir.exists():
+            shutil.copytree(self.static_dir, target)

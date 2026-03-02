@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% block content %}
+<h2>{{ digest.date }} Digest</h2>
+<p>총 {{ digest.entries|length }}편</p>
+
+{% for entry in digest.entries %}
+<article>
+  <header>
+    <h3><a href="{{ entry.paper.url }}" target="_blank" rel="noopener noreferrer">{{ entry.paper.title }}</a></h3>
+    <p>
+      {{ entry.paper.journal or "Unknown journal" }}
+      {% if entry.paper.source_type == "preprint" %}
+      <strong>[Preprint]</strong>
+      {% else %}
+      <strong>[Published]</strong>
+      {% endif %}
+    </p>
+    {% if entry.paper.affiliations %}
+      <p>{{ entry.paper.affiliations[-1] }}</p>
+    {% endif %}
+  </header>
+
+  <h4>배경</h4>
+  <p>{{ entry.summary.background }}</p>
+
+  <h4>방법</h4>
+  <p>{{ entry.summary.method }}</p>
+
+  <h4>결과</h4>
+  <p>{{ entry.summary.result }}</p>
+
+  <h4>의미</h4>
+  <p>{{ entry.summary.significance }}</p>
+
+  <footer>
+    <small>
+      키워드: {{ entry.filter_result.matched_keywords | join(', ') if entry.filter_result.matched_keywords else '없음' }}
+      <br />
+      판정 근거: {{ entry.filter_result.reason }} (confidence: {{ "%.2f"|format(entry.filter_result.confidence) }})
+    </small>
+  </footer>
+</article>
+{% endfor %}
+{% endblock %}
