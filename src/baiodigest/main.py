@@ -42,18 +42,18 @@ def _target_dates(data_dir: Path, explicit_date: date | None, max_backfill_days:
     if explicit_date is not None:
         return [explicit_date]
 
-    today = date.today()
+    reference_date = date.today()
     existing = _existing_digest_dates(data_dir)
     if not existing:
-        return [today]
+        return [reference_date]
 
     last_collected = existing[-1]
-    if last_collected >= today:
+    if last_collected >= reference_date:
         return []
 
     dates: list[date] = []
     cursor = last_collected + timedelta(days=1)
-    while cursor <= today:
+    while cursor <= reference_date:
         dates.append(cursor)
         cursor += timedelta(days=1)
 
@@ -62,16 +62,21 @@ def _target_dates(data_dir: Path, explicit_date: date | None, max_backfill_days:
     return dates
 
 
-def _fetch_papers(target: date, settings: Settings) -> list[Paper]:
+def _pubmed_query_date(digest_date: date) -> date:
+    return digest_date - timedelta(days=1)
+
+
+def _fetch_papers(target: date, settings: Settings) -> tuple[list[Paper], date]:
+    query_date = _pubmed_query_date(target)
     with PubmedClient(settings) as pubmed:
-        pubmed_papers = pubmed.fetch_papers(target, target)
+        pubmed_papers = pubmed.fetch_papers(query_date, query_date)
     merged = merge_papers([pubmed_papers])
 
     for paper in merged:
         if not paper.date:
-            paper.date = target.isoformat()
+            paper.date = query_date.isoformat()
 
-    return merged
+    return merged, query_date
 
 
 def _write_raw(target: date, papers: list[Paper], data_dir: Path) -> None:
@@ -93,8 +98,13 @@ def _run_pipeline_for_date(target: date, force: bool, fetch_only: bool) -> bool:
         logger.info("Digest already exists for %s; skipping", target.isoformat())
         return False
 
-    papers = _fetch_papers(target, settings)
-    logger.info("Collected %d merged papers for %s", len(papers), target.isoformat())
+    papers, query_date = _fetch_papers(target, settings)
+    logger.info(
+        "Collected %d merged papers for digest_date=%s (pubmed_query_date=%s)",
+        len(papers),
+        target.isoformat(),
+        query_date.isoformat(),
+    )
 
     if fetch_only:
         _write_raw(target, papers, settings.data_dir)

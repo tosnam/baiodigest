@@ -22,7 +22,7 @@ RELEVANCE_PROMPT_TEMPLATE = """당신은 생명과학 논문 큐레이터다.
 요구사항:
 - 키: relevant(boolean), confidence(0~1 float), category(string), reason(string)
 - category는 protein_engineering, metabolic_engineering, bioinformatics, ai_enzyme, other 중 하나
-- reason은 2문장 이하
+- reason은 한국어 2문장 이하
 
 제목:
 {title}

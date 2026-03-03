@@ -23,6 +23,17 @@ class _ValidOllama:
         return self.Decision()
 
 
+class _EnglishReasonOllama:
+    class Decision:
+        relevant = True
+        confidence = 0.82
+        category = "protein_engineering"
+        reason = "This paper has industrial relevance"
+
+    def classify_relevance(self, title: str, abstract: str):
+        return self.Decision()
+
+
 def _paper(title: str, abstract: str, matched_query_names: list[str] | None = None) -> Paper:
     return Paper(
         title=title,
@@ -54,6 +65,7 @@ def test_prefilter_passes_when_no_excluded_keyword() -> None:
     assert result.relevant
     assert result.category == "prefilter"
     assert result.matched_keywords == ["enzyme/protein engineering + AI"]
+    assert "다음 단계" in result.reason
 
 
 def test_prefilter_blocks_excluded_keyword() -> None:
@@ -64,6 +76,7 @@ def test_prefilter_blocks_excluded_keyword() -> None:
 
     assert not result.relevant
     assert result.category == "excluded"
+    assert "제외" in result.reason
 
 
 def test_llm_filter_fail_open_after_parse_errors() -> None:
@@ -78,6 +91,7 @@ def test_llm_filter_fail_open_after_parse_errors() -> None:
     assert prefilter_count == 1
     assert len(passed) == 1
     assert passed[0][1].category == "fallback"
+    assert "누락 방지" in passed[0][1].reason
 
 
 def test_llm_filter_accepts_high_confidence() -> None:
@@ -92,3 +106,17 @@ def test_llm_filter_accepts_high_confidence() -> None:
     assert prefilter_count == 1
     assert len(passed) == 1
     assert passed[0][1].category == "ai_enzyme"
+    assert "관련 논문" in passed[0][1].reason
+
+
+def test_llm_reason_is_forced_to_korean() -> None:
+    settings = Settings()
+    paper = _paper(
+        "Enzyme optimization",
+        "Machine learning is used to optimize enzyme yield.",
+    )
+
+    passed, _ = filter_papers([paper], settings, _EnglishReasonOllama())
+
+    assert len(passed) == 1
+    assert "관련 논문" in passed[0][1].reason

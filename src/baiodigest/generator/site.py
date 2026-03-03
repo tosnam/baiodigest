@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from dataclasses import dataclass
 from pathlib import Path
+import re
 import shutil
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -22,7 +23,9 @@ def _load_digests(data_dir: Path) -> list[DailyDigest]:
     digests: list[DailyDigest] = []
     for path in sorted(data_dir.glob("*.json"), reverse=True):
         try:
-            digests.append(DailyDigest.from_file(path))
+            digest = DailyDigest.from_file(path)
+            _normalize_reasons_for_render(digest)
+            digests.append(digest)
         except Exception:
             continue
     digests.sort(key=lambda item: item.date, reverse=True)
@@ -32,6 +35,27 @@ def _load_digests(data_dir: Path) -> list[DailyDigest]:
 def _write(path: Path, content: str) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     path.write_text(content, encoding="utf-8")
+
+
+def _contains_hangul(text: str) -> bool:
+    return bool(re.search(r"[가-힣]", text))
+
+
+def _normalize_reason(reason: str, relevant: bool) -> str:
+    cleaned = " ".join(reason.split()).strip()
+    if cleaned and _contains_hangul(cleaned):
+        return cleaned
+    if relevant:
+        return "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다."
+    return "산업적 활용 가능성이 낮아 제외했습니다."
+
+
+def _normalize_reasons_for_render(digest: DailyDigest) -> None:
+    for entry in digest.entries:
+        entry.filter_result.reason = _normalize_reason(
+            reason=entry.filter_result.reason,
+            relevant=entry.filter_result.relevant,
+        )
 
 
 def _build_site_url(site_prefix: str, path: str) -> str:

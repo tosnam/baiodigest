@@ -9,11 +9,6 @@
     <h3><a href="{{ entry.paper.url }}" target="_blank" rel="noopener noreferrer">{{ entry.paper.title }}</a></h3>
     <p>
       {{ entry.paper.journal or "Unknown journal" }}
-      {% if entry.paper.source_type == "preprint" %}
-      <strong>[Preprint]</strong>
-      {% else %}
-      <strong>[Published]</strong>
-      {% endif %}
     </p>
     {% if entry.paper.affiliations %}
       <p>{{ entry.paper.affiliations[-1] }}</p>

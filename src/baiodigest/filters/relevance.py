@@ -2,6 +2,7 @@ from __future__ import annotations
 
 from collections.abc import Iterable
 import logging
+import re
 
 from baiodigest.config import Settings
 from baiodigest.models import FilterResult, Paper
@@ -14,6 +15,19 @@ def _contains(text: str, keyword: str) -> bool:
     return keyword.lower() in text
 
 
+def _contains_hangul(text: str) -> bool:
+    return bool(re.search(r"[가-힣]", text))
+
+
+def _ensure_korean_reason(reason: str, *, relevant: bool) -> str:
+    cleaned = " ".join(reason.split()).strip()
+    if cleaned and _contains_hangul(cleaned):
+        return cleaned
+    if relevant:
+        return "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다."
+    return "산업적 활용 가능성이 낮아 제외했습니다."
+
+
 def keyword_filter(paper: Paper, settings: Settings) -> FilterResult:
     haystack = f"{paper.title} {paper.abstract}".lower()
     excluded = [kw for kw in settings.exclude_keywords if _contains(haystack, kw)]
@@ -24,7 +38,7 @@ def keyword_filter(paper: Paper, settings: Settings) -> FilterResult:
             relevant=False,
             confidence=1.0,
             category="excluded",
-            reason=f"Excluded keyword matched: {', '.join(excluded)}",
+            reason=f"제외 키워드가 감지되어 제외했습니다: {', '.join(excluded)}",
             matched_keywords=matched_queries,
         )
 
@@ -32,7 +46,7 @@ def keyword_filter(paper: Paper, settings: Settings) -> FilterResult:
         relevant=True,
         confidence=1.0,
         category="prefilter",
-        reason="Exclude prefilter passed",
+        reason="제외 키워드가 없어 다음 단계로 진행했습니다.",
         matched_keywords=matched_queries,
     )
 
@@ -51,11 +65,12 @@ def llm_relevance_filter(
         try:
             decision = ollama.classify_relevance(paper.title, paper.abstract)
             is_relevant = bool(decision.relevant and decision.confidence >= settings.relevance_threshold)
+            korean_reason = _ensure_korean_reason(decision.reason, relevant=is_relevant)
             return FilterResult(
                 relevant=is_relevant,
                 confidence=decision.confidence,
                 category=decision.category,
-                reason=decision.reason,
+                reason=korean_reason,
                 matched_keywords=keyword_result.matched_keywords,
             )
         except Exception as exc:
@@ -68,9 +83,7 @@ def llm_relevance_filter(
             )
 
     # Fail-open to avoid dropping potentially relevant papers.
-    reason = "LLM JSON parsing failed twice; fail-open applied"
-    if last_error:
-        reason = f"{reason}: {last_error}"
+    reason = "LLM 판정 응답을 해석하지 못해 누락 방지를 위해 포함했습니다."
 
     return FilterResult(
         relevant=True,
