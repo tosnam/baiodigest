@@ -1,0 +1,66 @@
+{
+  "date": "2026-03-04",
+  "entries": [
+    {
+      "paper": {
+        "title": "Structure-Guided Ancestral Evolution of HmfF Yields a Robust Decarboxylase for Terephthalic Acid Degradation.",
+        "abstract": "Enzymatic conversion of poly(ethylene terephthalate) into terephthalic acid (TPA) represents a major frontier in environmental biotechnology, yet downstream TPA biotransformation remains constrained by dioxygenases, and no natural TPA decarboxylase has been reported. Here, we combine ancestral sequence reconstruction with structure-guided evolution to engineer HmfF, a 2,5-furandicarboxylic acid decarboxylase, yielding TPA decarboxylase activity. Guided by phylogenetic and structural analyses, 17 ancestral variants were reconstructed, among which HmfF_N1 exhibits exceptional thermostability with Tm over 86 °C and enhances prenylated flavin mononucleotide (prFMN) cofactor binding. Substrate profiling across furandicarboxylic acids, terephthalic acid, and hydroxybenzoic acids shows that HmfF_N1 catalyzes decarboxylation with superior efficiency toward TPA. Relative to the reported enzyme PtHmfF from Pelotomaculum thermopropionicum, HmfF_N1 harbors 42 distal substitutions, and molecular dynamics simulations reveal that HmfF_N1 stabilizes both the prFMN cofactor and the TPA substrate. This study demonstrates that integrating structural insights into ancestral evolution enables the generation of robust enzymes, providing a promising biocatalyst for sustainable plastic utilization.",
+        "authors": [
+          "Wang Y",
+          "Wang M",
+          "Li X",
+          "Che X",
+          "Cao X",
+          "Ren J",
+          "Feng Y",
+          "Xue S"
+        ],
+        "affiliations": [
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian, Liaoning 116024, China."
+        ],
+        "doi": "10.1021/acs.jafc.5c14497",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41773466/",
+        "category": null,
+        "date": "2026-03-03",
+        "mesh_terms": [],
+        "source_id": "41773466",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "TPA 분해 효소 개발로 화학 산업에서 플라스틱 재활용 기술에 활용 가능. 구조 기반 단백질 공학 기법 적용으로 효소 안정성 향상 기술 제공.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "폴리에틸렌테레포탈레이트(PEt)를 테레포탈산(TPA)으로 전환하는 효소 반응은 환경생물기술의 주요 과제이지만, TPA의 생물변환은 디옥시젠화 효소에 의존하며, 자연에서 TPA 탈카복실화 효소는 보고되지 않았다.",
+        "method": "종파학적 및 구조 분석을 기반으로 17개의 조상 유전자 변이를 재구성하고, HmfF_N1은 열안정성(thermostability)과 프레니릴화 플라빈 단일핵苷산(prFMN) 공인자 결합을 향상시켰다.",
+        "result": "HmfF_N1은 TPA에 대해 우수한 효율성을 보이며, PtHmfF 대비 42개의 원격 대체 돌연변이를 지니고, 분자역학 시뮬레이션에서 공인자 및 기질 안정화를 유도했다.",
+        "significance": "구조적 통찰을 통합한 조상 진화 접근법은 견고한 효소 개발로 이어져, 지속 가능한 플라스틱 활용을 위한 유망 생물촉매로 활용 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-03T22:01:36.117361+00:00"
+}
