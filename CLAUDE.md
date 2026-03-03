@@ -1,6 +1,6 @@
 # baioDigest - 생명과학 논문 다이제스트 서비스
 
-PubMed/bioRxiv에서 생명과학 논문을 매일 수집하고, 로컬 LLM(Ollama + Qwen3:8b)으로 한국어 요약을 생성하여 GitHub Pages에 정적 사이트로 배포하는 자동화 서비스.
+PubMed에서 생명과학 논문을 매일 수집하고, 로컬 LLM(Ollama + Qwen3:8b)으로 한국어 요약을 생성하여 GitHub Pages에 정적 사이트로 배포하는 자동화 서비스.
 
 ## 관심 분야
 - **주제**: 단백질 공학, 대사공학, 생물정보학, AI 기반 효소 개량
@@ -12,12 +12,12 @@ PubMed/bioRxiv에서 생명과학 논문을 매일 수집하고, 로컬 LLM(Olla
 | 영역 | 기술 | 비고 |
 |------|------|------|
 | 언어 | Python 3.14 | uv로 패키지 관리 |
-| 논문 소스 | PubMed E-utilities, bioRxiv Content API | |
+| 논문 소스 | PubMed E-utilities | queries.toml로 5개 불리언 쿼리 관리 |
 | 요약 엔진 | Ollama (localhost:11434) + qwen3:8b | `/no_think` 플래그로 빠른 판정 |
 | 사이트 생성 | Jinja2 템플릿 → 정적 HTML | Hugo/Jekyll 대신 단일 스택 |
 | 스타일링 | Pico CSS (CDN) | 시맨틱 HTML, 다크모드 자동 |
 | 배포 | GitHub Pages (docs/) | 로컬 실행 후 git push |
-| 스케줄링 | macOS launchd | 매일 05:00 |
+| 스케줄링 | macOS launchd | 매일 07:00 |
 
 ## 프로젝트 구조
 
@@ -25,14 +25,16 @@ PubMed/bioRxiv에서 생명과학 논문을 매일 수집하고, 로컬 LLM(Olla
 baiodigest/
 ├── CLAUDE.md
 ├── pyproject.toml
+├── queries.toml             # PubMed 불리언 쿼리 정의 (5개)
 ├── src/baiodigest/
 │   ├── main.py              # CLI 진입점, 파이프라인 오케스트레이터
 │   ├── models.py            # Paper, DailyDigest 데이터 모델
+│   ├── config.py            # SearchQuery dataclass, queries.toml 로드
 │   ├── fetchers/
-│   │   ├── pubmed.py        # PubMed E-utilities 클라이언트
-│   │   └── biorxiv.py       # bioRxiv API 클라이언트
+│   │   └── pubmed.py        # PubMed E-utilities 클라이언트
 │   ├── filters/
-│   │   └── relevance.py     # 2단계 필터링 (키워드 → LLM 판정)
+│   │   ├── __init__.py      # 중복제거/병합 유틸리티
+│   │   └── relevance.py     # 제외 키워드 필터 + LLM 관련성 판정
 │   ├── summarizer/
 │   │   └── ollama.py        # Ollama 요약 클라이언트
 │   └── generator/
@@ -47,13 +49,12 @@ baiodigest/
 ## 데이터 파이프라인
 
 ```
-PubMed ──┐
-         ├→ 수집 → 중복제거(DOI + title 정규화 해시) → 키워드 필터링 → LLM 관련성 판정 → LLM 요약 → HTML 생성 → git push
-bioRxiv ─┘
+PubMed (5개 정밀 쿼리) → 수집 → 중복제거(PMID → DOI → title hash) → 제외 키워드 필터 → LLM 관련성 판정 → LLM 요약 → HTML 생성 → git push
 ```
 
 ### 필터링 (2단계)
-1. **키워드 규칙** (비용 0): 제목+초록에서 키워드 매칭, 수백편 → 50편 이하
+- **0단계 (API 수준)**: queries.toml의 불리언 쿼리가 PubMed API esearch 시점에 범위를 한정 — 관련 없는 논문 대부분 제거
+1. **제외 키워드 필터 (exclude-only)** (비용 0): clinical trial, case report 등 임상/역학 논문 제목+초록 매칭으로 제외, 수백편 → 50편 이하
 2. **LLM 관련성 판정** (Qwen3): JSON 응답으로 relevant/confidence/category 반환, → 20편 이하
 
 ### 요약
@@ -70,7 +71,7 @@ bioRxiv ─┘
 - 방법(본문)
 - 결과(본문)
 - 의미(본문)
-- 매칭된 키워드 리스트(각주)
+- 매칭된 검색 쿼리 이름 리스트(각주)
 - LLM 관련성 판정 근거(각주)
 
 ## CLI 명령어
@@ -81,6 +82,7 @@ uv run python -m baiodigest.main                 # 전체 파이프라인
 uv run python -m baiodigest.main --fetch-only    # 수집만
 uv run python -m baiodigest.main --generate-only # HTML 생성만
 uv run python -m baiodigest.main --date 2026-03-01  # 특정 날짜
+uv run python -m baiodigest.main --force         # 기존 데이터 덮어쓰기
 uv run pytest                                    # 테스트
 ```
 
@@ -98,14 +100,31 @@ uv run pytest                                    # 테스트
 - API 키 없이 3 req/sec, 키 등록 시 10 req/sec
 - https://www.ncbi.nlm.nih.gov/books/NBK25497/
 
-**bioRxiv Content API**
-- `GET https://api.biorxiv.org/details/biorxiv/{start_date}/{end_date}/{cursor}`
-- 100건/페이지, cursor 페이지네이션
-- category 필드로 1차 필터: molecular biology, biochemistry, bioinformatics, synthetic biology, bioengineering, systems biology
-
 **Ollama**
 - `POST http://localhost:11434/api/generate`
 - 모델: qwen3:8b, `/no_think` 플래그로 thinking 비활성화
+
+## queries.toml — 검색 쿼리 관리
+
+TOML 포맷으로 PubMed 불리언 쿼리를 정의한다. `config.py`의 `_load_pubmed_queries()`가 로드 시 유효성을 검증한다.
+
+```toml
+[[queries]]
+name = "protein_engineering"          # 쿼리 이름 (HTML 각주에 표시)
+terms = "(protein engineering[MeSH] OR directed evolution[Title/Abstract]) AND enzyme[Title/Abstract]"
+pubmed_filter = "journal article[pt]" # 추가 PubMed 필터 (선택)
+```
+
+- `name`: 필수. 영문 snake_case. HTML 각주의 "매칭된 검색 쿼리 이름"으로 표시.
+- `terms`: 필수. PubMed 불리언 쿼리 문자열.
+- `pubmed_filter`: 선택. 발표 유형 등 추가 필터.
+- `config.py`의 `SearchQuery` dataclass로 파싱되며, `name`/`terms` 누락 시 `ValueError` 발생.
+
+## 수집 날짜 로직
+
+`main.py`의 `_pubmed_query_date(digest_date)`는 `digest_date - 1일`을 반환한다.
+즉, 다이제스트 생성일(D) 기준 전일(D-1)의 PubMed 출판일 논문을 검색한다.
+예: 2026-03-03에 실행 → 2026-03-02 출판 논문 수집.
 
 ## 배포
 - GitHub Pages: Settings > Pages > Source: Deploy from branch > /docs
