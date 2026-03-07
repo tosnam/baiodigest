@@ -1,0 +1,109 @@
+{
+  "date": "2026-03-08",
+  "entries": [
+    {
+      "paper": {
+        "title": "Thermostability engineering of microbial transglutaminase using artificial intelligence and investigation of its underlying mechanisms.",
+        "abstract": "The application of artificial intelligence in enzyme molecular evolution has emerged as a research hotspot. However, applying machine learning to enzyme molecular modification still presents many challenges. In particular, accelerating the integration of machine learning and rational design is one of the important development trends in the field of protein engineering. In this study, we experimentally validated key amino acid mutations (E164L, E164P, S199E, and S199Q) predicted by a lab-developed sparse convolutional neural network to enhance the thermostability of microbial transglutaminase. We further investigated the molecular basis of this enhanced stability using molecular dynamics simulations. Compared with the wild type MTG, the thermal stability of the four mutants was significantly improved, and S199E showed the most remarkable improvement. At 60 °C and 50 °C, the half-lives of S199E were 2.3 times and 5.8 times those of the wild type, respectively, and the enzyme activity was increased by 1.4-fold. Molecular dynamics simulations showed that the binding free energy of S199E was - 28.68 kcal/mol, slightly lower than that of the wild type (- 27.96 kcal/mol). The root mean square deviation and root mean square fluctuation of the S199E mutant were 0.25 nm and 0.0566 nm, respectively, showing no significant changes compared with the wild type. LigPlot analysis indicated that E199 formed one hydrogen bonds with A309 and three salt bridges with H201, which might enhance local stability. These findings indicate that the improved thermal stability of the S199E mutant arises from enhanced local structural stability, not from major changes in overall protein structure, and accounts for its slightly lower binding free energy compared to the wild type.",
+        "authors": [
+          "Song X",
+          "Han K",
+          "Xu P",
+          "Zheng J",
+          "Cai J"
+        ],
+        "affiliations": [
+          "College of Pharmacy, Anhui Institute of Medicine, Hefei, 230061, China. sxp20081012@sina.com.",
+          "Institutes of Physical Science and Information Technology, Anhui University, Hefei, 230601, China.",
+          "Institutes of Physical Science and Information Technology, Anhui University, Hefei, 230601, China.",
+          "College of Pharmacy, Anhui Institute of Medicine, Hefei, 230061, China.",
+          "College of Pharmacy, Anhui Institute of Medicine, Hefei, 230061, China."
+        ],
+        "doi": "10.1186/s40643-026-01024-5",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioresources and bioprocessing",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41793568/",
+        "category": null,
+        "date": "2026-03-07",
+        "mesh_terms": [],
+        "source_id": "41793568",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "미생물 트랜스글루타민아제의 열안정성 향상은 식품 산업에서 고온 처리 조건에서 효소 활성을 유지하는 데 활용 가능합니다. AI 기반 단백질 공학 기법은 효소 개선에 새로운 접근 방식을 제공합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인공지능이 효소 분자 진화에 적용되며 연구 열풍이 형성되고 있지만, 머신러닝을 효소 변형에 활용하는 데는 여전히 많은 도전 과제가 존재한다. (machine learning)",
+        "method": "실험실에서 개발한 희소 컨볼루션 신경망을 통해 열안정성(thermostability)을 증가시키는 아미노산 돌연변이(E164L, E164P, S199E, S199Q)를 예측하고, 분자 역학 시뮬레이션을 통해 그 기전을 분석하였다.",
+        "result": "S199E 돌연변이는 60°C에서 2.3배, 50°C에서 5.8배의 반감기 향상과 1.4배의 효소 활성 증가를 보였으며, 분자 역학 시뮬레이션은 결합 자유 에너지와 구조적 안정성 변화를 확인하였다.",
+        "significance": "S199E의 열안정성 향상은 전반적인 단백질 구조 변화 없이 지역적 구조 안정성 향상에 기인하며, 이는 효소 공학에서 새로운 설계 전략으로 활용될 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Harnessing bacterial power and omics technologies for sustainable plastic waste biodegradation.",
+        "abstract": "Plastic pollution constitutes a critical environmental concern of this era, with synthetic polymers, i.e., polyethylene (PE), polyethylene terephthalate (PET), polystyrene (PS), and polyurethane (PU), accumulating in terrestrial and aquatic ecosystems at alarming rates. One of the promising solutions to this worldwide problem is microbial plastic degradation, particularly by bacteria that can convert polymeric materials into less toxic compounds. With an emphasis on enzymatic mechanisms, critical environmental and biochemical factors influencing degradation, and the wide variety of bacteria responsible for breaking down synthetic polymers, this review focuses on the enzymatic and genetic aspects underlying bacterial plastic degradation, highlighting key enzymes such as PETase, METase, esterase, and oxidoreductase, as well as representative plastic-degrading bacteria i.e. Thermobifida, Ideonella, Bacillus, Agromyces, Pseudomonas, Schlegelella species. The significance of multi-omics tools, such as transcriptomics, proteomics, metabolomics, and genomics was demonstrated here in deepening our understanding of microbial plastic degradation without depending on pure culture. It explores the key genes and metabolic pathways that facilitate this process. Moreover, how advanced biotechnological techniques and artificial intelligence (AI) can participate in plastic biodegradation through enzyme engineering, activity-enhancing mutation design, predictive modeling, and omics data analysis was illustrated. Furthermore, this review underscores the necessity for integrative and interdisciplinary approaches to effectively harness bacterial metabolism for long-term reduction of plastic pollution. Also, it outlines future research directions and technological priorities for translating bacterial plastic degradation into practical and sustainable remediation solutions.",
+        "authors": [
+          "Henawy AR",
+          "Ismail SM",
+          "Gharib S",
+          "Elarabi NI",
+          "Abdelhadi AA",
+          "Halema AA"
+        ],
+        "affiliations": [
+          "Department of Microbiology, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt.",
+          "Biotechnology Program, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt.",
+          "Biotechnology Program, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt.",
+          "Department of Genetics, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt.",
+          "Department of Genetics, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt.",
+          "Department of Genetics, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt. assma.ahmed@agr.cu.edu.eg."
+        ],
+        "doi": "10.1007/s10532-026-10258-1",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biodegradation",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41793537/",
+        "category": null,
+        "date": "2026-03-07",
+        "mesh_terms": [],
+        "source_id": "41793537",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "플라스틱 분해 효소 엔지니어링과 AI 기반 예측 모델링이 화학 산업의 폐기물 처리에 활용 가능합니다. 산업용 효소 최적화 기술이 직접적 응용 가치가 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "합성 고분자(PE, PET, PS, PU)가 지구 환경에 비상한 속도로 축적되며, 미생물이 플라스틱을 분해하는 잠재력이 주목받고 있다(thermostability). 이 과정에서 미생물의 효소 기전과 환경적 요인이 중요한 역할을 한다.",
+        "method": "전체 유전자 조사(transcriptomics), 단백질 분석(proteomics), 대사 경로 연구(metabolomics), 그리고 유전자 분석(genomics)을 통한 다-omics 접근법을 활용하였다. 인공지능(AI) 기반 예측 모델링과 효소 공학 기술도 적용되었다.",
+        "result": "PETase, METase, 에스터라제, 산화환원효소 등 주요 효소와 Thermobifida, Ideonella, Bacillus 등 분해균이 규명되었으며, 다-omics 데이터가 미생물 분해 메커니즘을 심층적으로 해석하였다.",
+        "significance": "교차 분야 접근법이 장기적인 플라스틱 오염 감소에 필수적임을 강조하며, 효소 변형 설계와 기술 혁신을 통한 실용화 전략을 제시하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-07T22:19:00.271449+00:00"
+}
