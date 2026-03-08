@@ -171,9 +171,10 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert "Bio and AI research digest" in index_html
     assert 'class="site-shell"' in index_html
     assert 'class="hero-summary"' in index_html
-    assert 'class="theme-toggle"' in index_html
     assert 'src="/baiodigest/static/theme.js"' in index_html
     assert "baiodigest-theme" in index_html
+    assert 'data-theme-toggle' in index_html
+    assert 'class="site-footer-inner"' in index_html
     assert "Today's Digest" in index_html
     assert "2026-03-08 기준으로 선별한 논문 0편을 정리했습니다." in index_html
     assert "차분한 읽기 흐름으로" not in index_html
