@@ -1,4 +1,10 @@
-from baiodigest.models import NewsletterIssue, NewsletterItem, NewsletterSection, NewsletterSummary
+from baiodigest.models import (
+    NewsletterArticleBriefing,
+    NewsletterIssue,
+    NewsletterItem,
+    NewsletterSection,
+    NewsletterSummary,
+)
 
 
 def test_newsletter_issue_round_trips_json() -> None:
@@ -31,6 +37,13 @@ def test_newsletter_issue_round_trips_json() -> None:
             highlights=["Story A summary"],
             significance="importance",
             covered_item_titles=["Story A"],
+            article_briefings=[
+                NewsletterArticleBriefing(
+                    title="Story A",
+                    url="https://example.com/a",
+                    briefing_ko="스토리 A 한글 브리핑",
+                )
+            ],
         ),
         raw_metadata={"from": "Nature Briefing <news@nature.com>"},
     )
@@ -41,3 +54,4 @@ def test_newsletter_issue_round_trips_json() -> None:
     assert loaded.sections[0].items[0].title == "Story A"
     assert loaded.summary is not None
     assert loaded.summary.covered_item_titles == ["Story A"]
+    assert loaded.summary.article_briefings[0].briefing_ko == "스토리 A 한글 브리핑"

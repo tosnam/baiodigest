@@ -146,9 +146,16 @@ class NewsletterSummary:
     highlights: list[str] = field(default_factory=list)
     significance: str = ""
     covered_item_titles: list[str] = field(default_factory=list)
+    article_briefings: list["NewsletterArticleBriefing"] = field(default_factory=list)
 
     def to_dict(self) -> dict:
-        return asdict(self)
+        return {
+            "overview": self.overview,
+            "highlights": list(self.highlights),
+            "significance": self.significance,
+            "covered_item_titles": list(self.covered_item_titles),
+            "article_briefings": [item.to_dict() for item in self.article_briefings],
+        }
 
     @classmethod
     def from_dict(cls, data: dict) -> "NewsletterSummary":
@@ -157,6 +164,27 @@ class NewsletterSummary:
             highlights=list(data.get("highlights", [])),
             significance=data.get("significance", ""),
             covered_item_titles=list(data.get("covered_item_titles", [])),
+            article_briefings=[
+                NewsletterArticleBriefing.from_dict(item) for item in data.get("article_briefings", [])
+            ],
+        )
+
+
+@dataclass(slots=True)
+class NewsletterArticleBriefing:
+    title: str
+    url: str
+    briefing_ko: str
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "NewsletterArticleBriefing":
+        return cls(
+            title=data.get("title", ""),
+            url=data.get("url", ""),
+            briefing_ko=data.get("briefing_ko", ""),
         )
 
 
@@ -177,6 +205,37 @@ class NewsletterIssue:
     raw_metadata: dict[str, str] = field(default_factory=dict)
     schema_version: str = DEFAULT_SCHEMA_VERSION
     generated_at: str = field(default_factory=lambda: datetime.now(UTC).isoformat())
+
+    @property
+    def display_title(self) -> str:
+        sender = self.raw_metadata.get("from", "").strip()
+        if sender:
+            sender_name = sender.split("<", 1)[0].strip().strip('"')
+            if sender_name:
+                return sender_name
+        if self.newsletter_name.strip():
+            return self.newsletter_name.strip()
+        return self.title.strip()
+
+    @property
+    def article_briefings_by_title(self) -> dict[str, NewsletterArticleBriefing]:
+        if not self.summary:
+            return {}
+        return {item.title: item for item in self.summary.article_briefings if item.title}
+
+    @property
+    def preview_text(self) -> str:
+        if self.summary:
+            if self.summary.overview.strip():
+                return self.summary.overview.strip()
+            for briefing in self.summary.article_briefings:
+                if briefing.briefing_ko.strip():
+                    return briefing.briefing_ko.strip()
+        for section in self.sections:
+            for item in section.items:
+                if item.snippet.strip():
+                    return item.snippet.strip()
+        return ""
 
     def to_dict(self) -> dict:
         return {

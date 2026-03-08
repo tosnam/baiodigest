@@ -113,6 +113,14 @@ def fetch_newsletters(settings: Settings, summarize: bool = True) -> int:
                     continue
 
                 message = get_message(service, message_id)
+                try:
+                    message_internal_date_ms = int(message.get("internalDate", "0"))
+                except ValueError:
+                    message_internal_date_ms = 0
+
+                if message_internal_date_ms <= checkpoint.last_internal_date_ms:
+                    continue
+
                 issue = _parse_issue_from_message(label.source, message)
                 if summarize:
                     issue = _summarize_issue(issue, ollama)
@@ -122,10 +130,7 @@ def fetch_newsletters(settings: Settings, summarize: bool = True) -> int:
                 save_issue(issue, settings.newsletter_data_dir)
                 processed += 1
 
-                try:
-                    latest_internal_date_ms = max(latest_internal_date_ms, int(message.get("internalDate", "0")))
-                except ValueError:
-                    pass
+                latest_internal_date_ms = max(latest_internal_date_ms, message_internal_date_ms)
 
             save_checkpoint(
                 _checkpoint_path(settings.newsletter_data_dir, label.source),

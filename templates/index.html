@@ -2,7 +2,7 @@
 {% block content %}
 <section class="hero-summary">
   <p class="eyebrow">Latest issue</p>
-  <h2>Today's Digest</h2>
+  <h2>Research Articles</h2>
   {% if latest %}
     <p class="hero-copy">{{ latest.date }} 기준으로 선별한 논문 {{ latest.entries|length }}편을 정리했습니다.</p>
     <p><a class="primary-link" href="{{ url_for('daily/' ~ latest.date ~ '.html') }}">View</a></p>
@@ -14,20 +14,25 @@
 <section class="digest-list">
   <div class="section-heading">
     <p class="eyebrow">Newsletter briefings</p>
-    <h3>Newsletter Briefings</h3>
+    <h2>Newsletter Briefings</h2>
   </div>
   <div class="digest-items">
-    {% for source, issues in newsletter_groups.items() %}
-      {% set latest_issue = latest_newsletters[source] %}
+    {% for issue in newsletter_issues %}
       <article class="digest-row">
-        <strong>{{ source.title() }}</strong>
-        {% if latest_issue %}
-          <a href="{{ url_for('newsletters/' ~ source ~ '/' ~ latest_issue.message_id ~ '.html') }}">{{ latest_issue.title }}</a>
-          <span>최근 {{ issues|length }}건</span>
-        {% else %}
-          <span>아직 수집된 뉴스레터가 없습니다.</span>
-        {% endif %}
-        <a href="{{ url_for('newsletters/' ~ source ~ '.html') }}">View all</a>
+        <div class="digest-row-copy">
+          <p class="digest-row-meta">{{ issue.published_at or issue.received_at }}</p>
+          <h3><a href="{{ url_for('newsletters/' ~ issue.source ~ '/' ~ issue.message_id ~ '.html') }}">{{ issue.display_title }}</a></h3>
+          {% if issue.preview_text %}
+          <p class="digest-row-preview">{{ issue.preview_text }}</p>
+          {% endif %}
+        </div>
+        <a class="primary-link" href="{{ url_for('newsletters/' ~ issue.source ~ '/' ~ issue.message_id ~ '.html') }}">View</a>
+      </article>
+    {% else %}
+      <article class="digest-row">
+        <div class="digest-row-copy">
+          <h3>아직 수집된 뉴스레터가 없습니다.</h3>
+        </div>
       </article>
     {% endfor %}
   </div>

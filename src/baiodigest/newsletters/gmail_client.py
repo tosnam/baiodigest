@@ -69,16 +69,21 @@ def build_gmail_service(credentials_file: Path, token_file: Path) -> Any:
     return build("gmail", "v1", credentials=creds)
 
 
+def resolve_label_id(service: Any, label_name: str) -> str:
+    response = service.users().labels().list(userId="me").execute()
+    for item in response.get("labels", []):
+        if item.get("name") == label_name and item.get("id"):
+            return str(item["id"])
+    raise ValueError(f"Gmail label not found: {label_name}")
+
+
 def list_labeled_message_ids(service: Any, label: str, after_ms: int | None = None) -> list[str]:
-    query = None
-    if after_ms is not None:
-        after_seconds = max(after_ms // 1000, 0)
-        query = f"after:{after_seconds}"
+    label_id = resolve_label_id(service, label)
 
     response = (
         service.users()
         .messages()
-        .list(userId="me", labelIds=[label], q=query, maxResults=100)
+        .list(userId="me", labelIds=[label_id], q=None, maxResults=100)
         .execute()
     )
     return [item["id"] for item in response.get("messages", []) if "id" in item]

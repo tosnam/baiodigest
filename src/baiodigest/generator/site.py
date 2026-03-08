@@ -24,6 +24,10 @@ class SiteContext:
         return self.digests[0] if self.digests else None
 
     @property
+    def recent_newsletter_issues(self) -> list[NewsletterIssue]:
+        return self.newsletter_issues
+
+    @property
     def newsletter_groups(self) -> dict[str, list[NewsletterIssue]]:
         groups = {"nature": [], "science": []}
         for issue in self.newsletter_issues:
@@ -121,6 +125,14 @@ def _normalize_reasons_for_render(digest: DailyDigest) -> None:
             reason=entry.filter_result.reason,
             relevant=entry.filter_result.relevant,
         )
+
+
+def _source_display_name(source: str) -> str:
+    if source == "science":
+        return "사이언스"
+    if source == "nature":
+        return "Nature"
+    return source.title()
 
 
 def _build_site_url(site_prefix: str, path: str) -> str:
@@ -231,6 +243,7 @@ class StaticSiteGenerator:
             lstrip_blocks=True,
         )
         self.env.globals["url_for"] = lambda path: _build_site_url(self.site_prefix, path)
+        self.env.globals["source_display_name"] = _source_display_name
 
     def generate(self) -> None:
         digests = _load_digests(self.data_dir)
@@ -254,8 +267,7 @@ class StaticSiteGenerator:
         output = template.render(
             latest=context.latest,
             digests=context.digests,
-            newsletter_groups=context.newsletter_groups,
-            latest_newsletters=context.latest_newsletters,
+            newsletter_issues=context.recent_newsletter_issues,
             title="baioDigest",
         )
         _write(self.docs_dir / "index.html", output)
@@ -318,7 +330,7 @@ class StaticSiteGenerator:
                     newsletters_dir / source / f"{issue.message_id}.html",
                     issue_template.render(
                         issue=issue,
-                        title=issue.title,
+                        title=issue.display_title,
                     ),
                 )
 

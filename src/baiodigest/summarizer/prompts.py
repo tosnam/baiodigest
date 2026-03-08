@@ -39,8 +39,11 @@ Requirements:
 - Cover every main article detected in the newsletter
 - Do not omit any primary story, even when multiple sections exist
 - Preserve section context when possible
-- Keys: overview(string), highlights(array of strings), significance(string), covered_item_titles(array of strings)
+- Write 1-2 sentences per article briefing
+- Keys: overview(string), covered_item_titles(array of strings), article_briefings(array of objects)
 - `covered_item_titles` must list every main article title you actually covered
+- `article_briefings` must include one object per main article
+- Each article briefing object must contain: title(string), url(string), briefing_ko(string)
 
 Newsletter:
 {newsletter_name}

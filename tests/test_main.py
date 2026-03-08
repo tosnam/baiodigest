@@ -1,6 +1,7 @@
 from datetime import date
 
 from baiodigest import main as main_module
+from baiodigest.config import Settings
 
 
 class _FixedDate(date):
@@ -42,3 +43,23 @@ def test_target_dates_backfills_until_today_with_limit(monkeypatch, tmp_path) ->
 def test_pubmed_query_date_is_previous_day() -> None:
     assert main_module._pubmed_query_date(date(2026, 3, 4)) == date(2026, 3, 3)
     assert main_module._pubmed_query_date(date(2026, 1, 1)) == date(2025, 12, 31)
+
+
+def test_site_prefix_keeps_project_prefix_for_docs_output(monkeypatch, tmp_path) -> None:
+    monkeypatch.setenv("BAIODIGEST_ROOT", str(tmp_path))
+    (tmp_path / "queries.toml").write_text('[[queries]]\nname = "q"\nterms = "t"\n', encoding="utf-8")
+
+    settings = Settings()
+    settings.docs_dir = tmp_path / "docs"
+
+    assert main_module._site_prefix_for_output(settings) == "/baiodigest"
+
+
+def test_site_prefix_uses_root_prefix_for_preview_output(monkeypatch, tmp_path) -> None:
+    monkeypatch.setenv("BAIODIGEST_ROOT", str(tmp_path))
+    (tmp_path / "queries.toml").write_text('[[queries]]\nname = "q"\nterms = "t"\n', encoding="utf-8")
+
+    settings = Settings()
+    settings.docs_dir = tmp_path / "preview"
+
+    assert main_module._site_prefix_for_output(settings) == ""

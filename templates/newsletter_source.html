@@ -2,20 +2,26 @@
 {% block content %}
 <section class="hero-summary">
   <p class="eyebrow">Newsletter source</p>
-  <h2>{{ source.title() }}</h2>
-  <p class="hero-copy">{{ source.title() }} 뉴스레터 최근 이슈 목록입니다.</p>
+  <h2>{{ source_display_name(source) }}</h2>
+  <p class="hero-copy">{{ source_display_name(source) }} 뉴스레터 최근 이슈 목록입니다.</p>
 </section>
 
 <section class="digest-list">
   <div class="section-heading">
     <p class="eyebrow">Recent issues</p>
-    <h3>{{ source.title() }} archive</h3>
+    <h3>{{ source_display_name(source) }} archive</h3>
   </div>
   <ul class="digest-items">
     {% for issue in issues %}
       <li class="digest-row">
-        <a href="{{ url_for('newsletters/' ~ source ~ '/' ~ issue.message_id ~ '.html') }}">{{ issue.title }}</a>
-        <span>{{ issue.published_at or issue.received_at }}</span>
+        <div class="digest-row-copy">
+          <p class="digest-row-meta">{{ issue.published_at or issue.received_at }}</p>
+          <h3><a href="{{ url_for('newsletters/' ~ source ~ '/' ~ issue.message_id ~ '.html') }}">{{ issue.display_title }}</a></h3>
+          {% if issue.preview_text %}
+          <p class="digest-row-preview">{{ issue.preview_text }}</p>
+          {% endif %}
+        </div>
+        <a class="primary-link" href="{{ url_for('newsletters/' ~ source ~ '/' ~ issue.message_id ~ '.html') }}">View</a>
       </li>
     {% endfor %}
   </ul>

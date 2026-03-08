@@ -66,6 +66,12 @@ def _pubmed_query_date(digest_date: date) -> date:
     return digest_date - timedelta(days=1)
 
 
+def _site_prefix_for_output(settings: Settings) -> str:
+    if settings.docs_dir.name == "preview":
+        return ""
+    return settings.site_prefix
+
+
 def _fetch_papers(target: date, settings: Settings) -> tuple[list[Paper], date]:
     query_date = _pubmed_query_date(target)
     with PubmedClient(settings) as pubmed:
@@ -152,7 +158,7 @@ def _generate_site() -> None:
         static_dir=settings.static_dir,
         data_dir=settings.data_dir,
         docs_dir=settings.docs_dir,
-        site_prefix=settings.site_prefix,
+        site_prefix=_site_prefix_for_output(settings),
         queries=settings.pubmed_queries,
     )
     generator.generate()

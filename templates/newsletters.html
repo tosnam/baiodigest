@@ -3,7 +3,7 @@
 <section class="hero-summary">
   <p class="eyebrow">Briefings hub</p>
   <h2>Newsletters</h2>
-  <p class="hero-copy">Nature와 Science 뉴스레터를 별도 섹션으로 모아 보여줍니다.</p>
+  <p class="hero-copy">Nature와 사이언스 뉴스레터를 별도 섹션으로 모아 보여줍니다.</p>
 </section>
 
 <section class="digest-list">
@@ -15,14 +15,16 @@
     {% for source, issues in newsletter_groups.items() %}
       {% set latest_issue = latest_newsletters[source] %}
       <article class="digest-row">
-        <strong>{{ source.title() }}</strong>
+        <div class="digest-row-copy">
+          <p class="digest-row-meta">{{ source_display_name(source) }}</p>
         {% if latest_issue %}
-          <a href="{{ url_for('newsletters/' ~ source ~ '/' ~ latest_issue.message_id ~ '.html') }}">{{ latest_issue.title }}</a>
-          <span>최근 {{ issues|length }}건</span>
+          <h3><a href="{{ url_for('newsletters/' ~ source ~ '/' ~ latest_issue.message_id ~ '.html') }}">{{ latest_issue.display_title }}</a></h3>
+          <p class="digest-row-preview">최근 {{ issues|length }}건</p>
         {% else %}
-          <span>아직 수집된 뉴스레터가 없습니다.</span>
+          <h3>아직 수집된 뉴스레터가 없습니다.</h3>
         {% endif %}
-        <a href="{{ url_for('newsletters/' ~ source ~ '.html') }}">Source page</a>
+        </div>
+        <a class="primary-link" href="{{ url_for('newsletters/' ~ source ~ '.html') }}">View</a>
       </article>
     {% endfor %}
   </div>
