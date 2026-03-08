@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="hero-summary">
+  <p class="eyebrow">Query reference</p>
+  <h2>Search Queries</h2>
+  <p class="hero-copy">현재 `queries.toml`에 등록된 PubMed 검색식을 문서형으로 정리한 페이지입니다.</p>
+</section>
+
+<section class="query-list" aria-label="Configured search queries">
+  {% for query in queries %}
+    <article class="query-card">
+      <div class="section-heading">
+        <p class="eyebrow">Query {{ loop.index }}</p>
+        <h3>{{ query.name }}</h3>
+      </div>
+      <dl class="query-meta">
+        <dt>Name</dt>
+        <dd>{{ query.name }}</dd>
+        <dt>Search terms</dt>
+        <dd><pre class="query-terms"><code>{{ query.terms }}</code></pre></dd>
+        {% if query.pubmed_filter %}
+          <dt>PubMed filter</dt>
+          <dd><pre class="query-terms"><code>{{ query.pubmed_filter }}</code></pre></dd>
+        {% endif %}
+      </dl>
+    </article>
+  {% else %}
+    <article class="query-card">
+      <p class="hero-copy">등록된 검색식이 없습니다.</p>
+    </article>
+  {% endfor %}
+</section>
+{% endblock %}

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Queries | baioDigest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="hero-summary">
+  <p class="eyebrow">Query reference</p>
+  <h2>Search Queries</h2>
+  <p class="hero-copy">현재 `queries.toml`에 등록된 PubMed 검색식을 문서형으로 정리한 페이지입니다.</p>
+</section>
+
+<section class="query-list" aria-label="Configured search queries">
+    <article class="query-card">
+      <div class="section-heading">
+        <p class="eyebrow">Query 1</p>
+        <h3>enzyme/protein engineering + AI</h3>
+      </div>
+      <dl class="query-meta">
+        <dt>Name</dt>
+        <dd>enzyme/protein engineering + AI</dd>
+        <dt>Search terms</dt>
+        <dd><pre class="query-terms"><code>(&#34;enzyme engineering&#34; OR &#34;protein engineering&#34;) AND (&#34;bioinformatics&#34; OR &#34;machine learning&#34; OR &#34;deep learning&#34; OR &#34;artificial intelligence&#34;)</code></pre></dd>
+      </dl>
+    </article>
+    <article class="query-card">
+      <div class="section-heading">
+        <p class="eyebrow">Query 2</p>
+        <h3>metabolic engineering + AI</h3>
+      </div>
+      <dl class="query-meta">
+        <dt>Name</dt>
+        <dd>metabolic engineering + AI</dd>
+        <dt>Search terms</dt>
+        <dd><pre class="query-terms"><code>(&#34;metabolic engineering&#34;) AND (&#34;bioinformatics&#34; OR &#34;machine learning&#34; OR &#34;deep learning&#34; OR &#34;artificial intelligence&#34;)</code></pre></dd>
+      </dl>
+    </article>
+    <article class="query-card">
+      <div class="section-heading">
+        <p class="eyebrow">Query 3</p>
+        <h3>ancestral sequence reconstruction</h3>
+      </div>
+      <dl class="query-meta">
+        <dt>Name</dt>
+        <dd>ancestral sequence reconstruction</dd>
+        <dt>Search terms</dt>
+        <dd><pre class="query-terms"><code>&#34;ancestral sequence reconstruction&#34;</code></pre></dd>
+      </dl>
+    </article>
+    <article class="query-card">
+      <div class="section-heading">
+        <p class="eyebrow">Query 4</p>
+        <h3>expression optimization</h3>
+      </div>
+      <dl class="query-meta">
+        <dt>Name</dt>
+        <dd>expression optimization</dd>
+        <dt>Search terms</dt>
+        <dd><pre class="query-terms"><code>(&#34;expression optimization&#34; OR &#34;rbs engineering&#34; OR &#34;promoter engineering&#34;)</code></pre></dd>
+      </dl>
+    </article>
+    <article class="query-card">
+      <div class="section-heading">
+        <p class="eyebrow">Query 5</p>
+        <h3>omics + AI (top journals)</h3>
+      </div>
+      <dl class="query-meta">
+        <dt>Name</dt>
+        <dd>omics + AI (top journals)</dd>
+        <dt>Search terms</dt>
+        <dd><pre class="query-terms"><code>(&#34;omics&#34; OR &#34;genome&#34; OR &#34;transcriptome&#34; OR &#34;proteome&#34; OR &#34;metabolome&#34; OR &#34;epigenome&#34;) AND (&#34;bioinformatics&#34; OR &#34;machine learning&#34; OR &#34;deep learning&#34; OR &#34;artificial intelligence&#34;)</code></pre></dd>
+          <dt>PubMed filter</dt>
+          <dd><pre class="query-terms"><code>(Nature[Journal] OR Science[Journal] OR Cell[Journal])</code></pre></dd>
+      </dl>
+    </article>
+</section>
+      </main>
+    </div>
+  </body>
+</html>

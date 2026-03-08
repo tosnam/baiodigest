@@ -9,12 +9,14 @@ import shutil
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
+from baiodigest.config import SearchQuery
 from baiodigest.models import DailyDigest
 
 
 @dataclass(slots=True)
 class SiteContext:
     digests: list[DailyDigest]
+    queries: list[SearchQuery]
 
     @property
     def latest(self) -> DailyDigest | None:
@@ -172,12 +174,14 @@ class StaticSiteGenerator:
         data_dir: Path,
         docs_dir: Path,
         site_prefix: str,
+        queries: list[SearchQuery] | None = None,
     ) -> None:
         self.template_dir = template_dir
         self.static_dir = static_dir
         self.data_dir = data_dir
         self.docs_dir = docs_dir
         self.site_prefix = site_prefix
+        self.queries = list(queries or [])
         self.env = Environment(
             loader=FileSystemLoader(str(template_dir)),
             autoescape=select_autoescape(["html", "xml"]),
@@ -188,7 +192,7 @@ class StaticSiteGenerator:
 
     def generate(self) -> None:
         digests = _load_digests(self.data_dir)
-        context = SiteContext(digests=digests)
+        context = SiteContext(digests=digests, queries=self.queries)
 
         self.docs_dir.mkdir(parents=True, exist_ok=True)
         weekly_dir = self.docs_dir / "weekly"
@@ -199,6 +203,7 @@ class StaticSiteGenerator:
         self._render_archive(context)
         self._render_daily_pages(context)
         self._render_index(context)
+        self._render_queries(context)
 
     def _render_index(self, context: SiteContext) -> None:
         template = self.env.get_template("index.html")
@@ -224,6 +229,11 @@ class StaticSiteGenerator:
         latest_month = archive_months[-1]
         output = template.render(digests=context.digests, month_page=latest_month, title=f"Archive {latest_month.slug}")
         _write(self.docs_dir / "archive.html", output)
+
+    def _render_queries(self, context: SiteContext) -> None:
+        template = self.env.get_template("queries.html")
+        output = template.render(queries=context.queries, title="Queries")
+        _write(self.docs_dir / "queries.html", output)
 
     def _render_daily_pages(self, context: SiteContext) -> None:
         template = self.env.get_template("daily.html")

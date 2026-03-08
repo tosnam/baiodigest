@@ -153,6 +153,7 @@ def _generate_site() -> None:
         data_dir=settings.data_dir,
         docs_dir=settings.docs_dir,
         site_prefix=settings.site_prefix,
+        queries=settings.pubmed_queries,
     )
     generator.generate()
     logger.info("Static site generated at %s", settings.docs_dir)

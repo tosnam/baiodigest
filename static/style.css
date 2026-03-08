@@ -153,6 +153,7 @@ main.container,
 
 .hero-summary,
 .digest-list,
+.query-list,
 .archive-list,
 .archive-calendar,
 .digest-header,
@@ -166,6 +167,7 @@ main.container,
 
 .hero-summary,
 .digest-list,
+.query-list,
 .archive-list,
 .archive-calendar,
 .digest-header {
@@ -484,6 +486,52 @@ main.container,
   color: inherit;
 }
 
+.query-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.query-card {
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-lg);
+  background: var(--bd-surface);
+  box-shadow: var(--bd-shadow);
+  padding: clamp(1.35rem, 2vw, 2rem);
+}
+
+.query-meta {
+  margin: 0;
+  display: grid;
+  gap: 0.75rem;
+}
+
+.query-meta dt {
+  color: var(--bd-soft);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.query-meta dd {
+  margin: 0;
+}
+
+.query-terms {
+  margin: 0;
+  padding: 1rem 1.1rem;
+  overflow-x: auto;
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-md);
+  background: rgba(255, 252, 247, 0.72);
+  color: var(--bd-ink);
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Monaco, Consolas, "Liberation Mono", monospace;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
 @media (max-width: 900px) {
   .site-header {
     align-items: start;
@@ -532,6 +580,7 @@ main.container,
 
   .hero-summary,
   .digest-list,
+  .query-list,
   .archive-list,
   .archive-calendar,
   .digest-header,
