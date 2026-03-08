@@ -3,7 +3,17 @@
 <section class="archive-list">
   <div class="section-heading">
     <p class="eyebrow">All issues</p>
-    <h2>Archive</h2>
+    <h2>{{ month_page.title_label if month_page else "Archive" }}</h2>
+    {% if month_page %}
+    <p>
+      {% if month_page.previous_month_path %}
+      <a href="{{ url_for(month_page.previous_month_path) }}">이전 달</a>
+      {% endif %}
+      {% if month_page.next_month_path %}
+      <a href="{{ url_for(month_page.next_month_path) }}">다음 달</a>
+      {% endif %}
+    </p>
+    {% endif %}
   </div>
   {% for digest in digests %}
   <article class="archive-row">

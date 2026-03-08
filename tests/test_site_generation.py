@@ -297,3 +297,34 @@ def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:
     for page in pages:
         content = page.read_text(encoding="utf-8")
         assert all(not line.endswith(" ") for line in content.splitlines()), page.name
+
+
+def test_generate_site_renders_monthly_archive_pages(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_sample_digests(data_dir, ["2026-02-10", "2026-03-02", "2026-05-20"])
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    latest_archive = (docs_dir / "archive.html").read_text(encoding="utf-8")
+    may_archive = (docs_dir / "archive" / "2026-05.html").read_text(encoding="utf-8")
+    april_archive = (docs_dir / "archive" / "2026-04.html").read_text(encoding="utf-8")
+
+    assert "2026년 5월" in latest_archive
+    assert "2026년 5월" in may_archive
+    assert "2026년 4월" in april_archive
+    assert 'href="/baiodigest/archive/2026-04.html"' in may_archive
+    assert 'href="/baiodigest/archive/2026-06.html"' not in may_archive

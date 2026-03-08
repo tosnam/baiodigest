@@ -1,6 +1,8 @@
 from __future__ import annotations
 
+import calendar
 from dataclasses import dataclass
+from datetime import date
 from pathlib import Path
 import re
 import shutil
@@ -17,6 +19,27 @@ class SiteContext:
     @property
     def latest(self) -> DailyDigest | None:
         return self.digests[0] if self.digests else None
+
+
+@dataclass(slots=True, frozen=True)
+class ArchiveDayCell:
+    date: str
+    day_number: int
+    paper_count: int
+    in_current_month: bool
+    digest_path: str | None
+
+
+@dataclass(slots=True, frozen=True)
+class ArchiveMonthPage:
+    year: int
+    month: int
+    slug: str
+    title_label: str
+    previous_month_path: str | None
+    next_month_path: str | None
+    weekday_labels: list[str]
+    weeks: list[list[ArchiveDayCell]]
 
 
 def _load_digests(data_dir: Path) -> list[DailyDigest]:
@@ -67,6 +90,80 @@ def _build_site_url(site_prefix: str, path: str) -> str:
     return f"/{cleaned_path}"
 
 
+def _month_start(value: date) -> date:
+    return value.replace(day=1)
+
+
+def _add_month(value: date, offset: int) -> date:
+    month_index = (value.year * 12 + (value.month - 1)) + offset
+    year, month_zero_based = divmod(month_index, 12)
+    return date(year, month_zero_based + 1, 1)
+
+
+def _iter_month_starts(start: date, end: date) -> list[date]:
+    months: list[date] = []
+    current = _month_start(start)
+    finish = _month_start(end)
+    while current <= finish:
+        months.append(current)
+        current = _add_month(current, 1)
+    return months
+
+
+def _build_archive_month_pages(digests: list[DailyDigest]) -> list[ArchiveMonthPage]:
+    if not digests:
+        return []
+
+    digest_by_day = {date.fromisoformat(digest.date): digest for digest in digests}
+    month_starts = _iter_month_starts(
+        start=min(digest_by_day).replace(day=1),
+        end=max(digest_by_day).replace(day=1),
+    )
+    month_calendar = calendar.Calendar(firstweekday=6)
+    weekday_labels = ["일", "월", "화", "수", "목", "금", "토"]
+    pages: list[ArchiveMonthPage] = []
+
+    for index, month in enumerate(month_starts):
+        weeks: list[list[ArchiveDayCell]] = []
+        for week in month_calendar.monthdatescalendar(month.year, month.month):
+            cells: list[ArchiveDayCell] = []
+            for day_value in week:
+                digest = digest_by_day.get(day_value)
+                cells.append(
+                    ArchiveDayCell(
+                        date=day_value.isoformat(),
+                        day_number=day_value.day,
+                        paper_count=len(digest.entries) if digest else 0,
+                        in_current_month=day_value.month == month.month,
+                        digest_path=f"daily/{day_value.isoformat()}.html" if digest else None,
+                    )
+                )
+            weeks.append(cells)
+
+        previous_month_path = None
+        if index > 0:
+            previous_month_path = f"archive/{month_starts[index - 1]:%Y-%m}.html"
+
+        next_month_path = None
+        if index < len(month_starts) - 1:
+            next_month_path = f"archive/{month_starts[index + 1]:%Y-%m}.html"
+
+        pages.append(
+            ArchiveMonthPage(
+                year=month.year,
+                month=month.month,
+                slug=month.strftime("%Y-%m"),
+                title_label=f"{month.year}년 {month.month}월",
+                previous_month_path=previous_month_path,
+                next_month_path=next_month_path,
+                weekday_labels=weekday_labels,
+                weeks=weeks,
+            )
+        )
+
+    return pages
+
+
 class StaticSiteGenerator:
     def __init__(
         self,
@@ -107,7 +204,22 @@ class StaticSiteGenerator:
 
     def _render_archive(self, context: SiteContext) -> None:
         template = self.env.get_template("archive.html")
-        output = template.render(digests=context.digests, title="Archive")
+        archive_months = _build_archive_month_pages(context.digests)
+        archive_dir = self.docs_dir / "archive"
+        if archive_dir.exists():
+            shutil.rmtree(archive_dir)
+
+        if not archive_months:
+            output = template.render(digests=context.digests, month_page=None, title="Archive")
+            _write(self.docs_dir / "archive.html", output)
+            return
+
+        for month_page in archive_months:
+            output = template.render(digests=context.digests, month_page=month_page, title=f"Archive {month_page.slug}")
+            _write(archive_dir / f"{month_page.slug}.html", output)
+
+        latest_month = archive_months[-1]
+        output = template.render(digests=context.digests, month_page=latest_month, title=f"Archive {latest_month.slug}")
         _write(self.docs_dir / "archive.html", output)
 
     def _render_daily_pages(self, context: SiteContext) -> None:
