@@ -18,6 +18,12 @@ class EmailRecipient:
     email: str
 
 
+@dataclass(slots=True, frozen=True)
+class NewsletterLabel:
+    source: str
+    gmail_label: str
+
+
 def _project_root() -> Path:
     default_root = Path(__file__).resolve().parents[2]
     root = Path(os.getenv("BAIODIGEST_ROOT", str(default_root))).expanduser()
@@ -128,6 +134,9 @@ class Settings:
     )
 
     data_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_DATA_DIR", "data"))
+    newsletter_data_dir: Path = field(
+        default_factory=lambda: _resolve_dir("BAIODIGEST_NEWSLETTER_DATA_DIR", "data/newsletters")
+    )
     docs_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_DOCS_DIR", "docs"))
     template_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_TEMPLATE_DIR", "templates"))
     static_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_STATIC_DIR", "static"))
@@ -143,12 +152,29 @@ class Settings:
     smtp_username: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_USERNAME", ""))
     smtp_app_password: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_APP_PASSWORD", ""))
     smtp_from_name: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_FROM_NAME", "baioDigest"))
+    gmail_credentials_file: Path = field(
+        default_factory=lambda: _resolve_path("BAIODIGEST_GMAIL_CREDENTIALS_FILE", "gmail-credentials.json")
+    )
+    gmail_token_file: Path = field(
+        default_factory=lambda: _resolve_path("BAIODIGEST_GMAIL_TOKEN_FILE", ".secrets/gmail-token.json")
+    )
+    gmail_nature_label: str = field(
+        default_factory=lambda: os.getenv("BAIODIGEST_GMAIL_NATURE_LABEL", "baiodigest/nature")
+    )
+    gmail_science_label: str = field(
+        default_factory=lambda: os.getenv("BAIODIGEST_GMAIL_SCIENCE_LABEL", "baiodigest/science")
+    )
     pubmed_queries: list[SearchQuery] = field(init=False)
     email_recipients: list[EmailRecipient] = field(init=False)
+    newsletter_labels: list[NewsletterLabel] = field(init=False)
 
     def __post_init__(self) -> None:
         self.pubmed_queries = _load_pubmed_queries(self.queries_file)
         self.email_recipients = _load_recipients(self.recipients_file)
+        self.newsletter_labels = [
+            NewsletterLabel(source="nature", gmail_label=self.gmail_nature_label),
+            NewsletterLabel(source="science", gmail_label=self.gmail_science_label),
+        ]
 
 
 DEFAULT_SCHEMA_VERSION = "1.0"

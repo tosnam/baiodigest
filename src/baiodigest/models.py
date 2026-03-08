@@ -10,6 +10,7 @@ from baiodigest.config import DEFAULT_SCHEMA_VERSION
 
 
 Source = Literal["pubmed"]
+NewsletterSource = Literal["nature", "science"]
 SourceType = Literal["preprint", "published"]
 
 
@@ -98,6 +99,139 @@ class Summary:
             result=data.get("result", ""),
             significance=data.get("significance", ""),
         )
+
+
+@dataclass(slots=True)
+class NewsletterItem:
+    title: str
+    url: str
+    snippet: str
+    section_name: str
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "NewsletterItem":
+        return cls(
+            title=data.get("title", ""),
+            url=data.get("url", ""),
+            snippet=data.get("snippet", ""),
+            section_name=data.get("section_name", ""),
+        )
+
+
+@dataclass(slots=True)
+class NewsletterSection:
+    heading: str
+    items: list[NewsletterItem] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        return {
+            "heading": self.heading,
+            "items": [item.to_dict() for item in self.items],
+        }
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "NewsletterSection":
+        return cls(
+            heading=data.get("heading", ""),
+            items=[NewsletterItem.from_dict(item) for item in data.get("items", [])],
+        )
+
+
+@dataclass(slots=True)
+class NewsletterSummary:
+    overview: str
+    highlights: list[str] = field(default_factory=list)
+    significance: str = ""
+    covered_item_titles: list[str] = field(default_factory=list)
+
+    def to_dict(self) -> dict:
+        return asdict(self)
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "NewsletterSummary":
+        return cls(
+            overview=data.get("overview", ""),
+            highlights=list(data.get("highlights", [])),
+            significance=data.get("significance", ""),
+            covered_item_titles=list(data.get("covered_item_titles", [])),
+        )
+
+
+@dataclass(slots=True)
+class NewsletterIssue:
+    source: NewsletterSource
+    newsletter_name: str
+    message_id: str
+    thread_id: str
+    received_at: str
+    published_at: str
+    title: str
+    canonical_url: str
+    html_body: str
+    text_body: str
+    sections: list[NewsletterSection] = field(default_factory=list)
+    summary: NewsletterSummary | None = None
+    raw_metadata: dict[str, str] = field(default_factory=dict)
+    schema_version: str = DEFAULT_SCHEMA_VERSION
+    generated_at: str = field(default_factory=lambda: datetime.now(UTC).isoformat())
+
+    def to_dict(self) -> dict:
+        return {
+            "source": self.source,
+            "newsletter_name": self.newsletter_name,
+            "message_id": self.message_id,
+            "thread_id": self.thread_id,
+            "received_at": self.received_at,
+            "published_at": self.published_at,
+            "title": self.title,
+            "canonical_url": self.canonical_url,
+            "html_body": self.html_body,
+            "text_body": self.text_body,
+            "sections": [section.to_dict() for section in self.sections],
+            "summary": self.summary.to_dict() if self.summary else None,
+            "raw_metadata": self.raw_metadata,
+            "schema_version": self.schema_version,
+            "generated_at": self.generated_at,
+        }
+
+    def to_json(self) -> str:
+        return json.dumps(self.to_dict(), ensure_ascii=False, indent=2)
+
+    def to_file(self, path: Path) -> None:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        path.write_text(self.to_json(), encoding="utf-8")
+
+    @classmethod
+    def from_dict(cls, data: dict) -> "NewsletterIssue":
+        raw_metadata = data.get("raw_metadata", {})
+        return cls(
+            source=data.get("source", "nature"),
+            newsletter_name=data.get("newsletter_name", ""),
+            message_id=data.get("message_id", ""),
+            thread_id=data.get("thread_id", ""),
+            received_at=data.get("received_at", ""),
+            published_at=data.get("published_at", ""),
+            title=data.get("title", ""),
+            canonical_url=data.get("canonical_url", ""),
+            html_body=data.get("html_body", ""),
+            text_body=data.get("text_body", ""),
+            sections=[NewsletterSection.from_dict(item) for item in data.get("sections", [])],
+            summary=NewsletterSummary.from_dict(data["summary"]) if data.get("summary") else None,
+            raw_metadata={str(key): str(value) for key, value in raw_metadata.items()},
+            schema_version=data.get("schema_version", DEFAULT_SCHEMA_VERSION),
+            generated_at=data.get("generated_at", datetime.now(UTC).isoformat()),
+        )
+
+    @classmethod
+    def from_json(cls, raw: str) -> "NewsletterIssue":
+        return cls.from_dict(json.loads(raw))
+
+    @classmethod
+    def from_file(cls, path: Path) -> "NewsletterIssue":
+        return cls.from_json(path.read_text(encoding="utf-8"))
 
 
 @dataclass(slots=True)
