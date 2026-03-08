@@ -18,6 +18,9 @@ logs/
 .worktrees/
 recipients.toml
 .env
+CLAUDE.md
+docs/plans/
+tasks/
 
 # Generated data/docs
 *.DS_Store
