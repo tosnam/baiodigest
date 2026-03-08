@@ -3,7 +3,16 @@ from pathlib import Path
 
 from baiodigest.config import SearchQuery
 from baiodigest.generator.site import StaticSiteGenerator
-from baiodigest.models import DailyDigest, DigestEntry, FilterResult, Paper, Summary
+from baiodigest.models import (
+    DailyDigest,
+    DigestEntry,
+    FilterResult,
+    NewsletterIssue,
+    NewsletterItem,
+    NewsletterSection,
+    Paper,
+    Summary,
+)
 
 
 def _repo_root() -> Path:
@@ -19,6 +28,60 @@ def _write_sample_digests(data_dir: Path, dates: list[str]) -> None:
     for date in dates:
         digest = DailyDigest(date=date, entries=[], stats={"collected": 1, "summarized": 0})
         digest.to_file(data_dir / f"{date}.json")
+
+
+def _write_sample_newsletter_issue(data_dir: Path, source: str, message_id: str, title: str) -> None:
+    issue = NewsletterIssue(
+        source=source,
+        newsletter_name="Nature Briefing" if source == "nature" else "Science Newsletter",
+        message_id=message_id,
+        thread_id=f"thread-{message_id}",
+        received_at="2026-03-08T06:30:00+00:00",
+        published_at="2026-03-08",
+        title=title,
+        canonical_url=f"https://example.com/{message_id}",
+        html_body="<html></html>",
+        text_body=title,
+        sections=[
+            NewsletterSection(
+                heading="Top stories",
+                items=[NewsletterItem(title=title, url=f"https://example.com/{message_id}", snippet="summary", section_name="Top stories")],
+            )
+        ],
+        summary=None,
+        raw_metadata={},
+    )
+    issue.to_file(data_dir / "newsletters" / source / f"{message_id}.json")
+
+
+def test_index_renders_newsletter_sections_instead_of_archive_preview(tmp_path: Path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_sample_digests(data_dir, ["2026-03-08"])
+    _write_sample_newsletter_issue(data_dir, "nature", "nature-1", "Cancer therapy advances")
+    _write_sample_newsletter_issue(data_dir, "science", "science-1", "Gene editor improves precision")
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    index_html = (docs_dir / "index.html").read_text(encoding="utf-8")
+
+    assert "Newsletter Briefings" in index_html
+    assert "Archive preview" not in index_html
+    assert "Nature" in index_html
+    assert "Science" in index_html
 
 
 def test_generate_site_uses_project_prefix(tmp_path) -> None:
@@ -180,10 +243,11 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert "차분한 읽기 흐름으로" not in index_html
     assert ">View<" in index_html
     assert "최신 다이제스트" not in index_html
-    assert index_html.count('class="digest-row"') == 7
-    assert "/baiodigest/daily/2026-03-08.html" in index_html
-    assert "/baiodigest/daily/2026-03-02.html" in index_html
-    assert "/baiodigest/daily/2026-03-01.html" not in index_html
+    assert "Newsletter Briefings" in index_html
+    assert "Archive preview" not in index_html
+    assert index_html.count('class="digest-row"') == 2
+    assert "/baiodigest/newsletters/nature.html" in index_html
+    assert "/baiodigest/newsletters/science.html" in index_html
     assert 'class="digest-list"' in index_html
     assert "Built by" in index_html
     assert "@tosnam" in index_html

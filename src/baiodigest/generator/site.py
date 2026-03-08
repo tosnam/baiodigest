@@ -10,17 +10,32 @@ import shutil
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from baiodigest.config import SearchQuery
-from baiodigest.models import DailyDigest
+from baiodigest.models import DailyDigest, NewsletterIssue
 
 
 @dataclass(slots=True)
 class SiteContext:
     digests: list[DailyDigest]
     queries: list[SearchQuery]
+    newsletter_issues: list[NewsletterIssue]
 
     @property
     def latest(self) -> DailyDigest | None:
         return self.digests[0] if self.digests else None
+
+    @property
+    def newsletter_groups(self) -> dict[str, list[NewsletterIssue]]:
+        groups = {"nature": [], "science": []}
+        for issue in self.newsletter_issues:
+            groups.setdefault(issue.source, []).append(issue)
+        return groups
+
+    @property
+    def latest_newsletters(self) -> dict[str, NewsletterIssue | None]:
+        return {
+            source: issues[0] if issues else None
+            for source, issues in self.newsletter_groups.items()
+        }
 
 
 @dataclass(slots=True, frozen=True)
@@ -55,6 +70,31 @@ def _load_digests(data_dir: Path) -> list[DailyDigest]:
             continue
     digests.sort(key=lambda item: item.date, reverse=True)
     return digests
+
+
+def _load_newsletter_issues(newsletter_data_dir: Path) -> list[NewsletterIssue]:
+    issues: list[NewsletterIssue] = []
+    if not newsletter_data_dir.exists():
+        return issues
+
+    for path in sorted(newsletter_data_dir.glob("*/*.json"), reverse=True):
+        if path.name.startswith("_"):
+            continue
+        try:
+            issues.append(NewsletterIssue.from_file(path))
+        except Exception:
+            continue
+
+    issues.sort(
+        key=lambda item: (
+            item.published_at,
+            item.received_at,
+            item.generated_at,
+            item.message_id,
+        ),
+        reverse=True,
+    )
+    return issues
 
 
 def _write(path: Path, content: str) -> None:
@@ -175,6 +215,7 @@ class StaticSiteGenerator:
         docs_dir: Path,
         site_prefix: str,
         queries: list[SearchQuery] | None = None,
+        newsletter_data_dir: Path | None = None,
     ) -> None:
         self.template_dir = template_dir
         self.static_dir = static_dir
@@ -182,6 +223,7 @@ class StaticSiteGenerator:
         self.docs_dir = docs_dir
         self.site_prefix = site_prefix
         self.queries = list(queries or [])
+        self.newsletter_data_dir = newsletter_data_dir or (data_dir / "newsletters")
         self.env = Environment(
             loader=FileSystemLoader(str(template_dir)),
             autoescape=select_autoescape(["html", "xml"]),
@@ -192,7 +234,8 @@ class StaticSiteGenerator:
 
     def generate(self) -> None:
         digests = _load_digests(self.data_dir)
-        context = SiteContext(digests=digests, queries=self.queries)
+        newsletter_issues = _load_newsletter_issues(self.newsletter_data_dir)
+        context = SiteContext(digests=digests, queries=self.queries, newsletter_issues=newsletter_issues)
 
         self.docs_dir.mkdir(parents=True, exist_ok=True)
         weekly_dir = self.docs_dir / "weekly"
@@ -202,12 +245,19 @@ class StaticSiteGenerator:
 
         self._render_archive(context)
         self._render_daily_pages(context)
+        self._render_newsletter_pages(context)
         self._render_index(context)
         self._render_queries(context)
 
     def _render_index(self, context: SiteContext) -> None:
         template = self.env.get_template("index.html")
-        output = template.render(latest=context.latest, digests=context.digests, title="baioDigest")
+        output = template.render(
+            latest=context.latest,
+            digests=context.digests,
+            newsletter_groups=context.newsletter_groups,
+            latest_newsletters=context.latest_newsletters,
+            title="baioDigest",
+        )
         _write(self.docs_dir / "index.html", output)
 
     def _render_archive(self, context: SiteContext) -> None:
@@ -234,6 +284,43 @@ class StaticSiteGenerator:
         template = self.env.get_template("queries.html")
         output = template.render(queries=context.queries, title="Queries")
         _write(self.docs_dir / "queries.html", output)
+
+    def _render_newsletter_pages(self, context: SiteContext) -> None:
+        newsletters_dir = self.docs_dir / "newsletters"
+        if newsletters_dir.exists():
+            shutil.rmtree(newsletters_dir)
+
+        index_template = self.env.get_template("newsletters.html")
+        source_template = self.env.get_template("newsletter_source.html")
+        issue_template = self.env.get_template("newsletter_issue.html")
+
+        _write(
+            self.docs_dir / "newsletters.html",
+            index_template.render(
+                newsletter_groups=context.newsletter_groups,
+                latest_newsletters=context.latest_newsletters,
+                title="Newsletters",
+            ),
+        )
+
+        for source, issues in context.newsletter_groups.items():
+            _write(
+                newsletters_dir / f"{source}.html",
+                source_template.render(
+                    source=source,
+                    issues=issues,
+                    title=f"{source.title()} Newsletters",
+                ),
+            )
+
+            for issue in issues:
+                _write(
+                    newsletters_dir / source / f"{issue.message_id}.html",
+                    issue_template.render(
+                        issue=issue,
+                        title=issue.title,
+                    ),
+                )
 
     def _render_daily_pages(self, context: SiteContext) -> None:
         template = self.env.get_template("daily.html")

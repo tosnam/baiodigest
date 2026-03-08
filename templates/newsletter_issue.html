@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="digest-header">
+  <p class="eyebrow">{{ issue.newsletter_name }}</p>
+  <h2>{{ issue.title }}</h2>
+  <p>{{ issue.published_at or issue.received_at }}</p>
+  {% if issue.canonical_url %}
+    <p><a class="primary-link" href="{{ issue.canonical_url }}" target="_blank" rel="noopener noreferrer">원문 링크</a></p>
+  {% endif %}
+</section>
+
+{% if issue.summary %}
+<section class="paper-card">
+  <h3>요약</h3>
+  <p>{{ issue.summary.overview }}</p>
+  {% if issue.summary.highlights %}
+  <ul>
+    {% for highlight in issue.summary.highlights %}
+    <li>{{ highlight }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+  <p>{{ issue.summary.significance }}</p>
+</section>
+{% endif %}
+
+{% for section in issue.sections %}
+<section class="paper-card">
+  <h3>{{ section.heading }}</h3>
+  <ul>
+    {% for item in section.items %}
+    <li>
+      <a href="{{ item.url }}" target="_blank" rel="noopener noreferrer">{{ item.title }}</a>
+      {% if item.snippet %}
+      <p>{{ item.snippet }}</p>
+      {% endif %}
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+{% endfor %}
+{% endblock %}

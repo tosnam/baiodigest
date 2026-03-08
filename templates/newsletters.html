@@ -1,19 +1,14 @@
 {% extends "base.html" %}
 {% block content %}
 <section class="hero-summary">
-  <p class="eyebrow">Latest issue</p>
-  <h2>Today's Digest</h2>
-  {% if latest %}
-    <p class="hero-copy">{{ latest.date }} 기준으로 선별한 논문 {{ latest.entries|length }}편을 정리했습니다.</p>
-    <p><a class="primary-link" href="{{ url_for('daily/' ~ latest.date ~ '.html') }}">View</a></p>
-  {% else %}
-    <p class="hero-copy">아직 생성된 다이제스트가 없습니다.</p>
-  {% endif %}
+  <p class="eyebrow">Briefings hub</p>
+  <h2>Newsletters</h2>
+  <p class="hero-copy">Nature와 Science 뉴스레터를 별도 섹션으로 모아 보여줍니다.</p>
 </section>
 
 <section class="digest-list">
   <div class="section-heading">
-    <p class="eyebrow">Newsletter briefings</p>
+    <p class="eyebrow">Sources</p>
     <h3>Newsletter Briefings</h3>
   </div>
   <div class="digest-items">
@@ -27,7 +22,7 @@
         {% else %}
           <span>아직 수집된 뉴스레터가 없습니다.</span>
         {% endif %}
-        <a href="{{ url_for('newsletters/' ~ source ~ '.html') }}">View all</a>
+        <a href="{{ url_for('newsletters/' ~ source ~ '.html') }}">Source page</a>
       </article>
     {% endfor %}
   </div>
