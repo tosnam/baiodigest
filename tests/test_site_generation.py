@@ -13,6 +13,12 @@ def _write_sample_digest(data_dir: Path) -> None:
     digest.to_file(data_dir / "2026-03-02.json")
 
 
+def _write_sample_digests(data_dir: Path, dates: list[str]) -> None:
+    for date in dates:
+        digest = DailyDigest(date=date, entries=[], stats={"collected": 1, "summarized": 0})
+        digest.to_file(data_dir / f"{date}.json")
+
+
 def test_generate_site_uses_project_prefix(tmp_path) -> None:
     data_dir = tmp_path / "data"
     docs_dir = tmp_path / "docs"
@@ -134,7 +140,19 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     data_dir.mkdir(parents=True)
     static_dir.mkdir(parents=True)
     (static_dir / "style.css").write_text("body {}", encoding="utf-8")
-    _write_sample_digest(data_dir)
+    _write_sample_digests(
+        data_dir,
+        [
+            "2026-03-01",
+            "2026-03-02",
+            "2026-03-03",
+            "2026-03-04",
+            "2026-03-05",
+            "2026-03-06",
+            "2026-03-07",
+            "2026-03-08",
+        ],
+    )
 
     generator = StaticSiteGenerator(
         template_dir=template_dir,
@@ -148,9 +166,17 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     index_html = (docs_dir / "index.html").read_text(encoding="utf-8")
     archive_html = (docs_dir / "archive.html").read_text(encoding="utf-8")
 
+    assert "Bio and AI research digest" in index_html
     assert 'class="site-shell"' in index_html
     assert 'class="hero-summary"' in index_html
     assert "최신 다이제스트" in index_html
+    assert "2026-03-08 기준으로 선별한 논문 0편을 정리했습니다." in index_html
+    assert "차분한 읽기 흐름으로" not in index_html
+    assert ">다이제스트 보기<" in index_html
+    assert index_html.count('class="digest-row"') == 7
+    assert "/baiodigest/daily/2026-03-08.html" in index_html
+    assert "/baiodigest/daily/2026-03-02.html" in index_html
+    assert "/baiodigest/daily/2026-03-01.html" not in index_html
     assert 'class="digest-list"' in index_html
     assert 'class="archive-list"' in archive_html
     assert 'class="archive-row"' in archive_html
@@ -240,6 +266,8 @@ def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
     assert "Noto Serif KR" in style_css
     assert ".hero-summary" in style_css
     assert ".paper-card" in style_css
+    assert "font-size: clamp(1.2rem, 2.4vw, 1.6rem);" in style_css
+    assert "grid-template-columns: 1fr;" in style_css
 
 
 def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:
