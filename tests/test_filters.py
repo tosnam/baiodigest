@@ -123,15 +123,13 @@ def test_llm_reason_is_forced_to_korean() -> None:
     assert "관련 논문" in passed[0][1].reason
 
 
-def test_summarize_reads_application_and_caution_notes() -> None:
+def test_summarize_reads_core_summary_fields() -> None:
     settings = Settings()
     client = OllamaClient(settings)
-    client._generate = lambda prompt: (
-        '{"background":"배경","method":"방법","result":"결과","significance":"의미",'
-        '"application_note":"효소 공정에 참고 가능하다.","caution_note":"추가 검증이 필요하다."}'
-    )
+    client._generate = lambda prompt: '{"background":"배경","method":"방법","result":"결과","significance":"의미"}'
 
     summary = client.summarize("title", "abstract")
 
-    assert summary.application_note == "효소 공정에 참고 가능하다."
-    assert summary.caution_note == "추가 검증이 필요하다."
+    assert summary.background == "배경"
+    assert summary.significance == "의미"
+    assert not hasattr(summary, "application_note")
