@@ -4,6 +4,23 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Digest 2026-03-01 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -20,13 +37,16 @@
           <p class="site-kicker">Bio and AI research digest</p>
           <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
         </div>
-        <nav aria-label="Primary">
-          <ul>
-            <li><a href="/baiodigest/index.html">Home</a></li>
-            <li><a href="/baiodigest/archive.html">Archive</a></li>
-            <li><a href="/baiodigest/queries.html">Queries</a></li>
-          </ul>
-        </nav>
+        <div class="site-header-actions">
+          <nav aria-label="Primary">
+            <ul>
+              <li><a href="/baiodigest/index.html">Home</a></li>
+              <li><a href="/baiodigest/archive.html">Archive</a></li>
+              <li><a href="/baiodigest/queries.html">Queries</a></li>
+            </ul>
+          </nav>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
       </header>
       <main class="site-main container">
 <section class="digest-header">
@@ -712,5 +732,6 @@
         <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
       </footer>
     </div>
+    <script src="/baiodigest/static/theme.js"></script>
   </body>
 </html>
