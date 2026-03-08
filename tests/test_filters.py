@@ -1,7 +1,7 @@
 from baiodigest.config import Settings
-from baiodigest.filters.relevance import filter_papers, keyword_filter, llm_relevance_filter
-from baiodigest.models import FilterResult, Paper
-from baiodigest.summarizer.ollama import OllamaClient, RelevanceDecision
+from baiodigest.filters.relevance import filter_papers, keyword_filter
+from baiodigest.models import Paper
+from baiodigest.summarizer.ollama import OllamaClient
 
 
 class _BrokenThenValidOllama:
@@ -19,10 +19,6 @@ class _ValidOllama:
         confidence = 0.9
         category = "ai_enzyme"
         reason = "useful"
-        topic_tags = ["other"]
-        problem_tags = ["general_insight"]
-        research_type = "basic"
-        practical_distance = "foundational"
 
     def classify_relevance(self, title: str, abstract: str):
         return self.Decision()
@@ -34,10 +30,6 @@ class _EnglishReasonOllama:
         confidence = 0.82
         category = "protein_engineering"
         reason = "This paper has industrial relevance"
-        topic_tags = ["other"]
-        problem_tags = ["general_insight"]
-        research_type = "basic"
-        practical_distance = "foundational"
 
     def classify_relevance(self, title: str, abstract: str):
         return self.Decision()
@@ -131,52 +123,15 @@ def test_llm_reason_is_forced_to_korean() -> None:
     assert "관련 논문" in passed[0][1].reason
 
 
-def test_llm_relevance_filter_preserves_research_radar_fields() -> None:
-    settings = Settings()
-    paper = _paper(
-        "Protein engineering with AI",
-        "This enzyme project applies machine learning and directed evolution to improve activity.",
-    )
-    keyword_result = FilterResult(
-        relevant=True,
-        confidence=1.0,
-        category="prefilter",
-        reason="prefilter pass",
-        matched_keywords=["enzyme"],
-    )
-
-    class _RadarOllama:
-        def classify_relevance(self, title: str, abstract: str) -> RelevanceDecision:
-            return RelevanceDecision(
-                relevant=True,
-                confidence=0.82,
-                category="ai_enzyme",
-                reason="산업적 활용 가능성이 있다.",
-                topic_tags=["ai_protein_design"],
-                problem_tags=["stability"],
-                research_type="method",
-                practical_distance="mid_term",
-            )
-
-    result = llm_relevance_filter(paper, keyword_result, _RadarOllama(), settings)
-
-    assert result.topic_tags == ["ai_protein_design"]
-    assert result.problem_tags == ["stability"]
-    assert result.research_type == "method"
-    assert result.practical_distance == "mid_term"
-
-
-def test_summarize_reads_research_radar_notes() -> None:
+def test_summarize_reads_application_and_caution_notes() -> None:
     settings = Settings()
     client = OllamaClient(settings)
     client._generate = lambda prompt: (
         '{"background":"배경","method":"방법","result":"결과","significance":"의미",'
-        '"why_it_matters":"읽을 가치가 있다.","novelty_note":"새 방법이다.",'
-        '"application_note":"공정에 참고 가능하다.","caution_note":"스케일업 검증 필요"}'
+        '"application_note":"효소 공정에 참고 가능하다.","caution_note":"추가 검증이 필요하다."}'
     )
 
     summary = client.summarize("title", "abstract")
 
-    assert summary.why_it_matters == "읽을 가치가 있다."
-    assert summary.application_note == "공정에 참고 가능하다."
-    assert summary.caution_note == "스케일업 검증 필요"
+    assert summary.application_note == "효소 공정에 참고 가능하다."
+    assert summary.caution_note == "추가 검증이 필요하다."

@@ -65,10 +65,6 @@ class FilterResult:
     category: str
     reason: str
     matched_keywords: list[str] = field(default_factory=list)
-    topic_tags: list[str] = field(default_factory=list)
-    problem_tags: list[str] = field(default_factory=list)
-    research_type: str = "basic"
-    practical_distance: str = "foundational"
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -81,10 +77,6 @@ class FilterResult:
             category=data.get("category", "unknown"),
             reason=data.get("reason", ""),
             matched_keywords=list(data.get("matched_keywords", [])),
-            topic_tags=list(data.get("topic_tags", [])),
-            problem_tags=list(data.get("problem_tags", [])),
-            research_type=data.get("research_type", "basic"),
-            practical_distance=data.get("practical_distance", "foundational"),
         )
 
 
@@ -94,8 +86,6 @@ class Summary:
     method: str
     result: str
     significance: str
-    why_it_matters: str = ""
-    novelty_note: str = ""
     application_note: str = ""
     caution_note: str = ""
 
@@ -109,8 +99,6 @@ class Summary:
             method=data.get("method", ""),
             result=data.get("result", ""),
             significance=data.get("significance", ""),
-            why_it_matters=data.get("why_it_matters", ""),
-            novelty_note=data.get("novelty_note", ""),
             application_note=data.get("application_note", ""),
             caution_note=data.get("caution_note", ""),
         )

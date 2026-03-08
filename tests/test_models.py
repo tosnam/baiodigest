@@ -44,7 +44,7 @@ def test_daily_digest_json_round_trip() -> None:
     assert loaded.entries[0].summary.result == "결과"
 
 
-def test_daily_digest_json_round_trip_with_research_radar_fields() -> None:
+def test_daily_digest_json_round_trip_after_radar_reset() -> None:
     paper = Paper(
         title="Paper title",
         abstract="Paper abstract",
@@ -66,20 +66,14 @@ def test_daily_digest_json_round_trip_with_research_radar_fields() -> None:
         category="protein_engineering",
         reason="산업적 활용 가치가 있다.",
         matched_keywords=["protein engineering", "enzyme"],
-        topic_tags=["ai_protein_design", "enzyme_stability"],
-        problem_tags=["stability", "screening_speed"],
-        research_type="method",
-        practical_distance="mid_term",
     )
     summary = Summary(
         background="배경",
         method="방법",
         result="결과",
         significance="의미",
-        why_it_matters="효소 최적화 후보를 빠르게 판단할 수 있다.",
-        novelty_note="기존 대비 적은 실험으로 설계했다.",
-        application_note="산업용 효소 스크리닝에 참고 가능하다.",
-        caution_note="실제 공정 조건 검증은 추가로 필요하다.",
+        application_note="공정 적용 가능성",
+        caution_note="추가 검증 필요",
     )
     digest = DailyDigest(
         date="2026-03-01",
@@ -89,9 +83,7 @@ def test_daily_digest_json_round_trip_with_research_radar_fields() -> None:
 
     loaded = DailyDigest.from_json(digest.to_json())
 
-    assert loaded.entries[0].summary.why_it_matters == "효소 최적화 후보를 빠르게 판단할 수 있다."
-    assert loaded.entries[0].summary.application_note == "산업용 효소 스크리닝에 참고 가능하다."
-    assert loaded.entries[0].filter_result.topic_tags == ["ai_protein_design", "enzyme_stability"]
-    assert loaded.entries[0].filter_result.problem_tags == ["stability", "screening_speed"]
-    assert loaded.entries[0].filter_result.research_type == "method"
-    assert loaded.entries[0].filter_result.practical_distance == "mid_term"
+    assert loaded.entries[0].summary.application_note == "공정 적용 가능성"
+    assert loaded.entries[0].summary.caution_note == "추가 검증 필요"
+    assert not hasattr(loaded.entries[0].summary, "why_it_matters")
+    assert not hasattr(loaded.entries[0].filter_result, "topic_tags")
