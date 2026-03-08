@@ -103,6 +103,8 @@ class OllamaClient:
                 method=str(payload.get("method", "")).strip(),
                 result=str(payload.get("result", "")).strip(),
                 significance=str(payload.get("significance", "")).strip(),
+                application_note=str(payload.get("application_note", "")).strip(),
+                caution_note=str(payload.get("caution_note", "")).strip(),
             )
         except Exception as exc:
             logger.warning("Summary generation failed, using fallback: %s", exc)

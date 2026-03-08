@@ -191,6 +191,9 @@ class StaticSiteGenerator:
         context = SiteContext(digests=digests)
 
         self.docs_dir.mkdir(parents=True, exist_ok=True)
+        weekly_dir = self.docs_dir / "weekly"
+        if weekly_dir.exists():
+            shutil.rmtree(weekly_dir)
         self._copy_static_assets()
 
         self._render_archive(context)
