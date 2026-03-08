@@ -169,10 +169,11 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert "Bio and AI research digest" in index_html
     assert 'class="site-shell"' in index_html
     assert 'class="hero-summary"' in index_html
-    assert "최신 다이제스트" in index_html
+    assert "Today's Digest" in index_html
     assert "2026-03-08 기준으로 선별한 논문 0편을 정리했습니다." in index_html
     assert "차분한 읽기 흐름으로" not in index_html
-    assert ">다이제스트 보기<" in index_html
+    assert ">View<" in index_html
+    assert "최신 다이제스트" not in index_html
     assert index_html.count('class="digest-row"') == 7
     assert "/baiodigest/daily/2026-03-08.html" in index_html
     assert "/baiodigest/daily/2026-03-02.html" in index_html
