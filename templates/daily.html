@@ -1,33 +1,44 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>{{ digest.date }} Digest</h2>
-<p>총 {{ digest.entries|length }}편</p>
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>{{ digest.date }}</h2>
+  <p>총 {{ digest.entries|length }}편의 논문을 정리했습니다.</p>
+</section>
 
 {% for entry in digest.entries %}
-<article>
-  <header>
+<article class="paper-card">
+  <header class="paper-meta">
     <h3><a href="{{ entry.paper.url }}" target="_blank" rel="noopener noreferrer">{{ entry.paper.title }}</a></h3>
-    <p>
-      {{ entry.paper.journal or "Unknown journal" }}
-    </p>
+    <p>{{ entry.paper.journal or "Unknown journal" }}</p>
     {% if entry.paper.affiliations %}
-      <p>{{ entry.paper.affiliations[-1] }}</p>
+    <p>{{ entry.paper.affiliations[-1] }}</p>
     {% endif %}
   </header>
 
-  <h4>배경</h4>
-  <p>{{ entry.summary.background }}</p>
+  <section class="summary-grid">
+    <section class="summary-block">
+      <h4>배경</h4>
+      <p>{{ entry.summary.background }}</p>
+    </section>
 
-  <h4>방법</h4>
-  <p>{{ entry.summary.method }}</p>
+    <section class="summary-block">
+      <h4>방법</h4>
+      <p>{{ entry.summary.method }}</p>
+    </section>
 
-  <h4>결과</h4>
-  <p>{{ entry.summary.result }}</p>
+    <section class="summary-block">
+      <h4>결과</h4>
+      <p>{{ entry.summary.result }}</p>
+    </section>
 
-  <h4>의미</h4>
-  <p>{{ entry.summary.significance }}</p>
+    <section class="summary-block">
+      <h4>의미</h4>
+      <p>{{ entry.summary.significance }}</p>
+    </section>
+  </section>
 
-  <footer>
+  <footer class="paper-notes">
     <small>
       키워드: {{ entry.filter_result.matched_keywords | join(', ') if entry.filter_result.matched_keywords else '없음' }}
       <br />
