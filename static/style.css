@@ -485,7 +485,6 @@ main.container,
     padding-bottom: 2.4rem;
   }
 
-  .site-header nav ul,
   .digest-row,
   .archive-row {
     flex-direction: column;
@@ -493,16 +492,17 @@ main.container,
   }
 
   .site-header nav {
-    width: 100%;
+    width: auto;
   }
 
   .site-header nav ul {
-    width: 100%;
+    width: auto;
+    flex-wrap: wrap;
+    justify-content: flex-start;
   }
 
-  .site-header nav li,
   .site-header nav a {
-    width: 100%;
+    width: auto;
   }
 
   .hero-summary,

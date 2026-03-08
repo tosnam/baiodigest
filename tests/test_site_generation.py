@@ -268,6 +268,8 @@ def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
     assert ".paper-card" in style_css
     assert "font-size: clamp(1.2rem, 2.4vw, 1.6rem);" in style_css
     assert "grid-template-columns: 1fr;" in style_css
+    assert "flex-wrap: wrap;" in style_css
+    assert "width: auto;" in style_css
 
 
 def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:
