@@ -171,6 +171,9 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert "Bio and AI research digest" in index_html
     assert 'class="site-shell"' in index_html
     assert 'class="hero-summary"' in index_html
+    assert 'class="theme-toggle"' in index_html
+    assert 'src="/baiodigest/static/theme.js"' in index_html
+    assert "baiodigest-theme" in index_html
     assert "Today's Digest" in index_html
     assert "2026-03-08 기준으로 선별한 논문 0편을 정리했습니다." in index_html
     assert "차분한 읽기 흐름으로" not in index_html
@@ -318,6 +321,7 @@ def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
     generator.generate()
 
     style_css = (docs_dir / "static" / "style.css").read_text(encoding="utf-8")
+    theme_js = (docs_dir / "static" / "theme.js").read_text(encoding="utf-8")
 
     assert "Noto Sans KR" in style_css
     assert "Noto Serif KR" in style_css
@@ -327,6 +331,8 @@ def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
     assert "grid-template-columns: 1fr;" in style_css
     assert "flex-wrap: wrap;" in style_css
     assert "width: auto;" in style_css
+    assert "baiodigest-theme" in theme_js
+    assert "matchMedia" in theme_js
 
 
 def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:
