@@ -180,7 +180,7 @@ class PubmedClient:
         if query.pubmed_filter:
             query_clause = f"{query_clause} AND ({query.pubmed_filter})"
 
-        date_clause = f"({start.isoformat()}[Date - Publication] : {end.isoformat()}[Date - Publication])"
+        date_clause = f"({start.isoformat()}[Date - Entry] : {end.isoformat()}[Date - Entry])"
         return f"{query_clause} AND {date_clause}"
 
     def search_ids(self, query: SearchQuery, start: date, end: date) -> list[str]:

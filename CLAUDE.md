@@ -123,8 +123,9 @@ pubmed_filter = "journal article[pt]" # 추가 PubMed 필터 (선택)
 ## 수집 날짜 로직
 
 `main.py`의 `_pubmed_query_date(digest_date)`는 `digest_date - 1일`을 반환한다.
-즉, 다이제스트 생성일(D) 기준 전일(D-1)의 PubMed 출판일 논문을 검색한다.
-예: 2026-03-03에 실행 → 2026-03-02 출판 논문 수집.
+즉, 다이제스트 생성일(D) 기준 전일(D-1)에 PubMed DB에 색인된 논문을 검색한다.
+날짜 필드는 `[Date - Entry]`(EDAT, PubMed 색인 날짜)를 사용한다. `[Date - Publication]`(저널 출판일) 대신 EDAT를 쓰는 이유는 출판일은 월초에 집중되어 특정 날짜에 0편이 되는 반면, EDAT는 매일 균등하게 분포하기 때문이다.
+예: 2026-03-03에 실행 → 2026-03-02 색인 논문 수집.
 
 ## 배포
 - GitHub Pages: Settings > Pages > Source: Deploy from branch > /docs
