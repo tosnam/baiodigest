@@ -15,6 +15,7 @@ htmlcov/
 # Runtime outputs
 logs/
 *.log
+.worktrees/
 
 # Generated data/docs
 *.DS_Store
