@@ -53,7 +53,7 @@
     <div>
       <h4>기술 주제</h4>
       <div class="chip-row">
-        {% for topic_tag in entry.filter_result.topic_tags %}
+        {% for topic_tag in entry.filter_result.topic_tags or ['other'] %}
         <span class="topic-chip">{{ topic_labels.get(topic_tag, topic_tag) }}</span>
         {% endfor %}
       </div>
@@ -61,7 +61,7 @@
     <div>
       <h4>문제 유형</h4>
       <div class="chip-row">
-        {% for problem_tag in entry.filter_result.problem_tags %}
+        {% for problem_tag in entry.filter_result.problem_tags or ['general_insight'] %}
         <span class="problem-chip">{{ problem_labels.get(problem_tag, problem_tag) }}</span>
         {% endfor %}
       </div>

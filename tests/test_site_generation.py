@@ -472,6 +472,65 @@ def test_generate_site_renders_weekly_no_signal_message(tmp_path) -> None:
     assert "뚜렷한 신규 흐름보다 기존 주제의 연속선상 연구가 중심입니다." in weekly_html
 
 
+def test_generate_site_supports_legacy_digest_without_radar_fields(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+
+    entry = DigestEntry(
+        paper=Paper(
+            title="Legacy paper",
+            abstract="Test abstract",
+            authors=["A"],
+            affiliations=["Example Institute"],
+            doi=None,
+            source="pubmed",
+            source_type="published",
+            journal="Test Journal",
+            url="https://example.org",
+            category=None,
+            date="2026-03-02",
+            mesh_terms=[],
+        ),
+        filter_result=FilterResult(
+            relevant=True,
+            confidence=0.8,
+            category="ai_enzyme",
+            reason="산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.",
+            matched_keywords=["enzyme"],
+        ),
+        summary=Summary(
+            background="배경",
+            method="방법",
+            result="결과",
+            significance="의미",
+        ),
+    )
+    digest = DailyDigest(date="2026-03-02", entries=[entry], stats={"collected": 1, "summarized": 1})
+    digest.to_file(data_dir / "2026-03-02.json")
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    daily_html = (docs_dir / "daily" / "2026-03-02.html").read_text(encoding="utf-8")
+
+    assert "왜 읽을 만한가" in daily_html
+    assert "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다." in daily_html
+    assert "기타" in daily_html
+    assert "일반 인사이트" in daily_html
+
+
 def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:
     data_dir = tmp_path / "data"
     docs_dir = tmp_path / "docs"
