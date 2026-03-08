@@ -1,0 +1,70 @@
+{
+  "date": "2026-03-09",
+  "entries": [
+    {
+      "paper": {
+        "title": "Accelerated discovery of highly active enzyme nanohybrids with parallelized Bayesian optimization in hybrid space.",
+        "abstract": "Artificial intelligence (AI) has significantly advanced protein engineering, enabling rapid enzyme evolution for diverse applications. However, the fragile nature of biomacromolecules requires enzyme immobilization to preserve catalytic activity under harsh industrial conditions, which often restricts substrate diffusion and reduces enzymatic activity. This challenge demands extensive trial-and-error experiments to optimize immobilized carriers with high activity for different enzymes. Here we show a machine-learning-guided workflow along with an algorithm named parallelized hybrid-space Bayesian optimization (PHBO) to accelerate the discovery of nanocarriers for specific enzymes and reactions. Leveraging prior knowledge, machine learning and iterative feedback, within limited number of experiments, this workflow explores the reaction space of over 107 experiments and achieves activity recovery of 100%, 90%, and 79% for glucose oxidase, catalase, and Candida Antarctica lipase B, respectively. These results demonstrate that data-efficient optimization can substantially accelerate the discovery of enzyme nanohybrids with high catalytic activity across diverse enzymatic systems.",
+        "authors": [
+          "Liu Y",
+          "Hu H",
+          "Han Y",
+          "Deon Chon JS",
+          "Lo CL",
+          "Chen Z",
+          "Zhang Z",
+          "Yuan Z",
+          "Ge J"
+        ],
+        "affiliations": [
+          "Key Lab for Industrial Biocatalysis, Ministry of Education, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "Synthera Biotechnology Co. Ltd., Shenzhen, China.",
+          "The State Key Laboratory of Chemical Engineering and Low-carbon Technology, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "The State Key Laboratory of Chemical Engineering and Low-carbon Technology, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "Key Lab for Industrial Biocatalysis, Ministry of Education, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "Key Lab for Industrial Biocatalysis, Ministry of Education, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "Key Lab for Industrial Biocatalysis, Ministry of Education, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "Key Lab for Industrial Biocatalysis, Ministry of Education, Department of Chemical Engineering, Tsinghua University, Beijing, China.",
+          "The State Key Laboratory of Chemical Engineering and Low-carbon Technology, Department of Chemical Engineering, Tsinghua University, Beijing, China. zhihongyuan@mail.tsinghua.edu.cn.",
+          "Key Lab for Industrial Biocatalysis, Ministry of Education, Department of Chemical Engineering, Tsinghua University, Beijing, China. junge@mail.tsinghua.edu.cn.",
+          "State Key Laboratory of Green Biomanufacturing, Beijing, China. junge@mail.tsinghua.edu.cn."
+        ],
+        "doi": "10.1038/s41467-026-70251-3",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature communications",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41794808/",
+        "category": null,
+        "date": "2026-03-07",
+        "mesh_terms": [],
+        "source_id": "41794808",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 공학 기술로 산업용 효소의 활성화를 최적화할 수 있음. 식품, 화학, 의약 분야에서 효소 기반 공정 개선에 활용 가능",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인공지능(AI)은 단백질 공학에 혁신을 가져왔으나, 효소의 열안정성(thermostability) 및 산업 조건에서의 활성 유지가 어려워 효소 고정화가 필요하다. 효소 고정화 과정에서 기질 확산 제한으로 인해 효소 활성이 감소하는 문제가 발생한다.",
+        "method": "병렬화된 하이브리드 공간 베이지안 최적화(PHBO) 알고리즘을 기반으로 한 머신러닝 지도형 워크플로우를 개발하였다. 이는 제한된 실험 횟수 내에서 반복적 피드백을 통해 반응 공간을 탐색한다.",
+        "result": "포도당 산화효소, 촉매효소, Candida Antarctica 리파제 B에서 각각 100%, 90%, 79%의 활성 회복 성과를 달성하였다. 10^7 이상의 실험 조건을 탐색하며 데이터 효율적 최적화를 실현하였다.",
+        "significance": "데이터 효율적 최적화 기법은 다양한 효소 시스템에서 고활성 효소 나노하이브리드의 발견 속도를 크게 높인다. 산업적 응용에서 효소 기반 기술의 개발 주기를 단축할 수 있는 잠재력을 보여준다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-08T22:01:30.817349+00:00"
+}

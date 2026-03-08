@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-09 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-09</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41794808/" target="_blank" rel="noopener noreferrer">Accelerated discovery of highly active enzyme nanohybrids with parallelized Bayesian optimization in hybrid space.</a></h3>
+    <p>Nature communications</p>
+    <p>State Key Laboratory of Green Biomanufacturing, Beijing, China. junge@mail.tsinghua.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>AI 기반 효소 공학 기술로 산업용 효소의 활성화를 최적화할 수 있음. 식품, 화학, 의약 분야에서 효소 기반 공정 개선에 활용 가능</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>인공지능(AI)은 단백질 공학에 혁신을 가져왔으나, 효소의 열안정성(thermostability) 및 산업 조건에서의 활성 유지가 어려워 효소 고정화가 필요하다. 효소 고정화 과정에서 기질 확산 제한으로 인해 효소 활성이 감소하는 문제가 발생한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>병렬화된 하이브리드 공간 베이지안 최적화(PHBO) 알고리즘을 기반으로 한 머신러닝 지도형 워크플로우를 개발하였다. 이는 제한된 실험 횟수 내에서 반복적 피드백을 통해 반응 공간을 탐색한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>포도당 산화효소, 촉매효소, Candida Antarctica 리파제 B에서 각각 100%, 90%, 79%의 활성 회복 성과를 달성하였다. 10^7 이상의 실험 조건을 탐색하며 데이터 효율적 최적화를 실현하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>데이터 효율적 최적화 기법은 다양한 효소 시스템에서 고활성 효소 나노하이브리드의 발견 속도를 크게 높인다. 산업적 응용에서 효소 기반 기술의 개발 주기를 단축할 수 있는 잠재력을 보여준다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
