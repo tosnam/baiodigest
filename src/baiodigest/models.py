@@ -86,8 +86,6 @@ class Summary:
     method: str
     result: str
     significance: str
-    application_note: str = ""
-    caution_note: str = ""
 
     def to_dict(self) -> dict:
         return asdict(self)
@@ -99,8 +97,6 @@ class Summary:
             method=data.get("method", ""),
             result=data.get("result", ""),
             significance=data.get("significance", ""),
-            application_note=data.get("application_note", ""),
-            caution_note=data.get("caution_note", ""),
         )
 
 
