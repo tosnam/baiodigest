@@ -183,7 +183,9 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert 'class="digest-list"' in index_html
     assert "Built by" in index_html
     assert "@tosnam" in index_html
-    assert 'href="https://github.com/tosnam"' in index_html
+    assert 'href="https://github.com/tosnam/baiodigest"' in index_html
+    assert 'target="_blank"' in index_html
+    assert 'rel="noopener noreferrer"' in index_html
     assert 'class="archive-calendar"' in archive_html
     assert 'class="archive-month-grid"' in archive_html
 
@@ -292,7 +294,9 @@ def test_generate_site_renders_queries_page(tmp_path) -> None:
     assert "<dt>PubMed filter</dt>" in queries_html
     assert "Built by" in queries_html
     assert "@tosnam" in queries_html
-    assert 'href="https://github.com/tosnam"' in queries_html
+    assert 'href="https://github.com/tosnam/baiodigest"' in queries_html
+    assert 'target="_blank"' in queries_html
+    assert 'rel="noopener noreferrer"' in queries_html
 
 
 def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
