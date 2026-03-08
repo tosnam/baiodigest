@@ -328,3 +328,33 @@ def test_generate_site_renders_monthly_archive_pages(tmp_path) -> None:
     assert "2026년 4월" in april_archive
     assert 'href="/baiodigest/archive/2026-04.html"' in may_archive
     assert 'href="/baiodigest/archive/2026-06.html"' not in may_archive
+
+
+def test_generate_site_renders_sunday_first_archive_calendar(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_sample_digests(data_dir, ["2026-03-02", "2026-03-07"])
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    archive_html = (docs_dir / "archive.html").read_text(encoding="utf-8")
+
+    assert 'class="archive-calendar"' in archive_html
+    assert ">일<" in archive_html
+    assert ">월<" in archive_html
+    assert ">토<" in archive_html
+    assert "0편" in archive_html
+    assert 'href="/baiodigest/daily/2026-03-02.html"' in archive_html

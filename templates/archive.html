@@ -1,28 +1,52 @@
 {% extends "base.html" %}
 {% block content %}
-<section class="archive-list">
-  <div class="section-heading">
-    <p class="eyebrow">All issues</p>
-    <h2>{{ month_page.title_label if month_page else "Archive" }}</h2>
-    {% if month_page %}
-    <p>
-      {% if month_page.previous_month_path %}
-      <a href="{{ url_for(month_page.previous_month_path) }}">이전 달</a>
-      {% endif %}
-      {% if month_page.next_month_path %}
-      <a href="{{ url_for(month_page.next_month_path) }}">다음 달</a>
-      {% endif %}
-    </p>
+{% if month_page %}
+<section class="archive-calendar">
+  <div class="archive-calendar-header">
+    {% if month_page.previous_month_path %}
+    <a class="archive-month-link" href="{{ url_for(month_page.previous_month_path) }}">이전 달</a>
+    {% else %}
+    <span class="archive-month-link is-disabled">이전 달</span>
+    {% endif %}
+    <div class="section-heading">
+      <p class="eyebrow">Monthly archive</p>
+      <h2>{{ month_page.title_label }}</h2>
+    </div>
+    {% if month_page.next_month_path %}
+    <a class="archive-month-link" href="{{ url_for(month_page.next_month_path) }}">다음 달</a>
+    {% else %}
+    <span class="archive-month-link is-disabled">다음 달</span>
     {% endif %}
   </div>
-  {% for digest in digests %}
-  <article class="archive-row">
-    <div>
-      <h3>{{ digest.date }}</h3>
-      <p>논문 {{ digest.entries|length }}편</p>
-    </div>
-    <a href="{{ url_for('daily/' ~ digest.date ~ '.html') }}">열기</a>
-  </article>
-  {% endfor %}
+
+  <div class="archive-weekdays">
+    {% for label in month_page.weekday_labels %}
+    <span>{{ label }}</span>
+    {% endfor %}
+  </div>
+
+  <div class="archive-month-grid">
+    {% for week in month_page.weeks %}
+      {% for cell in week %}
+      <article class="archive-day{% if not cell.in_current_month %} is-outside{% endif %}{% if cell.digest_path %} is-active{% else %} is-empty{% endif %}">
+        <p class="archive-day-number">{{ cell.day_number }}</p>
+        {% if cell.digest_path %}
+        <a class="archive-day-link" href="{{ url_for(cell.digest_path) }}">논문 {{ cell.paper_count }}편</a>
+        {% else %}
+        <p class="archive-day-count">논문 {{ cell.paper_count }}편</p>
+        {% endif %}
+      </article>
+      {% endfor %}
+    {% endfor %}
+  </div>
 </section>
+{% else %}
+<section class="archive-calendar archive-calendar-empty">
+  <div class="section-heading">
+    <p class="eyebrow">Monthly archive</p>
+    <h2>Archive</h2>
+    <p>아직 생성된 다이제스트가 없습니다.</p>
+  </div>
+</section>
+{% endif %}
 {% endblock %}
