@@ -37,16 +37,13 @@
           <p class="site-kicker">Bio and AI research digest</p>
           <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
         </div>
-        <div class="site-header-actions">
-          <nav aria-label="Primary">
-            <ul>
-              <li><a href="/baiodigest/index.html">Home</a></li>
-              <li><a href="/baiodigest/archive.html">Archive</a></li>
-              <li><a href="/baiodigest/queries.html">Queries</a></li>
-            </ul>
-          </nav>
-          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
-        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
       </header>
       <main class="site-main container">
 <section class="digest-header">
@@ -57,7 +54,10 @@
 
       </main>
       <footer class="site-footer container">
-        <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
       </footer>
     </div>
     <script src="/baiodigest/static/theme.js"></script>
