@@ -25,6 +25,10 @@ class RelevanceDecision:
     confidence: float
     category: str
     reason: str
+    topic_tags: list[str]
+    problem_tags: list[str]
+    research_type: str
+    practical_distance: str
 
 
 def _extract_json_block(text: str) -> dict:
@@ -56,7 +60,12 @@ def _fallback_summary(abstract: str) -> Summary:
     s1 = sentences[0] if len(sentences) > 0 else "초록 기반 배경 정보를 추출하지 못했습니다."
     s2 = sentences[1] if len(sentences) > 1 else s1
     s3 = sentences[2] if len(sentences) > 2 else s2
-    return Summary(background=s1, method=s2, result=s3, significance=s3)
+    return Summary(
+        background=s1,
+        method=s2,
+        result=s3,
+        significance=s3,
+    )
 
 
 class OllamaClient:
@@ -91,6 +100,10 @@ class OllamaClient:
             confidence=float(payload.get("confidence", 0.0)),
             category=str(payload.get("category", "other")),
             reason=str(payload.get("reason", "")),
+            topic_tags=[str(item).strip() for item in payload.get("topic_tags", []) if str(item).strip()],
+            problem_tags=[str(item).strip() for item in payload.get("problem_tags", []) if str(item).strip()],
+            research_type=str(payload.get("research_type", "")).strip(),
+            practical_distance=str(payload.get("practical_distance", "")).strip(),
         )
 
     def summarize(self, title: str, abstract: str) -> Summary:
@@ -103,6 +116,10 @@ class OllamaClient:
                 method=str(payload.get("method", "")).strip(),
                 result=str(payload.get("result", "")).strip(),
                 significance=str(payload.get("significance", "")).strip(),
+                why_it_matters=str(payload.get("why_it_matters", "")).strip(),
+                novelty_note=str(payload.get("novelty_note", "")).strip(),
+                application_note=str(payload.get("application_note", "")).strip(),
+                caution_note=str(payload.get("caution_note", "")).strip(),
             )
         except Exception as exc:
             logger.warning("Summary generation failed, using fallback: %s", exc)

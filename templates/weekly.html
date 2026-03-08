@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% block content %}
+<section class="weekly-hero">
+  <p class="eyebrow">Weekly signal</p>
+  <h2>{{ weekly_page.title_label }}</h2>
+  <p>이번 주 변화 신호를 정리했습니다.</p>
+</section>
+
+{% if weekly_page.has_meaningful_change %}
+<section class="weekly-signals">
+  <div class="section-heading">
+    <p class="eyebrow">Signal summary</p>
+    <h3>이번 주 변화 신호</h3>
+  </div>
+  <div class="weekly-signal-list">
+    {% for signal in weekly_page.signals %}
+    <article class="weekly-signal-card">
+      <p class="weekly-signal-kind">{{ "기술 주제" if signal.kind == "topic" else "문제 유형" }}</p>
+      <h3>{{ signal.name }}</h3>
+      <p>{{ signal.count }}회 등장</p>
+      <div class="chip-row">
+        {% for digest_path in signal.digest_paths %}
+        <a class="topic-chip" href="{{ url_for(digest_path) }}">{{ digest_path.split('/')[-1].replace('.html', '') }}</a>
+        {% endfor %}
+      </div>
+    </article>
+    {% endfor %}
+  </div>
+</section>
+{% else %}
+<section class="weekly-signals weekly-empty-state">
+  <div class="section-heading">
+    <p class="eyebrow">Signal summary</p>
+    <h3>이번 주 변화 신호</h3>
+  </div>
+  <p>뚜렷한 신규 흐름보다 기존 주제의 연속선상 연구가 중심입니다.</p>
+</section>
+{% endif %}
+{% endblock %}
