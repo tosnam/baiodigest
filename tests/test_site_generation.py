@@ -178,8 +178,8 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert "/baiodigest/daily/2026-03-02.html" in index_html
     assert "/baiodigest/daily/2026-03-01.html" not in index_html
     assert 'class="digest-list"' in index_html
-    assert 'class="archive-list"' in archive_html
-    assert 'class="archive-row"' in archive_html
+    assert 'class="archive-calendar"' in archive_html
+    assert 'class="archive-month-grid"' in archive_html
 
 
 def test_generate_site_renders_redesigned_daily_digest(tmp_path) -> None:
@@ -358,3 +358,28 @@ def test_generate_site_renders_sunday_first_archive_calendar(tmp_path) -> None:
     assert ">토<" in archive_html
     assert "0편" in archive_html
     assert 'href="/baiodigest/daily/2026-03-02.html"' in archive_html
+
+
+def test_generate_site_copies_archive_calendar_styles(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = _repo_root() / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    _write_sample_digest(data_dir)
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    style_css = (docs_dir / "static" / "style.css").read_text(encoding="utf-8")
+
+    assert ".archive-calendar" in style_css
+    assert ".archive-month-grid" in style_css
+    assert ".archive-day.is-empty" in style_css
