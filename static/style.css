@@ -429,6 +429,31 @@ main.container,
   gap: 0.95rem;
 }
 
+.paper-detail-stack {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.95rem;
+}
+
+.paper-detail-block {
+  min-height: 100%;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-sm);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.paper-detail-block h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  color: var(--bd-accent);
+  letter-spacing: 0.02em;
+}
+
+.paper-detail-block p {
+  margin: 0;
+}
+
 .summary-block {
   min-height: 100%;
   padding: 1rem 1.05rem;

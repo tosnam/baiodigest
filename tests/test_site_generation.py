@@ -238,7 +238,7 @@ def test_generate_site_renders_redesigned_daily_digest(tmp_path) -> None:
     assert 'class="digest-header"' in daily_html
     assert 'class="paper-card"' in daily_html
     assert 'class="paper-meta"' in daily_html
-    assert 'class="summary-grid"' in daily_html
+    assert 'class="paper-detail-stack"' in daily_html
     assert 'class="paper-notes"' in daily_html
 
 
@@ -387,6 +387,107 @@ def test_generate_site_restores_pre_radar_home_without_weekly_preview(tmp_path) 
     assert "최신 주간 요약" not in index_html
     assert "Research radar" not in index_html
     assert "기술 주제" not in index_html
+
+
+def test_generate_site_renders_daily_vertical_sections(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+
+    entry = DigestEntry(
+        paper=Paper(
+            title="Test paper",
+            abstract="Test abstract",
+            authors=["A"],
+            affiliations=["Example Institute"],
+            doi=None,
+            source="pubmed",
+            source_type="published",
+            journal="Test Journal",
+            url="https://example.org",
+            category=None,
+            date="2026-03-02",
+            mesh_terms=[],
+        ),
+        filter_result=FilterResult(
+            relevant=True,
+            confidence=0.8,
+            category="ai_enzyme",
+            reason="산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.",
+            matched_keywords=["enzyme"],
+        ),
+        summary=Summary(
+            background="배경",
+            method="방법",
+            result="결과",
+            significance="의미",
+            application_note="효소 공정 설계에 참고 가능하다.",
+            caution_note="소규모 검증이라 스케일업 확인이 필요하다.",
+        ),
+    )
+    digest = DailyDigest(date="2026-03-02", entries=[entry], stats={"collected": 1, "summarized": 1})
+    digest.to_file(data_dir / "2026-03-02.json")
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    daily_html = (docs_dir / "daily" / "2026-03-02.html").read_text(encoding="utf-8")
+
+    assert "왜 읽을 만한가" in daily_html
+    assert "배경" in daily_html
+    assert "방법" in daily_html
+    assert "결과" in daily_html
+    assert "의미" in daily_html
+    assert "활용" in daily_html
+    assert "주의" in daily_html
+    headings = [
+        "<h4>왜 읽을 만한가</h4>",
+        "<h4>배경</h4>",
+        "<h4>방법</h4>",
+        "<h4>결과</h4>",
+        "<h4>의미</h4>",
+        "<h4>활용</h4>",
+        "<h4>주의</h4>",
+    ]
+    positions = [daily_html.index(heading) for heading in headings]
+    assert positions == sorted(positions)
+    assert "판정 근거:" not in daily_html
+    assert "confidence: 0.80" in daily_html
+
+
+def test_generate_site_copies_vertical_daily_section_styles(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = _repo_root() / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    _write_sample_digest(data_dir)
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    style_css = (docs_dir / "static" / "style.css").read_text(encoding="utf-8")
+
+    assert ".paper-detail-stack" in style_css
+    assert ".paper-detail-block" in style_css
 
 
 def test_generate_site_copies_archive_calendar_styles(tmp_path) -> None:
