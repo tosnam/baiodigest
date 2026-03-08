@@ -1,5 +1,7 @@
+import html
 from pathlib import Path
 
+from baiodigest.config import SearchQuery
 from baiodigest.generator.site import StaticSiteGenerator
 from baiodigest.models import DailyDigest, DigestEntry, FilterResult, Paper, Summary
 
@@ -241,6 +243,50 @@ def test_generate_site_renders_redesigned_daily_digest(tmp_path) -> None:
     assert 'class="paper-meta"' in daily_html
     assert 'class="paper-detail-stack"' in daily_html
     assert 'class="paper-notes"' in daily_html
+
+
+def test_generate_site_renders_queries_page(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_sample_digest(data_dir)
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+        queries=[
+            SearchQuery(
+                name="enzyme/protein engineering + AI",
+                terms='("enzyme engineering" OR "protein engineering") AND ("machine learning")',
+                pubmed_filter=None,
+            ),
+            SearchQuery(
+                name="omics + AI (top journals)",
+                terms='("omics") AND ("artificial intelligence")',
+                pubmed_filter="(Nature[Journal] OR Science[Journal])",
+            ),
+        ],
+    )
+    generator.generate()
+
+    index_html = (docs_dir / "index.html").read_text(encoding="utf-8")
+    queries_html = html.unescape((docs_dir / "queries.html").read_text(encoding="utf-8"))
+
+    assert 'href="/baiodigest/queries.html"' in index_html
+    assert "<h2>Search Queries</h2>" in queries_html
+    assert "enzyme/protein engineering + AI" in queries_html
+    assert '("enzyme engineering" OR "protein engineering") AND ("machine learning")' in queries_html
+    assert "omics + AI (top journals)" in queries_html
+    assert "(Nature[Journal] OR Science[Journal])" in queries_html
+    assert "<dt>PubMed filter</dt>" in queries_html
 
 
 def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
