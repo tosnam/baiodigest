@@ -6,25 +6,7 @@
   <p>총 {{ digest.entries|length }}편의 논문을 정리했습니다.</p>
 </section>
 
-<section class="daily-radar-summary">
-  <div class="section-heading">
-    <p class="eyebrow">Research radar</p>
-    <h3>오늘의 연구 지도</h3>
-  </div>
-  <p>기술 주제 {{ digest_topic_count }}개, 문제 유형 {{ digest_problem_count }}개를 기준으로 논문을 묶었습니다.</p>
-</section>
-
-{% for group in topic_groups %}
-<section class="daily-topic-group">
-  <header class="daily-topic-header">
-    <div>
-      <p class="eyebrow">Topic group</p>
-      <h3>{{ group.name }}</h3>
-    </div>
-    <p>논문 {{ group.entries|length }}편</p>
-  </header>
-
-{% for entry in group.entries %}
+{% for entry in digest.entries %}
 <article class="paper-card">
   <header class="paper-meta">
     <h3><a href="{{ entry.paper.url }}" target="_blank" rel="noopener noreferrer">{{ entry.paper.title }}</a></h3>
@@ -33,40 +15,6 @@
     <p>{{ entry.paper.affiliations[-1] }}</p>
     {% endif %}
   </header>
-
-  <section class="paper-radar-grid">
-    <section class="paper-radar-block">
-      <h4>왜 읽을 만한가</h4>
-      <p>{{ why_it_matters(entry) }}</p>
-    </section>
-    <section class="paper-radar-block">
-      <h4>연구 성격</h4>
-      <p>{{ research_type_labels.get(entry.filter_result.research_type, entry.filter_result.research_type) }}</p>
-    </section>
-    <section class="paper-radar-block">
-      <h4>실무 근접도</h4>
-      <p>{{ practical_distance_labels.get(entry.filter_result.practical_distance, entry.filter_result.practical_distance) }}</p>
-    </section>
-  </section>
-
-  <section class="paper-tag-grid">
-    <div>
-      <h4>기술 주제</h4>
-      <div class="chip-row">
-        {% for topic_tag in entry.filter_result.topic_tags or ['other'] %}
-        <span class="topic-chip">{{ topic_labels.get(topic_tag, topic_tag) }}</span>
-        {% endfor %}
-      </div>
-    </div>
-    <div>
-      <h4>문제 유형</h4>
-      <div class="chip-row">
-        {% for problem_tag in entry.filter_result.problem_tags or ['general_insight'] %}
-        <span class="problem-chip">{{ problem_labels.get(problem_tag, problem_tag) }}</span>
-        {% endfor %}
-      </div>
-    </div>
-  </section>
 
   <section class="summary-grid">
     <section class="summary-block">
@@ -90,21 +38,6 @@
     </section>
   </section>
 
-  <section class="paper-insight-grid">
-    <section class="insight-block">
-      <h4>무엇이 새롭나</h4>
-      <p>{{ entry.summary.novelty_note or entry.summary.significance }}</p>
-    </section>
-    <section class="insight-block">
-      <h4>어디에 쓸 수 있나</h4>
-      <p>{{ entry.summary.application_note or entry.filter_result.reason }}</p>
-    </section>
-    <section class="insight-block">
-      <h4>주의할 점은 무엇인가</h4>
-      <p>{{ entry.summary.caution_note or "추가 검증 범위를 함께 확인하는 편이 좋습니다." }}</p>
-    </section>
-  </section>
-
   <footer class="paper-notes">
     <small>
       키워드: {{ entry.filter_result.matched_keywords | join(', ') if entry.filter_result.matched_keywords else '없음' }}
@@ -113,6 +46,5 @@
     </small>
   </footer>
 </article>
-{% endfor %}
 {% endfor %}
 {% endblock %}

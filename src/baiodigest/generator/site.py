@@ -9,7 +9,7 @@ import shutil
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from baiodigest.models import DailyDigest, DigestEntry
+from baiodigest.models import DailyDigest
 
 
 @dataclass(slots=True)
@@ -40,30 +40,6 @@ class ArchiveMonthPage:
     next_month_path: str | None
     weekday_labels: list[str]
     weeks: list[list[ArchiveDayCell]]
-
-
-@dataclass(slots=True, frozen=True)
-class DailyTopicGroup:
-    name: str
-    slug: str
-    entries: list[DigestEntry]
-
-
-@dataclass(slots=True, frozen=True)
-class WeeklySignal:
-    name: str
-    slug: str
-    count: int
-    kind: str
-    digest_paths: list[str]
-
-
-@dataclass(slots=True, frozen=True)
-class WeeklyPage:
-    slug: str
-    title_label: str
-    signals: list[WeeklySignal]
-    has_meaningful_change: bool
 
 
 def _load_digests(data_dir: Path) -> list[DailyDigest]:
@@ -188,136 +164,6 @@ def _build_archive_month_pages(digests: list[DailyDigest]) -> list[ArchiveMonthP
     return pages
 
 
-TOPIC_LABELS = {
-    "ai_protein_design": "AI 단백질 설계",
-    "enzyme_stability": "효소 안정성",
-    "enzyme_activity": "효소 활성",
-    "host_engineering": "숙주 엔지니어링",
-    "metabolic_pathway": "대사 경로",
-    "bioprocess_optimization": "바이오프로세스 최적화",
-    "screening_platform": "스크리닝 플랫폼",
-    "structural_bioinformatics": "구조 생물정보학",
-    "other": "기타",
-}
-
-PROBLEM_LABELS = {
-    "stability": "안정성",
-    "yield": "수율",
-    "selectivity": "선택성",
-    "productivity": "생산성",
-    "cost_reduction": "비용 절감",
-    "screening_speed": "스크리닝 속도",
-    "general_insight": "일반 인사이트",
-}
-
-RESEARCH_TYPE_LABELS = {
-    "basic": "기초연구",
-    "method": "방법론",
-    "applied": "응용연구",
-}
-
-PRACTICAL_DISTANCE_LABELS = {
-    "direct": "직접 참고 가능",
-    "mid_term": "중기 참고",
-    "foundational": "기반지식",
-}
-
-
-def _label_for(mapping: dict[str, str], value: str, fallback: str) -> str:
-    return mapping.get(value, fallback)
-
-
-def _why_it_matters(entry: DigestEntry) -> str:
-    if entry.summary.why_it_matters.strip():
-        return entry.summary.why_it_matters.strip()
-    return entry.filter_result.reason
-
-
-def _group_entries_by_topic(digest: DailyDigest) -> list[DailyTopicGroup]:
-    grouped: dict[str, list[DigestEntry]] = {}
-    for entry in digest.entries:
-        slug = entry.filter_result.topic_tags[0] if entry.filter_result.topic_tags else "other"
-        grouped.setdefault(slug, []).append(entry)
-
-    groups: list[DailyTopicGroup] = []
-    for slug, entries in grouped.items():
-        groups.append(
-            DailyTopicGroup(
-                name=_label_for(TOPIC_LABELS, slug, slug.replace("_", " ").title()),
-                slug=slug,
-                entries=entries,
-            )
-        )
-    groups.sort(key=lambda item: (-len(item.entries), item.name))
-    return groups
-
-
-def _build_weekly_pages(digests: list[DailyDigest]) -> list[WeeklyPage]:
-    weekly_entries: dict[tuple[int, int], list[tuple[DailyDigest, DigestEntry]]] = {}
-    for digest in digests:
-        digest_date = date.fromisoformat(digest.date)
-        iso_year, iso_week, _ = digest_date.isocalendar()
-        weekly_entries.setdefault((iso_year, iso_week), []).extend((digest, entry) for entry in digest.entries)
-
-    pages: list[WeeklyPage] = []
-    for (iso_year, iso_week), items in sorted(weekly_entries.items(), reverse=True):
-        topic_counts: dict[str, int] = {}
-        topic_paths: dict[str, list[str]] = {}
-        problem_counts: dict[str, int] = {}
-        problem_paths: dict[str, list[str]] = {}
-
-        for digest, entry in items:
-            digest_path = f"daily/{digest.date}.html"
-            for topic_tag in entry.filter_result.topic_tags or ["other"]:
-                topic_counts[topic_tag] = topic_counts.get(topic_tag, 0) + 1
-                topic_paths.setdefault(topic_tag, [])
-                if digest_path not in topic_paths[topic_tag]:
-                    topic_paths[topic_tag].append(digest_path)
-            for problem_tag in entry.filter_result.problem_tags or ["general_insight"]:
-                problem_counts[problem_tag] = problem_counts.get(problem_tag, 0) + 1
-                problem_paths.setdefault(problem_tag, [])
-                if digest_path not in problem_paths[problem_tag]:
-                    problem_paths[problem_tag].append(digest_path)
-
-        signals: list[WeeklySignal] = []
-        for slug, count in topic_counts.items():
-            signals.append(
-                WeeklySignal(
-                    name=_label_for(TOPIC_LABELS, slug, slug.replace("_", " ").title()),
-                    slug=slug,
-                    count=count,
-                    kind="topic",
-                    digest_paths=topic_paths[slug],
-                )
-            )
-        for slug, count in problem_counts.items():
-            signals.append(
-                WeeklySignal(
-                    name=_label_for(PROBLEM_LABELS, slug, slug.replace("_", " ").title()),
-                    slug=slug,
-                    count=count,
-                    kind="problem",
-                    digest_paths=problem_paths[slug],
-                )
-            )
-
-        signals.sort(key=lambda item: (-item.count, item.kind, item.name))
-        has_meaningful_change = len(items) >= 2 and len({signal.slug for signal in signals if signal.kind == "topic"}) >= 2
-        if not has_meaningful_change:
-            has_meaningful_change = any(signal.count >= 2 for signal in signals if signal.kind == "topic")
-
-        pages.append(
-            WeeklyPage(
-                slug=f"{iso_year}-W{iso_week:02d}",
-                title_label=f"{iso_year}년 W{iso_week:02d}",
-                signals=signals,
-                has_meaningful_change=has_meaningful_change,
-            )
-        )
-
-    return pages
-
-
 class StaticSiteGenerator:
     def __init__(
         self,
@@ -343,24 +189,17 @@ class StaticSiteGenerator:
     def generate(self) -> None:
         digests = _load_digests(self.data_dir)
         context = SiteContext(digests=digests)
-        weekly_pages = _build_weekly_pages(digests)
 
         self.docs_dir.mkdir(parents=True, exist_ok=True)
         self._copy_static_assets()
 
         self._render_archive(context)
         self._render_daily_pages(context)
-        self._render_weekly_pages(weekly_pages)
-        self._render_index(context, weekly_pages[0] if weekly_pages else None)
+        self._render_index(context)
 
-    def _render_index(self, context: SiteContext, latest_weekly: WeeklyPage | None) -> None:
+    def _render_index(self, context: SiteContext) -> None:
         template = self.env.get_template("index.html")
-        output = template.render(
-            latest=context.latest,
-            digests=context.digests,
-            latest_weekly=latest_weekly,
-            title="baioDigest",
-        )
+        output = template.render(latest=context.latest, digests=context.digests, title="baioDigest")
         _write(self.docs_dir / "index.html", output)
 
     def _render_archive(self, context: SiteContext) -> None:
@@ -386,34 +225,8 @@ class StaticSiteGenerator:
     def _render_daily_pages(self, context: SiteContext) -> None:
         template = self.env.get_template("daily.html")
         for digest in context.digests:
-            topic_groups = _group_entries_by_topic(digest)
-            topic_tags = sorted({tag for entry in digest.entries for tag in entry.filter_result.topic_tags})
-            problem_tags = sorted({tag for entry in digest.entries for tag in entry.filter_result.problem_tags})
-            output = template.render(
-                digest=digest,
-                title=f"Digest {digest.date}",
-                topic_groups=topic_groups,
-                digest_topic_count=len(topic_tags),
-                digest_problem_count=len(problem_tags),
-                topic_labels=TOPIC_LABELS,
-                problem_labels=PROBLEM_LABELS,
-                research_type_labels=RESEARCH_TYPE_LABELS,
-                practical_distance_labels=PRACTICAL_DISTANCE_LABELS,
-                why_it_matters=_why_it_matters,
-            )
+            output = template.render(digest=digest, title=f"Digest {digest.date}")
             _write(self.docs_dir / "daily" / f"{digest.date}.html", output)
-
-    def _render_weekly_pages(self, weekly_pages: list[WeeklyPage]) -> None:
-        weekly_dir = self.docs_dir / "weekly"
-        if weekly_dir.exists():
-            shutil.rmtree(weekly_dir)
-        if not weekly_pages:
-            return
-
-        template = self.env.get_template("weekly.html")
-        for weekly_page in weekly_pages:
-            output = template.render(weekly_page=weekly_page, title=f"Weekly {weekly_page.slug}")
-            _write(weekly_dir / f"{weekly_page.slug}.html", output)
 
     def _copy_static_assets(self) -> None:
         target = self.docs_dir / "static"

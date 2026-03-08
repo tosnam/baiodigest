@@ -72,10 +72,6 @@ def llm_relevance_filter(
                 category=decision.category,
                 reason=korean_reason,
                 matched_keywords=keyword_result.matched_keywords,
-                topic_tags=decision.topic_tags or ["other"],
-                problem_tags=decision.problem_tags or ["general_insight"],
-                research_type=decision.research_type or "basic",
-                practical_distance=decision.practical_distance or "foundational",
             )
         except Exception as exc:
             last_error = exc
@@ -95,10 +91,6 @@ def llm_relevance_filter(
         category="fallback",
         reason=reason,
         matched_keywords=keyword_result.matched_keywords,
-        topic_tags=["other"],
-        problem_tags=["general_insight"],
-        research_type="basic",
-        practical_distance="foundational",
     )
 
 
