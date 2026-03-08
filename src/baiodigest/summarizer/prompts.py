@@ -31,6 +31,30 @@ RELEVANCE_PROMPT_TEMPLATE = """당신은 생명과학 논문 큐레이터다.
 {abstract}
 """
 
+NEWSLETTER_PROMPT_TEMPLATE = """You are editing a science newsletter digest.
+Read the newsletter issue below and respond with JSON only.
+
+Requirements:
+- Write in Korean
+- Cover every main article detected in the newsletter
+- Do not omit any primary story, even when multiple sections exist
+- Preserve section context when possible
+- Keys: overview(string), highlights(array of strings), significance(string), covered_item_titles(array of strings)
+- `covered_item_titles` must list every main article title you actually covered
+
+Newsletter:
+{newsletter_name}
+
+Issue title:
+{title}
+
+Detected main articles:
+{item_lines}
+
+Issue body:
+{body}
+"""
+
 
 def build_summary_prompt(title: str, abstract: str) -> str:
     return SUMMARY_PROMPT_TEMPLATE.format(title=title.strip(), abstract=abstract.strip())
@@ -38,3 +62,12 @@ def build_summary_prompt(title: str, abstract: str) -> str:
 
 def build_relevance_prompt(title: str, abstract: str) -> str:
     return RELEVANCE_PROMPT_TEMPLATE.format(title=title.strip(), abstract=abstract.strip())
+
+
+def build_newsletter_summary_prompt(newsletter_name: str, title: str, item_lines: str, body: str) -> str:
+    return NEWSLETTER_PROMPT_TEMPLATE.format(
+        newsletter_name=newsletter_name.strip(),
+        title=title.strip(),
+        item_lines=item_lines.strip(),
+        body=body.strip(),
+    )
