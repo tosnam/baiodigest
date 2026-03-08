@@ -152,9 +152,12 @@ main.container,
 }
 
 .hero-summary,
+.weekly-preview,
 .digest-list,
 .archive-list,
 .archive-calendar,
+.weekly-hero,
+.weekly-signals,
 .digest-header,
 .paper-card {
   border: 1px solid var(--bd-border);
@@ -165,9 +168,12 @@ main.container,
 }
 
 .hero-summary,
+.weekly-preview,
 .digest-list,
 .archive-list,
 .archive-calendar,
+.weekly-hero,
+.weekly-signals,
 .digest-header {
   padding: clamp(1.35rem, 2vw, 2rem);
 }
@@ -189,12 +195,14 @@ main.container,
 }
 
 .hero-summary h2,
+.weekly-hero h2,
 .digest-header h2 {
   margin: 0.35rem 0 0.55rem;
   font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
 .hero-copy,
+.weekly-hero > p:last-child,
 .digest-header > p:last-child,
 .archive-row p,
 .paper-meta p,
@@ -403,6 +411,13 @@ main.container,
   margin: 0 auto;
 }
 
+.weekly-preview,
+.weekly-hero,
+.weekly-signals {
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+
 .daily-radar-summary {
   padding: 1.35rem 1.5rem;
   border: 1px solid var(--bd-border);
@@ -533,6 +548,43 @@ main.container,
   color: #4a5c63;
 }
 
+.weekly-signal-list {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.weekly-signal-card {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-sm);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.weekly-signal-card h3 {
+  margin: 0.1rem 0 0.35rem;
+  font-family: var(--bd-serif);
+  font-size: 1.15rem;
+}
+
+.weekly-signal-card p {
+  margin: 0 0 0.65rem;
+  color: var(--bd-muted);
+}
+
+.weekly-signal-kind {
+  margin: 0;
+  color: var(--bd-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.weekly-empty-state p:last-child {
+  margin: 0;
+  color: var(--bd-muted);
+}
+
 .summary-grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -622,9 +674,12 @@ main.container,
   }
 
   .hero-summary,
+  .weekly-preview,
   .digest-list,
   .archive-list,
   .archive-calendar,
+  .weekly-hero,
+  .weekly-signals,
   .digest-header,
   .daily-radar-summary,
   .paper-card {

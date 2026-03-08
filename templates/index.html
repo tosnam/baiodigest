@@ -11,6 +11,17 @@
   {% endif %}
 </section>
 
+{% if latest_weekly %}
+<section class="weekly-preview">
+  <div class="section-heading">
+    <p class="eyebrow">Weekly signal</p>
+    <h3>최신 주간 요약</h3>
+  </div>
+  <p class="hero-copy">{{ latest_weekly.title_label }} 기준 변화 신호를 확인할 수 있습니다.</p>
+  <p><a class="primary-link" href="{{ url_for('weekly/' ~ latest_weekly.slug ~ '.html') }}">주간 요약 보기</a></p>
+</section>
+{% endif %}
+
 <section class="digest-list">
   <div class="section-heading">
     <p class="eyebrow">Archive preview</p>

@@ -19,6 +19,54 @@ def _write_sample_digests(data_dir: Path, dates: list[str]) -> None:
         digest.to_file(data_dir / f"{date}.json")
 
 
+def _write_research_radar_digest(
+    data_dir: Path,
+    digest_date: str,
+    *,
+    topic_tags: list[str],
+    problem_tags: list[str],
+) -> None:
+    entry = DigestEntry(
+        paper=Paper(
+            title=f"Paper for {digest_date}",
+            abstract="Test abstract",
+            authors=["A"],
+            affiliations=["Example Institute"],
+            doi=None,
+            source="pubmed",
+            source_type="published",
+            journal="Test Journal",
+            url="https://example.org",
+            category=None,
+            date=digest_date,
+            mesh_terms=[],
+        ),
+        filter_result=FilterResult(
+            relevant=True,
+            confidence=0.8,
+            category="ai_enzyme",
+            reason="산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.",
+            matched_keywords=["enzyme"],
+            topic_tags=topic_tags,
+            problem_tags=problem_tags,
+            research_type="method",
+            practical_distance="mid_term",
+        ),
+        summary=Summary(
+            background="배경",
+            method="방법",
+            result="결과",
+            significance="의미",
+            why_it_matters="읽을 가치가 있다.",
+            novelty_note="새롭다.",
+            application_note="적용 가능하다.",
+            caution_note="검증이 더 필요하다.",
+        ),
+    )
+    digest = DailyDigest(date=digest_date, entries=[entry], stats={"collected": 1, "summarized": 1})
+    digest.to_file(data_dir / f"{digest_date}.json")
+
+
 def test_generate_site_uses_project_prefix(tmp_path) -> None:
     data_dir = tmp_path / "data"
     docs_dir = tmp_path / "docs"
@@ -365,6 +413,63 @@ def test_generate_site_copies_research_radar_daily_styles(tmp_path) -> None:
     assert ".daily-topic-group" in style_css
     assert ".topic-chip" in style_css
     assert ".paper-radar-grid" in style_css
+
+
+def test_generate_site_renders_weekly_signal_pages(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_research_radar_digest(data_dir, "2026-03-03", topic_tags=["ai_protein_design"], problem_tags=["stability"])
+    _write_research_radar_digest(data_dir, "2026-03-05", topic_tags=["ai_protein_design"], problem_tags=["stability"])
+    _write_research_radar_digest(data_dir, "2026-03-07", topic_tags=["host_engineering"], problem_tags=["yield"])
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    index_html = (docs_dir / "index.html").read_text(encoding="utf-8")
+    weekly_html = (docs_dir / "weekly" / "2026-W10.html").read_text(encoding="utf-8")
+
+    assert "최신 주간 요약" in index_html
+    assert 'href="/baiodigest/weekly/2026-W10.html"' in index_html
+    assert "이번 주 변화 신호" in weekly_html
+    assert "AI 단백질 설계" in weekly_html
+    assert "숙주 엔지니어링" in weekly_html
+
+
+def test_generate_site_renders_weekly_no_signal_message(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_research_radar_digest(data_dir, "2026-03-07", topic_tags=["host_engineering"], problem_tags=["yield"])
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    weekly_html = (docs_dir / "weekly" / "2026-W10.html").read_text(encoding="utf-8")
+
+    assert "뚜렷한 신규 흐름보다 기존 주제의 연속선상 연구가 중심입니다." in weekly_html
 
 
 def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:

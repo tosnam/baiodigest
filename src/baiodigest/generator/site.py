@@ -49,6 +49,23 @@ class DailyTopicGroup:
     entries: list[DigestEntry]
 
 
+@dataclass(slots=True, frozen=True)
+class WeeklySignal:
+    name: str
+    slug: str
+    count: int
+    kind: str
+    digest_paths: list[str]
+
+
+@dataclass(slots=True, frozen=True)
+class WeeklyPage:
+    slug: str
+    title_label: str
+    signals: list[WeeklySignal]
+    has_meaningful_change: bool
+
+
 def _load_digests(data_dir: Path) -> list[DailyDigest]:
     digests: list[DailyDigest] = []
     for path in sorted(data_dir.glob("*.json"), reverse=True):
@@ -235,6 +252,72 @@ def _group_entries_by_topic(digest: DailyDigest) -> list[DailyTopicGroup]:
     return groups
 
 
+def _build_weekly_pages(digests: list[DailyDigest]) -> list[WeeklyPage]:
+    weekly_entries: dict[tuple[int, int], list[tuple[DailyDigest, DigestEntry]]] = {}
+    for digest in digests:
+        digest_date = date.fromisoformat(digest.date)
+        iso_year, iso_week, _ = digest_date.isocalendar()
+        weekly_entries.setdefault((iso_year, iso_week), []).extend((digest, entry) for entry in digest.entries)
+
+    pages: list[WeeklyPage] = []
+    for (iso_year, iso_week), items in sorted(weekly_entries.items(), reverse=True):
+        topic_counts: dict[str, int] = {}
+        topic_paths: dict[str, list[str]] = {}
+        problem_counts: dict[str, int] = {}
+        problem_paths: dict[str, list[str]] = {}
+
+        for digest, entry in items:
+            digest_path = f"daily/{digest.date}.html"
+            for topic_tag in entry.filter_result.topic_tags or ["other"]:
+                topic_counts[topic_tag] = topic_counts.get(topic_tag, 0) + 1
+                topic_paths.setdefault(topic_tag, [])
+                if digest_path not in topic_paths[topic_tag]:
+                    topic_paths[topic_tag].append(digest_path)
+            for problem_tag in entry.filter_result.problem_tags or ["general_insight"]:
+                problem_counts[problem_tag] = problem_counts.get(problem_tag, 0) + 1
+                problem_paths.setdefault(problem_tag, [])
+                if digest_path not in problem_paths[problem_tag]:
+                    problem_paths[problem_tag].append(digest_path)
+
+        signals: list[WeeklySignal] = []
+        for slug, count in topic_counts.items():
+            signals.append(
+                WeeklySignal(
+                    name=_label_for(TOPIC_LABELS, slug, slug.replace("_", " ").title()),
+                    slug=slug,
+                    count=count,
+                    kind="topic",
+                    digest_paths=topic_paths[slug],
+                )
+            )
+        for slug, count in problem_counts.items():
+            signals.append(
+                WeeklySignal(
+                    name=_label_for(PROBLEM_LABELS, slug, slug.replace("_", " ").title()),
+                    slug=slug,
+                    count=count,
+                    kind="problem",
+                    digest_paths=problem_paths[slug],
+                )
+            )
+
+        signals.sort(key=lambda item: (-item.count, item.kind, item.name))
+        has_meaningful_change = len(items) >= 2 and len({signal.slug for signal in signals if signal.kind == "topic"}) >= 2
+        if not has_meaningful_change:
+            has_meaningful_change = any(signal.count >= 2 for signal in signals if signal.kind == "topic")
+
+        pages.append(
+            WeeklyPage(
+                slug=f"{iso_year}-W{iso_week:02d}",
+                title_label=f"{iso_year}년 W{iso_week:02d}",
+                signals=signals,
+                has_meaningful_change=has_meaningful_change,
+            )
+        )
+
+    return pages
+
+
 class StaticSiteGenerator:
     def __init__(
         self,
@@ -260,17 +343,24 @@ class StaticSiteGenerator:
     def generate(self) -> None:
         digests = _load_digests(self.data_dir)
         context = SiteContext(digests=digests)
+        weekly_pages = _build_weekly_pages(digests)
 
         self.docs_dir.mkdir(parents=True, exist_ok=True)
         self._copy_static_assets()
 
         self._render_archive(context)
         self._render_daily_pages(context)
-        self._render_index(context)
+        self._render_weekly_pages(weekly_pages)
+        self._render_index(context, weekly_pages[0] if weekly_pages else None)
 
-    def _render_index(self, context: SiteContext) -> None:
+    def _render_index(self, context: SiteContext, latest_weekly: WeeklyPage | None) -> None:
         template = self.env.get_template("index.html")
-        output = template.render(latest=context.latest, digests=context.digests, title="baioDigest")
+        output = template.render(
+            latest=context.latest,
+            digests=context.digests,
+            latest_weekly=latest_weekly,
+            title="baioDigest",
+        )
         _write(self.docs_dir / "index.html", output)
 
     def _render_archive(self, context: SiteContext) -> None:
@@ -312,6 +402,18 @@ class StaticSiteGenerator:
                 why_it_matters=_why_it_matters,
             )
             _write(self.docs_dir / "daily" / f"{digest.date}.html", output)
+
+    def _render_weekly_pages(self, weekly_pages: list[WeeklyPage]) -> None:
+        weekly_dir = self.docs_dir / "weekly"
+        if weekly_dir.exists():
+            shutil.rmtree(weekly_dir)
+        if not weekly_pages:
+            return
+
+        template = self.env.get_template("weekly.html")
+        for weekly_page in weekly_pages:
+            output = template.render(weekly_page=weekly_page, title=f"Weekly {weekly_page.slug}")
+            _write(weekly_dir / f"{weekly_page.slug}.html", output)
 
     def _copy_static_assets(self) -> None:
         target = self.docs_dir / "static"
