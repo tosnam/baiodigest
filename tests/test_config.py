@@ -3,10 +3,11 @@ from pathlib import Path
 from baiodigest.config import Settings
 
 
-def test_smtp_defaults(monkeypatch) -> None:
+def test_smtp_defaults(monkeypatch, tmp_path: Path) -> None:
     monkeypatch.delenv("BAIODIGEST_SMTP_HOST", raising=False)
     monkeypatch.delenv("BAIODIGEST_SMTP_PORT", raising=False)
     monkeypatch.delenv("BAIODIGEST_SMTP_FROM_NAME", raising=False)
+    monkeypatch.setenv("BAIODIGEST_RECIPIENTS_FILE", str(tmp_path / "missing-recipients.toml"))
 
     settings = Settings()
 
