@@ -84,6 +84,8 @@ class StaticSiteGenerator:
         self.env = Environment(
             loader=FileSystemLoader(str(template_dir)),
             autoescape=select_autoescape(["html", "xml"]),
+            trim_blocks=True,
+            lstrip_blocks=True,
         )
         self.env.globals["url_for"] = lambda path: _build_site_url(self.site_prefix, path)
 

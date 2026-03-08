@@ -4,52 +4,78 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>baioDigest | baioDigest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" href="/baiodigest/static/style.css" />
   </head>
   <body>
-    <main class="container">
-      <header class="site-header">
-        <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
-        <nav>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio industry research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
           <ul>
             <li><a href="/baiodigest/index.html">Home</a></li>
             <li><a href="/baiodigest/archive.html">Archive</a></li>
           </ul>
         </nav>
       </header>
-      
-<section>
+      <main class="site-main container">
+<section class="hero-summary">
+  <p class="eyebrow">Latest issue</p>
   <h2>최신 다이제스트</h2>
-  
-    <p><a href="/baiodigest/daily/2026-03-08.html">2026-03-08 다이제스트 보기</a></p>
-    <p>논문 2편 요약</p>
-  
+    <p class="hero-copy">2026-03-08 기준으로 선별한 논문 2편을 차분한 읽기 흐름으로 정리했습니다.</p>
+    <p><a class="primary-link" href="/baiodigest/daily/2026-03-08.html">2026-03-08 다이제스트 보기</a></p>
 </section>
 
-<section>
-  <h3>최근 기록</h3>
-  <ul>
-    
-      <li><a href="/baiodigest/daily/2026-03-08.html">2026-03-08</a> (2편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-07.html">2026-03-07</a> (4편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-06.html">2026-03-06</a> (2편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-05.html">2026-03-05</a> (1편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-04.html">2026-03-04</a> (1편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-03.html">2026-03-03</a> (0편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-02.html">2026-03-02</a> (16편)</li>
-    
-      <li><a href="/baiodigest/daily/2026-03-01.html">2026-03-01</a> (16편)</li>
-    
+<section class="digest-list">
+  <div class="section-heading">
+    <p class="eyebrow">Archive preview</p>
+    <h3>최근 기록</h3>
+  </div>
+  <ul class="digest-items">
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-08.html">2026-03-08</a>
+        <span>논문 2편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-07.html">2026-03-07</a>
+        <span>논문 4편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-06.html">2026-03-06</a>
+        <span>논문 2편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-05.html">2026-03-05</a>
+        <span>논문 1편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-04.html">2026-03-04</a>
+        <span>논문 1편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-03.html">2026-03-03</a>
+        <span>논문 0편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-02.html">2026-03-02</a>
+        <span>논문 16편</span>
+      </li>
+      <li class="digest-row">
+        <a href="/baiodigest/daily/2026-03-01.html">2026-03-01</a>
+        <span>논문 16편</span>
+      </li>
   </ul>
 </section>
-
-    </main>
+      </main>
+    </div>
   </body>
 </html>

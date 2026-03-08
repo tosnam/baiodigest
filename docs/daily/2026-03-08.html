@@ -4,49 +4,66 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Digest 2026-03-08 | baioDigest</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
     <link rel="stylesheet" href="/baiodigest/static/style.css" />
   </head>
   <body>
-    <main class="container">
-      <header class="site-header">
-        <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
-        <nav>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio industry research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
           <ul>
             <li><a href="/baiodigest/index.html">Home</a></li>
             <li><a href="/baiodigest/archive.html">Archive</a></li>
           </ul>
         </nav>
       </header>
-      
-<h2>2026-03-08 Digest</h2>
-<p>총 2편</p>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-08</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
 
-
-<article>
-  <header>
+<article class="paper-card">
+  <header class="paper-meta">
     <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41793568/" target="_blank" rel="noopener noreferrer">Thermostability engineering of microbial transglutaminase using artificial intelligence and investigation of its underlying mechanisms.</a></h3>
-    <p>
-      Bioresources and bioprocessing
-    </p>
-    
-      <p>College of Pharmacy, Anhui Institute of Medicine, Hefei, 230061, China.</p>
-    
+    <p>Bioresources and bioprocessing</p>
+    <p>College of Pharmacy, Anhui Institute of Medicine, Hefei, 230061, China.</p>
   </header>
 
-  <h4>배경</h4>
-  <p>인공지능이 효소 분자 진화에 적용되며 연구 열풍이 형성되고 있지만, 머신러닝을 효소 변형에 활용하는 데는 여전히 많은 도전 과제가 존재한다. (machine learning)</p>
+  <section class="summary-grid">
+    <section class="summary-block">
+      <h4>배경</h4>
+      <p>인공지능이 효소 분자 진화에 적용되며 연구 열풍이 형성되고 있지만, 머신러닝을 효소 변형에 활용하는 데는 여전히 많은 도전 과제가 존재한다. (machine learning)</p>
+    </section>
 
-  <h4>방법</h4>
-  <p>실험실에서 개발한 희소 컨볼루션 신경망을 통해 열안정성(thermostability)을 증가시키는 아미노산 돌연변이(E164L, E164P, S199E, S199Q)를 예측하고, 분자 역학 시뮬레이션을 통해 그 기전을 분석하였다.</p>
+    <section class="summary-block">
+      <h4>방법</h4>
+      <p>실험실에서 개발한 희소 컨볼루션 신경망을 통해 열안정성(thermostability)을 증가시키는 아미노산 돌연변이(E164L, E164P, S199E, S199Q)를 예측하고, 분자 역학 시뮬레이션을 통해 그 기전을 분석하였다.</p>
+    </section>
 
-  <h4>결과</h4>
-  <p>S199E 돌연변이는 60°C에서 2.3배, 50°C에서 5.8배의 반감기 향상과 1.4배의 효소 활성 증가를 보였으며, 분자 역학 시뮬레이션은 결합 자유 에너지와 구조적 안정성 변화를 확인하였다.</p>
+    <section class="summary-block">
+      <h4>결과</h4>
+      <p>S199E 돌연변이는 60°C에서 2.3배, 50°C에서 5.8배의 반감기 향상과 1.4배의 효소 활성 증가를 보였으며, 분자 역학 시뮬레이션은 결합 자유 에너지와 구조적 안정성 변화를 확인하였다.</p>
+    </section>
 
-  <h4>의미</h4>
-  <p>S199E의 열안정성 향상은 전반적인 단백질 구조 변화 없이 지역적 구조 안정성 향상에 기인하며, 이는 효소 공학에서 새로운 설계 전략으로 활용될 수 있다.</p>
+    <section class="summary-block">
+      <h4>의미</h4>
+      <p>S199E의 열안정성 향상은 전반적인 단백질 구조 변화 없이 지역적 구조 안정성 향상에 기인하며, 이는 효소 공학에서 새로운 설계 전략으로 활용될 수 있다.</p>
+    </section>
+  </section>
 
-  <footer>
+  <footer class="paper-notes">
     <small>
       키워드: enzyme/protein engineering + AI
       <br />
@@ -54,31 +71,36 @@
     </small>
   </footer>
 </article>
-
-<article>
-  <header>
+<article class="paper-card">
+  <header class="paper-meta">
     <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41793537/" target="_blank" rel="noopener noreferrer">Harnessing bacterial power and omics technologies for sustainable plastic waste biodegradation.</a></h3>
-    <p>
-      Biodegradation
-    </p>
-    
-      <p>Department of Genetics, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt. assma.ahmed@agr.cu.edu.eg.</p>
-    
+    <p>Biodegradation</p>
+    <p>Department of Genetics, Faculty of Agriculture, Cairo University, Giza, 12613, Egypt. assma.ahmed@agr.cu.edu.eg.</p>
   </header>
 
-  <h4>배경</h4>
-  <p>합성 고분자(PE, PET, PS, PU)가 지구 환경에 비상한 속도로 축적되며, 미생물이 플라스틱을 분해하는 잠재력이 주목받고 있다(thermostability). 이 과정에서 미생물의 효소 기전과 환경적 요인이 중요한 역할을 한다.</p>
+  <section class="summary-grid">
+    <section class="summary-block">
+      <h4>배경</h4>
+      <p>합성 고분자(PE, PET, PS, PU)가 지구 환경에 비상한 속도로 축적되며, 미생물이 플라스틱을 분해하는 잠재력이 주목받고 있다(thermostability). 이 과정에서 미생물의 효소 기전과 환경적 요인이 중요한 역할을 한다.</p>
+    </section>
 
-  <h4>방법</h4>
-  <p>전체 유전자 조사(transcriptomics), 단백질 분석(proteomics), 대사 경로 연구(metabolomics), 그리고 유전자 분석(genomics)을 통한 다-omics 접근법을 활용하였다. 인공지능(AI) 기반 예측 모델링과 효소 공학 기술도 적용되었다.</p>
+    <section class="summary-block">
+      <h4>방법</h4>
+      <p>전체 유전자 조사(transcriptomics), 단백질 분석(proteomics), 대사 경로 연구(metabolomics), 그리고 유전자 분석(genomics)을 통한 다-omics 접근법을 활용하였다. 인공지능(AI) 기반 예측 모델링과 효소 공학 기술도 적용되었다.</p>
+    </section>
 
-  <h4>결과</h4>
-  <p>PETase, METase, 에스터라제, 산화환원효소 등 주요 효소와 Thermobifida, Ideonella, Bacillus 등 분해균이 규명되었으며, 다-omics 데이터가 미생물 분해 메커니즘을 심층적으로 해석하였다.</p>
+    <section class="summary-block">
+      <h4>결과</h4>
+      <p>PETase, METase, 에스터라제, 산화환원효소 등 주요 효소와 Thermobifida, Ideonella, Bacillus 등 분해균이 규명되었으며, 다-omics 데이터가 미생물 분해 메커니즘을 심층적으로 해석하였다.</p>
+    </section>
 
-  <h4>의미</h4>
-  <p>교차 분야 접근법이 장기적인 플라스틱 오염 감소에 필수적임을 강조하며, 효소 변형 설계와 기술 혁신을 통한 실용화 전략을 제시하였다.</p>
+    <section class="summary-block">
+      <h4>의미</h4>
+      <p>교차 분야 접근법이 장기적인 플라스틱 오염 감소에 필수적임을 강조하며, 효소 변형 설계와 기술 혁신을 통한 실용화 전략을 제시하였다.</p>
+    </section>
+  </section>
 
-  <footer>
+  <footer class="paper-notes">
     <small>
       키워드: enzyme/protein engineering + AI
       <br />
@@ -86,8 +108,7 @@
     </small>
   </footer>
 </article>
-
-
-    </main>
+      </main>
+    </div>
   </body>
 </html>

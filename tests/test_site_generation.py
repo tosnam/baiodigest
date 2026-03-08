@@ -214,3 +214,58 @@ def test_generate_site_renders_redesigned_daily_digest(tmp_path) -> None:
     assert 'class="paper-meta"' in daily_html
     assert 'class="summary-grid"' in daily_html
     assert 'class="paper-notes"' in daily_html
+
+
+def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = _repo_root() / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    _write_sample_digest(data_dir)
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    style_css = (docs_dir / "static" / "style.css").read_text(encoding="utf-8")
+
+    assert "Noto Sans KR" in style_css
+    assert "Noto Serif KR" in style_css
+    assert ".hero-summary" in style_css
+    assert ".paper-card" in style_css
+
+
+def test_generate_site_output_has_no_trailing_whitespace(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = _repo_root() / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    _write_sample_digest(data_dir)
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    pages = [
+        docs_dir / "index.html",
+        docs_dir / "archive.html",
+        docs_dir / "daily" / "2026-03-02.html",
+    ]
+
+    for page in pages:
+        content = page.read_text(encoding="utf-8")
+        assert all(not line.endswith(" ") for line in content.splitlines()), page.name
