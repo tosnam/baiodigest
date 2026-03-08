@@ -25,6 +25,9 @@ if ! curl -sf http://localhost:11434/api/tags > /dev/null 2>&1; then
 fi
 
 # 파이프라인 실행
+echo "[INFO] Fetching newsletters..." >> "$LOG_DIR/daily.log"
+"$UV" run python -m baiodigest.newsletters.fetch >> "$LOG_DIR/daily.log" 2>&1
+
 echo "[INFO] Running pipeline..." >> "$LOG_DIR/daily.log"
 "$UV" run python -m baiodigest.main >> "$LOG_DIR/daily.log" 2>&1
 
