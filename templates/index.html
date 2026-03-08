@@ -2,10 +2,10 @@
 {% block content %}
 <section class="hero-summary">
   <p class="eyebrow">Latest issue</p>
-  <h2>최신 다이제스트</h2>
+  <h2>Today's Digest</h2>
   {% if latest %}
     <p class="hero-copy">{{ latest.date }} 기준으로 선별한 논문 {{ latest.entries|length }}편을 정리했습니다.</p>
-    <p><a class="primary-link" href="{{ url_for('daily/' ~ latest.date ~ '.html') }}">다이제스트 보기</a></p>
+    <p><a class="primary-link" href="{{ url_for('daily/' ~ latest.date ~ '.html') }}">View</a></p>
   {% else %}
     <p class="hero-copy">아직 생성된 다이제스트가 없습니다.</p>
   {% endif %}
