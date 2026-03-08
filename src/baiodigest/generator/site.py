@@ -9,7 +9,7 @@ import shutil
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
 
-from baiodigest.models import DailyDigest
+from baiodigest.models import DailyDigest, DigestEntry
 
 
 @dataclass(slots=True)
@@ -40,6 +40,13 @@ class ArchiveMonthPage:
     next_month_path: str | None
     weekday_labels: list[str]
     weeks: list[list[ArchiveDayCell]]
+
+
+@dataclass(slots=True, frozen=True)
+class DailyTopicGroup:
+    name: str
+    slug: str
+    entries: list[DigestEntry]
 
 
 def _load_digests(data_dir: Path) -> list[DailyDigest]:
@@ -164,6 +171,70 @@ def _build_archive_month_pages(digests: list[DailyDigest]) -> list[ArchiveMonthP
     return pages
 
 
+TOPIC_LABELS = {
+    "ai_protein_design": "AI 단백질 설계",
+    "enzyme_stability": "효소 안정성",
+    "enzyme_activity": "효소 활성",
+    "host_engineering": "숙주 엔지니어링",
+    "metabolic_pathway": "대사 경로",
+    "bioprocess_optimization": "바이오프로세스 최적화",
+    "screening_platform": "스크리닝 플랫폼",
+    "structural_bioinformatics": "구조 생물정보학",
+    "other": "기타",
+}
+
+PROBLEM_LABELS = {
+    "stability": "안정성",
+    "yield": "수율",
+    "selectivity": "선택성",
+    "productivity": "생산성",
+    "cost_reduction": "비용 절감",
+    "screening_speed": "스크리닝 속도",
+    "general_insight": "일반 인사이트",
+}
+
+RESEARCH_TYPE_LABELS = {
+    "basic": "기초연구",
+    "method": "방법론",
+    "applied": "응용연구",
+}
+
+PRACTICAL_DISTANCE_LABELS = {
+    "direct": "직접 참고 가능",
+    "mid_term": "중기 참고",
+    "foundational": "기반지식",
+}
+
+
+def _label_for(mapping: dict[str, str], value: str, fallback: str) -> str:
+    return mapping.get(value, fallback)
+
+
+def _why_it_matters(entry: DigestEntry) -> str:
+    if entry.summary.why_it_matters.strip():
+        return entry.summary.why_it_matters.strip()
+    return entry.filter_result.reason
+
+
+def _group_entries_by_topic(digest: DailyDigest) -> list[DailyTopicGroup]:
+    grouped: dict[str, list[DigestEntry]] = {}
+    for entry in digest.entries:
+        slug = entry.filter_result.topic_tags[0] if entry.filter_result.topic_tags else "other"
+        grouped.setdefault(slug, []).append(entry)
+
+    groups: list[DailyTopicGroup] = []
+    for slug, entries in grouped.items():
+        groups.append(
+            DailyTopicGroup(
+                name=_label_for(TOPIC_LABELS, slug, slug.replace("_", " ").title()),
+                slug=slug,
+                entries=entries,
+            )
+        )
+    groups.sort(key=lambda item: (-len(item.entries), item.name))
+    return groups
+
+
 class StaticSiteGenerator:
     def __init__(
         self,
@@ -225,7 +296,21 @@ class StaticSiteGenerator:
     def _render_daily_pages(self, context: SiteContext) -> None:
         template = self.env.get_template("daily.html")
         for digest in context.digests:
-            output = template.render(digest=digest, title=f"Digest {digest.date}")
+            topic_groups = _group_entries_by_topic(digest)
+            topic_tags = sorted({tag for entry in digest.entries for tag in entry.filter_result.topic_tags})
+            problem_tags = sorted({tag for entry in digest.entries for tag in entry.filter_result.problem_tags})
+            output = template.render(
+                digest=digest,
+                title=f"Digest {digest.date}",
+                topic_groups=topic_groups,
+                digest_topic_count=len(topic_tags),
+                digest_problem_count=len(problem_tags),
+                topic_labels=TOPIC_LABELS,
+                problem_labels=PROBLEM_LABELS,
+                research_type_labels=RESEARCH_TYPE_LABELS,
+                practical_distance_labels=PRACTICAL_DISTANCE_LABELS,
+                why_it_matters=_why_it_matters,
+            )
             _write(self.docs_dir / "daily" / f"{digest.date}.html", output)
 
     def _copy_static_assets(self) -> None:
