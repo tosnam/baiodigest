@@ -152,9 +152,12 @@ main.container,
 }
 
 .hero-summary,
+.weekly-preview,
 .digest-list,
 .archive-list,
 .archive-calendar,
+.weekly-hero,
+.weekly-signals,
 .digest-header,
 .paper-card {
   border: 1px solid var(--bd-border);
@@ -165,9 +168,12 @@ main.container,
 }
 
 .hero-summary,
+.weekly-preview,
 .digest-list,
 .archive-list,
 .archive-calendar,
+.weekly-hero,
+.weekly-signals,
 .digest-header {
   padding: clamp(1.35rem, 2vw, 2rem);
 }
@@ -189,12 +195,14 @@ main.container,
 }
 
 .hero-summary h2,
+.weekly-hero h2,
 .digest-header h2 {
   margin: 0.35rem 0 0.55rem;
   font-size: clamp(2rem, 4vw, 3.4rem);
 }
 
 .hero-copy,
+.weekly-hero > p:last-child,
 .digest-header > p:last-child,
 .archive-row p,
 .paper-meta p,
@@ -397,6 +405,54 @@ main.container,
   margin: 0 auto;
 }
 
+.daily-radar-summary,
+.daily-topic-group {
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.weekly-preview,
+.weekly-hero,
+.weekly-signals {
+  width: min(820px, 100%);
+  margin: 0 auto;
+}
+
+.daily-radar-summary {
+  padding: 1.35rem 1.5rem;
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-lg);
+  background: rgba(255, 252, 247, 0.72);
+}
+
+.daily-radar-summary p:last-child {
+  margin: 0;
+  color: var(--bd-muted);
+}
+
+.daily-topic-group + .daily-topic-group {
+  margin-top: 1.25rem;
+}
+
+.daily-topic-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 1rem;
+  margin-bottom: 0.8rem;
+  padding: 0 0.1rem;
+}
+
+.daily-topic-header h3 {
+  margin: 0.2rem 0 0;
+  font-family: var(--bd-serif);
+}
+
+.daily-topic-header > p {
+  margin: 0;
+  color: var(--bd-muted);
+}
+
 .paper-card {
   width: min(820px, 100%);
   margin: 0 auto;
@@ -421,6 +477,112 @@ main.container,
 
 .paper-meta p {
   margin: 0.15rem 0 0;
+}
+
+.paper-radar-grid,
+.paper-insight-grid,
+.paper-tag-grid {
+  display: grid;
+  gap: 0.95rem;
+  margin-bottom: 1rem;
+}
+
+.paper-radar-grid,
+.paper-insight-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.paper-tag-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.paper-radar-block,
+.insight-block,
+.paper-tag-grid > div {
+  min-height: 100%;
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-sm);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.paper-radar-block h4,
+.insight-block h4,
+.paper-tag-grid h4 {
+  margin: 0 0 0.45rem;
+  font-size: 0.95rem;
+  color: var(--bd-accent);
+  letter-spacing: 0.02em;
+}
+
+.paper-radar-block p,
+.insight-block p,
+.paper-tag-grid p {
+  margin: 0;
+}
+
+.chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.topic-chip,
+.problem-chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 2rem;
+  padding: 0 0.7rem;
+  border-radius: 999px;
+  font-size: 0.84rem;
+  font-weight: 600;
+}
+
+.topic-chip {
+  background: rgba(68, 97, 107, 0.12);
+  color: #294048;
+}
+
+.problem-chip {
+  background: rgba(111, 124, 130, 0.12);
+  color: #4a5c63;
+}
+
+.weekly-signal-list {
+  display: grid;
+  gap: 0.95rem;
+}
+
+.weekly-signal-card {
+  padding: 1rem 1.05rem;
+  border: 1px solid var(--bd-border);
+  border-radius: var(--bd-radius-sm);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.3) 100%);
+}
+
+.weekly-signal-card h3 {
+  margin: 0.1rem 0 0.35rem;
+  font-family: var(--bd-serif);
+  font-size: 1.15rem;
+}
+
+.weekly-signal-card p {
+  margin: 0 0 0.65rem;
+  color: var(--bd-muted);
+}
+
+.weekly-signal-kind {
+  margin: 0;
+  color: var(--bd-accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.weekly-empty-state p:last-child {
+  margin: 0;
+  color: var(--bd-muted);
 }
 
 .summary-grid {
@@ -466,6 +628,12 @@ main.container,
     padding-bottom: 1.8rem;
   }
 
+  .paper-radar-grid,
+  .paper-insight-grid,
+  .paper-tag-grid {
+    grid-template-columns: 1fr;
+  }
+
   .summary-grid {
     grid-template-columns: 1fr;
   }
@@ -506,12 +674,21 @@ main.container,
   }
 
   .hero-summary,
+  .weekly-preview,
   .digest-list,
   .archive-list,
   .archive-calendar,
+  .weekly-hero,
+  .weekly-signals,
   .digest-header,
+  .daily-radar-summary,
   .paper-card {
     border-radius: 22px;
+  }
+
+  .daily-topic-header {
+    align-items: start;
+    flex-direction: column;
   }
 
   .archive-weekdays span,
