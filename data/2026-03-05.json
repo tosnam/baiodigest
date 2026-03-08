@@ -1,12 +1,61 @@
 {
   "date": "2026-03-05",
-  "entries": [],
+  "entries": [
+    {
+      "paper": {
+        "title": "AI-driven multiscale virtual plant cell modeling: from molecular mechanisms to tissue functions.",
+        "abstract": "AI-driven multiscale virtual plant cell modeling represents a paradigm shift in plant systems biology, enabling predictive simulation from molecular mechanisms to tissue functions and accelerating the engineering of climate-resilient crops. AI-driven multiscale virtual plant cell modeling is emerging as a pivotal paradigm for deciphering complex biological processes in plants. By integrating dynamic processes across molecular, subcellular, and tissue scales, this framework enables systematic simulation from protein interaction prediction to emergent tissue functions, significantly enhancing our understanding of plant environmental responses and developmental mechanisms. This review comprehensively summarizes key technological advances in multiscale modeling, including neural network-assisted molecular interaction prediction, virtual plant tissue simulator construction, deep vision-based 3D reconstruction techniques, and cross-scale dynamic coupling algorithms. It highlights the application value of generative adversarial networks (GANs), transfer learning, and multi-omics integration strategies in addressing data scarcity and cross-species modeling challenges. The review also discusses validation methodologies such as in vitro experimental verification, evolutionary conservation analysis, and uncertainty quantification. In applied contexts, multiscale modeling offers novel insights for plant metabolic engineering, developmental programming simulation, and stress response prediction, while identifying current bottlenecks in parameter transfer accuracy, model interpretability, and computational efficiency. Future directions, including quantum computing-enabled real-time simulation, agricultural digital twin systems, and brain-inspired autonomous models, are explored. The central role of AI technologies in transitioning plant systems biology from descriptive to predictive and engineering-oriented paradigms is emphasized.",
+        "authors": [
+          "Liu Z",
+          "Sun X"
+        ],
+        "affiliations": [
+          "National Key Laboratory of Cotton Bio-Breeding and Integrated Utilization, State Key Laboratory of Crop Stress Adaptation and Improvement, Key Laboratory of Plant Stress Biology, School of Life Sciences, Henan University, Kaifeng, 475001, Henan, China.",
+          "National Key Laboratory of Cotton Bio-Breeding and Integrated Utilization, State Key Laboratory of Crop Stress Adaptation and Improvement, Key Laboratory of Plant Stress Biology, School of Life Sciences, Henan University, Kaifeng, 475001, Henan, China. sunxuwu@henu.edu.cn."
+        ],
+        "doi": "10.1007/s00425-026-04948-6",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Planta",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41776108/",
+        "category": "plant cells",
+        "date": "2026-03-03",
+        "mesh_terms": [
+          "Plant Cells",
+          "Artificial Intelligence",
+          "Models, Biological",
+          "Systems Biology",
+          "Computer Simulation",
+          "Neural Networks, Computer"
+        ],
+        "source_id": "41776108",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "metabolic_engineering",
+        "reason": "식물 대사 공학에 AI 기반 다중 규모 시뮬레이션 기술이 적용되어 기후 적응 작물 개발에 기여할 수 있음. 대사 경로 예측 및 스트레스 반응 분석이 식품/화학 산업에 활용 가능.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "AI 기반 다중 규모 가상 식물 세포 모델링은 식물 시스템 생물학에서 혁신적인 패러다임을 제시하며, 분자 메커니즘에서 조직 기능까지 예측적 시뮬레이션을 가능하게 합니다(thermostability). 이 접근법은 기후 변화에 강한 작물을 개발하는 데 기여하는 핵심 기술로 주목받고 있습니다.",
+        "method": "다양한 규모(분자, 세포 내, 조직)의 동적 프로세스를 통합해 단백질 상호작용 예측부터 조직 기능까지 시스템적으로 시뮬레이션합니다. 신경망 기반 분자 상호작용 예측, 3D 재구성 기술, 크로스 스케일 동적 결합 알고리즘 등 기술적 혁신이 적용됩니다.",
+        "result": "식물 환경 반응 및 발달 메커니즘에 대한 이해가 크게 향상되었으며, 대사 공학 및 스트레스 반응 예측에 새로운 통찰을 제공합니다. 그러나 매개변수 전달 정확도, 모델 해석 가능성, 계산 효율성 등 제약 요소도 지적되고 있습니다.",
+        "significance": "AI 기술이 식물 시스템 생물학을 설명적 패러다임에서 예측적이고 공학 중심으로 전환하는 핵심 역할을 하며, 양자 컴퓨팅, 농업 디지털  시스템 등 미래 방향성을 제시합니다."
+      }
+    }
+  ],
   "stats": {
-    "collected": 0,
-    "prefilter_passed": 0,
-    "llm_passed": 0,
-    "summarized": 0
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
   },
   "schema_version": "1.0",
-  "generated_at": "2026-03-04T22:00:09.867347+00:00"
+  "generated_at": "2026-03-07T23:51:54.992728+00:00"
 }

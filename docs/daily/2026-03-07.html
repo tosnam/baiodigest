@@ -35,22 +35,22 @@
   </header>
 
   <h4>배경</h4>
-  <p>비정상 아미노산(NCAAs)은 단백질 공학 및 펩타이드 약물 개발에서 핵심적인 구조 단위로, 대사 안정성(thermostability), 세포막 침투성, 및 프로테아제 저항성을 향상시킨다. 3D 단백질 구조의 정확한 구축은 기능 해명과 분자 상호작용 이해에 필수적이다.</p>
+  <p>비정상 아미노산(NCAAs)은 대사 안정성(metabolic stability), 막 투과성(membrane permeability), 및 프로테올리틱 분해 저항성(proteolytic degradation resistance) 등의 이점을 통해 단백질 공학과 펩타이드 약물 개발에서 필수적인 구조 단위로 주목받고 있다. 그러나 기존 단백질 구조 예측 모델(예: AlphaFold3)에 NCAAs를 통합할 때 체어리티 위반(chirality violation) 및 공간 장애(steric clash) 등의 문제가 발생한다.</p>
 
   <h4>방법</h4>
-  <p>AMBER 포스필드를 139개 NCAAs로 확장하고, HighRelax라는 향상된 Amber-relax 프로토콜을 개발하였다. 이 방법은 전통적인 선형 펩타이드 제한을 넘어 NCAAs 및 사이클릭 펩타이드를 포함한 복잡한 시스템에 적용 가능하다.</p>
+  <p>이 연구에서는 139개 NCAAs를 포함한 AMBER 포스필드를 확장하고, HighRelax라는 향상된 Amber-relax 프로토콜을 개발하였다. HighRelax는 비정상 아미노산 및 사이클릭 펩타이드를 포함한 복잡한 시스템에 적용 가능하며, 기존 선형 펩타이드에 한정된 전통적 방법과 달리 상태-of-the-art 모델과 연동된다.</p>
 
   <h4>결과</h4>
-  <p>HighRelax는 기하학적 왜곡을 줄이고, 잔여체 이성질체를 복원하며, 전체 구조 품질을 개선하였다. 이는 분자 시뮬레이션 및 펩타이드 약물 설계에 유용한 구조를 제공한다.</p>
+  <p>HighRelax는 공간 장애를 효과적으로 줄이고, 잔여체 체어리티를 복원하며, 전체 구조 품질을 향상시켰다. 이 방법은 NCAAs를 포함한 구조의 일반적인 후처리 전략으로 활용될 수 있으며, 분자 시뮬레이션 및 단백질 공학에 적용 가능하다.</p>
 
   <h4>의미</h4>
-  <p>HighRelax는 NCAA 포함 구조의 일반적인 후처리 전략을 제공하여, 단백질 공학 및 약물 개발에 실용적인 적용을 가능하게 한다. 기존 모델의 제한을 극복하는 물리 기반 접근법이다.</p>
+  <p>이 기법은 NCAAs를 포함한 구조의 정확한 3D 구조 정제를 가능하게 하여, 분자 시뮬레이션, 펩타이드 약물 설계, 단백질 공학 등 다양한 분야에 활용될 수 있는 기반이 된다.</p>
 
   <footer>
     <small>
       키워드: enzyme/protein engineering + AI
       <br />
-      판정 근거: NCAA 기반 단백질 구조 정밀도 향상은 항체/피에프트 디자인에 활용 가능. 단백질 공학 및 약물 개발 분야에 직접적 적용 가능. (confidence: 0.90)
+      판정 근거: NCAA 기반 단백질 구조 최적화 기술로 항체/시약 설계에 활용 가능. 단백질 공학 및 약물 개발 분야에 직접 적용 가능. (confidence: 0.95)
     </small>
   </footer>
 </article>
@@ -67,22 +67,22 @@
   </header>
 
   <h4>배경</h4>
-  <p>Genome-scale metabolic models (GEMs) are indispensable tools for probing cellular metabolism, enabling predictions of metabolic fluxes, guiding strain optimization, and advancing biomedical research.</p>
+  <p>유전체 규모 대사 모델(GEMs)은 세포 대사 분석에 필수적이지만, 생화학적 지식 부족, 분류 오류, 실험 검증 부족으로 인해 반응 네트워크가 불완전해져 예측 능력이 저하된다(thermostability). 이로 인해 대사 경로의 결함이 발생하는 경우가 많다.</p>
 
   <h4>방법</h4>
-  <p>However, their predictive capacity is often compromised by incomplete reaction networks, stemming from gaps in biochemical knowledge, annotation inaccuracies, and insufficient experimental validations.</p>
+  <p>MuSHIN(Multi-way SMILES-based Hypergraph Interface Network)은 네트워크 구조와 생화학 지식을 통합한 심층 하이퍼그래프 학습 방법으로, GEMs의 결сут 반응을 예측한다(deep hypergraph learning). SMILES 기반 하이퍼그래프 인터페이스를 통해 반응 관계를 재구성한다.</p>
 
   <h4>결과</h4>
-  <p>Here we present MuSHIN (Multi-way SMILES-based Hypergraph Interface Network), a deep hypergraph learning method that integrates network topology with biochemical domain knowledge to predict missing reactions in GEMs.</p>
+  <p>926개 GEMs에서 인위적으로 제거된 반응을 평가해 MuSHIN은 최신 기법 대비 평가 지표에서 최대 17% 개선을 보였다. 24개 초안 GEMs에서 핵심 대사 결함을 해결해 현장 실험 결과와 일치하는 현상 예측 성능을 향상시켰다.</p>
 
   <h4>의미</h4>
-  <p>Here we present MuSHIN (Multi-way SMILES-based Hypergraph Interface Network), a deep hypergraph learning method that integrates network topology with biochemical domain knowledge to predict missing reactions in GEMs.</p>
+  <p>MuSHIN은 GEM 재구성의 정확도를 높여 시스템 생물학, 대사 공학, 정밀 의학 분야의 연구 속도를 가속화할 잠재력을 보여준다. 대사 네트워크의 완전성 향상으로 생물학적 발견의 기회를 증가시킨다.</p>
 
   <footer>
     <small>
       키워드: metabolic engineering + AI
       <br />
-      판정 근거: 메타볼릭 엔지니어링에서 대사 모델 개선을 통해 균주 최적화에 기여할 수 있으며, 발효 관련 GEM 개선으로 산업적 응용 가능성이 높습니다. (confidence: 0.90)
+      판정 근거: 메타볼릭 엔지니어링에서 대사 모델 개선에 기여하며, 발효 관련 GEM 적용 가능성 있음. (confidence: 0.90)
     </small>
   </footer>
 </article>
@@ -99,22 +99,22 @@
   </header>
 
   <h4>배경</h4>
-  <p>Bacillus subtilis is widely used for industrial protein production and metabolic synthesis owing to its robustness, safety, and strong secretion capacity.</p>
+  <p>Bacillus subtilis는 강력한 분비 능력과 안전성으로 산업용 단백질 생산 및 대사 합성에 널리 사용되지만, 고비용 및 세포독성 화학 유도제는 대규모 생물공정에서 주요 제약 요인이다 (cost-effectiveness, cytotoxicity).</p>
 
   <h4>방법</h4>
-  <p>However, high-cost and cytotoxic chemical inducers remain major bottlenecks for large-scale bioprocesses.</p>
+  <p>MICA 시스템은 6가지 대사 가능한 탄소원(말토스, 만노스, 솔비톨, 아라비노스, 시트르산, 글리세롤)을 기반으로 개발되었으며, 프로모터 공학과 T7 RNA 폴리메라제 시스템 통합을 통해 유도 효율을 극대화하였다 (promoter engineering, T7 RNA polymerase system).</p>
 
   <h4>결과</h4>
-  <p>Here, we developed the Metabolizable Inducer-based Carbon-source Autoinduction (MICA) system, which leverages six endogenous, inexpensive, non-toxic, and metabolizable carbon-source-responsive regulatory modules in B.</p>
+  <p>MICA 시스템은 알칼리 프로테아제와 β-1,3-글루칸아제의 고수준 생산을 가능하게 하였으며, PT7malA1 변이는 진탕 배양에서 라이코핀 82.5 mg/L 및 β-카로틴 94.2 mg/L를 달성하였다 (high-level protein expression, dynamic metabolic regulation).</p>
 
   <h4>의미</h4>
-  <p>Here, we developed the Metabolizable Inducer-based Carbon-source Autoinduction (MICA) system, which leverages six endogenous, inexpensive, non-toxic, and metabolizable carbon-source-responsive regulatory modules in B.</p>
+  <p>MICA 시스템은 저비용, 비독성 플랫폼으로 단백질 과발현 및 대사 조절을 가능하게 하여, 확장 가능한 산업 생물공정에 강한 잠재력을 제공한다 (scalable industrial biotechnology applications).</p>
 
   <footer>
     <small>
       키워드: expression optimization
       <br />
-      판정 근거: Bacillus subtilis의 대사 조절과 저비용 인덕터 기반 생산 시스템은 식품, 화학, 의약 산업에서 고부가가치 제품 개발에 활용 가능합니다. 특히 라이코펜 및 베타카로틴과 같은 영양소 생산에 대한 효율성 향상이 산업적 적용 전망을 높입니다. (confidence: 0.90)
+      판정 근거: 식품/의약 산업에 필요한 효소 및 색소 생산에 활용 가능합니다. 저비용으로 대규모 생산을 가능하게 하는 메타볼릭 엔지니어링 기술입니다. (confidence: 0.95)
     </small>
   </footer>
 </article>
@@ -131,22 +131,22 @@
   </header>
 
   <h4>배경</h4>
-  <p>Soybean is one of the main sources of vegetable protein used in animal feed, but its nutritional value is limited by the presence of antinutritional factors, such as protease inhibitors (Kunitz and Bowman-Birk), lectins, phytic acid, raffinose family oligosaccharides (RFOs), and saponins, which reduce the digestibility and absorption of nutrients.</p>
+  <p>대豆는 동물 사료에 사용되는 주요 식물 단백질 원천이지만, 항영양성 요인(예: protease inhibitors (Kunitz and Bowman-Birk), lectins, phytic acid 등)으로 인해 영양소의 소화 및 흡수에 제한이 있다.</p>
 
   <h4>방법</h4>
-  <p>In recent decades, advances in metabolic engineering and functional genomics have allowed the targeting of biochemical pathways to increase the content and quality of proteins while simultaneously reducing these undesirable compounds.</p>
+  <p>전환 유전자 공학, 유도 돌연변이, 정밀 유전자 편집 기술(예: RNAi, CRISPR/Cas9, AlphaFold2 기반 편집)을 활용해 탄소 및 질소 대사 경로와 저장 단백질 관련 유전자를 수정하였다.</p>
 
   <h4>결과</h4>
-  <p>This work reviews the main progress achieved through transgenesis, induced mutagenesis, and precision gene editing, highlighting the role of tools such as RNAi, CRISPR/Cas9, and AlphaFold2-guided gene editing in modifying genes involved in carbon and nitrogen metabolism and storage proteins.</p>
+  <p>CIF1과 AIP2 유전자 억제는 씨앗 단백질 함량을 증가시키고, SWEET10a/b 편집은 기름-단백질 균형을 조절하며, 항영양성 물질 관련 유전자 비활성화는 phytate 및 protease inhibitors의 발현을 크게 감소시켰다.</p>
 
   <h4>의미</h4>
-  <p>This work reviews the main progress achieved through transgenesis, induced mutagenesis, and precision gene editing, highlighting the role of tools such as RNAi, CRISPR/Cas9, and AlphaFold2-guided gene editing in modifying genes involved in carbon and nitrogen metabolism and storage proteins.</p>
+  <p>이러한 전략은 대두의 단백질 함량과 품질을 향상시키고 항영양성 물질을 감소시켜 동물 사료에서의 활용을 최적화하는 유망한 접근법으로 자리잡고 있다.</p>
 
   <footer>
     <small>
       키워드: expression optimization
       <br />
-      판정 근거: 이 논문은 동물 사료용 대두의 영양 가치 향상을 위한 대사 공학 기술을 다루고 있으며, 식품 산업에서 활용 가능성이 높습니다. 항영양 요소 감소와 단백질 함량 증가가 동물 사료의 품질 개선에 기여할 수 있습니다. (confidence: 0.95)
+      판정 근거: 식품 산업에서 동물 사료 품질 향상에 기여할 수 있으며, 항영양소 감소를 통해 영양소 흡수율을 개선합니다. (confidence: 0.95)
     </small>
   </footer>
 </article>
