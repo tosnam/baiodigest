@@ -38,6 +38,8 @@ else
     TODAY=$(date '+%Y-%m-%d')
     git -C "$PROJECT_DIR" commit -m "digest: $TODAY" >> "$LOG_DIR/daily.log" 2>&1
     git -C "$PROJECT_DIR" push origin main >> "$LOG_DIR/daily.log" 2>&1
+    echo "[INFO] Sending digest notification email..." >> "$LOG_DIR/daily.log"
+    "$UV" run python -m baiodigest.notify --date "$TODAY" >> "$LOG_DIR/daily.log" 2>&1
     echo "[INFO] Pushed successfully." >> "$LOG_DIR/daily.log"
 fi
 

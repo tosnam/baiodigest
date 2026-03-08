@@ -13,6 +13,11 @@ class SearchQuery:
     pubmed_filter: str | None = None
 
 
+@dataclass(slots=True, frozen=True)
+class EmailRecipient:
+    email: str
+
+
 def _project_root() -> Path:
     default_root = Path(__file__).resolve().parents[2]
     root = Path(os.getenv("BAIODIGEST_ROOT", str(default_root))).expanduser()
@@ -77,6 +82,32 @@ def _load_pubmed_queries(path: Path) -> list[SearchQuery]:
     return loaded
 
 
+def _load_recipients(path: Path) -> list[EmailRecipient]:
+    if not path.exists():
+        return []
+
+    try:
+        data = tomllib.loads(path.read_text(encoding="utf-8"))
+    except (tomllib.TOMLDecodeError, OSError) as exc:
+        raise ValueError(f"Failed to parse recipients.toml: {path}") from exc
+
+    raw_recipients = data.get("recipients")
+    if not isinstance(raw_recipients, list) or not raw_recipients:
+        raise ValueError("recipients.toml must contain a non-empty [[recipients]] array")
+
+    loaded: list[EmailRecipient] = []
+    for idx, item in enumerate(raw_recipients, start=1):
+        if not isinstance(item, dict):
+            raise ValueError(f"Recipient #{idx} must be a table")
+
+        email = str(item.get("email", "")).strip()
+        if not email:
+            raise ValueError(f"Recipient #{idx} must define non-empty 'email'")
+        loaded.append(EmailRecipient(email=email))
+
+    return loaded
+
+
 @dataclass(slots=True)
 class Settings:
     ollama_base_url: str = field(default_factory=lambda: os.getenv("OLLAMA_BASE_URL", "http://localhost:11434"))
@@ -102,13 +133,22 @@ class Settings:
     static_dir: Path = field(default_factory=lambda: _resolve_dir("BAIODIGEST_STATIC_DIR", "static"))
 
     queries_file: Path = field(default_factory=lambda: _resolve_path("BAIODIGEST_QUERIES_FILE", "queries.toml"))
+    recipients_file: Path = field(default_factory=lambda: _resolve_path("BAIODIGEST_RECIPIENTS_FILE", "recipients.toml"))
     site_prefix: str = field(
         default_factory=lambda: _normalize_site_prefix(os.getenv("BAIODIGEST_SITE_PREFIX", "/baiodigest"))
     )
+    site_url: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SITE_URL", "").rstrip("/"))
+    smtp_host: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_HOST", "smtp.gmail.com"))
+    smtp_port: int = field(default_factory=lambda: int(os.getenv("BAIODIGEST_SMTP_PORT", "465")))
+    smtp_username: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_USERNAME", ""))
+    smtp_app_password: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_APP_PASSWORD", ""))
+    smtp_from_name: str = field(default_factory=lambda: os.getenv("BAIODIGEST_SMTP_FROM_NAME", "baioDigest"))
     pubmed_queries: list[SearchQuery] = field(init=False)
+    email_recipients: list[EmailRecipient] = field(init=False)
 
     def __post_init__(self) -> None:
         self.pubmed_queries = _load_pubmed_queries(self.queries_file)
+        self.email_recipients = _load_recipients(self.recipients_file)
 
 
 DEFAULT_SCHEMA_VERSION = "1.0"

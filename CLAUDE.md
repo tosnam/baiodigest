@@ -15,6 +15,7 @@ PubMed에서 생명과학 논문을 매일 수집하고, 로컬 LLM(Ollama + Qwe
 | 논문 소스 | PubMed E-utilities | queries.toml로 5개 불리언 쿼리 관리 |
 | 요약 엔진 | Ollama (localhost:11434) + qwen3:8b | `/no_think` 플래그로 빠른 판정 |
 | 사이트 생성 | Jinja2 템플릿 → 정적 HTML | Hugo/Jekyll 대신 단일 스택 |
+| 이메일 알림 | Gmail SMTP + 앱 비밀번호 | push 성공 후 등록 수신자에게 발송 |
 | 스타일링 | Pico CSS (CDN) | 시맨틱 HTML, 다크모드 자동 |
 | 배포 | GitHub Pages (docs/) | 로컬 실행 후 git push |
 | 스케줄링 | macOS launchd | 매일 07:00 |
@@ -28,8 +29,11 @@ baiodigest/
 ├── queries.toml             # PubMed 불리언 쿼리 정의 (5개)
 ├── src/baiodigest/
 │   ├── main.py              # CLI 진입점, 파이프라인 오케스트레이터
+│   ├── notify.py            # 다이제스트 게시 알림 CLI
 │   ├── models.py            # Paper, DailyDigest 데이터 모델
 │   ├── config.py            # SearchQuery dataclass, queries.toml 로드
+│   ├── notifications/
+│   │   └── email.py         # Gmail SMTP 메일 조립/발송
 │   ├── fetchers/
 │   │   └── pubmed.py        # PubMed E-utilities 클라이언트
 │   ├── filters/
@@ -81,6 +85,7 @@ uv sync                                          # 의존성 설치
 uv run python -m baiodigest.main                 # 전체 파이프라인
 uv run python -m baiodigest.main --fetch-only    # 수집만
 uv run python -m baiodigest.main --generate-only # HTML 생성만
+uv run python -m baiodigest.notify --date 2026-03-08  # 알림 메일 발송
 uv run python -m baiodigest.main --date 2026-03-01  # 특정 날짜
 uv run python -m baiodigest.main --force         # 기존 데이터 덮어쓰기
 uv run pytest                                    # 테스트
@@ -131,6 +136,9 @@ pubmed_filter = "journal article[pt]" # 추가 PubMed 필터 (선택)
 - GitHub Pages: Settings > Pages > Source: Deploy from branch > /docs
 - macOS launchd (~/Library/LaunchAgents/com.baiodigest.daily.plist)로 매일 05:00 실행
 - 시작 시 마지막 수집 날짜 확인, 누락 날짜 소급 수집 (최대 5일)
+- `scripts/run-daily.sh`는 push 성공 후 `baiodigest.notify`를 호출해 메일 알림 전송
+- 실행 환경 변수: `BAIODIGEST_SITE_URL`, `BAIODIGEST_SMTP_USERNAME`, `BAIODIGEST_SMTP_APP_PASSWORD`
+- 수신자 목록은 루트의 `recipients.toml` 또는 `BAIODIGEST_RECIPIENTS_FILE` 경로에서 로드
 
 ## 향후 개선
 - RSS/Atom 피드 생성 (Feedly/Inoreader 구독용)
