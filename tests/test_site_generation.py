@@ -181,6 +181,9 @@ def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
     assert "/baiodigest/daily/2026-03-02.html" in index_html
     assert "/baiodigest/daily/2026-03-01.html" not in index_html
     assert 'class="digest-list"' in index_html
+    assert "Built by" in index_html
+    assert "@tosnam" in index_html
+    assert 'href="https://github.com/tosnam"' in index_html
     assert 'class="archive-calendar"' in archive_html
     assert 'class="archive-month-grid"' in archive_html
 
@@ -287,6 +290,9 @@ def test_generate_site_renders_queries_page(tmp_path) -> None:
     assert "omics + AI (top journals)" in queries_html
     assert "(Nature[Journal] OR Science[Journal])" in queries_html
     assert "<dt>PubMed filter</dt>" in queries_html
+    assert "Built by" in queries_html
+    assert "@tosnam" in queries_html
+    assert 'href="https://github.com/tosnam"' in queries_html
 
 
 def test_generate_site_copies_digest_theme_styles(tmp_path) -> None:

@@ -151,6 +151,23 @@ main.container,
   gap: 1.75rem;
 }
 
+.site-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--bd-border);
+  color: var(--bd-muted);
+  font-size: 0.92rem;
+}
+
+.site-footer p {
+  margin: 0;
+}
+
+.site-footer a {
+  text-decoration: none;
+  font-weight: 600;
+}
+
 .hero-summary,
 .digest-list,
 .query-list,
