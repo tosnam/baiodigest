@@ -16,6 +16,8 @@ htmlcov/
 logs/
 *.log
 .worktrees/
+recipients.toml
+.env
 
 # Generated data/docs
 *.DS_Store
