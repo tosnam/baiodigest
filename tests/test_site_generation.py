@@ -123,3 +123,34 @@ def test_generate_site_normalizes_english_reason(tmp_path) -> None:
     daily_html = (docs_dir / "daily" / "2026-03-02.html").read_text(encoding="utf-8")
 
     assert "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다." in daily_html
+
+
+def test_generate_site_renders_redesigned_index_and_archive(tmp_path) -> None:
+    data_dir = tmp_path / "data"
+    docs_dir = tmp_path / "docs"
+    static_dir = tmp_path / "static"
+    template_dir = _repo_root() / "templates"
+
+    data_dir.mkdir(parents=True)
+    static_dir.mkdir(parents=True)
+    (static_dir / "style.css").write_text("body {}", encoding="utf-8")
+    _write_sample_digest(data_dir)
+
+    generator = StaticSiteGenerator(
+        template_dir=template_dir,
+        static_dir=static_dir,
+        data_dir=data_dir,
+        docs_dir=docs_dir,
+        site_prefix="/baiodigest",
+    )
+    generator.generate()
+
+    index_html = (docs_dir / "index.html").read_text(encoding="utf-8")
+    archive_html = (docs_dir / "archive.html").read_text(encoding="utf-8")
+
+    assert 'class="site-shell"' in index_html
+    assert 'class="hero-summary"' in index_html
+    assert "최신 다이제스트" in index_html
+    assert 'class="digest-list"' in index_html
+    assert 'class="archive-list"' in archive_html
+    assert 'class="archive-row"' in archive_html

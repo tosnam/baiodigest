@@ -1,22 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
-<h2>Archive</h2>
-<table>
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Papers</th>
-      <th>Link</th>
-    </tr>
-  </thead>
-  <tbody>
-    {% for digest in digests %}
-    <tr>
-      <td>{{ digest.date }}</td>
-      <td>{{ digest.entries|length }}</td>
-      <td><a href="{{ url_for('daily/' ~ digest.date ~ '.html') }}">open</a></td>
-    </tr>
-    {% endfor %}
-  </tbody>
-</table>
+<section class="archive-list">
+  <div class="section-heading">
+    <p class="eyebrow">All issues</p>
+    <h2>Archive</h2>
+  </div>
+  {% for digest in digests %}
+  <article class="archive-row">
+    <div>
+      <h3>{{ digest.date }}</h3>
+      <p>논문 {{ digest.entries|length }}편</p>
+    </div>
+    <a href="{{ url_for('daily/' ~ digest.date ~ '.html') }}">열기</a>
+  </article>
+  {% endfor %}
+</section>
 {% endblock %}
