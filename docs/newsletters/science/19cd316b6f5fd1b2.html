@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773067952000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6Ijg3ZDQ1MTMxLWJmZTctNDgyMi1hMzZiLWZhNmEzOWMyZGZiOCIsImRla1ZlcnNpb24iOjEsIml2IjoiL0NHdkxhSzR2OWY4MjN0YnVFZnRVQT09IiwiY2lwaGVyVGV4dCI6ImNpZmNKYTBibzlDZHVaSU9adHN0eTE4N1Q0TzkrRDNvUTFVa3o5Nm83dzZ3bkJlemlxMEY5ZUQrdTJhaHM5MDUwLzNxMiszQ1VGV1c1VFprYzd2R2RyUDRSOFBodDhLenlQd2hyeTJpdUwvWC9OdDdXN2hIN1ZBPSIsImF1dGhUYWciOiI1VFprYzd2R2RyUDRSOFBodDhLenlBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">additional tests showed scientists that they had been fooled</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjcwMTBlNGRhLTExOWItNGM0Ni1hODk5LWQ2YTZlOTVhYTA5YSIsImRla1ZlcnNpb24iOjEsIml2IjoidG1RZ1ltVVVaTERuaDBQMWpKT2t6dz09IiwiY2lwaGVyVGV4dCI6Ilk3VUFtTkFDMjRIZk85ditPMXduMWJUUjhFdXpNRDc4bXFpTDVERUplMnduNUcwZU0xR3p2bFE2Q2d3YVYvRnFQb21Cd0VocFRVR0t6NWpQRWFLUGxHU0hUUFc1dXM0bDdMWmtJR0psRkdTdzU0ZEQ5WXlUcE04PSIsImF1dGhUYWciOiJ6NWpQRWFLUGxHU0hUUFc1dXM0bDdBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">the critters managed to degrade nearly 55% of the plastic they had ingested</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjI5NTAyOWJmLWMzMDQtNDZiMC05NjhmLTkzZGNmNDI2ZjVhOCIsImRla1ZlcnNpb24iOjEsIml2IjoiR05jUm5lc1Z0QVBuZmFkTGZDSUdYUT09IiwiY2lwaGVyVGV4dCI6ImVsZEdCVkQxK3VvdnYxdGg0c0tyaHZNV01ETVg4SlpzeHdzNGNBMVdETVhXait1S3Z5YTJ0V3hyRjZVVlk5ZEdaa3FVZHl3SWZIMmY3bVpRTVJubXJOWWkvMG1kZlhTR2pCalhFWjNyRmJRRDUzMm5TM3dpQmwwPSIsImF1dGhUYWciOiI3bVpRTVJubXJOWWkvMG1kZlhTR2pBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">astrocytes could be engineered to remove these plaques more efficiently</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjkyMTBjNWFkLTYyYjctNDIyMy04NzQ4LTY1YjZkZTg4N2ExOCIsImRla1ZlcnNpb24iOjEsIml2IjoiZHlUSzVPRzJEbmRmYTVndmpzeUVhdz09IiwiY2lwaGVyVGV4dCI6Iit4NHpjWkVoQTRtN0xKMjBoQmEyQk52ZHQvM2J5OGozdk1OdU1xR3lTbU9Mb1ZlcSsvbUZuL2VwbGdNTFgrS2JsNE42Rng3K250bTkvbjBqcWtIQldCNXlXVTBiWk9IdlhYY2t5dVRodGc1M1gydVlMNDdNaEdzPSIsImF1dGhUYWciOiIvbjBqcWtIQldCNXlXVTBiWk9IdlhRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">this robot’s fingernails</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
