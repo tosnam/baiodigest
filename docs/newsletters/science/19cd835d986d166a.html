@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773153870000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjcwOTYxYzI2LTQzODEtNGU3ZS04MWFlLWE3MjFhYjg4N2I4MiIsImRla1ZlcnNpb24iOjEsIml2IjoiVVF0QmJzRTZMSzV4bW42TnJrd1BOdz09IiwiY2lwaGVyVGV4dCI6InZNTmRIOGpNeStRcFI2YVErY2pzQjJlSmZOYVZPNmR0aDZnQ0lDelAvVFF2NU9NSjU2K2I1dzE3RDJEZUVoOHduMTVFcUgrb1NSSHBMYzVIdFdyeHBoeDhsT1d6aVYzZVBWRUxRVzdCT2l5dWNacCtqYTVNRHpjPSIsImF1dGhUYWciOiJMYzVIdFdyeHBoeDhsT1d6aVYzZVBRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">feel a similar kind of glee at solving puzzles</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjE4NDU1NGYxLWRiOWUtNGU1Ni05ZmRiLTM3ZDk1YWUzYjIzYiIsImRla1ZlcnNpb24iOjEsIml2IjoiVG5Fd3V0bHlZSVdUYlRnS2ptcklvQT09IiwiY2lwaGVyVGV4dCI6IlRHNlFiSHl6WlBFRDhYQWY0QUNuNjFySUZxYWlhamorMCt4U1dIbFM2SklnaGpRNmdtdEd1eHZZdVkvQ01sK2VWeDg5Q1NyZFAzSzE5cHh4QUZSWGhKUmgrUmNuK2JaemJFNXhNTHJaY21DRmsyMDRDbzVxeUtBPSIsImF1dGhUYWciOiI5cHh4QUZSWGhKUmgrUmNuK2JaemJBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">bouts of physical movement can spark brain “ripples” beneficial for learning and memory</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjkxN2EyNWI4LTBkOGQtNDA4ZC04ZjAyLTE1YmUyOTg3N2QwMyIsImRla1ZlcnNpb24iOjEsIml2IjoidUdQU1RUYVNhYmFrTXZ1d2J3VGYzdz09IiwiY2lwaGVyVGV4dCI6IitLNUltdTBTWDRub3RCVUM5Ujd0MVE3c3BnUm92U1ptdTl5bE0xanAzNDJaRzJPOEVDWmEvc2tHejBnWUczNitnaTUwTkpwVkxZUG9hbUE0cTJkTlU5dmFTbTRHV281OHRyaGowazAya21tMnBETDdzRzhFMzk4PSIsImF1dGhUYWciOiJhbUE0cTJkTlU5dmFTbTRHV281OHRnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">did the young of Sonselasuchus cedrus</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjJhMGM1ZTU0LTI0NGItNGIwYi05YzUxLTUwOTRjOWY3OTNhNyIsImRla1ZlcnNpb24iOjEsIml2IjoiYlo4b3hzZThmVFV3NVB5QzVGeDVXdz09IiwiY2lwaGVyVGV4dCI6Im1CUkt2bmY0czVpTUE0UlB1YzVxdXZmMXhYMm1XT2oyM0U0emhMWkR5NmZUVzcxQ3l3eXR2L0hZSTY5NGx5M0FTTW10NHQ1M2VtcU5NUDVFTXpHQUNsbTdrL2sxa3VuVVgyMmZLTWJIdkgwMU1PVDhndVJjZVZzPSIsImF1dGhUYWciOiJNUDVFTXpHQUNsbTdrL2sxa3VuVVh3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">evidence that some pups coordinate their pitches with music</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
