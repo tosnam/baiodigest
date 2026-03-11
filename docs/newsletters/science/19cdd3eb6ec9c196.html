@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773238399000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImU5NDdmZDNlLTE4ZDAtNDhlYy1iODczLTJiZmQ1MmRiMTYzOCIsImRla1ZlcnNpb24iOjEsIml2IjoiekhBbWJ2NGlzTUEvSWtmdVN2aE02QT09IiwiY2lwaGVyVGV4dCI6IjZvdGdlQnh3cnM2QTBJb1M2NmNMdFl2OVFUaFlkRjdIMlkxallwT0JMSlFZQzEvb1pDQldza3g0c1dGbFNBL3VmWEtWVSs5VFFKU1ZmbHdiQXVJcUtjNzFuWEhGWGp3dGZzeHdKbTcrSXJEQVB5Skg3a3I0VE9nPSIsImF1dGhUYWciOiJmbHdiQXVJcUtjNzFuWEhGWGp3dGZnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">lncRNAs can be synthesized outside cells, engineered into stable therapeutics, and used to tamp down acute inflammation</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjdiNzhlZmRjLWEzNmEtNDdlMy04NDI3LWYyMzM5YTQ0ZmZkZSIsImRla1ZlcnNpb24iOjEsIml2IjoiYzlBOGFUd1NxeEhkUkFiTC8wbHJidz09IiwiY2lwaGVyVGV4dCI6InZBaiswZ1hEUThHMUVsSWNpdDVXRHJNZjJuZHc4alhHWlowNk0zdGNPRWhkMWxtUDFkUXRndlRYaFo1UU10YlJlb1ZoV0VtZXdaN1VMeW1IL0VKamh2bHJXelphUGN1MmQzUFFQR2s4RXFzUjNVUUd5LzlKYTI4PSIsImF1dGhUYWciOiJMeW1IL0VKamh2bHJXelphUGN1MmR3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">observed one such outburst</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6Ijk5M2I2YzQ0LTU1OTMtNDJjMC04ZjNkLTFiYzYzNzhjMGFlYiIsImRla1ZlcnNpb24iOjEsIml2Ijoib0lzblhlTm96TUVmUE54ZFhWbDFXdz09IiwiY2lwaGVyVGV4dCI6InBmbURMV1d1TTB2MW50Mm9neVNBNlNrdzhWd0RwSHpQanNWT2FTVmd2dUtuT3hRNmhrY0w0OVU5U01CejVLdzFCcXRpNXBYZ3RPS3BmOUVLdjhZSWhZVEVNQ0JrNERKY3Q2Q0xKMTNqYU16Qkh6emNYVjFaZFZzPSIsImF1dGhUYWciOiJmOUVLdjhZSWhZVEVNQ0JrNERKY3R3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">in an interview, Isaacman was also eager to talk about science</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImI4NWMwNmY4LTRkODgtNDkxZC04YjM2LWY4MWQzNWFkZjExZSIsImRla1ZlcnNpb24iOjEsIml2IjoiQmtmcjNEbkkzMmxuTm1zYVRCYjMvdz09IiwiY2lwaGVyVGV4dCI6Im9oNmJYUVV1K3pjdzVyOWcxUnJKRlgyVHlrOGNwZU1LUVhmaVNZeTF6WTk0K3lMQnJ2SURKK2d6OHhQd1VOSDQySVRDY1FKQmFnSEVqOGkwemZyMFhia2NyZVFyYzJ3a2hRWkg2OXc1eU45cFp6WnJHa3dXOS84PSIsImF1dGhUYWciOiJqOGkwemZyMFhia2NyZVFyYzJ3a2hRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">the winner of this year’s top prize in Science’s annual Dance Your Ph.D. contest</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImMzMTAzMmI5LTViNjktNDVmYi1iZjU4LWVmMzkzZGYzNWJjZiIsImRla1ZlcnNpb24iOjEsIml2IjoidXkrcXNGNjF5Qkk5N1RnbHY1U0tOUT09IiwiY2lwaGVyVGV4dCI6IjN6ekpwMm4wT2NiemFWM2l2ekJvMHdjc0laZEpnOFkwS1VieXQxRjg4SWhXdTJwaVBBdVFLVE1ZeWY2OUN4c1dHL0Zvby9aVE95ZHpwWDdJR1JGS2dZUE9idFlHSyt4TVFic3ZxckJldGNnU1BlMDRKYitVaWpVPSIsImF1dGhUYWciOiJwWDdJR1JGS2dZUE9idFlHSyt4TVFRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">bumblebees can breathe underwater</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

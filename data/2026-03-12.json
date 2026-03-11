@@ -1,0 +1,217 @@
+{
+  "date": "2026-03-12",
+  "entries": [
+    {
+      "paper": {
+        "title": "Discovering PETases: An Interlink Between Engineering Enzymes and Microbiomes.",
+        "abstract": "Polyethylene terephthalate (PET), an abundant synthetic polyester, is the only plastic that has been enzymatically recycled at an industrial scale. Over the last decades, research efforts have focused on screening and engineering PET-degrading hydrolases (PETases), aiming to identify variants that can operate efficiently in both environmental and industrial settings. The detection of potential PETases from marine and terrestrial ecosystems has primarily been conducted via metagenomics using homology strategies. However, the use of benchmark PETases as references has limited the searches, narrowing the sequence landscape. Currently, there remains a need to identify efficient thermophilic, halotolerant and pH-robust PETases for the industrial biocatalysis of PET. In line with this, in this article, we discuss recent findings related to the following topics: (i) the identification of suitable ecosystems for mining PETases; (ii) the discovery of PETases via the restructuring of microbiomes; (iii) advancements in metagenomics and artificial intelligence (AI)-based approaches for the detection and ranking of PETases and (iv) the future of PET biocatalysis. Overall, we suggest that disrupting microbiomes with polyester-rich substrates, combined with innovative computational and AI-based strategies, can be an effective pathway for the discovery of PETases that can be used as scaffolds for protein engineering and biotechnological applications.",
+        "authors": [
+          "Jiménez DJ",
+          "Rosado AS"
+        ],
+        "affiliations": [
+          "Biological and Environmental Sciences and Engineering Division (BESE), King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.",
+          "Biological and Environmental Sciences and Engineering Division (BESE), King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia."
+        ],
+        "doi": "10.1111/1462-2920.70272",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Environmental microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41808525/",
+        "category": "microbiota",
+        "date": "2026-03-01",
+        "mesh_terms": [
+          "Microbiota",
+          "Polyethylene Terephthalates",
+          "Hydrolases",
+          "Metagenomics",
+          "Biocatalysis",
+          "Bacteria"
+        ],
+        "source_id": "41808525",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "산업용 폐식품 분해 효소 개발에 직접적으로 관련된 연구로, 단백질 공학적 변형 및 생물촉매 응용 가능성이 높습니다. AI 기반 효소 탐색 기법도 포함되어 산업적 활용성을 높입니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "폴리에틸렌테레프탈레이트(PET)는 산업 규모로 효소적으로 재활용 가능한 유일한 플라스틱이다(thermostability, halotolerance, pH-robustness). 환경 및 산업적 조건에서 효율적으로 작용하는 PET 분해 효소(PETase)를 탐색하기 위한 연구가 진행되었다.",
+        "method": "메타젠ómics과 동의어 전략을 활용해 해양 및 육상 생태계에서 PETase를 탐지했으나, 기준 PETase 사용은 서열 다양성을 제한하였다. 최근에는 미생물군 조작과 AI 기반 접근법이 활용되고 있다.",
+        "result": "PETase 탐사에 적합한 생태계를 식별하고, 미생물군 재구성으로 PETase를 발견하였다. AI와 메타젠ómics의 발전을 통해 PETase 탐지 및 등급 분류에 기여하였다.",
+        "significance": "폴리에스터 풍부한 기질로 미생물군을 교란하고, 계산적/AI 전략을 결합하면 PETase 탐사에 효과적이다. 이는 단백질 공학 및 생물기술 응용에 기초가 될 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Keratinases: microbial sources, mechanisms, and industrial applications in waste valorization.",
+        "abstract": "Keratinous waste, a major by-product of agriculture and animal husbandry, is produced in massive quantities and is notoriously recalcitrant to degradation. With the expansion of the poultry and livestock industries, keratinous waste accumulation (e.g., feathers, hooves, and horns) has become a pressing environmental concern. Keratin's highly cross-linked disulfide bond structure is resistant to breakdown by common proteases. Keratinase, a specialized protease capable of specifically degrading keratin, has emerges as a pivotal tool for the valorization of keratinous waste, demonstrating significant potential in waste management and resource recovery. This review systematically summarizes the enzymatic properties, mechanisms of action, and microbial sources of keratinases. It elaborates on innovative keratinase applications in waste valorization (including biogas production, the generation of bioactive peptides and amino acid feedstocks, and bioplastic manufacturing) and green industries (including leather and textile processing), as well as in the pharmaceutical, cosmetic, and detergent sectors. This review provides an in-depth discussion of the major challenges hindering industrial-scale keratinase application, including low heterologous expression efficiency and insufficient stability under industrial conditions. Finally, it outlines future research directions, encompassing protein engineering, artificial intelligence (AI)-assisted design, and multi-enzyme synergistic catalysis systems, aiming to offer forward-looking theoretical insights for advanced keratinase development and industrial application.",
+        "authors": [
+          "Chu Y",
+          "Chu S",
+          "Hu F",
+          "Huang M",
+          "Lu H",
+          "Liu Z",
+          "Shan F",
+          "Chen X"
+        ],
+        "affiliations": [
+          "College of Medical Engineering, Jining Medical University, Jining, China.",
+          "College of Medical Engineering, Jining Medical University, Jining, China.",
+          "Affiliated Hospital of Jining Medical University, Jining, China.",
+          "College of Medical Engineering, Jining Medical University, Jining, China.",
+          "College of Medical Engineering, Jining Medical University, Jining, China.",
+          "College of Medical Engineering, Jining Medical University, Jining, China.",
+          "Affiliated Hospital of Jining Medical University, Jining, China.",
+          "College of Medical Engineering, Jining Medical University, Jining, China."
+        ],
+        "doi": "10.3389/fmicb.2026.1793191",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Frontiers in microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41809600/",
+        "category": null,
+        "date": "2026-01-01",
+        "mesh_terms": [],
+        "source_id": "41809600",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "이 논문은 식품, 화학, 의약 산업에서 keratinase의 응용을 다루며, 폐기물 재활용 및 자원 회수에 대한 활용 가능성을 제시합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "각종 농업 및 가畜업에서 발생하는 키라틴성 폐기물(예: 깃털, 손발톱, 뿔 등)은 분해가 어려운 고형물로 환경 문제를 일으키고 있다. 키라틴의 고결합된 디스уль피드 결합 구조는 일반 단백질 분해효소에 저항적이기 때문에 처리가 어렵다.",
+        "method": "본 리뷰는 키라틴아제의 효소학적 특성, 작용 메커니즘, 미생물 원천을 체계적으로 정리하였다. 또한 키라틴아제의 폐기물 가치화(생기스 생산, 생활성 펩타이드 생성, 생분해 플라스틱 제조)와 녹색 산업(가죽·섬유 가공) 적용 사례를 분석하였다.",
+        "result": "키라틴아제는 폐기물 관리와 자원 회수에 높은 잠재력을 보여주고 있다. 그러나 산업 규모 적용 시 저하이로지우스 발현 효율과 산업 조건에서의 열안정성(thermostability) 부족 등 장애 요인이 존재한다.",
+        "significance": "향후 키라틴아제 개발을 위한 단백질 공학, 인공지능(AI) 기반 설계, 다효소 상호작용 시스템 연구가 필요하다. 본 리뷰는 지속 가능한 폐기물 가치화와 녹색 산업 발전을 위한 이론적 기반을 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Heterologous production of epothilones in Streptomyces albus J1074 via promoter engineering of the biosynthetic gene cluster and precursor supply enhancement.",
+        "abstract": "Epothilones, synthesized by hybrid polyketide synthases (PKS)-nonribosomal peptide synthetases (NRPS), are clinically valuable anti-cancer macrolides with potent activity against multidrug-resistant tumors. They are naturally produced by the myxobacterium Sorangium cellulosum. However, their yield in the native host is extremely low. Additionally, the slow growth rate and poor genetic tractability of S. cellulosum have severely hindered efforts to optimize epothilone biosynthesis in this host. Herein, we established a heterologous epothilone production system in Streptomyces albus J1074, a widely employed chassis for secondary metabolite biosynthesis, via two core strategies: (1) refactoring the epothilone PKS/NRPS gene cluster with endogenous strong constitutive promoters to enhance transcription; (2) boosting supply of the acetyl-CoA starter unit and the malonyl-CoA extender unit. When optimizing promoters for epothilone PKS/NRPS genes, we identified a key challenge: EpoD, the largest PKS component, is toxic to Escherichia coli cloning hosts due to induced stress responses and metabolic disruption. To address this, we screened strong constitutive promoters from Streptomyces with low activity in E. coli to optimize the epoD promoter. Supplementation of sodium acetate to the medium increased epothilone production by 4.1-fold, and subsequent overexpression of enzymes catalyzing acetate-to-acetyl-CoA and acetyl-CoA-to-malonyl-CoA conversions boosted yields by an additional 3.3-fold. Ultimately, a maximum epothilone titer of 439.8 μg L-1 was achieved in S. albus J1074 cultured in 250-mL flasks. To our knowledge, this represents the highest epothilone yield reported in Streptomyces hosts to date. This work provides an efficient heterologous production system for epothilones and insights into optimizing PKS/NRPS-derived natural product biosynthesis.",
+        "authors": [
+          "Cui Q",
+          "Wang S",
+          "Li X",
+          "Jiang C",
+          "Cui T",
+          "Luan J",
+          "Wang H"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.",
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.",
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.",
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.",
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.",
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.",
+          "State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China."
+        ],
+        "doi": "10.1016/j.synbio.2026.02.006",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Synthetic and systems biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41809404/",
+        "category": null,
+        "date": "2026-06-01",
+        "mesh_terms": [],
+        "source_id": "41809404",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "항암제인 에포티리논의 생산 효율 향상 기술로 의약품 개발에 직접적 활용 가능. 유전자 클러스터 재구성 및 전구체 공급 증대 전략이 산업적 스케일링에 유용.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "에포티릴론은 하이브리드 PKS-NRPS 시스템으로 합성되는 항암제로, 다약제 저항성 종양에 효과적입니다. 그러나 자연적으로 생성하는 미코바이터 Sorangium cellulosum은 생산량이 낮고 유전자 조작이 어려워 연구에 제약이 됩니다.",
+        "method": "Streptomyces albus J1074에 이종 생산 시스템을 구축하기 위해, 내생 강력한 구성적 프로모터로 생합성 유전자 클러스터를 재구성하고, 아세틸-CoA 및 말로닐-CoA 전구체 공급을 증가시켰습니다. EpoD의 독성을 해결하기 위해 E. coli에서 활성 낮은 Streptomyces 프로모터를 스크리닝했습니다.",
+        "result": "나트륨 아세테이트 첨가로 에포티릴론 생산량이 4.1배 증가했고, 아세테이트-아세틸-CoA 및 아세틸-CoA-말로닐-CoA 전환 효소의 과발현으로 추가로 3.3배 증가했습니다. 최종적으로 250 mL 플라스크에서 439.8 μg L⁻¹의 최대 생산량을 달성했습니다.",
+        "significance": "이 연구는 에포티릴론의 효율적인 이종 생산 시스템을 제공하며, PKS/NRPS 유래 자연산 생성 최적화에 대한 통찰을 제시합니다. Streptomyces 호스트에서 기록상 최고 수준의 생산량을 달성했습니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Biosynthesis of Limonene Using Acetate as the Carbon Source in Metabolically Engineered Escherichia coli.",
+        "abstract": "Limonene is a high-value monoterpenoid used in food, pharmaceutical, and fragrance applications. To overcome limitations of conventional production, this study developed a biosynthesis platform using acetate as the sole carbon source. Acetate is an ideal nonfood substrate that can be sustainably derived from industrial waste streams, syngas, and CO2 reduction. Initially, the heterologous synthetic pathway was constructed to yield 0.13 mg/L limonene from acetate. By introducing the mutated EfMVASA110G to enhance catalytic efficiency, along with promoter engineering and substitution of the synthesis substrate, the production titer was enhanced to 49.24 mg/L. Subsequent host optimization through NADPH regeneration and pathway knockout, combined with fermentation optimization, increased the titer to 167.45 mg/L. Ultimately, whole-cell biocatalysis achieved 450.72 mg/L, establishing the highest reported acetate-based limonene titer. Overall, this study establishes a framework for biosynthesis of high-value terpenoids from nonfood feedstocks and demonstrates acetate as a promising carbon source for advanced bioproduction systems.",
+        "authors": [
+          "Zhao W",
+          "Shang Y",
+          "Pan M",
+          "Fei P",
+          "Wang Y",
+          "Luo Y",
+          "Wu H"
+        ],
+        "affiliations": [
+          "Shanghai Collaborative Innovation Center for Biomanufacturing Technology, Key Laboratory of Bio-based Material Engineering of China National Light Industry Council, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai 200237, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian 116024, China.",
+          "Shanghai Collaborative Innovation Center for Biomanufacturing Technology, Key Laboratory of Bio-based Material Engineering of China National Light Industry Council, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai 200237, China.",
+          "Shanghai Collaborative Innovation Center for Biomanufacturing Technology, Key Laboratory of Bio-based Material Engineering of China National Light Industry Council, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai 200237, China.",
+          "Shanghai Collaborative Innovation Center for Biomanufacturing Technology, Key Laboratory of Bio-based Material Engineering of China National Light Industry Council, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai 200237, China.",
+          "Shanghai Collaborative Innovation Center for Biomanufacturing Technology, Key Laboratory of Bio-based Material Engineering of China National Light Industry Council, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai 200237, China.",
+          "Shanghai Collaborative Innovation Center for Biomanufacturing Technology, Key Laboratory of Bio-based Material Engineering of China National Light Industry Council, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai 200237, China.",
+          "MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian 116024, China."
+        ],
+        "doi": "10.1021/acs.jafc.5c14638",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41811345/",
+        "category": null,
+        "date": "2026-03-11",
+        "mesh_terms": [],
+        "source_id": "41811345",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "리몬렌은 식품/의약/향료에 활용 가능한 고가 성분이며, 산업 폐기물 및 CO2를 원료로 하는 지속 가능한 생산 시스템을 제시함.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "리모넨은 식품, 의약품, 향료 분야에서 고부가가치 단萜류로 사용되나, 전통적 생산법의 한계를 극복하기 위해 산업 폐기물, 시너가, CO2 환원으로부터 얻을 수 있는 비식량 탄소원인 아세테이트를 이용한 생합성 플랫폼이 개발되었다.",
+        "method": "초기 단계에서는 이종합성 경로를 구축해 아세테이트로부터 0.13 mg/L 리모넨을 생성했고, 효소 변이(EfMVASA110G) 도입과 프로모터 공학, 기질 대체를 통해 생산량을 49.24 mg/L로 증가시켰다.",
+        "result": "추후 호스트 최적화(NADPH 재생, 경로 크로노)와 발효 최적화를 통해 생산량이 167.45 mg/L로, 전반적 생물촉매 시스템에서는 450.72 mg/L에 달했다.",
+        "significance": "이 연구는 비식량 원료에서 고부가가치 테르펜류 생산을 위한 프레임워크를 제시하며, 아세테이트가 고급 생산 시스템의 유망 탄소원임을 입증하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 4,
+    "prefilter_passed": 4,
+    "llm_passed": 4,
+    "summarized": 4
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-11T22:25:28.057410+00:00"
+}

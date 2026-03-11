@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-12 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-12</h2>
+  <p>총 4편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41808525/" target="_blank" rel="noopener noreferrer">Discovering PETases: An Interlink Between Engineering Enzymes and Microbiomes.</a></h3>
+    <p>Environmental microbiology</p>
+    <p>Biological and Environmental Sciences and Engineering Division (BESE), King Abdullah University of Science and Technology (KAUST), Thuwal, Saudi Arabia.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>산업용 폐식품 분해 효소 개발에 직접적으로 관련된 연구로, 단백질 공학적 변형 및 생물촉매 응용 가능성이 높습니다. AI 기반 효소 탐색 기법도 포함되어 산업적 활용성을 높입니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>폴리에틸렌테레프탈레이트(PET)는 산업 규모로 효소적으로 재활용 가능한 유일한 플라스틱이다(thermostability, halotolerance, pH-robustness). 환경 및 산업적 조건에서 효율적으로 작용하는 PET 분해 효소(PETase)를 탐색하기 위한 연구가 진행되었다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>메타젠ómics과 동의어 전략을 활용해 해양 및 육상 생태계에서 PETase를 탐지했으나, 기준 PETase 사용은 서열 다양성을 제한하였다. 최근에는 미생물군 조작과 AI 기반 접근법이 활용되고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>PETase 탐사에 적합한 생태계를 식별하고, 미생물군 재구성으로 PETase를 발견하였다. AI와 메타젠ómics의 발전을 통해 PETase 탐지 및 등급 분류에 기여하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>폴리에스터 풍부한 기질로 미생물군을 교란하고, 계산적/AI 전략을 결합하면 PETase 탐사에 효과적이다. 이는 단백질 공학 및 생물기술 응용에 기초가 될 수 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41809600/" target="_blank" rel="noopener noreferrer">Keratinases: microbial sources, mechanisms, and industrial applications in waste valorization.</a></h3>
+    <p>Frontiers in microbiology</p>
+    <p>College of Medical Engineering, Jining Medical University, Jining, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 식품, 화학, 의약 산업에서 keratinase의 응용을 다루며, 폐기물 재활용 및 자원 회수에 대한 활용 가능성을 제시합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>각종 농업 및 가畜업에서 발생하는 키라틴성 폐기물(예: 깃털, 손발톱, 뿔 등)은 분해가 어려운 고형물로 환경 문제를 일으키고 있다. 키라틴의 고결합된 디스уль피드 결합 구조는 일반 단백질 분해효소에 저항적이기 때문에 처리가 어렵다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>본 리뷰는 키라틴아제의 효소학적 특성, 작용 메커니즘, 미생물 원천을 체계적으로 정리하였다. 또한 키라틴아제의 폐기물 가치화(생기스 생산, 생활성 펩타이드 생성, 생분해 플라스틱 제조)와 녹색 산업(가죽·섬유 가공) 적용 사례를 분석하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>키라틴아제는 폐기물 관리와 자원 회수에 높은 잠재력을 보여주고 있다. 그러나 산업 규모 적용 시 저하이로지우스 발현 효율과 산업 조건에서의 열안정성(thermostability) 부족 등 장애 요인이 존재한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>향후 키라틴아제 개발을 위한 단백질 공학, 인공지능(AI) 기반 설계, 다효소 상호작용 시스템 연구가 필요하다. 본 리뷰는 지속 가능한 폐기물 가치화와 녹색 산업 발전을 위한 이론적 기반을 제공한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41809404/" target="_blank" rel="noopener noreferrer">Heterologous production of epothilones in Streptomyces albus J1074 via promoter engineering of the biosynthetic gene cluster and precursor supply enhancement.</a></h3>
+    <p>Synthetic and systems biotechnology</p>
+    <p>State Key Laboratory of Microbial Technology, Institute of Microbial Technology, Helmholtz International Lab for Anti-infectives, Shandong University-Helmholtz Institute of Biotechnology, Shandong University, Qingdao, Shandong, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>항암제인 에포티리논의 생산 효율 향상 기술로 의약품 개발에 직접적 활용 가능. 유전자 클러스터 재구성 및 전구체 공급 증대 전략이 산업적 스케일링에 유용.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>에포티릴론은 하이브리드 PKS-NRPS 시스템으로 합성되는 항암제로, 다약제 저항성 종양에 효과적입니다. 그러나 자연적으로 생성하는 미코바이터 Sorangium cellulosum은 생산량이 낮고 유전자 조작이 어려워 연구에 제약이 됩니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Streptomyces albus J1074에 이종 생산 시스템을 구축하기 위해, 내생 강력한 구성적 프로모터로 생합성 유전자 클러스터를 재구성하고, 아세틸-CoA 및 말로닐-CoA 전구체 공급을 증가시켰습니다. EpoD의 독성을 해결하기 위해 E. coli에서 활성 낮은 Streptomyces 프로모터를 스크리닝했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>나트륨 아세테이트 첨가로 에포티릴론 생산량이 4.1배 증가했고, 아세테이트-아세틸-CoA 및 아세틸-CoA-말로닐-CoA 전환 효소의 과발현으로 추가로 3.3배 증가했습니다. 최종적으로 250 mL 플라스크에서 439.8 μg L⁻¹의 최대 생산량을 달성했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 에포티릴론의 효율적인 이종 생산 시스템을 제공하며, PKS/NRPS 유래 자연산 생성 최적화에 대한 통찰을 제시합니다. Streptomyces 호스트에서 기록상 최고 수준의 생산량을 달성했습니다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41811345/" target="_blank" rel="noopener noreferrer">Biosynthesis of Limonene Using Acetate as the Carbon Source in Metabolically Engineered Escherichia coli.</a></h3>
+    <p>Journal of agricultural and food chemistry</p>
+    <p>MOE Key Laboratory of Bio-Intelligent Manufacturing, School of Bioengineering, Dalian University of Technology, Dalian 116024, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>리몬렌은 식품/의약/향료에 활용 가능한 고가 성분이며, 산업 폐기물 및 CO2를 원료로 하는 지속 가능한 생산 시스템을 제시함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>리모넨은 식품, 의약품, 향료 분야에서 고부가가치 단萜류로 사용되나, 전통적 생산법의 한계를 극복하기 위해 산업 폐기물, 시너가, CO2 환원으로부터 얻을 수 있는 비식량 탄소원인 아세테이트를 이용한 생합성 플랫폼이 개발되었다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>초기 단계에서는 이종합성 경로를 구축해 아세테이트로부터 0.13 mg/L 리모넨을 생성했고, 효소 변이(EfMVASA110G) 도입과 프로모터 공학, 기질 대체를 통해 생산량을 49.24 mg/L로 증가시켰다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>추후 호스트 최적화(NADPH 재생, 경로 크로노)와 발효 최적화를 통해 생산량이 167.45 mg/L로, 전반적 생물촉매 시스템에서는 450.72 mg/L에 달했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 비식량 원료에서 고부가가치 테르펜류 생산을 위한 프레임워크를 제시하며, 아세테이트가 고급 생산 시스템의 유망 탄소원임을 입증하였다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
