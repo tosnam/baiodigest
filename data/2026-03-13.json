@@ -1,0 +1,148 @@
+{
+  "date": "2026-03-13",
+  "entries": [
+    {
+      "paper": {
+        "title": "Computational Redesign of an Ancestral Xylose Isomerase: Tuning the Substrate Preference and Thermostability for Biomass Valorization.",
+        "abstract": "Xylose isomerase is a promising biocatalyst for lignocellulose valorization, but natural enzymes are limited by a preference for either d-xylose or d-glucose. Here, we integrated ancestral sequence reconstruction with deep learning methods to identify ASR285, an enzyme active toward both d-glucose and d-xylose. To enhance its potential for practical applications, we designed a flexible lid by truncating the α3-helix and reducing steric hindrance through the W140F mutation. Guided by computational analysis, the ASR285-M2 mutant (ASR285-Δhelix9/W140F/S147A/W189Y) was engineered, resulting in a 7.85-fold increase in the catalytic activity toward d-glucose while preserving the native d-xylose isomerization capacity. It also exhibited an approximately 2-fold longer half-life, indicating improved thermostability. In real lignocellulosic hydrolysates, ASR285-M2 achieved a 9-fold higher d-fructose yield than ASR285, enabling simultaneous production of d-fructose and d-xylulose. This semirational strategy successfully optimized both substrate preference and stability, providing a practical biocatalyst for biomass valorization.",
+        "authors": [
+          "Yue S",
+          "Tang G",
+          "Guo Z",
+          "Lu F",
+          "Tian K",
+          "Jiang Y",
+          "Gao X",
+          "Qin HM"
+        ],
+        "affiliations": [
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China.",
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China.",
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China.",
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China.",
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China.",
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China.",
+          "College of Life Sciences, Dezhou University, Shandong 253023, P. R. China.",
+          "Shandong Key Laboratory of Starch Bio-based Materials and Green Manufacturing, Shandong Shouguang Juneng Golden Corn Development Co., Shouguang 262704, P. R. China.",
+          "Key Laboratory of Industrial Fermentation Microbiology of the Ministry of Education; Tianjin Key Laboratory of Industrial Microbiology College of Biotechnology, Tianjin University of Science and Technology; National Engineering Laboratory for Industrial Enzymes, Tianjin 300457, P. R. China."
+        ],
+        "doi": "10.1021/acs.jafc.5c17228",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41817278/",
+        "category": null,
+        "date": "2026-03-12",
+        "mesh_terms": [],
+        "source_id": "41817278",
+        "matched_query_names": [
+          "ancestral sequence reconstruction",
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "이 논문은 AI 기반 계산을 통해 효소의 기능을 개선하여 생분해제로 활용할 수 있는 잠재력을 보여준다. 식품, 화학, 의약 산업에서 생분해제로의 적용 가능성이 높다.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction",
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "Xylose isomerase는 릴리노셀룰로스 가치화에 유망한 생물촉매이지만, 자연적 효소는 d-xylose 또는 d-glucose 중 하나에 한정된 기질 선호도를 가진다(thermostability).",
+        "method": "종상열역사 복원(ancestral sequence reconstruction)과 딥러닝 방법을 통합해 ASR285를 확인했으며, α3-하이드와 W140F 돌연변이로 유연한 라이드를 설계했다.",
+        "result": "ASR285-M2 변이는 d-glucose 대비 7.85배 높은 촉매 활성을 보이며, 열안정성(thermostability)도 약 2배 향상되었고, 실 tế 릴리노셀룰로스 수해산물에서 d-fructose 수율이 9배 증가했다.",
+        "significance": "반합리적 전략으로 기질 선호도와 안정성을 최적화해, 실용적인 생물촉매로 활용 가능한 릴리노셀룰로스 가치화에 기여했다."
+      }
+    },
+    {
+      "paper": {
+        "title": "EpicTope: predicting and validating non-disruptive epitope tagging sites.",
+        "abstract": "Epitope tagging is a valuable technique enabling the in vivo identification, tracking and purification of proteins. We developed a tool, EpicTope, to facilitate this method by identifying amino acid positions most suitable for epitope insertion. Our method uses a scoring function that considers protein sequence secondary and tertiary structural features, solvent accessibility, and disordered binding regions to determine locations least disruptive to the protein function. We validated our approach on the zebrafish Smad5 and Hdac1 proteins. We show that multiple predicted internally tagged Smad5 proteins rescue zebrafish smad5 mutant embryos, while the N- and C-terminal-tagged variants do not, as predicted. Similarly, we found that optimally predicted internal and C-terminal Hdac1 tags rescued hdac1 mutant embryos, while a less-optimal N-terminal tag did not. We further show that these functionally tagged Smad5 and Hdac1 proteins are accessible to antibodies in whole-mount zebrafish embryo immunofluorescence, by western blotting and by immunoprecipitation from embryo extracts. Our work demonstrates that EpicTope is an accessible and effective tool for designing epitope tag insertion sites.",
+        "authors": [
+          "Zinski J",
+          "Joshi P",
+          "Chung H",
+          "Preston J",
+          "Geller A",
+          "Warrick F",
+          "Berg BD",
+          "Tobin K",
+          "Glova G",
+          "Liu F",
+          "Ming Z",
+          "McGrail M",
+          "Balciunas D",
+          "Friedberg I",
+          "Mullins MC"
+        ],
+        "affiliations": [
+          "Department of Cell and Development Biology, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA 19104, USA.",
+          "Department of Veterinary Microbiology and Preventive Medicine, Iowa State University, Ames, IA 50011, USA.",
+          "Graduate Program in Bioinformatics and Computational Biology, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Veterinary Microbiology and Preventive Medicine, Iowa State University, Ames, IA 50011, USA.",
+          "Graduate Program in Bioinformatics and Computational Biology, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Genetics, Development and Cell Biology, Iowa State University, Ames, IA 50011, USA.",
+          "Graduate Program in Genetics and Genomics, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Cell and Development Biology, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA 19104, USA.",
+          "Department of Cell and Development Biology, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA 19104, USA.",
+          "Department of Biology, Temple University, Philadelphia, PA 19122, USA.",
+          "Department of Biology, Temple University, Philadelphia, PA 19122, USA.",
+          "Department of Cell and Development Biology, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA 19104, USA.",
+          "Department of Genetics, Development and Cell Biology, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Genetics, Development and Cell Biology, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Genetics, Development and Cell Biology, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Biology, Temple University, Philadelphia, PA 19122, USA.",
+          "Institute of Biotechnology, Life Sciences Center, Vilnius University, Vilnius, 10257, Lithuania.",
+          "Department of Veterinary Microbiology and Preventive Medicine, Iowa State University, Ames, IA 50011, USA.",
+          "Department of Cell and Development Biology, University of Pennsylvania Perelman School of Medicine, Philadelphia, PA 19104, USA."
+        ],
+        "doi": "10.1242/dev.204502",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Development (Cambridge, England)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41816951/",
+        "category": "animals",
+        "date": "2026-03-01",
+        "mesh_terms": [
+          "Animals",
+          "Zebrafish",
+          "Epitopes",
+          "Histone Deacetylase 1",
+          "Zebrafish Proteins",
+          "Smad5 Protein",
+          "Embryo, Nonmammalian"
+        ],
+        "source_id": "41816951",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "에피토프 태깅 위치 예측 도구로 단백질 기능 방해 최소화 가능. 의약품 개발 및 단백질 추적 기술에 활용 가능.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "에피토프 태깅은 단백질의 생체 내 식별 및 분리에 유용한 기법이다(thermostability). 단백질 기능을 최소한 방해하는 태깅 위치를 예측할 수 있는 도구가 필요했다.",
+        "method": "EpicTope은 단백질의 이차/삼차 구조적 특성, 용매 접근성, 무질서 결합 영역을 고려한 점수 함수를 사용한다. 이 방법은 예측된 태깅 위치의 기능적 영향을 평가한다.",
+        "result": "Smad5의 내부 태깅 변이는 돌연변이 배아를 구원했으나, N- 및 C-末端 태깅 변이는 실패했다. Hdac1의 최적 내부 및 C-末端 태깅 변이는 돌연변이 배아를 구원했으나, N-末端 태깅 변이는 실패했다.",
+        "significance": "EpicTope은 단백질 기능을 유지하면서 에피토프 태깅 위치를 설계하는 접근법을 제공한다. 실험적 검증을 통해 도구의 신뢰성을 입증했다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-12T22:28:26.292544+00:00"
+}

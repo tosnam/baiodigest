@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773326682000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImE3YzgxYjM2LWQ1ZGYtNDkxOS05NmVhLWM0MDYwZmM1YTZhZiIsImRla1ZlcnNpb24iOjEsIml2IjoiMCtLd2JoTEdYekpPa1h4RmkrU2N0dz09IiwiY2lwaGVyVGV4dCI6IjFMUEhocHlvb3FRWWppWlhra0x1bHZwYXhLamdpMTlqai9VUmR5S0VZcy9HOGdDS0RNd1Zrcm5CMXU0cHZFQ1VtNmYvWnNQODJLeTcxV1oxY2ZVdjNtb2tabjU5YjEwVTArS3diaExHWHpKT2tYeEZpK1NjdHc9PSIsImF1dGhUYWciOiJ1OVZtZFhIMUw5NXFKR1orZlc5ZEZBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">Wild parrots were caught in the Amazon and then transported, live, over the Andes</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjVjMjI1MmI5LThjOWUtNDI4Ny04YmY0LTRkYzkyODRlZWMyNiIsImRla1ZlcnNpb24iOjEsIml2IjoiaUNnVjR6ZW9JTWIyTTFiWXhuUEpwQT09IiwiY2lwaGVyVGV4dCI6Ikl1RDl5WmtQdFB1blVTMDNDdjl5dlZMT01sdUdsVnQ4ZERTRytETUlHT01oNUhvOFp5YWZnK0JCS1huZnNrakR2Y09INmFUNzZ2bGt1MXByTVp0WklrbCtpZnJrRmlHWWlDZ1Y0emVvSU1iMk0xYll4blBKcEE9PSIsImF1dGhUYWciOiJaTHRhYXpHYldTSkpmb242NUJZaG1BPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">male chimps are more aggressive than male bonobos</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjY0MDUxYTNlLWQ2ZWMtNGRmMC04YmI4LTc2NzJhNGU5ZTRjOSIsImRla1ZlcnNpb24iOjEsIml2IjoiTTI3UVJCbkJ4bnNhWVV2YXordEluUT09IiwiY2lwaGVyVGV4dCI6IkpLVzdwKzNOcGFCZm9VaXpBRzVhQUw5TUhCSGFtYkRxQUNhSGc4MlFGaXg4ZHpkaWpkaE5Zem9OdUtYTElkRWEwbGNmRlpMa1p4dmRveXVTMTFqYU1VK0cxZ1c3Smhzdk0yN1FSQm5CeG5zYVlVdmF6K3RJblE9PSIsImF1dGhUYWciOiIzYU1ya3RkWTJqRlBodFlGdXlZYkx3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">naming the species after poet Amanda Gorman</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjU5NWNmODZiLTA5ZDktNGMzYS1iZTUyLTVhOWQ0YzRlN2RjNSIsImRla1ZlcnNpb24iOjEsIml2IjoidXU0dnNOcmxOTEdtN0p2TjdueHdmZz09IiwiY2lwaGVyVGV4dCI6IlBJd3B4b2tQY0w5djlHZEpSSzNCMzl6aTBSNkgwcGxRcU91L2x6ZzhCZTdLSkRZRlJLRnVOTW5GbHpDeDZqcW1hUEExeXZmWmtJMkMyakNQWXRjUFZqN2UzbXpLNHF0ZnV1NHZzTnJsTkxHbTdKdk43bnh3Zmc9PSIsImF1dGhUYWciOiJndG93ajJMWEQxWSszdDVzeXVLclh3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">some frogs’ sweet serenades may relay information about their quality as a suitor and the suitability of his habitat for laying eggs</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
