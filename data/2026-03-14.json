@@ -1,0 +1,181 @@
+{
+  "date": "2026-03-14",
+  "entries": [
+    {
+      "paper": {
+        "title": "De novo design of Ras isoform selective binders.",
+        "abstract": "The four major isoforms encoded by RAS proto-oncogenes are differentially associated with cancer, but there are few isoform-specific binding reagents becasue the sequence differences are confined to their disordered C termini. To overcome this limitation, we use deep learning-based methods to design Ras isoform-specific binders (RIBs) for all major Ras isoforms de novo by targeting the Ras C terminus. The RIBs bind to their target Ras isoforms both in vitro and in cells with remarkable specificity, disrupting their membrane localization and inhibiting Ras activity. The RIBs enable dissection of the distinct roles of Ras isoforms during RasG12C inhibitor resistance, demonstrating their utility in understanding Ras biology and disease and suggesting potential therapeutic applications.",
+        "authors": [
+          "Zhang JZ",
+          "Li X",
+          "Batingana AR",
+          "Liu C",
+          "Jiang H",
+          "Shannon K",
+          "Huang BJ",
+          "Wu K",
+          "Baker D"
+        ],
+        "affiliations": [
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA; Institute for Protein Design, University of Washington, Seattle, WA 98195, USA; Howard Hughes Medical Institute, University of Washington, Seattle, WA 98195, USA; Department of Bioengineering, University of California, Los Angeles, Los Angeles, CA 90095, USA; Biological Physics, Structure and Design Graduate Program, University of Washington, Seattle, WA 98195, USA. Electronic address: jzz0428@g.ucla.edu.",
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA; Institute for Protein Design, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Pediatrics, University of California, San Francisco, San Francisco, CA 94143, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA; Institute for Protein Design, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA; Institute for Protein Design, University of Washington, Seattle, WA 98195, USA; Department of Electrical Engineering and Computer Science, University of California, Berkeley, Berkeley, CA 94720, USA.",
+          "Department of Pediatrics, University of California, San Francisco, San Francisco, CA 94143, USA; Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco, San Francisco, CA, USA.",
+          "Department of Pediatrics, University of California, San Francisco, San Francisco, CA 94143, USA; Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco, San Francisco, CA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA; Institute for Protein Design, University of Washington, Seattle, WA 98195, USA; Biological Physics, Structure and Design Graduate Program, University of Washington, Seattle, WA 98195, USA. Electronic address: kejiawu@uw.edu.",
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA; Institute for Protein Design, University of Washington, Seattle, WA 98195, USA; Howard Hughes Medical Institute, University of Washington, Seattle, WA 98195, USA. Electronic address: dabaker@uw.edu."
+        ],
+        "doi": "10.1016/j.chembiol.2026.02.008",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell chemical biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41819089/",
+        "category": null,
+        "date": "2026-03-11",
+        "mesh_terms": [],
+        "source_id": "41819089",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "이 논문은 AI 기반으로 특정 Ras 이소형에 대한 바인더를 설계해 암 치료에 활용 가능성을 보여줍니다. 단백질 공학 분야에서 신규 표적 치료제 개발에 기여할 수 있는 기술입니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "RAS 프로토-종양 유전자로 인코딩된 네 가지 이소형은 암과 관련이 있지만, 이소형 특이적 결합 제제는 제한적이다(sequences differences are confined to disordered C termini).",
+        "method": "딥러닝 기반 방법을 활용해 Ras 이소형의 C 말단을 표적으로 하여 새로운 이소형 특이적 결합체(RIBs)를 설계하였다(de novo design).",
+        "result": "RIBs는 in vitro 및 세포 내에서 표적 Ras 이소형에 대해 높은 특이성을 보이며, 막 위치화를 방해하고 Ras 활성을 억제하였다.",
+        "significance": "Ras 이소형의 차이된 역할을 규명하는 데 활용 가능하며, Ras 생물학 및 질병 이해에 기여하고 잠재적 치료 적용 가능성을 제시하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Chromosome-Level Genome Assembly of the Allotetraploid Gynostemma pentaphyllum Provides Novel Insights Into the Biosynthesis of Ginsenoside and Gypenoside LVI.",
+        "abstract": "Gynostemma pentaphyllum, a herb used in tea and traditional Chinese medicine, shows geographic variation in its production of valuable dammarane-type ginsenosides and gypenoside LVI between populations from Suining (SN) and Nanning (NN). To elucidate the mechanisms underlying this differential metabolite accumulation, a chromosome-level genome for G. pentaphyllum (SN population) was assembled. The analysis revealed that SN is a tetraploid (~1.2 Gb), resulting from a recent whole-genome duplication event in a diploid ancestor. Phylogenetic analysis indicates SN and diploid NN share a recent common ancestor, diverging approximately 4.95 million years ago. Chromosome evolution analysis confirmed SN is an allotetraploid with clear subgenomic differentiation. This genome, combined with multi-omics data, enabled the screening of candidate P450 genes involved in ginsenoside/gypenoside LVI biosynthesis. In vivo and in vitro experiments confirmed that GpCYP88AB3 functions as a bifunctional enzyme by first hydroxylating dammarenediol-II at C-12 to yield protopanaxadiol (PPD), and then hydroxylating PPD at C-2 to form 2α-OH-PPD. Phylogenetically, GpCYP88AB3 and similar enzymes from Araliaceae belong to distinct CYP subfamilies, demonstrating convergent evolution of this function between the two plant families and highlighting the functional plasticity of P450s. Evolutionary analysis suggests that GpCYP88AB3 emerged from a CYP88 gene family expansion in the tetraploid G. pentaphyllum. This expansion occurred after, but was not directly caused by, the whole-genome duplication event. This study elucidates the biosynthetic pathway for the key metabolites in G. pentaphyllum, providing a foundation for future metabolic engineering and synthetic biology applications.",
+        "authors": [
+          "Zhou P",
+          "Liu SJ",
+          "Huang L",
+          "Wang Y",
+          "Jiang X",
+          "Dong W",
+          "Gong J",
+          "Wang L",
+          "Zhao Y",
+          "Wang H",
+          "Li P",
+          "Xue JY",
+          "Lu X"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "Nanjing Research Institute for Comprehensive Utilization of Wild Plants, Nanjing, China.",
+          "College of Horticulture, Bioinformatics Center, Academy for Advanced Interdisciplinary Studies, Nanjing Agricultural University, Nanjing, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "Hunan Huabaotong Pharmaceutical Co. LTD, Changsha, China.",
+          "Wepon Pharmaceutical Holding Group Co. Ltd, Hangzhou, China.",
+          "College of Horticulture, Bioinformatics Center, Academy for Advanced Interdisciplinary Studies, Nanjing Agricultural University, Nanjing, China.",
+          "Wepon Pharmaceutical Holding Group Co. Ltd, Hangzhou, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "College of Horticulture, Bioinformatics Center, Academy for Advanced Interdisciplinary Studies, Nanjing Agricultural University, Nanjing, China.",
+          "State Key Laboratory of Natural Medicines, School of Traditional Chinese Pharmacy, China Pharmaceutical University, Nanjing, China.",
+          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Beijing, China."
+        ],
+        "doi": "10.1111/pbi.70598",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Plant biotechnology journal",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41821502/",
+        "category": null,
+        "date": "2026-03-13",
+        "mesh_terms": [],
+        "source_id": "41821502",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "이 논문은 고가의 건강 기능성 성분인 건간소와 기펜소이드 LVI의 생합성 경로를 규명하고, 이를 위한 효소 GpCYP88AB3의 기능을 밝혀냈습니다. 이는 대사 공학을 통해 해당 성분의 생산을 증가시키는 데 활용 가능합니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "Gynostemma pentaphyllum(열안정성(thermostability))은 차 및 전통 중국약재로 사용되며, Suining(SN)과 Nanning(NN) 지역 간 귀중한 dammarane형 Ginsenoside 및 Gypenoside LVI 생산량에 지역적 차이가 존재함.",
+        "method": "SN 집단의 chromosome-level genome 분석을 통해 생물학적 메커니즘을 규명하고, 다-omics 데이터를 결합해 P450 유전자 후보를 스크리닝함.",
+        "result": "SN은 최근 전체 유전체 복제 사건으로 인한 테트라플로이드(~1.2 Gb)로 확인되었으며, GpCYP88AB3는 Ginsenoside/gypenoside LVI 생합성에 이중 기능적 효소로 작용함.",
+        "significance": "GpCYP88AB3의 진화적 기원과 P450의 기능적 유연성을 규명함으로써 핵심 대사물질 생합성 경로를 밝혀, 향후 대사공학 및 합성생물학 응용 기초를 제공함."
+      }
+    },
+    {
+      "paper": {
+        "title": "Toward unbiased objective functions in constraint-based modeling.",
+        "abstract": "The objective function is important to constraint-based modeling, but setting it has traditionally been subjective, limiting predictive accuracy. We expose the biases of commonly used objective functions and propose a paradigm shift toward unbiased objective functions powered by artificial intelligence, offering a promising avenue for metabolic engineering and biomedical applications.",
+        "authors": [
+          "Dong W",
+          "Nielsen J",
+          "Li H",
+          "Li F",
+          "Chen Y"
+        ],
+        "affiliations": [
+          "College of Environmental and Safety Engineering, Shenyang University of Chemical Technology, Shenyang, China; State Key Laboratory of Quantitative Synthetic Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China.",
+          "BioInnovation Institute, Copenhagen N, Denmark; Department of Life Sciences, Chalmers University of Technology, Gothenburg, Sweden.",
+          "College of Environmental and Safety Engineering, Shenyang University of Chemical Technology, Shenyang, China. Electronic address: lihaiyan98@syuct.edu.cn.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen, China. Electronic address: feiranli@sz.tsinghua.edu.cn.",
+          "State Key Laboratory of Quantitative Synthetic Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen, China. Electronic address: y.chen3@siat.ac.cn."
+        ],
+        "doi": "10.1016/j.tibtech.2026.01.004",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Trends in biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41820174/",
+        "category": null,
+        "date": "2026-03-11",
+        "mesh_terms": [],
+        "source_id": "41820174",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "AI 기반의 무편향적 목표 함수 개발로 대사 공학의 예측 정확도 향상 가능. 생화학적 생산 공정 최적화에 활용 가능.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "제약 기반 모델링에서 목표 함수는 중요하지만, 전통적으로 주관적인 설정이 이루어져 예측 정확도에 제한이 있었다. 이는 생물학적 시스템의 복잡성을 반영하지 못하는 주관적 편향을 초래했다.",
+        "method": "기존 목표 함수의 편향성을 분석하고, 인공지능 기반의 공정한 목표 함수를 도입하는 전환점을 제안했다. 이는 데이터 기반의 정량적 접근을 통해 주관성을 줄였다.",
+        "result": "AI 기반의 공정한 목표 함수는 제약 기반 모델링의 예측 정확도를 향상시키는 잠재력을 가진다. 이는 대사 공학 및 생물의학적 응용 분야에서 새로운 가능성을 열어준다.",
+        "significance": "이 접근법은 생물학적 시스템의 정밀한 분석과 혁신적인 응용을 위한 기반이 되며, 미래 생물정보학 연구의 방향성을 제시한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 4,
+    "prefilter_passed": 4,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-13T22:19:52.011832+00:00"
+}

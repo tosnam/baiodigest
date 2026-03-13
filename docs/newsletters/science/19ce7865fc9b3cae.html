@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773410803000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjM2NjQ2ZGZkLWRmMjctNDczOC1iOTE0LWMyMmVkZjY1OWM2MiIsImRla1ZlcnNpb24iOjEsIml2IjoiR04vemFySmljb2EwQzAzQWZSWmh6Zz09IiwiY2lwaGVyVGV4dCI6ImpqTGp5ckRNNEU4V2xEaldlNjFXZG9PR2cxMjNGeW9EVDVwVGxIbHlkUkRCL3NJaGxaeWd1dzI3QU51SUZYaG01dXo2NzRnemxNOTdtODVaTzR4V0FjSFYzYUErV3hxdHRoamY4MnF5WW5LR3RBdE53SDBXWWM0PSIsImF1dGhUYWciOiJtODVaTzR4V0FjSFYzYUErV3hxdHRnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">it all comes down to a DNA repair process known as gene conversion</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImYxNzZiMmUyLWIxZjQtNGFmNi04MzZlLTgxMTZhMTgyNWU1YiIsImRla1ZlcnNpb24iOjEsIml2IjoiL1RkcElFdk1WL2gxbU85dTFTOXBHQT09IiwiY2lwaGVyVGV4dCI6IkpNbVhqWEVaZlU1NzNaMER6S1lvTElSZitUWGxWbHM1VHJpRndrc0RaU1FpZCswaXF1N0pLMCtSOWdpK2dEa2liUVEvTTBmRHYwVmhOQlV5aE16SDkxaDhiVkJ6QitNYmFQMDNhU0JMekZmNGRaanZidFV2YVJnPSIsImF1dGhUYWciOiJOQlV5aE16SDkxaDhiVkJ6QitNYmFBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">uncanny ability to mimic human speech</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6Ijk2YjM3MzIwLTQxYjYtNDkyMi04ZTVmLTJkYWU1Nzc4OGMzOSIsImRla1ZlcnNpb24iOjEsIml2IjoiekdWVTIwcUl6NkJjNFlGaW8rUktNZz09IiwiY2lwaGVyVGV4dCI6IksvRytHZ0F3bEFHSjV2a3J5MGU1RGhEL0VMSnBsK3pjMXROUHNkZ1RqdjZOajhNVzBEdG5FTG9Sb1o5L2U3amdBNlY5N08rTWY2TFFDZHFHaXhvcWJlTThPYkc4RVNnbWQ4eGxWTnRLaU0rZ1hPR0JZcVBrU2pJPSIsImF1dGhUYWciOiJDZHFHaXhvcWJlTThPYkc4RVNnbWR3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">could only be produced by a powerful magnetic engine made from the remnants of the exploded star</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjVhZWRjNDY1LTIxNGEtNDg0YS05M2Y0LTcwMTVlYzliNzI2NSIsImRla1ZlcnNpb24iOjEsIml2IjoiOC9EbU8waGxhYzVlKzFLS3hDQnB0Zz09IiwiY2lwaGVyVGV4dCI6Imx1QzdZcGtGZ1AvV1oxWEdKcHJVTGNJOGhzQmhSQ1EyZGRrQXpncmJSb0hicnNhYVpwSkJZVzRWQTNYc21aWG9wQSs4K3U3a0c4d0FIc2RhbkVWRSsrOFJ4cHlKOTcvZk12UHc1anRJWlduT1h2dFNpc1FnYWJZPSIsImF1dGhUYWciOiJIc2RhbkVWRSsrOFJ4cHlKOTcvZk1nPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">report on the Ig Nobels for Science Adviser</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImI1YjQ4MjM1LWFiMDEtNDRlOS1iMzNmLTg3MGNjNjAzYjI0YyIsImRla1ZlcnNpb24iOjEsIml2IjoiM3BqMUR3TGhNKzRVNGxZaWFIU1N1Zz09IiwiY2lwaGVyVGV4dCI6IjdRNmsvc2dEVXRFdXpuTlhFVSt5VVpJb2s4M2ZWUHF5M29wd3NZYmNjaTNUMjlLRFpYeEFLeDAwNG9GdFE0blJ0aTZad3I0NFplanNYbnRtQStSYVJ5c0llWnpiYitJYmdONlk5UThDNFRQdUZPSldJbWgwa3JvPSIsImF1dGhUYWciOiJYbnRtQStSYVJ5c0llWnpiYitJYmdBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">actually seem to be thriving in response to climate change</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
