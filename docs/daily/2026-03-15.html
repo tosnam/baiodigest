@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-15 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-15</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41825536/" target="_blank" rel="noopener noreferrer">Engineering Escherichia coli for high-level production of ergothioneine.</a></h3>
+    <p>Journal of biotechnology</p>
+    <p>National Key Laboratory of Lead Druggability Research, China State Institute of Pharmaceutical Industry, Shanghai Institute of Pharmaceutical Industry, 285Gebaini Road, Pudong, Shanghai 201203, PR China. Electronic address: sxzlb@263.net.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>ERG는 항산화제로 식품/의약품 분야에서 활용 가능하며, 해당 연구의 대사 공학 전략은 생산 효율 향상에 직접적 기여 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>에르고티오이닌(ERG)은 항산화 작용이 뛰어난 황 함유 자연 화합물로, 미생물 생합성 기술은 지속 가능하고 확장 가능한 생산 방식으로 주목받고 있다. 그러나 기존 공정의 ERG 수율은 여전히 낮아 효율적인 생산 방법이 필요하다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>대사 공학 전략을 통해 E. coli를 재공정하여 ERG 생산을 강화하였다. 무작위 돌연변이와 스크리닝을 통해 촉매 활성 1.4배 증가한 메틸트랜스퍼라제 변이체를 확보하고, 다양한 sulfoxide synthase와 C-S lyase를 결합해 경로를 최적화하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>최종적으로 S5 균주를 통해 453 ± 9 mg/L의 ERG 생산 성과를 달성하였다. 5L 발효기에서 144시간 동안 12161 ± 311 mg/L의 최고 생산량을 기록하며 기존 기록을 경신했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>다양한 대사 공학 전략의 협동 적용 효과를 입증함으로써 ERG의 비용 효율적 생합성 기반을 마련하였다. 이는 항산화제 생산 분야의 지속 가능한 공정 개발에 기여할 수 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

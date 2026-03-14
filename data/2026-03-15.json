@@ -1,0 +1,60 @@
+{
+  "date": "2026-03-15",
+  "entries": [
+    {
+      "paper": {
+        "title": "Engineering Escherichia coli for high-level production of ergothioneine.",
+        "abstract": "Ergothioneine (ERG) is a natural sulfur-containing compound derived from histidine that is known for its significant antioxidant properties. Microbial biosynthesis of ERG has attracted considerable interest due to its sustainability and scalability. Despite efforts to construct engineered strains, the ERG yield remains low. In this study, Escherichia coli was engineered for high-level ERG production through a series of metabolic engineering strategies. A promising methyltransferase was identified and an evolved variant with 1.4-fold increase in catalytic activity was obtained through random mutagenesis and screening. Subsequently, combinatorial pathway engineering was conducted by combining various sulfoxide synthases and C-S lyases with the evolved methyltransferase, generating a strain with 297 ± 3mg/L of ERG. To further improve the pathway efficiency, ribosome binding site and promoter engineering were innovatively employed to fine-tune the expression levels of key enzymes in the ERG synthesis pathway. Furthermore, the supply of S-adenosylmethionine, an essential methyl donor, was enhanced by applying cofactor engineering. Finally, a high ERG-producing strain S5 was obtained, whose ERG yield reached 453 ± 9mg/L. Upon scale-up in a 5-L fermenter, the strain S5 produced 12161 ± 311mg/L of ERG at 144h, representing the highest titer achieved to date in microbial fermentation. This work demonstrated that the effectiveness of synergistic application of multiple metabolic engineering strategies in improving product yield, laying a foundation for the cost-effective biosynthesis of ERG.",
+        "authors": [
+          "Zhang L",
+          "Tang J",
+          "Yang S",
+          "Feng M",
+          "Chen S"
+        ],
+        "affiliations": [
+          "School of Pharmaceutical Sciences, Shanghai Engineering Research Center of Immunotherapeutics, Fudan University, Shanghai 201203, PR China; National Key Laboratory of Lead Druggability Research, China State Institute of Pharmaceutical Industry, Shanghai Institute of Pharmaceutical Industry, 285Gebaini Road, Pudong, Shanghai 201203, PR China.",
+          "National Key Laboratory of Lead Druggability Research, China State Institute of Pharmaceutical Industry, Shanghai Institute of Pharmaceutical Industry, 285Gebaini Road, Pudong, Shanghai 201203, PR China.",
+          "National Key Laboratory of Lead Druggability Research, China State Institute of Pharmaceutical Industry, Shanghai Institute of Pharmaceutical Industry, 285Gebaini Road, Pudong, Shanghai 201203, PR China.",
+          "School of Pharmaceutical Sciences, Shanghai Engineering Research Center of Immunotherapeutics, Fudan University, Shanghai 201203, PR China. Electronic address: fmq@fudan.edu.cn.",
+          "National Key Laboratory of Lead Druggability Research, China State Institute of Pharmaceutical Industry, Shanghai Institute of Pharmaceutical Industry, 285Gebaini Road, Pudong, Shanghai 201203, PR China. Electronic address: sxzlb@263.net."
+        ],
+        "doi": "10.1016/j.jbiotec.2026.03.014",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41825536/",
+        "category": null,
+        "date": "2026-03-11",
+        "mesh_terms": [],
+        "source_id": "41825536",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "ERG는 항산화제로 식품/의약품 분야에서 활용 가능하며, 해당 연구의 대사 공학 전략은 생산 효율 향상에 직접적 기여 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "에르고티오이닌(ERG)은 항산화 작용이 뛰어난 황 함유 자연 화합물로, 미생물 생합성 기술은 지속 가능하고 확장 가능한 생산 방식으로 주목받고 있다. 그러나 기존 공정의 ERG 수율은 여전히 낮아 효율적인 생산 방법이 필요하다.",
+        "method": "대사 공학 전략을 통해 E. coli를 재공정하여 ERG 생산을 강화하였다. 무작위 돌연변이와 스크리닝을 통해 촉매 활성 1.4배 증가한 메틸트랜스퍼라제 변이체를 확보하고, 다양한 sulfoxide synthase와 C-S lyase를 결합해 경로를 최적화하였다.",
+        "result": "최종적으로 S5 균주를 통해 453 ± 9 mg/L의 ERG 생산 성과를 달성하였다. 5L 발효기에서 144시간 동안 12161 ± 311 mg/L의 최고 생산량을 기록하며 기존 기록을 경신했다.",
+        "significance": "다양한 대사 공학 전략의 협동 적용 효과를 입증함으로써 ERG의 비용 효율적 생합성 기반을 마련하였다. 이는 항산화제 생산 분야의 지속 가능한 공정 개발에 기여할 수 있다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-14T22:07:37.374904+00:00"
+}
