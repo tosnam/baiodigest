@@ -1,0 +1,69 @@
+{
+  "date": "2026-03-16",
+  "entries": [
+    {
+      "paper": {
+        "title": "Challenges, optimization, and delivery strategies in the heterologous expression of aldehyde dehydrogenase: therapeutic applications for acetaldehyde detoxification.",
+        "abstract": "The aldehyde dehydrogenase (ALDH) superfamily plays a critical role in acetaldehyde detoxification. The mitochondrial ALDH2 isoenzyme serves as the core enzyme in alcohol metabolism because of its high affinity for acetaldehyde. Loss-of-function mutation (such as ALDH2*2) of the gene is highly prevalent in East Asian populations. These mutations cause acetaldehyde accumulation and significantly increase the risk of alcohol-related diseases. Therefore, it is necessary to develop efficient recombinant ALDH2 supplementation therapies. However, its heterologous expression faces three major bottlenecks: (1) catalytic turnover leading to NAD⁺ depletion; (2) difficulty in functional tetramer assembly; and (3) cytotoxicity of the substrate acetaldehyde, which inhibits cell growth. The review covers rational host selection and multi-level synergistic optimization of transcription, translation, folding, and metabolism. Examples include promoter optimization, codon optimization, terminator optimization, and chaperone co-expression. Ultimately, we explore essential stabilization formulations and innovative delivery strategies, such as nano-encapsulation and engineered probiotics, needed to realize the therapeutic potential of ALDH2. The goal is to promote the industrial production and clinical translation of recombinant ALDH2.",
+        "authors": [
+          "Qiao S",
+          "Li S",
+          "Zhang T",
+          "Yang F",
+          "Zhang RL",
+          "Li M"
+        ],
+        "affiliations": [
+          "Department of Pathogenic Biology, School of Basic Medical Science, Henan Medical University, Xinxiang, China.",
+          "School of Chemistry and Chemical Engineering, Henan Institute of Science and Technology, Xinxiang, China.",
+          "Department of Pathogenic Biology, School of Basic Medical Science, Henan Medical University, Xinxiang, China.",
+          "Department of Pathogenic Biology, School of Basic Medical Science, Henan Medical University, Xinxiang, China.",
+          "The Second Affiliated Hospital of Henan Medical University, Henan Collaborative Innovation Center of Prevention and Treatment of Mental Disorders, Xinxiang, China. zhangruilingxxmu@126.com.",
+          "Department of Pathogenic Biology, School of Basic Medical Science, Henan Medical University, Xinxiang, China. xxyxylimin@163.com."
+        ],
+        "doi": "10.1007/s10529-026-03714-8",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology letters",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41832273/",
+        "category": "acetaldehyde",
+        "date": "2026-03-15",
+        "mesh_terms": [
+          "Acetaldehyde",
+          "Humans",
+          "Recombinant Proteins",
+          "Aldehyde Dehydrogenase, Mitochondrial",
+          "Aldehyde Dehydrogenase",
+          "Inactivation, Metabolic"
+        ],
+        "source_id": "41832273",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "의약 산업에서 알코올 관련 질병 치료를 위한 ALDH2 재조합 생산에 활용 가능. 공정한 전달 전략(예: 엔지니어링 프로바이오틱스)은 식품 및 의약 분야에 적용 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "알데하이드 디하이드로جين라제(ALDH) 초과족은 아세타르알데하이드(detoxification)에 핵심적인 역할을 한다. 미토콘드리아 ALDH2 이소인산은 알코올 대사에서 높은 친화도로 인해 핵심 효소로 작용한다.",
+        "method": "이미지의 최적화는 전사(transcription), 번역(translation), 접힘(folding), 대사(metabolism)의 다단계 협력 최적화를 포함한다. 프로모터(promoter), 코돈(codon), 터미네이터(terminator) 최적화 및 채퍼론(chaperone) 공동 발현이 예시로 제시된다.",
+        "result": "핵심 안정화 공식화와 혁신적인 전달 전략(나노포장(nano-encapsulation), 공학화된 프로바이오틱스(engineered probiotics))이 제시된다. 이는 재조합 ALDH2의 치료 잠재력을 실현하기 위한 필수적인 접근법이다.",
+        "significance": "이 연구는 재조합 ALDH2의 산업 생산 및 임상 전환을 촉진하고, 표현 및 전달 장벽을 해결하여 치료적 적용을 위한 기초를 제공한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-15T22:01:48.933523+00:00"
+}
