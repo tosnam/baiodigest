@@ -1,0 +1,66 @@
+{
+  "date": "2026-03-17",
+  "entries": [
+    {
+      "paper": {
+        "title": "Bioprocess optimisation via joint machine learning and metabolic modelling.",
+        "abstract": "Optimisation of the design-build-test-learn cycle remains a bottleneck for developing and efficiently manufacturing the next generation of bioproducts. To address this challenge, research has traditionally focused on either data-driven or mechanistic modelling, but the emerging consensus in the field highlights that their strategic integration, often termed hybrid modelling, offers significant advantages, particularly for complex systems where data is sparse. Here, we introduce a hybrid framework where these two methodological lineages are combined to frame development parameters within the metabolism of a production system, therefore achieving mechanism-informed predictions for follow-up experiments. We present three scenarios that exemplify how this framework can be leveraged to guide and accelerate the development of novel bioprocesses, even with small datasets available. We validate our framework by applying it to two heterologous peptide production scenarios in Escherichia coli, explored through commonly relevant experimental factors such as inducer concentration and production strain. Using our framework, we identify key metabolic pathways and reactions that contribute to productivity and whose activity is modified by individual experimental factors like temperature and plasmid used. Furthermore, we show that the biological patterns extracted from this hybrid approach can complement the experimental design, informing predictive models of process performance. Our approach is general and can be tailored to a large array of processes, and thus holds potential for boosting both proof-of-concept and industrial projects, contributing to more efficient and sustainable biomanufacturing.",
+        "authors": [
+          "Zampieri G",
+          "Sandner V",
+          "Verma S",
+          "Kraemer J",
+          "Lennon C",
+          "Occhipinti A",
+          "McCreath G",
+          "Angione C"
+        ],
+        "affiliations": [
+          "School of Computing, Engineering and Digital Technologies, Teesside University, Middlesbrough, United Kingdom; Department of Biology, University of Padova, Padova, Italy.",
+          "Fujifilm Diosynth Biotechnologies, Process Design R&D, Billingham, United Kingdom.",
+          "School of Computing, Engineering and Digital Technologies, Teesside University, Middlesbrough, United Kingdom.",
+          "Fujifilm Diosynth Biotechnologies, Microbial R&D, Billingham, United Kingdom.",
+          "Fujifilm Diosynth Biotechnologies, Microbial R&D, Billingham, United Kingdom.",
+          "School of Computing, Engineering and Digital Technologies, Teesside University, Middlesbrough, United Kingdom; Centre for Digital Innovation, Teesside University, Middlesbrough, United Kingdom; National Horizons Centre, Teesside University, Darlington, United Kingdom.",
+          "Fujifilm Diosynth Biotechnologies, Process Design R&D, Billingham, United Kingdom.",
+          "School of Computing, Engineering and Digital Technologies, Teesside University, Middlesbrough, United Kingdom; Centre for Digital Innovation, Teesside University, Middlesbrough, United Kingdom; National Horizons Centre, Teesside University, Darlington, United Kingdom. Electronic address: c.angione@tees.ac.uk."
+        ],
+        "doi": "10.1016/j.ymben.2026.03.004",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Metabolic engineering",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41833706/",
+        "category": null,
+        "date": "2026-03-13",
+        "mesh_terms": [],
+        "source_id": "41833706",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "생물공정 최적화를 위한 기계학습과 대사모델링의 융합 접근법 제시. Escherichia coli을 이용한 헤테로로지 펩타이드 생산 시스템에 적용 가능한 전략 포함.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생산 시스템의 설계-구축-테스트-학습 사이클 최적화가 다음 세대 생물제품 개발과 제조의 주요 장애물이다. 데이터 기반 모델링과 기전 모델링의 단일 접근법은 복잡한 시스템에서 데이터가 부족한 경우 한계를 보인다.",
+        "method": "머신러닝과 대사 모델링을 통합한 하이브리드 프레임워크를 제안하였다. 이는 생산 시스템의 대사에 기반한 개발 매개변수를 프레임워크 내에서 관리하며, 실험 요인(예: 온도, 플라스미드 사용)에 따른 반응을 예측한다.",
+        "result": "Escherichia coli에서의 헤테로로지 펩타이드 생산 시나리오에서 핵심 대사 경로와 반응을 식별하였다. 실험 요인에 따른 대사 활성 변화를 분석하며, 생물학적 패턴이 실험 설계에 통합적으로 기여함을 보여주었다.",
+        "significance": "이 접근법은 다양한 프로세스에 적용 가능하며, 개념 검증 및 산업 프로젝트의 효율성과 지속 가능성을 높이는 잠재력을 가진다. 예측 모델의 정확도 향상과 제조 공정 최적화에 기여한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-16T22:13:31.117979+00:00"
+}

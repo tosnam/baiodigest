@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1773681312000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=b8b0c664cd&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Youthful antics predict lifespan in fish</a></h4>
+      <p>아프리카 터키스 브랜치 킬리프시(Nothobranchius furzeri)의 수면 패턴과 활동 수준은 수명을 예측할 수 있는 지표로 활용 가능하다는 연구 결과가 발표됐습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=18fa49caaa&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Labs face ‘RAMmageddon’</a></h4>
+      <p>AI 시스템에 대한 고속 RAM 칩 수요 증가로 인한 글로벌 반도체 부족이 연구소의 장비 접근을 어렵게 만들고 있으며, 가격 상승과 공급 차질이 발생하고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d1915a4c07&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">China vies for tech leadership</a></h4>
+      <p>중국은 인공지능, 양자기술 등 첨단 분야에서 글로벌 리더십을 확보하기 위해 &#39;특별한 조치&#39;를 통해 5년 계획을 통해 기술 경쟁력을 강화하고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=57e1c5d6bd&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">AI students — taught by AI teachers?</a></h4>
+      <p>AI 플랫폼 &#39;에이니스트&#39;가 학생들의 강의를 자동으로 듣고 과제를 수행하는 도구를 출시했으나, 이는 짧은 기간 내 중단되며 논란을 일으켰습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d267fe45f7&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">AI and the PhD student: friend or foe?</a></h4>
+      <p>AI 도구가 연구생들에게 효율성을 높여주고 있지만, 이로 인해 학생들의 핵심 역량 퇴행 문제가 우려되는 것으로 나타났습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=fab37bb17f&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Canada’s ‘gold rush’ for top science talent</a></h4>
+      <p>캐나다 정부가 100명의 국제 과학자 유치를 위해 10억 달러를 투자하며, 특히 미국 연구자들의 이민 유도에 집중하고 있습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
