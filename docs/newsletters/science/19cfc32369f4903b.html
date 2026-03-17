@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773757664000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImFhNDJhODlkLTY3NDktNGVmZS04N2U1LTllN2NlMDRiNTQ1ZiIsImRla1ZlcnNpb24iOjEsIml2IjoiNSt2VU13aFJ1dExiSkZGb0dKT1ZBUT09IiwiY2lwaGVyVGV4dCI6IjNhNDR3MExEVnJzMmlxQUQ3ZWthOStpSDZaZDkyWlpnRzdMQ0F3Rk5RUkpyb1M5cUJmQWJLcjJ1MlpqME0yUXArWVp6SGRFclYrTnU3TklsbVIzTkNZQm1oOUFtc1J2aG4rZnIxRE1JVWJyUzJ5UlJhQmlUbFFFPSIsImF1dGhUYWciOiI3TklsbVIzTkNZQm1oOUFtc1J2aG53PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">evolutionary adaptations to warming oceans may further reduce the fish</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImY3Nzg5ZmViLTIyMWQtNDJmNy05YjNkLWIxMzQ0NWMxMDc0YSIsImRla1ZlcnNpb24iOjEsIml2IjoiMzdBcGVsNkwvaWJ4bUcxYm9VanFydz09IiwiY2lwaGVyVGV4dCI6IktNUU9kMHFhNWhXSW5wU1dwM3BVSEF2U0dzdm1Qb1d4WkV0SjMxSTBuZFBKMCs5S1lVdElTZXpnMlZkN3NSOFFhTVVxZ1YwYXcwUHZ1ZFphaGdEWXQyaUFvNmJTRGFlY2x0K3dLWHBlaS80bThaaHRXNkZJNnE4PSIsImF1dGhUYWciOiJ1ZFphaGdEWXQyaUFvNmJTRGFlY2xnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">already testing how to grow crops like potatoes on the Moon</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImY4NjdhYWVjLTgyYWItNGEwNi04YWYyLWY3MmZmYzY3ODNjYyIsImRla1ZlcnNpb24iOjEsIml2Ijoib1liSUs0ajRnWm1tdlJKL3V5VzFLQT09IiwiY2lwaGVyVGV4dCI6ImJKanBrMmlsRFNPZVl0ZjlKU254OWh3M2QrTlZwVHQ2ZWtGK2pHOEJoRnJNR0R1MHhKSjN2SkFGSHBNUVRCNXFURkIxWDUxMzJDQml2WVhzYmlQRnpsRGE0YkFXU1NSLzdhR0d5Q3VJK0lHWnByMFNmN3NsdFNnPSIsImF1dGhUYWciOiJ2WVhzYmlQRnpsRGE0YkFXU1NSLzdRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">one of the oldest looms ever found</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjBjZjZmNmRhLTJmMWEtNGJkNS04N2M1LTE4ZDUyMzE0MjM4YyIsImRla1ZlcnNpb24iOjEsIml2IjoibnV4czdDRmthenRtdmcyUEx1VGZrUT09IiwiY2lwaGVyVGV4dCI6ImlWeDF6MkJ5Tktuc21LNngzQ3lMYjA5K0JlOWVjQ2dRRmdhb3dJNjZlQUpCTXl4Z2h4R1FzcUdOVTRDRWlIaTMzWm05UVVHaFFza3hSM3M1eGRiSGJ6bFJUakdTVFkzWFFwN3NiT3doWkdzN1pyNE5qeTdrMzVFPSIsImF1dGhUYWciOiJSM3M1eGRiSGJ6bFJUakdTVFkzWFFnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">the share of fruit fly papers in the scientific literature over the past 30 years has dropped by more than 90%</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjczY2IyNjEzLTRhYzktNDVmNS1hYTMxLWZmMmFlNWMxYTIzOSIsImRla1ZlcnNpb24iOjEsIml2IjoiZThuRjdtMGFHaDVyUWlvWU9zblNYZz09IiwiY2lwaGVyVGV4dCI6IjNMK1hqYmg5ZVEwUnFjd3ByL2Z5bnVUQUpQRXJDRG1QZGRHU29Wd0JISFUwUjYyTGYyaXdTcTdyYmN4TFpIREJpNEVidWtYOFBPaVh6cHRwS0N5UTBXRlVIUXFvM3lwK0wzdkp4ZTV0R2hvZWEwSXFHRHJKMGw0PSIsImF1dGhUYWciOiJ6cHRwS0N5UTBXRlVIUXFvM3lwK0x3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">Dania Beach to see a wild monkey</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+{
+  "date": "2026-03-18",
+  "entries": [
+    {
+      "paper": {
+        "title": "SurfSol: A Multimodal Surface-Based Deep Learning Framework for Protein Solubility Prediction.",
+        "abstract": "Protein solubility is a critical determinant for the application of recombinant proteins in biotechnology and pharmaceuticals. Although experimental techniques have advanced, accurate prediction of solubility remains a persistent challenge. This work introduces SurfSol, a novel computational approach that predicts protein solubility by leveraging explicit surface representations. The method integrates surface geometry and physicochemical properties, such as electrostatics, hydropathy, and hydrogen-bonding potential, within an E(3)-equivariant graph neural network, and combines them with sequence embeddings from ESM-2 and structural features extracted via a TransformerConv architecture. Evaluated on the processed eSOL data set, SurfSol achieves an R2 of 0.555 and an AUC of 0.895, outperforming existing predictors. Ablation studies confirm the complementary contributions of the surface, sequence, and structural modalities. SurfSol demonstrates the importance of explicit surface modeling for solubility prediction and provides a generalizable framework for other protein property prediction tasks.",
+        "authors": [
+          "Fang Y",
+          "Wei L",
+          "Xing B",
+          "Wei Z"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Biocatalysis and Enzyme Engineering, School of Life Sciences, Hubei University, Wuhan, Hubei 430062, PR China.",
+          "State Key Laboratory of Biocatalysis and Enzyme Engineering, School of Life Sciences, Hubei University, Wuhan, Hubei 430062, PR China.",
+          "State Key Laboratory of Biocatalysis and Enzyme Engineering, School of Life Sciences, Hubei University, Wuhan, Hubei 430062, PR China.",
+          "State Key Laboratory of Biocatalysis and Enzyme Engineering, School of Life Sciences, Hubei University, Wuhan, Hubei 430062, PR China.",
+          "Hubei Province Key Laboratory of Biotechnology of Chinese Traditional Medicine, National & Local Joint Engineering Research Center of High-throughput Drug Screening Technology, School of life sciences, Hubei University, Wuhan, Hubei 430062, PR China."
+        ],
+        "doi": "10.1021/acs.jcim.6c00124",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of chemical information and modeling",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41841780/",
+        "category": null,
+        "date": "2026-03-17",
+        "mesh_terms": [],
+        "source_id": "41841780",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "단백질 용해도 예측은 바이오테크놀로지 및 제약 산업에서 핵심적인 응용 분야입니다. SurfSol의 다모달 접근법은 단백질 공학적 설계에 직접 활용 가능하며, 다른 단백질 특성 예측에도 일반화할 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질 용해도는 재조합 단백질의 생물학적 응용에 결정적이다 (protein solubility). 실험 기술의 발전에도 불구하고 정확한 용해도 예측은 여전히 어려운 과제이다 (persistent challenge).",
+        "method": "SurfSol은 표면 기하학과 물리화학적 특성(예: 전하 분포, 수소 결합 잠재력)을 E(3)-equivariant 그래프 신경망에 통합하였다 (E(3)-equivariant graph neural network). 시퀀스 임베딩과 구조적 특성은 ESM-2 및 TransformerConv 아키텍처를 통해 결합하였다 (TransformerConv architecture).",
+        "result": "eSOL 데이터셋에서 R² 0.555, AUC 0.895 성능을 기록하며 기존 예측기보다 우수하였다 (outperforming existing predictors). 모듈 간 보완적 기여가 확인된 아블레이션 연구를 통해 표면, 시퀀스, 구조적 모달리티의 중요성을 입증하였다 (ablation studies).",
+        "significance": "표면 모델링의 중요성을 강조하며, 다른 단백질 특성 예측 태스크에 일반화 가능한 프레임워크를 제공한다 (generalizable framework). 생물학적 응용에 대한 신뢰할 수 있는 예측 도구로 활용 가능하다 (reliable prediction tool)."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-17T22:13:49.539824+00:00"
+}
