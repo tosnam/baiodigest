@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-19 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-19</h2>
+  <p>총 6편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41843673/" target="_blank" rel="noopener noreferrer">Dual-encoder contrastive learning accelerates enzyme discovery.</a></h3>
+    <p>Proceedings of the National Academy of Sciences of the United States of America</p>
+    <p>Dayhoff Labs, Inc., Cambridge, MA 02140.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>에니메의 효율적 발견을 위한 AI 기반 프레임워크로, 생화학 반응 최적화 및 대사 공학에 활용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>효소 공학은 목표 반응을 위한 효소 설계의 기초이지만, 적합한 시작 단백질을 찾는 것이 여전히 주요 장애물이다. (enzyme engineering, bottleneck)</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Horizyn-1은 반응 지문(reaction fingerprints)과 단백질 언어 모델(protein language models)을 결합해 수백만 개의 반응-효소 쌍을 훈련시켰다. (contrastive learning, reaction fingerprints, protein language models)</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>75% 이상의 테스트 반응에서 정확한 활성을 가진 효소가 상위 100개 후보 중에 나타났다. (enzyme promiscuity, nonnatural biochemical reactions)</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>초기 효소 확보의 주요 장애물을 해결해 효소 활동을 위한 효율적 in silico 스크리닝을 가능하게 했다. (biocatalysis, metabolic engineering)</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI, metabolic engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41843871/" target="_blank" rel="noopener noreferrer">Engineering Coenzyme Specificity of Formate Dehydrogenases: The Role of Amino Acid Residues at Positions 379 and 380.</a></h3>
+    <p>Biochemistry. Biokhimiia</p>
+    <p>Faculty of Chemistry, Lomonosov Moscow State University, Moscow, 119991, Russia.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>NADP+-specific FDH 변형체는 세제 합성에 활용되며, 체리 구조물질 생산에 기여할 수 있음. 약물 합성에서의 효소 활용 가능성 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>산화환원효소(oxidoreductase)의 NAD+ 또는 NADP+ 선택적 특이성 메커니즘은 핵심 과학 문제로, 효소의 공작물 특이성 조절 능력은 산업적 응용에 중요합니다. 1990년 glutathione reductase에서 공작물 특이성 전환 연구가 시작되었고, 1993년 PseFDH는 NAD+에서 NADP+로 전환하는 첫 사례로 등장했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>공작물 특이성 전환은 PseFDH의 198, 221, 222, 260, 379, 380 위치 아미노산 치환을 통해 달성되며, 2010년 이후 5종의 자연적 NADP+ 의존적 FDH가 확인되었습니다. 3D 구조 분석과 모델링을 통해 His379와 Ser380의 역할을 탐구했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>PDB에 등록된 3D 구조 데이터는 공작물 결합 메커니즘을 해명하는 데 기여했으며, His379와 Ser380의 배열이 NADP+ 결합에 중요한 역할을 한다는 가설이 제기되었습니다. 그러나 이 두 위치의 정확한 기능에 대한 논란이 여전히 존재합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 효소 공작물 특이성 조절의 분자 기전을 밝혀 생명공학적 응용에 기여하며, 천연 제품 합성과 수소 생산 등 다양한 분야에서 활용 가능한 기초 자료를 제공합니다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.80
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41846315/" target="_blank" rel="noopener noreferrer">ArtemisiaDB: A Comprehensive Multi-Omics Database for Artemisia annua.</a></h3>
+    <p>Plant communications</p>
+    <p>Joint International Research Laboratory of Metabolic and Developmental Sciences, Frontiers Science Center for Transformative Molecules, Plant Biotechnology Research Center, Fudan-SJTU-Nottingham Plant Biotechnology R&amp;D Center, School of Agriculture and Biology, Shanghai Jiao Tong University, Shanghai 200240, China; Yazhouwan National Laboratory, No. 8 Huanjin Road, Yazhou District, Sanya City 572024, China. Electronic address: kxtang@sjtu.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>아르테미시닌 생산을 위한 대사 공학 연구에 직접적으로 활용 가능하며, 식품/의약 산업에서의 약물 개발에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>Artemisia annua 연구에 대한 통합적 자원이 부족해짐에 따라, 다중 옴ิก 데이터베이스 개발이 필요해짐(thermostability). 이는 아르테미시인 생합성의 조절 메커니즘을 규명하기 위한 기초 자료로 활용됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>유전자, 전사체, 대사체 데이터를 통합한 ArtemisiaDB를 구축함(metabolomic data). 전사인자, CRISPR 설계, 유전자-대사체 상관관계 분석을 위한 전용 모듈을 추가함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>다양한 옴릭 데이터와 분석 도구를 통합한 상호작용형 플랫폼 제공(gene-metabolite correlation). 아르테미시인 생합성 조절 메커니즘 탐색에 유용한 자원으로 확인됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>식물 대사 공학 발전에 기여할 수 있는 핵심 자원으로, 생합성 경로 최적화 및 약물 개발에 활용 가능함(plant metabolic engineering).</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41848427/" target="_blank" rel="noopener noreferrer">Structural and evolutionary dissection of NADPH-binding motifs in NADPH-preferring ene-reductases.</a></h3>
+    <p>Protein science : a publication of the Protein Society</p>
+    <p>Institute of Biochemistry, Graz University of Technology, Graz, Austria.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>NADPH 결합 모티프의 구조적 이해는 효소 공학에서 선택적 촉매 설계에 활용 가능. 유전자 변형을 통한 효소 기능 최적화에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>Ene-reductases(ERs)는 니코틴아마이드 의존적, 입체선택적 환원 반응을 촉매하지만, 코소브스트레이트(NAD(P)H) 결합 기전은 미해결된 문제이다. 대부분의 ERs는 비정상적인 디니클레오타이드 결합 구조를 갖추지 않고 유연한 루프 모티프를 통해 NADPH를 선호한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>SlOPR3의 NADPH 결합 모드를 기반으로 51개의 NADPH 선호 ERs를 다각적 시퀀스 정렬과 동源성 모델링을 통해 분석하였다. 돌연변이, kinetics, 결정학을 통한 기능적 분석을 수행하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>클래스-II ERs는 OPR3 유사 모티프를 보존하지만, 다른 클래스는 이형성 결합 방식을 사용한다. R343과 R366은 NADPH 결합에 필수적이며, 아데닌 클램프는 구조 민감성 유도 기능을 수행한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>모티프 요소의 단계적 조립과 수렴적 진화 경로를 밝혀냈다. OPR3 유사 ERs의 NADPH 결합 잔여체 기능 계층 구조와 다른 OYE 클래스의 대체 결합 전략을 규명하였다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: ancestral sequence reconstruction
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41844670/" target="_blank" rel="noopener noreferrer">Context-aware synthetic promoter design using neural networks enables rewiring of eukaryotic transcriptional networks.</a></h3>
+    <p>NPJ systems biology and applications</p>
+    <p>Department of Cybernetics, University of West Bohemia in Pilsen, Pilsen, Czechia. georgiev@kky.zcu.cz.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>유전자 조절을 위한 합성 프로모터 설계 기술로, 식품 및 의약품 생산에서 유전자 발현 최적화에 활용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>유전자 조절을 위한 프로모터 공학은 합성생물학의 핵심 기술로, 전사 네트워크의 정밀 제어가 가능하다. 그러나 실험적 접근법은 여전히 인력 집약적이다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>신경망(ANN) 기반 프레임워크를 통해 Saccharomyces cerevisiae의 합성 프로모터 설계를 수행하였다. 6,011개의 원생 프로모터를 TetR TFBS 호환성 검증을 통한 고신뢰도 쌍을 선별하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>모델 설계 프로모터는 전사 억제율 98.4%를 달성하며, 사전 실험 조정 없이도 성공적으로 통합되었다. Mig1 TFBS 삽입을 통해 포도당 의존적 조절 시스템을 구축하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>규모 확장 가능하고 예측력 있는 방법론으로 유전자 조절 서열 공학화 및 전사 논리 재프로그래밍을 가능하게 한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41846215/" target="_blank" rel="noopener noreferrer">Omega-based mini prime- and base-editing systems in Escherichia coli.</a></h3>
+    <p>Trends in biotechnology</p>
+    <p>Biology Department and Institute of Marine Sciences, College of Science, Shantou University, Shantou 515063, PR China; Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China. Electronic address: ao.jiang@whu.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>메타볼릭 엔지니어링에서 효율적인 전사 조절과 공인자 재생을 가능하게 하며, 산업용 단백질 생산 최적화에 활용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>Prime editing(PE) 및 base editing(BE)은 외부 DNA 공급원과 이중 가닥 파열을 피하는 유전자 편집 기술로, 그러나 크기 문제로 효율적인 전달과 활용에 제한이 있었다. 이를 해결하기 위해 OMEGA 기반의 소형 PE 및 BE 시스템 개발이 필요했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>OMEGA 기반의 PE 및 BE 시스템인 OMEGA-PE와 OMEGA-adenine base editor를 설계하고 진화시켰다. Escherichia coli에서 편집 효율과 유연성을 향상시켰다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>OMEGA-PE는 기존 도구보다 높은 특이성과 효율을 가진 프로그래밍 가능한 돌연변이 생성이 가능하다. 고속 스크리닝 플랫폼과 코프ак터 재생 및 단백질 번역 효율 향상에 적합하다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>유전자 편집, 지향적 진화, 대사 공학 및 단백질 발현 최적화 분야에 혁신적인 잠재력을 제공한다. 현재 도구의 주요 한계를 해결하며 기초 연구와 산업 생물기술에 새로운 가능성을 열어준다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

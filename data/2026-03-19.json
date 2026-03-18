@@ -1,0 +1,362 @@
+{
+  "date": "2026-03-19",
+  "entries": [
+    {
+      "paper": {
+        "title": "Dual-encoder contrastive learning accelerates enzyme discovery.",
+        "abstract": "The ability to engineer enzymes for desired reactions is a cornerstone of modern biotechnology, yet identifying suitable starting proteins remains a critical bottleneck. Although contrastive learning offers a compelling computational approach for enzyme discovery, these models have yet to be implemented at scale or proven effective in real-world experimental settings. Here, we present Horizyn-1, a computationally efficient deep learning framework that enables large-scale reaction-to-enzyme recommendation validated through comprehensive experimental testing. Leveraging a combination of reaction fingerprints and protein language models, we trained Horizyn-1 on millions of reaction-enzyme pairs to achieve state-of-the-art performance, recovering an enzyme with correct activity within the top 100 hits for over 75% of test reactions. We experimentally validate Horizyn-1 across three enzyme discovery scenarios: identifying enzymes for orphan reactions, predicting enzyme promiscuity for both characterized and uncharacterized enzymes, and discovering enzymes for nonnatural biochemical reactions including lysine-driven transaminations that enable efficient synthesis of noncanonical amino acids. On underrepresented reaction classes, we find that fine-tuning with fewer than 10 additional reactions can dramatically improve performance. Furthermore, a logarithmic scaling of model performance with training dataset size suggests continued improvement with larger and more diverse reaction datasets. Horizyn-1 addresses the critical bottleneck of sourcing initial enzymes for optimization campaigns, enabling efficient and scalable in silico screening for enzymes with desired activities and promising to accelerate future efforts in biocatalysis and metabolic engineering.",
+        "authors": [
+          "Rocks JW",
+          "Truong DP",
+          "Rappoport D",
+          "Maddrell-Mander S",
+          "Martin-Alarcon DA",
+          "Lee TM",
+          "Crossan S",
+          "Goldford JE"
+        ],
+        "affiliations": [
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140.",
+          "Dayhoff Labs, Inc., Cambridge, MA 02140."
+        ],
+        "doi": "10.1073/pnas.2520070123",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41843673/",
+        "category": "enzymes",
+        "date": "2026-03-24",
+        "mesh_terms": [
+          "Enzymes",
+          "Deep Learning",
+          "Computational Biology",
+          "Protein Engineering"
+        ],
+        "source_id": "41843673",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI",
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "에니메의 효율적 발견을 위한 AI 기반 프레임워크로, 생화학 반응 최적화 및 대사 공학에 활용 가능합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI",
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "효소 공학은 목표 반응을 위한 효소 설계의 기초이지만, 적합한 시작 단백질을 찾는 것이 여전히 주요 장애물이다. (enzyme engineering, bottleneck)",
+        "method": "Horizyn-1은 반응 지문(reaction fingerprints)과 단백질 언어 모델(protein language models)을 결합해 수백만 개의 반응-효소 쌍을 훈련시켰다. (contrastive learning, reaction fingerprints, protein language models)",
+        "result": "75% 이상의 테스트 반응에서 정확한 활성을 가진 효소가 상위 100개 후보 중에 나타났다. (enzyme promiscuity, nonnatural biochemical reactions)",
+        "significance": "초기 효소 확보의 주요 장애물을 해결해 효소 활동을 위한 효율적 in silico 스크리닝을 가능하게 했다. (biocatalysis, metabolic engineering)"
+      }
+    },
+    {
+      "paper": {
+        "title": "Engineering Coenzyme Specificity of Formate Dehydrogenases: The Role of Amino Acid Residues at Positions 379 and 380.",
+        "abstract": "The mechanism of selective specificity of oxidoreductases to NAD+ or NADP+ and the ability to change the coenzyme specificity of these enzymes are some of the most important fundamental and applied problems. The first work on the switch in the coenzyme specificity from NADP+ to NAD+ was performed in 1990 for glutathione reductase. In 1993, formate dehydrogenase (FDH, EC 1.2.1.2) from the methylotrophic bacterium Pseudomonas sp. 101 (PseFDH) became the first oxidoreductase whose coenzyme specificity was changed in the opposite direction - from NAD+ to NADP+. Mutant NADP+-specific FDHs are extensively used in fine organic synthesis (including production of chiral compounds). The switch in the coenzyme specificity from NAD+ to NADP+ in FDHs is achieved by substituting amino acids at positions 198, 221, 222, 260, 379, and 380 (numbering according to PseFDH); however available data do not allow the interpretation of the exact role of each individual substitution. Since 2010, five natural NADP+-dependent FDHs have been found. In 2015-2024, three 3D structures for two natural and four 3D structures for two mutant NADP+-specific FDHs have appeared in the Protein Data Bank (PDB). In this review, we briefly discussed the general principles of coenzyme specificity based on the experimental and modeled FDH structures and performed a detailed analysis of the type and arrangement of residues at positions corresponding to His379 and Ser380 in PseFDH, whose role in NADP+ binding is still debated.",
+        "authors": [
+          "Tishkov VI",
+          "Pometun AA",
+          "Atroshenko DL",
+          "Savin SS"
+        ],
+        "affiliations": [
+          "Faculty of Chemistry, Lomonosov Moscow State University, Moscow, 119991, Russia.",
+          "Faculty of Chemistry, Lomonosov Moscow State University, Moscow, 119991, Russia. aapometun@gmail.com.",
+          "Fundamentals of Biotechnology Federal Research Center, Bach Institute of Biochemistry, Russian Academy of Sciences, Moscow, 119071, Russia.",
+          "Faculty of Chemistry, Lomonosov Moscow State University, Moscow, 119991, Russia.",
+          "Faculty of Chemistry, Lomonosov Moscow State University, Moscow, 119991, Russia."
+        ],
+        "doi": "10.1134/S0006297925602886",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biochemistry. Biokhimiia",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41843871/",
+        "category": "formate dehydrogenases",
+        "date": "2026-01-01",
+        "mesh_terms": [
+          "Formate Dehydrogenases",
+          "NADP",
+          "Protein Engineering",
+          "Substrate Specificity",
+          "NAD",
+          "Amino Acids",
+          "Models, Molecular"
+        ],
+        "source_id": "41843871",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "protein_engineering",
+        "reason": "NADP+-specific FDH 변형체는 세제 합성에 활용되며, 체리 구조물질 생산에 기여할 수 있음. 약물 합성에서의 효소 활용 가능성 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "산화환원효소(oxidoreductase)의 NAD+ 또는 NADP+ 선택적 특이성 메커니즘은 핵심 과학 문제로, 효소의 공작물 특이성 조절 능력은 산업적 응용에 중요합니다. 1990년 glutathione reductase에서 공작물 특이성 전환 연구가 시작되었고, 1993년 PseFDH는 NAD+에서 NADP+로 전환하는 첫 사례로 등장했습니다.",
+        "method": "공작물 특이성 전환은 PseFDH의 198, 221, 222, 260, 379, 380 위치 아미노산 치환을 통해 달성되며, 2010년 이후 5종의 자연적 NADP+ 의존적 FDH가 확인되었습니다. 3D 구조 분석과 모델링을 통해 His379와 Ser380의 역할을 탐구했습니다.",
+        "result": "PDB에 등록된 3D 구조 데이터는 공작물 결합 메커니즘을 해명하는 데 기여했으며, His379와 Ser380의 배열이 NADP+ 결합에 중요한 역할을 한다는 가설이 제기되었습니다. 그러나 이 두 위치의 정확한 기능에 대한 논란이 여전히 존재합니다.",
+        "significance": "이 연구는 효소 공작물 특이성 조절의 분자 기전을 밝혀 생명공학적 응용에 기여하며, 천연 제품 합성과 수소 생산 등 다양한 분야에서 활용 가능한 기초 자료를 제공합니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "ArtemisiaDB: A Comprehensive Multi-Omics Database for Artemisia annua.",
+        "abstract": "ArtemisiaDB is a comprehensive, interactive multi-omics database designed to accelerate Artemisia annua research. It integrates curated genomic, transcriptomic, and metabolomic data alongside specialized modules for transcription factors, CRISPR design, and gene-metabolite correlation. This platform provides a critical resource for exploring the regulatory mechanisms governing artemisinin biosynthesis to advance plant metabolic engineering.",
+        "authors": [
+          "Taheri A",
+          "Almeida-Silva F",
+          "Zhang Y",
+          "Fu X",
+          "Li L",
+          "Wang Y",
+          "Tang K"
+        ],
+        "affiliations": [
+          "Joint International Research Laboratory of Metabolic and Developmental Sciences, Frontiers Science Center for Transformative Molecules, Plant Biotechnology Research Center, Fudan-SJTU-Nottingham Plant Biotechnology R&D Center, School of Agriculture and Biology, Shanghai Jiao Tong University, Shanghai 200240, China; College of Life Sciences and Medicine, Key Laboratory of Plant Secondary Metabolism and Regulation of Zhejiang Province, Zhejiang Sci-Tech University, Hangzhou 310018, China.",
+          "Department of Plant Biotechnology and Bioinformatics, Ghent University, 9052 Ghent, Belgium; VIB Center for Plant Systems Biology, VIB, 9052 Ghent, Belgium.",
+          "Joint International Research Laboratory of Metabolic and Developmental Sciences, Frontiers Science Center for Transformative Molecules, Plant Biotechnology Research Center, Fudan-SJTU-Nottingham Plant Biotechnology R&D Center, School of Agriculture and Biology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Design, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Joint International Research Laboratory of Metabolic and Developmental Sciences, Frontiers Science Center for Transformative Molecules, Plant Biotechnology Research Center, Fudan-SJTU-Nottingham Plant Biotechnology R&D Center, School of Agriculture and Biology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Joint International Research Laboratory of Metabolic and Developmental Sciences, Frontiers Science Center for Transformative Molecules, Plant Biotechnology Research Center, Fudan-SJTU-Nottingham Plant Biotechnology R&D Center, School of Agriculture and Biology, Shanghai Jiao Tong University, Shanghai 200240, China; Shanghai Jiao Tong University Sichuan Research Institute, Chengdu, 610213, China.",
+          "Joint International Research Laboratory of Metabolic and Developmental Sciences, Frontiers Science Center for Transformative Molecules, Plant Biotechnology Research Center, Fudan-SJTU-Nottingham Plant Biotechnology R&D Center, School of Agriculture and Biology, Shanghai Jiao Tong University, Shanghai 200240, China; Yazhouwan National Laboratory, No. 8 Huanjin Road, Yazhou District, Sanya City 572024, China. Electronic address: kxtang@sjtu.edu.cn."
+        ],
+        "doi": "10.1016/j.xplc.2026.101826",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Plant communications",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41846315/",
+        "category": null,
+        "date": "2026-03-16",
+        "mesh_terms": [],
+        "source_id": "41846315",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "아르테미시닌 생산을 위한 대사 공학 연구에 직접적으로 활용 가능하며, 식품/의약 산업에서의 약물 개발에 기여할 수 있음.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "Artemisia annua 연구에 대한 통합적 자원이 부족해짐에 따라, 다중 옴ิก 데이터베이스 개발이 필요해짐(thermostability). 이는 아르테미시인 생합성의 조절 메커니즘을 규명하기 위한 기초 자료로 활용됨.",
+        "method": "유전자, 전사체, 대사체 데이터를 통합한 ArtemisiaDB를 구축함(metabolomic data). 전사인자, CRISPR 설계, 유전자-대사체 상관관계 분석을 위한 전용 모듈을 추가함.",
+        "result": "다양한 옴릭 데이터와 분석 도구를 통합한 상호작용형 플랫폼 제공(gene-metabolite correlation). 아르테미시인 생합성 조절 메커니즘 탐색에 유용한 자원으로 확인됨.",
+        "significance": "식물 대사 공학 발전에 기여할 수 있는 핵심 자원으로, 생합성 경로 최적화 및 약물 개발에 활용 가능함(plant metabolic engineering)."
+      }
+    },
+    {
+      "paper": {
+        "title": "Structural and evolutionary dissection of NADPH-binding motifs in NADPH-preferring ene-reductases.",
+        "abstract": "Ene-reductases (ERs) catalyze nicotinamide-dependent, stereoselective reductions of activated CC bonds. While their catalytic chemistry and applications are well-explored, cosubstrate (NAD(P)H) binding remains poorly understood. Most ERs strongly prefer NADPH despite lacking canonical dinucleotide-binding folds and instead employ flexible loop motifs. We recently elucidated the NADPH-binding mode of the NADPH-preferring ER Solanum lycopersicum OPR3 (SlOPR3), identifying four key residues (R283/R343/Y364/R366) that form two motifs: a 2'-phosphate (2'-P)-binding site (R343/Y364/R366) and a loop 6 (L6)-mediated adenine clamp (R283/R343). Guided by this model, we analyzed the conservation of these motifs across 51 NADPH-preferring ERs from different Old Yellow Enzyme (OYE) classes by multi-sequence alignment and homology modeling. Analyses revealed a class-dependent distribution: class-II ERs predominantly conserve the OPR3-like motifs, whereas other classes employ alternative mechanisms, including dimerization-induced modes. Functional dissection of SlOPR3 through mutagenesis, kinetics, and crystallography established a functional hierarchy of the motif elements, indicating that R343 and R366 are indispensable for NADPH binding in OPR3-like ERs, while the adenine clamp acts as a conformation-sensitive affinity tuner. Ancestral sequence reconstruction revealed the stepwise and convergent assembly of motif elements, culminating in the complete motif set in plant, fungal, and cyanobacterial lineages. Our findings delineate (i) a strict functional hierarchy of NADPH-binding residues in OPR3-like ERs, (ii) alternative binding solutions in other OYE classes, and (iii) a convergent evolutionary trajectory, advancing the fundamental understanding of NADPH binding in NADPH-preferring ERs and offering a modular framework to predict NADPH preference in ERs.",
+        "authors": [
+          "Kerschbaumer B",
+          "Frießer EM",
+          "Wallner S",
+          "Oberdorfer G",
+          "Friess M",
+          "Breinbauer R",
+          "Macheroux P",
+          "Bijelic A"
+        ],
+        "affiliations": [
+          "Institute of Biochemistry, Graz University of Technology, Graz, Austria.",
+          "Institute of Biochemistry, Graz University of Technology, Graz, Austria.",
+          "Institute of Biochemistry, Graz University of Technology, Graz, Austria.",
+          "Institute of Biochemistry, Graz University of Technology, Graz, Austria.",
+          "BioTechMed-Graz, Graz, Austria.",
+          "Institute of Organic Chemistry, Graz University of Technology, Graz, Austria.",
+          "Institute of Organic Chemistry, Graz University of Technology, Graz, Austria.",
+          "Institute of Biochemistry, Graz University of Technology, Graz, Austria.",
+          "Institute of Biochemistry, Graz University of Technology, Graz, Austria."
+        ],
+        "doi": "10.1002/pro.70521",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Protein science : a publication of the Protein Society",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41848427/",
+        "category": "nadp",
+        "date": "2026-04-01",
+        "mesh_terms": [
+          "NADP",
+          "Amino Acid Motifs",
+          "Solanum lycopersicum",
+          "Evolution, Molecular",
+          "Models, Molecular",
+          "Binding Sites",
+          "Plant Proteins",
+          "Amino Acid Sequence",
+          "Sequence Alignment"
+        ],
+        "source_id": "41848427",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "NADPH 결합 모티프의 구조적 이해는 효소 공학에서 선택적 촉매 설계에 활용 가능. 유전자 변형을 통한 효소 기능 최적화에 기여할 수 있음.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "Ene-reductases(ERs)는 니코틴아마이드 의존적, 입체선택적 환원 반응을 촉매하지만, 코소브스트레이트(NAD(P)H) 결합 기전은 미해결된 문제이다. 대부분의 ERs는 비정상적인 디니클레오타이드 결합 구조를 갖추지 않고 유연한 루프 모티프를 통해 NADPH를 선호한다.",
+        "method": "SlOPR3의 NADPH 결합 모드를 기반으로 51개의 NADPH 선호 ERs를 다각적 시퀀스 정렬과 동源성 모델링을 통해 분석하였다. 돌연변이, kinetics, 결정학을 통한 기능적 분석을 수행하였다.",
+        "result": "클래스-II ERs는 OPR3 유사 모티프를 보존하지만, 다른 클래스는 이형성 결합 방식을 사용한다. R343과 R366은 NADPH 결합에 필수적이며, 아데닌 클램프는 구조 민감성 유도 기능을 수행한다.",
+        "significance": "모티프 요소의 단계적 조립과 수렴적 진화 경로를 밝혀냈다. OPR3 유사 ERs의 NADPH 결합 잔여체 기능 계층 구조와 다른 OYE 클래스의 대체 결합 전략을 규명하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Context-aware synthetic promoter design using neural networks enables rewiring of eukaryotic transcriptional networks.",
+        "abstract": "Gene regulation through promoter engineering is a cornerstone of synthetic biology, enabling precise control over transcriptional networks. However, experimental approaches remain labor-intensive. While artificial neural networks (ANNs) have improved regulatory element prediction, tools for promoter-transcription factor binding site (TFBS) recombination are still lacking. We present an ANN framework for context-aware design of synthetic promoters in Saccharomyces cerevisiae. The model predicts optimal TFBS insertion sites and the extent of promoter rewriting needed for successful integration. Applying this, we screened 6,011 native yeast promoters for compatibility with the TetR TFBS, generating a ranked list of high-confidence promoter-TFBS pairs. Experimental validation showed that model-designed promoters achieved repression rates up to 98.4%, without prior experimental characterization or tuning. We further rewired the yeast transcriptional network by introducing glucose-dependent regulation of an essential gene via Mig1 TFBS insertion. These results establish a scalable, predictive method for engineering regulatory sequences and reprogramming transcriptional logic.",
+        "authors": [
+          "Kuhajda L",
+          "Honzik T",
+          "Svec J",
+          "Georgiev D"
+        ],
+        "affiliations": [
+          "New Technologies for the Information Society, University of West Bohemia in Pilsen, Pilsen, Czechia.",
+          "New Technologies for the Information Society, University of West Bohemia in Pilsen, Pilsen, Czechia.",
+          "Department of Cybernetics, University of West Bohemia in Pilsen, Pilsen, Czechia.",
+          "Department of Cybernetics, University of West Bohemia in Pilsen, Pilsen, Czechia. georgiev@kky.zcu.cz."
+        ],
+        "doi": "10.1038/s41540-026-00684-5",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "NPJ systems biology and applications",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41844670/",
+        "category": null,
+        "date": "2026-03-17",
+        "mesh_terms": [],
+        "source_id": "41844670",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "유전자 조절을 위한 합성 프로모터 설계 기술로, 식품 및 의약품 생산에서 유전자 발현 최적화에 활용 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "유전자 조절을 위한 프로모터 공학은 합성생물학의 핵심 기술로, 전사 네트워크의 정밀 제어가 가능하다. 그러나 실험적 접근법은 여전히 인력 집약적이다.",
+        "method": "신경망(ANN) 기반 프레임워크를 통해 Saccharomyces cerevisiae의 합성 프로모터 설계를 수행하였다. 6,011개의 원생 프로모터를 TetR TFBS 호환성 검증을 통한 고신뢰도 쌍을 선별하였다.",
+        "result": "모델 설계 프로모터는 전사 억제율 98.4%를 달성하며, 사전 실험 조정 없이도 성공적으로 통합되었다. Mig1 TFBS 삽입을 통해 포도당 의존적 조절 시스템을 구축하였다.",
+        "significance": "규모 확장 가능하고 예측력 있는 방법론으로 유전자 조절 서열 공학화 및 전사 논리 재프로그래밍을 가능하게 한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Omega-based mini prime- and base-editing systems in Escherichia coli.",
+        "abstract": "Prime editing (PE) and base editing (BE) are potent gene-editing techniques that avoid introducing exogenous DNA donors and double-strand breaks, but their large molecular size hinders efficient delivery and widespread application. Here, we engineer and evolve compact obligate mobile element-guided activity (OMEGA)-based PE and BE systems, termed OMEGA-PE and OMEGA-adenine base editor, which achieve superior editing efficiency and versatility compared with existing PE and BE tools in Escherichia coli. Notably, OMEGA-PE enables rapid, programmable targeted mutagenesis with outstanding specificity and efficiency compared with current tools. Moreover, it exhibits excellent compatibility with several high-throughput screening platforms and can be used to enhance the efficiency of cofactor regeneration and protein translation. These groundbreaking advancements offer significant potential for gene editing, directed evolution, metabolic engineering, and protein expression optimization. Combining compact size with high performance, our OMEGA-based systems address key bottlenecks in current tools, offering new possibilities for basic research and industrial biotechnology.",
+        "authors": [
+          "Liu LH",
+          "Zhang Y",
+          "Xu B",
+          "Li Y",
+          "Guo Y",
+          "Lu X",
+          "Zhang Z",
+          "Lai S",
+          "Ge Q",
+          "Zhang K",
+          "Chen R",
+          "Huang H",
+          "Chen J",
+          "Yang M",
+          "Zhang Y",
+          "Wu YR",
+          "Cao Z",
+          "Wang S",
+          "Jiang A"
+        ],
+        "affiliations": [
+          "Biology Department and Institute of Marine Sciences, College of Science, Shantou University, Shantou 515063, PR China; Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China.",
+          "Biosciences Central Research Facility, The Hong Kong University of Science and Technology, Guangzhou 510000, PR China.",
+          "School of Basic Medical Sciences, Hubei University of Science and Technology, Xianning 437100, PR China.",
+          "Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China.",
+          "Department of Clinical Laboratory, National Center for Respiratory Medicine, National Clinical Research Center for Respiratory Disease, State Key Laboratory of Respiratory Disease, Guangzhou Institute of Respiratory Health, The First Affiliated Hospital of Guangzhou Medical University, Guangzhou 510000, PR China.",
+          "Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China.",
+          "Tidetron Bioworks Technology (Guangzhou) Co., Ltd, Guangzhou Qianxiang Bioworks Co., Ltd, Guangzhou, Guangdong 510000, PR China.",
+          "Tidetron Bioworks Technology (Guangzhou) Co., Ltd, Guangzhou Qianxiang Bioworks Co., Ltd, Guangzhou, Guangdong 510000, PR China.",
+          "Biosciences Central Research Facility, The Hong Kong University of Science and Technology, Guangzhou 510000, PR China.",
+          "Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China.",
+          "Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China.",
+          "Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China.",
+          "Yeasen Biotechnology (Shanghai) Co., Ltd, Shanghai 200000, China.",
+          "Tidetron Bioworks Technology (Guangzhou) Co., Ltd, Guangzhou Qianxiang Bioworks Co., Ltd, Guangzhou, Guangdong 510000, PR China.",
+          "Tidetron Bioworks Technology (Guangzhou) Co., Ltd, Guangzhou Qianxiang Bioworks Co., Ltd, Guangzhou, Guangdong 510000, PR China.",
+          "Tidetron Bioworks Technology (Guangzhou) Co., Ltd, Guangzhou Qianxiang Bioworks Co., Ltd, Guangzhou, Guangdong 510000, PR China.",
+          "Yeasen Biotechnology (Shanghai) Co., Ltd, Shanghai 200000, China.",
+          "Biology Department and Institute of Marine Sciences, College of Science, Shantou University, Shantou 515063, PR China. Electronic address: sqw@stu.edu.cn.",
+          "Biology Department and Institute of Marine Sciences, College of Science, Shantou University, Shantou 515063, PR China; Bio-Fermentation Research Center, Xiamen Yuanzhidao Biotechnology Co., Ltd, EYOSON Group Co., Ltd, Xiamen 361028, PR China. Electronic address: ao.jiang@whu.edu.cn."
+        ],
+        "doi": "10.1016/j.tibtech.2026.02.002",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Trends in biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41846215/",
+        "category": null,
+        "date": "2026-03-16",
+        "mesh_terms": [],
+        "source_id": "41846215",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "메타볼릭 엔지니어링에서 효율적인 전사 조절과 공인자 재생을 가능하게 하며, 산업용 단백질 생산 최적화에 활용 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "Prime editing(PE) 및 base editing(BE)은 외부 DNA 공급원과 이중 가닥 파열을 피하는 유전자 편집 기술로, 그러나 크기 문제로 효율적인 전달과 활용에 제한이 있었다. 이를 해결하기 위해 OMEGA 기반의 소형 PE 및 BE 시스템 개발이 필요했다.",
+        "method": "OMEGA 기반의 PE 및 BE 시스템인 OMEGA-PE와 OMEGA-adenine base editor를 설계하고 진화시켰다. Escherichia coli에서 편집 효율과 유연성을 향상시켰다.",
+        "result": "OMEGA-PE는 기존 도구보다 높은 특이성과 효율을 가진 프로그래밍 가능한 돌연변이 생성이 가능하다. 고속 스크리닝 플랫폼과 코프ак터 재생 및 단백질 번역 효율 향상에 적합하다.",
+        "significance": "유전자 편집, 지향적 진화, 대사 공학 및 단백질 발현 최적화 분야에 혁신적인 잠재력을 제공한다. 현재 도구의 주요 한계를 해결하며 기초 연구와 산업 생물기술에 새로운 가능성을 열어준다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 6,
+    "prefilter_passed": 6,
+    "llm_passed": 6,
+    "summarized": 6
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-18T22:22:44.260854+00:00"
+}

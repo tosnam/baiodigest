@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773843377000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjhmNTgwMTdhLTE1MTYtNDdmYy1hZjRiLTU1OTE2NTZjYjVkZiIsImRla1ZlcnNpb24iOjEsIml2IjoiY2IvYy9HVkFId3R2ditIU3orZzZFQT09IiwiY2lwaGVyVGV4dCI6IkNXUHdZV3dqclB3d0pOYTgxRzkyT2lKYyt2MnZ3QU16UUZrb3RQUGZuR0dkN2M3MlBrZXFKU2NUTm9tRTlSN2UxejR4TlQyTmphNWIxV1BoamlOYmlXbFlpNVNwVFlieUxuRy8zUHhsUUI4TGI3L2gwcy9vT2hBPSIsImF1dGhUYWciOiIxV1BoamlOYmlXbFlpNVNwVFlieUxnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">After a 10-day regimen, the mice’s precancerous tissue area had shrunk</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjY3ZmJlN2ExLTNjNTMtNGVjYi04MGJmLTlkNzdjNmNhYWViOCIsImRla1ZlcnNpb24iOjEsIml2IjoiMmI5MGxpZ3h2L2IxOHhXMVhPVVkzQT09IiwiY2lwaGVyVGV4dCI6InBkNWI1UGlCdnoxYndKY3V1QzVlT1dlTlFvZHZrNTVWTmMvMGJVWFJzR3FQSzU3QURMeDFhZ0xpNlYxTUlPbjJvUk0xRGhtWkQ4RGp5WFpPd1NJOFR5VW5iMkJYdVluZk9ObS9kSllvTWIvMjlmTVZ0VnpsR053PSIsImF1dGhUYWciOiJ5WFpPd1NJOFR5VW5iMkJYdVluZk9BPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">first full “evolutionary rescue” of a stressed species in the wild</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImQ1OGZiZjQ2LTMxMTYtNDhiZi1hYTMyLTAxZWRmOTYwMmQxZiIsImRla1ZlcnNpb24iOjEsIml2IjoibFJsdjlWbWIyNU5DZXB5K3lUNXZrQT09IiwiY2lwaGVyVGV4dCI6ImtRWjBGNlRJYWN3T3IrWG1TMmo1bENVbFZQQzYwVlVHUlRBOWlVQlArMVZHQjNNeUVtOC9SVmZGcWRKcGN1UTBYcEx6K2FKaGg5SHYwK0dVRFMzVWVtVlNDeVNDRW91dVRKVVpiL1ZabTl1VFFucWN2c2srYjVBPSIsImF1dGhUYWciOiIwK0dVRFMzVWVtVlNDeVNDRW91dVRBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">imagination and excitement</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6Ijc2MzkyYzViLTBhZDItNDEwMS1hMGZjLTlhNmJhZjNmYmQzOSIsImRla1ZlcnNpb24iOjEsIml2IjoiUEw5VUFxclNncGxUZ2dBQkNIYXo0QT09IiwiY2lwaGVyVGV4dCI6InVPM3J0NVBSTGxIc25qOVJJNFlWNzFmNGFEQlVJN2tUVldNMWE1d3ZNMW9GV0E0K1lWaGQ4MUtVbVluM29pdXVsZ3B2QzJQVFBDbWhBV0ZhVGEwenJLMGRUWXRzOEFiQnhEeS9WQUtxMG9LWlU0SUFBUWgycytBPSIsImF1dGhUYWciOiJBV0ZhVGEwenJLMGRUWXRzOEFiQnhBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">it can be hard for researchers to escape the notion that humor somehow detracts from their credibility</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjIzNWYyZjIyLTQ5NzItNGY0YS1hMmZiLTg2YjE5OWY0OGY5MyIsImRla1ZlcnNpb24iOjEsIml2IjoibG55SDNlaTlaQjdDK3BHNHpYN0R3UT09IiwiY2lwaGVyVGV4dCI6InFSdldCWXM0MlpJMDdTbURhbEg2SjNXc1pvZWRGTXpCbXM1dmh4UDNrcnRXK1pndHNUSnBwQ2hWa0liTGp2Z0gvYXJMK1lZdlpSTDRaU3Nkb1hJd2EyM3JuaXlQSXR6KytwWjhoOTNvdldRZXd2cVJ1TTErdzhFPSIsImF1dGhUYWciOiJaU3Nkb1hJd2EyM3JuaXlQSXR6KytnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">This cricket clearly has an impeccable fashion sense</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
