@@ -1,0 +1,424 @@
+{
+  "date": "2026-03-20",
+  "entries": [
+    {
+      "paper": {
+        "title": "AI-enabled protein design facilitates future plant research and crop breeding.",
+        "abstract": "Artificial intelligence (AI) is poised to reshape the research paradigm of the life sciences by rapidly advancing the adoption of protein language models and their derivative tools. These technologies are increasingly being applied to protein structure prediction, function analysis, and protein design throughout the life sciences, and have only recently begun to gain attention within the plant science community. Moreover, while the era of AI-driven bio-breeding is on the horizon, it remains largely in the proof-of-concept stage. Therefore, there is a pressing need not only to outline the fundamental principles, models, and tools in this rapidly evolving field, but also to explore their potential applications in plant research and crop breeding. This review begins by introducing general principles and widely used models for protein understanding and generation, supported by illustrative case studies that highlight how these tools are advancing fundamental plant research. For instance, the analyses of two maize (Zea mays) genes demonstrate how a structure-aware interpretation of the relationships between mutations and protein function enables more precise hypothesis generation and facilitates experimental validation. Subsequently, the review presents generic AI-enabled protein engineering strategies and pipelines, including rational, semi-rational, refactoring, and de novo design, tailored to diverse protein engineering objectives. These approaches aim to create artificial variants and synthetic proteins with improved or novel functions to foster innovation in crop breeding. Finally, the significant challenges of applying protein design in plants are discussed, particularly in light of the limited availability of experimentally resolved protein structures and the inherent complexity of plant biological systems.",
+        "authors": [
+          "Lou Y",
+          "Wu T",
+          "Xia F",
+          "Zhao A",
+          "Wang X"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Maize Bio-breeding, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing 100094, China.",
+          "State Key Laboratory of Maize Bio-breeding, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing 100094, China.",
+          "State Key Laboratory of Maize Bio-breeding, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing 100094, China.",
+          "State Key Laboratory of Maize Bio-breeding, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing 100094, China.",
+          "State Key Laboratory of Maize Bio-breeding, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing 100094, China."
+        ],
+        "doi": "10.1093/plphys/kiag147",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Plant physiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41851984/",
+        "category": null,
+        "date": "2026-03-18",
+        "mesh_terms": [],
+        "source_id": "41851984",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "식량 생산에 직접적인 영향을 미치는 작물 품종 개선에 AI 기반 단백질 설계 기술을 적용 가능합니다. 단백질 구조 예측 및 기능 분석을 통한 신규 기능 단백질 설계는 식품 산업에 혁신을 제공할 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생명과학 연구 패러다임이 인공지능(AI)에 의해 변화 중이다(artificial intelligence). 단백질 언어 모델과 파생 도구의 빠른 도입이 이 분야의 혁신을 이끌고 있다(artificial intelligence-driven bio-breeding).",
+        "method": "단백질 이해 및 생성을 위한 일반 원리와 모델이 소개되었으며(protien understanding and generation), 옥수수(Zea mays) 유전자 분석을 통한 사례 연구가 제시되었다(mutation-protein function relationship analysis).",
+        "result": "AI 기반 단백질 공학 전략과 파이프라인(rationale, semi-rational, refactoring, de novo design)이 제시되어 인공 변이체 및 합성 단백질 개발을 지원한다(artificial variant and synthetic protein creation).",
+        "significance": "단백질 설계 적용에 있어 실험적으로 해결된 구조 부족과 식물 생물학의 복잡성 등 도전 과제가 강조되었다(available protein structure limitation and plant biological complexity)."
+      }
+    },
+    {
+      "paper": {
+        "title": "Artificial Intelligence-Driven Enzyme Engineering from Structural Prediction to De Novo Design.",
+        "abstract": "The rapid maturation of artificial intelligence (AI) has catalyzed a fundamental transition in biocatalysis, moving from structural analysis toward the prescriptive design of bespoke enzymes. This review synthesizes this AI-driven revolution, evaluating breakthroughs like AlphaFold2 and CLEAN that now bridge sequences with catalytic properties, including kinetic parameters and substrate specificity. We critically compare rational design strategies, contrasting evolutionary-guided redesign with the emerging generative de novo paradigm, where diffusion models and protein language models (PLMs) explore uncharacterized sequence space. By dissecting algorithms such as Graph Neural Networks and Transformers, we illustrate their role in deciphering protein chemistry's linguistic \"grammar\". Grounded in industrial cases, we demonstrate how AI overcomes bottlenecks like the stability-activity trade-off. Finally, we delineate the trajectory toward autonomous biofoundries and virtual cell modeling, envisioning engineered biocatalysts systematically integrated into complex metabolic networks─providing a roadmap for next-generation computational enzymology.",
+        "authors": [
+          "Shi H",
+          "Bai X",
+          "Tian F",
+          "Li Y",
+          "Li D",
+          "Yao L",
+          "Xue C",
+          "Tang C"
+        ],
+        "affiliations": [
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China.",
+          "School of Bioengineering, Dalian University of Technology, 2 Linggong Road, Dalian, Liaoning 116024, People's Republic of China.",
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China.",
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China.",
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China.",
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China.",
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China.",
+          "School of Bioengineering, Dalian University of Technology, 2 Linggong Road, Dalian, Liaoning 116024, People's Republic of China.",
+          "Henan Provincial Engineering Research Center of Insect Bio-reactor, College of Life Science, Nanyang Normal University, 1638 Wolong Road, Nanyang, Henan 473061, People's Republic of China."
+        ],
+        "doi": "10.1021/acs.jafc.6c01781",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41851020/",
+        "category": null,
+        "date": "2026-03-18",
+        "mesh_terms": [],
+        "source_id": "41851020",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 설계 기술이 식품/화학/의약 산업에서 효소 기반 생물촉매 개발에 직접 활용 가능합니다. 산업용 안정성-활성 균형 해소 기술이 포함되어 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인공지능(AI)의 빠른 성숙으로 생물촉매 분야에서 구조 분석에서 벗어나 맞춤형 효소 설계로의 전환을 이끌고 있다(thermostability). 이 논문은 AI 기반 혁신을 종합적으로 분석하며, AlphaFold2와 CLEAN과 같은 기술이 시퀀스와 촉매 특성(kinetic parameters, substrate specificity)을 연결하는 계기가 되었다.",
+        "method": "이미지 생성 모델과 단백질 언어 모델(PLMs)을 활용한 de novo 설계 전략이 제안되었으며, 그래프 신경망(Graph Neural Networks)과 트랜스포머(Transformer) 알고리즘을 통해 단백질 화학의 '문법'을 해석하는 방식이다.",
+        "result": "AI는 안정성-활성도(trade-off)와 같은 한계를 극복하고 산업적 응용 사례에서 효율적인 효소 설계를 가능하게 하였다. 또한, 자동화된 생물공장(biofoundries)과 가상 세포 모델링으로 이어지는 체계적인 접근이 제시되었다.",
+        "significance": "이 연구는 복잡한 대사 네트워크에 통합된 공학화된 생물촉매 개발을 위한 미래 기술 로드맵을 제시하며, 제4차 산업혁명 시대의 계산적 효소학(computational enzymology)을 선도할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Structure-guided engineering of Geobacillus kaustophilus L-asparaginase with improved functional and stability characteristics for acrylamide mitigation.",
+        "abstract": "Acrylamide formation during high-temperature food processing poses significant food safety concerns. L-asparaginase (L-ASNase) is widely used as a processing aid to hydrolyze L-asparagine prior to thermal treatment, thereby limiting acrylamide generation. In this study, we applied a structure-guided protein engineering strategy to a thermophilic type II L-asparaginase from Geobacillus kaustophilus (GkASNase) to enhance catalytic efficiency and operational stability. Binding-pocket energy screening prioritized five single-residue variants (M59N, M59I, L61H, K164R, and D220E), which were subsequently evaluated by molecular dynamics simulations and experimental validation. All variants retained thermophilic characteristics, with an optimum pH of 8.5 and a temperature optimum of 55 °C. Specific activity increased from ~2250 U/mg for the wild-type enzyme to 3950 and 3810 U/mg for M59N and D220E, respectively. The half-life improved from 3.56 h (wild type) to 40.86 h for D220E and 39.12 h for L61H. Catalytic efficiency increased 1.72-fold and 1.57-fold for D220E and M59N, respectively. In a starch-based model system, L61H and D220E achieved 93.5% and 94.1% acrylamide mitigation, compared with 66.7% for the wild-type enzyme after 1 h at 55 °C. Molecular dynamics analyses provided structural insight into mutation-dependent pocket stabilization, altered local flexibility, and their association with enhanced functional performance. These findings demonstrate that rational pocket-proximal substitutions effectively tune the stability-activity balance of thermophilic L-ASNase and provide a framework for engineering processing-robust biocatalysts for food safety applications.",
+        "authors": [
+          "Sukur G",
+          "Tülek A",
+          "Servili B",
+          "Tülek GS",
+          "Yildirim D",
+          "Özdemir Fİ"
+        ],
+        "affiliations": [
+          "Gebze Technical University, Faculty of Science, Department of Molecular Biology and Genetics, Gebze, 41400, Kocaeli, Türkiye. Electronic address: g.sukur2022@gtu.edu.tr.",
+          "Kütahya Health Sciences University, Faculty of Engineering and Natural Sciences, Department of Molecular Biology and Genetics, Merkez, 43100, Kütahya, Türkiye. Electronic address: ahmet.tulek@ksbu.edu.tr.",
+          "Kadir Has University, Graduate School of Science and Engineering, Bioinformatics and Genetics Program, Fatih, 35430, İstanbul, Türkiye. Electronic address: burak.servili@khas.edu.tr.",
+          "Iğdır University, Postgraduate Education Institute, Department of Biochemistry, 76000, Iğdır, Türkiye. Electronic address: dyt.gizemttulek@gmail.com.",
+          "Cukurova University, Faculty of Engineering, Department of Chemical Engineering, 01330, Adana, Türkiye; Cukurova University, Faculty of Science and Letters, Department of Chemistry, 01330, Adana, Türkiye. Electronic address: dyildirim@cu.edu.tr.",
+          "Gebze Technical University, Faculty of Science, Department of Molecular Biology and Genetics, Gebze, 41400, Kocaeli, Türkiye. Electronic address: i.ozdemir@gtu.edu.tr."
+        ],
+        "doi": "10.1016/j.ijbiomac.2026.151461",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of biological macromolecules",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41850450/",
+        "category": null,
+        "date": "2026-03-16",
+        "mesh_terms": [],
+        "source_id": "41850450",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "식품 산업에서 아크릴아마이드 감소를 위한 효소 개발에 직접적으로 활용 가능합니다. 구조 기반 단백질 공학 기법이 효소 안정성과 기능을 향상시킨 점이 특출난 적용 가능성을 보입니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "열처리 식품에서 아크릴아마이드 형성은 식품 안전 문제로 주목받고 있다. L-아스파라긴아제(L-ASNase)는 열처리 전 L-아스파라긴을 분해해 아크릴아마이드 생성을 억제하는 처리 보조제로 널리 사용된다.",
+        "method": "열성성(thermostability)을 가진 지오바시illus kaustophilus 출원 L-ASNase(GkASNase)에 구조 기반 단백질 공학 전략을 적용해 효소 활성 및 안정성을 개선했다. 결합 포켓 에너지 스크리닝을 통해 5가지 단일 아미노산 변이체를 선정하고 분자 역학 시뮬레이션 및 실험 검증을 수행했다.",
+        "result": "모든 변이체는 최적 pH 8.5, 최적 온도 55 °C의 열성성(thermostability)을 유지했다. D220E 변이체는 반감기 40.86시간으로 약 11배 증가했으며, L61H 변이체는 아크릴아마이드 억제율 93.5%를 달성했다.",
+        "significance": "구조적 포켓 근처 아미노산 치환은 열성성(thermostability)과 활성 간 균형 조절을 가능하게 하며, 식품 안전을 위한 처리 저항성 생물촉매 설계에 새로운 프레임워크를 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Rational Design of a Carbonyl Reductase Yields a Robust Biocatalyst for Industrial Synthesis of (R)-3-Quinuclidinol.",
+        "abstract": "(R)-3-quinuclidinol is a pivotal chiral synthon for pharmaceuticals such as talsaclidine, revatropate, and solifenacin. Conventional chemical synthesis routes, however, suffer from inherent drawbacks including inefficient racemic resolution and dependence on costly chiral catalysts. In this study, a carbonyl reductase (CRs-7) with high activity was selected from among 20 candidates and subsequently engineered through a machine learning-assisted strategy integrated with molecular dynamics (MD) simulations. The optimal mutant, V167F/C171Y, displayed a 5.3-fold enhancement in catalytic activity relative to the wild-type enzyme. Structural and computational analyses revealed that the mutations remodel the architecture of the substrate-access tunnel, resulting in reduced nucleophilic attack distances (d1 and d2) and accelerated catalysis. Furthermore, the V167F/C171Y variant was applied in a 50-L bioreactor, wherein only 7.50 g/L DCW (dry cell weight) of whole-cell biocatalyst was required to completely convert 100 g/L substrate within 6 h, affording (R)-3-quinuclidinol with >99% conversion and enantiomeric excess (ee). The exceptional biocatalytic performance, coupled with high substrate tolerance and operational stability, underscores the potential of this engineered enzyme for sustainable industrial manufacturing.",
+        "authors": [
+          "Cao M",
+          "Lu X",
+          "Zheng W",
+          "Wu Y",
+          "Deng Y",
+          "Hao X",
+          "Liu K",
+          "Du F",
+          "Ma M",
+          "Duan M",
+          "Ji R",
+          "Luo Z"
+        ],
+        "affiliations": [
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China.",
+          "Hangzhou Weiyuan Biotechnology Co., Ltd, Hangzhou, P. R. China."
+        ],
+        "doi": "10.1002/biot.70214",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology journal",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41852351/",
+        "category": "quinuclidines",
+        "date": "2026-03-01",
+        "mesh_terms": [
+          "Quinuclidines",
+          "Biocatalysis",
+          "Alcohol Oxidoreductases",
+          "Molecular Dynamics Simulation",
+          "Protein Engineering",
+          "Escherichia coli",
+          "Bioreactors"
+        ],
+        "source_id": "41852351",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "의약품 합성에 필요한 (R)-3-퀴누클린올 합성에 유용한 생물촉매 개발로 의약 산업에 적용 가능성이 높음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "(R)-3-quinuclidinol은 항암제인 테살클리딘과 리바트로파이트 등의 합성에 필수적인 치로적 구조물질로, 전통적 화학합성법은 비효율적인 대사분리와 고비용 채iral 촉매에 의존한다(thermostability).",
+        "method": "기계학습과 분자동역학(MD) 시뮬레이션을 통합한 전략으로 CRs-7 효소를 선별 및 변형했으며, V167F/C171Y 변이체를 최적화하였다(molecular dynamics).",
+        "result": "V167F/C171Y 변이체는 원형 효소 대비 5.3배 높은 촉매 활성을 보였으며, 50L 생물반응기에서 100g/L 기질을 6시간 내 99% 이상 변환하였다(enzyme engineering).",
+        "significance": "고효율적이고 안정적인 생물촉매로, 지속 가능한 산업 생산에 활용 가능하며, 기질 내성과 운영 안정성도 우수하다(operational stability)."
+      }
+    },
+    {
+      "paper": {
+        "title": "Thymic health and immunotherapy outcomes in patients with cancer.",
+        "abstract": "Although immunotherapy has revolutionized cancer treatment, many patients still experience limited benefit, highlighting the urgent need for improved biomarkers1. Although immunotherapy is founded on unleashing T cells2, most existing biomarkers remain tumour-centric and mainly overlook host immune competence. The thymus is a key immune organ that is crucial for T cell maturation, and we hypothesized that thymic functionality is associated with immunotherapy outcomes3. Here we show that thymic health, a radiographic measure of thymic functionality, is strongly associated with immunotherapy outcomes across several cancer types. Using a deep-learning framework applied to routine computed tomography images, we quantified thymic health in a pan-cancer cohort of 3,476 patients receiving immune checkpoint inhibitors. In patients with non-small cell lung cancer, higher thymic health was associated with reduced risks of progression and all-cause mortality. These associations remained significant across clinically relevant levels of programmed death ligand 1 (PD-L1) and tumour mutation burden. In the prospective TRACERx lung cancer study, thymic health was positively associated with T cell receptor diversity and T cell receptor excision circles, and correlated with immune-system signalling pathways, supporting radiographic thymic health as a proxy for thymic activity and adaptive immune competence. Analysis across patients with melanoma, breast cancer or renal cancer demonstrated pan-cancer relevance. Together, these findings identify thymic health as a previously unrecognized, tumour-agnostic determinant of immunotherapy efficacy, with potential implications for patient stratification, treatment timing and the development of immune-rejuvenating strategies in precision immuno-oncology.",
+        "authors": [
+          "Bernatz S",
+          "Prudente V",
+          "Pai S",
+          "Attermann AK",
+          "Di Federico A",
+          "Rowan A",
+          "Veeriah S",
+          "Dyrskjøt L",
+          "Nürnberg L",
+          "Alessi JV",
+          "Ott PA",
+          "Sharon E",
+          "Hackshaw A",
+          "McGranahan N",
+          "Abbosh C",
+          "Mak RH",
+          "Bitterman D",
+          "Awad M",
+          "Ricciuti B",
+          "Swanton C",
+          "Jamal-Hanjani M",
+          "Birkbak NJ",
+          "Aerts HJWL"
+        ],
+        "affiliations": [
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA.",
+          "Radiology and Nuclear Medicine, GROW and CARIM, Maastricht University, Maastricht, The Netherlands.",
+          "Department of Radiology and Nuclear Medicine, Goethe University, Frankfurt, Germany.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA.",
+          "Radiology and Nuclear Medicine, GROW and CARIM, Maastricht University, Maastricht, The Netherlands.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA.",
+          "Radiology and Nuclear Medicine, GROW and CARIM, Maastricht University, Maastricht, The Netherlands.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Molecular Medicine, Aarhus University Hospital, Aarhus, Denmark.",
+          "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark.",
+          "Bioinformatics Research Center, Aarhus University, Aarhus, Denmark.",
+          "Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA.",
+          "Cancer Evolution and Genome Instability Laboratory, Francis Crick Institute, London, UK.",
+          "Cancer Evolution and Genome Instability Laboratory, Francis Crick Institute, London, UK.",
+          "Cancer Research UK Lung Cancer Centre of Excellence, University College London Cancer Institute, London, UK.",
+          "Department of Medical Oncology, University College London Hospitals NHS Foundation Trust, London, UK.",
+          "Department of Molecular Medicine, Aarhus University Hospital, Aarhus, Denmark.",
+          "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA.",
+          "Radiology and Nuclear Medicine, GROW and CARIM, Maastricht University, Maastricht, The Netherlands.",
+          "Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA.",
+          "Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA.",
+          "Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA.",
+          "Cancer Research UK and UCL Cancer Trials Centre, London, UK.",
+          "Cancer Research UK Lung Cancer Centre of Excellence, University College London Cancer Institute, London, UK.",
+          "Cancer Genome Evolution Research Group, University College London Cancer Institute, London, UK.",
+          "Cancer Research UK Lung Cancer Centre of Excellence, University College London Cancer Institute, London, UK.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA.",
+          "Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA.",
+          "Department of Medical Oncology, Dana-Farber Cancer Institute, Boston, MA, USA.",
+          "Cancer Evolution and Genome Instability Laboratory, Francis Crick Institute, London, UK.",
+          "Cancer Research UK Lung Cancer Centre of Excellence, University College London Cancer Institute, London, UK.",
+          "Department of Medical Oncology, University College London Hospitals NHS Foundation Trust, London, UK.",
+          "Cancer Research UK Lung Cancer Centre of Excellence, University College London Cancer Institute, London, UK.",
+          "Department of Medical Oncology, University College London Hospitals NHS Foundation Trust, London, UK.",
+          "Cancer Metastasis Laboratory, University College London Cancer Institute, London, UK.",
+          "Department of Molecular Medicine, Aarhus University Hospital, Aarhus, Denmark.",
+          "Department of Clinical Medicine, Aarhus University, Aarhus, Denmark.",
+          "Bioinformatics Research Center, Aarhus University, Aarhus, Denmark.",
+          "Artificial Intelligence in Medicine (AIM) Program, Mass General Brigham, Harvard Medical School, Boston, MA, USA. haerts@bwh.harvard.edu.",
+          "Department of Radiation Oncology, Brigham and Women's Hospital and Dana-Farber Cancer Institute, Harvard Medical School, Boston, MA, USA. haerts@bwh.harvard.edu.",
+          "Radiology and Nuclear Medicine, GROW and CARIM, Maastricht University, Maastricht, The Netherlands. haerts@bwh.harvard.edu."
+        ],
+        "doi": "10.1038/s41586-026-10243-x",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41851467/",
+        "category": null,
+        "date": "2026-03-18",
+        "mesh_terms": [],
+        "source_id": "41851467",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "AI 기반 CT 이미지 분석 기술이 의약품 개발에서 환자 선별에 활용 가능. 면역요법의 효과 예측에 기여할 수 있는 생물정보학적 접근법 제공.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "항암제 치료의 혁신적 진전에도 불구하고, 많은 환자가 제한된 혜택을 경험하고 있어 생물마커 개선이 시급하다. 기존 생물마커는 종양 중심으로 개발되어 숙주 면역력에 대한 인식이 부족하다.",
+        "method": "딥러닝 프레임워크를 활용해 CT 영상에서 방사선학적 thymic health를 정량화하고, 3,476명의 종양 치료 환자를 대상으로 분석했다. TRACERx 연구에서는 T 세포 수용체 다양성과 T 세포 수용체 절단 원주 등을 검토했다.",
+        "result": "비소세포폐암 환자에서 thymic health가 진행 및 사망 위험 감소와 관련이 있었으며, PD-L1 및 종양 돌연변이 부담 수준에 관계없이 유의미한 상관관계를 나타냈다. 면역계 신호 경로와도 상관관계가 있었다.",
+        "significance": "thymic health는 종양과 관계없이 면역요법 효과에 영향을 미치는 새로운 생물마커로, 환자 분류 및 치료 시기 결정에 중요한 잠재력을 가진다. 정밀 면역학 치료 전략 개발에 기여할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Deep-learning-based de novo discovery and design of therapeutics that reverse disease-associated transcriptional phenotypes.",
+        "abstract": "Identifying drugs that reverse disease-associated transcriptomic features has been widely explored for drug repurposing, but its potential for de novo drug discovery remains underexplored. Here, we present gene expression profile predictor on chemical structures (GPS), a deep-learning-based drug discovery platform, guided by transcriptomic features, that screens large compound libraries and optimizes lead molecules. We first develop a model that captures transcriptomic perturbation signatures solely from chemical structures and deploy it to library compounds. We refine scoring methods and employ a tree-search method for optimization. By incorporating structure-gene-activity relationships, we uncover drug mechanisms from transcriptomic data. We evaluate GPS across multiple diseases and conduct extensive validation in two cases. In hepatocellular carcinoma, we discover two unique compound series with favorable cellular selectivity and in vivo efficacy. In idiopathic pulmonary fibrosis, we identify one repurposing candidate and one novel anti-fibrotic compound by reversing gene expression of multiple distinct cell types derived from single-cell transcriptomics.",
+        "authors": [
+          "Xing J",
+          "Tan M",
+          "Leshchiner D",
+          "Sun M",
+          "Abdelgied M",
+          "Huang L",
+          "Paithankar S",
+          "Uhl K",
+          "Shankar R",
+          "Lisabeth E",
+          "Aleiwi B",
+          "Jager T",
+          "Lawson C",
+          "Chen R",
+          "Giletto M",
+          "Girgis R",
+          "Neubig RR",
+          "So S",
+          "Ellsworth E",
+          "Li X",
+          "Chua MS",
+          "Zhou J",
+          "Chen B"
+        ],
+        "affiliations": [
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Asian Liver Center, Department of Surgery, School of Medicine, Stanford University, Stanford, CA 94305, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA; Center for AI-Enabled Drug Discovery, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Computer Science and Engineering, College of Engineering, Michigan State University, East Lansing, MI 48824, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Richard DeVos Heart and Lung Transplant Program, Corewell Health, Grand Rapids, MI 49503, USA.",
+          "Richard DeVos Heart and Lung Transplant Program, Corewell Health, Grand Rapids, MI 49503, USA.",
+          "Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Richard DeVos Heart and Lung Transplant Program, Corewell Health, Grand Rapids, MI 49503, USA; Department of Medicine, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Center for AI-Enabled Drug Discovery, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA; Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Asian Liver Center, Department of Surgery, School of Medicine, Stanford University, Stanford, CA 94305, USA.",
+          "Center for AI-Enabled Drug Discovery, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA; Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA. Electronic address: lixiao@msu.edu.",
+          "Asian Liver Center, Department of Surgery, School of Medicine, Stanford University, Stanford, CA 94305, USA. Electronic address: mchua@stanford.edu.",
+          "Center for AI-Enabled Drug Discovery, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA; Department of Computer Science and Engineering, College of Engineering, Michigan State University, East Lansing, MI 48824, USA; School of Information, University of Michigan, Ann Arbor, MI 48109, USA. Electronic address: jiayuz@umich.edu.",
+          "Department of Pediatrics and Human Development, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA; Center for AI-Enabled Drug Discovery, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA; Department of Computer Science and Engineering, College of Engineering, Michigan State University, East Lansing, MI 48824, USA; Department of Pharmacology and Toxicology, College of Human Medicine, Michigan State University, Grand Rapids, MI 49503, USA. Electronic address: chenbi12@msu.edu."
+        ],
+        "doi": "10.1016/j.cell.2026.02.016",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41850287/",
+        "category": null,
+        "date": "2026-03-17",
+        "mesh_terms": [],
+        "source_id": "41850287",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "AI 기반의 약물 발견 플랫폼은 의약품 개발에 활용 가능하며, 화학 구조 분석을 통해 신약 후보를 식별할 수 있다.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "질병 관련 전사체 특징을 반전시키는 약물 발견은 약물 재사용에 널리 탐구되었으나, 신규 약물 개발 잠재력은 아직 충분히 탐색되지 않았다. 이 연구는 전사체 특징을 기반으로 한 딥러닝 기반 약물 발견 플랫폼을 제시한다.",
+        "method": "화학 구조로부터 전사체 변동 서명을 추출하는 모델을 개발하고, 대규모 화합물 라이브러리에서 스크리닝한다. 구조-유전자-활성 관계를 통합해 약물 메커니즘을 해석하는 방법론을 도입한다.",
+        "result": "간암에서 세포 선택성과 in vivo 효능을 가진 두 가지 화합물 시리즈를 발견하였다. 만성 폐 섬유증에서 유전자 발현 반전을 통해 재사용 후보와 신규 항섬유증 화합물을 식별하였다.",
+        "significance": "전사체 특징 반전을 통한 신규 치료제 개발의 가능성을 입증하였다. 단일 세포 전사체 분석을 기반으로 다중 세포 유형의 유전자 조절을 타겟으로 하는 약물 설계 전략을 제시하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 7,
+    "prefilter_passed": 7,
+    "llm_passed": 6,
+    "summarized": 6
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-19T22:34:40.673606+00:00"
+}

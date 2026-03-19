@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1773931246000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjUwOWE4ZTE1LWYxOTUtNGFjNy05ZmQ4LTI4NGZjZGRiYjkzNCIsImRla1ZlcnNpb24iOjEsIml2IjoiOXB0ZUhVbW1XbUNURXdPWWhpWkZkZz09IiwiY2lwaGVyVGV4dCI6InlsdGhXUEs2RVUzcFB4d0pSZnloSFl6VXN2RDI2QjM3ekw0YThkenBPSFMwWXU1NTBMcnNEa3Q1MG9NZDdaNEhraGUvNHVOQ05xZit4cVFkeGRuYTErcmtZc2p0KzhVbDlwdGVIVW1tV21DVEV3T1loaVpGZGc9PSIsImF1dGhUYWciOiIvc2FrSGNYWjJ0ZnE1R0xJN2Z2RkpRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">trace amounts of surface contamination by carbon-bearing molecules from the air</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjU3YjFiZDA2LTM2OGEtNGIzYS04ZWRkLTMyMTkxMzUxOTIxYyIsImRla1ZlcnNpb24iOjEsIml2IjoiSEJRTjNaTTU0MlVLenFwMnZjc0xnQT09IiwiY2lwaGVyVGV4dCI6IkJ5TzF4RnlYK251SkhlWDd3OHRJc3B1NTNtMGRPTDJtaGQwRDN1WDJzUVVWZEZHdkFMUWZuZWVPN2ZHd01VVU1tNFBhWUl5YXA1UXFqSjdkd0xmT0ZzZkhOTWtUTWJtR0hCUU4zWk01NDJVS3pxcDJ2Y3NMZ0E9PSIsImF1dGhUYWciOiJLb3llM2NDM3poYkh4elRKRXpHNWhnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">caught a cosmic break-up last November</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjYxNTBkYzAxLTY4MzItNGFmYy1iOTNjLThiMWE2NTVlNDdkZiIsImRla1ZlcnNpb24iOjEsIml2IjoieDJEbkJFS2ljL29RWUZWdVB4U2hpdz09IiwiY2lwaGVyVGV4dCI6IlNvSStLaldSWXlRUWgzVmZKS1Urck0zOEdDSUZQemU0T09EMzh6ZURlRkMzK01mQVVVTFdVVGZCVWk5VVk1Z04xTkpRWHBqdkdEUjA2WmtybXROeURDeGRtYzBiWUh0Z3gyRG5CRUtpYy9vUVlGVnVQeFNoaXc9PSIsImF1dGhUYWciOiJkT21aSzVyVGNnd3NYWm5ORzJCN1lBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">a new way to transplant healthy mitochondria</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjNiYmU5MzA4LTk1NWEtNGE2MC1iZDEzLTZkZTgwOTNiYWVkNiIsImRla1ZlcnNpb24iOjEsIml2IjoieDdCVmxtRTBOb1d0UlFjUHdmQlU2Zz09IiwiY2lwaGVyVGV4dCI6Ik9JZklKZVllU0M5MFVUYTRrVUhoRE9ONHVVOE50Wk16OTAzNG5XaDViUERlOUd2RXlQaXJsbVBRbG0rU3ZxNFdWc0IzenFpR2pGcWpkS0NUNXRkbXVTNU5aNVJUSmQ5THg3QlZsbUUwTm9XdFJRY1B3ZkJVNmc9PSIsImF1dGhUYWciOiJvM1NnaytiWFpya3VUV2VVVXlYZlN3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">do the right thing by retracting their own work after noticing errors</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjkyNWFlZTg5LTRkNDItNDlmMi04NjNmLWMzYjNjNWE2OWVkYiIsImRla1ZlcnNpb24iOjEsIml2IjoiTC8yaDlITU8vczRmZjFQek8xZU5ZQT09IiwiY2lwaGVyVGV4dCI6IkR1NWpFSkFRbzNmcHlyUFNBWVFWNnJlY3pJUkFBcTRiSm45YXAvKzVKUmtwV2c1a0NDdEoxNjBGalBLWVBLWTJ5emFEZ2h6TDI4NUZWYnhvQitMUGxxSUQ1Y1JNNmN2MkwvMmg5SE1PL3M0ZmYxUHpPMWVOWUE9PSIsImF1dGhUYWciOiJSVlc4YUFmaXo1YWlBK1hFVE9uTDlnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">a sound-good one is even better</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
