@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1774015558000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjY3NTg4OThiLWEzYzQtNGY1Yi1iM2E0LTMwNDYwMmY5MTIyMyIsImRla1ZlcnNpb24iOjEsIml2IjoiMzhGNW1NeFNENmpUQng4bDM4WEhodz09IiwiY2lwaGVyVGV4dCI6ImgwZ2hLT2Y1d2pJUnZWZFZvenNDN1E0ZnBJSU0waVlBaGdnOEtGaUoyMGwreXBjQkdTd00xQlU5VFlHNUtXSCtReEc1QkxoUytFZ3N6TTBWNjF6Z0c3VFVOVUV3L3dmQ0F0L0JlWmpNVWcrbzB3Y2ZKZC9GeDRjPSIsImF1dGhUYWciOiJ6TTBWNjF6Z0c3VFVOVUV3L3dmQ0FnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">Rethinking the peopling of the Americas, and the best ways to get groundwater back</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjAwZjc3N2M4LThiYWUtNGI5Mi1hNzc0LTUwNjAyOTgyYTk3OSIsImRla1ZlcnNpb24iOjEsIml2IjoiR1BiTUttOE9vTUxNR280TVN0c1VFQT09IiwiY2lwaGVyVGV4dCI6IlpCNkhvM2loNThiZmhtRjlKSys0WmxLdEdHTjhqekRzM21rYk4rZ0NlNDJTUnlIQ0pjUDlaRGk0SE13Tkp0akF1OHhwQml6dXNOcWt5dnFNYVdxSHRiRlJVT1h0OTl0WWlCajJ6Q3B2RHFEQ3pCcU9ERXJiRkJBPSIsImF1dGhUYWciOiJ5dnFNYVdxSHRiRlJVT1h0OTl0WWlBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">a rice variety that can be harvested several years in row</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImQwOGVjNWEwLTA3NTktNDg1OC1hMzE0LTM5NGQzODEyMWE3YiIsImRla1ZlcnNpb24iOjEsIml2IjoicHpnSWlDNjRvaEkwU05VaFVoeXV3Zz09IiwiY2lwaGVyVGV4dCI6Iko2a0Y2TTUvOTc4eVQ3cElwWElHMm51SVEwVnFRWHpaMHdQZnR4YVM4aFBvaXlGc05OWW1zWGcrYUlJWDF2L0tBbWhYSnJ5RHQ4eE9aWHBFdUY0aTJsWGZyam93anhGU3ZxYzRDSWd1dUtJU05FalZJVkljcnNJPSIsImF1dGhUYWciOiJaWHBFdUY0aTJsWGZyam93anhGU3ZnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">our acoustic preferences overlap with a range of other species</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjUyYmZjN2QwLWQ3MTEtNDIwMi04NWIyLTcwNTg3ZmQ1MDhmNiIsImRla1ZlcnNpb24iOjEsIml2IjoiejNSNVVDMDBtSnRvd25UK0JYZHUxdz09IiwiY2lwaGVyVGV4dCI6IkM5T2lBM0J2a0hnSGZVKzQ3WUFMbXpxLzEwTDhBUWQ0SGlUWW13SUx6SGswNEhrMFV0TXdhRmRqSzRlV0ZvVHYwNkFISGZEVUQwZjJFM1piNzJqTlVFZFJSMGdaQVNDTzJjOTBlVkF0TkppYmFNSjAvZ1YzYnRjPSIsImF1dGhUYWciOiJFM1piNzJqTlVFZFJSMGdaQVNDTzJRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">from the time of Aristotle right up until the 1750s</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjMxOGJiZDJmLTg2NzAtNGQ1OC04YjE2LTJkMGI5ODM3ZDRkNSIsImRla1ZlcnNpb24iOjEsIml2IjoiMU1qazVWN3kyaTFNOW54cFMxanc0dz09IiwiY2lwaGVyVGV4dCI6Ii9uZ3hKbHBPbUswWGlJd0sxL29MQ0QrR2xpaGdTTUI2NHA5S01CL2JBbWVuNndOQmh0a2tEVm85Z3NJRjFEVEVlcmxid292QnlxWnRsQzdqL0JaeGFKMUllamF0Q20zeGJOVEk1T1ZlOHRvdFRQWjhhVXRZOE9NPSIsImF1dGhUYWciOiJsQzdqL0JaeGFKMUllamF0Q20zeGJBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">March Mammal Madness</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

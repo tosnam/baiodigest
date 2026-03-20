@@ -1,0 +1,131 @@
+{
+  "date": "2026-03-21",
+  "entries": [
+    {
+      "paper": {
+        "title": "Functional customization of peptide linkers in fusion proteins through multimodal deep learning approach.",
+        "abstract": "Peptide linkers are critical modulators of function in fusion proteins, a foundational technology in modern bioengineering. However, the rational customization of linkers for specific applications remains challenging, hindered by an insufficient understanding of the relationship between linker sequences and fused protein function. In this study, we systematically characterized 370 diverse linkers, generated from random 18-amino acid sequences with no homology to known proteins, fusing sfGFP to a nanobody. Although sfGFP fluorescence exhibited no clear correlation with canonical linker properties like flexibility or rigidity, we identified a correlation between amino acid composition and functional output. Furthermore, AlphaFold-predicted substructures encompassing the linker and adjacent sfGFP regions revealed considerable structural diversity while maintaining the overall sfGFP fold. Notably, in silico structural features derived from the Cα-Cα distance matrix of these predicted substructures correlated with fluorescence, providing a structural rationale for the functional variation. By training on both sequence representations and in silico substructural features, we developed a multimodal deep learning framework to quantitatively customize linker sequences for high sfGFP fluorescence in special fusion constructs. This work presents a generalizable framework for engineering peptide linkers to assemble highly functional fusion proteins.",
+        "authors": [
+          "Li Z",
+          "Lu J",
+          "Cui J",
+          "Cao G",
+          "Li J",
+          "Ye Z",
+          "Wang Y",
+          "Qi H"
+        ],
+        "affiliations": [
+          "School of Synthetic Biology and Biomanufacturing, Tianjin University, Tianjin, 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin, 300350, China.",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China.",
+          "School of Cyber Science and Engineering, Wuhan University, Wuhan, 430072, China.",
+          "School of Cyber Science and Engineering, Wuhan University, Wuhan, 430072, China.",
+          "School of Synthetic Biology and Biomanufacturing, Tianjin University, Tianjin, 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin, 300350, China.",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China.",
+          "School of Synthetic Biology and Biomanufacturing, Tianjin University, Tianjin, 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin, 300350, China.",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China.",
+          "School of Synthetic Biology and Biomanufacturing, Tianjin University, Tianjin, 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin, 300350, China.",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China.",
+          "School of Synthetic Biology and Biomanufacturing, Tianjin University, Tianjin, 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin, 300350, China.",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China.",
+          "School of Synthetic Biology and Biomanufacturing, Tianjin University, Tianjin, 300350, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin, 300350, China.",
+          "School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China."
+        ],
+        "doi": "10.1016/j.synbio.2026.02.003",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Synthetic and systems biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41859726/",
+        "category": null,
+        "date": "2026-09-01",
+        "mesh_terms": [],
+        "source_id": "41859726",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "protein_engineering",
+        "reason": "프로테인 엔지니어링에서 리커서 설계 최적화에 활용 가능. 의약품 개발에 적용 가능한 고기능성 퓨전 단백질 설계 기법 제공.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "피프肽 링커는 융합 단백질의 기능 조절에 핵심적인 역할을 하지만, 특정 용도에 맞는 합리적 커스터마이징은 링커 시퀀스와 기능 간 관계의 이해 부족으로 인해 어려움을 겪고 있음(thermostability, flexibility).",
+        "method": "랜덤 18아미노산 시퀀스로 생성한 370개의 다양한 링커를 sfGFP와 나노바디로 융합하여 분석하고, AlphaFold를 활용한 구조 예측을 결합한 다모달 딥러닝 프레임워크를 개발함.",
+        "result": "아미노산 조성과 기능적 출력 간 상관관계를 확인했으며, 예측된 구조의 Cα-Cα 거리 매트릭스에서 유도된 인사이트가 형광과 연관됨을 밝힘.",
+        "significance": "고도로 기능적인 융합 단백질 설계를 위한 일반화 가능한 프레임워크를 제시함(fusion constructs, structural rationale)."
+      }
+    },
+    {
+      "paper": {
+        "title": "A Review on Microbial Lipids Conversion from Organic Wastes: Adaptive Laboratory Evolution-Driven Strategies for Enhanced Biofuel Precursor Synthesis.",
+        "abstract": "The strategic conversion of fermentation effluents from organic waste into microbial lipids for biofuel production has emerged as a key strategy for advancing sustainable development. However, inhibitory components in fermentation broths substantially impair the metabolism of oleaginous microbes, critically compromising bioconversion efficiency. Traditional pretreatment methods, such as chemical and enzymatic approaches, incur additional costs. Adaptive Laboratory Evolution (ALE) technology is based on the principle of directed evolution, precisely constructs biological stress environments and reshapes microbial metabolic networks to enhance strain tolerance and functionality. This enables the direct utilization of complex fermentation broths for lipid production. This paper first introduces the mechanism of selective pressure exerted by the ALE technique, and proposes strategies for nutrient supply and extreme environmental stress based on the physiological characteristics of strains. It then focuses on the technical principles of the ALE process, with a key discussion on the different evolutionary modes of ALE and their applicable scenarios. Building on this foundation, this review introduces novel integrative strategies bridging ALE and synthetic biology, employing precision metabolic engineering, genomic editing and machine learning to expand the application boundaries of ALE technology. Finally, the future development trends of ALE technology in the field of organic waste resource utilization are systematically explored in this review.",
+        "authors": [
+          "Sun S",
+          "Wang X",
+          "Lu D",
+          "Chen Z",
+          "Cao H",
+          "Cheng S",
+          "Li Z",
+          "Campos LC"
+        ],
+        "affiliations": [
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: d202210091@xs.ustb.edu.cn.",
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: wangxm@ustb.edu.cn.",
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: angelalu1212@163.com.",
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: chenzx0416@gmail.com.",
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: 17393573556@163.com.",
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: chengshikun@ustb.edu.cn.",
+          "University of Science and Technology Beijing, School of Energy and Environmental Engineering, Beijing Key Laboratory of Resource-oriented Treatment of Industrial Pollutants. Electronic address: zifuli@ustb.edu.cn.",
+          "Centre for Urban Sustainability and Resilience, Department of Civil, Environmental & Geomatic Engineering, University College London, WC1E 6BT, London, UK. Electronic address: l.campos@ucl.ac.uk."
+        ],
+        "doi": "10.1016/j.envres.2026.124312",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Environmental research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41856232/",
+        "category": null,
+        "date": "2026-03-17",
+        "mesh_terms": [],
+        "source_id": "41856232",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.85,
+        "category": "metabolic_engineering",
+        "reason": "미생물 리피드 생산을 위한 ALE 기술은 화학 산업에서 생분해성 연료 생산에 활용 가능하며, 대사 경로 최적화에 기여할 수 있음.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "유기 폐기물 발효 부산물을 미생물 지방으로 전환해 바이오 연료 생산하는 전략이 지속 가능한 개발에 중요한 역할을 하고 있음(fermentation effluents conversion). 그러나 발효액 내 억제성 성분이 지방 생성 미생물의 대사에 큰 장애를 줌(inhibitory components impact).",
+        "method": "적응적 실험실 진화(ALE) 기술은 지향적 진화 원리를 기반으로 생물학적 스트레스 환경을 구축하고 미생물 대사 네트워크를 재구성함(Adaptive Laboratory Evolution). 이는 복잡한 발효액 직접 사용을 가능하게 함(complex fermentation broths utilization).",
+        "result": "ALE 기술의 선택적 압력 메커니즘과 영양 공급 전략, 극한 환경 스트레스 적용 방안이 제시됨(selective pressure mechanism). ALE과 합성 생물학 통합 전략이 제안되어 대사 공학과 유전자 편집 기술로 기술 한계 확장이 가능함.",
+        "significance": "ALE 기술은 유기 폐기물 자원화 분야에서 바이오 연료 전구체 생산 효율 향상과 지속 가능성 확보에 기여할 수 있음(biofuel precursor synthesis). 미래 기술 발전 방향에 대한 첳계적 분석이 제공됨(future development trends)."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-20T22:15:11.882476+00:00"
+}

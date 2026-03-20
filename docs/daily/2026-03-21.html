@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-21 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-21</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41859726/" target="_blank" rel="noopener noreferrer">Functional customization of peptide linkers in fusion proteins through multimodal deep learning approach.</a></h3>
+    <p>Synthetic and systems biotechnology</p>
+    <p>School of Chemical Engineering and Technology, Tianjin University, Tianjin, 300350, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>프로테인 엔지니어링에서 리커서 설계 최적화에 활용 가능. 의약품 개발에 적용 가능한 고기능성 퓨전 단백질 설계 기법 제공.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>피프肽 링커는 융합 단백질의 기능 조절에 핵심적인 역할을 하지만, 특정 용도에 맞는 합리적 커스터마이징은 링커 시퀀스와 기능 간 관계의 이해 부족으로 인해 어려움을 겪고 있음(thermostability, flexibility).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>랜덤 18아미노산 시퀀스로 생성한 370개의 다양한 링커를 sfGFP와 나노바디로 융합하여 분석하고, AlphaFold를 활용한 구조 예측을 결합한 다모달 딥러닝 프레임워크를 개발함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>아미노산 조성과 기능적 출력 간 상관관계를 확인했으며, 예측된 구조의 Cα-Cα 거리 매트릭스에서 유도된 인사이트가 형광과 연관됨을 밝힘.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>고도로 기능적인 융합 단백질 설계를 위한 일반화 가능한 프레임워크를 제시함(fusion constructs, structural rationale).</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.80
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41856232/" target="_blank" rel="noopener noreferrer">A Review on Microbial Lipids Conversion from Organic Wastes: Adaptive Laboratory Evolution-Driven Strategies for Enhanced Biofuel Precursor Synthesis.</a></h3>
+    <p>Environmental research</p>
+    <p>Centre for Urban Sustainability and Resilience, Department of Civil, Environmental &amp; Geomatic Engineering, University College London, WC1E 6BT, London, UK. Electronic address: l.campos@ucl.ac.uk.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>미생물 리피드 생산을 위한 ALE 기술은 화학 산업에서 생분해성 연료 생산에 활용 가능하며, 대사 경로 최적화에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>유기 폐기물 발효 부산물을 미생물 지방으로 전환해 바이오 연료 생산하는 전략이 지속 가능한 개발에 중요한 역할을 하고 있음(fermentation effluents conversion). 그러나 발효액 내 억제성 성분이 지방 생성 미생물의 대사에 큰 장애를 줌(inhibitory components impact).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>적응적 실험실 진화(ALE) 기술은 지향적 진화 원리를 기반으로 생물학적 스트레스 환경을 구축하고 미생물 대사 네트워크를 재구성함(Adaptive Laboratory Evolution). 이는 복잡한 발효액 직접 사용을 가능하게 함(complex fermentation broths utilization).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>ALE 기술의 선택적 압력 메커니즘과 영양 공급 전략, 극한 환경 스트레스 적용 방안이 제시됨(selective pressure mechanism). ALE과 합성 생물학 통합 전략이 제안되어 대사 공학과 유전자 편집 기술로 기술 한계 확장이 가능함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>ALE 기술은 유기 폐기물 자원화 분야에서 바이오 연료 전구체 생산 효율 향상과 지속 가능성 확보에 기여할 수 있음(biofuel precursor synthesis). 미래 기술 발전 방향에 대한 첳계적 분석이 제공됨(future development trends).</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.85
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
