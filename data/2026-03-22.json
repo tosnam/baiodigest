@@ -1,0 +1,76 @@
+{
+  "date": "2026-03-22",
+  "entries": [
+    {
+      "paper": {
+        "title": "Introducing furanocoumarin biosynthetic genes in tomato results in coumarins accumulation and impacts growth.",
+        "abstract": "Over the past three decades, efforts to decipher plant metabolism have shed light on key enzymes driving specialized metabolite biosynthesis. Although only few pathways have been completely investigated to date, their characterization paves the way for exploring the potential effects of specialized metabolites on plant physiology. Among them is the linear furanocoumarin pathway, which was recently completed to produce up to psoralen. In this study, we report the first metabolic engineering of the linear furanocoumarin pathway to enable artificial psoralen production in tomato, through the integration of four genes coding for the enzymes: Umbelliferone Synthase (PsDiox), Demethylsuberosin Synthase (PsPT1), Marmesin Synthase (FcCYP76F112) and Psoralen Synthase (PsCYP71AJ3). Metabolic analyses confirmed the detection of small quantities of psoralen in the transgenic tomato line, but also highlighted a larger accumulation of coumarins and particularly scopoletin. Using morphophysiological and multi-omics analyses, we explorate how such metabolic modifications, could impact growth and affect plant physiology.",
+        "authors": [
+          "Bouillé A",
+          "Villard C",
+          "Galati G",
+          "Roumani M",
+          "Fauvet A",
+          "Grosjean J",
+          "Hoengenaert L",
+          "Boerjan W",
+          "Ralph J",
+          "Hilliou F",
+          "Robin C",
+          "Hehn A",
+          "Larbat R"
+        ],
+        "affiliations": [
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: alexandre.bouille@uochb.cas.cz.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: cloe.villard@gmail.com.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: galatigianni@gmail.com.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: marwaroumani6@gmail.com.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: aude.fauvet@univ-lorraine.fr.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: jeremy.grosjean@univ-lorraine.fr.",
+          "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, BE; Center for Plant Systems Biology, VIB, Ghent, BE. Electronic address: Lennart.Hoengenaert@psb.vib-ugent.be.",
+          "Department of Plant Biotechnology and Bioinformatics, Ghent University, Ghent, BE; Center for Plant Systems Biology, VIB, Ghent, BE. Electronic address: Wout.Boerjan@psb.vib-ugent.be.",
+          "Department of Biochemistry, University of Wisconsin, Madison, WI 53706, USA; Department of Energy Great Lakes Bioenergy Research Center, The Wisconsin Energy Institute, University of Wisconsin, Madison, WI 53726, USA. Electronic address: jralph@wisc.edu.",
+          "INRAE, Institut Sophia Agrobiotech, Université Côte D'Azur, CNRS, Sophia Antipolis, France. Electronic address: frederique.hilliou@inrae.fr.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: christophe.robin@univ-lorraine.fr.",
+          "Université de Lorraine, INRAE, LAE, 54000 Nancy, FR. Electronic address: alain.hehn@univ-lorraine.fr.",
+          "Institut Agro, University of Angers, INRAE, IRHS, SFR QUASAV, F-49000 Angers, FR. Electronic address: romain.larbat@inrae.fr."
+        ],
+        "doi": "10.1016/j.plantsci.2026.113106",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Plant science : an international journal of experimental plant biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41862027/",
+        "category": null,
+        "date": "2026-03-18",
+        "mesh_terms": [],
+        "source_id": "41862027",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "metabolic_engineering",
+        "reason": "화학 산업에서 psoralen과 쿤린의 생합성 활용 가능성이 있으며, 의약품 개발에 기여할 수 있는 식물 대사 조절 기술이 포함됨.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "식물 대사 해석 연구는 전문 대사물질 생합성에 관여하는 주요 효소를 밝혀냈습니다. 선형 푸라노쿤파린 경로는 최근까지 psoralen까지 생성할 수 있는 완전한 경로로 규명되었습니다.",
+        "method": "토마토에 푸라노쿤파린 생합성 유전자 네 개를 통합하여 인공 psoralen 생산을 가능하게 했습니다. 이 유전자들은 Umbelliferone Synthase(PsDiox), Demethylsuberosin Synthase(PsPT1), Marmesin Synthase(FcCYP76F112), Psoralen Synthase(PsCYP71AJ3)를 코드합니다.",
+        "result": "전이 토마토 줄기에서 psoralen이 소량 검출되었고, 쿨라린과 특히 스코포레틴이 더 많이 축적되었습니다. 형태생리학적 및 다중 옴ิก 분석은 이러한 대사 변화가 성장과 식물 생리에 영향을 미친다는 것을 보여주었습니다.",
+        "significance": "이 연구는 식물 생리학에 미치는 전문 대사물질의 잠재적 효과를 탐색하는 데 중요한 기초 자료를 제공합니다. 대사 공학을 통한 유전자 조합은 식물 대사 조절에 새로운 전략을 제시합니다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-21T22:07:26.240045+00:00"
+}
