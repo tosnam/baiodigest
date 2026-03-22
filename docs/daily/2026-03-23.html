@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-23 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-23</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41865240/" target="_blank" rel="noopener noreferrer">Toward Automatic Derivation of Geometry-Based Descriptors as Surrogates for Complex Computational Approaches in Enzyme-Substrate Prediction.</a></h3>
+    <p>Chemphyschem : a European journal of chemical physics and physical chemistry</p>
+    <p>Laboratory of Biomolecular Interactions and Transport, Department of Gene Expression, Institute of Molecular Biology and Biotechnology, Faculty of Biology, Adam Mickiewicz University, Poznań, Poland.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>enzyme-substrate 예측 모델 개발로 바이오촉매 및 약물 발견에 활용 가능, 효소 공학 및 기질 스크리닝에 직접적 적용 가능</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>효소-기질(ES) 상호작용 예측은 생물촉매 및 약물 개발에서 근본적인 도전 과제이다. 기계학습(ML) 접근법은 데이터 요구량이 많고 메커니즘 해석이 부족하다는 한계가 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>ES 복합체 구조로부터 기하학 기반 묘사자(Descriptors)를 자동화하여 추출하는 새로운 방법론을 제시하였다. 메커니즘 기반의 해석 가능한 기하학적 필터를 통해 비활성화된 원자쌍 접근성과 간격을 분석하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>하로알케인 디할로젠화효소(HLDs)와 알데하이드 환원효소(AldRs) 두 효소 가족에서 최소한의 데이터로 검증한 결과, HLDs의 평균 정확도 77% 및 민감도 94%를 달성하였다. AldRs의 경우 57%의 트루 기질 회복률을 기록하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>기하학적 묘사자는 촉매 요구사항을 직접 반영하여 메커니즘 기반 해석을 가능하게 하며, 최소한의 데이터로 새로운 효소에 적용 가능하다. 효소 공학 및 기질 스크리닝에 강력한 도구로 활용될 수 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41863619/" target="_blank" rel="noopener noreferrer">Next-generation strategies for PLA degradation: microbial consortia, metagenomics, enzyme engineering and AI-guided approaches.</a></h3>
+    <p>Archives of microbiology</p>
+    <p>Department of Biology, National Changhua University of Education, Changhua, 500, Taiwan. jackyjau@cc.ncue.edu.tw.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>PLA 분해 효소 설계 및 AI 기반 구조 예측 기술이 화학 산업의 지속 가능한 플라스틱 관리에 활용 가능합니다. 산업 폐기물 처리 및 생분해 기술 개발에 직접적 기여할 수 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>폴리락티산(PLA)은 생분해성 생물 플라스틱으로 널리 사용되나 자연 조건에서 느린 분해 속도로 인해 환경 지속 가능성에 제한이 있다(thermostability). 이 논문은 PLA 분해를 촉진하는 다양한 미생물 및 생물기술 전략에 대한 최신 연구를 종합적으로 정리하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>주요 접근법은 곤충 위장 미생물 분리, 곰팡이 종의 흡착 또는 효소 능력 분석, 메타젠ómics 및 환경 DNA(eDNA) 도구를 통한 토양, 콤프ост, 수생 생태계 탐색이다. 또한 합성생물학, 지향적 진화, 인공지능(AI) 기반의 효소 공학 기법이 활용된다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>미생물 컨소시엄, 열성 분해균, 공배양 시스템은 PLA의 내재 결정화 및 수해 의존적 분해를 극복하는 효과적인 해결책으로 입증되었다. AI 기반 구조 예측과 머신러닝 플랫폼은 분해효소의 특이성, 열안정성, 촉매 효율을 향상시킬 가능성을 제시하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이러한 다학제적 전략은 산업용 콤프ост, 하수 처리, 생물복원 분야에서 PLA 분해를 가속화하는 지침을 제공한다. 향후 생태학적 스크리닝과 계산 효소 공학의 통합은 확장 가능하고 지속 가능한 PLA 폐기물 관리를 전망한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41864206/" target="_blank" rel="noopener noreferrer">The E3-ome gene-centric compendium reveals the human E3 ligase landscape.</a></h3>
+    <p>Cell</p>
+    <p>Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia. Electronic address: feltham.r@wehi.edu.au.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>E3-ome는 약물 타겟 식별과 질병 메커니즘 이해에 활용 가능합니다. 생물정보학적 분석을 통한 E3 리가제의 체계적 분류는 의약품 개발에 기초 자원으로 작용합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>인간 유전체에 존재하는 E3 유비퀴틴 리가제(E3)의 전체적인 지도를 정의하고 첳统적으로 분석하기 위해 E3-ome라는 데이터베이스를 구축하였다(ubiquitin ligase). 이는 실험적 데이터, 생물정보학, 기존 연구를 통합하여 고신뢰도 E3를 식별하는 데 목적이 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>E3 분류를 표준화하여 일관된 어노테이션과 비교 분석을 위한 통합 프레임워크를 구축하였다(classification). E3-ome을 통해 새로운 도메인, 모티프, 후보 E3 및 관계를 발견하고, 조직 및 세포 유형별 공간적·생리적 조직을 매핑하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>전체적으로 672개의 고신뢰도 E3를 식별하며, 맥락 의존적 E3의 존재를 밝혀냈다(context-dependent). 유전 분석을 통해 다양한 질병과 연관된 변이를 규명하였다(disease-associated variants).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>인간 E3 리가제의 고해상도 지도를 제공하여 기전 규명 및 치료 목표로의 활용을 가능하게 한다(mechanistic and therapeutic discovery). 이 자원은 생명과학 연구에 기초 자산으로 활용될 수 있다(foundational resource).</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

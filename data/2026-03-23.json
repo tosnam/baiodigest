@@ -1,0 +1,252 @@
+{
+  "date": "2026-03-23",
+  "entries": [
+    {
+      "paper": {
+        "title": "Toward Automatic Derivation of Geometry-Based Descriptors as Surrogates for Complex Computational Approaches in Enzyme-Substrate Prediction.",
+        "abstract": "Accurate prediction of enzyme-substrate (ES) interactions remains a fundamental challenge in biocatalysis and drug discovery. While machine learning (ML) approaches have shown promise, they require extensive training data and often lack mechanistic interpretability. Here, we present a novel methodology that automatically derives geometry-based descriptors from ES complex structures to predict substrate specificity. Our approach simplifies complex catalytic mechanisms into interpretable geometric filters comprising critical inter-atomic distances and accessibility of atomic pairs parameters. We validated this methodology using two mechanistically distinct enzyme families with minimal training data: haloalkane dehalogenases (HLDs; 9 enzymes and 53 substrates) and aldehyde reductases (AldRs; 9 enzymes and 36 substrates). The filters demonstrated robust performance across chemically diverse substrates. On testing datasets, the derived filters achieved average accuracy of 77% and sensitivity of 94% for HLDs and average 57% recall of true substrates for AldRs, exceeding state-of-the-art ML methods for substrate predictions on these datasets. Crucially, the geometric descriptors directly correspond to catalytic requirements, providing mechanistic insights into substrate recognition. This interpretable, mechanism-based approach requires minimal training data and can be readily applied to newly characterized enzymes, offering a powerful tool for enzyme engineering and substrate screening applications.",
+        "authors": [
+          "Sequeiros-Borja C",
+          "Škoda P",
+          "Brezovsky J"
+        ],
+        "affiliations": [
+          "Laboratory of Biomolecular Interactions and Transport, Department of Gene Expression, Institute of Molecular Biology and Biotechnology, Faculty of Biology, Adam Mickiewicz University, Poznań, Poland.",
+          "Department of Software Engineering, Faculty of Mathematics and Physics, Charles University, Praha 1, Czech Republic.",
+          "Laboratory of Biomolecular Interactions and Transport, Department of Gene Expression, Institute of Molecular Biology and Biotechnology, Faculty of Biology, Adam Mickiewicz University, Poznań, Poland."
+        ],
+        "doi": "10.1002/cphc.202500883",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Chemphyschem : a European journal of chemical physics and physical chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41865240/",
+        "category": "substrate specificity",
+        "date": "2026-03-27",
+        "mesh_terms": [
+          "Substrate Specificity",
+          "Machine Learning",
+          "Hydrolases",
+          "Aldehyde Oxidoreductases",
+          "Biocatalysis"
+        ],
+        "source_id": "41865240",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "enzyme-substrate 예측 모델 개발로 바이오촉매 및 약물 발견에 활용 가능, 효소 공학 및 기질 스크리닝에 직접적 적용 가능",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "효소-기질(ES) 상호작용 예측은 생물촉매 및 약물 개발에서 근본적인 도전 과제이다. 기계학습(ML) 접근법은 데이터 요구량이 많고 메커니즘 해석이 부족하다는 한계가 있다.",
+        "method": "ES 복합체 구조로부터 기하학 기반 묘사자(Descriptors)를 자동화하여 추출하는 새로운 방법론을 제시하였다. 메커니즘 기반의 해석 가능한 기하학적 필터를 통해 비활성화된 원자쌍 접근성과 간격을 분석하였다.",
+        "result": "하로알케인 디할로젠화효소(HLDs)와 알데하이드 환원효소(AldRs) 두 효소 가족에서 최소한의 데이터로 검증한 결과, HLDs의 평균 정확도 77% 및 민감도 94%를 달성하였다. AldRs의 경우 57%의 트루 기질 회복률을 기록하였다.",
+        "significance": "기하학적 묘사자는 촉매 요구사항을 직접 반영하여 메커니즘 기반 해석을 가능하게 하며, 최소한의 데이터로 새로운 효소에 적용 가능하다. 효소 공학 및 기질 스크리닝에 강력한 도구로 활용될 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Next-generation strategies for PLA degradation: microbial consortia, metagenomics, enzyme engineering and AI-guided approaches.",
+        "abstract": "Polylactic acid (PLA) is one of the most widely used biodegradable bioplastics; however, its slow degradation under natural conditions limits its environmental sustainability. This review summarizes recent advances in microbial and biotechnological strategies that enhance PLA biodegradation across diverse ecosystems. Emerging approaches include screening insect gut microbiota, isolating fungal species with strong adsorption or enzymatic capacities, and exploring soil, compost, and aquatic microbiomes using metagenomics and environmental DNA (eDNA) tools. Microbial consortia, thermophilic degraders, and co-culture systems are highlighted as effective solutions to overcome the intrinsic crystallinity and hydrolysis-dependent breakdown of PLA. Beyond natural systems, this review emphasizes the increasing role of synthetic biology, directed evolution, and artificial intelligence (AI) in engineering high-performance PLA-degrading enzymes. AI-driven structural prediction and machine-learning platforms offer new possibilities for designing robust depolymerases with improved specificity, thermostability, and catalytic efficiency. Collectively, these multidisciplinary strategies provide a roadmap for accelerating PLA degradation in industrial composting, wastewater treatment, and bioremediation. Future integration of ecological screening with computational enzyme engineering is expected to advance scalable and sustainable PLA waste management.",
+        "authors": [
+          "Jonathan AR",
+          "Balasubramanian VK",
+          "Ho ST",
+          "Chen YP",
+          "Khunnamwong P",
+          "Chou JY"
+        ],
+        "affiliations": [
+          "International Program for Master of Science in Materials and Biological Technology, and Science Education, National Changhua University of Education, Changhua, 500, Taiwan.",
+          "Department of Biology, National Changhua University of Education, Changhua, 500, Taiwan. vigneshkumar591@gmail.com.",
+          "Department of Wood Based Materials and Design, College of Agriculture, National Chiayi University, Chiayi, 600, Taiwan.",
+          "Department of Animal Science, National Chung Hsing University, 145 Xingda Road, South Dist., Taichung City, 402, Taiwan.",
+          "The iEGG and Animal Biotechnology Research Center, National Chung Hsing University, Taichung City, 402, Taiwan.",
+          "Department of Microbiology, Faculty of Science, Kasetsart University, Bangkok, 10900, Thailand.",
+          "Biodiversity Center, Kasetsart University (BDCKU), Bangkok, 10900, Thailand.",
+          "Department of Biology, National Changhua University of Education, Changhua, 500, Taiwan. jackyjau@cc.ncue.edu.tw."
+        ],
+        "doi": "10.1007/s00203-026-04726-8",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Archives of microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41863619/",
+        "category": "metagenomics",
+        "date": "2026-03-21",
+        "mesh_terms": [
+          "Metagenomics",
+          "Microbial Consortia",
+          "Biodegradation, Environmental",
+          "Polyesters",
+          "Artificial Intelligence",
+          "Fungi",
+          "Bacteria"
+        ],
+        "source_id": "41863619",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "PLA 분해 효소 설계 및 AI 기반 구조 예측 기술이 화학 산업의 지속 가능한 플라스틱 관리에 활용 가능합니다. 산업 폐기물 처리 및 생분해 기술 개발에 직접적 기여할 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "폴리락티산(PLA)은 생분해성 생물 플라스틱으로 널리 사용되나 자연 조건에서 느린 분해 속도로 인해 환경 지속 가능성에 제한이 있다(thermostability). 이 논문은 PLA 분해를 촉진하는 다양한 미생물 및 생물기술 전략에 대한 최신 연구를 종합적으로 정리하였다.",
+        "method": "주요 접근법은 곤충 위장 미생물 분리, 곰팡이 종의 흡착 또는 효소 능력 분석, 메타젠ómics 및 환경 DNA(eDNA) 도구를 통한 토양, 콤프ост, 수생 생태계 탐색이다. 또한 합성생물학, 지향적 진화, 인공지능(AI) 기반의 효소 공학 기법이 활용된다.",
+        "result": "미생물 컨소시엄, 열성 분해균, 공배양 시스템은 PLA의 내재 결정화 및 수해 의존적 분해를 극복하는 효과적인 해결책으로 입증되었다. AI 기반 구조 예측과 머신러닝 플랫폼은 분해효소의 특이성, 열안정성, 촉매 효율을 향상시킬 가능성을 제시하였다.",
+        "significance": "이러한 다학제적 전략은 산업용 콤프ост, 하수 처리, 생물복원 분야에서 PLA 분해를 가속화하는 지침을 제공한다. 향후 생태학적 스크리닝과 계산 효소 공학의 통합은 확장 가능하고 지속 가능한 PLA 폐기물 관리를 전망한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "The E3-ome gene-centric compendium reveals the human E3 ligase landscape.",
+        "abstract": "To define and systematically characterize the human E3 ubiquitin ligase (E3) landscape, we generated the E3-ome, a compendium of E3s encoded by the human genome. The E3-ome integrates experimental data, bioinformatics, and published research, revealing 672 high-confidence E3s. We standardized E3 classifications to create a unified framework for annotation and comparative analysis. The E3-ome identified several previously unrecognized domains, motifs, E3 candidates, and relationships, expanding the diversity of E3s. Furthermore, the E3-ome mapped the spatial and physiological organization of E3s across human tissues and cell types, revealing context-dependent E3s. Genetic analyses identified disease-associated variants across the E3-ome, linking E3s to diverse human pathologies. Together, these analyses define the human E3 landscape at high resolution and deliver a foundational resource to drive mechanistic and therapeutic discovery.",
+        "authors": [
+          "Chua NK",
+          "González-Robles TJ",
+          "Reddington CJ",
+          "Dudley-Fraser J",
+          "Birkinshaw RW",
+          "Han J",
+          "Solano A",
+          "Wong SW",
+          "Kochańczyk T",
+          "Peter JJ",
+          "Nakasone MA",
+          "Aust F",
+          "Munro J",
+          "Tong YH",
+          "Iskander J",
+          "Abeysekera W",
+          "Garnham A",
+          "Huckstep H",
+          "Ritchie ME",
+          "Wertz I",
+          "Hymowitz S",
+          "Kumar S",
+          "Conaway RC",
+          "Privé GG",
+          "Bullock AN",
+          "Babon JJ",
+          "Klevit RE",
+          "Lorenz S",
+          "Ciulli A",
+          "Fischer ES",
+          "Thomä NH",
+          "Nowak RP",
+          "Schulman BA",
+          "Rapé M",
+          "Rittinger K",
+          "Pagan JK",
+          "Bahlo M",
+          "Mackay JP",
+          "Mace PD",
+          "Lima CD",
+          "Hay RT",
+          "Komander D",
+          "Lechtenberg BC",
+          "Joazeiro CAP",
+          "Pagano M",
+          "Hofmann K",
+          "Feltham R"
+        ],
+        "affiliations": [
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia. Electronic address: chua.n@wehi.edu.au.",
+          "Department of Biochemistry and Molecular Pharmacology, New York University Grossman School of Medicine, New York, NY 10016, USA; Laura and Isaac Perlmutter Cancer Center, New York University Grossman School of Medicine, New York, NY 10016, USA; Howard Hughes Medical Institute, New York University Grossman School of Medicine, New York, NY 10016, USA; Department of Precision Medicine, New York University Grossman School of Medicine, New York, NY 10016, USA.",
+          "Biochemistry Department, School of Biomedical Sciences, University of Otago, Dunedin 9054, New Zealand.",
+          "Molecular Structure of Cell Signalling Laboratory, the Francis Crick Institute, London NW1 1AT, UK.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Robinson Research Institute and Adelaide Medical School, the University of Adelaide, Adelaide, SA 5006, Australia; College of Medicine and Public Health, Flinders Health and Medical Research Institute, Flinders University, Adelaide, SA 5042, Australia.",
+          "Structural Biology Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, New York, NY 10065, USA.",
+          "Structural Biology Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, New York, NY 10065, USA.",
+          "Centre for Targeted Protein Degradation, School of Life Sciences, University of Dundee, Dundee DD1 5JJ, UK.",
+          "Research Group 'Ubiquitin Signaling Specificity', Max Planck Institute for Multidisciplinary Sciences, 37077 Göttingen, Germany.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Lyterian Therapeutics, 630 Gateway Blvd, South San Francisco, CA 94080, USA.",
+          "The Column Group, 1 Letterman Drive Building D, Suite DM-900, San Francisco, CA 94129, USA.",
+          "Center for Cancer Biology, University of South Australia, Adelaide, SA 5001, Australia; Adelaide Medical School, the University of Adelaide, Adelaide, SA 5005, Australia; Center for Cancer Biology, College of Health, Adelaide University, Adelaide, SA 5000, Australia.",
+          "Lyda Hill Department of Bioinformatics, University of Texas Southwestern Medical Center, Dallas, TX 75390-9046, USA.",
+          "Princess Margaret Cancer Centre, Toronto, ON M5G 1L7, Canada; Department of Medical Biophysics, University of Toronto, Toronto, ON M5G 1L7, Canada; Department of Biochemistry, University of Toronto, Toronto, Ontario M5S 1A8, Canada.",
+          "Centre for Medicines Discovery, Nuffield Department of Medicine Research Building, University of Oxford, Roosevelt Drive, Oxford OX3 7FZ, UK.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Department of Biochemistry, University of Washington, Seattle, WA 98195, USA.",
+          "Research Group 'Ubiquitin Signaling Specificity', Max Planck Institute for Multidisciplinary Sciences, 37077 Göttingen, Germany.",
+          "Centre for Targeted Protein Degradation, School of Life Sciences, University of Dundee, Dundee DD1 5JJ, UK.",
+          "Department of Cancer Biology, Dana-Farber Cancer Institute, Boston, MA 02115, USA; Department of Biological Chemistry and Molecular Pharmacology, Harvard Medical School, Boston, MA 02115, USA.",
+          "Swiss Institute for Experimental Cancer Research (ISREC), École Polytechnique Fédérale de Lausanne, 1015 Lausanne, Switzerland.",
+          "Institute of Structural Biology, Medical Faculty, University of Bonn, DE-53127 Bonn, Germany.",
+          "Department of Molecular Machines and Signaling, Max Planck Institute of Biochemistry, D-82152 Martinsried, Germany.",
+          "Department of Molecular and Cell Biology, University of California at Berkeley, Berkeley, CA 94720, USA; Howard Hughes Medical Institute, University of California at Berkeley, Berkeley, CA 94720, USA; California Institute for Quantitative Biosciences (QB3), University of California at Berkeley, Berkeley, CA 94720-3220, USA.",
+          "Molecular Structure of Cell Signalling Laboratory, the Francis Crick Institute, London NW1 1AT, UK.",
+          "School of Biomedical Sciences, Faculty of Health, Medicine and Behavioural Sciences, The University of Queensland, Brisbane, QLD 4072, Australia; Institute for Molecular Bioscience, The University of Queensland, Brisbane, QLD 4072, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "School of Life and Environmental Sciences, University of Sydney, Sydney, NSW 2006, Australia.",
+          "Biochemistry Department, School of Biomedical Sciences, University of Otago, Dunedin 9054, New Zealand.",
+          "Structural Biology Program, Sloan Kettering Institute, Memorial Sloan Kettering Cancer Center, New York, NY 10065, USA; Howard Hughes Medical Institute, Memorial Sloan Kettering Cancer Center, New York, NY 10065, USA.",
+          "Division of Molecular, Cellular and Developmental Biology, School of Life Sciences, University of Dundee, Dow Street, Dundee DD1 5EH, UK.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia.",
+          "Center for Molecular Biology of Heidelberg University (ZMBH), DKFZ-ZMBH-Alliance, 69120 Heidelberg, Germany; Department of Molecular Medicine, the Herbert Wertheim UF Scripps Institute for Biomedical Innovation & Technology, Jupiter, FL 33458, USA.",
+          "Department of Biochemistry and Molecular Pharmacology, New York University Grossman School of Medicine, New York, NY 10016, USA; Laura and Isaac Perlmutter Cancer Center, New York University Grossman School of Medicine, New York, NY 10016, USA; Howard Hughes Medical Institute, New York University Grossman School of Medicine, New York, NY 10016, USA.",
+          "Institute for Genetics, University of Cologne, 50674 Cologne, Germany.",
+          "Walter and Eliza Hall Institute of Medical Research, Parkville, Melbourne, VIC 3052, Australia; Department of Medical Biology, University of Melbourne, Parkville, Melbourne, VIC 3010, Australia. Electronic address: feltham.r@wehi.edu.au."
+        ],
+        "doi": "10.1016/j.cell.2026.01.029",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41864206/",
+        "category": null,
+        "date": "2026-03-20",
+        "mesh_terms": [],
+        "source_id": "41864206",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "E3-ome는 약물 타겟 식별과 질병 메커니즘 이해에 활용 가능합니다. 생물정보학적 분석을 통한 E3 리가제의 체계적 분류는 의약품 개발에 기초 자원으로 작용합니다.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "인간 유전체에 존재하는 E3 유비퀴틴 리가제(E3)의 전체적인 지도를 정의하고 첳统적으로 분석하기 위해 E3-ome라는 데이터베이스를 구축하였다(ubiquitin ligase). 이는 실험적 데이터, 생물정보학, 기존 연구를 통합하여 고신뢰도 E3를 식별하는 데 목적이 있다.",
+        "method": "E3 분류를 표준화하여 일관된 어노테이션과 비교 분석을 위한 통합 프레임워크를 구축하였다(classification). E3-ome을 통해 새로운 도메인, 모티프, 후보 E3 및 관계를 발견하고, 조직 및 세포 유형별 공간적·생리적 조직을 매핑하였다.",
+        "result": "전체적으로 672개의 고신뢰도 E3를 식별하며, 맥락 의존적 E3의 존재를 밝혀냈다(context-dependent). 유전 분석을 통해 다양한 질병과 연관된 변이를 규명하였다(disease-associated variants).",
+        "significance": "인간 E3 리가제의 고해상도 지도를 제공하여 기전 규명 및 치료 목표로의 활용을 가능하게 한다(mechanistic and therapeutic discovery). 이 자원은 생명과학 연구에 기초 자산으로 활용될 수 있다(foundational resource)."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-22T22:04:31.494314+00:00"
+}
