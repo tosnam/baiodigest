@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-24 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-24</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41867886/" target="_blank" rel="noopener noreferrer">CAP: Commutative algebra prediction of protein-nucleic acid binding affinities.</a></h3>
+    <p>Machine learning: science and technology</p>
+    <p>Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing, MI 48824, United States of America.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>단백질-핵산 결합 예측 기술로 약물 탐색 및 단백질 공학에 활용 가능합니다. 유전자 규모 분석을 통해 생명공학적 응용이 기대됩니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질-핵산 결합 친화도의 정확한 예측은 유전적 과정 해석에 필수적이나, 기존 방법은 정확도와 해석 가능성, 계산 효율성을 동시에 만족시키기 어려움(thermostability). 이에 본 연구는 새로운 접근법을 제안함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>CAP 프레임워크는 지속적 Stanley-Reisner 이론과 고급 시퀀스 임베딩을 결합(commutative algebra)하여 결합 친화도를 예측. 단백질은 트랜스포머 학습 임베딩으로, DNA/RNA는 k-mer 대수 임베딩으로 표현됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>CAP는 SVSBI 기준을 넘어서며, 새롭게 정리된 단백질-RNA 및 단백질-핵산 데이터셋에서도 합리적인 성능을 보임. 주요 시퀀스만으로도 다양한 단백질-핵산 쌍에 일반화 가능함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>3D 구조 데이터 없이 유전체 규모 분석 가능하며, 약물 발견과 단백질 공학의 가상 스크리닝 속도 향상에 기여함. 전처리 최소화로 대규모 데이터 처리에 유리함.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41868517/" target="_blank" rel="noopener noreferrer">Productive chaos and precision engineering: decoupling discovery from manufacturing to revolutionize plant-inspired therapeutics.</a></h3>
+    <p>Frontiers in plant science</p>
+    <p>Professor Wagner A. Vendrame&#39;s Laboratory, Horticultural Sciences Department, University of Florida, Institute of Food and Agricultural Sciences, Gainesville, FL, United States.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식품/의약 산업에서 식물 유래 신약 생산을 위한 대규모 발효 기술 개발을 제안함. 생물학적 불안정성을 해결하기 위한 대사 경로 최적화 전략을 다룸.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>약물 산업은 식물 유래 자연산물을 여전히 의존하고 있지만, 식물 시스템의 본질적 생물학적 불안정성으로 인해 공급이 지속적으로 위협받고 있다(thermostability). 수십 년간 식물 세포 문화를 일관된 산업 발효 형식에 강제하려는 시도는, 에피젠트 재프로그래밍, 소마클론 변이, 전사적 노이즈, 시스템 대사 고정성 등으로 인해 실패했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>발견과 생산을 분리하는 전략적 접근을 제안하며, 식물 세포의 유전체 및 에피젠토메이크 플라스틱성을 의도적으로 유도해 화학 다양성을 생성한다(productive chaos). 단일세포 분석 다중유체학 및 공간 대사체학을 통해 희귀한 우수 생산자 상태를 식별하고, 인공지능, 분자 네트워킹, 구조 예측을 활용해 새로운 생물활성 후보물질을 특성화한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>이후 생합성 경로를 정의된 이종 미생물 호스트로 이전해, 공정 최적화 기술(공동인자 균형, 동적 경로 제어, 세포소기관 분리, 사이토크롬 P450-리덕타스 스토이키오메트리)을 통해 안정적 고생산량 제조를 달성한다. 고속 발견, AI 기반 균주 설계, 기술경제 분석, 규제 품질 설계 원칙을 통합해 생물학적 복잡성과 산업적 엄격성 간 긴장 관계를 해결한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 프레임워크는 자연산물 공급 경제학을 추출 중심의 저CAPEX/고OPEX 함정에서 발효 중심의 고CAPEX/저OPEX 확장성으로 전환시켜, 과학적 기반, 상업적 가능성, 규제적 접근성을 갖춘 식물계의 전신 치료 잠재력을 해방한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41867599/" target="_blank" rel="noopener noreferrer">Expression, Solubilization, and Refolding Recovery of a Novel l‑Asparaginase-Arginase 1 Chimera from E. coli Inclusion Bodies.</a></h3>
+    <p>ACS omega</p>
+    <p>Departamento de Tecnologia Bioquímica-Farmacêutica, Faculdade de Ciências Farmacêuticas, Universidade de São Paulo, São Paulo 05508-000, Brazil.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 치료용 효소 생산을 위한 단백질 엔지니어링 기법을 다루고 있으며, 산업적 효소 생산에 활용 가능성이 높습니다. 비정상적인 포함체에서의 효소 복구 기법은 제약 산업에서 중요한 기술입니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>신규 이중 기능 효소(l-아스파라гин아제-아르기나제 1 카이마라) 개발을 위한 준비적 발현 및 순수화 과정이 필요하다. 이 효소는 아미노산 고갈 치료에 활용될 수 있는 이중 기능성을 가진다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>구아inea pig-인간 l-아스파라гин아제 하이브리드(63N-hC)와 인간 아르기나제 1을 단단한 나선형 링커로 결합해 카이마라를 제작했다. Escherichia coli BL21-(DE3)에서 코돈 최적화된 유전자를 발현하고, 비전형적 포함체(IBs)를 통해 활성도를 측정했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>8 M 우레아로 용해한 후 크로마토그래피와 역농축 재구립을 통해 활성도가 0.22 ± 0.05 U mL-1 및 4.66 ± 0.9 U L-1로 회복되었다. 비전형적 IBs는 치료용 효소 생산에 유용한 저장소로 입증되었다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>복합적 카이마라의 발현 최적화 및 기능 회복을 위한 확장 가능한 워크플로우가 제시되었다. 비전형적 IBs의 구조적 호환성과 이중 기능성은 약물 개발에 중요한 시사점을 제공한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.80
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

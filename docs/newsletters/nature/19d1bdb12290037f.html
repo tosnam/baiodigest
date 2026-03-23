@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1774288471000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=6cd3cac6ba&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">We’ve just had the 11 hottest years on record</a></h4>
+      <p>세계기상기구(WMO) 보고서에 따르면 2015~2025년은 기록상 가장 따뜻한 기간으로, 지구 에너지 불균형 측정을 통해 기후 변화의 심각성을 강조했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=34c8de4127&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Lab-grown oesophagus helps pigs to swallow</a></h4>
+      <p>줄기세포를 이용해 만든 생체공학적 식도가 돼지의 삼킬 능력을 회복하는 실험에 성공했으며, 이 기술이 인간의 질병 치료에 응용될 가능성이 제기되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=840096e473&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">‘Nuclear clocks’ tick closer to reality</a></h4>
+      <p>핵시계 기술이 가까워지며, 방사성 동위 원소인 토륨-229의 에너지 전환을 측정해 정밀도가 가장 높은 시계 개발이 기대됩니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=ef4b0725ec&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Don’t believe the hype of ‘AI intelligence’</a></h4>
+      <p>인공지능의 지능과 창의성에 대한 과장된 기대는 실질적 능력과 차이가 크며, 이는 마법사의 손놀림처럼 가짜 현상일 수 있다는 분석이 제시되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=2ad7d699df&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">How to measure a good life</a></h4>
+      <p>GDP는 현대 경제 구조를 반영하지 못해, 나무의 탄소 흡수나 산소 방출 같은 자연적 기여도 계산하지 않아 개선 필요성이 제기되었습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
