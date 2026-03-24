@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1774361499000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjMxZDdlYmU2LWYzNjMtNGE0MS1iMmJiLTFiZTUzMDlhZDA2OCIsImRla1ZlcnNpb24iOjEsIml2IjoiTHcwNmtmZUp5bGhTVjNwbE4yT05kUT09IiwiY2lwaGVyVGV4dCI6InRLbHVmT2YrMm5ZQ1krMURCdk82TkViYmIrNXVyelFpTlV0ZE1FMHVtMnVmVEgzTHBnL2MyYThWdkl3V3NESk0yNUdNZjZEWlR1dHNUQ3NhZExkS1dsakhBR3lUNWN1ZEx3MDZrZmVKeWxoU1YzcGxOMk9OZFE9PSIsImF1dGhUYWciOiJiRXdyR25TM1NscFl4d0JzaytYTG5RPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">the hormone, GDF15, may signal to the body it’s time to cut back</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjcxMjhkMzM3LTQ0MTYtNDZjMC1hZmUxLTRiYmU3N2E2YzU4NyIsImRla1ZlcnNpb24iOjEsIml2IjoiTHZVY3B2QUxMUG1vZ1NMMlR0V2pFdz09IiwiY2lwaGVyVGV4dCI6Ijh3OGVQS0s5UzFVQnlyeDBDOE1BaHZOL3hKejlLdkxza0VqTXVlbnVQVmNSUk81OW5RKzZEeUZJbDlXejRtNUV5dTMySGp6aVBRcXNkZlFVMDY3RGVCRitRRDhFY0pXNEx2VWNwdkFMTFBtb2dTTDJUdFdqRXc9PSIsImF1dGhUYWciOiJySFgwRk5PdXczZ1Jma0EvQkhDVnVBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">their existence was always precarious</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjY1ZTBhZWRkLTVkYTEtNGE1My04NWY0LTM2ZjhjODNlZGZmMCIsImRla1ZlcnNpb24iOjEsIml2IjoiSXhnWlJ4WE4yZGptNExWZmpvcWVNdz09IiwiY2lwaGVyVGV4dCI6Ilp1M0JJeVQ0SUt2S0FiTTVKQlRCdEttVTczQjN4K3h4NWRxVXo1OVc5NkNNeExtQzc0T2Jnemc4UlI1cXNsWm8vR0pHanhuUm52dGNzVktuU1U4Ym5QZVFraFlMT2dkc0l4Z1pSeFhOMmRqbTRMVmZqb3FlTXc9PSIsImF1dGhUYWciOiJYTEZTcDBsUEc1ejNrSklXQ3pvSGJBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">hit women researchers, especially those early in their career, harder than male investigators</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImY0NzNjOGY2LTAyODgtNDk3Yy1hZTU2LTliMjUzZTljMDkzYyIsImRla1ZlcnNpb24iOjEsIml2IjoiVDNWWFljc2VtZXIydU9vUUlXSElzQT09IiwiY2lwaGVyVGV4dCI6InRPRnVUMXdoWS9HSXRBbXZJaWNnanV5OUhJbTBEL2NENkNOaDNvZlBFM1BmRU9NcU8wb1hnNlJuK2kzQlEzNEg3aG5ubTVhVGxvYjdla0h5b0hXb3oyRyt3aTdPdnVmVFQzVlhZY3NlbWVyMnVPb1FJV0hJc0E9PSIsImF1dGhUYWciOiIrM3BCOHFCMXFNOWh2c0l1enI3bjB3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">this little spider’s fungal costume</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

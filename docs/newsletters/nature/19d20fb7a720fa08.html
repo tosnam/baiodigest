@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1774374655000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d1a80b2fb7&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Radiologists can’t see through AI X-rays</a></h4>
+      <p>AI로 생성된 X-ray 영상과 실제 영상의 구분이 어려워진다. 17명의 방사선학자가 참여한 실험에서 41%만이 기술적 품질 문제를 인지했다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=45763089f4&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Fetus tells story of Neanderthal decline</a></h4>
+      <p>17개의 태아 뼈 조각을 포함한 뉴아니타르 유해의 DNA 분석에서 6만5천 년 전 유전자 고립이 종의 멸종 원인일 수 있음을 밝혀냈다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=74bb4188c5&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The beaver expert behind Hoppers</a></h4>
+      <p>영화 &#39;호퍼스&#39;의 과학 조언자인 이미 페이어 페어가 수학적 오류를 지적하며 애니메이션의 과학적 정확성을 보장했다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=381b220473&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The eroding human–animal divide</a></h4>
+      <p>인간과 동물의 경계가 모호해지고 있는 현상을 탐구한 책 &#39;Animate&#39;는 영혼의 개념이 인간의 불안을 완화한 역사를 다룬다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=1cea792c33&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">How to stop drowning in data sets</a></h4>
+      <p>데이터의 양과 다양성이 급증하면서 저장 공간 부족 문제를 해결하기 위한 전략이 제시되었다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=9158288cef&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The rise of ransomware</a></h4>
+      <p>1989년 HIV 연구 회의에서 시작된 랜섬웨어의 역사와 현대적인 사기 기술의 발전을 조명했다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

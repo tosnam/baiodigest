@@ -1,0 +1,138 @@
+{
+  "date": "2026-03-25",
+  "entries": [
+    {
+      "paper": {
+        "title": "[Biomanufacturing driven by engineered organisms (2026)].",
+        "abstract": "In 2025, synthetic biology and biomanufacturing have demonstrated remarkable progress characterized by intelligent integration, systematic optimization, and diversified applications. Artificial intelligence has evolved from an auxiliary tool into a core driving force, deeply embedded throughout the entire pipeline from biomolecular design to fermentation process control, catalyzing a fundamental shift from \"experience-driven\" to \"data- and model-driven\" research paradigms. Breakthroughs in enzyme engineering and protein design continue to expand the functional boundaries of biocatalysis, while cell factory construction is advancing from single-target modification toward global systematic optimization. The synergistic development of traditional and emerging chassis hosts enables efficient biosynthesis of high-value chemicals and novel proteins. Environmental bioremediation is transitioning from functional strain engineering to the rational design of synthetic microbial consortia, marking a new era of predictable and controllable remediation strategies. Meanwhile, advances in interdisciplinary frontiers, such as artificial cells, are continuously expanding the horizons of biomanufacturing. Looking forward, the deep integration of artificial intelligence with automation platforms, a deeper understanding of biological complexity, and industrial applications aligned with carbon neutrality goals and human health demands will define the future trajectory of the field. Synthetic biomanufacturing is evolving from \"understanding life by creating life and creating life for applications\" toward \"creating life for good and creating life for the future\", offering indispensable solutions to address global challenges in resources, environment, and health.",
+        "authors": [
+          "Zhu H",
+          "Li Y"
+        ],
+        "affiliations": [
+          "Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "State Development and Investment Group Co., Ltd., Beijing 100034, China."
+        ],
+        "doi": "10.13345/j.cjb.260153",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Sheng wu gong cheng xue bao = Chinese journal of biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41873064/",
+        "category": "synthetic biology",
+        "date": "2026-03-25",
+        "mesh_terms": [
+          "Synthetic Biology",
+          "Artificial Intelligence",
+          "Biodegradation, Environmental",
+          "Biotechnology",
+          "Metabolic Engineering",
+          "Protein Engineering",
+          "Artificial Cells"
+        ],
+        "source_id": "41873064",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI",
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "이 논문은 효소 공학과 단백질 설계를 통해 식품, 화학, 의약 산업에 활용 가능한 생물 제조 기술을 다루고 있습니다. AI 통합을 통한 생물 분자 설계 및 공정 최적화는 산업적 응용을 위한 핵심 기술로 평가됩니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI",
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "합성생물학과 생물제조가 2025년에 지능적 통합과 체계적 최적화를 통해 급속히 발전하고 있다. 인공지능은 데이터 및 모델 기반 연구 패러다임으로 전환하는 핵심 동력으로 자리잡았다.",
+        "method": "생물분자 설계부터 발효 공정 제어까지 인공지능이 통합되어 있으며, 효소 공학과 단백질 설계, 세포 공장 최적화가 주요 기법으로 활용되고 있다. 전통적 및 혁신적 chassis hosts의 상호작용도 핵심 전략이다.",
+        "result": "고부가 가치 화학물질과 신규 단백질의 효율적 합성, 환경 정화에서의 합성 미생물 컨소시엄 설계로 전환, 인공세포 등 다학제적 기술의 경계 확장이 성과로 나타났다.",
+        "significance": "앞으로 인공지능과 자동화 플랫폼의 깊은 통합, 탄소중립 목표와 인간 건강 니즈에 맞춘 산업 응용이 미래 방향을 이끈다. 생물제조는 자원·환경·건강 문제 해결에 필수적인 솔루션으로 진화하고 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Deep learning-guided dual-fitness evolution of T7 RNA polymerase for enhanced stability and activity.",
+        "abstract": "In protein engineering, simultaneously improving multiple fitness attributes is a critical yet challenging goal, largely due to the vastness of sequence space, the multifaceted interplay among different traits, and the complexity of non-linear mutational effects (epistasis). To address this, we developed a data-driven evolutionary strategy that couples in silico deep learning with a wet-lab multi-objective selection workflow. By employing independent model fine-tuning for distinct traits, our approach facilitates navigating the fitness landscape to identify beneficial mutation combinations. We applied this strategy to T7 RNA polymerase (T7 RNAP), performing dual-fitness evolution to simultaneously enhance thermostability and activity at elevated temperatures. After five rounds of iterative evolution, we obtained T7 RNAP mutants exhibiting a melting temperature (Tm) increase of >10°C, a 60-fold enhancement in high-temperature activity, and a 70% reduction in by-product content. Validation in cell transfection demonstrated their potential for producing high-quality mRNA for industrial applications.",
+        "authors": [
+          "Jiang F",
+          "Kang L",
+          "Li M",
+          "Zhong B",
+          "Chen X",
+          "Wu B",
+          "Li M",
+          "Yu Y",
+          "Hong L"
+        ],
+        "affiliations": [
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 201203, China.",
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 201203, China.",
+          "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 201203, China.",
+          "School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai, 200240, China.",
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 201203, China.",
+          "School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai, 200240, China.",
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 201203, China.",
+          "Institute of Natural Sciences & School of Physics and Astronomy, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Zhangjiang Institute for Advanced Study, Shanghai Jiao Tong University, Shanghai 201203, China.",
+          "Shanghai National Centre for Applied Mathematics (SJTU Center), MOE-LSC, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Shanghai Artificial Intelligence Laboratory, Shanghai 200232, China."
+        ],
+        "doi": "10.1093/nar/gkag259",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nucleic acids research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41873756/",
+        "category": "dna-directed rna polymerases",
+        "date": "2026-03-19",
+        "mesh_terms": [
+          "DNA-Directed RNA Polymerases",
+          "Deep Learning",
+          "Viral Proteins",
+          "Mutation",
+          "Directed Molecular Evolution",
+          "Enzyme Stability",
+          "Protein Engineering",
+          "Humans",
+          "RNA, Messenger"
+        ],
+        "source_id": "41873756",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "열안정성 및 고온 활성 향상은 산업용 효소 개발에 적합합니다. mRNA 생산에의 적용 가능성은 의약품 분야에 가치가 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질 공학에서 다중 성능 특성(예: 열안정성(thermostability), 활성(activity))을 동시에 개선하는 것은 시퀀스 공간의 방대함과 특성 간 복잡한 상호작용, 비선형 돌연변이 효과(에피스타시스(epistasis))로 인해 어려움을 겪고 있다.",
+        "method": "데이터 기반 진화 전략을 개발하여 인공지능(in silico deep learning)과 실험실(wet-lab) 다목적 선택 프로세스를 결합하였다. 독립적인 모델 미세 조정을 통해 서로 다른 성능 특성에 맞춤화된 돌연변이 조합을 탐색하였다.",
+        "result": "T7 RNA polymerase(T7 RNAP)에 적용한 결과, 5차 반복 진화 후 열안정성이 10°C 이상 증가하고 고온 활성이 60배 향상되며 부산물량이 70% 감소한 변이체를 얻었다. 세포 전염시험에서 고품질 mRNA 생산 잠재력이 입증되었다.",
+        "significance": "산업용 mRNA 생산에 활용 가능한 고효율 T7 RNAP 변이체 개발로 생명공학 분야의 생산성 향상에 기여할 수 있는 기술적 혁신을 제시하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-24T22:20:05.317575+00:00"
+}
