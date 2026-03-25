@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1774447858000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImUzYzBlOWRmLTlkZjYtNGQyMS05ZDgzLWE5OWZjYWJkNDU3OCIsImRla1ZlcnNpb24iOjEsIml2IjoiYkNkc2Y1aTlpNFB3WDRZOTM2WlpmQT09IiwiY2lwaGVyVGV4dCI6InllQWxHNFNzSnVaWGNIWDF6NmNpRWpwTjhaUjFzbjBSb0pUNnRCamQxREtORU9ReXlVOUsreHRpalB0WEpLMFdoUVU3c2s0THE5OEtHVW1iY0ZSYStsYkdqd0NocHdiUWJDZHNmNWk5aTRQd1g0WTkzNlpaZkE9PSIsImF1dGhUYWciOiJDaGxKbTNCVVd2cFd4bzhBb2FjRzBBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">too often, not very much</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImI2MWFmN2Y2LWQ1YzctNGQ2Ni1iN2EwLTJlMzJiZjExY2Q3NCIsImRla1ZlcnNpb24iOjEsIml2IjoiRXU2OThEOWlKRWF0TnVrb2hEbmhSQT09IiwiY2lwaGVyVGV4dCI6IlFIUWY1MHVPY0Ixa2owU3EwbXlxa1M2YVQrU0hWK0ZzL3ZkMjlwM3FYVDFpVkVBaytuOVBHOFFWcXg4eXV1OEhxc2Q2aTNVZVZzZnZCOGJod3JFNGU2amJMTDhQMTZ5RkV1Njk4RDlpSkVhdE51a29oRG5oUkE9PSIsImF1dGhUYWciOiI3d2ZHNGNLeE9IdW8yeXkvRDllc2hRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">They have become numb to the pain of the cold, produce antifreeze proteins to prevent ice from forming inside their cells, and generate small bursts of heat to stay above freezing</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImJlYWRhNzE1LTRjOTUtNDQ5Ni1iNzM0LTMxMWEyMjBhNmE5MSIsImRla1ZlcnNpb24iOjEsIml2IjoieExBV1U4TlFzYUtDTXU2YTBGRUQ4Zz09IiwiY2lwaGVyVGV4dCI6IldFRXhPUjZPWS9EVHppRHM1ZHhvNlZTVGpReVZLc0xacUp4RnFkeTJMOWlwUVJvMDE1cHNxUk9rRytFZ2ErSXp4RjNQRitubURsV3JSNnpYcnZNcDRIVVg0S09lQm0vL3hMQVdVOE5Rc2FLQ011NmEwRkVEOGc9PSIsImF1dGhUYWciOiJxMGVzMTY3ektlQjFGK0Nqbmdadi93PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">It’s one of the most fundamental questions in Earth science</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjJjZDFlNDA1LWU5ODMtNDczNC04OTY0LTlmYzljNGVjZjllYyIsImRla1ZlcnNpb24iOjEsIml2IjoiY0lyYmVvQkxMcWUrRlZJV04vU1huQT09IiwiY2lwaGVyVGV4dCI6ImxBK0RkU1BKSGV3dUh6QVlaZ2NpdVdsemdtU2FTU0srWGd6bmJwYU5aQ3FHQjVoNlFJTVp6aFhGeHFuSS9LRmxyTmxrR0Rrb1FCZWdQQnZiRGZYd1FnaklIR1VMdGVReGNJcmJlb0JMTHFlK0ZWSVdOL1NYbkE9PSIsImF1dGhUYWciOiJvRHdiMnczMThFSUl5QnhsQzdYa01RPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">preprint server arXiv</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjNhODMzMmMxLTgzYjktNGEyOS04MzEwLWRkNmVlMDI3ZTFhMCIsImRla1ZlcnNpb24iOjEsIml2IjoicTBWNDFGUEhWbDkwdGp6QmJabDFkdz09IiwiY2lwaGVyVGV4dCI6IjFwZVp6aWxUMi9ZY2Q0dWZzamZsMFErdGpZVWRXLytXaENOaWovSnI5Y0paS2NFaUhMOHYyMjcweEZxNXRxcGRDU0ZxOVllWEVNNVdsUzRiT1FCdWM3T1o0QjQvSDU1V3EwVjQxRlBIVmw5MHRqekJiWmwxZHc9PSIsImF1dGhUYWciOiJWcFV1R3prQWJuT3ptZUFlUHgrZVZnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">succeeded in ‘reviving’ dead bacteria by inserting another’s genome into them</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

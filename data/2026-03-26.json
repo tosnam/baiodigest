@@ -1,0 +1,180 @@
+{
+  "date": "2026-03-26",
+  "entries": [
+    {
+      "paper": {
+        "title": "ProteinMCP: An agentic AI framework for autonomous protein engineering.",
+        "abstract": "Computational protein design is often constrained by slow, complex, inaccessible, and highly sophisticated and expert-dependent workflows that hinder its transferrability and generalization power for broader applications. We present ProteinMCP, an agentic AI framework designed to accelerate and democratize protein engineering. ProteinMCP automates end-to-end scientific tasks, delivering dramatic gains in efficiency; for instance, a comprehensive protein fitness modeling workflow was completed in just 11 min. This performance is achieved by an AI agent that intelligently orchestrates a unified ecosystem of 38 specialized tools, made accessible through a model-context-protocol (MCP). A cornerstone of the framework is an automated pipeline that converts existing software into MCP-compliant servers, ensuring the platform is both powerful and perpetually extensible. We further demonstrate its capabilities through the successful autonomous design and selection of high-affinity de novo binders and therapeutic nanobodies. By removing technical barriers, ProteinMCP has the potential to shorten the design-build-test cycle and make advanced computational protein design accessible to the broader scientific community.",
+        "authors": [
+          "Xu X",
+          "Feng C",
+          "Zha C",
+          "He W",
+          "He M",
+          "Xiao B",
+          "Gao X"
+        ],
+        "affiliations": [
+          "Computer Science Program, Computer, Electrical and Mathematical Science and Engineering (CEMSE), King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence for Smart Health, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence on GenAI, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Computer Science Program, Computer, Electrical and Mathematical Science and Engineering (CEMSE), King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence for Smart Health, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence on GenAI, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "College of Medical Information and Engineering, Ningxia Medical University, Yinchuan, China.",
+          "Computer Science Program, Computer, Electrical and Mathematical Science and Engineering (CEMSE), King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence for Smart Health, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence on GenAI, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Computer Science Program, Computer, Electrical and Mathematical Science and Engineering (CEMSE), King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence for Smart Health, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence on GenAI, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Bestzyme Biotech Inc., Piscataway, New Jersey, USA.",
+          "Bestzyme Biotech Inc., Piscataway, New Jersey, USA.",
+          "Computer Science Program, Computer, Electrical and Mathematical Science and Engineering (CEMSE), King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence for Smart Health, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.",
+          "Center of Excellence on GenAI, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia."
+        ],
+        "doi": "10.1002/pro.70547",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Protein science : a publication of the Protein Society",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41877581/",
+        "category": "protein engineering",
+        "date": "2026-04-01",
+        "mesh_terms": [
+          "Protein Engineering",
+          "Software",
+          "Proteins",
+          "Artificial Intelligence"
+        ],
+        "source_id": "41877581",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "고유한 AI 프레임워크가 항체 및 치료용 나노바디 설계에 활용 가능하며, 의약품 개발에 직접적으로 기여할 수 있는 기술입니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "컴퓨터 기반 단백질 설계는 느리고 복잡한, 전문가 의존적인 워크플로우로 인해 일반화 및 이전 가능성에 제한이 있었음(thermostability). 이에 따라 보다 접근성 있는 솔루션이 필요했음.",
+        "method": "ProteinMCP는 38개의 전문 도구를 통합한 AI 에이전트를 기반으로 한 프레임워크로, 모델-맥락-프로토콜(MCP) 시스템을 통해 자동화된 엔드-to-엔드 과제를 수행함. 기존 소프트웨어를 MCP 호환 서버로 변환하는 자동화 파이프라인을 포함함.",
+        "result": "전체 단백질 적합도 모델링 워크플로우를 11분만에 완료했으며, 고 친화성 de novo 바인더 및 치료용 나노바디 설계에 성공함. 효율성과 자동화 수준이 기존 방법보다 우수함.",
+        "significance": "기술 장벽을 제거해 고급 계산 단백질 설계를 보다 광범위한 과학 커뮤니티에 제공함. 설계-구축-테스트 사이클을 단축시켜 연구 생산성을 크게 향상시킬 잠재력을 가짐."
+      }
+    },
+    {
+      "paper": {
+        "title": "Protein structure prediction powered by artificial intelligence: from biochemical foundations to practical applications.",
+        "abstract": "The three-dimensional structure of a protein underpins its biological function, making structure determination and prediction central challenges in structural biology. Although experimental techniques such as X-ray crystallography, nuclear magnetic resonance (NMR), and cryo-electron microscopy (cryo-EM) can yield high-resolution structures, they are limited by low throughput, high cost, and demanding sample preparation. Likewise, traditional computational methods often perform poorly in the absence of homologous templates or under complex folding dynamics. Recent advances in deep learning and large-scale protein language models have transformed protein structure prediction. Models such as AlphaFold3 and RoseTTAFold achieve near-experimental accuracy by integrating evolutionary information, geometric constraints, and end-to-end neural architectures, while single-sequence approaches such as ESMFold offer substantial gains in speed and scalability. This review summarizes the biochemical foundations of protein folding, recent AI-driven methodological advances, and representative applications in drug discovery, enzyme engineering, and disease research, and discusses current challenges and future directions.",
+        "authors": [
+          "Yin T",
+          "Chen Y",
+          "Wang Y",
+          "Su H",
+          "Duan C",
+          "Liu J"
+        ],
+        "affiliations": [
+          "Department of Health Technology and Informatics, The Hong Kong Polytechnic University, Hong Kong SAR, China.",
+          "Zonglian College, Xi'an Jiaotong University, Xi'an, Shaanxi, China.",
+          "College of Optoelectronic Engineering, Chongqing University, Chongqing, China.",
+          "West China Hospital, Sichuan University, Chengdu, Sichuan, China.",
+          "School of Mechanical Engineering, Xi'an Jiaotong University, Xi'an, Shaanxi, China.",
+          "College of Engineering and Applied Science, University of Cincinnati, Cincinnati, OH, United States."
+        ],
+        "doi": "10.3389/fmolb.2026.1767821",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Frontiers in molecular biosciences",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41878008/",
+        "category": null,
+        "date": "2026-01-01",
+        "mesh_terms": [],
+        "source_id": "41878008",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "AI 기반 단백질 구조 예측 기술은 효소 공학 및 약물 개발에 직접적 활용 가능성을 제시합니다. 이 기술은 단백질 기능 최적화와 신약 타겟 발굴에 기여할 수 있는 잠재력을 가집니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질의 3차원 구조는 생물학적 기능의 기초이므로 구조 결정과 예측이 구조생물학의 핵심 과제이다. 실험 기법(X-ray 결정학, NMR, cryo-EM)은 고해상도 구조를 제공하지만 처리 속도와 비용, 샘플 준비의 복잡성으로 제한된다.",
+        "method": "심층학습과 대규모 단백질 언어 모델의 발전이 단백질 구조 예측을 혁신하였다. AlphaFold3, RoseTTAFold는 진화적 정보와 기하학적 제약을 통합하여 실험적 정확도에 근접한 성능을 보이며, ESMFold는 단일 시퀀스 접근법으로 속도와 확장성을 높였다.",
+        "result": "AI 기반 모델은 단백질 접힘의 생화학적 기초를 이해하고, 약물 개발, 효소 공학, 질병 연구 등에 실용화되었다. 그러나 복잡한 접힘 동역학이나 동질 템플릿 부족 시 전통적 방법의 한계를 여전히 보유하고 있다.",
+        "significance": "이 기술은 단백질 설계와 기능 최적화에 혁신적 기회를 제공하지만, 계산 효율성과 생물학적 복잡성 해결을 위한 추가 연구가 필요하다. 미래 방향으로는 다학제적 접근과 데이터 공유를 통한 기술 발전이 강조된다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Enzyme-constrained genome-scale model of Yarrowia lipolytica predicts growth-phase specific metabolic engineering targets.",
+        "abstract": "The oleaginous yeast Yarrowia lipolytica has been gaining increasing importance as an industrial biotech platform, supported by several available metabolic engineering tools. Genome-scale models (GEMs) are relevant to the iterative improvement of this yeast, and their predictive ability is enhanced by enzymatic activity constraints (ecGEMs). Although the newest tools for ecGEM reconstruction use deep learning to expand the coverage of these constraints, this approach has not yet been applied to Y. lipolytica models. This paper describes the reconstruction of an ecGEM of Y. lipolytica (eciYali5-GEM) and its application in predicting metabolic engineering targets for enhanced lipid and carotenoid production, respectively, in this yeast. To achieve this, we constrained a manually curated Y. lipolytica model with physiological flux and mass-spectrometry proteomics data collected from distinct growth phases of two engineered strains (producing lipids and carotenoids, respectively) and their parental strain. We found that the enzymatic constraints enable the prediction of growth-phase-specific metabolic engineering targets, a feature not displayed by regular GEMs. Combining these targets with other ecGEM-based insights, we propose two strategies for further metabolic engineering, including the use of inducible promoters for precise, growth-phase-specific expression of targets such as phytoene dehydrogenase for carotenoid production. These targets included genes previously validated elsewhere, as well as novel genes awaiting experimental validation. This model, which is publicly available, can be similarly adapted and used by different metabolic engineering efforts, making it a versatile tool for the development of Y. lipolytica as a microbial cell factory. KEY POINTS: • eciYali5-GEM reconstruction used in silico and in vitro proteomics data. • Enzyme constraints enriched Y. lipolytica ecGEM predictions. • eciYali5-GEM improves metabolic engineering rational design.",
+        "authors": [
+          "De Biaggi JS",
+          "Park YK",
+          "Kerkhoven EJ",
+          "Ledesma-Amaro R",
+          "Lahtvee PJ"
+        ],
+        "affiliations": [
+          "Department of Chemistry and Biotechnology, Tallinn University of Technology, Tallinn, Estonia.",
+          "Micalis Institute, Université Paris-Saclay, INRAE, AgroParisTech, Jouy-en-Josas, France.",
+          "Department of Bioengineering and Imperial College Centre for Synthetic Biology, Imperial College London, London, UK.",
+          "Department of Biology and Biological Engineering, Chalmers University of Technology, Gothenburg, Sweden.",
+          "Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Lyngby, Denmark.",
+          "Department of Bioengineering and Imperial College Centre for Synthetic Biology, Imperial College London, London, UK.",
+          "Bezos Centre for Sustainable Protein, Imperial College London, London, UK.",
+          "UKRI Mission Hub On Microbial Food, Imperial College London, London, UK.",
+          "Department of Chemistry and Biotechnology, Tallinn University of Technology, Tallinn, Estonia. lahtvee@taltech.ee."
+        ],
+        "doi": "10.1007/s00253-026-13791-4",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Applied microbiology and biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41876849/",
+        "category": null,
+        "date": "2026-03-24",
+        "mesh_terms": [],
+        "source_id": "41876849",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "이 논문은 Yarrowia lipolytica를 이용한 지방 및 캐로티노이드 생산을 위한 대사 공학 목표를 예측하는 모델을 제시합니다. 식품 및 화학 산업에서 활용 가능한 대사 경로 개선 전략을 제공합니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)을 가진 유당분해 효소를 가진 Yarrowia lipolytica는 산업용 생물공학 플랫폼으로 주목받고 있다. 기존 대사 공학 도구와 결합해 다양한 대사산물 생산이 가능하다.",
+        "method": "eciYali5-GEM은 생리적 유량 및 질량 분석법 프로테오믹스 데이터를 기반으로 수작업으로 정제된 유전자 조합 모델에 제약을 가해 재구성하였다. 두 개의 공학 변형 균주(지방산 및 캐로티노이드 생산)와 부모균주를 대상으로 진행하였다.",
+        "result": "효소 제약은 성장단계에 따른 대사 공학 목표를 예측할 수 있는 기능을 제공하였다. 이는 일반 GEMs에서 나타나지 않는 특징이다. 기존 검증된 유전자와 신규 유전자 모두 포함된 타겟을 제시하였다.",
+        "significance": "eciYali5-GEM은 공개되어 다양한 대사 공학 연구에 활용 가능하며, 유전자 발현 조절을 위한 유도적 프로모터 사용 등 전략적 접근을 제안하였다. 이 모델은 Y. lipolytica의 미생물 공장 개발에 유용한 다용도 도구로 자리 잡고 있다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-25T22:20:30.498939+00:00"
+}

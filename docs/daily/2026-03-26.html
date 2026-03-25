@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-26 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-26</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41877581/" target="_blank" rel="noopener noreferrer">ProteinMCP: An agentic AI framework for autonomous protein engineering.</a></h3>
+    <p>Protein science : a publication of the Protein Society</p>
+    <p>Center of Excellence on GenAI, King Abdullah University of Science and Technology (KAUST), Thuwal, Kingdom of Saudi Arabia.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>고유한 AI 프레임워크가 항체 및 치료용 나노바디 설계에 활용 가능하며, 의약품 개발에 직접적으로 기여할 수 있는 기술입니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>컴퓨터 기반 단백질 설계는 느리고 복잡한, 전문가 의존적인 워크플로우로 인해 일반화 및 이전 가능성에 제한이 있었음(thermostability). 이에 따라 보다 접근성 있는 솔루션이 필요했음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>ProteinMCP는 38개의 전문 도구를 통합한 AI 에이전트를 기반으로 한 프레임워크로, 모델-맥락-프로토콜(MCP) 시스템을 통해 자동화된 엔드-to-엔드 과제를 수행함. 기존 소프트웨어를 MCP 호환 서버로 변환하는 자동화 파이프라인을 포함함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>전체 단백질 적합도 모델링 워크플로우를 11분만에 완료했으며, 고 친화성 de novo 바인더 및 치료용 나노바디 설계에 성공함. 효율성과 자동화 수준이 기존 방법보다 우수함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>기술 장벽을 제거해 고급 계산 단백질 설계를 보다 광범위한 과학 커뮤니티에 제공함. 설계-구축-테스트 사이클을 단축시켜 연구 생산성을 크게 향상시킬 잠재력을 가짐.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41878008/" target="_blank" rel="noopener noreferrer">Protein structure prediction powered by artificial intelligence: from biochemical foundations to practical applications.</a></h3>
+    <p>Frontiers in molecular biosciences</p>
+    <p>College of Engineering and Applied Science, University of Cincinnati, Cincinnati, OH, United States.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>AI 기반 단백질 구조 예측 기술은 효소 공학 및 약물 개발에 직접적 활용 가능성을 제시합니다. 이 기술은 단백질 기능 최적화와 신약 타겟 발굴에 기여할 수 있는 잠재력을 가집니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질의 3차원 구조는 생물학적 기능의 기초이므로 구조 결정과 예측이 구조생물학의 핵심 과제이다. 실험 기법(X-ray 결정학, NMR, cryo-EM)은 고해상도 구조를 제공하지만 처리 속도와 비용, 샘플 준비의 복잡성으로 제한된다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>심층학습과 대규모 단백질 언어 모델의 발전이 단백질 구조 예측을 혁신하였다. AlphaFold3, RoseTTAFold는 진화적 정보와 기하학적 제약을 통합하여 실험적 정확도에 근접한 성능을 보이며, ESMFold는 단일 시퀀스 접근법으로 속도와 확장성을 높였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>AI 기반 모델은 단백질 접힘의 생화학적 기초를 이해하고, 약물 개발, 효소 공학, 질병 연구 등에 실용화되었다. 그러나 복잡한 접힘 동역학이나 동질 템플릿 부족 시 전통적 방법의 한계를 여전히 보유하고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 기술은 단백질 설계와 기능 최적화에 혁신적 기회를 제공하지만, 계산 효율성과 생물학적 복잡성 해결을 위한 추가 연구가 필요하다. 미래 방향으로는 다학제적 접근과 데이터 공유를 통한 기술 발전이 강조된다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41876849/" target="_blank" rel="noopener noreferrer">Enzyme-constrained genome-scale model of Yarrowia lipolytica predicts growth-phase specific metabolic engineering targets.</a></h3>
+    <p>Applied microbiology and biotechnology</p>
+    <p>Department of Chemistry and Biotechnology, Tallinn University of Technology, Tallinn, Estonia. lahtvee@taltech.ee.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 Yarrowia lipolytica를 이용한 지방 및 캐로티노이드 생산을 위한 대사 공학 목표를 예측하는 모델을 제시합니다. 식품 및 화학 산업에서 활용 가능한 대사 경로 개선 전략을 제공합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>열안정성(thermostability)을 가진 유당분해 효소를 가진 Yarrowia lipolytica는 산업용 생물공학 플랫폼으로 주목받고 있다. 기존 대사 공학 도구와 결합해 다양한 대사산물 생산이 가능하다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>eciYali5-GEM은 생리적 유량 및 질량 분석법 프로테오믹스 데이터를 기반으로 수작업으로 정제된 유전자 조합 모델에 제약을 가해 재구성하였다. 두 개의 공학 변형 균주(지방산 및 캐로티노이드 생산)와 부모균주를 대상으로 진행하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>효소 제약은 성장단계에 따른 대사 공학 목표를 예측할 수 있는 기능을 제공하였다. 이는 일반 GEMs에서 나타나지 않는 특징이다. 기존 검증된 유전자와 신규 유전자 모두 포함된 타겟을 제시하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>eciYali5-GEM은 공개되어 다양한 대사 공학 연구에 활용 가능하며, 유전자 발현 조절을 위한 유도적 프로모터 사용 등 전략적 접근을 제안하였다. 이 모델은 Y. lipolytica의 미생물 공장 개발에 유용한 다용도 도구로 자리 잡고 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
