@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1774534417000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjRlZmRmZDBiLTI4ZmQtNGU3MC05NzFhLWNiMjdmZjgwZWI1NyIsImRla1ZlcnNpb24iOjEsIml2IjoiaFFuNVAyYnhiOWRQUERnbkdsekdXQT09IiwiY2lwaGVyVGV4dCI6IkRNbXpWVDQ0RFdZNFdxYUNpc2R6Nno3RnRuOXB2RjN2eHpEVVcydkIySlZSSmlQWXRweVVjOWFQRlBBOXVJZm05WFYzY1hmWUlKMHFtdUh6d1FadW96cjRPZUp2eTZHZjJJVUorVDltOFcvWFR6dzRKeHBjeGxnPSIsImF1dGhUYWciOiJtdUh6d1FadW96cjRPZUp2eTZHZjJBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">may stem in part from genes given them by so-called giant viruses</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImNlM2NlNjkxLTI5NmUtNGI4NS05OTRjLTI0YWQyN2QzMTRjZSIsImRla1ZlcnNpb24iOjEsIml2IjoiMFU2SlIvS1JVSENZWG16UW5zc2VvZz09IiwiY2lwaGVyVGV4dCI6Imp5OHhnS3JPTjlvLzNBUjdoUE11YkJ0UUlJcEdWTzcvTEc5dUZETm1PaC82aWtkVXVsc3BOKzd6akl4ZzYyTFpkcHlGUUJ0MnAwUnlwM084SkU3cXlxdFNSSTRSdXQ4MnhORk9pVWZ5a1ZCd21GNXMwSjdMSHFJPSIsImF1dGhUYWciOiJwM084SkU3cXlxdFNSSTRSdXQ4MnhBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">stitches the assorted Mpemba effects together</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImE2NzE3NmQ2LWI0YWMtNGUyMy1hYTczLWNkMDg3YTgyNzllZCIsImRla1ZlcnNpb24iOjEsIml2Ijoidm9vdmprTWJIbi9HdHJwMUgvYnkwZz09IiwiY2lwaGVyVGV4dCI6ImVDbk9mWU9VOTduc3ZMYWVObTBnV1pGT1JnaXo0SjY3SGtQWGJiUUF2dEllNmtZeUIreDVibFk5M25CT3BJa0tqUE1yUjBHMndwajJERldWZjA0Qng4ZFlTM1FoRFdNNFVMNktMNDVER3g1L3hyYTZkUi8yOHRJPSIsImF1dGhUYWciOiJERldWZjA0Qng4ZFlTM1FoRFdNNFVBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">dogs remain one of the greatest mysteries in archaeology</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjVkOGQzNGExLTQ0NmEtNGE1YS04N2U2LThhNzk4MDVhMzBjYyIsImRla1ZlcnNpb24iOjEsIml2Ijoid2ZGeDh1bERuYmt0ZUZTL1VBS2hCUT09IiwiY2lwaGVyVGV4dCI6IkZubnVrNk1WQ1hSdVBWK0YzYkdENS94RjFEUUJSaXpMTWNBU0szV2s3ZFI5ZE9kMXdtZDdTd1FQQngyMTdvejhIc0NralFTNDRwNmI1cWNBZ3R6Q09xUkt1bFQySVRWTG1jSHhjZkxwUTUyNUxYaFV2MUFDb1FVPSIsImF1dGhUYWciOiI1cWNBZ3R6Q09xUkt1bFQySVRWTG1RPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">a palm-sized drone that can fly through complex environments using ultrasound alone,</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjNkOGM2NDQ0LWUwOTEtNDJhOC04NWRjLTNkMDc0N2M0MmU5OCIsImRla1ZlcnNpb24iOjEsIml2IjoiMHlSczdmR1lkZjNmaDNmSVh4OXE5UT09IiwiY2lwaGVyVGV4dCI6InJwblJlQTR0a2E0RzZnVmJ3M1diTzBSQ3paUDJJam9DdTlkSlgzWlZqMmU2eWhxaVpVaWtUQ2tkWnloQ3lsQVYzZXdhYTE4ZFFkYTVId0xNRHJoSEhUUUNVTW1YL0E3VzM5TWtiTzN4bUhYOTM0ZDN5RjhmYXZVPSIsImF1dGhUYWciOiJId0xNRHJoSEhUUUNVTW1YL0E3VzN3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">the researchers that study wisdom</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

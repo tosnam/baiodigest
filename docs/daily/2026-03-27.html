@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-27 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-27</h2>
+  <p>총 4편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41882757/" target="_blank" rel="noopener noreferrer">Engineering of CoA-Acylating Butyraldehyde Dehydrogenase for Enhanced 1,3-Butanediol Production in Escherichia coli.</a></h3>
+    <p>Biotechnology and bioengineering</p>
+    <p>School of Energy and Chemical Engineering, Ulsan National Institute of Science and Technology, Ulsan, Republic of Korea.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 1,3-부탄디올 생산을 위한 효소 활성 향상을 통해 화학 산업에 활용 가능합니다. 효소 공학을 통해 대사 경로를 최적화하여 산업적 생산 효율을 높였습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>1,3-부탄디올(1,3-BDO)의 미생물 생산은 재생 가능한 C4 화학물질로의 접근을 제공하지만, 촉매적 시스티엔을 포함한 CoA-아실화 butyraldehyde dehydrogenase(Bld)의 낮은 효율이 recombinant Escherichia coli에서 효율적인 생산을 제한한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>야생형 Clostridium saccharoperbutylacetonicum Bld 및 변이체 Bld*를 생화학적으로 특성화하고, 다중 서열 정렬과 머신러닝 기반 돌연변이 예측을 통해 비촉매 시스티엔 잔기를 개별 및 조합으로 치환하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>삼중 변이체 C151N/C189A/C353L(CYS31)는 기질 친화도 및 선택성을 유지하면서 ~30% 높은 특정 활성을 보였고, E. coli에서 1,3-BDO 생산량도 ~30% 증가하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 1,3-BDO 생산에 효과적인 Bld 변이체를 제공하며, 알데하이드 중간체가 관여할 때 비활성 부위 시스티엔 잔기의 공학적 타겟으로서의 가능성을 입증하였다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41881211/" target="_blank" rel="noopener noreferrer">Computational de novo design of an α-helical peptide targeting LIMD2 suppresses breast cancer cell proliferation.</a></h3>
+    <p>International journal of biological macromolecules</p>
+    <p>Department of Breast Surgery, Clinical Oncology School of Fujian Medical University, Fujian Cancer Hospital, Fuzhou, Fujian, 350014, China. Electronic address: songcg1971@outlook.com.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>LIMD2 타겟팅 펩타이드 설계는 암 치료제 개발에 직접적으로 활용 가능하며, AI 기반 단백질 설계 기술은 의약품 개발에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>LIMD2(heat shock protein 90-interacting protein 2)의 과발현은 암 진행을 촉진하는 것으로 알려져 있으며, 이는 세포 이동 증가와 세포 사멸 억제에 기여합니다. 이 연구는 LIMD2를 표적으로 하는 펩타이드 억제제 설계를 위한 계산적 접근법을 제시합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>RFdiffusion을 활용해 LIMD2의 세 가지 주요 결합 부위를 기하학적 제약 조건으로 생성하고, ProteinMPNN을 통해 α-하일릭 구조를 강제했습니다. PEP-PPI 모델을 사용해 결합 친화도를 평가하고, Rosetta Build 및 FlexPepDock으로 구조를 최적화했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>합성된 17개 펩타이드 중 3개는 ITC 실험에서 결합을 나타냈으며, 최고 친화도는 93.7 μM이었습니다. MDA-MB-231 및 MDA-MB-468 세포에서 세포 증식 억제 효과를 보였습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 de novo 펩타이드 설계에 대한 신뢰할 수 있는 전략을 제시하며, LIMD2 표적 펩타이드의 항암 잠재력을 규명했습니다. 결합 메커니즘 분석을 통해 펩타이드 설계의 핵심 부위를 식별하는 방법론을 제공합니다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41882150/" target="_blank" rel="noopener noreferrer">Heterologous expression of Ginkgo biloba flavanone 3-hydroxylase acts as a key metabolic switch partitioning flavonoid metabolic flux in transgenic tobacco.</a></h3>
+    <p>Planta</p>
+    <p>The Jiangsu Provincial Platform for Conservation and Utilization of Agricultural Germplasm, Nanjing, 210014, Jiangsu, China. gbwang@njfu.com.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 플라보노이드 대사 경로를 조절하는 GbF3H 효소의 기능을 규명하여, 식품 및 의약품 산업에서 특정 대사물질 생산을 위한 대사 공학 전략에 기여할 수 있음. 이는 식품의 영양 기능성 향상 및 의약품 개발에 활용 가능성이 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>GbF3H는 플라보노이드 대사 경로에서 분기점 효소로, 난리닌을 디하이드로카이퍼롤로 전환하여 대사 흐름을 조절합니다(FLAVANONE 3-HYDROXYLASE). 이 연구는 Ginkgo biloba의 GbF3H 기능 및 조절 메커니즘을 밝히기 위해 통합적 접근법을 사용했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>생물정보학, 분자 특성 분석, 전이 유전자 기술을 결합해 GbF3H의 역할을 규명했습니다. 클로닝된 GbF3H는 세포질에 위치하는 369 아미노산으로 구성된 단백질로, 2-oxoglutarate 의존성 dioxygenase 특징을 가집니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>GbF3H 과발현은 니코티아나 타바쿠스에서 이소플라보노이드 증가와 플라보노롤 감소를 유발했습니다. 전사체 분석은 GbF3H가 Nt4CL, NtFLS1, NtUFGT를 억제하고 NtFLS2를 차별적으로 조절함을 보여주었습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>GbF3H는 플라보노이드 대사 흐름 분배의 중심 스위치로 작용하며, 대사 공학 전략에 중요한 메커니즘을 제공합니다(FLAVONOID BIOSYNTHESIS REGULATION). 이 연구는 플라보노이드 생합성 조절 이해에 기여합니다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41882360/" target="_blank" rel="noopener noreferrer">Structural basis of supercoiling-induced CRISPR-Cas9 off-target activity.</a></h3>
+    <p>Nature</p>
+    <p>Department of Infectious Disease, Imperial College London, London, UK. david.rueda@imperial.ac.uk.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>CRISPR-Cas9의 오프타겟 활성 메커니즘을 분자 수준으로 규명하여, 고정밀 유전자 편집 기술 개발에 기여할 수 있음. 의약 산업에서 안전성 향상된 치료용 도구 설계에 활용 가능.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>CRISPR-Cas9는 유전자 편집 도구이지만, 전유전체적 오프타겟 활성은 치료 적용을 방해한다. 열안정성(thermostability)과 관련된 부정적 슈퍼코일링((-)SC)이 오프타겟 활성과 연관되지만, 분자 수준에서의 이해는 부족하다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>(-)SC DNA 미니서클을 사용해 DNA의 슈퍼코일링 유도 구조 결함을 관찰하고, 냉동전자현미경을 통해 타겟 및 오프타겟 구조의 Cas9 결합 상태를 분석했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>Cas9의 HNH 도메인은 촉매 적합한 구조로 위치하며, DNA-RNA 불일치 기하학이 프로토포스페이서 전반에 걸쳐 조정된다. 프로토포스페이서 인접 모티프의 원격 영역에서 구조적 유연성이 위상에 의존한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 (-)SC 유도 Cas9 타겟팅의 분자적 기전을 밝히고, 차세대 고신뢰성 CRISPR 효과자의 설계에 기초가 되는 프레임워크를 제공한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

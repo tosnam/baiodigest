@@ -1,0 +1,232 @@
+{
+  "date": "2026-03-27",
+  "entries": [
+    {
+      "paper": {
+        "title": "Engineering of CoA-Acylating Butyraldehyde Dehydrogenase for Enhanced 1,3-Butanediol Production in Escherichia coli.",
+        "abstract": "Microbial production of 1,3-butanediol (1,3-BDO) offers a renewable route to this versatile C4 chemical. However, the low performance of CoA-acylating butyraldehyde dehydrogenase (Bld), which contains a catalytic cysteine, limits efficient production in recombinant Escherichia coli (E. coli). In this study, wild-type Clostridium saccharoperbutylacetonicum Bld and its variant Bld* were biochemically characterized and engineered to improve conversion of 3-hydroxybutyryl-CoA (3-HB-CoA) to 3-hydroxybutyraldehyde (3-HBA). Enzyme activity was strongly reduced by the product, 3-HBA, and this reduction was largely alleviated by added cysteine. To mitigate this interference, several noncatalytic cysteine residues in Bld* were substituted individually and in combination guided by multiple sequence alignment and machine-learning-based mutational prediction. The triple mutant C151N/C189A/C353L (designated CYS31) displayed ~30% higher specific activity without altering substrate affinity or selectivity. Incorporation of CYS31 into a 1,3-BDO-producing E. coli strain led to a corresponding ~30% increase in titer, indicating that enhanced in vitro kinetics translated to higher in vivo 1,3-BDO production. These findings provide a more effective Bld variant for 1,3-BDO production and demonstrate that non-active-site cysteine residues can be viable engineering targets when an aldehyde intermediate is involved.",
+        "authors": [
+          "Cho S",
+          "Islam T",
+          "Islam S",
+          "Lee J",
+          "Jung SW",
+          "Park S"
+        ],
+        "affiliations": [
+          "School of Energy and Chemical Engineering, Ulsan National Institute of Science and Technology, Ulsan, Republic of Korea.",
+          "R&D Center, ACTIVON Co. Ltd., Cheongju, Republic of Korea.",
+          "School of Energy and Chemical Engineering, Ulsan National Institute of Science and Technology, Ulsan, Republic of Korea.",
+          "R&D Center, ACTIVON Co. Ltd., Cheongju, Republic of Korea.",
+          "School of Energy and Chemical Engineering, Ulsan National Institute of Science and Technology, Ulsan, Republic of Korea.",
+          "School of Energy and Chemical Engineering, Ulsan National Institute of Science and Technology, Ulsan, Republic of Korea.",
+          "R&D Center, ACTIVON Co. Ltd., Cheongju, Republic of Korea.",
+          "R&D Center, ACTIVON Co. Ltd., Cheongju, Republic of Korea.",
+          "School of Energy and Chemical Engineering, Ulsan National Institute of Science and Technology, Ulsan, Republic of Korea."
+        ],
+        "doi": "10.1002/bit.70197",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology and bioengineering",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41882757/",
+        "category": null,
+        "date": "2026-03-25",
+        "mesh_terms": [],
+        "source_id": "41882757",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "이 논문은 1,3-부탄디올 생산을 위한 효소 활성 향상을 통해 화학 산업에 활용 가능합니다. 효소 공학을 통해 대사 경로를 최적화하여 산업적 생산 효율을 높였습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "1,3-부탄디올(1,3-BDO)의 미생물 생산은 재생 가능한 C4 화학물질로의 접근을 제공하지만, 촉매적 시스티엔을 포함한 CoA-아실화 butyraldehyde dehydrogenase(Bld)의 낮은 효율이 recombinant Escherichia coli에서 효율적인 생산을 제한한다.",
+        "method": "야생형 Clostridium saccharoperbutylacetonicum Bld 및 변이체 Bld*를 생화학적으로 특성화하고, 다중 서열 정렬과 머신러닝 기반 돌연변이 예측을 통해 비촉매 시스티엔 잔기를 개별 및 조합으로 치환하였다.",
+        "result": "삼중 변이체 C151N/C189A/C353L(CYS31)는 기질 친화도 및 선택성을 유지하면서 ~30% 높은 특정 활성을 보였고, E. coli에서 1,3-BDO 생산량도 ~30% 증가하였다.",
+        "significance": "이 연구는 1,3-BDO 생산에 효과적인 Bld 변이체를 제공하며, 알데하이드 중간체가 관여할 때 비활성 부위 시스티엔 잔기의 공학적 타겟으로서의 가능성을 입증하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Computational de novo design of an α-helical peptide targeting LIMD2 suppresses breast cancer cell proliferation.",
+        "abstract": "Overexpression of LIMD2 (LIM domain-containing protein 2) promotes cancer progression by enhancing cell migration and suppressing apoptosis. Here, we report a computational pipeline for the de novo design of LIMD2-targeting peptide inhibitors. We identified three key binding sites on LIMD2 that form a steric triangle and used RFdiffusion exclusively for geometry-constrained backbone generation within this predefined cavity, a step that does not involve affinity scoring but ensures spatial compatibility prior to sequence design. To enhance structural stability, we constrained sequence design to α-helical peptides using ProteinMPNN. Predicted binding affinities between LIMD2 and designed peptides were evaluated via the deep learning model PEP-PPI, and the top 100 candidates were structurally modeled and refined using Rosetta Build module and FlexPepDock. The top 20 peptides were subjected to toxicity prediction, and finally 17 peptides without toxicity were synthesized and experimentally validated via isothermal titration calorimetry (ITC), with three showing measurable binding, and the best displaying an affinity of 93.7 μM. Top peptides (MSPEERAALAR) exhibited inhibitory effects on tumor cell proliferation in in-vitro assays using triple-negative breast cancer cell lines MDA-MB-231 and MDA-MB-468, highlighting their potential as tumor inhibitors. In further, we analyzed the binding mechanism of the peptide inhibitors against LIMD2, revealing key binding residue within peptide, highlighting the designing binding craft as can identify key sites within peptide to bind with the target. This study presents a robust strategy for de novo functional peptide design and identifies LIMD2-targeting peptides with potential for further antitumor drug development.",
+        "authors": [
+          "Huang Q",
+          "Yu Y",
+          "Huang K",
+          "Zhu Z",
+          "Wang X",
+          "Song C"
+        ],
+        "affiliations": [
+          "Department of Breast Surgery, Clinical Oncology School of Fujian Medical University, Fujian Cancer Hospital, Fuzhou, Fujian, 350014, China.",
+          "Department of Breast Surgery, Clinical Oncology School of Fujian Medical University, Fujian Cancer Hospital, Fuzhou, Fujian, 350014, China.",
+          "Department of Breast Surgery, Clinical Oncology School of Fujian Medical University, Fujian Cancer Hospital, Fuzhou, Fujian, 350014, China.",
+          "Medical Enzyme Engineering Center, CAS Key Lab of Bio-Medical Diagnostics, Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Sciences, 88 Keling Road, Suzhou, 215004, China.",
+          "Medical Enzyme Engineering Center, CAS Key Lab of Bio-Medical Diagnostics, Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Sciences, 88 Keling Road, Suzhou, 215004, China. Electronic address: wangxl@sibet.ac.cn.",
+          "Department of Breast Surgery, Clinical Oncology School of Fujian Medical University, Fujian Cancer Hospital, Fuzhou, Fujian, 350014, China. Electronic address: songcg1971@outlook.com."
+        ],
+        "doi": "10.1016/j.ijbiomac.2026.151615",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of biological macromolecules",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41881211/",
+        "category": null,
+        "date": "2026-03-23",
+        "mesh_terms": [],
+        "source_id": "41881211",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "LIMD2 타겟팅 펩타이드 설계는 암 치료제 개발에 직접적으로 활용 가능하며, AI 기반 단백질 설계 기술은 의약품 개발에 기여할 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "LIMD2(heat shock protein 90-interacting protein 2)의 과발현은 암 진행을 촉진하는 것으로 알려져 있으며, 이는 세포 이동 증가와 세포 사멸 억제에 기여합니다. 이 연구는 LIMD2를 표적으로 하는 펩타이드 억제제 설계를 위한 계산적 접근법을 제시합니다.",
+        "method": "RFdiffusion을 활용해 LIMD2의 세 가지 주요 결합 부위를 기하학적 제약 조건으로 생성하고, ProteinMPNN을 통해 α-하일릭 구조를 강제했습니다. PEP-PPI 모델을 사용해 결합 친화도를 평가하고, Rosetta Build 및 FlexPepDock으로 구조를 최적화했습니다.",
+        "result": "합성된 17개 펩타이드 중 3개는 ITC 실험에서 결합을 나타냈으며, 최고 친화도는 93.7 μM이었습니다. MDA-MB-231 및 MDA-MB-468 세포에서 세포 증식 억제 효과를 보였습니다.",
+        "significance": "이 연구는 de novo 펩타이드 설계에 대한 신뢰할 수 있는 전략을 제시하며, LIMD2 표적 펩타이드의 항암 잠재력을 규명했습니다. 결합 메커니즘 분석을 통해 펩타이드 설계의 핵심 부위를 식별하는 방법론을 제공합니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Heterologous expression of Ginkgo biloba flavanone 3-hydroxylase acts as a key metabolic switch partitioning flavonoid metabolic flux in transgenic tobacco.",
+        "abstract": "GbF3H acts as a hierarchical switch that suppresses NtFLS1 but activates NtFLS2, thereby diverting flavonoid flux away from flavonols and toward isoflavonoids in transgenic tobacco. Flavanone 3-hydroxylase (F3H) is a key branch-point enzyme in the flavonoid biosynthesis, catalyzing the hydroxylation of naringenin to dihydrokaempferol and thereby directing metabolic flux into distinct flavonoid branches. In this study, we employed an integrated approach combining bioinformatic, molecular characterization, and transgenic techniques to elucidate the function and regulatory role of F3H in Ginkgo biloba. The cloned GbF3H encodes a cytoplasm-localized hydrophobic acidic protein of 369 amino acids, containing the conserved DIOX_N and 2OG-FeII_Oxy domains characteristic of 2-oxoglutarate-dependent dioxygenases. Expression profiling revealed that GbF3H transcripts were most abundant in immature fruits, ovulate strobili, and juvenile leaves, and were significantly modulated by different nitrogen forms and abscisic acid (ABA). Heterologous overexpression of GbF3H in tobacco (Nicotiana tabacum cv. K326) substantially reshaped the flavonoid metabolome, characterized by the pronounced upregulation in isoflavonoids and concomitant downregulation in flavonols. Concurrent transcriptomic analysis demonstrated that GbF3H overexpression suppressed key flavonoid biosynthetic genes (Nt4CL, NtFLS1, and NtUFGT), while differentially regulating NtFLS2, indicating a hierarchical regulatory mechanism governing the flavonoid metabolic network. Collectively, these results establish GbF3H as a central switch of flavonoid metabolic flux partitioning in G. biloba, providing crucial mechanistic insights for understanding the regulation of flavonoid biosynthesis and providing a basis for future metabolic engineering strategies.",
+        "authors": [
+          "Guo J",
+          "Zhang X",
+          "Sun X",
+          "Wu Y",
+          "Liu Y",
+          "Yu P",
+          "Wang G"
+        ],
+        "affiliations": [
+          "State Key Laboratory for Development and Utilization of Forest Food Resources, State Key Laboratory of Tree Genetics and Breeding, Co-Innovation Center for Sustainable Forestry in Southern China, Nanjing Forestry University, Nanjing, 210037, China.",
+          "The Jiangsu Provincial Platform for Conservation and Utilization of Agricultural Germplasm, Nanjing, 210014, Jiangsu, China.",
+          "State Key Laboratory for Development and Utilization of Forest Food Resources, State Key Laboratory of Tree Genetics and Breeding, Co-Innovation Center for Sustainable Forestry in Southern China, Nanjing Forestry University, Nanjing, 210037, China.",
+          "State Key Laboratory for Development and Utilization of Forest Food Resources, State Key Laboratory of Tree Genetics and Breeding, Co-Innovation Center for Sustainable Forestry in Southern China, Nanjing Forestry University, Nanjing, 210037, China.",
+          "Institute of Botany, Jiangsu Key Laboratory for Conservation and Utilization of Plant Resources, Jiangsu Province and Chinese Academy of Sciences (Nanjing Botanical Garden Mem. Sun Yat-Sen), Nanjing, 210014, China.",
+          "School of Landscape Architecture, Jiangsu Vocational College of Agriculture and Forestry, Jurong, 212499, Jiangsu, China.",
+          "Suining Runqi Investment Co., Ltd., Suining, 221200, Jiangsu, China.",
+          "State Key Laboratory for Development and Utilization of Forest Food Resources, State Key Laboratory of Tree Genetics and Breeding, Co-Innovation Center for Sustainable Forestry in Southern China, Nanjing Forestry University, Nanjing, 210037, China. gbwang@njfu.com.cn.",
+          "The Jiangsu Provincial Platform for Conservation and Utilization of Agricultural Germplasm, Nanjing, 210014, Jiangsu, China. gbwang@njfu.com.cn."
+        ],
+        "doi": "10.1007/s00425-026-04972-6",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Planta",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41882150/",
+        "category": "nicotiana",
+        "date": "2026-03-26",
+        "mesh_terms": [
+          "Nicotiana",
+          "Plants, Genetically Modified",
+          "Flavonoids",
+          "Ginkgo biloba",
+          "Gene Expression Regulation, Plant",
+          "Mixed Function Oxygenases",
+          "Plant Proteins"
+        ],
+        "source_id": "41882150",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "이 논문은 플라보노이드 대사 경로를 조절하는 GbF3H 효소의 기능을 규명하여, 식품 및 의약품 산업에서 특정 대사물질 생산을 위한 대사 공학 전략에 기여할 수 있음. 이는 식품의 영양 기능성 향상 및 의약품 개발에 활용 가능성이 있음.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "GbF3H는 플라보노이드 대사 경로에서 분기점 효소로, 난리닌을 디하이드로카이퍼롤로 전환하여 대사 흐름을 조절합니다(FLAVANONE 3-HYDROXYLASE). 이 연구는 Ginkgo biloba의 GbF3H 기능 및 조절 메커니즘을 밝히기 위해 통합적 접근법을 사용했습니다.",
+        "method": "생물정보학, 분자 특성 분석, 전이 유전자 기술을 결합해 GbF3H의 역할을 규명했습니다. 클로닝된 GbF3H는 세포질에 위치하는 369 아미노산으로 구성된 단백질로, 2-oxoglutarate 의존성 dioxygenase 특징을 가집니다.",
+        "result": "GbF3H 과발현은 니코티아나 타바쿠스에서 이소플라보노이드 증가와 플라보노롤 감소를 유발했습니다. 전사체 분석은 GbF3H가 Nt4CL, NtFLS1, NtUFGT를 억제하고 NtFLS2를 차별적으로 조절함을 보여주었습니다.",
+        "significance": "GbF3H는 플라보노이드 대사 흐름 분배의 중심 스위치로 작용하며, 대사 공학 전략에 중요한 메커니즘을 제공합니다(FLAVONOID BIOSYNTHESIS REGULATION). 이 연구는 플라보노이드 생합성 조절 이해에 기여합니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Structural basis of supercoiling-induced CRISPR-Cas9 off-target activity.",
+        "abstract": "CRISPR-Cas9 is a powerful genome-editing tool1, but genome-wide off-target activity can hinder therapeutic applications. Negative supercoiling ((-)SC) has been implicated in off-target activity, but a molecular-level understanding is lacking. Here, using (-)SC DNA minicircles, we observe supercoiling-driven structural defects in the DNA that are resolved by Cas9 binding. Cryo-electron microscopy structures of Cas9 bound in both the on-target and off-target configurations highlight that the Cas9 HNH domain is poised in a more catalytically competent conformation. New DNA-RNA mismatch geometries are accommodated across the protospacer and structural plasticity in the protospacer adjacent motif distal region of the protospacer is topology dependent. Together, our study reveals the molecular basis for (-)SC-induced Cas9 targeting and provides a framework for the design of next-generation high-fidelity CRISPR effectors with topological context.",
+        "authors": [
+          "Smith QM",
+          "Whittle S",
+          "Aramayo RJ",
+          "Rollins DE",
+          "Jalal ASB",
+          "Egharevba DI",
+          "Morris KL",
+          "Pyne ALB",
+          "Rueda DS"
+        ],
+        "affiliations": [
+          "MRC Laboratory of Medical Sciences, Imperial College London, London, UK.",
+          "Department of Infectious Disease, Imperial College London, London, UK.",
+          "Department of Materials Science and Engineering, University of Sheffield, Sheffield, UK.",
+          "MRC Laboratory of Medical Sciences, Imperial College London, London, UK.",
+          "Department of Materials Science and Engineering, University of Sheffield, Sheffield, UK.",
+          "Department of Infectious Disease, Imperial College London, London, UK.",
+          "MRC Laboratory of Medical Sciences, Imperial College London, London, UK.",
+          "Wellcome Genome Campus, European Molecular Biology Laboratory, European Bioinformatics Institute (EMBL-EBI), Hinxton, UK.",
+          "Department of Materials Science and Engineering, University of Sheffield, Sheffield, UK. a.l.pyne@sheffield.ac.uk.",
+          "MRC Laboratory of Medical Sciences, Imperial College London, London, UK. david.rueda@imperial.ac.uk.",
+          "Department of Infectious Disease, Imperial College London, London, UK. david.rueda@imperial.ac.uk."
+        ],
+        "doi": "10.1038/s41586-026-10255-7",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41882360/",
+        "category": null,
+        "date": "2026-03-25",
+        "mesh_terms": [],
+        "source_id": "41882360",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "CRISPR-Cas9의 오프타겟 활성 메커니즘을 분자 수준으로 규명하여, 고정밀 유전자 편집 기술 개발에 기여할 수 있음. 의약 산업에서 안전성 향상된 치료용 도구 설계에 활용 가능.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "CRISPR-Cas9는 유전자 편집 도구이지만, 전유전체적 오프타겟 활성은 치료 적용을 방해한다. 열안정성(thermostability)과 관련된 부정적 슈퍼코일링((-)SC)이 오프타겟 활성과 연관되지만, 분자 수준에서의 이해는 부족하다.",
+        "method": "(-)SC DNA 미니서클을 사용해 DNA의 슈퍼코일링 유도 구조 결함을 관찰하고, 냉동전자현미경을 통해 타겟 및 오프타겟 구조의 Cas9 결합 상태를 분석했다.",
+        "result": "Cas9의 HNH 도메인은 촉매 적합한 구조로 위치하며, DNA-RNA 불일치 기하학이 프로토포스페이서 전반에 걸쳐 조정된다. 프로토포스페이서 인접 모티프의 원격 영역에서 구조적 유연성이 위상에 의존한다.",
+        "significance": "이 연구는 (-)SC 유도 Cas9 타겟팅의 분자적 기전을 밝히고, 차세대 고신뢰성 CRISPR 효과자의 설계에 기초가 되는 프레임워크를 제공한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 5,
+    "prefilter_passed": 5,
+    "llm_passed": 4,
+    "summarized": 4
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-26T22:25:50.256585+00:00"
+}
