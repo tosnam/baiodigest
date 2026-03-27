@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-28 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-28</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41889171/" target="_blank" rel="noopener noreferrer">AI-driven protein engineering: A new paradigm for plant trait design.</a></h3>
+    <p>Molecular plant</p>
+    <p>Sanya Institute of China Agricultural University, Sanya, Hainan, 572000, China; State Key Laboratory of Maize Bio-breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China. Electronic address: xwang@cau.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식량 생산성 향상과 환경 스트레스 저항성 개선을 위한 단백질 공학 기술이 식품 산업에 직접적 활용 가능. 의약품 개발에 활용 가능한 유전자 편집 및 생물 센서 기술도 포함됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질 공학은 특정 생물학적 또는 기술적 기능을 달성하기 위해 단백질 분자를 수정하는 분야로, 최근 인공지능(AI) 기반 접근법이 식물 특성 설계에 더 정확한 결과를 제공하고 있다(thermostability, specificity). 이 리뷰는 단백질 구조 예측, 생성적 시퀀스 모델링, 기능 최적화의 융합을 통해 식물 시스템에서 개선된 특이성, 안정성, 활성을 가진 합성 단백질을 설계하는 과정을 강조한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>단백질 설계는 합리적 설계에서 반합리적 전략으로 발전했으며, AI 기반 플랫폼이 구조 예측, 시퀀스 생성, de novo 설계를 통합해 단백질 설계를 혁신하고 있다. 8개의 응용 분야에서 설계 원칙과 기술 발전을 분석하고, AI가 시퀀스 공간 확장을 통해 후보 우선순위를 개선하는 방식을 다룬다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>식물 생리학과 재배에 관련된 8개 분야에서 향상된 병 저항성, 해충 저항성, 비생물적 스트레스 내성, 영양소 효율성, 변이 탐색, 유전자 편집 시스템 최적화, 환경 감지, 프로그래밍 가능한 조절 회로 등이 제시되었다. 이는 설계 원칙, 기술 발전, 전환 고려 사항을 요약하고, AI의 역할을 강조한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>현재 제약 요소로는 도메인 이동, 생성 모델 신뢰성 격차, 이동성 제한, 유전자형-형질형 갭, 설계-검증 워크플로우 제약이 있으며, AI 기반 식물 특성 설계의 단계별 로드맵을 제시해 전환을 위한 마일스톤과 요구 사항을 제시한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.85
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41888291/" target="_blank" rel="noopener noreferrer">Thermostable ancestors enabled evolutionary diversification of promiscuous chemical defence enzymes.</a></h3>
+    <p>The EMBO journal</p>
+    <p>School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia. e.gillam@uq.edu.au.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>열안정성과 기질 특이성 조절이 산업용 효소 설계에 활용 가능합니다. 유전적 다양성과 안정성 간의 관계는 효소 공학적 최적화에 중요한 통찰을 제공합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>효소는 일반적으로 기능 관련 선택압 하에서 프롬시우스( promiscuous ) 조상으로부터 더 전문화된 후손으로 진화한다고 여겨졌으나, 기질 프롬시우스성에 의존하는 효소에 대한 연구는 부족했다. 이 연구는 지속적으로 변화하는 외부 물질(xenobiotic)에 대응하기 위한 다형적 효소군의 진화 경로를 탐구했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>다양한 xenobiotic 대사 효소군을 분석하고, 진화적 조상 형태를 재구성(resurrected ancestral forms)하여 기능적 특성을 평가하였다. 구조적 특징과 열안정성(thermostability) 관련 요소를 비교하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>열안정성은 서열 다양성 축적과 함께 감소했으며, 안정성이 높은 계통은 더 많은 현존 서열 다양성을 보였다. 단백질 내 수소결합 잔류물의 코어 내 포집(sequestration)과 극성 잔류물의 표면 노출(exposure)이 열안정성과 관련이 있었다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>강력한 조상 형태가 진화적 다양화를 촉진한다는 가설을 뒷받침하였다. 단백질 구조에서 열안정성을 높이는 특징을 규명함으로써 효소 진화 메커니즘에 대한 이해를 깊게 하였다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: ancestral sequence reconstruction
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

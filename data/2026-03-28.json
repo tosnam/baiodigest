@@ -1,0 +1,125 @@
+{
+  "date": "2026-03-28",
+  "entries": [
+    {
+      "paper": {
+        "title": "AI-driven protein engineering: A new paradigm for plant trait design.",
+        "abstract": "Protein engineering modifies protein molecules to achieve specific biological or technological functions. Protein design forms the core methodology, and in recent years, artificial intelligence (AI)-driven approaches have enabled more precise trait design in plants. This review highlights the convergence of protein structure prediction, generative sequence modeling, and function optimization to create synthetic proteins with improved specificity, stability, and activity in plant systems. We trace the development of protein design, from rational design to semi-rational strategies and AI-driven platforms that integrate structure prediction, sequence generation, and de novo design. We discuss eight application areas relevant to plant physiology and breeding: enhanced disease resistance via engineered immune receptors; insect resistance through optimized insecticidal proteins; abiotic stress tolerance through metabolic enzyme stabilization; improved nutrient use via transporter redesign; variant mining for trait fine-tuning; genome editing system optimization; environmental sensing with synthetic biosensors; and programmable regulatory circuits for plant factories (including controlled environment agriculture). Across these areas, we summarize design principles, advances, and translational considerations, emphasizing how AI expands sequence space and improves candidate prioritization. We also address current bottlenecks, including domain shift, generative model reliability gaps, limited portability, the genotype-to-phenotype gap, and design-to-validation workflow constraints. Finally, we propose a staged roadmap for AI-driven plant trait design, outlining milestones and requirements for translation into breeding.",
+        "authors": [
+          "Fu R",
+          "Jiang S",
+          "Wu T",
+          "Yin C",
+          "Yan J",
+          "Wang X"
+        ],
+        "affiliations": [
+          "Sanya Institute of China Agricultural University, Sanya, Hainan, 572000, China; State Key Laboratory of Maize Bio-breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+          "National Nanfan Research Institute, Chinese Academy of Agricultural Sciences, Sanya, Hainan, 572000, China.",
+          "State Key Laboratory of Maize Bio-breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+          "State Key Laboratory of Maize Bio-breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+          "State Key Laboratory of Maize Bio-breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China.",
+          "Sanya Institute of China Agricultural University, Sanya, Hainan, 572000, China; State Key Laboratory of Maize Bio-breeding, National Maize Improvement Center, Frontiers Science Center for Molecular Design Breeding, College of Agronomy and Biotechnology, China Agricultural University, Beijing, 100094, China. Electronic address: xwang@cau.edu.cn."
+        ],
+        "doi": "10.1016/j.molp.2026.03.011",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Molecular plant",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41889171/",
+        "category": null,
+        "date": "2026-03-25",
+        "mesh_terms": [],
+        "source_id": "41889171",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.85,
+        "category": "protein_engineering",
+        "reason": "식량 생산성 향상과 환경 스트레스 저항성 개선을 위한 단백질 공학 기술이 식품 산업에 직접적 활용 가능. 의약품 개발에 활용 가능한 유전자 편집 및 생물 센서 기술도 포함됨.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질 공학은 특정 생물학적 또는 기술적 기능을 달성하기 위해 단백질 분자를 수정하는 분야로, 최근 인공지능(AI) 기반 접근법이 식물 특성 설계에 더 정확한 결과를 제공하고 있다(thermostability, specificity). 이 리뷰는 단백질 구조 예측, 생성적 시퀀스 모델링, 기능 최적화의 융합을 통해 식물 시스템에서 개선된 특이성, 안정성, 활성을 가진 합성 단백질을 설계하는 과정을 강조한다.",
+        "method": "단백질 설계는 합리적 설계에서 반합리적 전략으로 발전했으며, AI 기반 플랫폼이 구조 예측, 시퀀스 생성, de novo 설계를 통합해 단백질 설계를 혁신하고 있다. 8개의 응용 분야에서 설계 원칙과 기술 발전을 분석하고, AI가 시퀀스 공간 확장을 통해 후보 우선순위를 개선하는 방식을 다룬다.",
+        "result": "식물 생리학과 재배에 관련된 8개 분야에서 향상된 병 저항성, 해충 저항성, 비생물적 스트레스 내성, 영양소 효율성, 변이 탐색, 유전자 편집 시스템 최적화, 환경 감지, 프로그래밍 가능한 조절 회로 등이 제시되었다. 이는 설계 원칙, 기술 발전, 전환 고려 사항을 요약하고, AI의 역할을 강조한다.",
+        "significance": "현재 제약 요소로는 도메인 이동, 생성 모델 신뢰성 격차, 이동성 제한, 유전자형-형질형 갭, 설계-검증 워크플로우 제약이 있으며, AI 기반 식물 특성 설계의 단계별 로드맵을 제시해 전환을 위한 마일스톤과 요구 사항을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Thermostable ancestors enabled evolutionary diversification of promiscuous chemical defence enzymes.",
+        "abstract": "Enzymes are generally believed to evolve from promiscuous ancestors to more specialized descendants under some selection pressure related to their function. However, enzymes whose function depends on substrate promiscuity have not been studied. Here, we show that a group of highly diverse, xenobiotic-metabolizing enzymes, responsible for defense against a constantly changing battery of xenobiotic chemicals, evolved from highly thermostable ancestors. Thermostability declined in parallel with the accumulation of sequence diversity through evolution. The major lineages differed in their relative diversification, with the more stable lineage leading to greater extant sequence diversity. Thermostability was associated with a trend towards better sequestration of hydrophobic residues within the core of the protein and increased exposure of polar residues in solvent-accessible parts of the structure. Resurrected ancestral forms were active towards typical substrates and exhibited ligand-binding promiscuity comparable to, or greater than, their extant descendants. This work supports the hypothesis that robust ancestors facilitate evolutionary diversification and highlights features responsible for enhancing thermostability in a protein fold.",
+        "authors": [
+          "Thomson RES",
+          "Gumulya Y",
+          "Bengochea AW",
+          "Foley G",
+          "Zaugg J",
+          "Aagaard A",
+          "Ross CM",
+          "Beckett J",
+          "Bodén M",
+          "Jurva U",
+          "Hayes MA",
+          "Andersson S",
+          "Gillam EMJ"
+        ],
+        "affiliations": [
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "Australian Centre for Ecogenomics, School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "Drug Metabolism and Pharmacokinetics (DMPK), Research and Early Development, Cardiovascular, Renal and Metabolism (CVRM), BioPharmaceuticals R&D, AstraZeneca, Gothenburg, Sweden.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia.",
+          "Drug Metabolism and Pharmacokinetics (DMPK), Research and Early Development, Cardiovascular, Renal and Metabolism (CVRM), BioPharmaceuticals R&D, AstraZeneca, Gothenburg, Sweden.",
+          "Discovery Sciences, BioPharmaceuticals R&D, AstraZeneca, Gothenburg, Sweden.",
+          "Discovery Sciences, BioPharmaceuticals R&D, AstraZeneca, Gothenburg, Sweden.",
+          "School of Chemistry and Molecular Biosciences, The University of Queensland, St. Lucia, Brisbane, QLD, 4072, Australia. e.gillam@uq.edu.au."
+        ],
+        "doi": "10.1038/s44318-026-00699-y",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "The EMBO journal",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41888291/",
+        "category": null,
+        "date": "2026-03-26",
+        "mesh_terms": [],
+        "source_id": "41888291",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "열안정성과 기질 특이성 조절이 산업용 효소 설계에 활용 가능합니다. 유전적 다양성과 안정성 간의 관계는 효소 공학적 최적화에 중요한 통찰을 제공합니다.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "효소는 일반적으로 기능 관련 선택압 하에서 프롬시우스( promiscuous ) 조상으로부터 더 전문화된 후손으로 진화한다고 여겨졌으나, 기질 프롬시우스성에 의존하는 효소에 대한 연구는 부족했다. 이 연구는 지속적으로 변화하는 외부 물질(xenobiotic)에 대응하기 위한 다형적 효소군의 진화 경로를 탐구했다.",
+        "method": "다양한 xenobiotic 대사 효소군을 분석하고, 진화적 조상 형태를 재구성(resurrected ancestral forms)하여 기능적 특성을 평가하였다. 구조적 특징과 열안정성(thermostability) 관련 요소를 비교하였다.",
+        "result": "열안정성은 서열 다양성 축적과 함께 감소했으며, 안정성이 높은 계통은 더 많은 현존 서열 다양성을 보였다. 단백질 내 수소결합 잔류물의 코어 내 포집(sequestration)과 극성 잔류물의 표면 노출(exposure)이 열안정성과 관련이 있었다.",
+        "significance": "강력한 조상 형태가 진화적 다양화를 촉진한다는 가설을 뒷받침하였다. 단백질 구조에서 열안정성을 높이는 특징을 규명함으로써 효소 진화 메커니즘에 대한 이해를 깊게 하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-27T22:15:33.811642+00:00"
+}
