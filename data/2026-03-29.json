@@ -1,0 +1,158 @@
+{
+  "date": "2026-03-29",
+  "entries": [
+    {
+      "paper": {
+        "title": "The role of linker on the elevated biosensing performance of a carbohydrate-binding module-tagged sarcosine oxidase.",
+        "abstract": "Creatinine is a pivotal biomarker for renal function assessment, and developing its rapid, sensitive, stable point-of-care testing (POCT) biosensors remains critical. Enzyme-based biosensors using sarcosine oxidase (SOX) in a three-enzyme cascade are promising, but challenges persist in post-immobilization enzymatic activity and long-term stability, especially for low-activity SOX. Herein, we report rational engineering of carbohydrate-binding module 3 (CBM3)-fused SOX variants to address these limitations. CBM3 was genetically fused to N-/C-termini of monomeric SOX via distinct linkers (proline-rich XP for N-terminal, α-helical EAAK for C-terminal), generating CBM3-XP-SOX and SOX-EAAK-CBM3. Comparative analysis showed SOX-EAAK-CBM3 exhibited superior soluble expression (15.96 mg/mL), enhanced ambient-temperature catalytic activity (39.96%-56.23% higher than WT SOX), and exceptional electrochemical stability (25 days, R2 > 0.99). In contrast, CBM3-XP-SOX suffered linker cleavage and structural instability, limiting stability to 2 days. Structure-guided linker engineering of the N-terminal fusion identified unstable K-E-P motif in XP linker; truncation and flexible glycine introduction yielded CBM3-XG-SOX. The CBM3-XG-SOX/cellulose/Pt biosensor showed 7-fold improved electrochemical stability (15 days) vs. parental CBM3-XP-SOX, with rapid response (19-30 s) and strong anti-interference against physiological interferents. Serum and urine real-sample analysis confirmed high accuracy (recovery: 96.28%-97.88%) and superior precision vs. commercial kits, with narrower errors for low or high creatinine concentrations. This work establishes a rational framework for fusion enzyme engineering via bioinformatics-guided linker/fusion site optimization, overcoming low-activity enzyme-based biosensor limitations. CBM3-fused SOX biosensors enable cost-effective, stable, sensitive POCT creatinine detection, with broad clinical diagnosis and home health monitoring applications.",
+        "authors": [
+          "Yu Y",
+          "Huang X",
+          "Yang F",
+          "Wang X",
+          "Song C",
+          "Shao Y",
+          "Zhu S",
+          "Wang Q",
+          "Zang H",
+          "Ma Y",
+          "Gong W"
+        ],
+        "affiliations": [
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China; Shandong Provincial Key Laboratory of Biosensing and Microbial Intelligent Metabolic Regulation, No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China; Shandong Provincial Key Laboratory of Biosensing and Microbial Intelligent Metabolic Regulation, No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China.",
+          "NMPA Key Laboratory for Technology Research and Evaluation of Drug Products, School of Pharmaceutical Sciences, Cheeloo College of Medicine, Shandong University, Wenhuaxi Road 44, Jinan, Shandong, 250012, China.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China; Shandong Provincial Key Laboratory of Biosensing and Microbial Intelligent Metabolic Regulation, No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China. Electronic address: mayaohong@126.com.",
+          "Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China; Shandong Provincial Key Laboratory of Biosensing and Microbial Intelligent Metabolic Regulation, No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China. Electronic address: 15264110812@163.com."
+        ],
+        "doi": "10.1016/j.ijbiomac.2026.151643",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of biological macromolecules",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41895493/",
+        "category": null,
+        "date": "2026-03-25",
+        "mesh_terms": [],
+        "source_id": "41895493",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "단백질 결합 모듈과 링커 엔지니어링을 통한 효소 기반 생체 센서 개발로 의약 산업의 진단 기술 혁신에 기여 가능합니다. 크레아티닌 검출용 생체 센서의 안정성 및 정확도 향상은 임상 진단에 직접적 활용 가능성이 높습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "크레아티닌은 신장 기능 평가의 핵심 생물마커로, 빠른 감지와 안정성 있는 포인트오브케어 테스트(POCT) 생체감지기 개발이 시급하다. 기존 sarcosine oxidase(SOX)-기반 생체감지기에서는 포스트-immobilization 효소 활성 및 장기 안정성이 문제로 남아왔다.",
+        "method": "carbohydrate-binding module 3(CBM3)을 SOX에 유전자결합하여 링커를 통한 구조 최적화를 시도했다. N-단일 및 C-단일에 proline-rich XP와 α-하일릭 EAAK 링커를 적용해 CBM3-XP-SOX 및 SOX-EAAK-CBM3를 생성하고, 구조 기반 링커 공학을 통해 안정성을 개선했다.",
+        "result": "SOX-EAAK-CBM3는 15.96 mg/mL의 용해성 발현과 39.96%-56.23% 높은 촉매 활성, 25일간의 우수한 전기화학적 안정성(R2 > 0.99)을 보였다. CBM3-XG-SOX/cellulose/Pt 생체감지기는 15일간의 7배 높은 안정성과 빠른 반응 속도(19-30초)를 기록했다.",
+        "significance": "이 연구는 생물정보학을 기반으로 한 링커/결합부 최적화를 통한 유전자결합 효소 공학의 이론적 틀을 제시했다. CBM3-fused SOX 생체감지기는 저비용, 안정성, 민감도를 갖춘 POCT 크레아티닌 감지 기술로, 임상 진단 및 가정 건강 모니터링에 널리 활용 가능하다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Catalytic mechanism of a plant hydrolytic enzyme explained through its 50 crystal structures and counting - What have we learnt?",
+        "abstract": "Substrates and products bind and unbind in enzymes at prohibitive rates, which preclude investigations of reactant trajectories during catalytic cycles. To offset this lack of knowledge, we provide data based on 50 crystal structures of a plant exo-hydrolase family 3 enzyme and combine it with kinetics, structural modelling, and evolutionary-based considerations. We demonstrate that in this exo-hydrolase, a non-covalently trapped glucose product induces the formation of a transient lateral cavity, facilitating glucose egress and initiating a subsequent catalytic cycle. This path enables substrate-product-assisted processivity, whilst the enzyme maintains contact with the substrate. Evaluations of nanoscale reactant movements of this enzyme, mutated in an aromatic clamp facing the active site, define reactant trajectories critical to the conformational behaviour of isomeric β-d-glucosides. Additionally, computational models define the role of an essential, non-nucleophilic glutamate 220, which does not participate directly in catalysis but maintains a water molecule network. These models describe the dynamics of water molecule flux and correlate with high catalytic efficiency in the wild-type but not in the Glu220Ala mutant. Evolutionary considerations of the glycoside hydrolase family 3 reveal the evolvability of structural elements and provide a blueprint for the mechanism and dynamics of catalysis in hydrolytic enzymes - a knowledge applicable to life sciences and biotechnologies to safeguard a sustainable bioeconomy.",
+        "authors": [
+          "Hrmova M"
+        ],
+        "affiliations": [
+          "College of Sciences, Adelaide University, School of Agriculture, Food and Wine, and Waite Research Institute, Waite Research Precinct, Glen Osmond, South Australia 5064, Australia. Electronic address: maria.hrmova@adelaide.edu.au."
+        ],
+        "doi": "10.1016/j.bbagen.2026.130943",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biochimica et biophysica acta. General subjects",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41895536/",
+        "category": null,
+        "date": "2026-03-25",
+        "mesh_terms": [],
+        "source_id": "41895536",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "protein_engineering",
+        "reason": "식품/화학/의약 산업에서 효소 기반 공정 최적화에 활용 가능합니다. 효소의 구조-기능 관계 이해를 통해 촉매 효율 향상 및 변형 효소 설계에 기여할 수 있습니다.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "효소 반응 중 기질과 생성물의 결합/해리 속도가 너무 빠르다(reactant trajectories observation difficult). 이로 인해 촉매 사이클의 반응 경로를 연구하기 어려웠다.",
+        "method": "50개의 결정 구조와 kinetics, 구조 모델링, 진화적 분석을 결합해 데이터를 제공(50 crystal structures, kinetics, structural modelling, evolutionary-based considerations).",
+        "result": "비공유 결합으로 포착된 포도당 생성물이 일시적 측면 공동 형성(temporary lateral cavity)을 유도해 기질 이탈을 촉진한다. Glu220은 수분 네트워크를 유지하는 비핵여성 아미노산으로 작용한다.",
+        "significance": "구조적 요소의 진화 가능성을 밝혀내며, 수분 흐름 역학이 고효율 촉매 작용과 연관됨을 규명(enzyme dynamics and catalytic efficiency). 생물학 및 생물기술 분야의 지속 가능한 생물경제 구축에 응용 가능."
+      }
+    },
+    {
+      "paper": {
+        "title": "An integrated biorefinery scheme towards freshwater microalgae as phycoerythrin factories for circular economy: Feedstock selection, optimized synthesis, wastewater synergy and cascading application.",
+        "abstract": "Phycoerythrin (PE) is a high-value fluorescent pigment-protein with broad applications in food, diagnostics, and therapeutics, yet its conventional production from marine algae faces challenges of unstable yield, high cost, and ecological concerns. This narrative review systematically evaluates the potential of freshwater microalgae as sustainable platforms for PE production within a circular economy framework. A structured literature search was conducted across Web of Science and Google Scholar using keywords related to freshwater algae, PE biosynthesis, genetic engineering, wastewater bioremediation, and biorefinery. Key findings demonstrate that specific Cyanobacteria and Cryptophyta strains (e.g., Anabaena fertilissima: 475 mg/g dry weight; Cryptomonas pyrenoidifera: 345 mg/g dry weight) exhibit yields comparable or superior to those of traditional marine sources. Genetic engineering strategies-including promoter engineering (e.g., psbA modification increasing expression 3.7-fold), heterologous expression (achieving 96.7% chromophorylation), and CRISPR-Cas9-mediated metabolic flux redirection-offer robust tools for enhancing PE yield and stability. Wastewater cultivation enables efficient removal of nutrients (>90% N/P) and emerging contaminants (e.g., >95% heavy metals, 50% pharmaceuticals, >84% microplastics) alongside biomass production. High-value PE applications-as fluorescent probes (quantum yield 0.98), photosensitizers in photodynamic therapy, and photocatalysts for pollutant degradation (>90% removal)-provide economic drivers. A SWOT-TOWS analysis identifies strategic pathways addressing cost, scalability, and regulatory barriers. We propose an integrated biorefinery model coupling wastewater treatment, multi-product cascading (PE, lipids, biochar, biofertilizers), and policy instruments (carbon credits, purity standards) to accelerate sustainable commercialization of freshwater algae-derived PE.",
+        "authors": [
+          "Xu J",
+          "Ye Q",
+          "Bi Y",
+          "Shao J",
+          "Li J"
+        ],
+        "affiliations": [
+          "College of Resources and Environmental Sciences, China Agricultural University, Beijing, 100193, PR China; College of Resources and Environment, Xichang University, Xichang, Sichuan, 615000, PR China.",
+          "College of Resources and Environmental Sciences, China Agricultural University, Beijing, 100193, PR China.",
+          "State Key Laboratory of Freshwater Ecology and Biotechnology, Institute of Hydrobiology, Chinese Academy of Sciences, Wuhan, Hubei, 430072, PR China.",
+          "College of Environment and Ecology, Hunan Agricultural University, Changsha, Hunan, 410128, PR China.",
+          "College of Resources and Environmental Sciences, China Agricultural University, Beijing, 100193, PR China. Electronic address: lijieming@cau.edu.cn."
+        ],
+        "doi": "10.1016/j.jenvman.2026.129424",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of environmental management",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41894968/",
+        "category": null,
+        "date": "2026-03-26",
+        "mesh_terms": [],
+        "source_id": "41894968",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "이 논문은 식품, 진단, 치료 분야에서 고가치인 피코에리트린(PE) 생산을 위한 유전자 공학 기술을 다루고 있으며, 생물학적 엔지니어링을 통한 효율적인 생산 방법을 제시합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "포코에리트린(PE)은 고가의 형광 색소-단백질로 식품, 진단, 치료 분야에 널리 활용되지만, 해양 조류에서의 전통적 생산은 수확량 불안정, 고비용, 생태적 문제 등의 한계를 가진다(thermostability). 이에 대안으로 담수 미세조류를 기반으로 한 지속 가능한 생산 시스템이 필요하다.",
+        "method": "Web of Science 및 Google Scholar에서 담수 조류, PE 생합성, 유전자 공학, 폐수 생물정화, 생물연료화 관련 키워드를 활용해 체계적인 문헌 검토를 수행하였다. SWOT-TOWS 분석을 통해 비용, 확장성, 규제 장벽 등 전략적 방향을 도출하였다.",
+        "result": "특정 조류인 Anabaena fertilissima(475 mg/g 건중량)와 Cryptomonas pyrenoidifera(345 mg/g 건중량)는 전통 해양 원료와 경쟁력 있는 수확량을 보였다. CRISPR-Cas9를 통한 대사 흐름 조정과 프로모터 공학은 PE 생산량을 3.7배 증가시켰다.",
+        "significance": "폐수 처리와 다중 제품 연속 활용(PE, 지방, 생석가, 생화학 비료)을 결합한 통합 생물연료화 모델은 지속 가능한 상업화를 가속화한다. 고가 PE의 응용(형광 프로브, 광치료 물질, 오염물 분해 촉매)은 경제적 기회를 제공하며, 탄소 크레딧과 순도 기준 등 정책 도구를 통해 규제 장벽을 극복할 수 있다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-28T22:08:29.962336+00:00"
+}

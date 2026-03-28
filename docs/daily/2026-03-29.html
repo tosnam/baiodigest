@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-29 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-29</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41895493/" target="_blank" rel="noopener noreferrer">The role of linker on the elevated biosensing performance of a carbohydrate-binding module-tagged sarcosine oxidase.</a></h3>
+    <p>International journal of biological macromolecules</p>
+    <p>Biology Institute, Qilu University of Technology (Shandong Academy of Sciences), No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China; Shandong Provincial Key Laboratory of Biosensing and Microbial Intelligent Metabolic Regulation, No. 28789, Jingshi East Road, Licheng District, Jinan, Shandong, 250103, China. Electronic address: 15264110812@163.com.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>단백질 결합 모듈과 링커 엔지니어링을 통한 효소 기반 생체 센서 개발로 의약 산업의 진단 기술 혁신에 기여 가능합니다. 크레아티닌 검출용 생체 센서의 안정성 및 정확도 향상은 임상 진단에 직접적 활용 가능성이 높습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>크레아티닌은 신장 기능 평가의 핵심 생물마커로, 빠른 감지와 안정성 있는 포인트오브케어 테스트(POCT) 생체감지기 개발이 시급하다. 기존 sarcosine oxidase(SOX)-기반 생체감지기에서는 포스트-immobilization 효소 활성 및 장기 안정성이 문제로 남아왔다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>carbohydrate-binding module 3(CBM3)을 SOX에 유전자결합하여 링커를 통한 구조 최적화를 시도했다. N-단일 및 C-단일에 proline-rich XP와 α-하일릭 EAAK 링커를 적용해 CBM3-XP-SOX 및 SOX-EAAK-CBM3를 생성하고, 구조 기반 링커 공학을 통해 안정성을 개선했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>SOX-EAAK-CBM3는 15.96 mg/mL의 용해성 발현과 39.96%-56.23% 높은 촉매 활성, 25일간의 우수한 전기화학적 안정성(R2 &gt; 0.99)을 보였다. CBM3-XG-SOX/cellulose/Pt 생체감지기는 15일간의 7배 높은 안정성과 빠른 반응 속도(19-30초)를 기록했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 생물정보학을 기반으로 한 링커/결합부 최적화를 통한 유전자결합 효소 공학의 이론적 틀을 제시했다. CBM3-fused SOX 생체감지기는 저비용, 안정성, 민감도를 갖춘 POCT 크레아티닌 감지 기술로, 임상 진단 및 가정 건강 모니터링에 널리 활용 가능하다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41895536/" target="_blank" rel="noopener noreferrer">Catalytic mechanism of a plant hydrolytic enzyme explained through its 50 crystal structures and counting - What have we learnt?</a></h3>
+    <p>Biochimica et biophysica acta. General subjects</p>
+    <p>College of Sciences, Adelaide University, School of Agriculture, Food and Wine, and Waite Research Institute, Waite Research Precinct, Glen Osmond, South Australia 5064, Australia. Electronic address: maria.hrmova@adelaide.edu.au.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식품/화학/의약 산업에서 효소 기반 공정 최적화에 활용 가능합니다. 효소의 구조-기능 관계 이해를 통해 촉매 효율 향상 및 변형 효소 설계에 기여할 수 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>효소 반응 중 기질과 생성물의 결합/해리 속도가 너무 빠르다(reactant trajectories observation difficult). 이로 인해 촉매 사이클의 반응 경로를 연구하기 어려웠다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>50개의 결정 구조와 kinetics, 구조 모델링, 진화적 분석을 결합해 데이터를 제공(50 crystal structures, kinetics, structural modelling, evolutionary-based considerations).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>비공유 결합으로 포착된 포도당 생성물이 일시적 측면 공동 형성(temporary lateral cavity)을 유도해 기질 이탈을 촉진한다. Glu220은 수분 네트워크를 유지하는 비핵여성 아미노산으로 작용한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>구조적 요소의 진화 가능성을 밝혀내며, 수분 흐름 역학이 고효율 촉매 작용과 연관됨을 규명(enzyme dynamics and catalytic efficiency). 생물학 및 생물기술 분야의 지속 가능한 생물경제 구축에 응용 가능.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: ancestral sequence reconstruction
+      <br />
+      confidence: 0.80
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41894968/" target="_blank" rel="noopener noreferrer">An integrated biorefinery scheme towards freshwater microalgae as phycoerythrin factories for circular economy: Feedstock selection, optimized synthesis, wastewater synergy and cascading application.</a></h3>
+    <p>Journal of environmental management</p>
+    <p>College of Resources and Environmental Sciences, China Agricultural University, Beijing, 100193, PR China. Electronic address: lijieming@cau.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 식품, 진단, 치료 분야에서 고가치인 피코에리트린(PE) 생산을 위한 유전자 공학 기술을 다루고 있으며, 생물학적 엔지니어링을 통한 효율적인 생산 방법을 제시합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>포코에리트린(PE)은 고가의 형광 색소-단백질로 식품, 진단, 치료 분야에 널리 활용되지만, 해양 조류에서의 전통적 생산은 수확량 불안정, 고비용, 생태적 문제 등의 한계를 가진다(thermostability). 이에 대안으로 담수 미세조류를 기반으로 한 지속 가능한 생산 시스템이 필요하다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Web of Science 및 Google Scholar에서 담수 조류, PE 생합성, 유전자 공학, 폐수 생물정화, 생물연료화 관련 키워드를 활용해 체계적인 문헌 검토를 수행하였다. SWOT-TOWS 분석을 통해 비용, 확장성, 규제 장벽 등 전략적 방향을 도출하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>특정 조류인 Anabaena fertilissima(475 mg/g 건중량)와 Cryptomonas pyrenoidifera(345 mg/g 건중량)는 전통 해양 원료와 경쟁력 있는 수확량을 보였다. CRISPR-Cas9를 통한 대사 흐름 조정과 프로모터 공학은 PE 생산량을 3.7배 증가시켰다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>폐수 처리와 다중 제품 연속 활용(PE, 지방, 생석가, 생화학 비료)을 결합한 통합 생물연료화 모델은 지속 가능한 상업화를 가속화한다. 고가 PE의 응용(형광 프로브, 광치료 물질, 오염물 분해 촉매)은 경제적 기회를 제공하며, 탄소 크레딧과 순도 기준 등 정책 도구를 통해 규제 장벽을 극복할 수 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
