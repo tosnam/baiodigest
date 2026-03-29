@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-03-30 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-03-30</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41902842/" target="_blank" rel="noopener noreferrer">Enhancing Mutation Impact Prediction in Protein Protein Interactions through Interpretable Graph-Based Multi-Level Feature Interactions.</a></h3>
+    <p>Bioinformatics (Oxford, England)</p>
+    <p>College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>단백질-단백질 상호작용의 돌연변이 영향을 예측하는 기술로 단백질 공학 및 치료제 설계에 직접적 활용 가능. 변이에 의한 결합 친화도 변화를 정확히 예측해 신규 약물 개발 및 단백질 설계에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질-단백질 상호작용(PPIs)은 세포 기능의 핵심으로, 변이 유발된 결합 친화도 변화(ΔΔG) 예측은 여전히 도전적이다. 기존 방법은 시퀀스 및 구조 기반 특징을 통합하지만, 다차원 및 다스케일 상호작용을 명시적으로 모델링하지 못한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>IGMI는 해석 가능한 그래프 기반 모델로, 1D 시퀀스, 2D 접촉 맵, 3D 구조, 리스idue 및 원자 수준 표현을 통한 다단계 특징 상호작용을 명시적으로 인코딩한다. 이는 크로스-차원 및 크로스-스케일 의존성을 재조정하여 지역 및 장거리 변이 효과를 더 정확하게 추정한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>다양한 벤치마크 데이터셋에서 IGMI는 정확도, 견고성, 해석 가능성에서 최신 기법보다 우수하다. 매크로 및 마이크로 분석은 생물학적으로 타당한 패턴을 드러내며, 직접적 인터페이스 변화와 간접적 구조 재조직을 구분한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>IGMI는 변이 유발 친화도 변화를 신뢰성 있게 모델링하는 해석 가능한 프레임워크를 제공하여 단백질 공학 및 치료 설계에 활용 가능하다. 오픈소스로 제공되며, 코드베이스 및 평가 도구는 GitHub 및 Zenodo에서 접근 가능하다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

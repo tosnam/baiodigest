@@ -1,0 +1,74 @@
+{
+  "date": "2026-03-30",
+  "entries": [
+    {
+      "paper": {
+        "title": "Enhancing Mutation Impact Prediction in Protein Protein Interactions through Interpretable Graph-Based Multi-Level Feature Interactions.",
+        "abstract": "Protein-protein interactions (PPIs) are central to cellular functions, and predicting mutation-induced changes in binding affinity (ΔΔG) remains challenging. Although existing computational methods integrate sequence- and structure-derived features and thus implicitly capture certain sequence-structure relationships, they typically fuse these modalities through simple concatenation, without explicitly modeling their multidimensional and multiscale interdependencies. Here, we introduce IGMI, an interpretable graph-based model that explicitly encodes multi-level feature interactions across 1D sequences, 2D contact maps, 3D structures, and residue- and atom-level representations. By recalibrating cross-dimensional and cross-scale dependencies, IGMI enables more accurate estimation of both local and long-range mutation effects. Across multiple benchmark datasets, IGMI consistently outperforms state-of-the-art methods in accuracy, robustness, and interpretability. Macro- and micro-level analyses further reveal biologically plausible patterns, distinguishing direct interface perturbations from indirect structural reorganizations. Complementary analyses under different data splitting strategies indicate that the model learns generalizable affinity-related interaction patterns, rather than relying on split-specific information. IGMI provides a reliable and interpretable framework for modeling mutation-induced affinity changes, supporting applications in protein engineering and therapeutic design. IGMI is implemented in PyTorch and released under an open-source license. The full codebase, training scripts, and evaluation utilities are available at https://github.com/ShiweiWu-545/IGMI.git. An archival snapshot containing all source code, pre-trained weights, processed datasets, and reproducibility scripts is available on Zenodo (https://doi.org/10.5281/zenodo.17563574). Supplementary data are available at Bioinformatics online.",
+        "authors": [
+          "Wu S",
+          "Xu N",
+          "Xin X",
+          "Zhang M",
+          "Liu H",
+          "Zhu H",
+          "Wei Z",
+          "Zhao C",
+          "Yu L",
+          "Feng W"
+        ],
+        "affiliations": [
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.",
+          "Institute of Biomedical Engineering and Technology, Shanghai Engineering Research Center of Molecular Therapeutics and New Drug Development, School of Chemistry and Molecular Engineering, East China Normal University, Shanghai, China.",
+          "Shanghai Unicar-Therapy Bio-medicine Technology Co., Ltd, Shanghai, China.",
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.",
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.",
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.",
+          "Institute of Biomedical Engineering and Technology, Shanghai Engineering Research Center of Molecular Therapeutics and New Drug Development, School of Chemistry and Molecular Engineering, East China Normal University, Shanghai, China.",
+          "Shanghai Unicar-Therapy Bio-medicine Technology Co., Ltd, Shanghai, China.",
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.",
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China.",
+          "Shanghai Unicar-Therapy Bio-medicine Technology Co., Ltd, Shanghai, China.",
+          "Institute of Biomedical Engineering and Technology, Shanghai Engineering Research Center of Molecular Therapeutics and New Drug Development, School of Chemistry and Molecular Engineering, East China Normal University, Shanghai, China.",
+          "Shanghai Unicar-Therapy Bio-medicine Technology Co., Ltd, Shanghai, China.",
+          "College of Intelligent Systems Science and Engineering, Harbin Engineering University, Harbin, China."
+        ],
+        "doi": "10.1093/bioinformatics/btag150",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioinformatics (Oxford, England)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41902842/",
+        "category": null,
+        "date": "2026-03-27",
+        "mesh_terms": [],
+        "source_id": "41902842",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "단백질-단백질 상호작용의 돌연변이 영향을 예측하는 기술로 단백질 공학 및 치료제 설계에 직접적 활용 가능. 변이에 의한 결합 친화도 변화를 정확히 예측해 신규 약물 개발 및 단백질 설계에 기여할 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질-단백질 상호작용(PPIs)은 세포 기능의 핵심으로, 변이 유발된 결합 친화도 변화(ΔΔG) 예측은 여전히 도전적이다. 기존 방법은 시퀀스 및 구조 기반 특징을 통합하지만, 다차원 및 다스케일 상호작용을 명시적으로 모델링하지 못한다.",
+        "method": "IGMI는 해석 가능한 그래프 기반 모델로, 1D 시퀀스, 2D 접촉 맵, 3D 구조, 리스idue 및 원자 수준 표현을 통한 다단계 특징 상호작용을 명시적으로 인코딩한다. 이는 크로스-차원 및 크로스-스케일 의존성을 재조정하여 지역 및 장거리 변이 효과를 더 정확하게 추정한다.",
+        "result": "다양한 벤치마크 데이터셋에서 IGMI는 정확도, 견고성, 해석 가능성에서 최신 기법보다 우수하다. 매크로 및 마이크로 분석은 생물학적으로 타당한 패턴을 드러내며, 직접적 인터페이스 변화와 간접적 구조 재조직을 구분한다.",
+        "significance": "IGMI는 변이 유발 친화도 변화를 신뢰성 있게 모델링하는 해석 가능한 프레임워크를 제공하여 단백질 공학 및 치료 설계에 활용 가능하다. 오픈소스로 제공되며, 코드베이스 및 평가 도구는 GitHub 및 Zenodo에서 접근 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-29T22:01:49.707583+00:00"
+}
