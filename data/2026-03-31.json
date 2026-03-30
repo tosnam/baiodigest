@@ -1,0 +1,135 @@
+{
+  "date": "2026-03-31",
+  "entries": [
+    {
+      "paper": {
+        "title": "Advances in Dehalogenase Biocatalysis: Mechanisms, Engineering, and Industrial Perspectives.",
+        "abstract": "Halogenated organic compounds represent a significant environmental hazard due to their persistence and resistance to degradation. Dehalogenases, enzymes that efficiently remove halogens, offer versatile solutions for environmental remediation, green synthesis, and biocatalysis. For instance, LinB dehalogenates β-HCH to pentachlorocyclohexanol, and HHDH catalyzes epoxide ring-opening reactions to synthesize various β-substituted alcohols using different nucleophilic reagents. Recent advances elucidate their molecular mechanisms and enable sophisticated engineering. In this review, we summarize current advances in dehalogenase research, spanning their evolutionary origins, catalytic mechanisms, and classification across major enzyme families. We further highlight recent advances in enzyme engineering and AI-assisted design that are enhancing stability, broadening substrate scope, and unlocking novel catalytic functions. Finally, we discuss emerging opportunities for deploying engineered dehalogenases in bioremediation and green chemical synthesis. Together, these developments are transforming dehalogenases into efficient biocatalysts, offering powerful tools for environmental remediation and green chemistry.",
+        "authors": [
+          "Wang J",
+          "Zhang Y",
+          "Li M",
+          "Zhao Y",
+          "Wan T",
+          "Wang X",
+          "Guo Z",
+          "Meng S",
+          "Cui H"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Science, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, No. 1 Wenyuan Road, Nanjing 210097, China."
+        ],
+        "doi": "10.1021/acs.jafc.5c17253",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41906307/",
+        "category": null,
+        "date": "2026-03-29",
+        "mesh_terms": [],
+        "source_id": "41906307",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "이 논문은 AI를 활용한 디할로젠화 효소 엔지니어링과 녹색 합성, 생물정화 분야에서의 응용을 다루고 있어 화학 및 환경 산업에 기여할 수 있는 가치가 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "할로겐화 유기물은 지속성과 분해 저항성으로 인해 환경 위협을 주요 요인으로 한다. 열안정성(thermostability)과 효율적인 할로겐 제거 능력을 가진 데할로젠아제(dehalogenase)는 환경 정화, 녹색 합성, 생물촉매 분야에서 유용한 해결책을 제공한다.",
+        "method": "최근 연구는 분자 메커니즘 밝히기와 엔지니어링 기술 개발을 통해 진보하였다. 이 리뷰는 데할로젠아제의 진화적 기원, 촉매 메커니즘, 주요 효소 가족 분류를 종합적으로 요약하였다.",
+        "result": "AI 기반 설계 기술이 효소 안정성 향상과 기질 범위 확장, 새로운 촉매 기능 개발을 가능하게 하였다. 이러한 발전은 데할로젠아제를 효율적인 생물촉매로 전환시켰다.",
+        "significance": "공학화된 데할로젠아제는 생물정화와 녹색 화학 합성 분야에서 혁신적인 도구로 활용 가능하다. 이는 환경 정화와 지속 가능한 화학 공정에 중요한 기여를 한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "A review of recent advances in generative artificial intelligence models for biomolecular sciences.",
+        "abstract": "Generative artificial intelligence (AI) models, a class of AI techniques that learn data distributions to synthesize novel samples, have emerged as impactful tools across scientific disciplines. In recent years, these models have found extensive applications in fields such as natural language processing and biomedical sciences. Despite their growing influence, comprehensive reviews on the application of generative models in biomolecular sciences remain limited. In this review, we provide a systematic overview of recent advances in generative models applied to biomolecular sciences. We discuss several prominent generative architectures, including variational autoencoders, generative adversarial networks, and diffusion models, highlighting their applications in molecular design and bioinformatics. Additionally, we examine how these models contribute to critical challenges such as molecular property prediction and molecular generation. Finally, we discuss key challenges that remain in this field, including model interpretability, scalability, and the need for high-quality molecular datasets. We highlight emerging research directions that aim to overcome these limitations and propose strategies for improving the reliability and applicability of generative models in biomolecular problems. Through this review, our objective is to provide researchers with a comprehensive understanding of the current landscape of generative modeling in biomolecular sciences and to inspire further advancements in this interdisciplinary area.",
+        "authors": [
+          "Jiang J",
+          "Li D",
+          "Wang G",
+          "Hayes N",
+          "Shi Y",
+          "Qiu H",
+          "Zhang B",
+          "Zhou T",
+          "Wei GW"
+        ],
+        "affiliations": [
+          "Research Center of Nonlinear Science, School of Mathematical and Physical Sciences, Wuhan Textile University, Wuhan 430200, China.",
+          "Department of Mathematics, Michigan State University, East Lansing, MI 48824, USA.",
+          "Research Center of Nonlinear Science, School of Mathematical and Physical Sciences, Wuhan Textile University, Wuhan 430200, China.",
+          "Research Center of Nonlinear Science, School of Mathematical and Physical Sciences, Wuhan Textile University, Wuhan 430200, China.",
+          "Department of Mathematics, Michigan State University, East Lansing, MI 48824, USA.",
+          "Research Center of Nonlinear Science, School of Mathematical and Physical Sciences, Wuhan Textile University, Wuhan 430200, China.",
+          "Research Center of Nonlinear Science, School of Mathematical and Physical Sciences, Wuhan Textile University, Wuhan 430200, China.",
+          "Research Center of Nonlinear Science, School of Mathematical and Physical Sciences, Wuhan Textile University, Wuhan 430200, China.",
+          "Key Laboratory of Computational Mathematics, Guangdong Province, and School of Mathematics, Sun Yat-sen University, Guangzhou 510006, China.",
+          "Department of Mathematics, Michigan State University, East Lansing, MI 48824, USA.",
+          "Department of Electrical and Computer Engineering, Michigan State University, East Lansing, MI 48824, USA.",
+          "Department of Biochemistry and Molecular Biology, Michigan State University, East Lansing, MI 48824, USA."
+        ],
+        "doi": "10.1016/j.apsb.2025.12.012",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Acta pharmaceutica Sinica. B",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41909740/",
+        "category": null,
+        "date": "2026-03-01",
+        "mesh_terms": [],
+        "source_id": "41909740",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "bioinformatics",
+        "reason": "생성형 AI 모델이 생물정보학에 적용되어 약물 설계 및 분자 설계에 활용 가능하며, 의약 산업에 기여할 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생성형 인공지능(AI) 모델은 데이터 분포를 학습해 새로운 샘플을 합성하는 기술로, 과학 분야에서 영향력 있는 도구로 부상했습니다(Generative AI models). 최근에는 자연어 처리 및 생물의학 분야 등에 광범위하게 적용되고 있습니다.",
+        "method": "이 리뷰에서는 생성형 모델의 생물분자 과학 적용을 첳계적으로 조사했습니다(Systematic overview). 주요 생성형 아키텍처(Variational autoencoders, Generative adversarial networks, Diffusion models)와 그 응용 사례를 분석했습니다.",
+        "result": "모델들은 분자 설계 및 생물정보학에서 중요한 역할을 하며, 분자 속성 예측과 생성에 기여하고 있습니다(Molecular property prediction). 또한, 해석 가능성과 확장성 등의 한계를 식별했습니다.",
+        "significance": "이 리뷰는 생성형 모델의 현재 상태를 종합적으로 정리하고, 향후 연구 방향을 제시해 생물분자 문제 해결에 유용한 전략을 제공합니다(Research directions). 이는 다학제적 분야의 발전을 촉진할 수 있습니다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-30T22:13:00.509505+00:00"
+}
