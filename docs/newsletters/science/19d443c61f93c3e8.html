@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1774966295000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjY2ZDcwMWVhLTU3YWEtNDg2Ni1hNmI3LTk4MTYwOWY2NTlhOCIsImRla1ZlcnNpb24iOjEsIml2IjoickxLMHk1Q0liUERvbi9aRWlHd2lYdz09IiwiY2lwaGVyVGV4dCI6Imw5YWwrWmpzc1IycUpiM1FoVEpxbnkrci93V0Rna0d2K0xZUklKamFwb0ZoRkNEckZ5R0loZ0kwRXp4NHArUXhhci9HZUtGS2hXeE5TdElMcjBKOVhUYUh1TTFzU0t5eXRNdVFpR3p3NkovMlJJaHNJbDg9IiwiYXV0aFRhZyI6ImhXeE5TdElMcjBKOVhUYUh1TTFzU0E9PSJ9" target="_blank" rel="noopener noreferrer">Considering the lack of long-lasting and safe treatments for chronic neuropathic pain … genomic medicines may offer an attractive alternative approach for neuropathic pain</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImRiYzExNjdiLTUyZjItNGI2YS1hMTkxLTg0NWY2ZmM0Y2U1MyIsImRla1ZlcnNpb24iOjEsIml2IjoiOWxsbGY4UnN5b0ZWOTcwVnNUVzZvdz09IiwiY2lwaGVyVGV4dCI6IllOQzAveERIQ0FuRzV0QmhYUVA3MFczUmJ4TE9YZjNHdFZuc0R0WS9CdUttQWlXeGZ6ek9zbDZLM3laS1pPN05VdmVLRlc5L0dpYzRTWWlESjBiYWVKbXZndEoxQmZaWlpYL0ViTXFCVmZlOUZiRTF1cU09IiwiYXV0aFRhZyI6IkdpYzRTWWlESjBiYWVKbXZndEoxQlE9PSJ9" target="_blank" rel="noopener noreferrer">sunbirds use suction to sip nectar</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjM4N2MwYjVmLTVkOTAtNDJhNi1iYzZjLTY0MWYwZDY1ZjVkZiIsImRla1ZlcnNpb24iOjEsIml2IjoiM1RrbVRkWDlMTStjRVdTSlZ6VzVoUT09IiwiY2lwaGVyVGV4dCI6IkFhZFpsRnduamorQlJicHU5Z2t1dzRGODFtTUZkY2tkWVd3bndDQjdYcm1ranY5dmROaWxnSHNXZ0NNNktYSEgycmlGUW9kUU1jUkJZYmlaVTc1c2xCTEwyYXNzVHQwNUprM1YvU3pQbkJGa2lWYzF1WVU9IiwiYXV0aFRhZyI6Ik1jUkJZYmlaVTc1c2xCTEwyYXNzVGc9PSJ9" target="_blank" rel="noopener noreferrer">People’s prior beliefs can continue to color how they interpret events, even after clear findings emerge</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjgyNDc2ZmVmLTk4ZDctNDVkZi1iYjg1LThiYWMwOWVmYmViMSIsImRla1ZlcnNpb24iOjEsIml2IjoiSGhsZkRFcHB2cmtGNzVPY0VzQncvQT09IiwiY2lwaGVyVGV4dCI6IjltWUJyM010UncyOWlHSjRoVHVBRVl0cXJZVmpWKzdhVVR3RXBOcVFSL1hBeUI4eHRDZ0plSS9rWFdRWTk4ekNnOUhaem1aZ0lsVG1xWTBZSWZpWWlGUGttZmY1OGg0Wlh3eEthYjY1QmUrVG5CTEFjUHc9IiwiYXV0aFRhZyI6IklsVG1xWTBZSWZpWWlGUGttZmY1OGc9PSJ9" target="_blank" rel="noopener noreferrer">these scientists are getting some help from black holes</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

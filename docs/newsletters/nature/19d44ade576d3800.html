@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1774973408000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=114cc781f7&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The month’s best science images</a></h4>
+      <p>미국 펜실베이니아에서 발견된 초콜릿 색 슬레모우드(Stemonitis splendens)의 미세한 생물 구조가 과학 사진 대회 후보로 선정된 사례를 소개합니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=20cbf8867c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Quantum simulations match real-world data</a></h4>
+      <p>양자 컴퓨터 시뮬레이션 결과가 실물 실험 데이터와 일치하는 첫 사례로, 자석 물질의 물리적 특성 분석을 통해 양자 기술의 가능성에 대한 신호를 보냈습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=46fa7fb334&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Sunbirds suck nectar with supple tongues</a></h4>
+      <p>태양새가 입 모양을 변형하지 않고도 혀를 사용해 꽃蜜을 흡입하는 생리 구조가 척추동물 중 유일한 사례로 밝혀졌습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=71ba5a7b02&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Are boys OK?</a></h4>
+      <p>남성 청소년 위기 우려에 대한 과학적 분석은 성별 간 차이보다는 전체 청소년의 공통된 도전 과제에 초점을 맞추고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=3ed9d69312&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Rethink cities as living systems</a></h4>
+      <p>영국의 카드보드에서 카비아르까지의 생태계 기반 도시 재생 프로젝트는 자원 순환 시스템을 통한 지속 가능한 도시 모델을 제시합니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d49436028a&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">How ‘self-driving’ labs could change science</a></h4>
+      <p>AI 로봇 &#39;에브&#39;가 주도하는 자율 실험실은 약물 개발 과정을 혁신적으로 재편하며 과학 연구의 미래를 예고하고 있습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

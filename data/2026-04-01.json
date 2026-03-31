@@ -1,0 +1,62 @@
+{
+  "date": "2026-04-01",
+  "entries": [
+    {
+      "paper": {
+        "title": "Machine learning-assisted engineering of substrate-specific β-lactamases.",
+        "abstract": "Directed evolution is a powerful strategy for tailoring enzyme substrate specificity, but it often requires negative screening or selection to eliminate variants with residual activity toward undesired substrates. Here, we present a machine learning-assisted workflow that replaces experimental counter-selection with an in silico negative filter trained on positive selection data for an undesired substrate. Using the promiscuous TEM-52 β-lactamase as a template, we randomized six active-site residues to construct a ~ 4 × 108-member library. Data from two rounds of ampicillin (AMP) selection coupled with next-generation sequencing were used to train a convolutional neural network that predicts the activity toward AMP from sequence. We then performed selection on the cephalosporin ceftazidime (CAZ) and applied the AMP-trained model to triage target-enriched pools, prioritizing variants predicted to be AMP-inactive. This process yielded variants that supported cellular growth in CAZ but not in AMP and hydrolyzed CAZ with no detectable AMP activity in kinetic assays. Extending the approach to cefotaxime (CTX) and cephalothin (CET), which are structurally more similar to AMP, produced fewer AMP-inactive candidates and revealed partial convergence of sequence solutions. Cross-substrate profiling further partitioned specificity: CAZ-selected variants were largely inactive on CTX and CET, whereas CTX/CET-selected variants often showed overlapping activity within this cephalosporin subgroup. More broadly, the strategy proposed in this study could generalize to other proteins whenever sequence-to-activity data can be generated for undesired targets, enabling scalable engineering of orthogonality.",
+        "authors": [
+          "Park YS",
+          "Jeong CB",
+          "Kim M",
+          "Kim D",
+          "Park D",
+          "Yoo TH"
+        ],
+        "affiliations": [
+          "Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea.",
+          "Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea.",
+          "Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea.",
+          "Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea; Ajou Energy Science Research Center, Ajou University, Suwon 16499, Republic of Korea.",
+          "Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea; College of Advanced Bio-convergence Engineering, Ajou University, Suwon 16499, Republic of Korea. Electronic address: dpark@ajou.ac.kr.",
+          "Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea; College of Advanced Bio-convergence Engineering, Ajou University, Suwon 16499, Republic of Korea. Electronic address: taehyeonyoo@ajou.ac.kr."
+        ],
+        "doi": "10.1016/j.ijbiomac.2026.151692",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of biological macromolecules",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41911991/",
+        "category": null,
+        "date": "2026-03-28",
+        "mesh_terms": [],
+        "source_id": "41911991",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "β-라크타마제의 기질 특이성 엔지니어링은 항생제 저항성 관리에 활용 가능합니다. 머신러닝 기반의 효율적인 필터링 기법은 의약품 개발에서 중요합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "지향적 진화는 효소의 기질 특이성을 조정하는 강력한 전략이지만, 원치 않는 기질에 대한 잔여 활성을 제거하기 위해 실험적 반선별이 필요하다(thermostability). 이 연구는 실험적 반선별 대신 인공지능 기반의 선별 필터를 도입하였다.",
+        "method": "TEM-52 β-라크탐아제의 6개 활성 부위 잔기를 무작위화해 라이브러리(4×10⁸개)를 생성하고, 암피실린(AMP) 선별 데이터를 기반으로 컨볼루션 신경망(CNN)을 훈련시켰다. 이후 시프로플로록사신(CAZ) 선별 시 AMP 훈련 모델을 활용해 변이체를 선별하였다.",
+        "result": "CAZ를 분해하지만 AMP 활성을 나타내지 않는 변이체가 생성되었으며, 구조적으로 유사한 CTX와 CET에 대한 활성은 제한적이었고, 일부 변이체는 기질 간 특이성을 분리하였다(thermostability).",
+        "significance": "이 방법은 원치 않는 기질에 대한 시퀀스-활성 데이터가 존재할 경우 다른 단백질에도 적용 가능하며, 대규모 정합성 공학 설계에 활용할 수 있다(thermostability)."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-03-31T22:11:33.932066+00:00"
+}

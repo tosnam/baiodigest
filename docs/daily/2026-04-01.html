@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-01 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-01</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41911991/" target="_blank" rel="noopener noreferrer">Machine learning-assisted engineering of substrate-specific β-lactamases.</a></h3>
+    <p>International journal of biological macromolecules</p>
+    <p>Department of Molecular Science and Technology, Ajou University, Suwon 16499, Republic of Korea; College of Advanced Bio-convergence Engineering, Ajou University, Suwon 16499, Republic of Korea. Electronic address: taehyeonyoo@ajou.ac.kr.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>β-라크타마제의 기질 특이성 엔지니어링은 항생제 저항성 관리에 활용 가능합니다. 머신러닝 기반의 효율적인 필터링 기법은 의약품 개발에서 중요합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>지향적 진화는 효소의 기질 특이성을 조정하는 강력한 전략이지만, 원치 않는 기질에 대한 잔여 활성을 제거하기 위해 실험적 반선별이 필요하다(thermostability). 이 연구는 실험적 반선별 대신 인공지능 기반의 선별 필터를 도입하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>TEM-52 β-라크탐아제의 6개 활성 부위 잔기를 무작위화해 라이브러리(4×10⁸개)를 생성하고, 암피실린(AMP) 선별 데이터를 기반으로 컨볼루션 신경망(CNN)을 훈련시켰다. 이후 시프로플로록사신(CAZ) 선별 시 AMP 훈련 모델을 활용해 변이체를 선별하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>CAZ를 분해하지만 AMP 활성을 나타내지 않는 변이체가 생성되었으며, 구조적으로 유사한 CTX와 CET에 대한 활성은 제한적이었고, 일부 변이체는 기질 간 특이성을 분리하였다(thermostability).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 방법은 원치 않는 기질에 대한 시퀀스-활성 데이터가 존재할 경우 다른 단백질에도 적용 가능하며, 대규모 정합성 공학 설계에 활용할 수 있다(thermostability).</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
