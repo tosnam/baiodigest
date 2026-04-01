@@ -1,0 +1,68 @@
+{
+  "date": "2026-04-02",
+  "entries": [
+    {
+      "paper": {
+        "title": "Computational-Guided semi-rational design to Reprogram Phospholipase D into Industrially Robust enzyme.",
+        "abstract": "Phospholipase D (PLD) catalyzes the synthesis of rare phospholipid derivatives from phospholipids, and these derivatives possess significant application value and market potential. However, most reported PLDs show poor thermal stability, with melting temperatures below 60 °C, limiting their industrial application. This study employed a computer-aided design strategy integrating ancestral sequence reconstruction (ASR) and Gibbs folding free energy (ΔΔG) calculation to enhance PLD's thermal stability. Through iterative accumulation mutagenesis, a combinatorial mutant PLDM5 was generated. Its melting temperature and half-life at 50 °C increased by 13.4 °C and 415-fold, respectively. Meanwhile, the mutant retained effective catalytic performance, achieving a phosphatidylserine conversion of 78.8% with a productivity of 39.4 g/L/h. Structural and dynamics simulations revealed that the ASR and ΔΔG mutations synergistically enhanced structural rigidity through distinct mechanisms. This work expands the industrial application scope of PLD and enables high-temperature catalysis of phospholipids.",
+        "authors": [
+          "Kong XL",
+          "Zhang P",
+          "Qin ZQ",
+          "Su C",
+          "Li H",
+          "Lu ZM",
+          "Gong JS",
+          "Xu ZH",
+          "Shi JS"
+        ],
+        "affiliations": [
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; National Engineering Research Center for Cereal Fermentation and Food Biomanufacturing, School of Biotechnology, Jiangnan University, Wuxi 214122, PR China. Electronic address: 3171281291@qq.com.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; National Key Laboratory for Development and Utilization of Forest Food Resources, Zhejiang A&F University, Hangzhou 311300, PR China. Electronic address: 2652726703@qq.com.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; National Engineering Research Center for Cereal Fermentation and Food Biomanufacturing, School of Biotechnology, Jiangnan University, Wuxi 214122, PR China. Electronic address: 76674326@qq.com.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; Institute of Future Food Technology, JITRI, Yixing 214200, PR China. Electronic address: 174020590@qq.com.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; Institute of Future Food Technology, JITRI, Yixing 214200, PR China. Electronic address: liheng@jiangnan.edu.cn.",
+          "National Engineering Research Center for Cereal Fermentation and Food Biomanufacturing, School of Biotechnology, Jiangnan University, Wuxi 214122, PR China. Electronic address: zmlu@jiangnan.edu.cn.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; Institute of Future Food Technology, JITRI, Yixing 214200, PR China; Shandong Kunda Biotechnology Co., Ltd, Linyi 276400, PR China. Electronic address: jinsonggong.bio@hotmail.com.",
+          "Institute of Future Food Technology, JITRI, Yixing 214200, PR China; National Engineering Research Center for Cereal Fermentation and Food Biomanufacturing, School of Biotechnology, Jiangnan University, Wuxi 214122, PR China; Innovation Center for Advanced Brewing Science and Technology, College of Biomass Science and Engineering, Sichuan University, Chengdu 610065, PR China. Electronic address: zhenghxu@jiangnan.edu.cn.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology of Ministry of Education, School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, PR China; Institute of Future Food Technology, JITRI, Yixing 214200, PR China. Electronic address: shijs@163.com."
+        ],
+        "doi": "10.1016/j.biortech.2026.134528",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioresource technology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41916458/",
+        "category": null,
+        "date": "2026-03-29",
+        "mesh_terms": [],
+        "source_id": "41916458",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "PLD의 열 안정성을 개선해 산업용 고온 촉매로 활용 가능. 생산성 39.4 g/L/h 달성해 스케일업에 적합.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "인산리파제 D(PLD)는 인산리파이드로부터 희귀 인산리파이드 유도체를 합성하는 효소로, 상용가치와 시장잠재력이 높다. 그러나 대부분의 보고된 PLD는 열안정성(thermostability)이 낮아 융점 온도가 60°C 이하로, 산업적 활용에 제한이 있다.",
+        "method": "산세놀열서 복원(ASR)과 Gibbs 접힘 자유에너지(ΔΔG) 계산을 통합한 컴퓨터 지원 설계 전략을 적용했다. 반복적 축적 돌연변이를 통해 조합적 돌연변이체 PLDM5를 생성했다.",
+        "result": "PLDM5는 융점 온도가 13.4°C 상승하고 50°C에서의 반감기(half-life)가 415배 증가했다. 촉매 성능은 78.8%의 인산서열 전환율과 39.4 g/L/h 생산성을 유지했다.",
+        "significance": "PLD의 산업적 활용 범위를 확장하고 고온에서 인산리파이드의 촉매 반응을 가능하게 했다. 구조적 및 역학적 시뮬레이션은 ASR과 ΔΔG 돌연변이가 구조적 경직성을 서로 다른 메커니즘으로 증가시켰음을 밝혔다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-01T22:13:18.877324+00:00"
+}

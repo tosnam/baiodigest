@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1775064540000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=30b90473de&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The science of Artemis II</a></h4>
+      <p>NASA가 달 주변을 돌며 우주 비행이 인간 건강에 미치는 영향을 조사하는 실험을 수행할 예정입니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=b6bfa183a9&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Why some feel Artemis ambivalence</a></h4>
+      <p>아르테미스 임무가 단순한 시험비행에 그치는 만큼 일부 과학자는 장기적인 달 기지 구축 계획의 초기 단계에만 관심을 기울이고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=f6a19be76c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Reprieve from baffling US bird flu outbreak</a></h4>
+      <p>H5N1 바이러스가 미국 소유의 소에서 발생한 지 2년 만에 여전히 감염 전파 경로가 명확하지 않은 상황입니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=a2a1fb9189&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">‘Don’t use my gene for Olympic sex testing’</a></h4>
+      <p>국제올림픽위원회가 유전자를 활용한 성별 검사에 반대하는 유명 유전학자 앤드류 싱클어의 의견이 다뤄졌습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=b4f25c1e27&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">All that’s referenced is not real</a></h4>
+      <p>2025년 출판물 중 수만 건의 인용문이 인공지능의 창작 오류로 인해 가짜로 생성되었다는 분석 결과가 공개되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=98fca92c5f&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">A snail marches on its stomach</a></h4>
+      <p>하와이 고유종 나utilus의 식성을 파악하기 위한 보존가들의 연구가 주목받고 있습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
