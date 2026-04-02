@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1775139020000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjhkMWUyYWE4LTQwYjUtNDY1Zi1iMmU3LTAxZGMzYmI4Zjc5MyIsImRla1ZlcnNpb24iOjEsIml2IjoiOVI0R09hd0Jqa0JvbUh2RHI3WWFGZz09IiwiY2lwaGVyVGV4dCI6InNYQmIyVUtjMXQvWmlJUnlLeDQxZVIzSS9LUHEzTTQ3bUVYZFN5d1hMMGF3a1liQTFpb2VPdGJISGZtZ2ovclhYcHd5S2VmVDNRa0lCSE9kaDBWbGJZd09WVklZZ3EzNDlSNEdPYXdCamtCb21IdkRyN1lhRmc9PSIsImF1dGhUYWciOiJDQVJ6bllkRlpXMk1EbFZTR0lLdCtBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">have engineered a close relative of the crop traditionally known for its use in cigarettes to manufacture a wide variety of psychedelics</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjZjOTI0ZTBjLTYyOTAtNGZiYS1hMzVkLTRhM2Y1ZWE3MjEyMyIsImRla1ZlcnNpb24iOjEsIml2IjoiVWs1SFdDWHhVR0xNTFhac01xZm1rdz09IiwiY2lwaGVyVGV4dCI6Ik5Wc1lCK1JlYXpzOUw0ZXQ0TmtFS1Zoa2Erd3granQ1UnZVeTBmSVhtMHlMeUt3TlFFQ2prYldqT2V3UmhoQ3QwUzNqdFByUlZIeUtNbjMzL2FUTXJ2MUNYQVVmc2QwdFVrNUhXQ1h4VUdMTUxYWnNNcWZta3c9PSIsImF1dGhUYWciOiJpako5OS8ya3pLNzlRbHdGSDdIZExRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">provides the strongest evidence yet in support of the theory</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjdjZjg2M2QyLWRjZWUtNDFhZi04Y2UwLTkwMDhjYTZkOThjYSIsImRla1ZlcnNpb24iOjEsIml2IjoiNk1iWXMzcFpQU3pVT0Y4QUcyWnYwZz09IiwiY2lwaGVyVGV4dCI6Ik96d1JqYTB0VGpVMVhHYnpoTzZ2L245VkdWNWRvayt5RUJVcldZbVo0czZqQmxDTTE4Wkh5aisrbHpieHl2TDlvMkpQZlE5dEh4Rkw1VExnUkNlT0dJSHVBbXF1b0lhMzZNYllzM3BaUFN6VU9GOEFHMlp2MGc9PSIsImF1dGhUYWciOiJTK1V5NEVRbmpoaUI3Z0pxcnFDR3R3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">replication success rate—49% for the 164 papers evaluated</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjgwMWI4MmU2LTBjZjUtNGM0Yi1iNzhkLTEwM2ZmMmEyZjAxZCIsImRla1ZlcnNpb24iOjEsIml2IjoiSU9rSUxaQVdOcm1wdFMzWmF1c013QT09IiwiY2lwaGVyVGV4dCI6ImlVQSsyMi9tZWVmSlRWbW0zR2NBelpUU2xobVhSZmVWRk5WQ3duQWNaNmpEVkxpYlo0cGt2b3hMZC9KNy80aDdTOUtPUmkvTElhcDY0Q1ZtZ1JLbXlnVGo0d25jdHBsaklPa0lMWkFXTnJtcHRTM1phdXNNd0E9PSIsImF1dGhUYWciOiJldUFsWm9FU3Bzb0U0K01KM0xhWll3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">This 500-million-year-old fossil</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

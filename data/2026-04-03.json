@@ -1,0 +1,110 @@
+{
+  "date": "2026-04-03",
+  "entries": [
+    {
+      "paper": {
+        "title": "Transforming a fragile protein helix into an ultrastable scaffold via a hierarchical AI and chemistry framework.",
+        "abstract": "The rational design of proteins that maintain structural integrity under concurrent thermal, mechanical, and chemical stress remains a challenge in molecular engineering. We present a hierarchical framework that transforms an α-helical domain into an ultrastable scaffold by integrating AI-guided design with foundational chemical principles. This approach progresses from global architectural reinforcement, using multiple AI tools to create a stabilized four-helix bundle, to local chemical tuning, where AlphaFold3 guides the installation of salt bridges and metal-coordination motifs. A computational pipeline using physics-based screening such as molecular dynamics simulations efficiently distilled millions of designs into a minimal candidate set. The resulting α-helical proteins exhibit unprecedented multi-axis stability, with mechanical unfolding forces exceeding 200 pN, thermal resilience>100°C, and high resistance to chemical denaturants. By systematically dissecting the contributions of hydrophobic packing, electrostatics, and metal coordination, we establish a general blueprint for imparting extreme robustness. This work bridges AI-driven structural generation with chemical precision, advancing the creation of durable proteins for mechanistic studies and synthetic biology.",
+        "authors": [
+          "Qiu J",
+          "Tang G",
+          "Feng T",
+          "Zheng B",
+          "Liu Y",
+          "Zheng P"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Coordination Chemistry, Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, School of Chemistry and Chemical Engineering, Chemistry and Biomedicine Innovation Center (ChemBIC), Frontier Interdisciplinary Science Research Center, Nanjing University, Nanjing, China.",
+          "State Key Laboratory of Coordination Chemistry, Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, School of Chemistry and Chemical Engineering, Chemistry and Biomedicine Innovation Center (ChemBIC), Frontier Interdisciplinary Science Research Center, Nanjing University, Nanjing, China.",
+          "State Key Laboratory of Coordination Chemistry, Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, School of Chemistry and Chemical Engineering, Chemistry and Biomedicine Innovation Center (ChemBIC), Frontier Interdisciplinary Science Research Center, Nanjing University, Nanjing, China.",
+          "State Key Laboratory of Coordination Chemistry, Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, School of Chemistry and Chemical Engineering, Chemistry and Biomedicine Innovation Center (ChemBIC), Frontier Interdisciplinary Science Research Center, Nanjing University, Nanjing, China.",
+          "State Key Laboratory of Coordination Chemistry, Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, School of Chemistry and Chemical Engineering, Chemistry and Biomedicine Innovation Center (ChemBIC), Frontier Interdisciplinary Science Research Center, Nanjing University, Nanjing, China.",
+          "State Key Laboratory of Coordination Chemistry, Nanjing Drum Tower Hospital, Affiliated Hospital of Medical School, School of Chemistry and Chemical Engineering, Chemistry and Biomedicine Innovation Center (ChemBIC), Frontier Interdisciplinary Science Research Center, Nanjing University, Nanjing, China."
+        ],
+        "doi": "10.7554/eLife.109753",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "eLife",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41925723/",
+        "category": "molecular dynamics simulation",
+        "date": "2026-04-02",
+        "mesh_terms": [
+          "Molecular Dynamics Simulation",
+          "Protein Engineering",
+          "Proteins",
+          "Protein Stability",
+          "Protein Conformation, alpha-Helical",
+          "Artificial Intelligence"
+        ],
+        "source_id": "41925723",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "AI와 화학적 원리를 결합해 극단적 안정성을 가진 단백질 설계 기술을 제시함. 산업용 내구성 단백질 개발에 직접적으로 활용 가능.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)과 기계적 강도(mechanical strength)을 동시에 유지하는 단백질 설계는 분자 공학에서 어려운 과제이다. 이 연구는 α-하이드록스(α-helix) 구조를 극단적 안정성으로 전환하는 방법을 제시한다.",
+        "method": "AI 지도 설계와 기본 화학 원리를 통합한 계층적 프레임워크를 사용하였다. 전역적 구조 강화(global architectural reinforcement)와 로컬 화학 조정(local chemical tuning) 단계를 구분하였다.",
+        "result": "결과적으로 생성된 α-하이드록스 단백질은 기계적 해체력 200 pN 이상, 열 안정성 >100°C, 화학 분해 저항성을 보였다. 수소결합(hydrophobic packing), 전기적 상호작용(electrostatics), 금속 조화(metal coordination)의 기여를 체계적으로 분석하였다.",
+        "significance": "이 방법은 극한 안정성 부여에 대한 일반적 설계 지침을 제시한다. AI 기반 구조 생성과 화학 정밀도를 결합하여 지속 가능한 단백질 설계를 앞당겼다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Engineering cis- and trans-acting RNA regulators for next-generation prokaryotic synthetic biology.",
+        "abstract": "RNA regulation offers fast, energy-efficient, and highly programmable control over prokaryotic gene expression and is emerging as a necessary complement to DNA-level engineering for building complex and responsive bacterial systems. We review cis- and trans-acting RNA regulators through an engineer-facing framework organized around three actionable control knobs: transcription termination, translation initiation, and mRNA stability. Cis-Encoded strategies including 5' UTR and RBS engineering, riboswitches, and ribozymes often act early on nascent transcripts and can achieve low leak and high dynamic range. Trans-Acting systems such as synthetic small RNAs and CRISPR-based RNA-targeting tools provide an orthogonal capability that is especially valuable in bacteria: operon-resolved, gene-specific regulation within polycistronic transcripts with minimal polar effects. Across both classes, we highlight practical design determinants and failure modes shaped by target accessibility, co-transcriptional folding, RNase and RNA-chaperone context, and expression burden, and discuss how these constraints govern composability in multigene networks. We further outline emerging design workflows that integrate computation and AI-assisted modeling with screening and benchmarking to improve predictability and portability beyond E. coli-centric implementations. Together, this review aims to make RNA regulation a routine, engineerable layer for next-generation prokaryotic synthetic biology.",
+        "authors": [
+          "Tong S",
+          "Tong Y"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic and Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "State Key Laboratory of Microbial Metabolism, Joint International Research Laboratory of Metabolic and Developmental Sciences, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China. Electronic address: yaojun.tong@sjtu.edu.cn."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108882",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41921585/",
+        "category": null,
+        "date": "2026-03-30",
+        "mesh_terms": [],
+        "source_id": "41921585",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "metabolic_engineering",
+        "reason": "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "RNA 조절은 프로카리오틱 유전자 발현을 빠르고 에너지 효율적으로 제어하는 방법으로, DNA 수준 공학과 함께 복잡한 박테리아 시스템 구축에 필수적이다 (RNA regulation).",
+        "method": "cis-작용 및 trans-작용 RNA 조절자를 공학적 관점에서 3가지 제어 조각(전사 종결(transcription termination), 번역 시작(translation initiation), mRNA 안정성(mRNA stability))을 중심으로 분석하였다.",
+        "result": "cis-인코딩 전략은 낮은 누설(leak)과 높은 동적 범위를 달성할 수 있으며, trans-작용 시스템은 다유전자 전사체 내 특정 유전자에 대한 조절을 가능하게 한다 (small RNA, CRISPR-based tool).",
+        "significance": "디자인 요소와 제한 사항을 고려한 다유전자 네트워크의 조합 가능성(Composability)을 강조하며, AI 기반 설계 워크플로우를 통해 E. coli 중심 이외의 예측 가능성 향상이 제시된다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-02T22:28:50.832475+00:00"
+}
