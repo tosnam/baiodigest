@@ -1,0 +1,53 @@
+{
+  "date": "2026-04-04",
+  "entries": [
+    {
+      "paper": {
+        "title": "Protein Electrostatic Properties are Finetuned Through Evolution.",
+        "abstract": "Ionization states play crucial roles in protein functions. Yet despite decades of research, predicting protein p K a values remains a formidable challenge. Here, we present KaML-ESMs, neural networks built on the ESM protein language models and trained on a synthetically augmented experimental dataset. The KaML-ESMs significantly outperform structure-based approaches for protein p K a prediction, achieving accuracies approaching experimental resolution across six ionizable amino acids in native proteins. On the most challenging test set of engineered OBTRUDEs (iOnizable suBsTitutions foR bUrieD rEsidues), KaML-ESM2 emerges as the top model, achieving RMSE of 1.36. We applied KaML-ESM2 to the entire human proteome and demonstrated that the predicted p K a 's can identify functional sites and infer catalytic mechanisms. Our work challenges the structure-based paradigm and suggests a view that protein electrostatic properties are encoded in sequence, potentially co-optimized with structure and function through evolution. We offer KaML, a sequence-based end-to-end platform to support applications ranging from biological exploration to drug design, protein engineering, and biomolecular simulations. GAINES, a latent space sampling approach introduced in this work, provides a general framework for addressing data scarcity bottle-necks in machine learning applications.",
+        "authors": [
+          "Shen M",
+          "Dayhoff GW",
+          "Kortzak D",
+          "Shen J"
+        ],
+        "affiliations": [],
+        "doi": "10.1101/2025.04.17.649309",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "bioRxiv : the preprint server for biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41928971/",
+        "category": null,
+        "date": "2026-03-29",
+        "mesh_terms": [],
+        "source_id": "41928971",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "pKa 예측 기술은 단백질 기능 최적화에 활용 가능하며, 약물 설계와 효소 공학에 직접적 적용 가능성이 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질 기능에 있어 이온화 상태는 핵심적인 역할을 하지만, pKa 값 예측은 여전히 도전적인 과제이다. 수십 년간의 연구에도 불구하고 정확한 예측이 어려운 점이 있다.",
+        "method": "KaML-ESMs는 ESM 단백질 언어 모델을 기반으로 한 신경망으로, 합성 확장된 실험 데이터셋에서 훈련되었다. 구조 기반 접근법 대비 성능을 극대화하였다.",
+        "result": "6가지 이온화가능 아미노산의 pKa 예측 정확도가 실험 해상도에 근접하며, OBTRUDE 데이터셋에서 RMSE 1.36을 기록하였다. 인간 단백질체 전체에 적용해 기능적 사이트를 식별하였다.",
+        "significance": "구조 기반 패러다임을 도전하며, 단백질 전기적 특성이 시퀀스에 인코딩되어 있음을 제시하였다. KaML 플랫폼은 약물 설계 및 단백질 공학 등 다양한 분야에 활용 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-03T22:07:32.493618+00:00"
+}

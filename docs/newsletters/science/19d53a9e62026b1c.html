@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1775225041000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjQ0ZDZhMGQ5LTllNmMtNDIzOS1iNGY2LTk2MjBjMWEwYjE4MyIsImRla1ZlcnNpb24iOjEsIml2IjoiVTNMV2NVK0kzN256aWtBcGVWWE9GUT09IiwiY2lwaGVyVGV4dCI6IitVRTJZK0s5WVpOUWRldEVnTzBGWFZvcjZqUEJNY1dhNFdRcVg0dWxVY3BXeTA2ZjZjUUNlSDNXV0FXWlByc3E3bHNHMmRiTDBxUytJcWNaK3FPbG5FQXVPU1pyNVlZOHBsTnkxbkZQaU4rNTg0cEFLWGxWemhVPSIsImF1dGhUYWciOiJJcWNaK3FPbG5FQXVPU1pyNVlZOHBnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">can recognize a rhythm and also identify the same pattern when scientists change the tempo</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImJhZjZlZGMxLTdiNDgtNGYwMC1hNmZiLWNlZDY5MTE5NTc3NyIsImRla1ZlcnNpb24iOjEsIml2IjoiZ0YwajY1aWxhOTlQRnNrbEozaUR1QT09IiwiY2lwaGVyVGV4dCI6IjRHaS9qODFsYll2S1JHRVFTSVBRME5pSVpZdWVuYkpZS1RZZmNYb0FuOGxpOWpBQnZGRTd2ZkhuZWpDMS9INm8xSG42Qks0cXI4YXhZOE84YlI2anlOelJ6amw5VEpkMGJZQmRJK3VZcFd2ZlR4YkpKU2Q0ZzdnPSIsImF1dGhUYWciOiJZOE84YlI2anlOelJ6amw5VEpkMGJRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">unrelated phages can intercept each other’s signals and respond</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImU1MDJiYjUyLWNkNGQtNDM5MS1iZjA4LWFiNjZmNGVjNTlhNCIsImRla1ZlcnNpb24iOjEsIml2IjoieHFxdG9jTXhYc2FoRURzZjJMZGRQUT09IiwiY2lwaGVyVGV4dCI6InE0UVJtejZtR1NMMjVRcEdYUmRCU2E0Z080OWVrVTdlTkMycFhMN2UrNlFjWWZPMXVIRS9SUE5UQjlxQkh0TTJ3L0tCVmtQcE1uNzUxTWxXZTRzRmRkZmt6aG8xNFVYUks4YXFyYUhETVY3R29SQTdIOWkzWFQwPSIsImF1dGhUYWciOiIxTWxXZTRzRmRkZmt6aG8xNFVYUkt3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">actually began much earlier, at the end of the Ediacaran Period</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImMzNjQ4YzM1LWJkOTItNGUyOS1hMzdjLTQzNTJjMTg2MDcwMCIsImRla1ZlcnNpb24iOjEsIml2IjoiVm9UWENpY2pINFF5N3lBc09KOEZmUT09IiwiY2lwaGVyVGV4dCI6IncrZTc5VEdQOVZ5NVJHN1NXamFCTnlwNWFyS1l2dGVnQkJlZlNZNmZUcU43b2VJQWRFb3JjSkdPZE5XMmFkVXdMbS9RU05ST3dNNTk1d0IycGJWck9aRVp2Uy9JN2FHUkZWYUUxd29uSXgrRU11OGdMRGlmQlgwPSIsImF1dGhUYWciOiI1d0IycGJWck9aRVp2Uy9JN2FHUkZRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">Our discovery closes a major gap in the earliest phases of animal diversification</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImYwNTE0ZTQ0LTY5NjMtNDBjMy1hYjRkLWVjZjllMzAyMzc5ZSIsImRla1ZlcnNpb24iOjEsIml2IjoiaFRnM2NqVHRiVGdiSS85RXU4N21tQT09IiwiY2lwaGVyVGV4dCI6IjU0OTgxVzRxVXczNjdrMWlLK21vT0hKYU8yWVI5Nm14b0FyK2QzWmhzQy9ZbFVOVkdOc0t0bzZxdEZURHQyYnN4OEhFY2lHS2ErbjJwa3RHZ0k4NWZ1ZHZ5RGNqSjRJYWtvVTROM0kwN1cwNEd5UC9STHZPNXBnPSIsImF1dGhUYWciOiJwa3RHZ0k4NWZ1ZHZ5RGNqSjRJYWtnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">this iconic What We’re Enjoying from 2024</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
