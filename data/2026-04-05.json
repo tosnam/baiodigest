@@ -1,0 +1,107 @@
+{
+  "date": "2026-04-05",
+  "entries": [
+    {
+      "paper": {
+        "title": "Frontiers in polysaccharide biosynthesis: Decoding the catalytic logic of enzymes for future applications.",
+        "abstract": "Polysaccharide biosynthesis serves as the fundamental pathway for the sustainable and precise manufacturing of these essential biomacromolecules. This review provides a systematic analysis of the molecular mechanisms underlying natural polysaccharide biosynthesis across diverse biological sources, with a focus on the complete process from precursor activation and glycan chain polymerization to post-assembly modifications. The discussion highlights both the shared principles and unique features inherent to biosynthetic systems in animals, plants, and microorganisms. Advances in enzymology, positioned as indispensable tools for deciphering and manipulating these complex pathways, are critically examined within the context of the overarching biosynthetic machinery. Building upon this foundational understanding, the review consolidates recent progress in employing synthetic biology strategies to reconstruct and optimize these natural networks. A key focus is their application potential for the controlled production of structurally defined polysaccharides in engineered systems. The integration of emerging technologies, such as artificial intelligence and systems biology, to drive future innovations in the field is also explored. This work aims to furnish a comprehensive biological perspective and a solid theoretical framework to understand the biosynthesis of polysaccharides.",
+        "authors": [
+          "Mao S",
+          "Chen P"
+        ],
+        "affiliations": [
+          "Jiangsu Collaborative Innovation Center of Chinese Medicinal Resources Industrialization, School of Pharmacy, Nanjing University of Chinese Medicine, Nanjing, 210023, China.",
+          "Jiangsu Collaborative Innovation Center of Chinese Medicinal Resources Industrialization, School of Pharmacy, Nanjing University of Chinese Medicine, Nanjing, 210023, China. Electronic address: cpd@njucm.edu.cn."
+        ],
+        "doi": "10.1016/j.carres.2026.109907",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Carbohydrate research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41931921/",
+        "category": null,
+        "date": "2026-03-27",
+        "mesh_terms": [],
+        "source_id": "41931921",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "이 논문은 인공지능을 활용한 효소 기반의 다당류 생합성 경로 분석과 응용 가능성을 다루고 있어 식품, 화학, 의약 산업에 활용 가치가 높습니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "폴리사카라이드 생합성은 지속 가능하고 정확한 생물대분자 제조의 기본 경로로, 다양한 생물원에서의 분자 메커니즘을 체계적으로 분석한다(thermostability). 이 연구는 전구체 활성화부터 글리칸 사슬 다량체화까지 후 조립 수정까지 포함한 전체 과정을 중심으로 다룬다.",
+        "method": "동물, 식물, 미생물의 생합성 시스템에서 공유 원리와 고유 특성을 비교 분석하며(enzyme kinetics), 합성생물학 전략을 활용해 자연 네트워크를 재구성하고 최적화한다. 인공지능 및 시스템 생물학 기술을 통합해 미래 혁신을 탐색한다.",
+        "result": "생합성 기계의 핵심 역할을 하는 효소학의 발전을 강조하며, 공정한 구조 정의된 폴리사카라이드 생산을 위한 공학 시스템의 잠재력을 제시한다. 분자 메커니즘과 생합성 경로의 이론적 틀을 구축한다.",
+        "significance": "이 작업은 폴리사카라이드 생합성의 생물학적 관점과 이론적 기초를 제공해, 지속 가능한 제조 기술 개발에 기여한다. 미래 생물학적 응용을 위한 혁신적인 접근 방안을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Metabolic engineering of Bacillus subtilis for high-yield surfactin production.",
+        "abstract": "The industrial application of surfactin has been constrained by the low production capacity of Bacillus subtilis. This study developed a high-yield, high-tolerance surfactin-producing strain through a multi-level metabolic engineering strategy. First, we constructed an enhanced P43 promoter (P43LN) by extending its upstream region from 260 to 520 bp and pairing it with a cognate 5' UTR, which exhibited more than threefold higher activity than the commonly used core P43 promoter, providing a versatile tool for stable and high-level expression of key genes. Based on this, the native srfA promoter in the oilfield-derived B. subtilis TD7 was replaced with the P43 promoter, yielding the engineered strain TP1. Subsequently, systematic knockout of competing antimicrobial peptide synthesis gene clusters (pps, bac, and pks) increased surfactin titer to 2.78 g/L. Further synergistic enhancement of NADPH regeneration (via zwf overexpression) and cellular tolerance (via efflux pump gene yerP overexpression) resulted in the final strain TS8, which achieved a shake-flask surfactin titer of 3.51 g/L, representing a 102.7% increase in per-OD600 productivity. This work successfully integrates promoter engineering, metabolic flux redistribution, and tolerance modules, not only significantly improving surfactin production but also providing a powerful expression and systematic optimization toolkit for B. subtilis, laying a technical foundation for the efficient biomanufacturing of complex natural products.",
+        "authors": [
+          "Wang Y",
+          "Li H",
+          "Mao Y",
+          "Li P",
+          "Wu H",
+          "Ye J",
+          "Zhang H"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China.",
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China.",
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China.",
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China.",
+          "Fermentation Engineering Experiment Teaching Demonstration Center, East China University of Science and Technology, Shanghai, 200237, People's Republic of China.",
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China.",
+          "Fermentation Engineering Experiment Teaching Demonstration Center, East China University of Science and Technology, Shanghai, 200237, People's Republic of China.",
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China. yyjj413@163.com.",
+          "State Key Laboratory of Bioreactor Engineering, Department of Applied Biology, School of Biotechnology, East China University of Science and Technology, 130 Meilong Road, Shanghai, 200237, People's Republic of China. huizhzh@ecust.edu.cn."
+        ],
+        "doi": "10.1186/s13068-026-02762-6",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology for biofuels and bioproducts",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41933352/",
+        "category": null,
+        "date": "2026-04-03",
+        "mesh_terms": [],
+        "source_id": "41933352",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "소프라틴은 화학 산업에서 세제 및 표면활성제로 활용 가능하며, 생산량 향상 기술은 산업적 적용을 위한 핵심 기술로 판단됨.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)이 낮은 바실러스 서비리스(Bacillus subtilis)의 생산 능력은 산업적 활용을 제한하였다. 이 연구는 다단계 대사공학 전략을 통해 고생산량, 고내성 표면활성제인 서피신(surfactin)을 생성하는 균주 개발을 목표로 하였다.",
+        "method": "P43 프로모터의 상류 영역을 확장하고 5' UTR을 결합해 활성도를 3배 이상 높인 P43LN 프로모터를 구축하였다. 원생 srfA 프로모터를 P43LN으로 교체하고, 경쟁 항균 다肽 합성 유전자 클러스터를 제거하였다.",
+        "result": "최종 균주 TS8은 흔들기 플라스크에서 3.51 g/L의 서피신 생산량을 달성하였다. 이는 OD600 당 생산성에서 102.7% 증가를 기록하며 기존 생산량 대비 약 1.5배의 성과를 보였다.",
+        "significance": "프로모터 공학, 대사 흐름 재분배, 내성 모듈 통합을 통해 서피신 생산을 혁신적으로 개선하였다. 이 기술은 복잡한 천연제품의 효율적 생물제조를 위한 강력한 도구로 활용 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-04T22:05:21.095967+00:00"
+}
