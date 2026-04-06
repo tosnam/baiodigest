@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1775484329000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjNkYmNjNDMzLTYxOGEtNDNhNi1hZjg2LWJkMTczNDc3YmIzZCIsImRla1ZlcnNpb24iOjEsIml2IjoiQ0tZdFNBeEo0dURLUFR6aGpaUEMxUT09IiwiY2lwaGVyVGV4dCI6Im9hQkpGZmxBUWxCdWFRdGl5SkN1K2xpWGxheXZJMjg5MGxseGxaamhqMDV1WldqNUc3ZDZ2Y2lJQnNMWURkOEp5YlIrdnBPNG5VYjVsazc4SVVIZ25CWUcxRWRYckthU0NLWXRTQXhKNHVES1BUemhqWlBDMVE9PSIsImF1dGhUYWciOiIrWlpPL0NGQjRKd1dCdFJIVjZ5bWtnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">pinpoint mitochondrial fitness as an important determinant of therapeutic responsiveness and open opportunities for therapies targeted at dendritic cells</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjU2MzQ5MjY0LTJlOGUtNDE1Zi05ZWU2LTA1NzA2NzA5N2UwMCIsImRla1ZlcnNpb24iOjEsIml2IjoiblNlbUE2VDVFdVJ4Mnc1aUtpVVlEQT09IiwiY2lwaGVyVGV4dCI6IlI3TitjOGFIU2ZoVVlpYkF3ZHZyRnloSVlvdG9iOGc3Y1RyVkJjL2dGT1BKTzlFWDZCQk5aRUxTWWRTU0pBR3YrMkVxSFBTdUg0N2VBcVo5U0ZMMUtFMFd3b3FZU21pUW5TZW1BNlQ1RXVSeDJ3NWlLaVVZREE9PSIsImF1dGhUYWciOiIzZ0ttZlVoUzlTaE5Gc0tLbUVwb2tBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">announced a nuclear-powered mission to Mars to take off in only 2 years</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImRjMmY3MzI3LTRhNTktNGUxMS1iMDkwLWMwMWZhMDIzY2NkYiIsImRla1ZlcnNpb24iOjEsIml2IjoiZW00eW92VC8ya3VIRnhiVkcrUTQ1QT09IiwiY2lwaGVyVGV4dCI6IlFsVzZla2czZWIxRVBzQldCOUNrMGlKbSsyM3B4WER4emxRL25JNTcvVEc5eDZWaFR0SmVFb0k0Nk5aVzNWWUFjUmF3SlppQkxyVHdETi9YanNYVFRJcnZDVTBpbUQrYWVtNHlvdlQvMmt1SEZ4YlZHK1E0NUE9PSIsImF1dGhUYWciOiI4QXpmMTQ3RjAweUs3d2xOSXBnL21nPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">could not form long-term memories associated with a shock to the foot</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjZkYzYwOWVjLTgwNmUtNDE3Yy04Njc4LTI5ZTNkMGIxNzFjYyIsImRla1ZlcnNpb24iOjEsIml2IjoiVGgwL1p6UUd3aXNnSTFYNzVZbHpyUT09IiwiY2lwaGVyVGV4dCI6ImFPTWlxTHFuM0NWUGFpSm1hNStyTDFjM21Bc0hLRXhNL1JvSExRcTEyOTkvOUoyS0t2Wkh5OU90V0o1SzhRSUxoWXF6aDBMNzlvaFNMSUxCRDlMNSswNW04cmRxNEpTM1RoMC9aelFHd2lzZ0kxWDc1WWx6clE9PSIsImF1dGhUYWciOiJVaXlDd1EvUytmdE9adkszYXVDVXR3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">the use of a specialized arm by male octopuses that acts as both a sensory and reproductive organ to navigate the female’s mantle, locate oviducts, and transfer sperm</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjA5NjZjMzAzLTEzMmEtNGMzMC04NGFkLTZjMmNkNGIzNmRkOSIsImRla1ZlcnNpb24iOjEsIml2IjoiV2RoeXN0ZFcxOHhDenpsR1U1S3k3dz09IiwiY2lwaGVyVGV4dCI6IktHYnBHZXF2NGQ3TGpwVFZrM0FFa0plRUxjQ3czU2dNR3VaQVJxaWZtN2tlcUdrOWlYTTNyZG5wZ1l5ODhsampNN3FTTW52STFWbWxHZDNod2h4VVRxaTVITmxZZlgybVdkaHlzdGRXMTh4Q3p6bEdVNUt5N3c9PSIsImF1dGhUYWciOiJwUm5kNGNJY1ZFNm91UnpaV0gxOXBnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">fabrics that can be completely cleaned with a simple rinse</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

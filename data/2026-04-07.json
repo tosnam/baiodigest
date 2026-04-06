@@ -1,0 +1,127 @@
+{
+  "date": "2026-04-07",
+  "entries": [
+    {
+      "paper": {
+        "title": "Artificial Intelligence-assisted Mining of Polyethylene Terephthalate Hydrolases.",
+        "abstract": "Polyethylene terephthalate (PET) hydrolases efficiently hydrolyze the ester bonds in PET, converting it into valuable monomers or oligomers, offering a sustainable biological solution to global PET plastic pollution. However, the large-scale development of high-performance PET hydrolases remains challenging due to limitations in traditional enzyme resource mining methods, including low throughput and lengthy cycles. Recent advances in artificial intelligence (AI) provide novel methodologies to overcome these challenges. This review systematically summarizes how AI empowers the high-throughput screening of PET hydrolases from mass biological databases, while allowing the accurate prediction of enzyme structures and functions. Furthermore, it critically analyzes AI-driven strategies for enzyme molecular engineering and highlights the emerging frontier of AI-assisted de novo enzyme design. By systematically evaluating the advantages and challenges of AI models in the research of PET hydrolases, this review provides an integrated technical framework and theoretical foundation to guide future innovation in enzyme mining and plastic biodegradation.",
+        "authors": [
+          "Xiong Q",
+          "Liu G",
+          "Gao S",
+          "Hao Y",
+          "Li C",
+          "Liu J",
+          "Huang J",
+          "Sinskey AJ",
+          "Zhang Y",
+          "Chen X",
+          "Sun Y",
+          "Zheng X"
+        ],
+        "affiliations": [
+          "Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei University of Technology, Wuhan 430068, China.",
+          "Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei University of Technology, Wuhan 430068, China.",
+          "School of Food and Biological Engineering, Jiangsu University, Zhenjiang, 212013, China.",
+          "Guangdong Key Laboratory of Fermentation and Enzyme Engineering, South China University of Technology, Guangzhou, 510006, PR China.",
+          "Department of Biology, Massachusetts Institute of Technology, Cambridge, MA 02139 USA.",
+          "Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei University of Technology, Wuhan 430068, China.",
+          "Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei University of Technology, Wuhan 430068, China.",
+          "Department of Biology, Massachusetts Institute of Technology, Cambridge, MA 02139 USA.",
+          "Angel Yeast Co., Ltd, Yichang, 443000, China.",
+          "Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei University of Technology, Wuhan 430068, China. Electronic address: chenxiong@mail.hbut.edu.cn.",
+          "Angel Yeast Co., Ltd, Yichang, 443000, China. Electronic address: sun102924@163.com.",
+          "Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei University of Technology, Wuhan 430068, China. Electronic address: xueyunz@hbut.edu.cn."
+        ],
+        "doi": "10.1016/j.nbt.2026.03.010",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "New biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41937001/",
+        "category": null,
+        "date": "2026-04-03",
+        "mesh_terms": [],
+        "source_id": "41937001",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 설계 기술은 플라스틱 분해에 활용 가능하며, 화학 산업에서 폐플라스틱 재활용 기술 개발에 기여할 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "폴리에틸렌테레포타이산(PET) 허드로라제는 PET의 에스터 결합을 분해해 유용한 단량체 또는 올리고머로 전환해 지속 가능한 생물학적 해결책을 제공하지만, 전통적인 효소 자원 탐색 방법은 저 throughput과 긴 주기로 인해 대규모 고성능 효소 개발에 어려움을 겪고 있음.",
+        "method": "인공지능(AI) 기술은 전통적 방법의 한계를 극복하기 위한 새로운 방법론을 제시하며, 대량 생물학적 데이터베이스에서 PET 허드로라제의 고속 스크리닝과 효소 구조·기능 예측을 가능하게 함.",
+        "result": "이 리뷰는 AI가 PET 허드로라제 연구에서 제공하는 기술적 프레임워크와 이론적 기초를 체계적으로 평가하고, 효소 분자 공학 및 de novo 설계의 새로운 전두를 강조함.",
+        "significance": "AI 모델의 장단점을 종합적으로 분석해 향후 효소 탐색 및 플라스틱 생분해 기술 혁신에 대한 지도적 역할을 수행함."
+      }
+    },
+    {
+      "paper": {
+        "title": "Exploring shikimate pathway enzyme diversity for engineering of glycopeptide antibiotic biosynthesis.",
+        "abstract": "Supply of pathway precursors is often limiting the biosynthesis of specialized metabolites. Type I-IV glycopeptide antibiotics (GPAs) contain non-proteinogenic aromatic amino acids, requiring a sustained flux through the shikimate pathway. To secure precursor provision, many GPA producers encode secondary copies of 3-deoxy-d-arabino-heptulosonate-7-phosphate synthase (Dahpsec) and prephenate dehydrogenase (Pdhsec) within their biosynthetic gene clusters (BGC). The functional diversity and regulatory logic of these isoenzymes across taxa remains insufficiently understood. Phylogenetic analysis of Dahpsec and Pdhsec from characterized and uncharacterized GPA BGCs revealed substantial evolutionary diversification that does not correlate with GPA type or producer genus. We biochemically characterized Dahpsec and Pdhsec from Amycolatopsis coloradensis DSM 4425 (avoparcin producer) and Actinoplanes teichomyceticus NRRL B-16726 (teicoplanin producer), representing distinct evolutionary relatives. The analysis revealed pronounced differences in kinetic efficiency and allosteric regulation between the two enzymes. In A. coloradensis, DahpACOL_sec and PdhACOL_sec are strongly inhibited by Tyr, and DahpACOL_sec additionally inhibited by Phe and Trp, restricting shikimate-pathway flux and avoparcin production. In contrast, DahpATE_sec and PdhATE_sec from Act. teichomyceticus are primarily inhibited by Tyr, while Phe antagonizes this inhibition for DahpATE_sec, supporting sustained precursor flux. Exploiting these regulatory features through targeted overexpression of dahpATE_sec, as well as pdhATE_sec, significantly increased teicoplanin production. Together, our results demonstrate that feedback regulation, rather than catalytic efficiency alone, makes shikimate-pathway enzymes suitable for sustained precursor supply, and that feedback-aware enzyme selection provides a powerful strategy for rational metabolic engineering of GPA production.",
+        "authors": [
+          "Rodler JP",
+          "Yushchuk O",
+          "Gavriilidou A",
+          "Siegert AK",
+          "Kulik A",
+          "Wohlleben W",
+          "Ziemert N",
+          "Stegmann E"
+        ],
+        "affiliations": [
+          "Interfaculty Institute of Microbiology and Infection Medicine Tübingen, Microbial Bioactive Compounds, University of Tübingen, Auf der Morgenstelle 28, 72076, Tübingen, Germany.",
+          "Department of Genetics and Biotechnology, Ivan Franko National University of Lviv, Hrushevskoho St. 4, 79005 Lviv, Ukraine; Applied Sciences Faculty, Ukrainian Catholic University, Kozelnytska St. 2a, 79026, Lviv, Ukraine.",
+          "Translational Genome Mining for Natural Products, Interfaculty Institute of Microbiology and Infection Medicine Tübingen (IMIT), Interfaculty Institute for Biomedical Informatics (IBMI), University of Tübingen, Tübingen, Germany; Department of Computational Biology, University of Lausanne, CH-1015 Lausanne, Switzerland; Swiss Institute of Bioinformatics, Lausanne, Switzerland.",
+          "Interfaculty Institute of Microbiology and Infection Medicine Tübingen, Microbial Bioactive Compounds, University of Tübingen, Auf der Morgenstelle 28, 72076, Tübingen, Germany.",
+          "Interfaculty Institute of Microbiology and Infection Medicine Tübingen, Microbial Bioactive Compounds, University of Tübingen, Auf der Morgenstelle 28, 72076, Tübingen, Germany.",
+          "Interfaculty Institute of Microbiology and Infection Medicine Tübingen (IMIT), Department of Microbiology and Biotechnology, University of Tübingen, Auf der Morgenstelle 28, 72076 Tübingen, Germany.",
+          "Translational Genome Mining for Natural Products, Interfaculty Institute of Microbiology and Infection Medicine Tübingen (IMIT), Interfaculty Institute for Biomedical Informatics (IBMI), University of Tübingen, Tübingen, Germany.",
+          "Interfaculty Institute of Microbiology and Infection Medicine Tübingen, Microbial Bioactive Compounds, University of Tübingen, Auf der Morgenstelle 28, 72076, Tübingen, Germany. Electronic address: evi.stegmann@uni-tuebingen.de."
+        ],
+        "doi": "10.1016/j.ymben.2026.03.019",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Metabolic engineering",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41936863/",
+        "category": null,
+        "date": "2026-04-03",
+        "mesh_terms": [],
+        "source_id": "41936863",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "이 논문은 항생제 생산을 위한 대사 공학 전략을 제시하며, 효소 조절을 통한 생합성 경로 최적화에 대한 통찰을 제공합니다. 이는 의약 산업에서 생산 효율 향상에 활용 가능합니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생산 전구체 공급은 특화 대사물질 합성에 제한적이다. 타입 I-IV 글리코피에피드 항생제(GPAs)는 비단백질 생성성 아로마티ック 아미노산을 포함하므로, 시키미산 경로의 지속적 흐름이 필요하다.",
+        "method": "Dahpsec 및 Pdhsec의 계통발생 분석과 생화학적 특성화를 통해 다양한 GPA 생산자에서의 기능적 다양성과 조절 메커니즘을 규명하였다. Amycolatopsis coloradensis 및 Actinoplanes teichomyceticus의 isoenzyme를 대상으로 실험하였다.",
+        "result": "DahpACOL_sec 및 PdhACOL_sec는 Tyr에 강하게 억제되며, 추가로 Phe와 Trp로 억제되어 시키미산 경로 흐름을 제한한다. 반면, DahpATE_sec 및 PdhATE_sec는 Tyr에 주로 억제되지만 Phe가 이 억제를 완화해 지속적 전구체 흐름을 지원한다.",
+        "significance": "피드백 조절이 촉매 효율보다 시키미산 경로 효소의 지속적 전구체 공급에 더 중요하며, 피드백 인식을 통한 효소 선택은 GPA 생산의 합리적 대사 공학 전략으로 활용 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-06T22:08:51.410646+00:00"
+}
