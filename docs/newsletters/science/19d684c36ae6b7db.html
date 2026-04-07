@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1775571316000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImViMzFjZjBhLTg1NWItNDgxMS1hZjllLWIzZWQ3ODIwNjJmYiIsImRla1ZlcnNpb24iOjEsIml2IjoiMTZJL2tra0NKazRHVis3U2h5QXMydz09IiwiY2lwaGVyVGV4dCI6IjFtK3FOZ0lnRXFSSHpOeTRJZnJ4WXJyK2xyREFIVmJGbEEzS0dvZFBsdFNTRnRHdnd5bkNsYU1ZaXROSmRGdU5sKzJEeWdmb2FoQmtjVlRGejJpb3B1UTFIUlZaZW04ZTJkZWlQNUpKQWlaT0JsZnUwb2NnTE5zPSIsImF1dGhUYWciOiJjVlRGejJpb3B1UTFIUlZaZW04ZTJRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">developed a machine learning model called DefensePredictor</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjQ0NWJkNzc3LWRjMDktNDA0NS04MzI2LTZjMzk2YzIwZGZmNSIsImRla1ZlcnNpb24iOjEsIml2IjoiNEdLOEp1d2FZMkJvaTFPTlNHM2w5QT09IiwiY2lwaGVyVGV4dCI6Ikt5MU91eDhsTmJLVFFmUThzM3NNNUpWVzRSaUpjb01QdWhEUDdneFI1WnFRTElIWWhuY053WGExSExZcWFqRkhWWXJoOFFrQ1B0MVZsdjVWUDVOY2xJbUlNYlZmZTg4d3NlQml2Q2JzR21OZ2FJdFRqVWh0NWZRPSIsImF1dGhUYWciOiJsdjVWUDVOY2xJbUlNYlZmZTg4d3NRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">one team of researchers has discovered a truly enormous sneeze</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjUxZGQzMDY1LTYxYTUtNDZlNS1iMmEwLTUzMWQ4Y2M3MjYyYSIsImRla1ZlcnNpb24iOjEsIml2IjoiOGVlc2RRSXhlSUcwOFRvbmk3VlUvZz09IiwiY2lwaGVyVGV4dCI6Ikd6RHlqQ0w3WmdvOXp1NUN4V1FNcTVKWkZQS1pVUTc5Kzg4MjR1VGNVT2dkQnZYREJLVGM2ZWJTb21GZENSZzJTTThXRVJ6bTF0MVk3akFzQnREWlA2NmprV1V0SXpZNVFQSG5ySFVDTVhpQnRQRTZKNHUxVlA0PSIsImF1dGhUYWciOiI3akFzQnREWlA2NmprV1V0SXpZNVFBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">while Australia moving away from Antarctica was crucial, the ACC took time to build up strength</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6Ijk5OGEyODMxLTAyMjktNDAxNC1hMTFhLWNjNWQ1OTczZGVlNiIsImRla1ZlcnNpb24iOjEsIml2Ijoid0ZUdDZaWisyMDRTWTcrSi9Od2U2dz09IiwiY2lwaGVyVGV4dCI6InZPRFBFeW1yMkU2YUJ0SDN5NXlsNHVRaVFYdEN1RkVuY1VUcDFGb2dZODdyS3RvandyN0JvenB3WkdUZllIZm1pcEVla0VPd1RpNmxpbUVYdHVTRkx2SGZpcDhyT0ZxOUNNQlU3ZW1XZnR0T0VtTy9pZnpjSHVzPSIsImF1dGhUYWciOiJpbUVYdHVTRkx2SGZpcDhyT0ZxOUNBPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">urinary tract infections</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjFhYjdkZDM5LTgxYmEtNGIwZC05N2Q2LWFlM2RmMTY0ZTgxZiIsImRla1ZlcnNpb24iOjEsIml2IjoiZ1VTK1MzZ0Myd3dWMWdsOXEwYlFtQT09IiwiY2lwaGVyVGV4dCI6InlpQ2YydWxjcWIzYnFqVU1SYnBrR2lTZTRzSmZlUHBTODVuVHN0OWZxZUJqN3dxS2FrbDJEZitMT2hLMGNqMENQc1BvWUVPZFpkMkJHamVoWFA5ZGNxZkxoM0NvVFRmWGZZRkV2a3Q0QXRzTUZkWUpmYXRHMEpnPSIsImF1dGhUYWciOiJHamVoWFA5ZGNxZkxoM0NvVFRmWGZRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">who have now traveled farther from Earth than any other human being</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

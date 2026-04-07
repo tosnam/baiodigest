@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1775579335000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=8ca9a7d310&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Lunar fly-by — live</a></h4>
+      <p>아르temis II 선임원이 달 주위를 돌며 실시간으로 진행된 과학적 관측 현장을 보도했습니다. 지구에서의 과학팀과의 상호작용을 통해 미션의 실시간 동작을 확인할 수 있었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=ac8583beb4&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">What’s good about the far side of the Moon</a></h4>
+      <p>달의 밤면을 직접 관측하는 것이 과학적으로 중요한 이유를 다뤘습니다. 아폴로 임무 당시 표면 근처에서 진행해 광범위한 관측이 어려웠던 점을 강조했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=19d522814c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">‘Butterflies’: Artemis scientists speak</a></h4>
+      <p>아르temis 미션에 참여한 과학자들이 미션의 주요 기대사항과 과학적 성과에 대한 열정을 나누는 인터뷰를 소개했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=71ae82a34c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The Moon belongs to all of us</a></h4>
+      <p>아폴로 미션 시절 남긴 인류 쓰레기 문제를 비판하며, 달 탐사의 공동 소유권과 지속 가능한 관리를 논의했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=79d7304f44&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">China might be next to stand on the Moon</a></h4>
+      <p>중국이 2030년까지 달 표면에 인력을 투입하고 영구 거주소를 건설할 계획을 발표하며, NASA의 2028년 달 착륙 계획과 비교했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=ea3e0f0d1e&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Well wishes from another famous astronaut</a></h4>
+      <p>미션 컨트롤에서 아стронאוט을 깨우는 &#39;굿모닝&#39; 노래와 관련된 감동적인 추억을 공유하며, 탐사의 인간적 감정을 강조했습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

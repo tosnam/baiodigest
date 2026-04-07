@@ -1,0 +1,58 @@
+{
+  "date": "2026-04-08",
+  "entries": [
+    {
+      "paper": {
+        "title": "Dynamic, autonomous gene expression system for self-adaptation and self-regulation in microbial production.",
+        "abstract": "Microbial production of value-added chemicals is a sustainable and environmentally friendly alternative to conventional chemical synthesis. However, in dynamic fermentation environments, static control strategies like promoter engineering and constitutive gene expression often fail to balance growth and production. The productivity and stability of engineered microbes are limited by an intrinsic conflict between maximising metabolic flux for product formation and maintaining cellular fitness. Static metabolic engineering strategies, which often create growth-production trade-offs, cannot adapt to dynamic physiological changes from nutrient, byproduct, and stress response fluctuations. Although external environmental controls can partially alleviate this imbalance, they are labour-intensive and difficult to scale. Advances in autonomous genetic regulation have developed self-adaptive systems through which microbes can sense and respond to intracellular and environmental cues in real time. These dynamic circuits maintain homeostasis while optimising metabolic flux by integrating sensing, feedback, and control modules. This review summarises recent progress in autonomous single-cell and population-level regulation strategies for microbial cell factories. Single-cell strategies encompass metabolite- and cell burden-responsive systems that dynamically rebalance flux and mitigate stress in individual cells. Population-level strategies include quorum-sensing-responsive and pH-responsive systems that coordinate collective behaviour and environmental adaptation. Feedback and feedforward control architectures are highlighted in each category to illustrate distinct mechanisms of achieving stability, responsiveness, and predictive adaptation. Underlying design principles, representative applications, and future perspectives for the construction of robust and intelligent microbial production systems are also discussed. The development of next-generation cell factories capable of autonomously optimising performance in fluctuating bioprocessing conditions can be accelerated by integrating systems biology, synthetic biology, and control theory.",
+        "authors": [
+          "Bae SM",
+          "Chung M",
+          "Lee JY",
+          "Yoo SM"
+        ],
+        "affiliations": [
+          "School of Integrative Engineering, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul 06974, Republic of Korea.",
+          "School of Integrative Engineering, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul 06974, Republic of Korea.",
+          "School of Integrative Engineering, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul 06974, Republic of Korea.",
+          "School of Integrative Engineering, Chung-Ang University, 84 Heukseok-ro, Dongjak-gu, Seoul 06974, Republic of Korea. Electronic address: yooseun1@cau.ac.kr."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108889",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41942052/",
+        "category": null,
+        "date": "2026-04-04",
+        "mesh_terms": [],
+        "source_id": "41942052",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "미생물 생산 시스템의 자율적 조절 기술이 화학/의약 산업의 효율적 생산에 기여 가능. 시스템 생물학과 합성 생물학 기반의 동적 유전자 조절 전략이 산업적 적용성을 높임.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "미생물 생산 시스템은 환경 변화에 적응하지 못하는 정적 제어 전략으로 인해 성장과 생산 사이 균형을 유지하기 어렵다. 열안정성(thermostability)과 대사 흐름 최적화 간의 내재적 갈등이 공정 효율을 제한한다.",
+        "method": "자율적 유전자 조절 기술을 통해 미생물이 내부 및 외부 신호를 실시간 감지하고 반응할 수 있는 동적 회로를 개발했다. 감지, 피드백, 제어 모듈을 통합해 대사 흐름을 최적화한다.",
+        "result": "단일세포 수준 전략은 대사물질 및 세포 부담에 반응해 흐름을 동적으로 재균형하고 스트레스를 완화한다. 집단 수준 전략은 밀도 의식(quorum-sensing) 및 pH 반응 시스템으로 집단 행동을 조율한다.",
+        "significance": "시스템 생물학, 합성 생물학, 제어 이론의 통합을 통해 유연한 환경에서 성능을 자율적으로 최적화하는 차세대 미생물 공장 구축이 가속화될 수 있다. 피드백 및 피드포워드 제어 구조를 통해 안정성과 예측적 적응을 달성한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-07T22:12:38.650866+00:00"
+}
