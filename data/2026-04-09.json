@@ -1,0 +1,73 @@
+{
+  "date": "2026-04-09",
+  "entries": [
+    {
+      "paper": {
+        "title": "Deep learning assessment of nativeness and pairing likelihood for antibody and nanobody design with AbNatiV2.",
+        "abstract": "Most immune-system created antibodies balance good binding and stability with low toxicity and self-reactivity. Quantifying the nativeness of a candidate sequence - its likelihood of belonging to natural immune repertoires - has thus emerged as a valuable strategy for hit selection from synthetic libraries, optimization and humanization, and for guiding de novo design toward developable candidates. We previously introduced AbNatiV, a transformer-based VQ-VAE for nativeness assessment, which proved effective across multiple nanobody engineering tasks. However, AbNatiV1 operated on unpaired sequences, limiting applicability to conventional VH-VL antibodies. Moreover, its performance on nanobody nativeness was constrained by the limited number and diversity of nanobody repertoires available at the time. Here, we sequenced new camelid repertoires, curated additional recent datasets, and present AbNatiV2: an enhanced architecture comprising various models each trained on ≥20 million sequences. AbNatiV2 improves nanobody nativeness classification across held-out and diverse test sets, and more robustly detects nativeness changes upon CDR grafting. We also introduce p-AbNatiV2, a cross-attention model fine-tuned on 3.7 million paired human sequences. p-AbNatiV2 provides residue- and sequence-level humanness for VH/VL pairs and learns pairing-likelihood via noise-contrastive training. On held-out tests, it assigns the native pair a higher score in 74% of cases, substantially outperforming recent pairing models. Together, AbNatiV2 and p-AbNatiV2 extend nativeness assessment and engineering to both nanobodies and conventional antibodies, supporting design decisions at single-residue, Fv-sequence, and paired-domain levels. AbNatiV2 is available as downloadable software and webserver.",
+        "authors": [
+          "Ramon A",
+          "Frassetto N",
+          "Zhao H",
+          "Xu X",
+          "Greenig M",
+          "Onuoha S",
+          "Sormanni P"
+        ],
+        "affiliations": [
+          "Department of Chemical Engineering, Imperial College London, London, UK.",
+          "Centre for Misfolding Diseases, Yusuf Hamied Department of Chemistry, University of Cambridge, Cambridge, UK.",
+          "Centre for Misfolding Diseases, Yusuf Hamied Department of Chemistry, University of Cambridge, Cambridge, UK.",
+          "Department of Biology and Biotechnology Lazzaro Spallanzani, University of Pavia, Pavia, Italy.",
+          "Centre for Misfolding Diseases, Yusuf Hamied Department of Chemistry, University of Cambridge, Cambridge, UK.",
+          "Centre for Misfolding Diseases, Yusuf Hamied Department of Chemistry, University of Cambridge, Cambridge, UK.",
+          "Centre for Misfolding Diseases, Yusuf Hamied Department of Chemistry, University of Cambridge, Cambridge, UK.",
+          "Chimeris UK, The Works, Cambridge, UK.",
+          "Department of Chemical Engineering, Imperial College London, London, UK.",
+          "Centre for Misfolding Diseases, Yusuf Hamied Department of Chemistry, University of Cambridge, Cambridge, UK."
+        ],
+        "doi": "10.1080/19420862.2026.2646361",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "mAbs",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41947016/",
+        "category": "single-domain antibodies",
+        "date": "2026-12-31",
+        "mesh_terms": [
+          "Single-Domain Antibodies",
+          "Deep Learning",
+          "Humans",
+          "Animals",
+          "Protein Engineering"
+        ],
+        "source_id": "41947016",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "항체 설계 최적화에 AI 기반 분석 도구 제공, 의약품 개발에 직접 활용 가능",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "면역계에서 생성된 항체는 결합력과 안정성을 균형 있게 유지하며 낮은 독성과 자가반응성을 가진다. 후보 서열의 자연적 면역 스펙트럼에 속할 가능성(thermostability)을 정량화하는 전략은 합성 라이브러리에서 히트 선별 및 최적화에 유용하다.",
+        "method": "AbNatiV2는 신규 카메리드 레퍼토리 시퀀스와 최신 데이터셋을 기반으로 개선된 아키텍처를 채택했으며, 각 모델은 ≥20만 개 이상의 시퀀스로 훈련되었다. p-AbNatiV2는 370만 개의 인간 쌍체 시퀀스를 기반으로 크로스 어텐션 모델을 미세 조정했다.",
+        "result": "AbNatiV2는 다양한 테스트 세트에서 난포체의 자연성 분류를 개선하고, CDR 이식 시 자연성 변화를 더 효과적으로 감지한다. p-AbNatiV2는 74%의 경우 원래 쌍체에 더 높은 점수를 부여하며 최근 쌍체 모델보다 우수한 성능을 보인다.",
+        "significance": "AbNatiV2와 p-AbNatiV2는 난포체 및 전통적 항체의 자연성 평가를 확장해, 단일 아미노산, Fv 시퀀스, 쌍체 영역 단위의 설계 결정을 지원한다. 소프트웨어 및 웹서버로 제공되어 접근성이 높아졌다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-08T22:23:48.711253+00:00"
+}

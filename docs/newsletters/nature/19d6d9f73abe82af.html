@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing: Translational Research | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing: Translational Research</h2>
+  <p>1775660576000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=45bb2ec8e5&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">A renewed push for tuberculosis control</a></h4>
+      <p>결핵 치료에 대한 투자 부족이 지속되던 중 30개 이상의 결핵 약물이 임상 개발 중이며, 이는 단일 감염병으로 인한 사망률 1위 질병인 결핵에 대한 새로운 대응 전략을 제시합니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=51d0e14d9e&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">How the newly-okayed GLP-1 pill stacks up</a></h4>
+      <p>미국 FDA가 두 번째 GLP-1 제제를 승인하며, 72주간의 치료로 평균 12.2kg의 체중 감소를 기록한 orfoglipron의 빠른 승인 과정이 주목받고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=da6afa6400&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">One drug, many viruses</a></h4>
+      <p>ERA-923라는 항바이러스 제제가 코로나바이러스, 인플루엔자, 간바이러스 등 다양한 바이러스를 억제할 수 있는 잠재력을 보여주며, 원래는 유방암 치료용으로 개발되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=48ffffa227&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The PI3K/AKT/mTOR pathway is back</a></h4>
+      <p>PI3K/AKT/mTOR 경로가 세포 성장 및 대사 조절에 중요한 역할을 하며, 신약 개발과 신호 전달 이해 덕분에 암 및 면역학 분야에서 다시 주목받고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=9096e0faac&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Can drugs skip the blood-brain barrier?</a></h4>
+      <p>약물이 뇌혈관 장벽을 우회하기 위해 나노입자 주사법을 사용해 면역 세포를 통해 뇌로 약물을 전달하는 기술이 20명의 중풍 환자에서 임상적 성공을 보였습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
