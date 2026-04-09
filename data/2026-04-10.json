@@ -1,0 +1,188 @@
+{
+  "date": "2026-04-10",
+  "entries": [
+    {
+      "paper": {
+        "title": "Discovery, engineering and application of a maleate isomerase for efficient L-malic acid biosynthesis via dual-enzyme cascade with fumarase.",
+        "abstract": "L-malic acid (L-MA) is a valuable organic acid widely used in food, pharmaceuticals, and cosmetics. This study developed an efficient enzymatic system for its green synthesis using low-cost maleic acid as a substrate. Through bioinformatics mining, a highly active maleate isomerase from Schaalia vaccimaxillae (SvMI) was identified from candidate sequences, and its catalytic activity was further enhanced by 153.6% guided by computational predictions from existing deep learning-based tools, yielding the optimized mutant A124V. The mutant enzyme was co-expressed with fumarase BtFum in Escherichia coli to construct a one-pot dual-enzyme cascade system. Under optimized conditions (pH 8.0, CaCO₃ as neutralizer), the system efficiently converted 150 g/L maleic acid into 171.4 g/L L-MA with a productivity of 14.28 g·(L·h)-1, demonstrating high productivity and excellent industrial application potential. This work provides a sustainable and economically viable biocatalytic route for L-MA production.",
+        "authors": [
+          "Huang W",
+          "Ding J",
+          "Cheng C",
+          "Xue F"
+        ],
+        "affiliations": [
+          "School of Food Science and Pharmaceutical Engineering, Nanjing Normal University, Nanjing 210023, China.",
+          "School of Food Science and Pharmaceutical Engineering, Nanjing Normal University, Nanjing 210023, China.",
+          "School of Pharmaceutical Sciences, Nanjing Technology University, Nanjing 210009, China. Electronic address: Cheng2@njtech.edu.cn.",
+          "School of Food Science and Pharmaceutical Engineering, Nanjing Normal University, Nanjing 210023, China. Electronic address: xuef2020@njnu.edu.cn."
+        ],
+        "doi": "10.1016/j.bioorg.2026.109842",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioorganic chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41950715/",
+        "category": null,
+        "date": "2026-04-06",
+        "mesh_terms": [],
+        "source_id": "41950715",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "L-MA는 식품, 의약품, 화장품에 사용되며, AI 기반 효소 공학을 통해 생산 효율을 높였습니다. 산업적 적용 가능성이 높습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "L-malic acid (L-MA)는 식품, 제약, 화장품 등에 널리 사용되는 유기산으로, 친환경적으로 합성할 수 있는 효소 시스템이 필요하다. 저비용의 maleic acid를 기질로 활용한 녹색 합성 방법을 개발하였다.",
+        "method": "생물정보학을 통한 후보 서열 분석에서 Schaalia vacciniflora(SvMI)의 고활성 maleate isomerase를 확인하고, 기존 딥러닝 기반 도구를 활용해 A124V 변이체로 153.6% 활성 향상을 달성하였다. E. coli에서 SvMI 변이체와 fumarase BtFum을 공동 발현하여 단일 반응기 이중 효소 카스케이드 시스템을 구축하였다.",
+        "result": "최적 조건(pH 8.0, CaCO₃ 중화제)에서 150 g/L maleic acid를 171.4 g/L L-MA로 전환하며, 생산성 14.28 g·(L·h)-1을 기록하였다. 이는 높은 생산성과 우수한 산업적 응용 가능성을 보여준다.",
+        "significance": "이 연구는 지속 가능하고 경제적으로 타당한 L-MA 생산을 위한 생물촉매 경로를 제시하며, 산업적 스케일링에 적합한 기술 기반을 마련하였다. 저비용 기질과 높은 효율성은 생화학적 생산 분야에 혁신적 기여를 할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Deep learning on protein language model embeddings unlocks accurate prediction of protein solubility.",
+        "abstract": "Protein misfolding is a major limitation in prokaryotic expression systems, which lack post-translational modifications and exhibit distinct intracellular environments. This severely hinders the functional expression of many heterologous proteins, especially in Escherichia coli. Accurate prediction of protein solubility is crucial for synthetic biology and protein engineering but remains a challenging task. Here, we present DeepSolNet, a deep learning model that leverages advanced protein language models to enhance solubility prediction. DeepSolNet adopts a multi-module architecture, integrating contextual embeddings from ESM Cambrian with bidirectional long short-term memory networks, convolutional neural networks, and attention mechanisms. On the validation set, DeepSolNet achieved an accuracy of 0.75 and a Matthews correlation coefficient of 0.50 for soluble/insoluble protein classification. On an independently constructed test set containing gammabody, transglutaminase, and aldehyde dehydrogenase sequences, the model maintained high performance with an accuracy of 0.53, achieving state-of-the-art performance. Visualization analyses further showed that DeepSolNet is sensitive to key residues influencing protein solubility. These results demonstrate that DeepSolNet serves as a powerful and generalizable tool for large-scale protein design and expression optimization. The tool is freely available at https://github.com/wangxinglong1990/DeepSolNet.",
+        "authors": [
+          "Cui J",
+          "Jiang Y",
+          "Wang J",
+          "Jiang H",
+          "Fang J",
+          "Jiang J",
+          "Chen Q",
+          "Zhong S",
+          "Wang X"
+        ],
+        "affiliations": [
+          "Key Laboratory of Specialty Agri-products Quality and Hazard Controlling Technology of Zhejiang Province, College of Life Sciences, China Jiliang University, Hangzhou, Zhejiang, China.",
+          "School of Laboratory Medicine, Jilin Medical University, Jilin City, Jilin, China.",
+          "Zhejiang Gongzheng Testing Center Co., Ltd, Hangzhou, Zhejiang, China.",
+          "Key Laboratory of Specialty Agri-products Quality and Hazard Controlling Technology of Zhejiang Province, College of Life Sciences, China Jiliang University, Hangzhou, Zhejiang, China.",
+          "Key Laboratory of Specialty Agri-products Quality and Hazard Controlling Technology of Zhejiang Province, College of Life Sciences, China Jiliang University, Hangzhou, Zhejiang, China.",
+          "Key Laboratory of Specialty Agri-products Quality and Hazard Controlling Technology of Zhejiang Province, College of Life Sciences, China Jiliang University, Hangzhou, Zhejiang, China.",
+          "Key Laboratory of Specialty Agri-products Quality and Hazard Controlling Technology of Zhejiang Province, College of Life Sciences, China Jiliang University, Hangzhou, Zhejiang, China.",
+          "Zhejiang Gongzheng Testing Center Co., Ltd, Hangzhou, Zhejiang, China.",
+          "Medical Enzyme Engineering Center, CAS Key Lab of Bio-Medical Diagnostics, Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Sciences, Suzhou, China."
+        ],
+        "doi": "10.3389/fmicb.2026.1716930",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Frontiers in microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41953440/",
+        "category": null,
+        "date": "2026-01-01",
+        "mesh_terms": [],
+        "source_id": "41953440",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI",
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "단백질 용해도 예측은 효소 생산 및 기능 최적화에 필수적입니다. AI 기반 도구는 산업용 효소 설계 및 발현 최적화에 직접적 활용 가능합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI",
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "단백질 변형은 프로카리오틱 발현 시스템에서 주요 제한 요인으로, 후변리적 수정 부족과 다른 세포 내 환경으로 인해 많은 이종 단백질의 기능적 발현을 방해한다. 특히 Escherichia coli에서는 이 문제가 심각하다.",
+        "method": "DeepSolNet은 ESM Cambrian의 맥락 임베딩과 양방향 LSTM 네트워크, 컨볼루션 신경망, 주의 메커니즘을 결합한 다단계 아키텍처를 활용해 단백질 용해도를 예측한다. 이 모델은 단백질 언어 모델의 고차원 특징을 효과적으로 활용한다.",
+        "result": "검증 데이터에서 DeepSolNet은 분류 정확도 0.75와 매트서스 상관 계수 0.50을 달성했고, gammabody, 트랜스글루타민아제, 알데하이드 탈수소효소 시퀀스를 포함한 독립적 테스트 세트에서도 0.53 정확도를 유지했다. 시각화 분석은 용해도에 영향을 주는 핵심 아미노산에 민감하다는 점을 보여줬다.",
+        "significance": "DeepSolNet은 대규모 단백질 설계 및 발현 최적화에 강력한 도구로 활용 가능하며, 생명공학 및 단백질 공학 분야에서 중요한 기여를 한다. 해당 도구는 https://github.com/wangxinglong1990/DeepSolNet에서 자유롭게 사용할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Natural Food Pigments: From Biosynthesis to Application.",
+        "abstract": "Natural food pigments primarily originate from two sources: chemical synthesis and plant-derived production. With the rapid advancement of society and technology, there is a growing demand for environmentally friendly and healthy food options. Consequently, the demand for safe, nontoxic, and sustainable sources of natural pigments has risen sharply. Natural pigments are biosynthesized during the growth and metabolic processes of plant tissues, and compounds derived from these pigments exhibit a wide range of biological activities that are beneficial to human health and disease treatment. However, due to their inherent instability and low abundance, increasing research efforts have been directed toward the bioengineering of natural pigment production. This review classifies natural pigments into five major structural categories: pyrrole, isoprenoids, quinones, phenols, and betalains. Unlike previous reviews that focused on a single pigment component or specific application fields, this review systematically integrates the biosynthetic pathways, synthetic biology strategies, pharmacological activity mechanisms, and application progress in medicine, health care, and cosmetics of natural pigment-containing medicinal materials. It emphasizes their multiple potentials as \"functional pigments\" in the development of natural medicines. Additionally, the review combines emerging technologies such as metabolic engineering, artificial intelligence (AI)-assisted screening, and biosensing, proposing a cross-disciplinary development path from basic synthesis to high-value applications and demonstrating strong systematicity and a forward-looking nature. It provides a new integrated perspective for innovative research on natural pigment components.",
+        "authors": [
+          "Shi Z",
+          "Zhao Y",
+          "Meng J",
+          "Bo Y",
+          "Zhao Q",
+          "Zhang G",
+          "Zhang L",
+          "Wang Y",
+          "Yuan W",
+          "Wang J",
+          "Guo L",
+          "Gao W"
+        ],
+        "affiliations": [
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "Traditional Chinese Medicine College, Tianjin University of Traditional Chinese Medicine, Tianjin 30l6l7, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "Traditional Chinese Medicine College, Tianjin University of Traditional Chinese Medicine, Tianjin 30l6l7, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Beijng 100700, China.",
+          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Beijng 100700, China.",
+          "National Resource Center for Chinese Materia Medica, Academy of Chinese Medical Sciences, Beijing 100700, China.",
+          "School of Pharmaceutical Science and Technology, Faculty of Medicine, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory of Synthetic Biology, Tianjin University, Tianjin 300072, China.",
+          "State Key Laboratory for Quality Ensurance and Sustainable Use of Dao-di Herbs, Beijng 100700, China."
+        ],
+        "doi": "10.1021/acs.jafc.5c05093",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41954457/",
+        "category": null,
+        "date": "2026-04-09",
+        "mesh_terms": [],
+        "source_id": "41954457",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "식품 산업에서 안정성과 생산성을 개선하기 위한 대사공학 전략을 다루고 있으며, 의약품 개발에 활용 가능한 기능성 색소의 적용 가능성을 탐구하고 있습니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "자연색소는 화학합성과 식물원산이 주요 출처로, 환경친화적이고 건강한 식품 수요 증가에 따라 안전하고 지속 가능한 원료로의 필요성이 커지고 있다. 열안정성(thermostability) 및 낮은 존재량으로 인해 생물공학적 생산 연구가 활발해지고 있다.",
+        "method": "이 리뷰는 피롤레, 이소프렌ويد, 퀴논, 페놀, 베타라인 5가지 구조적 범주로 분류하며, 생합성 경로, 합성생물학 전략, 약리작용 메커니즘, 의약품 및 화장품 적용을 통합적으로 분석한다. 대사공학, 인공지능(AI) 지원 스크리닝, 생물감지 기술 등을 결합해 교차학문적 접근을 제안한다.",
+        "result": "자연색소의 다중 기능성으로 '기능성 색소(functional pigments)'로서의 잠재력을 강조하며, 의약품 개발에 대한 새로운 통합적 시각을 제시한다. 체계적인 분석과 전망성 있는 접근을 통해 고가치 응용으로의 발전 가능성을 보여준다.",
+        "significance": "자연색소의 생합성부터 응용까지의 체계적 이해를 통해 의약품, 건강, 화장품 분야의 혁신 연구 기반을 제공하며, 지속 가능한 식품 산업 발전에 기여할 수 있는 전략적 방향을 제시한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 5,
+    "prefilter_passed": 5,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-09T22:32:04.845166+00:00"
+}
