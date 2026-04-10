@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-11 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-11</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41959628/" target="_blank" rel="noopener noreferrer">PRIMED: predicting DNA binding residues by leveraging pre-trained protein language models.</a></h3>
+    <p>Frontiers in artificial intelligence</p>
+    <p>J. Crayton Pruitt Family Department of Biomedical Engineering, University of Florida, Gainesville, FL, United States.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>DNA-binding residue 예측은 단백질 엔지니어링 및 치료 설계에 활용 가능하며, 기계 학습 기반의 생물정보학 도구로 산업 적용성이 높습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질-염색체 상호작용은 유전자 조절, 염색체 안정성(genome stability), 질병 메커니즘에 핵심적이다. DNA 결합 잔여체(DBR) 식별은 구조 모델링, 단백질 공학, 치료 설계에 필수적이다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>PRIMED는 ESM-2, ESM-3, ESM-C의 단백질 표현식을 멀티레이어 퍼셉트론(Multilayer Perceptron)으로 통합해 DBR 예측한다. 단백질의 생화학적 및 구조적 특성을 반영한 표현식을 연결해 처리한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>Test-46에서 AUC 0.92, MCC 0.64를 달성했으며, Test-129에서는 AUC 0.93, MCC 0.45를 기록했다. Test-10 K에서는 다양한 DBR 비율 단백질에서도 우수한 일반화 능력을 보였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>다양한 단백질 언어 모델 표현식 통합이 정확하고 이전 가능한 DBR 예측에 효과적임을 입증했다. 실험적 접근법 대비 저비용, 고스케일링 기반의 계산 방법으로 의미 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41961059/" target="_blank" rel="noopener noreferrer">Expression Optimization and Semirational Engineering of Ga6OST1 for Improved Catalytic Performance in Heparin Biosynthesis.</a></h3>
+    <p>ACS synthetic biology</p>
+    <p>State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>의약 산업에서 항응고제인 헤파린 생산에 활용 가능하며, 효소 공학을 통한 효율성 향상 기술이 적용됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>생물공학적 헤파린은 동물 유래 항응고제 대체물로 안전하고 지속 가능한 대안이다. 그러나 헤파란 산ulfat 6-O-스ulfotransferase에 의한 효율적인 6-O-스ulfation은 헤파린 합성에 걸림돌로 남아 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Komagataella phaffii에서 Gallus gallus heparan sulfate 6-O-sulfotransferase 1(Ga6OST1)의 고효율 발현 플랫폼을 구축하였다. 구조 모델링, 진화 분석, 핫스팟 예측을 통합한 반합리적 설계 전략을 적용하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>트리플 돌연변이(MBP-Ga6OST1-A77R/V107L/V248T)는 2.4배 높은 특정 활성과 2.3배 증가한 촉매 회전율, 37°C에서 5.3배 연장된 반감기 보여주었다. 구조 분석과 분자 동역학 시뮬레이션은 안정성과 촉매 지속성 향상의 기전을 밝혔다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>공정한 구조 정의된, 높은 6-O-스ulfation도를 갖는 헤파린 및 유사체 생산을 위한 효율적인 플랫폼을 제시하였다. 최종 제품의 6-O-스ulfation도는 75.7%로 돼지 소장 헤파린과 경쟁적 수준이다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

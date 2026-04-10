@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1775830092000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjYwNGYzMDA0LTQ0NDgtNDBlNC1iZTJlLTllYmU4ZTFhMjEwYyIsImRla1ZlcnNpb24iOjEsIml2IjoiWldBUVlzUjlJVXI5K0Y3VkR1QVF5QT09IiwiY2lwaGVyVGV4dCI6InB4Nm5pQVdYOFVxRWZrSnVLVGx2TFJQT1RtTmJSMkdlSFJSSVpxblVFcUMxclhVQVJEQk5Gb3ZQMzVyd1JQKzB5VDZ4YnEySHJQSG5Mc0xlM2VnYUprV3k4ZStYTnhvWXZXVmdFR0xFZlNGSy9maGUxUTdnRU1nPSIsImF1dGhUYWciOiJMc0xlM2VnYUprV3k4ZStYTnhvWXZRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">rewrites our understanding of just what drives Yellowstone’s volcanic activity</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImVjZTRkNjQ4LThmZmUtNGRlNy04YTA0LTE0NWJiNzk3MzUzYiIsImRla1ZlcnNpb24iOjEsIml2IjoiTTVoVjZyQk9tczFjcW9rSjJMTGZGQT09IiwiY2lwaGVyVGV4dCI6InlOWElqUjlOZURQNkl5SE00STR4cjBKVWNablZhMVFlb1ZqRHg0OUJicUFzc2dnallLcVg5c0xDbGJNaWlBVW51aGpURXI4UzhTaHZocEpjT0kvaFlISy9mSVJjZWVXUk16T1lWZXF3VHByTlhLcUpDZGl5M3hRPSIsImF1dGhUYWciOiJocEpjT0kvaFlISy9mSVJjZWVXUk13PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">how friends turned into foes</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjE3MTU4ODhjLWNmNGEtNDQ5MS1iMzkxLTQyYzQ3MTZiMWRjNSIsImRla1ZlcnNpb24iOjEsIml2IjoiVFFVZG9HQ3pMYzh1a3R5a3AyTFVidz09IiwiY2lwaGVyVGV4dCI6Ii9WaEV5b09FeVFSb3k5cm4yY0RNL3lKa0FhbVJzd0FzbmY3LzhDY1pKTjB4R2pRZ1NkbkFidmVwSEd5OUs3c2ZHUDliOXk1VmFBSkZ3ZVhyb1RSa0tBUGlFb3pRWjZtTTJVMEZIYUJnc3kzUExwTGNwS2RpMUc4PSIsImF1dGhUYWciOiJ3ZVhyb1RSa0tBUGlFb3pRWjZtTTJRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">2026 BioInnovation Institute &amp; Science Prize for Innovation</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjY1MzQzYThmLTA2N2EtNGY4My05OWUxLWEwODU2MGJiMDUxZCIsImRla1ZlcnNpb24iOjEsIml2IjoiaEhjQlZ6aDhBS2ppVEZtYlVVY3Q2UT09IiwiY2lwaGVyVGV4dCI6IjVZTGtWZzhwTmV1QXFPekhFdGpIQnhOd25OTEpCUTViOEprK050ZzlQVWdqdkdCSGlHYXpPWVhDMWc3TGFaN3hiTkNTekc5UUQwS0lKcUJzUHl2ZkZMbXFhaHdWZDBHYldvUjNBVmM0ZkFDbzRreFptMUZITGVrPSIsImF1dGhUYWciOiJKcUJzUHl2ZkZMbXFhaHdWZDBHYldnPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">News from Science Staff Writer Adrian Cho’s exquisitely reported analysis</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

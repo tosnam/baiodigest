@@ -1,0 +1,137 @@
+{
+  "date": "2026-04-11",
+  "entries": [
+    {
+      "paper": {
+        "title": "PRIMED: predicting DNA binding residues by leveraging pre-trained protein language models.",
+        "abstract": "Protein-DNA interactions are central to gene regulation, genome stability, and disease mechanisms. Identifying DNA-binding residues (DBRs) is critical for structural modeling, protein engineering, and therapeutic design. Although experimental approaches provide valuable insights, they remain low-throughput and resource-intensive. Computational methods offer scalable alternatives by leveraging protein sequential and structural information to predict DBRs. We present PRIMED (Protein Residue Inference using Multilayer perceptron for Enhanced DNA-binding predictions), a machine learning framework that integrates protein representations of distinct biochemical and structural properties from three protein language models: ESM-2, ESM-3, and ESM-C. These representations are concatenated and processed by a multilayer perceptron to perform DBR predictions. PRIMED demonstrated strong performance across three benchmark datasets: Test-46 and Test-129 from a previous study, CLAPE-DB, and Test-10 K, which we curated from UniProtKB/Swiss-Prot. The model achieves an area under the Receiver Operating Characteristic curve (AUC) of 0.92 and a Matthews Correlation Coefficient (MCC) of 0.64 on Test-46, as well as an AUC of 0.93 and MCC of 0.45 on Test-129. On Test-10 K, PRIMED demonstrates generalizability across proteins with varying DBR percentages, maintaining competitive performance relative to the runner-up method, CLAPE-DB. These results highlight the effectiveness of integrating diverse protein language model representations for accurate, transferable DBR predictions.",
+        "authors": [
+          "Zhang L",
+          "Li X",
+          "Song R",
+          "Song Q",
+          "Fan X"
+        ],
+        "affiliations": [
+          "J. Crayton Pruitt Family Department of Biomedical Engineering, University of Florida, Gainesville, FL, United States.",
+          "J. Crayton Pruitt Family Department of Biomedical Engineering, University of Florida, Gainesville, FL, United States.",
+          "J. Crayton Pruitt Family Department of Biomedical Engineering, University of Florida, Gainesville, FL, United States.",
+          "Department of Health Outcomes and Biomedical Informatics, University of Florida, Gainesville, FL, United States.",
+          "J. Crayton Pruitt Family Department of Biomedical Engineering, University of Florida, Gainesville, FL, United States."
+        ],
+        "doi": "10.3389/frai.2026.1763313",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Frontiers in artificial intelligence",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41959628/",
+        "category": null,
+        "date": "2026-01-01",
+        "mesh_terms": [],
+        "source_id": "41959628",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "DNA-binding residue 예측은 단백질 엔지니어링 및 치료 설계에 활용 가능하며, 기계 학습 기반의 생물정보학 도구로 산업 적용성이 높습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질-염색체 상호작용은 유전자 조절, 염색체 안정성(genome stability), 질병 메커니즘에 핵심적이다. DNA 결합 잔여체(DBR) 식별은 구조 모델링, 단백질 공학, 치료 설계에 필수적이다.",
+        "method": "PRIMED는 ESM-2, ESM-3, ESM-C의 단백질 표현식을 멀티레이어 퍼셉트론(Multilayer Perceptron)으로 통합해 DBR 예측한다. 단백질의 생화학적 및 구조적 특성을 반영한 표현식을 연결해 처리한다.",
+        "result": "Test-46에서 AUC 0.92, MCC 0.64를 달성했으며, Test-129에서는 AUC 0.93, MCC 0.45를 기록했다. Test-10 K에서는 다양한 DBR 비율 단백질에서도 우수한 일반화 능력을 보였다.",
+        "significance": "다양한 단백질 언어 모델 표현식 통합이 정확하고 이전 가능한 DBR 예측에 효과적임을 입증했다. 실험적 접근법 대비 저비용, 고스케일링 기반의 계산 방법으로 의미 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Expression Optimization and Semirational Engineering of Ga6OST1 for Improved Catalytic Performance in Heparin Biosynthesis.",
+        "abstract": "Bioengineered heparin represents a safe and sustainable alternative to animal-derived anticoagulants. However, inefficient 6-O-sulfation catalyzed by heparan sulfate 6-O-sulfotransferase remains a bottleneck hindering the synthesis of heparin. Here, we establish a high-efficiency expression platform for Gallus gallus heparan sulfate 6-O-sulfotransferase 1 (Ga6OST1) in Komagataella phaffii. First, a systematic secretion-engineering strategy established an optimized production chassis with markedly elevated extracellular Ga6OST1 activity. Building on this platform, a semirational design strategy integrating structural modeling, evolutionary analysis, and hotspot prediction identified a triple mutant (MBP-Ga6OST1-A77R/V107L/V248T) with markedly improved properties. This variant exhibited a 2.4-fold increase in specific activity, a 2.3-fold enhancement in catalytic turnover, and a 5.3-fold extension in half-life at 37 °C. Structural analysis and molecular dynamics simulations revealed that cooperative reinforcement of hydrophobic packing and electrostatic networks underlies the observed gains in stability and catalytic durability. Under preparative catalytic conditions, the engineered enzyme displayed enhanced performance toward distinct sulfated heparin precursors, enabling the production of a final product with a 6-O-sulfation degree of 75.7%, comparable to that of porcine intestinal heparin. This work establishes an efficient platform for the production of structurally defined, highly 6-O-sulfated heparin and related derivatives.",
+        "authors": [
+          "Wang X",
+          "Yu Y",
+          "Dong P",
+          "Wang D",
+          "Xu R",
+          "Du G",
+          "Xi X",
+          "Kang Z"
+        ],
+        "affiliations": [
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China.",
+          "The Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, Jiangnan University, Wuxi 214122, China.",
+          "The Science Center for Future Foods, Jiangnan University, Wuxi 214122, China.",
+          "Jiangsu Province Basic Research Center for Synthetic Biology, Jiangnan University, Wuxi 214122, China.",
+          "State Key Laboratory of Food Science and Resources, Jiangnan University, Wuxi 214122, China."
+        ],
+        "doi": "10.1021/acssynbio.6c00237",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "ACS synthetic biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41961059/",
+        "category": null,
+        "date": "2026-04-10",
+        "mesh_terms": [],
+        "source_id": "41961059",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "의약 산업에서 항응고제인 헤파린 생산에 활용 가능하며, 효소 공학을 통한 효율성 향상 기술이 적용됨.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "생물공학적 헤파린은 동물 유래 항응고제 대체물로 안전하고 지속 가능한 대안이다. 그러나 헤파란 산ulfat 6-O-스ulfotransferase에 의한 효율적인 6-O-스ulfation은 헤파린 합성에 걸림돌로 남아 있다.",
+        "method": "Komagataella phaffii에서 Gallus gallus heparan sulfate 6-O-sulfotransferase 1(Ga6OST1)의 고효율 발현 플랫폼을 구축하였다. 구조 모델링, 진화 분석, 핫스팟 예측을 통합한 반합리적 설계 전략을 적용하였다.",
+        "result": "트리플 돌연변이(MBP-Ga6OST1-A77R/V107L/V248T)는 2.4배 높은 특정 활성과 2.3배 증가한 촉매 회전율, 37°C에서 5.3배 연장된 반감기 보여주었다. 구조 분석과 분자 동역학 시뮬레이션은 안정성과 촉매 지속성 향상의 기전을 밝혔다.",
+        "significance": "공정한 구조 정의된, 높은 6-O-스ulfation도를 갖는 헤파린 및 유사체 생산을 위한 효율적인 플랫폼을 제시하였다. 최종 제품의 6-O-스ulfation도는 75.7%로 돼지 소장 헤파린과 경쟁적 수준이다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-10T22:11:37.285243+00:00"
+}

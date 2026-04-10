@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1775836729000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=39b5d4d6a9&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">One CAR-T to cure them all</a></h4>
+      <p>3가지 자가면역 질환을 동시에 겪는 여성 환자가 CAR-T 세포 치료로 완치되었으며, 환자의 T세포를 활용해 특수 항체를 개발한 연구 결과입니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d688587581&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Misconduct database divides researchers</a></h4>
+      <p>학술 부정행위자나 성희롱자에 대한 미국 데이터베이스 도입이 필요하다는 Science 에디토리얼이 제안되며, 학계의 신뢰 회복을 위한 논의가 이어지고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=aaab1b6259&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">‘Seeing what you’ve forgotten to notice’</a></h4>
+      <p>어류 생물학자 리즈 렌너가 자신의 박사 논문 주제인 &#39;가izzard shad&#39;를 기념한 시집이 출간되며, 자연의 미세한 아름다움을 탐구한 작품입니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=425f1d62c3&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Futures: Immolation</a></h4>
+      <p>Nature &#39;Futures&#39; 시리즈의 단편 &#39;Immolation&#39;은 &#39;The Extractor&#39;가 물건을 구매할 수 없는 존재라는 주제를 탐구한 작품입니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=1aae00d1f0&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Five best science books this week</a></h4>
+      <p>과학 서적 추천 리스트에서 예술이 건강의 5번째 기둥이 되는 주장과 자연을 묘사하는 언어에 대한 심층 분석이 포함된 책들이 선정되었습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
