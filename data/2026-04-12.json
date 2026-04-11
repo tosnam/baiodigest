@@ -1,0 +1,62 @@
+{
+  "date": "2026-04-12",
+  "entries": [
+    {
+      "paper": {
+        "title": "Tripleknock: predicting lethal effect of three-gene knockout in bacteria by deep learning.",
+        "abstract": "Investigating the lethal effect of multi-gene knockout is essential for discovering novel antibiotic targets and metabolic engineering. Unlike single genes or gene pairs, three-gene combinations involve more intricate interactions, making experimental screening time-consuming. Computational methods, particularly Genome-scale metabolic model (GEM)-based Flux balance analysis (FBA), requires constructing new GEMs from experimental data, limiting its use for new species. Moreover, using FBA for three-gene knockout screening could take several years. Therefore, a faster and GEM-independent approach is needed to facilitate genome-wide three-gene knockout screening. Here, we introduce Tripleknock for predicting the lethal effects of three-gene knockouts. Tripleknock was trained using genome-derived protein sequence features from Escherichia coli K-12 MG1655, and three-gene knockout simulations using FBA. The model uses a threshold of 90% reduction in cell growth to define lethal effect as the prediction output. Compared to FBA, Tripleknock yields predictions ~ 20 × faster and achieves an average cross-species F1 score of 0.77 on six Enterobacteriaceae pathogens (FBA-defined labels). To mitigate information leakage, we additionally evaluated Tripleknock under a strict gene-level disjoint Train/Val/Test split (genes left out). We further benchmarked against an essentiality-rule baseline and literature-curated (n = 37) E. coli triple perturbations for external validation; no false positives were observed among predicted lethal cases (FP = 0) in this small curated set. To the best of our knowledge, this provides a reproducible baseline and evaluation framework for bacterial triple-knockout lethality prediction.",
+        "authors": [
+          "Geng PX",
+          "Hou J",
+          "Guo J",
+          "Jiang X",
+          "Zhu H"
+        ],
+        "affiliations": [
+          "Department of Biomedical Engineering, College of Future Technology, and Center for Quantitative Biology, Peking University, Beijing, 100871, China.",
+          "Department of Biomedical Engineering, College of Future Technology, and Center for Quantitative Biology, Peking University, Beijing, 100871, China.",
+          "Department of Biomedical Engineering, College of Future Technology, and Center for Quantitative Biology, Peking University, Beijing, 100871, China.",
+          "Department of Biomedical Engineering, Georgia Institute of Technology and Emory University, Atlanta, GA, 30332, USA.",
+          "Department of Biomedical Engineering, College of Future Technology, and Center for Quantitative Biology, Peking University, Beijing, 100871, China.",
+          "Department of Biomedical Engineering, College of Future Technology, and Center for Quantitative Biology, Peking University, Beijing, 100871, China. hqzhu@pku.edu.cn.",
+          "Center of Artificial Intelligence for Digital Life, Institute for Artificial Intelligence, Peking University, Beijing, 100871, China. hqzhu@pku.edu.cn."
+        ],
+        "doi": "10.1038/s41598-026-46272-9",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Scientific reports",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41963398/",
+        "category": null,
+        "date": "2026-04-10",
+        "mesh_terms": [],
+        "source_id": "41963398",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "세균의 3유전자 제거 효과 예측 기술은 대사 공학에서 신규 항생제 타겟 발굴 및 효율적인 유전자 조합 분석에 활용 가능합니다. GEM 독립적 접근법은 새로운 종의 대사 경로 분석에 기여할 수 있습니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "다중 유전자 칼라의 치명적 효과 연구는 신규 항생제 표적 및 대사 공학 발견에 필수적이다. 세 유전자 조합은 단일 유전자 또는 유전자 쌍보다 복잡한 상호작용을 포함해 실험 스크리닝 시간이 길다.",
+        "method": "Tripleknock은 Escherichia coli K-12 MG1655의 유전자체 유도 단백질 서열 특징과 FBA 기반 세 유전자 칼라 시뮬레이션을 기반으로 훈련되었다. 세 유전자 칼라의 치명적 효과는 세포 성장 90% 감소 기준으로 예측한다.",
+        "result": "FBA 대비 Tripleknock은 약 20배 빠르게 예측하며, 6개의 엔터로바이아세이 퍼지 병원균에서 평균 크로스 스펙트럼 F1 점수 0.77을 달성했다. 훈련/검증/테스트 분할 시도에서 예측 오류(FP=0)가 관찰되지 않았다.",
+        "significance": "Tripleknock은 세 유전자 칼라 치명성 예측에 대한 재현 가능한 기준 및 평가 프레임워크를 제공한다. GEM 의존적 접근을 피해 새로운 종에 대한 대규모 스크리닝을 가속화한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-11T22:05:40.020289+00:00"
+}
