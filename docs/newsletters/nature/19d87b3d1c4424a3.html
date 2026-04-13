@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1776098134000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=c164415268&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Anglerfishes’ glow helped them hook up</a></h4>
+      <p>The glowing lure that female anglerfishes (Lophiiformes) use to attract prey might have originally evolved to help potential mates find them in the pitch dark of their deep-sea homes . Researchers found that deep-sea anglerfish species began to proliferate shortly after females developed bioluminescence in their lures, which could suggest that the glow helped the fish reproduce as they moved into the darkness. “The evolution of this group may be driven because of the sexual attraction of the lures,” says evolutionary biologist and study co-author Alex Maile. “That’s the fun, weird part about all this.”</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d69da9a6c0&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Scientists embrace AI — but still beat it</a></h4>
+      <p>연구자들이 AI를 활용하는 비율이 급증하고 있지만, 여전히 인간의 지능이 AI를 능가하는 사례가 지속적으로 보고되고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=8511b677a0&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Chimps wage ‘civil war’ after social split</a></h4>
+      <p>우간의 콩고 chimpanzee 집단은 사회적 분열 후 약 10년간 지속된 내전 상태로, 이는 인간 사회의 갈등 구조를 반영하고 있는 것으로 분석되고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=86ed916cf4&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The great detective story of genetics</a></h4>
+      <p>유전학의 역사적 탐구를 통해 성별 결정 유전자의 발견 과정이, 과학적 탐사의 대표적 사례로 평가받고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=3cfd8ad397&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">14 things our PhD supervisors got right</a></h4>
+      <p>박사과정 학생들이 긍정적인 피드백을 통해 연구 자부심을 유지할 수 있도록 지도자들의 지원이 핵심적인 역할을 한다는 점이 강조되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=57625710cc&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">I still haven’t found what I’m looking for</a></h4>
+      <p>우주 비행사 크리스티나 코크의 경험은 우주 탐사의 복잡성과 지구 생활의 차이를 생생하게 보여주는 이야기입니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

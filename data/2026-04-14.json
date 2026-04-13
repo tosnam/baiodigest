@@ -1,0 +1,12 @@
+{
+  "date": "2026-04-14",
+  "entries": [],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 0,
+    "summarized": 0
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-13T22:10:45.843369+00:00"
+}

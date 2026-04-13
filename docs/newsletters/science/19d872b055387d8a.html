@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1776089042000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImJhNzY5NjViLTMwODUtNDBjMi05NzIyLTVjNWVmYWNmMWM1ZiIsImRla1ZlcnNpb24iOjEsIml2IjoiQU4rdXJrYUMraEluWVQycmRJcjlsdz09IiwiY2lwaGVyVGV4dCI6IkltMXV0R1FETkcwVkc4eGZ3Z3gxVDhlUnRubTlyeW5KTExwRVRjaXRQaVhyRVlUeSs3ZDh0ZmJhTmRKVUlOMWlpR2hZMFdtNDM3VXg1d21sMHRJMjB0enlmVFVPQ3NoTXhRRGZycTVHZ3ZvU0oyRTlxM1NLL1pjPSIsImF1dGhUYWciOiI1d21sMHRJMjB0enlmVFVPQ3NoTXhRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">growing field of protein engineering</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImNhZGFhNzA4LWY4YzgtNDA2OS1iZjlhLWM2ZDEwZWY5Yzc5NiIsImRla1ZlcnNpb24iOjEsIml2IjoiaUM2eDB6dmg0NUdIWU14ZVluT2JKZz09IiwiY2lwaGVyVGV4dCI6IjdOREpjc1dkSWQzUjgvMndwbkUzUGYvTmFKNTdnRzJGVjBvUlJhdE9KU1F3czB2YkVqZ2lzbDVwT0hkam5kNENVcWc4VmhCcEV0dWNmRGcwWFBzK0JSdE1HZ3BtZzhyOXBZZ3VzZE03NGVPUmgyRE1YbUp6bXlZPSIsImF1dGhUYWciOiJmRGcwWFBzK0JSdE1HZ3BtZzhyOXBRPT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">41% share at least one pathogen with humans</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NDV9AAcAAAAAAAR4oxhGpdHnKWO-Zcht5XUOY_v0we-olF0FVZpmvikpL4OT8_MZP52GGVNTeboRNuALiWAxcwub8fGWIz70QiqHOHWDBPIWQYkNvHJ1Rg" target="_blank" rel="noopener noreferrer">reactivates the same neural areas during recall that were used to see that image in the first place</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6IjI4NDIzMmQ1LWQ2M2ItNGU3Yi1hYzk4LWIyYzQ0YzQyOGU0ZCIsImRla1ZlcnNpb24iOjEsIml2IjoiNG10cXg2Z3VLUkFmWjc0aUtBa2tHQT09IiwiY2lwaGVyVGV4dCI6IlFrdVkrV1JHUG03V3BTYmZqRGNiTVNnVGJSdXJORFhyekVWZzZsUEFNYXA0eG9ncWdiMnc5OGdwMml3cFpEK0pFdlc5ZVRlZ0xIL2lNQU5hOUdMMVloQW9RU1Axc0ZiclUrSnJhc2VvTGlrUUgyZStJaWdKSkJnPSIsImF1dGhUYWciOiJNQU5hOUdMMVloQW9RU1Axc0ZiclV3PT0ifQ%3D%3D" target="_blank" rel="noopener noreferrer">photographer and artist Martin Oeggerli</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
