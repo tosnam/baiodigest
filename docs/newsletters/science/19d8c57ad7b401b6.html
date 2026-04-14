@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1776175996000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NDZ9AAcAAAAAAAdGCYEpPbZoak8exVF-RQIKRZDnwVlYVrI-3A12D9Hl9ovzvRgLlpyJvO9b6gBP-7j-WX3DjlXHbv9ssOGFi13g3mN2udL2ruEyPw" target="_blank" rel="noopener noreferrer">linger into adulthood</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NDZ9AAcAAAAAAAdGCYErmNL2OKEm5dIAeDrtMNsvmvJNom1nMLKjrt01p4ahp2aq2my9LEolGFb5lFHmOsdorEm2WqPPu0JD0Bnzv0kOOUttfZvZCg" target="_blank" rel="noopener noreferrer">91% of the Magellanic penguins’ bands detected at least one industrial pollutant where the birds swam and nested</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=eyJkZWtJZCI6ImQxZDJhYjA1LTFkOTMtNDNmNS1hNDAwLTZlMGEyMzg0NTNlYiIsImRla1ZlcnNpb24iOjEsIml2IjoiVXVic3QyMkNFMFV2K2lPTkVZVGYyQT09IiwiY2lwaGVyVGV4dCI6IlRJWWVaWDNFdlVsNGJyTHUzL0hUOE5QUlNxNFdEYkpJNitQNko3SFU0NkExcGFHWFNqUmxmdTNWUFV4Zkp4WlpEOHRPdUdrWnBkRzQrUUE3Q1JVamVrWXdJa0x0dkZMbTdMZHRnaE5GTC9vampSR0UzOWc9IiwiYXV0aFRhZyI6InBkRzQrUUE3Q1JVamVrWXdJa0x0dkE9PSJ9" target="_blank" rel="noopener noreferrer">Regenerative areas have a lot more hyaluronic acid in the ‘goo’ that surrounds and supports their cells</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NDZ9AAcAAAAAAAdGCYEya4OS-8uVbZhVF0BIRLv1hPQFWLi3uNsgADwKTDVMLB7L9W3VGYyn78dWKkHQkjnQ716M2r7IWZ20tkYoQ7s2SZYP6eXgRg" target="_blank" rel="noopener noreferrer">the unusual behavior is the first example of a cleaning symbiosis, or mutualism, among ants</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NDZ9AAcAAAAAAAdGCYE4reuIL-ZEVP-PE9FLBmljjasRdwkDIPhIh0P6v3bnK9I7B9gfQXmY9sknjbVUbMOE6mdzULdXj1RHs6qDN21nVFrwPNjVvw" target="_blank" rel="noopener noreferrer">wonderful essay on just how much more we have to learn about the quantum world</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

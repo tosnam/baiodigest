@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-15 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-15</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41977286/" target="_blank" rel="noopener noreferrer">A Novel Weighted Ensemble Framework of Transformer and Deep Q-Network for ATP-Binding Site Prediction Using Protein Language Model Features.</a></h3>
+    <p>International journal of molecular sciences</p>
+    <p>College of Computer Science and Technology, Inner Mongolia Minzu University, Tongliao 028000, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>ATP 결합 예측 기술은 약물 타겟 선정과 효소 공학에 활용 가능하며, 생물정보학적 분석 도구로 산업적 응용 잠재력이 높습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>ATP는 세포 과정에서 에너지 통화 및 신호 전달 역할을 하는 핵심 분자로, ATP 결합 부위는 효소 활성화 및 유전자 조절에 중요(adenosine triphosphate). ATP 결합 부위 정확한 예측은 단백질 기능 이해와 약물 개발에 필수적.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Transformer 기반 모델은 ESM-2(예측 모델)의 컨텍스트 임베딩과 로컬-글로벌 주의 기제를 활용, DQN 기반 모델은 잔여물 수준 예측을 시퀀스 결정 과정으로 처리. 두 모델의 가중치를 교차 검증으로 최적화한 앙상블 전략 적용.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>독립 검증 데이터셋에서 핵심 지표에서 만족스러운 성능 달성. 단백질-ATP 상호작용의 생물학적 메커니즘, 지역 구조 모티프와 글로벌 구조 제약의 협력적 역할, 가족별 결합 패턴을 규명.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>단백질-리간드 인식 메커니즘 이해를 심화하고, 시스템 생물학 및 약물 표적 탐색에 중요한 기여를 제공. 대규모 기능 분류에 실질적 지원을 제공.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
