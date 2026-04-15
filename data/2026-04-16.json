@@ -1,0 +1,120 @@
+{
+  "date": "2026-04-16",
+  "entries": [
+    {
+      "paper": {
+        "title": "Integrating Machine Learning Tools in Protein Design: A Case of MHETase Engineering for PET Biodeconstruction.",
+        "abstract": "The integration of machine learning tools into protein engineering offers substantial promise, yet linking computational predictions to experimental performance remains challenging. Here, we applied accessible computational platforms to engineer Ideonella sakaiensis MHETase, a key enzyme in the biodeconstruction of polyethylene terephthalate (PET). Homologue identification with EnzymeMiner, followed by solubility-focused redesign using AggreProt and ProteinMPNN, enabled the finding of MHETase-like enzymes and the generation of is-MHETase variants with increase in soluble expression, as supported by predictive scoring and experimental validation. However, retaining catalytic activity proved considerably more difficult. Structural modeling and kinetic analyses revealed that ProteinMPNN introduced substitutions incompatible with MHETase function, reflecting biases toward sequence patterns common in broader esterase families rather than constraints specific to this narrow enzyme subgroup. These findings highlight both the utility and the current limitations of accessible ML tools for enzyme engineering, underscoring the continued necessity of experimental validation to guide and refine computational predictions.",
+        "authors": [
+          "Granja-Travez RS",
+          "Dale T",
+          "Jha RK"
+        ],
+        "affiliations": [
+          "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, United States.",
+          "BOTTLE Consortium, Golden, CO, 80401, United States.",
+          "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, United States.",
+          "BOTTLE Consortium, Golden, CO, 80401, United States.",
+          "Bioscience Division, Los Alamos National Laboratory, Los Alamos, NM, 87545, United States.",
+          "BOTTLE Consortium, Golden, CO, 80401, United States."
+        ],
+        "doi": "10.1093/protein/gzag009",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Protein engineering, design & selection : PEDS",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41983560/",
+        "category": null,
+        "date": "2026-04-15",
+        "mesh_terms": [],
+        "source_id": "41983560",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 설계 기술이 플라스틱 분해 효소 개발에 적용 가능하며, 화학 산업에서 폐기물 처리 기술로 활용 가능성이 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생명공학에서 머신러닝 도구의 통합은 잠재력을 갖지만, 계산 예측과 실험적 성능 간의 연결은 여전히 어려운 과제로 남아 있다. (Integration of machine learning tools in protein engineering shows promise but linking computational predictions to experimental performance remains challenging)",
+        "method": "EnzymeMiner를 통한 동의어 식별과 AggreProt, ProteinMPNN을 활용한 용해도 중심 재설계를 수행하였다. (Homologue identification with EnzymeMiner, followed by solubility-focused redesign using AggreProt and ProteinMPNN)",
+        "result": "예측 점수 및 실험 검증을 통해 용해도 증가를 달성했으나, 촉매 활성 유지에는 어려움이 있었다. (Predictive scoring and experimental validation supported increased soluble expression, yet retaining catalytic activity proved considerably more difficult)",
+        "significance": "접근성이 높은 ML 도구는 효소 공학에서 유용하지만 한계가 있으며, 실험적 검증의 중요성을 강조한다. (Accessible ML tools have utility but limitations in enzyme engineering, underscoring the necessity of experimental validation)"
+      }
+    },
+    {
+      "paper": {
+        "title": "Decoupling growth phase dependency and metal ion inhibition: A dual engineering strategy for the high-yield biosynthesis of microcin J25 in Escherichia coli.",
+        "abstract": "Microcin J25 (MccJ25) has received substantial attention as a potential solution to the global threat of infection caused by antibiotic-resistant bacteria. However, the industrial fermentation of MccJ25 faces production bottlenecks. It is imperative to further explore the production optimization strategies for MccJ25 to formulate comprehensive approaches for its industrial-scale production and other downstream applications. Here, Fe²⁺ in tap water was identified as a critical inhibitor of MccJ25 biosynthesis, selectively repressing mcjA transcription, which was reversible via 2,2'-bipyridine-mediated chelation. To decouple production from growth phase dependency and Fe²⁺ interference, we engineered Escherichia coli BL21 cells by performing two genetic modifications. First, we replaced the native mcjA promoter with a constitutive promoter (PQ) to allow its mid-log phase expression. Second, we replaced the native mcjBCD promoter with a medium-strength variant (P2223) that delayed production kinetics without affecting final yields. However, the genomic integration of mcjD alleviated plasmid-borne toxicity, increasing the expression timing and doubling the yield to 240 mg/L. Finally, we computationally optimized the mcjA ribosome-binding site (RBS) to enhance translation efficiency. RBS optimization revealed that a moderate translation initiation efficiency (550,584 arbitrary units [au]) maximized production, whereas excessive efficiency (2,019,712 au) impaired growth and output. These interventions synergistically increased the MccJ25 titer 10-fold, reaching 430 mg/L in batch culture. Our findings establish a robust platform for MccJ25 overproduction, highlighting promoter engineering and translational tuning as pivotal strategies for antimicrobial peptide biosynthesis. This study provides insights for overcoming metabolic constraints in microbial fermentation, advancing the development of peptide-based therapeutics against multidrug-resistant pathogens.",
+        "authors": [
+          "Yang G",
+          "Wang X",
+          "Zhou Y",
+          "Ding X",
+          "Huang J",
+          "Qiao S",
+          "Deng A",
+          "Yu H"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Animal Nutrition and Feeding, Ministry of Agriculture and Rural Affairs Feed Industry Centre, China Agricultural University, Beijing 100193, China.",
+          "Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China.",
+          "State Key Laboratory of Animal Nutrition and Feeding, Ministry of Agriculture and Rural Affairs Feed Industry Centre, China Agricultural University, Beijing 100193, China.",
+          "Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China.",
+          "State Key Laboratory of Animal Nutrition and Feeding, Ministry of Agriculture and Rural Affairs Feed Industry Centre, China Agricultural University, Beijing 100193, China.",
+          "Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China.",
+          "Chongqing Academy of Animal Science, Rongchang, Chongqing 40240, China.",
+          "National Center of Technology Innovation for Pigs, Rongchang, Chongqing 40240, China.",
+          "Chongqing Academy of Animal Science, Rongchang, Chongqing 40240, China.",
+          "National Center of Technology Innovation for Pigs, Rongchang, Chongqing 40240, China.",
+          "State Key Laboratory of Animal Nutrition and Feeding, Ministry of Agriculture and Rural Affairs Feed Industry Centre, China Agricultural University, Beijing 100193, China.",
+          "Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China.",
+          "State Key Laboratory of Animal Nutrition and Feeding, Ministry of Agriculture and Rural Affairs Feed Industry Centre, China Agricultural University, Beijing 100193, China.",
+          "Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China.",
+          "State Key Laboratory of Animal Nutrition and Feeding, Ministry of Agriculture and Rural Affairs Feed Industry Centre, China Agricultural University, Beijing 100193, China.",
+          "Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China."
+        ],
+        "doi": "10.1016/j.engmic.2025.100230",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Engineering microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41982655/",
+        "category": null,
+        "date": "2025-12-01",
+        "mesh_terms": [],
+        "source_id": "41982655",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "항생제 저항균 대응을 위한 항균 펩타이드 생산 최적화 기술로, 의약품 개발에 직접적 활용 가능. 유전자 조작 및 번역 효율 조절 전략은 산업용 발효 공정에 적용 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "미세균균 J25(MccJ25)는 항생제 저항균에 의한 감염 위협에 대응하기 위한 잠재적 해결책으로 주목받고 있지만, 산업용 발효 생산에는 제한이 존재한다(thermostability). 생산 최적화 전략의 탐색이 필수적이다.",
+        "method": "Fe²⁺의 억제 효과를 해결하기 위해 mcjA 프로모터를 상수성 프로모터(PQ)로 교체하고, mcjBCD 프로모터를 중강도 변형체(P2223)로 교체하였다. 또한 mcjA RBS를 계산적으로 최적화하였다.",
+        "result": "mcjD 유전자 통합으로 플라스미드 독성 감소와 생산량 240 mg/L 증가를 달성하였다. RBS 최적화로 번역 효율을 550,584 au로 조절해 생산량 10배 증가(430 mg/L)를 기록하였다.",
+        "significance": "프로모터 공학과 번역 조정 전략이 항생제 유사체 생산에 혁신적인 플랫폼을 제공한다. 이는 다약물 저항성 병원체 대응을 위한 펩타이드 기반 치료제 개발에 기여한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-15T22:23:42.015494+00:00"
+}

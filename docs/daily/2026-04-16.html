@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-16 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-16</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41983560/" target="_blank" rel="noopener noreferrer">Integrating Machine Learning Tools in Protein Design: A Case of MHETase Engineering for PET Biodeconstruction.</a></h3>
+    <p>Protein engineering, design &amp; selection : PEDS</p>
+    <p>BOTTLE Consortium, Golden, CO, 80401, United States.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>AI 기반 효소 설계 기술이 플라스틱 분해 효소 개발에 적용 가능하며, 화학 산업에서 폐기물 처리 기술로 활용 가능성이 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>생명공학에서 머신러닝 도구의 통합은 잠재력을 갖지만, 계산 예측과 실험적 성능 간의 연결은 여전히 어려운 과제로 남아 있다. (Integration of machine learning tools in protein engineering shows promise but linking computational predictions to experimental performance remains challenging)</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>EnzymeMiner를 통한 동의어 식별과 AggreProt, ProteinMPNN을 활용한 용해도 중심 재설계를 수행하였다. (Homologue identification with EnzymeMiner, followed by solubility-focused redesign using AggreProt and ProteinMPNN)</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>예측 점수 및 실험 검증을 통해 용해도 증가를 달성했으나, 촉매 활성 유지에는 어려움이 있었다. (Predictive scoring and experimental validation supported increased soluble expression, yet retaining catalytic activity proved considerably more difficult)</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>접근성이 높은 ML 도구는 효소 공학에서 유용하지만 한계가 있으며, 실험적 검증의 중요성을 강조한다. (Accessible ML tools have utility but limitations in enzyme engineering, underscoring the necessity of experimental validation)</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.80
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41982655/" target="_blank" rel="noopener noreferrer">Decoupling growth phase dependency and metal ion inhibition: A dual engineering strategy for the high-yield biosynthesis of microcin J25 in Escherichia coli.</a></h3>
+    <p>Engineering microbiology</p>
+    <p>Frontier Technology Research Institute of China Agricultural University in Shenzhen, Shenzhen 518119, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>항생제 저항균 대응을 위한 항균 펩타이드 생산 최적화 기술로, 의약품 개발에 직접적 활용 가능. 유전자 조작 및 번역 효율 조절 전략은 산업용 발효 공정에 적용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>미세균균 J25(MccJ25)는 항생제 저항균에 의한 감염 위협에 대응하기 위한 잠재적 해결책으로 주목받고 있지만, 산업용 발효 생산에는 제한이 존재한다(thermostability). 생산 최적화 전략의 탐색이 필수적이다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Fe²⁺의 억제 효과를 해결하기 위해 mcjA 프로모터를 상수성 프로모터(PQ)로 교체하고, mcjBCD 프로모터를 중강도 변형체(P2223)로 교체하였다. 또한 mcjA RBS를 계산적으로 최적화하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>mcjD 유전자 통합으로 플라스미드 독성 감소와 생산량 240 mg/L 증가를 달성하였다. RBS 최적화로 번역 효율을 550,584 au로 조절해 생산량 10배 증가(430 mg/L)를 기록하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>프로모터 공학과 번역 조정 전략이 항생제 유사체 생산에 혁신적인 플랫폼을 제공한다. 이는 다약물 저항성 병원체 대응을 위한 펩타이드 기반 치료제 개발에 기여한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
