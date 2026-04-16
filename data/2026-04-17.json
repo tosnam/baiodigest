@@ -1,0 +1,218 @@
+{
+  "date": "2026-04-17",
+  "entries": [
+    {
+      "paper": {
+        "title": "Artificial intelligence-driven insights into the modulation of enzyme activity toward accelerated industrial applications.",
+        "abstract": "Artificial Intelligence (AI) has emerged as a transformative tool in industrial enzyme engineering, shifting from empirical optimization to data-driven, rational modulation of enzyme activity. Recent AI methodologies extend beyond traditional structure-guided strategies, enabling the prediction of functional residues, estimation of mutational effects, and design of enzyme sequences tailored for enhanced catalytic properties. This review systematically explores the latest advances in AI-driven approaches for enzyme activity modulation, focusing on industrial applications. It first outlines major enzyme classes and their associated regulatory challenges, then delves into AI methods such as structure prediction, mutation effect prediction, and generative design frameworks. Selected case studies from industries like food processing, biomedicine, and biotechnology demonstrate the practical impacts of AI in enzyme engineering. Finally, the review addresses key challenges, including data scarcity, model interpretability, and the gap between computational predictions and real-world industrial implementation. The integration of AI with experimental systems offers a promising path forward, aiming for robust, scalable enzyme design and industrial applications.",
+        "authors": [
+          "Han HM",
+          "Zhang Q",
+          "Chen Y",
+          "Wang ZX",
+          "Su XY",
+          "Zhu YB",
+          "Wang XL",
+          "Feng ZX"
+        ],
+        "affiliations": [
+          "School of Biological and Food Engineering, SuZhou University of Technology, 99 South Third Ring Road, Suzhou, Jiangsu Province, 215500, China. Electronic address: hhm_jnuniversity@163.com.",
+          "School of Biological and Food Engineering, SuZhou University of Technology, 99 South Third Ring Road, Suzhou, Jiangsu Province, 215500, China.",
+          "Department of Outpatient, Jinling Hospital, Affiliated Hospital of Medical School, Nanjing University, Nanjing, Jiangsu, 210002, China.",
+          "School of Biological and Food Engineering, SuZhou University of Technology, 99 South Third Ring Road, Suzhou, Jiangsu Province, 215500, China.",
+          "School of Biological and Food Engineering, SuZhou University of Technology, 99 South Third Ring Road, Suzhou, Jiangsu Province, 215500, China.",
+          "School of Biological and Food Engineering, SuZhou University of Technology, 99 South Third Ring Road, Suzhou, Jiangsu Province, 215500, China.",
+          "CAS Key Lab of Bio-Medical Diagnostics, Suzhou Institute of Biomedical Engineering and Technology, Chinese Academy of Sciences, 88 Keling Road, Suzhou, Jiangsu Province, 215004, China. Electronic address: wangxl@sibet.ac.cn.",
+          "School of Biological and Food Engineering, SuZhou University of Technology, 99 South Third Ring Road, Suzhou, Jiangsu Province, 215500, China."
+        ],
+        "doi": "10.1016/j.ijbiomac.2026.152018",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of biological macromolecules",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41985824/",
+        "category": null,
+        "date": "2026-04-13",
+        "mesh_terms": [],
+        "source_id": "41985824",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 공학이 식품 및 바이오 산업에 적용 가능하며, 실제 사례를 통해 산업 활용 가치가 제시됨.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인공지능(AI)은 산업 효소 공학에서 혁신적인 도구로 등장해 경험적 최적화에서 데이터 기반, 합리적인 효소 활성 조절로 전환하고 있다. 전통적인 구조 지도 전략을 넘어선 최신 AI 방법론은 기능적 잔여물 예측, 돌연변이 효과 추정, 촉매 성질 향상된 효소 시퀀스 설계가 가능하다.",
+        "method": "이 리뷰는 효소 활성 조절을 위한 AI 기반 접근법의 최신 진보를 첳계적으로 탐구한다. 주요 효소 클래스와 관련된 규제적 도전 과제를 정리하고, 구조 예측, 돌연변이 효과 예측, 생성적 설계 프레임워크 등의 AI 방법론을 탐색한다.",
+        "result": "식품 가공, 생의학, 생물공학 등 산업 분야의 사례 연구는 AI가 효소 공학에 미치는 실질적 영향을 보여준다. 데이터 부족, 모델 해석 가능성, 계산 예측과 실제 산업 적용 사이의 격차 등 주요 도전 과제를 다룬다.",
+        "significance": "AI와 실험 시스템의 통합은 견고하고 확장 가능한 효소 설계 및 산업 적용을 위한 유망한 방향을 제시한다. 이는 효소 공학의 효율성과 적용 범위를 극대화할 수 있는 잠재력을 가진다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Deep Learning-Enabled Engineering of a Hyper-Stable and Soluble MPB70-83 Antigen for Sensitive Bovine Tuberculosis Surveillance.",
+        "abstract": "Bovine tuberculosis (bTB) diagnostics are frequently hindered by the structural instability and insolubility of recombinant multi-epitope proteins in prokaryotic expression systems. To address this, we developed an integrated strategy combining immunoinformatics with the ProteinMPNN deep learning framework. We constructed a fusion protein utilizing B-cell epitopes from MPB70 and MPB83, where ProteinMPNN was employed to redesign non-epitope scaffolds for optimized thermodynamic stability. The structural integrity was verified via 200-ns molecular dynamics (MD) simulations. MD analysis revealed the redesigned construct transitions into a rigid, compact native state with a stable hydrophobic core. Validating this in silico design, the optimized protein achieved high-yield soluble expression in Escherichia coli, eliminating inclusion body formation. The resulting indirect ELISA demonstrated 96.30% sensitivity and 98.61% specificity, showing excellent concordance (Cohen's κ > 0.9) with standard assays. This study demonstrates that deep learning-based sequence redesign effectively resolves solubility bottlenecks in antigen engineering, providing a robust, scalable tool for precision bTB surveillance.",
+        "authors": [
+          "Wang WH",
+          "Ge JZ",
+          "Xie YY",
+          "Song GD",
+          "Liu Y",
+          "Song YJ",
+          "Li RG",
+          "Li RS",
+          "Wang ZQ",
+          "Liu XM",
+          "Guo SS",
+          "Li J",
+          "Chen S",
+          "Li N",
+          "Zheng F",
+          "Chu Y"
+        ],
+        "affiliations": [
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Animal Science and Technology, Shihezi University, Shihezi, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Veterinary Medicine, Gansu Agricultural University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Veterinary Medicine, South China Agricultural University, Guangzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Veterinary Medicine, Gansu Agricultural University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Animal Medicine, Xinjiang Agricultural University, Urumqi, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Animal Science and Technology, Shihezi University, Shihezi, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Animal Medicine, Xinjiang Agricultural University, Urumqi, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "State Key Laboratory for Animal Disease Control and Prevention, College of Veterinary Medicine, Lanzhou Veterinary Research Institute, Chinese Academy of Agricultural Sciences, Lanzhou University, Lanzhou, China.",
+          "College of Animal Science and Technology, Shihezi University, Shihezi, China.",
+          "Gansu Province Research Center for Basic Disciplines of Pathogen Biology, Lanzhou, China.",
+          "Key Laboratory of Veterinary Etiological Biology, Key Laboratory of Ruminant Disease Prevention and Control (West), Ministry of Agricultural and Rural Affairs, Lanzhou, China."
+        ],
+        "doi": "10.1111/1751-7915.70348",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Microbial biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41988819/",
+        "category": "deep learning",
+        "date": "2026-04-01",
+        "mesh_terms": [
+          "Deep Learning",
+          "Animals",
+          "Antigens, Bacterial",
+          "Tuberculosis, Bovine",
+          "Cattle",
+          "Bacterial Proteins",
+          "Escherichia coli",
+          "Enzyme-Linked Immunosorbent Assay",
+          "Protein Engineering",
+          "Molecular Dynamics Simulation",
+          "Recombinant Fusion Proteins",
+          "Sensitivity and Specificity",
+          "Epitopes, B-Lymphocyte",
+          "Solubility",
+          "Protein Stability"
+        ],
+        "source_id": "41988819",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "단백질 공학 기술로 항원 설계를 혁신적으로 개선해 진단 분야에 활용 가능. AI 기반 디자인 방법론은 의약/화학 산업에 이식 가능한 기술입니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "소형 말기결핵(bTB) 진단은 프로카리오틱 발현 시스템에서 재조합 다 에피토이프 단백질의 구조 불안정성(structural instability)과 용해도 부족으로 어려움을 겪는다. 이에 본 연구는 면역 정보학(immunoinformatics)과 ProteinMPNN 딥러닝 프레임워크를 통합한 전략을 개발하였다.",
+        "method": "MPB70과 MPB83의 B세포 에피토이프를 융합 단백질로 설계하고, ProteinMPNN을 활용해 비에피토이프 스캐폴드를 재설계하여 열안정성(thermostability)을 최적화하였다. 분자 역학(molecular dynamics) 시뮬레이션을 통해 구조적 안정성을 검증하였다.",
+        "result": "재설계된 단백질은 Escherichia coli에서 고수율의 용해된 형태로 발현되어 불포화체 형성 없이 생산되었다. 간접 ELISA 결과는 96.30% 민감도와 98.61% 특이도를 보이며 표준 검사와 높은 일치도(Cohen's κ > 0.9)를 나타냈다.",
+        "significance": "디퍼러닝 기반의 시퀀스 재설계는 항원 공학에서 용해도 장벽을 효과적으로 해결하며, 정밀한 bTB 감시를 위한 견고하고 확장 가능한 도구로 활용 가능하다."
+      }
+    },
+    {
+      "paper": {
+        "title": "AI in biomolecular structural data analysis.",
+        "abstract": "Artificial intelligence (AI) is rapidly growing in how researchers study biomolecular structures of proteins and nucleic acids. The use of traditional methods like X-ray crystallography and electron microscopy resolves structural details but these are time-consuming and costly. AI, especially deep learning models, e.g., AlphaFold2 and RoseTTAFold, enables scientists to predict accurate 3D structures quickly from sequence data, opening new ways in understanding molecular functions and drug discovery. This chapter explains key concepts of machine learning and its architectures used in structural biology, including convolutional (CNN) and graph neural networks (GNN), recurrent neural networks (RNN), and transformers. It provides details on how AI helps not only in predicting 3D structures but also in identifying functional sites and interactions, aiding enzyme engineering and therapeutic design towards targets. The experimental data and integration of AI are also discussed, explaining how these techniques complement each other to improve structural determinants. The Challenges faced, like interpretability of the model, data quality, and ethical concerns, are highlighted, along with accessibility for researchers. Overall, this chapter provides a basic overview of the use of AI in biomolecular structural analysis and is designed to equip beginners with the primary knowledge to explore this exciting interdisciplinary field.",
+        "authors": [
+          "Singh H",
+          "Choudhary G",
+          "Siddiqui H",
+          "Singh P",
+          "Singh L",
+          "Singh S",
+          "Singh H"
+        ],
+        "affiliations": [
+          "National Institute for Implementation Research on Non-Communicable Diseases, Jodhpur, Rajasthan India.",
+          "Department of Pharmacology, PGIMER, Chandigarh, India.",
+          "Department of Biochemistry, PGIMER, Chandigarh, India.",
+          "Department of Biochemistry, PGIMER, Chandigarh, India.",
+          "Sant Prannath Parnami PG College, Padampur, Rajasthan, India.",
+          "Department of Experimental Medicine and Biotechnology, PGIMER, Chandigarh, India.",
+          "PG Department of Bioinformatics, Hans Raj Mahila Maha Vidyalaya, Jalandhar, Punjab, India. Electronic address: Harpreetsingh05@gmail.com."
+        ],
+        "doi": "10.1016/bs.pmbts.2026.01.024",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Progress in molecular biology and translational science",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41986008/",
+        "category": "artificial intelligence",
+        "date": "2026-01-01",
+        "mesh_terms": [
+          "Artificial Intelligence",
+          "Data Analysis",
+          "Humans",
+          "Neural Networks, Computer",
+          "Protein Conformation",
+          "Models, Molecular",
+          "Proteins"
+        ],
+        "source_id": "41986008",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 구조 분석은 효소 공학과 약물 개발에 활용 가능합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "AI의 급속한 성장이 생물분자 구조 연구에 혁신을 가져오고 있으며, 전통적인 방법(예: X-ray 회절법, 전자현미경)은 구조 분석에 유용하지만 시간과 비용이 많이 드는 한계가 있음.",
+        "method": "심층 학습 모델(예: AlphaFold2, RoseTTAFold)과 다양한 신경망(CNN, GNN, RNN, Transformer)이 구조 생물학에 적용되어 있음.",
+        "result": "AI는 3차원 구조 예측과 기능적 부위 식별에 기여하며, 실험 데이터와의 통합을 통해 구조 결정 요소를 개선하고, 모델 해석성, 데이터 품질, 윤리적 문제, 접근성 등 도전 과제를 강조함.",
+        "significance": "본 장은 AI를 이용한 생물분자 구조 분석에 대한 기본적인 개요를 제공하며, 이 분야의 초보자를 위한 핵심 지식을 전달함."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-16T22:33:45.262335+00:00"
+}
