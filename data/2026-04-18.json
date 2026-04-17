@@ -1,0 +1,109 @@
+{
+  "date": "2026-04-18",
+  "entries": [
+    {
+      "paper": {
+        "title": "Protein design, generative AI and biological security.",
+        "abstract": "Artificial intelligence-driven protein design has fundamentally changed what is possible in protein engineering. Deep learning models can now generate entirely novel sequences that fold into defined structures, enabling advances in therapeutics, vaccine development, and industrial biotechnology. For biosecurity specifically, designed proteins offer new opportunities: capturing and detecting biological agents, developing novel binders against viral surface proteins, and accelerating pandemic preparedness. Yet the same capabilities introduce new risks. AI-generated proteins may be functionally equivalent to known toxins while sharing little sequence similarity, rendering current homology-based screening blind to such designs. The wide availability of open-source tools further lowers the barrier to misuse. Mitigation requires layered strategies that together can deter misuse without stifling innovation. Here, we review the current landscape of generative protein design, assess its dual-use implications, and discuss proportionate mitigation strategies that balance open scientific progress with biosecurity.",
+        "authors": [
+          "Brackmann M",
+          "Reiners S",
+          "Hoogendoorn M",
+          "Moser M"
+        ],
+        "affiliations": [
+          "Spiez Laboratory, Spiez, Switzerland.",
+          "Center for Security Studies, ETH Zürich, Zürich, Switzerland.",
+          "Center for Security Studies, ETH Zürich, Zürich, Switzerland.",
+          "Spiez Laboratory, Spiez, Switzerland.",
+          "ETH Zürich, Zürich, Switzerland.",
+          "Spiez Laboratory, Spiez, Switzerland."
+        ],
+        "doi": "10.3389/fmicb.2026.1817535",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Frontiers in microbiology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41994287/",
+        "category": null,
+        "date": "2026-01-01",
+        "mesh_terms": [],
+        "source_id": "41994287",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "단백질 설계와 생성형 AI 기술이 항체/백신 개발 및 산업용 효소 설계에 활용 가능하며, 생물무기 방지 기술로 산업 안전성 강화에 기여할 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인공지능 기반 단백질 설계는 단백질 공학의 가능성을 근본적으로 바꾸고 있다(Protein engineering). 심층 학습 모델은 정의된 구조로 折叠하는 새로운 시퀀스를 생성할 수 있어, 치료제, 백신 개발, 산업 생물기술 분야에서 진보를 이끌고 있다.",
+        "method": "생물안전 분야에서는 설계된 단백질이 새로운 기회를 제공하지만, 동일한 능력은 새로운 위험도 도입한다. AI 생성 단백질은 알려진 독소와 기능적으로 동일할 수 있지만, 시퀀스 유사성이 낮아 기존 동질성 기반 스크리닝을 무력화할 수 있다.",
+        "result": "오픈소스 도구의 넓은 이용 가능성은 남용 장벽을 낮추고, 억제를 위한 계층적 전략이 필요하다. 이 연구는 생성적 단백질 설계의 현재 지형을 검토하고, 이중용도 영향을 평가하며, 혁신과 생물안전을 균형 있게 조화하는 억제 전략을 논의한다.",
+        "significance": "생물안전과 과학적 진보의 균형을 유지하면서, AI 기반 단백질 설계의 잠재력을 최대한 활용할 수 있는 프레임워크를 제시한다. 이는 팬데믹 대비 및 생물학적 위협 대응에 중요한 기여를 할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Optimized expression and antimicrobial activity of rainbow trout defensin 3 in Komagataella phaffii.",
+        "abstract": "Rainbow trout β-defensin 3 (rtDefb3) is identified as a small cationic antimicrobial peptide, but its recombinant expression and functional characterization have not been reported. In this study, the mature rtDefb3 Komagataella phaffii coding sequence was cloned from trout liver cDNA and heterologously expressed in GS115 using the pPIC9K with an α-factor secretion signal. Expression condition was optimized by adjusting methanol concentration (0.5-1.25%), induction temperature (26-30 °C), and induction duration (24-168 h). Optimized induction with 1.0% methanol at 30 ℃ for 96 h produced ~ 7 mg/mL of secreted peptide, which was purified to > 90% purity using one-step Ni-IDA affinity chromatography. The identity and purity of the recombinant rtDefb3 were confirmed by Tricine-SDS-PAGE, HPLC (~ 97% purity), and MALDI-TOF mass spectrometry. Functional assays revealed potent broad-spectrum antimicrobial activity against both Gram-positive and Gram-negative bacteria. These findings demonstrate, for the first time, the successful production of active rtDefb3 in Komagataella phaffii, establishing a scalable expression platform for fish β-defensins. The recombinant rtDefb3 peptide holds promise as a natural antimicrobial agent for aquaculture and potential therapeutic applications, addressing the urgent demand for alternatives to conventional antibiotics. KEY POINTS: • First successful recombinant production of rainbow trout β-defensin 3 in Komagataella phaffii • via optimized induction strategy. • High-yield secretory expression (~ 7 mg/mL) with > 90% purity confirmed by HPLC and biochemical analysis. • Recombinant rtDefb3 displayed potent broad-spectrum antibacterial activity, offering a repeatable and scalable system and functional validation.",
+        "authors": [
+          "Cai J",
+          "Wang H",
+          "He S",
+          "Li M",
+          "Peng D",
+          "Yao B"
+        ],
+        "affiliations": [
+          "Department of Chemistry, School of Chemistry and Chemical Engineering, Chongqing University of Science and Technology, Chongqing, 400000, China.",
+          "Department of Chemical Engineering, School of Chemistry and Chemical Engineering, Chongqing University of Science and Technology, Chongqing, 400000, China.",
+          "Department of Biology and Pharmacy, School of Chemistry and Chemical Engineering, Chongqing University of Science and Technology, Chongqing, 400000, China.",
+          "Department of Biology and Pharmacy, School of Chemistry and Chemical Engineering, Chongqing University of Science and Technology, Chongqing, 400000, China.",
+          "Department of Biology and Pharmacy, School of Chemistry and Chemical Engineering, Chongqing University of Science and Technology, Chongqing, 400000, China.",
+          "Department of Biology and Pharmacy, School of Chemistry and Chemical Engineering, Chongqing University of Science and Technology, Chongqing, 400000, China. yaobocd@gmail.com."
+        ],
+        "doi": "10.1007/s00253-025-13667-z",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Applied microbiology and biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41991737/",
+        "category": null,
+        "date": "2026-04-16",
+        "mesh_terms": [],
+        "source_id": "41991737",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "항균활성 보유한 재조합 단백질 생산 성공. 수산양식 및 항생제 대체용 의약품으로 활용 가능.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "rainbow trout β-defensin 3(rtDefb3)은 소형 카티온성 항균성 펩타이드이지만, 재조합 발현 및 기능적 특성화 연구는 이루어지지 않았다. 이 연구는 rtDefb3의 효율적 생산을 위한 새로운 플랫폼 개발을 목표로 했다.",
+        "method": "trout 간 cDNA에서 rtDefb3의 코딩 서열을 클로닝하고, GS115에서 pPIC9K 벡터를 이용해 α-factor 분비 신호를 통해 발현하였다. 발현 조건은 메탄올 농도(0.5-1.25%), 유도 온도(26-30°C), 유도 시간(24-168시간)을 최적화하였다.",
+        "result": "최적화된 조건(1.0% 메탄올, 30°C, 96시간)에서 약 7 mg/mL의 분비 펩타이드를 생산하였으며, Ni-IDA 친화 크로마토그래피로 90% 이상 순도로 분리하였다. HPLC 및 질량 분석으로 순도와 정체성을 확인하였다.",
+        "significance": "이 연구는 첫 번째로 Komagataella phaffii에서 활성화된 rtDefb3를 생산하여, 물고기 β-디펜신의 스케일러블 발현 플랫폼을 확립하였다. 재조합 rtDefb3는 항균제 대체 물질로 수산업 및 치료용으로 잠재적 가치를 갖는다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-17T22:16:08.214587+00:00"
+}
