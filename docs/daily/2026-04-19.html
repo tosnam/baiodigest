@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-19 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-19</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/41997156/" target="_blank" rel="noopener noreferrer">Rapid customization of base editors via machine learning-powered combinatorial mutagenesis.</a></h3>
+    <p>Molecular cell</p>
+    <p>Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China; School of Biomedical Engineering, The University of Hong Kong, Pokfulam, Hong Kong SAR, China. Electronic address: aslw@hku.hk.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>기반 편집기의 정밀도 향상 및 특정 목표에 맞춤형 설계 가능</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>타겟 DNA와 베이스 에디터 단백질 간 보완성과 방해 요소를 제어하는 것이 정확한, 부수적 편집 없는 편집을 가능하게 한다(Complementarity and hindrance control). 이 연구는 이러한 상호작용을 대량으로 분석하고 공학화하기 위해 조합적 돌연변이와 머신러닝을 결합했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>인간 세포에서 160,000개의 evoAPOBEC1과 64백만 개의 TadA 변이체의 DNA 모티프 선호도를 프로파일링하고, 0.004%의 돌연변이 공간만으로 예측 모델을 구축했다(Mutational landscape profiling). 구조 기반 딥러닝 모델을 활용해 실험 데이터 없이 26개 아미노산 사이트의 변이체를 예측했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>모티프 특이적 활성을 가진 변이체를 식별해 시토신 베이스 에디터의 잔여 아데닌 편집을 제거하고, 800개 이상의 질병 관련 돌연변이를 수정하는 데 성공했다(Motif-specific activity identification). 50%의 경우에 비상편집을 검출할 수 없을 정도로 정확도를 향상시켰다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 방법은 베이스 에디터의 재공학화를 간소화해 특정 타겟에 맞춘 정밀도 향상을 가능하게 한다(Re-engineering streamlining). 예측 모델은 단일 예측 라운드에서 2026개 변이체 중 63%의 기능성을 성공적으로 예측했다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

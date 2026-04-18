@@ -1,0 +1,68 @@
+{
+  "date": "2026-04-19",
+  "entries": [
+    {
+      "paper": {
+        "title": "Rapid customization of base editors via machine learning-powered combinatorial mutagenesis.",
+        "abstract": "Being able to control the complementarity and hindrance between target DNA and base editor proteins enables precise, bystander-free editing. Here, we combined combinatorial mutagenesis with machine learning to analyze and engineer these interactions at scale. By profiling DNA motif preferences across 160,000 evoAPOBEC1 and 64 million TadA variants in human cells, we used as little as 0.004% of the mutational landscape to make predictions. This identified variants with motif-specific activity and eliminated residual adenine editing in cytosine base editors. In correcting >800 disease-associated mutations, our variants outperformed previous versions in precluding unintended edits at purine motifs, achieving undetectable bystander edits in 50% of cases. Additionally, a pre-trained, structure-based deep learning model predicted functional TadA variants with 63% success across 2026 variants spanning 26 amino acid sites, without experimental data and in a single prediction round. These approaches streamline the re-engineering of base editors for enhanced precision tailored to specific targets.",
+        "authors": [
+          "Peng J",
+          "Chan DCT",
+          "Chu HY",
+          "Fong JHC",
+          "Lam YK",
+          "Cheung MSH",
+          "Leung W",
+          "Choi GCG",
+          "Wong ASL"
+        ],
+        "affiliations": [
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China.",
+          "Department of Paediatrics and Adolescent Medicine, The University of Hong Kong, Pokfulam, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China.",
+          "Laboratory of Combinatorial Genetics and Synthetic Biology, School of Biomedical Sciences, The University of Hong Kong, Pokfulam, Hong Kong SAR, China; Centre for Oncology and Immunology, Hong Kong Science Park, Hong Kong SAR, China; School of Biomedical Engineering, The University of Hong Kong, Pokfulam, Hong Kong SAR, China. Electronic address: aslw@hku.hk."
+        ],
+        "doi": "10.1016/j.molcel.2026.03.030",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Molecular cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41997156/",
+        "category": null,
+        "date": "2026-04-16",
+        "mesh_terms": [],
+        "source_id": "41997156",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "기반 편집기의 정밀도 향상 및 특정 목표에 맞춤형 설계 가능",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "타겟 DNA와 베이스 에디터 단백질 간 보완성과 방해 요소를 제어하는 것이 정확한, 부수적 편집 없는 편집을 가능하게 한다(Complementarity and hindrance control). 이 연구는 이러한 상호작용을 대량으로 분석하고 공학화하기 위해 조합적 돌연변이와 머신러닝을 결합했다.",
+        "method": "인간 세포에서 160,000개의 evoAPOBEC1과 64백만 개의 TadA 변이체의 DNA 모티프 선호도를 프로파일링하고, 0.004%의 돌연변이 공간만으로 예측 모델을 구축했다(Mutational landscape profiling). 구조 기반 딥러닝 모델을 활용해 실험 데이터 없이 26개 아미노산 사이트의 변이체를 예측했다.",
+        "result": "모티프 특이적 활성을 가진 변이체를 식별해 시토신 베이스 에디터의 잔여 아데닌 편집을 제거하고, 800개 이상의 질병 관련 돌연변이를 수정하는 데 성공했다(Motif-specific activity identification). 50%의 경우에 비상편집을 검출할 수 없을 정도로 정확도를 향상시켰다.",
+        "significance": "이 방법은 베이스 에디터의 재공학화를 간소화해 특정 타겟에 맞춘 정밀도 향상을 가능하게 한다(Re-engineering streamlining). 예측 모델은 단일 예측 라운드에서 2026개 변이체 중 63%의 기능성을 성공적으로 예측했다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-18T22:08:59.460813+00:00"
+}
