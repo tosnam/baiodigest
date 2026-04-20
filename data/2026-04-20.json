@@ -1,0 +1,76 @@
+{
+  "date": "2026-04-20",
+  "entries": [
+    {
+      "paper": {
+        "title": "p53 safeguards chemical reprogramming of human somatic cells toward pluripotency.",
+        "abstract": "Cell fate manipulation is powerful for generating desired cell types through reprogramming. However, reprogramming induces dramatic changes in cell states and identities, which can be risky, necessitating strict regulation to ensure safety and efficiency. p53 is essential for genome stability; however, it functionally opposes oncogenes comprising the Yamanaka factors. Delicately balancing p53 activity for efficient reprogramming has proven challenging. Here, we demonstrate that p53 is essential for chemical reprogramming, unlike its inhibitory role in transcription factor-mediated reprogramming. Unexpectedly, suppressing p53 impairs the generation of chemically induced pluripotent stem cells (CiPSCs). p53 prevents excessive epithelial-to-mesenchymal transition during the early reprogramming stages. Retinoic acid signaling activation promotes CiPSC generation by leveraging p53's anti-metastatic function via BTG2. Cell proliferation ability is sustained in the presence of p53 expression by regulating p21 with chemicals. p53 preservation shows practical advantages in securing genome integrity; thus, chemical reprogramming is promising for delicately balancing p53 activity and achieving efficient reprogramming for cell fate manipulation.",
+        "authors": [
+          "Cheng L",
+          "Wang Y",
+          "Yang Z",
+          "Cao J",
+          "Peng F",
+          "Lan T",
+          "Cheng R",
+          "Liu T",
+          "Xia Z",
+          "Guan J",
+          "Li C",
+          "Sun S",
+          "Deng H"
+        ],
+        "affiliations": [
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China. Electronic address: lin_cheng@pku.edu.cn.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China; State Key Laboratory of Natural and Biomimetic Drugs, Department of Molecular and Cellular Pharmacology, School of Pharmaceutical Sciences, Peking University, Beijing, China.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China; School of Life Sciences, Center for Bioinformatics, Center for Statistical Science, Peking University, Beijing, China.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China.",
+          "Peking University, Tsinghua University, National Institute of Biological Sciences Joint Graduate Program, Academy for Advanced Interdisciplinary Studies, Peking University, Beijing, China.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China; School of Life Sciences, Center for Bioinformatics, Center for Statistical Science, Peking University, Beijing, China.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China.",
+          "Changping Laboratory, Beijing, China.",
+          "State Key Laboratory of Natural and Biomimetic Drugs, Department of Molecular and Cellular Pharmacology, School of Pharmaceutical Sciences, Peking University, Beijing, China.",
+          "School of Life Sciences, Center for Bioinformatics, Center for Statistical Science, Peking University, Beijing, China.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China. Electronic address: scsun@hsc.pku.edu.cn.",
+          "MOE Key Laboratory of Cell Proliferation and Differentiation, School of Life Sciences and MOE Engineering Research Center of Regenerative Medicine, School of Basic Medical Sciences, State Key Laboratory of Natural and Biomimetic Drugs, Peking University Health Science Center, Peking-Tsinghua Center for Life Sciences, Peking University, Beijing, China; Changping Laboratory, Beijing, China. Electronic address: hongkui_deng@pku.edu.cn."
+        ],
+        "doi": "10.1016/j.cell.2026.03.038",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/41999746/",
+        "category": null,
+        "date": "2026-04-17",
+        "mesh_terms": [],
+        "source_id": "41999746",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "p53의 화학 재프로그래밍 효율성에 대한 기여가 명확히 제시됨. 세포 재프로그래밍 기술 개발에 활용 가능하여 의약/화학 산업에 적용 가능.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "세포 운명 조절은 재프로그래밍을 통해 원하는 세포 유형을 생성하는 강력한 도구이다. 그러나 재프로그래밍은 세포 상태와 정체성을 극적으로 변화시키며, 이는 안전성과 효율성을 위한 엄격한 조절이 필요하다.",
+        "method": "화학적 재프로그래밍을 통한 세포 복원 연구에서 p53의 기능적 역할을 분석하였다. p53의 활성 조절이 효율적인 재프로그래밍에 필수적임을 입증하기 위해 실험적 접근법을 적용하였다.",
+        "result": "p53 억제는 화학 유도 다능성 줄기세포(CiPSCs) 생성을 저해하였다. p53는 초기 재프로그래밍 단계에서 과도한 상피-중간엽 전환(EMT)을 억제하고, 리티노산 신호전달을 통해 BTG2를 활용한 항전이동 기능을 활성화하였다.",
+        "significance": "p53 보존은 유전자 무결성 유지에 실용적 이점이 있어, 화학적 재프로그래밍을 통해 p53 활성을 정교하게 조절함으로써 세포 운명 조절의 안전성과 효율성을 높일 수 있다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-20T22:13:51.727729+00:00"
+}

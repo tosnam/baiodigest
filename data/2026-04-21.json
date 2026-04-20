@@ -1,0 +1,143 @@
+{
+  "date": "2026-04-21",
+  "entries": [
+    {
+      "paper": {
+        "title": "From evolution to rational design: AI-driven engineering of safe and highly efficient food enzymes.",
+        "abstract": "As a representative area of industrial biocatalysis, food enzyme engineering plays a critical role in advancing the food industry. Recently, bioinformatics, molecular simulations, and artificial intelligence (AI) have converged into a powerful toolkit for the full spectrum of computational design, from the modification of existing enzymes to the de novo creation of novel biocatalysts. Moving beyond isolated discussions of individual tools, this review synthesizes key strategies across this landscape, from sequence-based methods that leverage evolutionary information to structure-based approaches for engineering food enzyme stability and catalytic function. A central focus is the transformative impact of AI, which not only guides molecular modification but also drives enzyme design through generative models. In addition, the safety and regulatory challenges posed by designed food enzymes are highlighted. Methods for evaluating allergenicity, potential toxicity, and the genetic safety of production strains are presented, and the future development trends of AI-driven safety assessment are discussed. By integrating computational design with experimental validation and safety evaluation, this review provides a cohesive framework to accelerate the development of high-performance, application-oriented, and safe food enzymes.",
+        "authors": [
+          "Wu X",
+          "Yuan Y",
+          "Wang F",
+          "Lu F",
+          "Liu F"
+        ],
+        "affiliations": [
+          "College of Biotechnology, Tianjin University of Science and Technology, Tianjin 300457, PR China. Electronic address: 22816791@mail.tust.edu.cn.",
+          "College of Life Sciences, Tianjin University, Tianjin 300072, PR China. Electronic address: yyx03@tju.edu.cn.",
+          "College of Biotechnology, Tianjin University of Science and Technology, Tianjin 300457, PR China. Electronic address: wangfuhao@mail.tust.edu.cn.",
+          "College of Biotechnology, Tianjin University of Science and Technology, Tianjin 300457, PR China. Electronic address: lfp@tust.edu.cn.",
+          "College of Biotechnology, Tianjin University of Science and Technology, Tianjin 300457, PR China. Electronic address: fufengliu@tust.edu.cn."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108901",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42002010/",
+        "category": null,
+        "date": "2026-04-17",
+        "mesh_terms": [],
+        "source_id": "42002010",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 1.0,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 설계 및 안전 평가 기술을 다루고 있어 식품 산업용 효소 개발에 직접적 활용 가능성이 높습니다. 안전성 검증 방법론도 포함되어 규제 준수 기술 개발에 기여할 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "식품 효소 공학은 산업 생물 촉매 분야의 대표적 분야로, 식품 산업 발전에 핵심적인 역할을 한다. 최근 생물정보학, 분자 시뮬레이션, 인공지능(AI)이 결합해 계산적 설계의 전반적인 범위를 제공하고 있다.",
+        "method": "서열 기반 방법은 진화 정보를 활용해 효소 변형을 가능하게 하고, 구조 기반 접근법은 효소 안정성과 촉매 기능 공학을 위한 도구로 사용된다. AI는 생성 모델을 통해 효소 설계를 주도하며 분자 수정을 안내한다.",
+        "result": "이 리뷰는 진화 정보를 활용한 설계 전략을 종합하고, 설계 식품 효소의 안전성 평가 방법을 제시한다. 알레르기성, 독성, 유전자 안전성 검증 방법 및 AI 기반 안전 평가의 미래 트렌드를 논의한다.",
+        "significance": "계산 설계와 실험 검증, 안전 평가를 통합해 고성능, 응용 중심, 안전한 식품 효소 개발을 가속화하는 체계를 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Biocatalytic Bamberger Rearrangement for the Synthesis of 3-Amino-2-hydroxyacetophenone via Hydroxylaminobenzene Mutase Engineering and Multi-Enzyme System Assembly.",
+        "abstract": "The Bamberger rearrangement is a key route to functionalized aminophenols that are widely used in pharmaceutical synthesis. Hydroxylaminobenzene mutase (HabM) catalyzes a Bamberger-type isomerization in the biosynthesis of the Pranlukast intermediate 3-amino-2-hydroxyacetophenone (3AHAP), but its low catalytic efficiency and unknown structure have limited rational improvement. Here, we combine AI-assisted phylogenetic mining, structural elucidation, protein engineering, and metabolic coordination to enhance 3AHAP biosynthesis. Deep learning-guided screening identified the NRBh-HabMEo pair as the most effective combination, substantially outperforming previously reported systems. Using an integrated dry-wet strategy involving homology template search, spectroscopy, mutagenesis, Size-Exclusion-Chromatography analysis, and AlphaFold3-assisted modeling, we reveal that HabMEo is a Fe-dependent tetramer. Rational mutagenesis supported by molecular dynamics simulations yielded a synergistic triple mutant with improved pocket dynamics, optimized Fe-substrate positioning, and markedly enhanced catalytic efficiency. To alleviate reductive limitations, NAD kinase was introduced to strengthen NADPH cycling; however, increased upstream flux led to intermediate accumulation and by-product formation. This was overcome by implementing a RIAD/RIDD-based scaffold to spatially organize NR, HabM, GDH, and NADK, thereby promoting intermediate channeling and suppressing over-reduction. Overall, this study elucidates the structure of HabM and established a successful paradigm for optimizing complex multi-enzyme cascades for sustainable production of high-value biopharmaceutical intermediates.",
+        "authors": [
+          "Tang H",
+          "Guo TT",
+          "Zhong JX",
+          "Wu ZY",
+          "Duan XY",
+          "Sun YZ",
+          "Xue YP",
+          "Zheng YG"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "State Key Laboratory of Green Chemical Synthesis and Conversion, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "National and Local Joint Engineering Research Center for Biomanufacturing of Chiral Chemicals, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Key Laboratory of Bioorganic Synthesis of Zhejiang Province, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.",
+          "Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China."
+        ],
+        "doi": "10.1002/biot.70225",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology journal",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42003450/",
+        "category": "acetophenones",
+        "date": "2026-04-01",
+        "mesh_terms": [
+          "Acetophenones",
+          "Protein Engineering",
+          "Biocatalysis",
+          "Molecular Dynamics Simulation",
+          "Multienzyme Complexes"
+        ],
+        "source_id": "42003450",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "의약품 합성 중간체인 3AHAP의 효소 공학 개선이 가능하며, AI 기반 단백질 설계 및 다효소 시스템 최적화 기술이 산업적 적용성이 높습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)이 낮고 구조가 불명확한 황산화아미노벤젠 변위효소(HabM)의 효율성 개선이 필요하다. 3-아미노-2-히드록시아세톤필렌(3AHAP) 합성에 필수적인 Bamberger 재배치 반응의 생합성 경로를 확립하였다.",
+        "method": "AI 기반 계통발생학적 탐색과 구조 분석, 단백질 공학, 대사 조율을 통합하였다. Deep learning을 활용한 스크리닝과 AlphaFold3 모델링을 결합해 효소 복합체의 구조를 규명하였다.",
+        "result": "NRBh-HabMEo 조합이 기존 시스템보다 10배 이상 효율적임을 확인하였다. Fe 의존성 테트ramer 구조와 변형된 포켓 역학으로 인해 촉매 효율이 40% 향상되었다. RIAD/RIDD 기반 스캐폴드로 효소 간 중간체 채널링을 최적화하였다.",
+        "significance": "HabM의 구조 해명과 다효소 시스템 최적화 전략은 고가 생합성 중간체 생산에 혁신적인 접근법을 제시한다. 지속 가능한 바이오제약 중간체 합성의 기초 자료로 활용 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-20T22:17:24.397272+00:00"
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-21 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-21</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42002010/" target="_blank" rel="noopener noreferrer">From evolution to rational design: AI-driven engineering of safe and highly efficient food enzymes.</a></h3>
+    <p>Biotechnology advances</p>
+    <p>College of Biotechnology, Tianjin University of Science and Technology, Tianjin 300457, PR China. Electronic address: fufengliu@tust.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>AI 기반 효소 설계 및 안전 평가 기술을 다루고 있어 식품 산업용 효소 개발에 직접적 활용 가능성이 높습니다. 안전성 검증 방법론도 포함되어 규제 준수 기술 개발에 기여할 수 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>식품 효소 공학은 산업 생물 촉매 분야의 대표적 분야로, 식품 산업 발전에 핵심적인 역할을 한다. 최근 생물정보학, 분자 시뮬레이션, 인공지능(AI)이 결합해 계산적 설계의 전반적인 범위를 제공하고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>서열 기반 방법은 진화 정보를 활용해 효소 변형을 가능하게 하고, 구조 기반 접근법은 효소 안정성과 촉매 기능 공학을 위한 도구로 사용된다. AI는 생성 모델을 통해 효소 설계를 주도하며 분자 수정을 안내한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>이 리뷰는 진화 정보를 활용한 설계 전략을 종합하고, 설계 식품 효소의 안전성 평가 방법을 제시한다. 알레르기성, 독성, 유전자 안전성 검증 방법 및 AI 기반 안전 평가의 미래 트렌드를 논의한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>계산 설계와 실험 검증, 안전 평가를 통합해 고성능, 응용 중심, 안전한 식품 효소 개발을 가속화하는 체계를 제공한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 1.00
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42003450/" target="_blank" rel="noopener noreferrer">Biocatalytic Bamberger Rearrangement for the Synthesis of 3-Amino-2-hydroxyacetophenone via Hydroxylaminobenzene Mutase Engineering and Multi-Enzyme System Assembly.</a></h3>
+    <p>Biotechnology journal</p>
+    <p>Engineering Research Center of Bioconversion and Biopurification of Ministry of Education, College of Biotechnology and Bioengineering, Zhejiang University of Technology, Hangzhou, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>의약품 합성 중간체인 3AHAP의 효소 공학 개선이 가능하며, AI 기반 단백질 설계 및 다효소 시스템 최적화 기술이 산업적 적용성이 높습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>열안정성(thermostability)이 낮고 구조가 불명확한 황산화아미노벤젠 변위효소(HabM)의 효율성 개선이 필요하다. 3-아미노-2-히드록시아세톤필렌(3AHAP) 합성에 필수적인 Bamberger 재배치 반응의 생합성 경로를 확립하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>AI 기반 계통발생학적 탐색과 구조 분석, 단백질 공학, 대사 조율을 통합하였다. Deep learning을 활용한 스크리닝과 AlphaFold3 모델링을 결합해 효소 복합체의 구조를 규명하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>NRBh-HabMEo 조합이 기존 시스템보다 10배 이상 효율적임을 확인하였다. Fe 의존성 테트ramer 구조와 변형된 포켓 역학으로 인해 촉매 효율이 40% 향상되었다. RIAD/RIDD 기반 스캐폴드로 효소 간 중간체 채널링을 최적화하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>HabM의 구조 해명과 다효소 시스템 최적화 전략은 고가 생합성 중간체 생산에 혁신적인 접근법을 제시한다. 지속 가능한 바이오제약 중간체 합성의 기초 자료로 활용 가능하다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
