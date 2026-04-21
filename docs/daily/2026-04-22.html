@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-22 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-22</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42012411/" target="_blank" rel="noopener noreferrer">Advances in fungal ergothioneine: from biosynthesis to AI-driven industrial biomanufacturing.</a></h3>
+    <p>Natural product research</p>
+    <p>College of Biomedicine and Health, Anhui Science and Technology University, Chuzhou, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식품/의약/화학 산업에서 활용 가능한 항산화제인 에르고티오이네 생산 기술을 다루며, AI 기반 대사공학 전략이 산업화에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>에르고티오이네(EGT)는 식용균에서 추출되는 강력한 자연 항산화제로 항산화, 항염, 세포 보호 효과가 있다(thermostability). 그러나 식품, 화장품, 의약품 분야에서의 상업적 잠재력에도 불구하고 산업 규모 생산은 낮은 자연 생성량과 효율적인 추출 방법 부족으로 인해 제한된다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>이 리뷰는 EGT의 생물활성, 분포, 생합성 경로에 대한 최신 지식을 첳계적으로 종합하였다. 또한 유전자 변형 및 인공지능(AI) 등 고급 전략을 통해 연구와 산업 간 격차를 해소하는 방법을 탐구하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>AI는 예측적 균주 공학, 실시간 발효 모니터링, 공정 최적화에서 혁신적 솔루션을 제공하고 있다. 이는 미래 생분해제 산업의 핵심 기동력으로 작용할 것으로 기대된다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 종합 분석은 지능형, 녹색, 지속 가능한 산업 전략 개발을 위한 전망적인 시각을 제공한다. 이는 곰팡이 EGT의 전체 잠재력을 해방하는 데 기여할 수 있는 토대가 될 것이다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42011154/" target="_blank" rel="noopener noreferrer">NAViFluX: a visualization‑centric platform for interactive analysis, refinement and design of genome‑scale metabolic networks.</a></h3>
+    <p>Bioinformatics (Oxford, England)</p>
+    <p>Department of Biotechnology, Indian Institute of Technology Hyderabad, Telangana, 502284, India.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>생물학적 대사 경로 분석 및 최적화 도구로, 의약품 타겟 식별과 산업용 대사 경로 설계에 활용 가능합니다. 산업에서 대사 네트워크 이해를 통한 효율적인 생산 공정 개발에 기여할 수 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>유전체 규모 대사망망(GSMN) 모델은 flux 기반 대사물질 운명 탐색( flux-based metabolite fate discovery), 대사 공학, 약물 표적 식별, 다오믹스 통합 등에 활용되지만, 프로그래밍 요구사항, 아키텍처 복잡성, 시각화 지원 부족으로 과학 커뮤니티의 채택이 제한됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>NAViFluX는 KEGG/BiGG를 통한 대사망망 모델 개선 및 경로 병합, flux 계산, 기능적 풍부도 분석을 시각화 중심으로 통합한 웹 브라우저 기반 도구로, 네트워크 뷰 내에서 경로/서브시스템 맵 생성, 토폴로지 분석, 데이터베이스 통합 정제 기능을 제공함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>Escherichia coli에 대한 세 가지 독립적 사례 연구를 통해 영양소 특이적 대사 적응 분석, 유전자 필수성 예측 개선 및 해석 가능성 향상, 최적화된 탄소 고정 대사 상태 설계의 효용성을 입증함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>기존 도구의 한계를 극복한 시각화 중심 플랫폼으로 대사망망 분석의 접근성을 높이고, 대사 공학 및 다오믹스 통합 연구에 혁신적인 기여를 제공함.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
