@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1776959659000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=38a5f68035&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">The brain’s ‘secret subway system’</a></h4>
+      <p>Brain cells called astrocytes form extensive networks in the mouse brain that are similar in some ways to those formed by neurons. Researchers have compiled a whole-brain 3D map of astrocyte networks — the first of its kind , they say. The atlas reveals how webs of these cells connect far-flung regions of the brain, allowing them to exchange molecules with each other over long distances. “It’s a secret subway system we didn’t know was there,” says neuroscientist and study co-author Shane Liddelow. “This opens up a whole new avenue of investigation.”</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=dbb130f100&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Coffee boosts mood (even decaf)</a></h4>
+      <p>A study of 31 regular coffee drinkers and as many abstainers aimed to discover how the beverage affects us and our microbiomes. When both groups were introduced (or re-introduced) to coffee after a period without, they reported lower perceived stress, depression and impulsivity scores — whether the coffee was caffeinated or not, suggesting that compounds such as polyphenols might take the credit. Other results were mixed: a notable improvement in learning and memory was found only in those who consumed decaf, and only caffeinated coffee was associated with reduced feelings of anxiety. Meanwhile, coffee drinkers had markedly different populations of bacteria in their guts than non-coffee drinkers.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=c0de716565&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Monkeys eat dirt after junk-food binges</a></h4>
+      <p>Barbary macaques ( Macaca sylvanus ) in Gibraltar have been spotted eating soil in what might be an attempt to settle their stomachs. Tourists often feed the monkeys high-fat, sugary foods, which could disrupt the animals’ gut microbiomes . The soil could “buffer their digestive system”, says primate researcher and study co-author Sylvain Lemoine, and the bacteria and minerals in it could help to rebalance the monkeys’ microbiomes. But the behaviour might also be causing the monkeys harm. They often eat dirt from the roadside, which could contain harmful pollutants, says Lemoine.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=8faddbcae4&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">A snail’s future hinges on its name</a></h4>
+      <p>In southern Mexico, marine snails in the genus Plicopurpura are sacred to the Mixtecs, an Indigenous group, who use the purple dye the molluscs produce to colour their textiles. After years of campaigning by Mixtecs, the snails earned federal protections in the 1980s. But this protection now hangs in the balance — the protected species is Plicopurpura pansa , but some studies suggest that the snails in question are in fact Plicopurpura columellaris . The Mixtecs are working with scientists to confirm which species is correct, but the uncertainty could create loopholes that poachers can use to harvest the snails without risk of prosecution.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=4aeda164b5&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">New topology tool is lovely and fun</a></h4>
+      <p>Mathematicians have long tried to untangle exactly what makes a knot a knot. There are several ways to define a knot’s characteristics, referred to as ‘invariants’, but “most invariants are either very strong but impossible to compute, or easy to compute but very weak,” says mathematician Daniel Tubbenhauer. Now researchers Dror Bar-Natan and Roland van der Veen have proposed what they dub “a fast, strong, topologically meaningful, and fun knot invariant” — or Θ for short — that can describe even very complex knots as a rather lovely 2-dimensional pattern . “We plan to have fun over the next few years observing and proving these patterns,” write the authors. “We hope that others will join us too.”</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=f55fe4f719&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Video: ping-pong ace is a Roboty Supreme</a></h4>
+      <p>A table-tennis-playing robot called ‘Ace’ is one of the first machines that can best elite-level players at a physical sport . Powered by artificial intelligence, the robotic arm can calculate the position of a ball in space as it flies over the table, measure its spin and react in a tenth of the time a human player would need. To hone Ace’s skills, researchers used ‘reinforcement learning’, “which is really trial and error”, says Peter Dürr, lead engineer on the Ace project — “we put the robot in a simulation and we shoot table tennis balls at it.”</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

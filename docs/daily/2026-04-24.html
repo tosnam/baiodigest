@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-24 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-24</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42020736/" target="_blank" rel="noopener noreferrer">Quadruple pegRNA enables programmable and efficient large genomic insertion.</a></h3>
+    <p>Nature</p>
+    <p>TaiKang Centre for Life and Medical Sciences, School of Artificial Intelligence, RNA Institute, Hubei Key Laboratory of Cell Homeostasis, Wuhan University, Wuhan, China. ying.zhang84@whu.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>유전자 삽입 기술로 의약품 개발에 활용 가능하며, 신경세포 등 비분열세포에서도 효과적임을 보여주어 치료 범위가 넓음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>정확한 대규모 유전자 삽입은 다양한 유전 질환 치료에 잠재적 가능성을 제공합니다. 하지만 프라임 에디팅(prime editing)은 300 염기쌍 이상의 픽업(payload)에서는 삽입 효율이 급격히 감소합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>QuadPE 전략은 4개의 pegRNA를 조합해 대규모 DNA 조각 삽입을 가능하게 합니다. 두 개의 유전자 타겟 pegRNA(PAM-out 또는 PAM-in 방향)와 두 개의 도너 타겟 pegRNA(선형 또는 원형)의 조합을 통해 최적 효율을 도출했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>1.6~26 kb 범위의 DNA 조각에 대해 안정적인 삽입 효율(40% 수준)을 달성했습니다. 9.5 kb 삽입 시 PASSIGE, PASTE, CAST 시스템 대비 각각 11배, 61배, 12배 높은 효율을 보였습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>분열성 및 비분열성 주요 세포(예: 인간 주요 T 세포, 포스트-미토시스 신경세포)에서도 효과적입니다. 이는 이중 가닥 파단 없이 재조합 효소를 사용하지 않고도 대규모 유전자 삽입을 가능하게 하는 혁신적인 플랫폼입니다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

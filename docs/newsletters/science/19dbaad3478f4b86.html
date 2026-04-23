@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1776953025000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NTV9AAcAAAAAAG3gPVhZP1GWW-bd22wqjRJJviaCZB5R9WkdJbEL59wyzInEv-U6cjkyjt_N4fGnMa9u8_fCAiCT14nV2n-HrItieVRfwGqzQTfPonm-Gg" target="_blank" rel="noopener noreferrer">points to the skin as an important actor</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NTV9AAcAAAAAAG3gPVhjgduJCV_fxLz2C_W5EKWihyRwQ3bMVzUulThqmvpiIxaWmKoDSdIUF81j8EdYFezk2-pgZm7yNi9n7eZDRtWdIzW02YL6Wgh6Aw" target="_blank" rel="noopener noreferrer">Methana has been producing magma nearly continuously</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NTV9AAcAAAAAAG3gPVhp4EJZcD-rnxaH9a2Mh7HVjSRPO3JTpXlXR-0zBQgUJYeTp0g-qn4DlAS14HUewBI67iAGWIKCXHqpshCMmtSUNFinAHwOldFXqA" target="_blank" rel="noopener noreferrer">human migration onto the continent was far more complex</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NTV9AAcAAAAAAG3gPVhz_VKgjycx6WprSbI8GxmaG-F5aQaz33yA2FZMWsedqe7xpM1Ofq2Bn-k2AbMTJfNJL284O52MktG2muRijDu6Pq4p4Zu59Jbhcw" target="_blank" rel="noopener noreferrer">what looks like a defect can be used strategically as built-in instructions for shaping larger structures</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NTV9AAcAAAAAAG3gPVh1f0otM5_vqsqFHcvaKjDdt-iricEiAJZNlfFmWDDNlLvZi6RsabZM4PRHoX6B_9xBBo4aQs_BfpZ-s7pD1tahtsOFJY21f34ftA" target="_blank" rel="noopener noreferrer">This demonstrates that living cells and tissues can be programmed to form a desired structure by imposing geometric features</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4NTV9AAcAAAAAAG3gPViFeCBDgNl1A5NiB6CDo9Uh2EbAjfvFPsIIcGGUB3kr2azzAWEkXLWHtIXirzzy3XSbq8f9u-e8LKD2W2LdeMDKEKELD5QPuSgk0w" target="_blank" rel="noopener noreferrer">I could be easily beaten by a robot</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

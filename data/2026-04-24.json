@@ -1,0 +1,73 @@
+{
+  "date": "2026-04-24",
+  "entries": [
+    {
+      "paper": {
+        "title": "Quadruple pegRNA enables programmable and efficient large genomic insertion.",
+        "abstract": "Precise, site-specific insertion of large gene sequences holds great promise for the treatment of diverse genetic disorders. Although prime editing using paired guide RNAs (pegRNAs) can mediate targeted integration, insertion efficiency drops sharply for payloads exceeding 300 base pairs1-3. Here we present a rationally designed quadruple pegRNA strategy (QuadPE) for efficient and programmable insertion of large DNA fragments. Through screening different designs, we identified that combinations of two genome-targeting pegRNAs in a PAM-out or PAM-in orientation, when paired with two donor-targeting pegRNAs in linear or circular form, yield optimal efficiency. Using QuadPE, we achieved stable integration efficiency of DNA fragments ranging from 1.6 to 26 kb, with efficiencies of around 40% at multiple loci with minimal off-target insertion activity. QuadPE substantially outperformed recombinase-mediated (PASSIGE and PASTE)4,5 and transposase-mediated (CAST)6 insertion systems, particularly for larger payloads, showing a 11-fold, 61-fold and 12-fold improvement for a 9.5 kb insertion, respectively. Notably, QuadPE was effective in both dividing and non-dividing primary cells such as human primary T cells and post-mitotic neurons, establishing QuadPE as a powerful and precise platform for large-fragment gene insertion without the need for double-stranded breaks or recombinases.",
+        "authors": [
+          "Shi YJ",
+          "Ding ZY",
+          "Wu Y",
+          "He Z",
+          "Zhang YZ",
+          "Zhang YL",
+          "Zhang YM",
+          "Huang XR",
+          "Yin H",
+          "Zhang Y"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "TaiKang Centre for Life and Medical Sciences, School of Artificial Intelligence, RNA Institute, Hubei Key Laboratory of Cell Homeostasis, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China. haoyin@whu.edu.cn.",
+          "TaiKang Centre for Life and Medical Sciences, School of Artificial Intelligence, RNA Institute, Hubei Key Laboratory of Cell Homeostasis, Wuhan University, Wuhan, China. haoyin@whu.edu.cn.",
+          "Shanghai Key Laboratory of Gene Editing and Cell Therapy for Rare Diseases, Shanghai, China. haoyin@whu.edu.cn.",
+          "State Key Laboratory of Virology and Biosafety, Departments of Rheumatology and Immunology, Clinical Laboratory and Urology, Medical Research Institute, Frontier Science Center for Immunology and Metabolism, Zhongnan Hospital of Wuhan University, Wuhan University, Wuhan, China. ying.zhang84@whu.edu.cn.",
+          "TaiKang Centre for Life and Medical Sciences, School of Artificial Intelligence, RNA Institute, Hubei Key Laboratory of Cell Homeostasis, Wuhan University, Wuhan, China. ying.zhang84@whu.edu.cn."
+        ],
+        "doi": "10.1038/s41586-026-10395-w",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42020736/",
+        "category": null,
+        "date": "2026-04-22",
+        "mesh_terms": [],
+        "source_id": "42020736",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "other",
+        "reason": "유전자 삽입 기술로 의약품 개발에 활용 가능하며, 신경세포 등 비분열세포에서도 효과적임을 보여주어 치료 범위가 넓음.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "정확한 대규모 유전자 삽입은 다양한 유전 질환 치료에 잠재적 가능성을 제공합니다. 하지만 프라임 에디팅(prime editing)은 300 염기쌍 이상의 픽업(payload)에서는 삽입 효율이 급격히 감소합니다.",
+        "method": "QuadPE 전략은 4개의 pegRNA를 조합해 대규모 DNA 조각 삽입을 가능하게 합니다. 두 개의 유전자 타겟 pegRNA(PAM-out 또는 PAM-in 방향)와 두 개의 도너 타겟 pegRNA(선형 또는 원형)의 조합을 통해 최적 효율을 도출했습니다.",
+        "result": "1.6~26 kb 범위의 DNA 조각에 대해 안정적인 삽입 효율(40% 수준)을 달성했습니다. 9.5 kb 삽입 시 PASSIGE, PASTE, CAST 시스템 대비 각각 11배, 61배, 12배 높은 효율을 보였습니다.",
+        "significance": "분열성 및 비분열성 주요 세포(예: 인간 주요 T 세포, 포스트-미토시스 신경세포)에서도 효과적입니다. 이는 이중 가닥 파단 없이 재조합 효소를 사용하지 않고도 대규모 유전자 삽입을 가능하게 하는 혁신적인 플랫폼입니다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-23T22:26:48.851563+00:00"
+}
