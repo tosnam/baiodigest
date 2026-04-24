@@ -1,0 +1,153 @@
+{
+  "date": "2026-04-25",
+  "entries": [
+    {
+      "paper": {
+        "title": "Molecular mechanisms of native ligand selectivity in catecholamine G protein-coupled receptors.",
+        "abstract": "Activation of G protein-coupled receptors (GPCRs) by extracellular ligands is crucial for cellular communication and modulates numerous physiological processes. Despite sharing highly similar orthosteric binding sites, catecholamine GPCRs exhibit exquisite selectivity for their native agonists, even among nearly identical chemical messengers. However, the molecular basis and evolution of receptor selectivity remain poorly understood. To elucidate the structural mechanisms of GPCR selectivity, we focus on the prototypical human β2-adrenergic and D1 dopaminergic receptors, which are important drug targets and respond to the catecholamines adrenaline/noradrenaline and dopamine, respectively. Guided by structural and sequence data, we identify a small set of residues responsible for ligand selectivity. By exchanging residues at four positions in the β-adrenergic receptors and seven in the D1-like dopaminergic receptors, we swap the pharmacological profiles of the two subfamilies. Unexpectedly, the switch in selectivity not only involves residues interacting with the ligand, but is also controlled by regions outside the orthosteric binding site. Cryo-electron microscopy structures and computational models of the mutant receptors identify distinct molecular mechanisms contributing to selectivity in a concerted manner. Our findings provide insights into GPCR evolution and highlight strategies for protein engineering and drug design.",
+        "authors": [
+          "Kahlous NA",
+          "Rinne MK",
+          "Zhang X",
+          "Li Y",
+          "Chen Y",
+          "Motso A",
+          "Gao K",
+          "Bergqvist C",
+          "Sheng H",
+          "Wang Y",
+          "Cabeza de Vaca I",
+          "Díaz-Holguín A",
+          "Ullmann P",
+          "Bengtsson T",
+          "Lauschke VM",
+          "Kukkonen JP",
+          "Delemotte L",
+          "Wright SC",
+          "Liu X",
+          "Larhammar D",
+          "Carlsson J"
+        ],
+        "affiliations": [
+          "Science for Life Laboratory, Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden.",
+          "Department of Medical Cell Biology, Uppsala University, Uppsala, Sweden.",
+          "Department of Pharmacology, Medicum, University of Helsinki, Helsinki, Finland.",
+          "State Key Laboratory of Membrane Biology, Tsinghua-Peking Center for Life Sciences, Tsinghua University, Beijing, China.",
+          "Beijing Frontier Research Center for Biological Structure, School of Pharmaceutical Sciences, Tsinghua University, Beijing, China.",
+          "Department of Medical Cell Biology, Uppsala University, Uppsala, Sweden.",
+          "Science for Life Laboratory, Department of Applied Physics, KTH Royal Institute of Technology, Stockholm, Sweden.",
+          "Department of Physiology and Pharmacology, Karolinska Institutet, Stockholm, Sweden.",
+          "Department of Molecular Biosciences, The Wenner-Gren Institute, Stockholm University, Stockholm, Sweden.",
+          "State Key Laboratory of Membrane Biology, Tsinghua-Peking Center for Life Sciences, Tsinghua University, Beijing, China.",
+          "Beijing Frontier Research Center for Biological Structure, School of Pharmaceutical Sciences, Tsinghua University, Beijing, China.",
+          "Department of Medical Cell Biology, Uppsala University, Uppsala, Sweden.",
+          "Department of Physiology and Pharmacology, Karolinska Institutet, Stockholm, Sweden.",
+          "College of Pharmaceutical Sciences, Zhejiang University, Hangzhou, China.",
+          "Innovation Institute for Artificial Intelligence in Medicine of Zhejiang University, Hangzhou, China.",
+          "College of Pharmaceutical Sciences, Zhejiang University, Hangzhou, China.",
+          "Innovation Institute for Artificial Intelligence in Medicine of Zhejiang University, Hangzhou, China.",
+          "National Key Laboratory of Chinese Medicine Modernization, Innovation Center of Yangtze River Delta, Zhejiang University, Jiaxing, China.",
+          "Science for Life Laboratory, Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden.",
+          "Science for Life Laboratory, Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden.",
+          "Science for Life Laboratory, Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden.",
+          "Department of Molecular Biosciences, The Wenner-Gren Institute, Stockholm University, Stockholm, Sweden.",
+          "Department of Physiology and Pharmacology, Karolinska Institutet, Stockholm, Sweden.",
+          "Center for Molecular Medicine, Karolinska Institutet and University Hospital, Stockholm, Sweden.",
+          "Dr Margarete Fischer-Bosch Institute of Clinical Pharmacology, Stuttgart, Germany.",
+          "University of Tübingen, Tübingen, Germany.",
+          "Department of Pharmacy, the Second Xiangya Hospital, Central South University, Changsha, China.",
+          "Department of Pharmacology, Medicum, University of Helsinki, Helsinki, Finland.",
+          "Science for Life Laboratory, Department of Applied Physics, KTH Royal Institute of Technology, Stockholm, Sweden.",
+          "Department of Physiology and Pharmacology, Karolinska Institutet, Stockholm, Sweden.",
+          "Center for Molecular Medicine, Karolinska Institutet and University Hospital, Stockholm, Sweden.",
+          "State Key Laboratory of Membrane Biology, Tsinghua-Peking Center for Life Sciences, Tsinghua University, Beijing, China. liu_xy@mail.tsinghua.edu.cn.",
+          "Beijing Frontier Research Center for Biological Structure, School of Pharmaceutical Sciences, Tsinghua University, Beijing, China. liu_xy@mail.tsinghua.edu.cn.",
+          "Department of Medical Cell Biology, Uppsala University, Uppsala, Sweden. dan.larhammar@uu.se.",
+          "Science for Life Laboratory, Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden. jens.carlsson@icm.uu.se."
+        ],
+        "doi": "10.1038/s41467-026-71361-8",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature communications",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42026038/",
+        "category": null,
+        "date": "2026-04-23",
+        "mesh_terms": [],
+        "source_id": "42026038",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "인간 β2-아드레날린 수용체와 D1 도파민 수용체의 리간드 선택성 조절 메커니즘을 규명함으로써 단백질 공학적 수정을 통한 약물 설계 전략을 제시함. 수용체 선택성 조절을 위한 특정 잔여물 교환 기법은 의약품 개발에 직접적인 응용 가능성을 제공함.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "GPCR 활성화는 세포 간 통신에 필수적이며, 다양한 생리적 과정을 조절합니다. 카테콜라민 GPCR은 유사한 표적 결합 구역을 공유하지만, 원래 액티바이저에 대한 선택성을 보입니다.",
+        "method": "β2-아드레날린 수용체와 D1 도파민 수용체를 대상으로, 구조적 및 서열 데이터를 기반으로 선택성에 관여하는 잔여체를 식별했습니다. 4개 위치의 잔여체 교환을 통해 약리학적 프로파일을 교차 실험했습니다.",
+        "result": "선택성 전환은 리간드와 상호작용하는 잔여체뿐만 아니라, 표적 결합 구역 외부 지역에 의해 조절됩니다. 냉동전자현미경 구조와 계산 모델은 선택성 메커니즘을 협력적으로 밝혀냈습니다.",
+        "significance": "GPCR 진화에 대한 통찰을 제공하며, 단백질 공학 및 약물 설계 전략을 제시합니다. 선택성 조절의 분자적 기전을 이해하는 데 기여합니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Modeling chimeric antigen receptor response at the single-cell level with conditional optimal transport.",
+        "abstract": "Chimeric antigen receptor (CAR) T cell therapy is a promising cancer immunotherapy; however, several challenges hamper its clinical efficacy. Although new computational models are attempting to explore the vast combinatorial design space of CAR components and suggest novel designs, challenges remain in capturing cellular heterogeneity as well as generalizing to unseen CAR variants. Here, we introduce an optimal transport (OT)-based framework designed to predict responses to CAR expression at the single-cell level, including variants that have not been experimentally tested. Our model accurately captures gene expression changes across diverse CAR variants, outperforming the baseline for in-distribution CARs while reflecting biological characteristics. By embedding CARs using protein language models, we extend our framework to a conditional OT-based model that successfully generalizes our predictions to out-of-distribution CAR designs. Our findings highlight the utility of OT-based modeling in elucidating CAR design-function relationships, enabling the rational design of novel CARs with therapeutic potential. A record of this paper's transparent peer review process is included in the supplemental information.",
+        "authors": [
+          "Driessen A",
+          "Born J",
+          "Castellanos Rueda R",
+          "Reddy ST",
+          "Rapsomaniki M"
+        ],
+        "affiliations": [
+          "IBM Research Europe, Zurich, Switzerland; Department of Biosystems Science and Engineering, ETH Zurich, Basel, Switzerland. Electronic address: alice.driessen@kaiko.ai.",
+          "IBM Research Europe, Zurich, Switzerland.",
+          "Department of Biosystems Science and Engineering, ETH Zurich, Basel, Switzerland.",
+          "Department of Biosystems Science and Engineering, ETH Zurich, Basel, Switzerland.",
+          "Biomedical Data Science Center, Lausanne University Hospital, Lausanne, Switzerland; Faculty of Biology and Medicine, University of Lausanne, Lausanne, Switzerland; Swiss Institute of Bioinformatics (SIB), Lausanne, Switzerland. Electronic address: marianna.rapsomaniki@unil.ch."
+        ],
+        "doi": "10.1016/j.cels.2026.101591",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell systems",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42025164/",
+        "category": null,
+        "date": "2026-04-22",
+        "mesh_terms": [],
+        "source_id": "42025164",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "CAR 설계 최적화를 위한 단백질 언어 모델 활용으로 의약품 개발에 기여 가능합니다. 생물학적 특성 반영을 통한 치료제 설계 효율성 향상",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "치머릭 항원 수용체(CAR) T세포 치료는 암 면역요법의 잠재력이 있지만 임상 효능에 방해가 되는 여러 문제점이 존재한다. 기존 계산 모델은 CAR 구성 요소의 다양한 조합 설계 공간을 탐색하려고 시도하지만, 세포 다양성 캡처 및 새로운 CAR 변이 일반화에 어려움이 있다.",
+        "method": "우리 연구에서는 최적 운송(OT)-기반 프레임워크를 도입하여 실험적으로 검증되지 않은 CAR 변이에 대한 단일세포 반응을 예측한다. 단백질 언어 모델을 통해 CAR을 임베딩하여 조건부 OT 기반 모델로 확장하였다.",
+        "result": "모델은 다양한 CAR 변이에서 유전자 발현 변화를 정확히 포착하며, 기존 기준선을 초월한 성능을 보이며 생물학적 특성을 반영한다. 또한, 새로운 CAR 설계에 대한 예측 일반화 능력이 입증되었다.",
+        "significance": "이 연구는 CAR 설계-기능 관계를 밝히는 OT 기반 모델의 활용 가능성을 보여주며, 치료 잠재력을 가진 새로운 CAR의 합리적 설계를 가능하게 한다. 이는 CAR 치료의 발전에 기여할 수 있는 중요한 통찰을 제공한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-24T22:18:35.477138+00:00"
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-04-25 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-04-25</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42026038/" target="_blank" rel="noopener noreferrer">Molecular mechanisms of native ligand selectivity in catecholamine G protein-coupled receptors.</a></h3>
+    <p>Nature communications</p>
+    <p>Science for Life Laboratory, Department of Cell and Molecular Biology, Uppsala University, Uppsala, Sweden. jens.carlsson@icm.uu.se.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>인간 β2-아드레날린 수용체와 D1 도파민 수용체의 리간드 선택성 조절 메커니즘을 규명함으로써 단백질 공학적 수정을 통한 약물 설계 전략을 제시함. 수용체 선택성 조절을 위한 특정 잔여물 교환 기법은 의약품 개발에 직접적인 응용 가능성을 제공함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>GPCR 활성화는 세포 간 통신에 필수적이며, 다양한 생리적 과정을 조절합니다. 카테콜라민 GPCR은 유사한 표적 결합 구역을 공유하지만, 원래 액티바이저에 대한 선택성을 보입니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>β2-아드레날린 수용체와 D1 도파민 수용체를 대상으로, 구조적 및 서열 데이터를 기반으로 선택성에 관여하는 잔여체를 식별했습니다. 4개 위치의 잔여체 교환을 통해 약리학적 프로파일을 교차 실험했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>선택성 전환은 리간드와 상호작용하는 잔여체뿐만 아니라, 표적 결합 구역 외부 지역에 의해 조절됩니다. 냉동전자현미경 구조와 계산 모델은 선택성 메커니즘을 협력적으로 밝혀냈습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>GPCR 진화에 대한 통찰을 제공하며, 단백질 공학 및 약물 설계 전략을 제시합니다. 선택성 조절의 분자적 기전을 이해하는 데 기여합니다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42025164/" target="_blank" rel="noopener noreferrer">Modeling chimeric antigen receptor response at the single-cell level with conditional optimal transport.</a></h3>
+    <p>Cell systems</p>
+    <p>Biomedical Data Science Center, Lausanne University Hospital, Lausanne, Switzerland; Faculty of Biology and Medicine, University of Lausanne, Lausanne, Switzerland; Swiss Institute of Bioinformatics (SIB), Lausanne, Switzerland. Electronic address: marianna.rapsomaniki@unil.ch.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>CAR 설계 최적화를 위한 단백질 언어 모델 활용으로 의약품 개발에 기여 가능합니다. 생물학적 특성 반영을 통한 치료제 설계 효율성 향상</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>치머릭 항원 수용체(CAR) T세포 치료는 암 면역요법의 잠재력이 있지만 임상 효능에 방해가 되는 여러 문제점이 존재한다. 기존 계산 모델은 CAR 구성 요소의 다양한 조합 설계 공간을 탐색하려고 시도하지만, 세포 다양성 캡처 및 새로운 CAR 변이 일반화에 어려움이 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>우리 연구에서는 최적 운송(OT)-기반 프레임워크를 도입하여 실험적으로 검증되지 않은 CAR 변이에 대한 단일세포 반응을 예측한다. 단백질 언어 모델을 통해 CAR을 임베딩하여 조건부 OT 기반 모델로 확장하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>모델은 다양한 CAR 변이에서 유전자 발현 변화를 정확히 포착하며, 기존 기준선을 초월한 성능을 보이며 생물학적 특성을 반영한다. 또한, 새로운 CAR 설계에 대한 예측 일반화 능력이 입증되었다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 CAR 설계-기능 관계를 밝히는 OT 기반 모델의 활용 가능성을 보여주며, 치료 잠재력을 가진 새로운 CAR의 합리적 설계를 가능하게 한다. 이는 CAR 치료의 발전에 기여할 수 있는 중요한 통찰을 제공한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
