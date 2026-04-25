@@ -1,0 +1,82 @@
+{
+  "date": "2026-04-26",
+  "entries": [
+    {
+      "paper": {
+        "title": "Leveraging large language models for metabolic engineering design.",
+        "abstract": "Establishing efficient cell factories involves a continuous process of trial and error due to metabolic complexity. This complexity makes predicting effective engineering targets a challenging task. Therefore, successful previous designs are vital for future cell factory development. In this study, we developed a method using large language models to extract metabolic engineering strategies from research articles. We created a database containing over 29 006 metabolic engineering entries, 1210 products, and 751 organisms. Using this database, we trained a deep learning model to predict engineering targets for cell factories. Our model outperformed traditional algorithms, demonstrated strong generalization to unseen products and multigene combinations, and was experimentally validated with geraniol overproduction in yeast, leading to the identification of several novel targets. Our study provides a valuable dataset, a chatbot, and an engineering target prediction model for the metabolic engineering field and exemplifies an efficient method for leveraging existing knowledge for future predictions.",
+        "authors": [
+          "Li X",
+          "Guo Z",
+          "Li Y",
+          "Liang Z",
+          "Liu Z",
+          "Wu K",
+          "Luo J",
+          "Zhang Y",
+          "Liu L",
+          "Sun M",
+          "Huang Y",
+          "Chen Y",
+          "Yu T",
+          "Nielsen J",
+          "Tang H",
+          "Li F"
+        ],
+        "affiliations": [
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "School of Agriculture and Biotechnology, Shenzhen Campus of Sun Yat-sen University, Sun Yat-sen University, Shenzhen, Guangdong 518107, China.",
+          "School of Information Management, Wuhan University, Wuhan 430072, China.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "The Novo Nordisk Foundation Center for Biosustainability, Technical University of Denmark, Kemitorvet 220, Lyngby 2800 Kgs, Denmark.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China.",
+          "State Key Laboratory of Quantitative Synthetic Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen 518055, China.",
+          "State Key Laboratory of Quantitative Synthetic Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen 518055, China.",
+          "State Key Laboratory of Quantitative Synthetic Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences, Shenzhen 518055, China.",
+          "Department of Life Sciences, Chalmers University of Technology, Gothenburg SE412 96, Sweden; BioInnovation Institute, Ole Maaloes Vej 3, Copenhagen N DK2200, Denmark.",
+          "School of Agriculture and Biotechnology, Shenzhen Campus of Sun Yat-sen University, Sun Yat-sen University, Shenzhen, Guangdong 518107, China. Electronic address: tanght23@mail.sysu.edu.cn.",
+          "Institute of Biopharmaceutical and Health Engineering, Tsinghua Shenzhen International Graduate School, Tsinghua University, Shenzhen 518055, China; Key Laboratory for Industrial Biocatalysis, Ministry of Education, Institute of Biochemical Engineering, Department of Chemical Engineering, Tsinghua University, Beijing 100084, China. Electronic address: feiranli@sz.tsinghua.edu.cn."
+        ],
+        "doi": "10.1016/j.tibtech.2026.03.026",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Trends in biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42031622/",
+        "category": null,
+        "date": "2026-04-23",
+        "mesh_terms": [],
+        "source_id": "42031622",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "메타볼릭 엔지니어링을 위한 AI 기반 예측 모델 개발로 산업용 생합성 경로 설계에 활용 가능합니다. 실험적으로 검증된 기술은 화학/의약품 생산에 직접 적용 가능한 데이터셋을 제공합니다.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생명공학 설계는 대사 복잡성으로 인해 실험과 오류를 반복하는 과정이 필요하다(thermal stability). 기존 성공 사례는 미래 세포 공장 개발에 핵심적이다.",
+        "method": "대규모 언어 모델을 활용해 연구 논문에서 대사 공학 전략을 추출하는 방법론을 개발하였다. 29,006개 이상의 대사 공학 항목과 1210개의 제품, 751개의 생물체를 포함한 데이터베이스를 구축하였다.",
+        "result": "심층 학습 모델은 전통적 알고리즘보다 성능을 뛰어넘었으며, 새로운 제품과 다유전자 조합에 대한 일반화 능력이 입증되었다. 리모넨 과다 생성 실험을 통해 모델의 유효성을 검증하였다.",
+        "significance": "대사 공학 분야에 데이터셋, 챗봇, 예측 모델을 제공하며, 기존 지식을 활용한 효율적인 미래 예측 방법을 제시하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-25T22:04:54.531726+00:00"
+}
