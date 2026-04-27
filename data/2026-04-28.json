@@ -1,0 +1,583 @@
+{
+  "date": "2026-04-28",
+  "entries": [
+    {
+      "paper": {
+        "title": "Pseudodata-Guided Invariant Representation Learning Boosts the Out-of-Distribution Generalization in Enzymatic Kinetic Parameter Prediction.",
+        "abstract": "Accurate prediction of enzyme kinetic parameters is essential for understanding catalytic mechanisms and guiding enzyme engineering. However, existing deep learning-based enzyme-substrate interaction (ESI) predictors often exhibit performance degradation on sequence-divergent, out-of-distribution (OOD) cases, limiting robustness under biologically relevant perturbations. We propose O2DENet, a lightweight, plug-and-play module that enhances OOD generalization via biologically and chemically informed perturbation augmentation and invariant representation learning. O2DENet introduces enzyme-substrate perturbations and enforces consistency between original and augmented enzyme-substrate-pair representations to encourage invariance to distributional shifts. When integrated with representative ESI models, O2DENet consistently improves predictive performance for both kcat and Km across stringent sequence-identity-based OOD benchmarks, achieving state-of-the-art results among the evaluated methods in terms of accuracy and robustness metrics. Overall, O2DENet provides a general and effective strategy to enhance the stability and deployability of data-driven enzyme kinetics predictors for real-world enzyme engineering applications.",
+        "authors": [
+          "Wu H",
+          "Nie Z",
+          "Zhang H",
+          "Ren Z"
+        ],
+        "affiliations": [
+          "Pengcheng Laboratory, Shenzhen 518066, China.",
+          "Southern University of Science and Technology, Shenzhen 518055, China.",
+          "School of Electronic and Computer Engineering, Peking University, Shenzhen 100871, China.",
+          "School of Electronic and Computer Engineering, Peking University, Shenzhen 100871, China.",
+          "Southern University of Science and Technology, Shenzhen 518055, China."
+        ],
+        "doi": "10.1021/acs.jcim.5c03204",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of chemical information and modeling",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42037561/",
+        "category": null,
+        "date": "2026-04-27",
+        "mesh_terms": [],
+        "source_id": "42037561",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "효소 역학 파라미터 예측 정확도 향상은 의약품 개발 및 화학 공정 최적화에 직접적 기여. OOD 일반화 기술은 실제 산업 적용 시 안정성 강화에 기여.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "효소 역학 매개변수의 정확한 예측은 효소 공학 지도에 필수적이다. (enzyme kinetic parameter prediction) 그러나 기존 딥러닝 기반의 효소-기질 상호작용(EIS) 예측기는 시퀀스 차이가 있는 분포 외(Out-of-Distribution, OOD) 데이터에서 성능 저하를 보인다.",
+        "method": "O2DENet은 생화학적·화학적 정보를 반영한 변동성 증강과 불변 표현 학습을 통해 OOD 일반화를 개선한다. (perturbation augmentation, invariant representation learning) 원본과 증강된 효소-기질 쌍 표현 간 일관성을 강제하여 분포 변화에 대한 불변성을 유도한다.",
+        "result": "표준화된 시퀀스 정체성 기반 OOD 벤치마크에서 kcat 및 Km 예측 성능을 지속적으로 향상시켰다. (kcat, Km) 평가된 방법 중 정확도와 견고성 지표에서 최고 수준의 결과를 달성했다.",
+        "significance": "데이터 기반 효소 역학 예측기의 안정성과 배포 가능성 향상 전략을 제공한다. (deployability) 실제 효소 공학 적용에 유용한 일반적 해결책을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "SIM: Discovery of novel RNA-targeting argonautes by self-iterative learning from scarce data.",
+        "abstract": "The limited repertoire of experimentally validated RNA-targeting nucleases has constrained both mechanistic studies and the efficient discovery of novel enzymes for RNA biotechnology. This challenge is particularly pronounced for prokaryotic Argonaute (Ago) proteins, where the scarcity of confirmed RNA-targeting members and a lack of clarity regarding RNA specificity determinants hinder systematic exploration. Although machine learning offers a potential solution, its application is often impeded by the scarcity of labeled training data in this field. To address these limitations, we developed the self-iterative hierarchical ensemble model (SIM), which integrates hierarchical ensemble learning with a self-training strategy. This approach bypasses the dependency on large-scale experimental datasets, allowing SIM to iteratively expand its predictive capability from minimal initial labeled data. When applied to prokaryotic Agos, SIM identified six high-confidence RNA-targeting candidates, five of which were experimentally validated (83% success rate). Notably, SIM identified three uncharacterized Agos harboring a novel N-terminal domain, defining a previously unrecognized subclass. Biochemical and in vivo validations of Haloferax profundi Ago (HpAgo) confirmed its RNA cleavage activity and a distinctive RNA modification-sensing capability. We leveraged this latter finding to develop a rapid, cost-effective method for quantifying modified RNAs. Our study not only expands the repertoire of RNA-targeting tools but also establishes SIM as a generalizable framework for protein function prediction under data-scarce conditions. This work has broad implications for both RNA biotechnology and the application of machine learning in data-limited fields.",
+        "authors": [
+          "Peng S",
+          "Huang F",
+          "Li N",
+          "Loza Vidaurre KL",
+          "Chen L",
+          "Yang Y",
+          "Hu J",
+          "Kou Y",
+          "He W",
+          "Wang S",
+          "Shi L",
+          "Tao K",
+          "Sun B",
+          "Song X",
+          "Yang H",
+          "Zhang H",
+          "Yang L",
+          "Deng Z",
+          "Han Y",
+          "Feng Y",
+          "Liu Q",
+          "Li J"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Integrated Circuits (School of Information Science and Electronic Engineering), Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "Shanghai Jincheng Technology Co., Ltd., Shanghai 201109, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Integrated Circuits (School of Information Science and Electronic Engineering), Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Integrated Circuits (School of Information Science and Electronic Engineering), Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Integrated Circuits (School of Information Science and Electronic Engineering), Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Integrated Circuits (School of Information Science and Electronic Engineering), Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "School of Integrated Circuits (School of Information Science and Electronic Engineering), Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "School of Life Science and Technology, ShanghaiTech University, Shanghai 201210, China.",
+          "School of Life Science and Technology, ShanghaiTech University, Shanghai 201210, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "HuidaGene Therapeutics Co., Ltd., Shanghai 200131, China.",
+          "Institute of Neuroscience, State Key Laboratory of Neuroscience, Key Laboratory of Primate Neurobiology, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences, Shanghai 200031, China.",
+          "Institute of Neuroscience, State Key Laboratory of Neuroscience, Key Laboratory of Primate Neurobiology, Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences, Shanghai 200031, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "Shanghai Jincheng Technology Co., Ltd., Shanghai 201109, China.",
+          "State Key Laboratory of Biocatalysis and Enzyme Engineering, Hubei Key Laboratory of Industrial Biotechnology, School of Life Sciences, Hubei University, Wuhan 430062, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "State Key Laboratory of Microbial Metabolism, School of Life Sciences and Biotechnology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "National Key Laboratory of Advanced Micro and Nano Manufacture Technology, Shanghai Jiao Tong University, Shanghai 200240, China.",
+          "Inner Mongolia Research Institute, Shanghai Jiao Tong University, Hohhot 010010, China.",
+          "Shanghai Jincheng Technology Co., Ltd., Shanghai 201109, China.",
+          "State Key Laboratory of Biocatalysis and Enzyme Engineering, Hubei Key Laboratory of Industrial Biotechnology, School of Life Sciences, Hubei University, Wuhan 430062, China."
+        ],
+        "doi": "10.1016/j.apsb.2026.01.009",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Acta pharmaceutica Sinica. B",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42039271/",
+        "category": null,
+        "date": "2026-04-01",
+        "mesh_terms": [],
+        "source_id": "42039271",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "RNA 타겟팅 아고 단백질의 새로운 발견이 바이오제약 및 진단 분야에 응용 가능. AI 기반 효소 기능 예측 프레임워크는 데이터 부족 상황에서의 효율적 개발에 기여.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "RNA 타겟팅 나이클라제의 실험적 검증 사례가 제한적이어 기전 연구와 바이오테크놀로지 개발에 제약을 주고 있다. 프로카리오틱 아그노타이(Argonaute, Ago) 단백질의 경우 RNA 타겟팅 사례가 부족하고, RNA 특이성 결정 요인에 대한 명확성도 부족하다.",
+        "method": "자기 반복적 계층적 앙상블 모델(SIM)을 개발하여, 대규모 실험 데이터 없이도 최소한의 라벨 데이터로 예측 능력을 확장하였다. 계층적 앙상블 학습과 자기 학습 전략을 통합하여 데이터 부족 문제를 해결하였다.",
+        "result": "프로카리오틱 Ago에 적용한 SIM은 6개의 고신뢰도 RNA 타겟팅 후보를 식별, 그 중 5개는 실험적으로 검증되었다(83% 성공률). 3개의 미분류 Ago는 새로운 N-단일 도메인을 가진 새로운 하위류를 정의하였다.",
+        "significance": "HpAgo의 생화학적 및 생물학적 검증을 통해 RNA 절단 활성과 RNA 수정 감지 능력을 규명하였다. 이 결과를 기반으로 수정된 RNA의 빠른 정량 분석 방법을 개발하였다. 본 연구는 RNA 타겟팅 도구의 확장과 데이터 부족 상황에서의 단백질 기능 예측 프레임워크를 제시하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "From machine learning to multimodal models: The AI revolution in enzyme engineering.",
+        "abstract": "Protein engineering is a powerful tool for applications spanning synthetic biology, biocatalysis, and drug discovery. Recent advances in artificial intelligence (AI), from conventional machine learning (ML) algorithms to large-scale pre-trained protein models, have greatly accelerated enzyme engineering field entering a data-driven era. This review provides a guidance map of current enzyme engineering tasks and builds an integrative perspective on AI methods, model types, landmark tasks, and data resources. We begin by delineating the core modeling tasks in enzyme engineering, which include encompassing function annotation, structural modeling, and property prediction and by reviewing recent advances alongside dominant algorithmic frameworks. Next, we outlined the evolution of AI into enzyme engineering, tracing its progression through four stages: classical machine learning approaches, deep neural networks, protein language models (pLMs), and emerging multimodal architectures. Finally, we highlight four trends that are redefining the landscape of AI-driven enzyme design: (i) the replacement of handcrafted features with unified, token-level embeddings; (ii) a shift from single-modal models toward multimodal, multitask systems; (iii) the emergence of intelligent agents capable of reasoning; and (iv) a movement beyond static structure prediction toward dynamic simulation of enzyme function. Together, these developments are paving the way for intelligent, generalizable, and mechanistically interpretable AI platforms poised to synthetic biology.",
+        "authors": [
+          "Shi Z",
+          "Xu S",
+          "Xue S",
+          "Chen K",
+          "Lu Y",
+          "Wang F",
+          "Long S",
+          "Tian Y",
+          "Zhang P",
+          "Wang J",
+          "Gu Y",
+          "Zhou J",
+          "Zhou H",
+          "Meng S",
+          "Cui H"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, Nanjing, 210097, China.",
+          "School of Computer and Electronic Information/School of Artificial Intelligence, Nanjing Normal University, Nanjing, 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, Nanjing, 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, Nanjing, 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "School of Chemistry and Materials Science, Nanjing Normal University, Nanjing, 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "College of Marine Science and Engineering, Nanjing Normal University, Nanjing, 210097, China.",
+          "Institute for AI Industry Research, Tsinghua University, Beijing, 100084, China.",
+          "Department of Systems Biology, School of Life Sciences, Southern University of Science and Technology, No. 1088 Xueyuan Avenue, Shenzhen, 518055, China.",
+          "Institute for Biological Electron Microscopy, Southern University of Science and Technology, No. 1088 Xueyuan Avenue, Shenzhen, 518055, Guangdong, China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, No. 72 Binhai Road, Qingdao, Shandong, 266237, China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, No. 72 Binhai Road, Qingdao, Shandong, 266237, China.",
+          "School of Computer and Electronic Information/School of Artificial Intelligence, Nanjing Normal University, Nanjing, 210097, China.",
+          "School of Computer and Electronic Information/School of Artificial Intelligence, Nanjing Normal University, Nanjing, 210097, China.",
+          "Institute for AI Industry Research, Tsinghua University, Beijing, 100084, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, Nanjing, 210097, China.",
+          "State Key Laboratory of Microbial Technology, College of Life Sciences, Nanjing Normal University, Nanjing, 210097, China.",
+          "Ministry of Education Key Laboratory of NSLSCS, Nanjing Normal University, Nanjing, 210097, China."
+        ],
+        "doi": "10.1016/j.bidere.2025.100044",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biodesign research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42038007/",
+        "category": null,
+        "date": "2026-03-01",
+        "mesh_terms": [],
+        "source_id": "42038007",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 설계 기술은 화학 산업의 생물촉매 개발과 의약품 합성에 직접적 활용 가능성이 높음. 다모달 모델과 동적 효소 기능 시뮬레이션은 산업용 효소 최적화에 혁신적 접근법을 제시함.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질 공학은 합성생물학, 생물촉매, 약물 개발 등 다양한 분야에서 활용되는 강력한 도구이다. 인공지능(AI)의 발전으로 효소 공학 분야는 데이터 기반의 시대로 진입하였다.",
+        "method": "이 리뷰는 효소 공학의 주요 작업을 매핑하고 AI 방법론, 모델 유형, 대표적 과제, 데이터 자원을 통합적으로 분석하였다. 핵심 모델링 작업과 주요 알고리즘 프레임워크를 검토하였다.",
+        "result": "AI의 효소 공학 진화는 4단계로 진행되었으며, 단일 모드 모델에서 다중 모드 시스템으로 전환하는 추세를 보여준다. 동적 효소 기능 시뮬레이션 등 4가지 주요 트렌드가 강조되었다.",
+        "significance": "이러한 발전은 기능 해석 가능하고 일반화된 AI 플랫폼을 통해 합성생물학 분야에 혁신적인 기회를 제공하고 있다. 단백질 공학의 효율성과 예측 능력을 극대화할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "A Novel Topology-Based Candidate Reaction Prediction Approach for Gap-Fillings of Genome-Scale Metabolic Models.",
+        "abstract": "Background: It is significant to predict and fill metabolic reaction gaps (gap-fillings) for reconstructions of high-quality genome-scale metabolic models (GEMs). Currently, many existing optimization-based gap-filling methods have to rely on phenotypic data, while performances of topology-based approaches by deep learning algorithms need to be further improved. Methods: This paper proposes a novel topology-based approach (GHCN-SE) of predicting confidence scores of candidate reactions, which can be used for gap-fillings of GEMs. The topological features of GEMs are fully extracted by simultaneously using graph and hypergraph convolutional networks, such that both associations of metabolites in the same reaction and higher-order interactions of metabolites within reactions can be captured. After the feature fusion, we further employ the squeeze-and-excitation network to enhance features. Results: The reaction prediction and reaction recovery experiments through 5-fold cross validations on 108 high-quality BiGG GEMs show that the proposed GHCN-SE is superior to other related methods. The ablation study further demonstrates the contributions of the graph convolutional network, hypergraph convolutional network, and squeeze-and-excitation network in GHCN-SE. In addition, the visualization study interprets the effectiveness of GHCN-SE. Conclusions: For potential applications in metabolic engineering, biomedicine, etc., this proposed GHCN-SE can be used to further improve the phenotypic prediction accuracy of the draft GEM generated from automated reconstruction tools.",
+        "authors": [
+          "Qu J",
+          "Wang K"
+        ],
+        "affiliations": [
+          "Key Laboratory of Advanced Process Control for Light Industry (Ministry of Education), School of Internet of Things Engineering, Jiangnan University, 1800 Lihu Road, Wuxi 214122, China.",
+          "Key Laboratory of Advanced Process Control for Light Industry (Ministry of Education), School of Internet of Things Engineering, Jiangnan University, 1800 Lihu Road, Wuxi 214122, China."
+        ],
+        "doi": "10.3390/metabo16040258",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Metabolites",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42042903/",
+        "category": null,
+        "date": "2026-04-12",
+        "mesh_terms": [],
+        "source_id": "42042903",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "GEM 정확도 향상으로 대사 공학 적용 가능. 대사 경로 예측 및 최적화에 기여.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "유전체 규모 대사 모델(GEM)의 재구성에서 대사 반응 간극( gap-fillings)을 예측하는 것은 중요하다. 현재 많은 최적화 기반 방법은 표형 데이터에 의존하지만, 딥러닝 기반의 구조 기반 접근법의 성능은 개선이 필요하다.",
+        "method": "GHCN-SE라는 새로운 구조 기반 접근법을 제안한다. 그래프 및 하이퍼그래프 컨볼루션 네트워크를 통해 GEM의 구조적 특징을 완전히 추출하여, 같은 반응 내 대사물질 간 상호작용과 고차 상호작용을 포착한다. 특징 융합 후, squeeze-and-excitation 네트워크를 사용해 특징을 강화한다.",
+        "result": "108개의 고품질 BiGG GEM을 대상으로 5차 교차검증을 수행한 결과, GHCN-SE는 다른 방법들보다 우수하다. 아브레이션 연구는 그래프 컨볼루션 네트워크, 하이퍼그래프 컨볼루션 네트워크, squeeze-and-excitation 네트워크의 기여도를 입증한다.",
+        "significance": "대사 공학, 생물의학 등 분야에서 활용 가능하며, 자동화 도구로 생성된 초안 GEM의 표형 예측 정확도를 향상시킬 수 있다. 시각화 연구는 GHCN-SE의 효과성을 해석한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Structural Evolution and Immunomodulatory Versatility of Fungal Immunomodulatory Proteins: Insights into Mechanisms and Bioproduction Strategies.",
+        "abstract": "Fungal immunomodulatory proteins (FIPs) are low-molecular-weight proteins from macrofungi that share the potential to modulate immune responses. Structurally, they fall into five subgroups, with the Fve-type and Cerato-type being the most representative. Originally, these proteins evolved in fungi for mycoparasitism and defense; their immunomodulatory, antitumor, anti-inflammatory, and hepatoprotective effects validated in human cells and animal models are surprisingly beneficial. Post-translational modifications and specific oligomeric states regulate the FIP functionality. These structural features critically govern receptor engagement and downstream signaling, whereby FIPs orchestrate immune responses via Toll-like receptor/NF-κB modulation and exert antitumor effects through EGF receptor/Akt interference. Recent advances in genomic mining and bioinformatics have accelerated novel FIP discovery, while scalable production is now achievable through optimized heterologous expression systems incorporating solubility-enhancing tags, promoter engineering, endotoxin removal, and tailored fermentation. This review examines the structure-activity relationships, mechanism-driven bioactivities, and bioproduction platforms of FIPs, highlighting their potential in biopharmaceutical and functional food applications.",
+        "authors": [
+          "Chen H",
+          "Yu S",
+          "Li Y",
+          "Guo T",
+          "Shao Y",
+          "Zou G",
+          "Xu M"
+        ],
+        "affiliations": [
+          "National Engineering Research Center of Edible Fungi, Key Laboratory of Applied Mycological Resources and Utilization, Ministry of Agriculture, Institute of Edible Fungi, Shanghai Academy of Agricultural Sciences, Shanghai 201403, People's Republic of China.",
+          "National Engineering Research Center of Edible Fungi, Key Laboratory of Applied Mycological Resources and Utilization, Ministry of Agriculture, Institute of Edible Fungi, Shanghai Academy of Agricultural Sciences, Shanghai 201403, People's Republic of China.",
+          "National Engineering Research Center of Edible Fungi, Key Laboratory of Applied Mycological Resources and Utilization, Ministry of Agriculture, Institute of Edible Fungi, Shanghai Academy of Agricultural Sciences, Shanghai 201403, People's Republic of China.",
+          "National Engineering Research Center of Edible Fungi, Key Laboratory of Applied Mycological Resources and Utilization, Ministry of Agriculture, Institute of Edible Fungi, Shanghai Academy of Agricultural Sciences, Shanghai 201403, People's Republic of China.",
+          "National Engineering Research Center of Edible Fungi, Key Laboratory of Applied Mycological Resources and Utilization, Ministry of Agriculture, Institute of Edible Fungi, Shanghai Academy of Agricultural Sciences, Shanghai 201403, People's Republic of China.",
+          "National Engineering Research Center of Edible Fungi, Key Laboratory of Applied Mycological Resources and Utilization, Ministry of Agriculture, Institute of Edible Fungi, Shanghai Academy of Agricultural Sciences, Shanghai 201403, People's Republic of China.",
+          "Key Laboratory of Prevention and Treatment of Cardiovascular and Cerebrovascular Diseases (Ministry of Education), School of Public Health and Health Management, Gannan Medical University, Ganzhou 341000, China."
+        ],
+        "doi": "10.1021/acs.jafc.6c00623",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42043304/",
+        "category": null,
+        "date": "2026-04-27",
+        "mesh_terms": [],
+        "source_id": "42043304",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "항암/항염 효과로 의약품 개발 가능하며, 기능성 식품으로의 활용 잠재력이 있음.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "균류 면역 조절 단백질(FIPs)은 대형균에서 분리된 저분자량 단백질로, 면역 반응 조절 잠재력이 있다. 이 단백질들은 곰팡이의 미코파라시즘과 방어 기능을 위한 진화적 배경을 가진다.",
+        "method": "유전자 지도 탐색(genomic mining)과 생물정보학(bioinformatics) 기술이 새로운 FIP 발견에 기여했으며, 동질적 표현 시스템 최적화를 통한 대량 생산이 가능해졌다.",
+        "result": "FIPs의 구조적 특징은 수용체 결합 및 신호 전달에 결정적 영향을 미치며, Toll-like 수용체/NF-κB 조절과 EGF 수용체/Akt 간섭을 통해 면역 조절 및 항암 효과를 나타낸다.",
+        "significance": "FIPs의 구조-활성 관계와 메커니즘 기반 생물활성은 바이오파마aceutical 및 기능성 식품 분야에 잠재적 응용 가능성을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Engineering the Heterologous Expression of a Thermophilic Glycogen Branching Enzyme in Bacillus subtilis.",
+        "abstract": "To overcome protein aggregation and poor secretion during the production of the thermophilic glycogen branching enzyme from Aquifex aeolicus (AaGBE) in Bacillus subtilis, this study developed a two-stage fermentation strategy that decouples cell growth from protein folding. This physiological approach was combined with multilevel engineering, including a protease-deficient host, a signal peptide-independent secretion pathway, a high-copy plasmid with tandem promoters, and N-terminal coding sequence optimization. The integrated strategy effectively alleviated aggregation, achieving an extracellular AaGBE titer of 0.42 g/L and an activity of 1,012 U/mL─representing a 55-fold improvement over the unoptimized strain. The purified AaGBE exhibited a specific activity of 2389 U/mg and retained robust thermostability. These results demonstrate that decoupling cell growth from protein folding provides an effective strategy for the secretion of aggregation-prone industrial enzymes.",
+        "authors": [
+          "Yang T",
+          "Zhang L",
+          "Wang C",
+          "Ji M",
+          "Guan Y",
+          "Wang D",
+          "Huang Y",
+          "Xu R",
+          "Jin M",
+          "Huang J"
+        ],
+        "affiliations": [
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "State Key Laboratory of Dairy Biotechnology, Shanghai Engineering Research Center of Dairy Biotechnology, Dairy Research Institute, Bright Dairy & Food Co., Ltd., Shanghai 201103, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China.",
+          "School of Life Sciences, East China Normal University, Shanghai 200241, China."
+        ],
+        "doi": "10.1021/acs.jafc.6c01411",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42037152/",
+        "category": null,
+        "date": "2026-04-27",
+        "mesh_terms": [],
+        "source_id": "42037152",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.85,
+        "category": "protein_engineering",
+        "reason": "이 논문은 산업용 효소 생산을 위한 단백질 공학 기술 개선을 다루며, 고온 안정성과 높은 활성을 가진 효소의 제조 가능성을 제시합니다. 식품, 화학, 의약 분야에서 효소 활용에 기여할 수 있는 기초 기술입니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)이 높은 아퀴페克斯 아에올릭스(Aquifex aeolicus)의 글리코젠 분지효소(AaGBE)를 바실러스 서비리스(Bacillus subtilis)에서 생산할 때 단백질 응집과 분비 효율 저하 문제가 발생합니다.",
+        "method": "세포 성장과 단백질 접힘을 분리하는 두단계 발효 전략을 개발하고, 프로테아제 결핍 숙주, 신호 펩타이드 독립적 분비 경로, 고복제 플라스미드 및 N-단일 구조 최적화 등의 다단계 공학 기법을 적용했습니다.",
+        "result": "외부 AaGBE 농도는 0.42 g/L, 활성도는 1,012 U/mL로 55배 향상되었고, 정제된 효소의 특정 활성도는 2389 U/mg, 열안정성(thermostability)을 유지했습니다.",
+        "significance": "세포 성장과 단백질 접힘을 분리하는 전략은 응집 경향이 있는 산업용 효소의 분비에 효과적인 접근법으로 입증되었습니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Advancing transcriptional regulation in Yarrowia lipolytica: from endogenous promoter discovery to synthetic promoter engineering.",
+        "abstract": "As an unconventional yeast, Yarrowia lipolytica is increasingly used in biomanufacturing high-value chemicals, including organic acids, sugar alcohols, fatty acid derivatives, and terpenes, owing to its unique physiological and biochemical properties. However, fine-tuning its biosynthetic pathways requires advanced transcriptional regulatory tools, with promoters being the most essential component. Numerous studies have sought to characterize promoter sequences by breaking them into distinct functional elements, while also constructing stronger and inducible synthetic promoters through rational design, modification, and optimization. This review summarizes the progress in discovering endogenous and engineering synthetic promoters in Y. lipolytica. We highlight emerging strategies such as hybrid promoter engineering, core promoter engineering, and transcription factor-based promoter engineering, which expand the promoter toolbox with enhanced properties. Finally, we address the current state of research and identify potential future directions in this field.",
+        "authors": [
+          "Yan J",
+          "Liu J",
+          "Kang F",
+          "Liang Q",
+          "Cui Z",
+          "Qi Q"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Technology, Shandong University, Qingdao, P. R. China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, Qingdao, P. R. China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, Qingdao, P. R. China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, Qingdao, P. R. China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, Qingdao, P. R. China.",
+          "State Key Laboratory of Microbial Technology, Shandong University, Qingdao, P. R. China."
+        ],
+        "doi": "10.1080/07388551.2026.2646202",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Critical reviews in biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42036363/",
+        "category": null,
+        "date": "2026-04-26",
+        "mesh_terms": [],
+        "source_id": "42036363",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "Y. lipolytica의 생화학적 특성과 고가 화학물질 생산에 대한 응용 가능성이 있음. 프로모터 공학은 대사 경로 조절에 핵심적인 역할을 함.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "Yarrowia lipolytica는 유기산, 당알코올, 지방산 유도체, 테르펜 등 고가 화학물질 생산에 활용되는 비정상적인 효모(unicellular organism)로, 독특한 생리적 및 생화학적 특성 덕분에 생분해 경로 조절이 필요하다. 이에 전사 조절 도구, 특히 프로모터( promoter)의 개선이 필수적이다.",
+        "method": "프로모터 시퀀스를 기능적 요소로 분해해 특성화하고, 합성 프로모터를 합리적 설계와 최적화를 통해 구축하는 방법이 연구되었다. 이 논문은 Y. lipolytica의 내생적 및 합성 프로모터 개발 진행 상황을 요약한다.",
+        "result": "하이브리드 프로모터 공학, 핵심 프로모터 공학, 전사 인자 기반 프로모터 공학 등 새로운 전략이 프로모터 도구 상자(toolbox)를 확장하고 열안정성(thermostability) 및 인ду서블성(inducibility)을 향상시켰다. 현재 연구 동향과 미래 방향성을 제시한다.",
+        "significance": "이 분야의 연구 현황을 정리하며, Y. lipolytica의 생분해 생산을 위한 프로모터 공학의 잠재력을 강조한다. 이는 생산업체의 효율성 향상과 생물학적 응용 확대에 기여할 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "The industrial yeast Komagataella phaffii blooms for advanced biomanufacturing.",
+        "abstract": "The industrial yeast Komagataella phaffii is emerging as a versatile chassis for advanced biomanufacturing. This review systematically summarizes recent progress in development and expanding applications of K. phaffii in addition to its traditional role in recombinant protein expression. This yeast demonstrates great potential as a sustainable source of single cell protein and a dominant host for bulk recombinant protein production in the fields of food, feed, biomaterial, biopharmaceutical, and industrial enzyme. Beyond protein expression, it has shown promising capabilities in the biosynthesis of diverse natural products, including flavonoids, alkaloids, terpenoids, polyketides, etc.. Its flexible metabolic network enables utilization of sustainable C1 and C2 substrates, supporting low-carbon and sustainable bioeconomy oriented biomanufacturing. These advances are underpinned by substantial innovations in genetic toolboxes, particularly CRISPR-based genome editing, synthetic promoter engineering, programmable expression systems, and genome-scale metabolic modeling, which have markedly enhanced the precision and efficiency of strain engineering. Despite these advantages, challenges remain in achieving ultra-high protein titers, developing humanized glycosylation strategies for food applications, improving cellular stress tolerance, and improving synthesis of toxic natural products. Addressing these limitations through integrated metabolic engineering and systems biology approaches will be critical to make K. phaffii a next-generation industrial workhorse for advanced biomanufacturing.",
+        "authors": [
+          "Lv W",
+          "Li Y",
+          "Wang S",
+          "Cai M"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing, East China University of Science and Technology, Shanghai 200237, China. Electronic address: cmh022199@ecust.edu.cn."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108905",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42035968/",
+        "category": null,
+        "date": "2026-04-24",
+        "mesh_terms": [],
+        "source_id": "42035968",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "식품/의약/화학 분야에서 단백질 생산 및 생합성 경로 개선이 다루어짐. 대사 네트워크 최적화와 지속 가능한 생태계 구축에 중점.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "Komagataella phaffii는 고급 생물제조 분야에서 유연한 chassis로 주목받고 있다(thermostability). 전통적으로 재조합 단백질 발현에 사용되던 이 효모는 최근 다양한 분야로 적용 범위가 확장되고 있다.",
+        "method": "유전자 도구박스 혁신, 특히 CRISPR 기반 유전자 편집 및 합성 프로모터 공학이 적용되었다. 대사 모델링을 통한 지속 가능한 C1/C2 전구체 활용도 강화되었다.",
+        "result": "단백질 발현 외 다양한 천연물 합성 능력이 입증되었으며, 식품, 제약 등 분야별 적용이 확대되고 있다. 저탄소 생물경제를 지원하는 유연한 대사 네트워크를 구축하였다.",
+        "significance": "다양한 도전 과제(고농도 단백질 생산, 인간화 글리코실화 전략 등) 해결이 필요하며, 통합 대사 공학 접근법이 차세대 산업 효모로 자리매김하는 데 핵심적이다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Multiplex engineering of Candida tropicalis for efficient production of astaxanthin.",
+        "abstract": "Astaxanthin, a red ketocarotenoid, exhibits strong antioxidant, anti-inflammatory, pigmentation, and immunomodulatory activities. In this study, a high-β-carotene-producing Candida tropicalis strain was engineered for efficient astaxanthin biosynthesis using multiplex engineering strategies. First, promoter engineering was applied to balance the expression of β-carotene ketolase and hydroxylase, and an optimized promoter combination was identified, leading to an astaxanthin titer of 126.7 mg/L. Subsequently, subcellular compartmentalization was implemented by targeting the key enzymes to the cytosol, peroxisomes, and lipid droplets, followed by co-expression across multiple compartments, which raised the astaxanthin titer to 192.0 mg/L. Further enhancement was achieved through endoplasmic reticulum engineering to expand membrane-associated enzyme capacity and lipid engineering to improve product storage, increasing astaxanthin production to 249.8 mg/L. Finally, fermentation optimization significantly improved the shake-flask performance, yielding 320.1 mg/L astaxanthin. In a 5-L bioreactor, the astaxanthin titer reached 3096.2 mg/L, comparable to the highest reported production to date. This work represents the first efficient biosynthesis of astaxanthin in C. tropicalis and provides a novel chassis and technical framework for the industrial production of astaxanthin.",
+        "authors": [
+          "Gui X",
+          "Ji J",
+          "Hu S",
+          "Zhang X",
+          "Dong Y",
+          "Wu C",
+          "Xia Y",
+          "Yang H",
+          "Shen W",
+          "Cao Y",
+          "Zhou L",
+          "Chen X"
+        ],
+        "affiliations": [
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China. Electronic address: Lizhou@jiangnan.edu.cn.",
+          "Key Laboratory of Industrial Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, 1800 Lihu Avenue, Wuxi 214122, People's Republic of China. Electronic address: xzchen@jiangnan.edu.cn."
+        ],
+        "doi": "10.1016/j.biortech.2026.134718",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioresource technology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42035958/",
+        "category": null,
+        "date": "2026-04-24",
+        "mesh_terms": [],
+        "source_id": "42035958",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "아스타잔틴은 식품 색소 및 의약품으로 활용 가능하며, 고생산량 달성은 산업적 적용에 유리합니다. 세포 내 대사 경로 및 분비 경로 최적화 기술은 산업화에 직접적 가치를 제공합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "아스타잔틴(astaxanthin)은 강력한 항산화제(antioxidant) 및 항염증(anti-inflammatory) 활성을 가진 레티놀 유도체입니다. 이 연구는 β-카로틴 생산 능력이 높은 Candida tropicalis를 대상으로 효율적인 아스타잔틴 생합성 경로를 구축했습니다.",
+        "method": "다중 공학 전략(multiplex engineering)을 통해 β-카로틴 키토라제와 수소화효소의 발현 균형을 조절하고, 효소를 세포질(cytosol), 과산화물질소체(peroxisomes), 지방소( lipid droplets) 등 다양한 소포체에 분리 배치했습니다. 또한, 엔도플라스미적 망막(endoplasmic reticulum) 및 지질 공학(lipid engineering)을 통해 생산 효율을 극대화했습니다.",
+        "result": "공정 최적화 후 진탕 배양(shake-flask)에서 아스타잔틴 생산량은 320.1 mg/L에 달했고, 5L 생물반응기(bioreactor)에서는 3096.2 mg/L를 기록했습니다. 이는 현재까지 보고된 최고 생산량과 경쟁력 있는 수준입니다.",
+        "significance": "이 연구는 C. tropicalis를 통해 효율적인 아스타잔틴 생합성을 처음으로 실현했고, 산업적 생산을 위한 새로운 플랫폼(chassis)과 기술 틀을 제공합니다. 생물학적 생산 시스템의 혁신을 위한 중요한 기초 자료로 활용될 수 있습니다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Radiation-Responsive Promoters: Molecular Mechanisms, Screening Strategies, and Translational Applications as Radiation Biomarkers.",
+        "abstract": "Radiation-responsive promoters represent a functionally distinct class of transcriptional regulatory elements that translate genotoxic stress signals into quantifiable gene expression outputs. These promoters occupy a unique mechanistic position within the broader radiation biomarker landscape: rather than directly measuring molecular damage products, they report the cellular interpretation of radiation-induced stress through coordinated gene regulatory networks. This review provides a systematic analysis of five major classes of radiation-responsive promoters-microRNA (miRNA) promoters, tRNA-derived small RNA (tsRNA) promoters, acute-phase protein gene promoters, DNA repair gene promoters, and long non-coding RNA (lncRNA) promoters-with emphasis on their regulatory logic, dose-response characteristics, and current evidence for clinical deployment. We further describe four complementary screening strategies: homology-based conservation analysis, functional genomics and transcriptomics, epigenetic modification profiling, and synthetic biology promoter engineering. Applications spanning biosensor development, biological dosimetry, treatment response prediction, and radiation-guided gene therapy are evaluated within a two-track framework that distinguishes biomarker-oriented applications (Track A) from tool-oriented reporter gene systems (Track B). Critical appraisal of current limitations-including insufficient clinical-grade validation, absence of standardized dose-response curves, and reproducibility deficits-is integrated throughout. Future priorities include multi-center prospective validation studies, FAIR-compliant data infrastructure, AI-driven multi-omics integration, and point-of-care detection platforms. Radiation-responsive promoter biology holds significant potential for advancing precision radiotherapy and nuclear emergency medical response, contingent upon systematic closure of the current evidence gap relative to established gold-standard cytogenetic methods.",
+        "authors": [
+          "Xu N",
+          "Huang X",
+          "Zhou P"
+        ],
+        "affiliations": [
+          "Hengyang Medical College, University of South China, Hengyang 421001, China.",
+          "Department of Radiation Biology, Beijing Key Laboratory for Radiobiology, Beijing Institute of Radiation Medicine, Beijing 100850, China.",
+          "Department of Radiation Biology, Beijing Key Laboratory for Radiobiology, Beijing Institute of Radiation Medicine, Beijing 100850, China."
+        ],
+        "doi": "10.3390/cimb48040348",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Current issues in molecular biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42042008/",
+        "category": null,
+        "date": "2026-03-26",
+        "mesh_terms": [],
+        "source_id": "42042008",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "other",
+        "reason": "방사선 생물마커 및 유전자 치료 응용 분야에 초점이 맞춰져 있어 의약 산업과 연관성이 높습니다. 식품/화학 산업과의 직접적 연관성은 낮지만, 생물정보학적 분석 기법은 관련 분야에 활용 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "방사선 반응성 프로모터(radiation-responsive promoters)는 유전자 손상 신호를 측정 가능한 유전자 발현 출력으로 변환하는 기능적으로 구분된 전사 조절 요소이다. 이들은 방사선 생물마커의 광범위한 생태계 내에서 유일한 메커니즘을 차지하며, 분자 손상 생성물 직접 측정이 아닌 세포적 방사선 스트레스 해석을 보고한다.",
+        "method": "5개 주요 클래스(미세RNA, tRNA 유도 소형 RNA, 급성 단백질 유전자, DNA 수리 유전자, 장 비암성 RNA 프로모터)의 조절 논리와 용량-반응 특성, 임상 적용 증거를 체계적으로 분석하였다. 4가지 보완적 스크리닝 전략(동형성 기반 보존 분석, 기능 유전체학 및 전사체학, 에피제네틱 수정 프로파일링, 합성생물학 프로모터 공학)을 제시하였다.",
+        "result": "생물 센서 개발, 생물 복량측정, 치료 반응 예측, 방사선 지도 유전자 치료 등 2개 트랙(생물마커 중심 Track A, 도구 중심 Track B)을 기준으로 응용을 평가하였다. 현재 한계(임상 등급 검증 부족, 표준 용량-반응 곡선 부재, 재현성 결핍)를 종합적으로 평가하였다.",
+        "significance": "방사선 반응성 프로모터 생물학은 정밀 방사선 요법 및 원자력 긴급 의료 대응의 잠재력을 가진다. 이는 기존 표준 세포유전학 방법에 대한 증거 격차를 첳계적으로 해소해야 한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 10,
+    "prefilter_passed": 10,
+    "llm_passed": 10,
+    "summarized": 10
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-27T22:30:03.990591+00:00"
+}
