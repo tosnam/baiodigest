@@ -1,0 +1,175 @@
+{
+  "date": "2026-04-29",
+  "entries": [
+    {
+      "paper": {
+        "title": "Exploring PadR Proteins for Artificial Enzyme Design.",
+        "abstract": "The development of artificial enzymes through incorporation of new-to-nature catalytic functionality into protein scaffolds has emerged as a powerful approach to expand the biocatalytic repertoire. Inspired by the success of Lactococcal multidrug resistance regulator (LmrR), a transcriptional regulator protein, whose unique scaffold has been used for the design of a range of artificial enzymes, we performed a bioinformatics study in an effort to expand the scope of protein scaffolds for artificial enzyme design with other LmrR-like proteins. LmrR belongs to the phenolic acid decarboxylase transcriptional regulator (PadR) subfamily 2 (PadR-s2) and exhibits an unusual open pore with promiscuous binding capabilities. Using genome mining and homology modeling, we identified six previously uncharacterized PadR-s2 proteins and experimentally evaluated them as protein scaffolds for the design of artificial Friedel-Crafts (FC) alkylases. Two of the candidates, Lactococcus fujiensis (LCf) PadR and Brachyspirahampsonii (Bh) PadR, could be applied in the iminium-promoted FC-alkylation using genetically incorporated noncanonical amino acids p-aminophenylalanine or 3-aminotyrosine as catalytic residues. Interestingly, contrary to homology models, AlphaFold predictions of the PadR-s2 candidates and X-ray crystallography of BhPadR and a variant incorporating 3-aminotyrosine revealed closed-pore structures. Our findings thus demonstrate that an open-pore structure like LmrR is not a prerequisite for designing artificial FC-alkylases and introduce two new PadR-s2 scaffolds for future application.",
+        "authors": [
+          "Brouwer B",
+          "Thunnissen AWH",
+          "Rozeboom HJ",
+          "Roelfes G"
+        ],
+        "affiliations": [
+          "Stratingh Institute for Chemistry, University of Groningen, Groningen, Netherlands.",
+          "Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen, Groningen, Netherlands.",
+          "Groningen Biomolecular Sciences and Biotechnology Institute, University of Groningen, Groningen, Netherlands.",
+          "Stratingh Institute for Chemistry, University of Groningen, Groningen, Netherlands."
+        ],
+        "doi": "10.1002/cbic.70308",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Chembiochem : a European journal of chemical biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42047317/",
+        "category": "bacterial proteins",
+        "date": "2026-04-28",
+        "mesh_terms": [
+          "Bacterial Proteins",
+          "Protein Engineering",
+          "Models, Molecular"
+        ],
+        "source_id": "42047317",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "인공 효소 설계에 활용 가능한 새로운 단백질 스캐폴드를 제시함. 산업용 효소 개발에 기여 가능",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인공 효소 개발은 새로운 촉매 기능을 단백질 스캐폴드에 통합하는 접근법으로, 생물촉매 범위 확장을 가능하게 한다. LmrR 단백질의 성공적인 사례를 바탕으로, 다른 LmrR 유사 단백질을 활용한 인공 효소 설계의 범위 확장을 목표로 한다.",
+        "method": "유전체 탐색과 동형 모델링을 통해 6개의 미해결 PadR-s2 단백질을 식별하고, 실험적으로 인공 프리델-크래프트(FC) 알킬라제 설계용 스캐폴드로 평가했다. AlphaFold 예측과 X선 결정학을 통해 구조를 분석했다.",
+        "result": "LCf PadR과 Bh PadR은 비정상 아미노산을 촉매 잔여물로 사용해 iminium-활성화 FC-알킬화 반응에 적용 가능했다. PadR-s2 후보의 AlphaFold 예측과 BhPadR의 결정학적 분석은 닫힌 구조를 나타내며, 열안정성(thermostability)과 기능적 유연성을 보여줬다.",
+        "significance": "LmrR의 개방 구조가 필수적이지 않다는 것을 입증하며, 두 가지 새로운 PadR-s2 스캐폴드를 인공 FC-알킬라제 설계에 활용할 수 있는 기회를 제공한다. 이는 생물촉매 설계의 유연성과 다양성을 높이는 중요한 성과이다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Deep Learning-Based Protein Half-Life Prediction for Identifying Rate-Limiting Enzymes in Metabolic Pathways to Alleviate Bottleneck Reactions.",
+        "abstract": "In synthetic metabolic pathways, the intracellular level of enzymes is a critical determinant of pathway efficiency and, thus, short-lived enzymes create bottlenecks and limit overall metabolic productivity due to their low abundance. However, since studies on protein half-life remain limited in bacteria, its accurate prediction is a significant challenge. To address this, we developed a machine learning model, ProHL, for the classification of short-lived and long-lived proteins. ProHL employs a multimodal strategy, integrating ProteinBERT encodings (at both residue and sequence levels) with physicochemical encodings of the protein sequences. This integration enables the effective capture of both local and global sequence features, thereby ensuring accurate half-life classification. When evaluated on an independent test dataset of E. coli proteins, ProHL achieved an accuracy of 0.818 and a Matthew's correlation coefficient of 0.624. To demonstrate its practical utility in metabolic engineering, we classified CrtE, CrtB, and CrtI enzymes involved in lycopene biosynthesis and identified that only CrtB as short-lived. Consistent with this prediction, when CrtB was additionally expressed in a lycopene-producing base strain, lycopene production in E. coli increased up to 25%. Our computational framework, ProHL, identifies short-lived, rate-limiting enzymes by employing in silico prediction of enzyme half-life. This approach provides a viable strategy for alleviating metabolic bottlenecks, ultimately enhancing metabolic productivity.",
+        "authors": [
+          "Lee Y",
+          "Ren J",
+          "Lee J",
+          "Tran MT",
+          "Kim Y",
+          "Chang Y",
+          "Oh SH",
+          "Lee HM",
+          "Na D"
+        ],
+        "affiliations": [
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea.",
+          "Department of Biomedical Engineering, Chung-Ang University, Seoul 06974, Republic of Korea."
+        ],
+        "doi": "10.4014/jmb.2601.01071",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of microbiology and biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42046921/",
+        "category": "escherichia coli",
+        "date": "2026-04-27",
+        "mesh_terms": [
+          "Escherichia coli",
+          "Metabolic Networks and Pathways",
+          "Deep Learning",
+          "Escherichia coli Proteins",
+          "Half-Life",
+          "Metabolic Engineering",
+          "Lycopene",
+          "Computational Biology"
+        ],
+        "source_id": "42046921",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "단백질 반감기 예측을 통한 대사 경로의 leneck 효소 식별 기술로, 식품/의약 산업에서 대사 체계 최적화에 활용 가능",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "합성 대사 경로에서 효소의 세포 내 농도는 경로 효율성에 결정적이다(thermostability). 단기간에 분해되는 단백질은 낮은 존재량으로 인해 전체 대사 생산성에 제한을 주는 병목 반응을 유발한다.",
+        "method": "ProHL 모델은 단백질의 생존 시간을 분류하기 위해 단백질 시퀀스의 물리화학적 특성과 ProteinBERT 인코딩( residue 및 시퀀스 수준)을 통합하였다. 이 접근법은 지역적 및 전역적 시퀀스 특성을 효과적으로 포착한다.",
+        "result": "E. coli 단백질 데이터셋에서 ProHL은 정확도 0.818과 매트서의 상관 계수 0.624를 달성하였다. CrtB 효소는 단백질 생존 시간이 짧은 것으로 분류되었고, 추가 발현 시 라이코펜 생산량이 25% 증가하였다.",
+        "significance": "ProHL은 대사 공학에서 병목 반응을 완화하고 대사 생산성을 향상시키는 실용적인 전략을 제공한다. 인 silico 단백질 생존 시간 예측을 통해 제한적 효소를 식별하는 새로운 접근법을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Telomere-to-Telomere Assembly Using HERRO-Corrected Simplex Nanopore Reads.",
+        "abstract": "Telomere-to-telomere (T2T) phased assemblies are emerging as a benchmark for reference-quality genomes1,17, though they remain technically and financially demanding, particularly at scale. Generating such assemblies for diploid and polyploid genomes typically involves combining high-accuracy long reads, such as PacBio HiFi16 or the now-deprecated ONT Duplex2 reads, with ultra-long ONT Simplex reads. Using multiple platforms or methods increases the cost and the required amount of genomic DNA. Here, we show that comparable results are possible using error correction of ultra-long ONT Simplex reads and then assembling them using state-of-the-art de novo assembly methods. To achieve this, we have developed the deep learning-based HERRO (Haplotype-aware ERRor cOrrection) framework, which corrects ONT Simplex reads while carefully preserving differences in related genomic sequences. Taking into account informative positions that differentiate the haplotypes or genomic repeat copies, HERRO achieves an increase of read accuracy of up to 100-fold for diploid human genomes. By combining HERRO with the Verkko17 assembler, we reconstruct up to 32 chromosomes telomere-to-telomere, including chromosomes X and Y, and consistently achieve NGA50 values of 100 Mb or higher across several human genomes. HERRO supports both R9.4.1 and R10.4.1 ONT Simplex reads and generalizes well to other species. These results show that error-corrected ONT reads can lower sequencing costs and improve the quality of genomic analyses.",
+        "authors": [
+          "Stanojević D",
+          "Lin D",
+          "Nurk S",
+          "de Sessions PF",
+          "Šikić M"
+        ],
+        "affiliations": [
+          "Laboratory of AI in Genomics, Genome Institute of Singapore, A*STAR, Singapore, Singapore.",
+          "Laboratory for Bioinformatics and Computational Biology, Faculty of Electrical Engineering and Computing, University of Zagreb, Zagreb, Croatia.",
+          "Laboratory of AI in Genomics, Genome Institute of Singapore, A*STAR, Singapore, Singapore.",
+          "Oxford Nanopore Technologies, Oxford, United Kingdom.",
+          "Oxford Nanopore Technologies, Oxford, United Kingdom.",
+          "Laboratory of AI in Genomics, Genome Institute of Singapore, A*STAR, Singapore, Singapore. mile_sikic@a-star.edu.sg.",
+          "Laboratory for Bioinformatics and Computational Biology, Faculty of Electrical Engineering and Computing, University of Zagreb, Zagreb, Croatia. mile_sikic@a-star.edu.sg."
+        ],
+        "doi": "10.1038/s41586-026-10563-y",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42045451/",
+        "category": null,
+        "date": "2026-04-27",
+        "mesh_terms": [],
+        "source_id": "42045451",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "bioinformatics",
+        "reason": "고정밀 염기서열 분석을 통해 의약품 개발 및 유전자 연구에 기여할 수 있는 잠재력이 있음.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)을 가진 텔로미어-텔로미어(T2T) 유전자 조립은 참조 품질 유전체 분석의 기준이 되고 있지만, 기술적·재정적 제약이 존재합니다. 특히 다배수체 유전체를 대상으로 할 경우, 고정확도의 장기 읽기(PacBio HiFi)와 초장기 ONT Simplex 읽기를 결합해야 하며, 이는 분석 비용과 유전체 DNA 소요량을 증가시킵니다.",
+        "method": "HERRO(Haplotype-aware ERRor cOrrection) 프레임워크는 초장기 ONT Simplex 읽기를 오류 수정하여 정확도를 향상시키는 딥러닝 기반 방법론입니다. haplotypes 또는 반복 서열의 차이를 고려해 읽기 정확도를 최대 100배까지 향상시킵니다.",
+        "result": "HERRO와 Verkko 어셈블러를 결합해 32개 염색체를 텔로미어-텔로미어로 재구성했으며, 여러 인간 유전체에서 NGA50 값 100 Mb 이상을 달성했습니다. R9.4.1 및 R10.4.1 ONT Simplex 읽기를 지원하며, 다른 종에도 일반화 가능합니다.",
+        "significance": "오류 수정된 ONT 읽기는 분석 비용을 절감하고 유전체 분석의 품질을 향상시켜 T2T 조립의 실용성을 높입니다. 이 기법은 대규모 유전체 연구에 있어 경제성과 정확도를 균형 있게 제공합니다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-04-28T22:11:44.944116+00:00"
+}

@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1777402587000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=7c06c5a5c5&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Mitochondria can spawn new ‘organelles’</a></h4>
+      <p>파раз이트가 세포에 침입할 때 미토콘드리아는 에너지를 생성하는 기관으로, 외층을 벗어나 분해되는 분자 쓰레기를 처리하는 새로운 세포 기관을 형성해 감염 확산에 기여할 수 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=220330069b&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">China connects scientists with businesses</a></h4>
+      <p>중국 정부가 2023~2025년간 대학 및 연구소의 8만 건의 특허 상업화를 지원하며, 과학 기술의 산업화를 가속화하고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=df0c9bb579&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">What baby teeth show about baby brains</a></h4>
+      <p>유아 치아의 계층 구조를 분석해 주기별 환경 노출을 복원한 연구가, 유아 뇌 발달과의 연관성을 밝혀냈습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=32a9ace03c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Fields medallist: AI makes us rethink maths</a></h4>
+      <p>필드스 메달리스트 테렌스 타오가 AI가 수학의 본질적 질문인 &#39;증명의 정의&#39;나 &#39;학문의 목적&#39;을 재고하게 만들고 있다고 강조했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=111d9cc022&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Seeking a science of acupuncture</a></h4>
+      <p>미국 국립보건원 지원 연구가 침술의 생리학적 메커니즘을 규명하기 위해 서양 과학적 접근법을 도입하고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=2aee35fd1f&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">What is an AI world model?</a></h4>
+      <p>AI 세계 모델은 상호작용 가능한 가상 세계를 구축해 사용자가 행동을 통해 환경을 조작할 수 있는 기술로 주목받고 있습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
