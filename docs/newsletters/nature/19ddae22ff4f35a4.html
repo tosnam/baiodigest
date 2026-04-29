@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1777493722000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=8a246c7c0e&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Olfactory maps overturn our idea of smell</a></h4>
+      <p>마우스 코의 향 감지 수용체를 가장 상세하게 맵핑한 연구는 향의 인식 방식에 대한 기존 개념을 뒤집고, 수용체가 특정 위치에 집중되어 있다는 사실을 밝혀냈습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=b7265f77e5&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">It’s not so easy to put data centres in space</a></h4>
+      <p>우주에 데이터센터를 설치하려는 시도는 환경적 문제와 열 배출 등의 기술적 장벽으로 인해 현실화가 어렵다는 분석이 제시되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=48906a7874&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Iliad found inside Egyptian mummy</a></h4>
+      <p>이집트 무덤에서 발견된 페apyrus에는 호머의 이리아드 텍스트가 새겨져 있어, 고대 그리스 문화의 유물로의 보존 방식을 새롭게 밝혀냈습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=5be930356f&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Learning from our local aliens</a></h4>
+      <p>오징어와 같은 해양 동물의 지능을 연구하며, 인간과 달리 시간 개념과 지연 만족 능력을 갖춘 생명체의 인지 메커니즘을 탐구하고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=a932f0de6c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Trump axes science advice — and openness</a></h4>
+      <p>트럼프 정부가 과학적 조언 체계를 폐지하고 공개성을 축소하며, 과학 정책의 독점적 운영이 과학 혁신에 미칠 영향에 대한 우려가 제기되었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=a9ac6a5237&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">How to do space diplomacy</a></h4>
+      <p>우주 개발에 대한 국제 협력이 필요하며, 과학적·상업적 활동이 격리되어 진행될 경우 미래 기술 발전에 부정적인 영향을 줄 수 있다는 경고가 나왔습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

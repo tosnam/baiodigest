@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing: Translational Research | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing: Translational Research</h2>
+  <p>1777475171000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=f7fec728b1&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Biologic degraders zip through the clinic</a></h4>
+      <p>항체 기반 단백질이 세포 분해 장치를 활용해 질병 관련 단백질을 표적으로 하는 바이오 분해제가 임상 단계로 진입하며, 이 분야의 혁신적인 접근법이 주목받고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=16625be36b&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">US speeds research into psychedelics</a></h4>
+      <p>트럼프 대통령이 심리활성 물질 연구를 가속화하고 특정 질환 환자의 접근을 용이하게 하는 행정명령을 서명하며, ibogaine 등 강력한 심리활성 물질에 대한 연구가 주목받고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=3b1a0ddb19&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Three gene therapy pioneers, and beekeeping Jean Bennett, Albert Maguire and Katherine High discuss the journey to the approval of the first gene therapy in the United States, which won them the Breakthrough Prize in Life Sciences, and what’s next for them. “I recently retired,” says Maguire. “Now it’s painting and beekeeping — I’d advise against [it]. It’s extraordinarily frustrating. Everybody says how cool it is. You do not want to get into this.” ( Endpoints News | 12 min read ) Features and opinion Centre patients in drug development</a></h4>
+      <p>“In an era in which precision medicine and personalized healthcare dominate discussion, the pharmaceutical industry must prioritize the voices of those it serves: patients,” write Allison Martin, regulation and policy lead at the drug company Sanofi, and Russ Paulsen, the head of the nonprofit UsAgainstAlzheimer’s. The approach should involve including data on quality of life in the drug development process , collected through surveys and interviews, “to bridge gaps between clinical endpoints and patient realities”. This approach is particularly crucial for neurodegenerative diseases, such as Alzheimer’s, where symptoms have profound emotional impacts on those afflicted and their caregivers, they note.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=9a62e02f8f&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Health data caught in geopolitical crossfire</a></h4>
+      <p>영국 빅뱅 데이터가 중국 알리바바에서 판매되는 것으로 드러나며, 인공지능 슈퍼파워 경쟁이 의료 데이터 보안과 글로벌 협력에 미치는 영향이 조사되고 있습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
