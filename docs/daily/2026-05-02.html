@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-02 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-02</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42062046/" target="_blank" rel="noopener noreferrer">Lipase-Catalyzed Enantioselective Resolution of Chiral Pesticides and Herbicides: Advances in Biocatalysis and Enzyme Engineering.</a></h3>
+    <p>Journal of agricultural and food chemistry</p>
+    <p>College of Agriculture, Huaiyin Institute of Technology, Huai&#39;an 223003, P. R. China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>치로 pesticide 및 herbicide(CPHs)는 생체 활성, 독성, 환경 행동에서 염기 선택적 차이를 보이며, 단일 염기 생산이 효과성 향상과 생태적 위험 감소에 중요하다. 화학적 및 크로마토그래피 분리 대신 생물학적 분리 방법이 환경 친화적 대안으로 주목받고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>리파제 촉매 반응은 완화된 반응 조건, 낮은 독성 부산물, 우수한 촉매 성능을 가진 친환경적 접근법이다. 에스터화, 트랜스에스터화, 수분해 반응을 통해 처리 과정에서 용매 공학, 반응 매체 최적화, 효소 고정화, 막 기반 공정 등을 적용한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>AI 기반 리파제 설계 기술이 효소 공학의 전망을 혁신적으로 변화시켰으며, 촉매 효율, 입체 선택성, 열안정성(thermostability)을 크게 향상시켰다. 다양한 CPHs 생산 및 처리에 리파제의 활용이 확대되고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 기술은 친환경 화학 분리 방법을 확대하고, 효소 공학 분야의 혁신을 촉진하며, 농약 및 허브icides의 생태적 위험을 줄이는 데 기여할 수 있다. AI 통합 설계는 효소 기반 분리 공정의 효율성과 지속 가능성을 높인다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42063854/" target="_blank" rel="noopener noreferrer">Engineering Plant-Derived P450 Enables the Efficient Production of Berberine through a Concise and Modular Enzymatic Cascade in E. coli.</a></h3>
+    <p>JACS Au</p>
+    <p>School of Pharmacy, Nanjing University of Chinese Medicine, Nanjing 210023, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>의약품인 베르베린 생산 가능성을 제시하며, AI 기반 효소 최적화 기술이 산업 적용에 유용함</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>식물 자연산물의 지속 가능한 생산은 합성생물학과 대사공학에서 중요한 과제로, 식물 막에 결합된 사이토크롬 P450의 제한으로 어려움을 겪고 있다. 이 연구는 P450 촉매를 통한 메틸렌디옥시브리지(MDB) 형성의 병목 현상을 해결하기 위해 설계된 경량한 E. coli 경로를 제시한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>CjCYP719A1의 통합 공학을 위해 발현 최적화, 구조 기반 설계, 합의 돌연변이, 머신러닝을 적용하였다. 이로 인해 8.9배 활성 증가 및 열안정성(thermostability) 개선된 변이체를 도출하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>확장된 실험에서 베타리닌 생산량은 353 mg/L에 달하며, 현재까지 최고 수준을 기록하였다. 메커니즘 연구는 촉매 활성과 열안정성의 개선을 입증하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 식물 유래 P450의 기능적 발현 및 시스템적 최적화를 위한 실용적 프레임워크를 제공하며, E. coli를 통한 식물 자연산물 생산의 산업적 잠재력을 입증하였다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI, expression optimization, metabolic engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42063620/" target="_blank" rel="noopener noreferrer">Mass spectrometry integrates protein design into structural biology method development.</a></h3>
+    <p>QRB discovery</p>
+    <p>Department of Microbiology, Tumor and Cell Biology, Karolinska Institutet, Sweden.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>머신러닝과 질량분석법의 통합을 통해 단백질 설계의 정밀도를 높히는 기술로, 의약품 개발 및 생물공학 분야에 활용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>머신러닝(ML)의 발전은 단백질 과학을 혁신적으로 변화시켜 인공 단백질의 설계와 공학을 가능하게 했다. 그러나 단백질 설계의 핵심 특성(예: 올리고머화, 폴딩, 리간드 결합, 동적 구조 변화)을 실험적으로 분석하는 것은 여전히 필수적이다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>질량 분석법(MS)은 단백질 설계의 다양한 목표를 검증하는 데 기여하며, 공학화된 단백질은 MS 방법 개발을 위한 테스트베드로 활용된다. 이는 구조적 특성, 전하 효과, 약한 상호작용을 탐지하는 데 중점을 둔다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>머신러닝과 원생질량 분석법(native MS)의 통합은 새로운 설계가 분석 기술을 도전하고, 개선된 방법이 향후 예측을 지도하는 피드백 루프를 형성한다. 이는 단백질 공학의 능력을 확장하는 핵심적인 상호작용이다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 협력은 합성생물학과 인공 프로토세포 개발과 같은 응용 분야에서 단백질 공학의 범위를 확대하는 데 필수적이다. 실험적 분석과 계산적 설계의 통합이 미래 기술 개발에 기여한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.75
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

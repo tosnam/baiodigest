@@ -1,0 +1,199 @@
+{
+  "date": "2026-05-02",
+  "entries": [
+    {
+      "paper": {
+        "title": "Lipase-Catalyzed Enantioselective Resolution of Chiral Pesticides and Herbicides: Advances in Biocatalysis and Enzyme Engineering.",
+        "abstract": "Chiral pesticides and herbicides (CPHs) show significant enantioselective differences in bioactivity, toxicity, and environmental behavior, making single-enantiomer production highly desirable for better efficacy and lower ecological risk. Among existing methods, lipase-catalyzed kinetic resolution is a more environmentally friendly alternative to chemical and chromatographic separations, as it has advantages of mild reaction conditions, low toxic and harmful byproducts, and excellent catalytic performance. Lipases have been broadly utilized for the production and processing of various CPHs, including organophosphorus pesticides, aryloxypropionate herbicides, pyrethroids, and aromatic amides. During the processing carried out through esterification, transesterification, and hydrolysis reactions, strategies such as solvent engineering, tailored reaction media, enzyme immobilization, and membrane-assisted processes can improve the catalytic efficiency, stereoselectivity, and stability. Artificial intelligence (AI)-assisted design of lipase, such as rational design, semirational design, and de novo design, will greatly change the prospects of enzyme engineering for the lipase-catalyzed enantioselective resolution of CPHs.",
+        "authors": [
+          "Hu L",
+          "Ge F",
+          "Li A",
+          "Liu X",
+          "Tang M",
+          "Tang J",
+          "Ren S",
+          "Tian B",
+          "Zhou J",
+          "Shi H",
+          "Tan Z"
+        ],
+        "affiliations": [
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "College of Agriculture, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "College of Agriculture, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "College of Agriculture, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "College of Agriculture, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "School of Life Science and Food Engineering, Huaiyin Institute of Technology, Huai'an 223003, P. R. China.",
+          "College of Agriculture, Huaiyin Institute of Technology, Huai'an 223003, P. R. China."
+        ],
+        "doi": "10.1021/acs.jafc.6c01422",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42062046/",
+        "category": null,
+        "date": "2026-04-30",
+        "mesh_terms": [],
+        "source_id": "42062046",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "치로 pesticide 및 herbicide(CPHs)는 생체 활성, 독성, 환경 행동에서 염기 선택적 차이를 보이며, 단일 염기 생산이 효과성 향상과 생태적 위험 감소에 중요하다. 화학적 및 크로마토그래피 분리 대신 생물학적 분리 방법이 환경 친화적 대안으로 주목받고 있다.",
+        "method": "리파제 촉매 반응은 완화된 반응 조건, 낮은 독성 부산물, 우수한 촉매 성능을 가진 친환경적 접근법이다. 에스터화, 트랜스에스터화, 수분해 반응을 통해 처리 과정에서 용매 공학, 반응 매체 최적화, 효소 고정화, 막 기반 공정 등을 적용한다.",
+        "result": "AI 기반 리파제 설계 기술이 효소 공학의 전망을 혁신적으로 변화시켰으며, 촉매 효율, 입체 선택성, 열안정성(thermostability)을 크게 향상시켰다. 다양한 CPHs 생산 및 처리에 리파제의 활용이 확대되고 있다.",
+        "significance": "이 기술은 친환경 화학 분리 방법을 확대하고, 효소 공학 분야의 혁신을 촉진하며, 농약 및 허브icides의 생태적 위험을 줄이는 데 기여할 수 있다. AI 통합 설계는 효소 기반 분리 공정의 효율성과 지속 가능성을 높인다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Engineering Plant-Derived P450 Enables the Efficient Production of Berberine through a Concise and Modular Enzymatic Cascade in E. coli.",
+        "abstract": "Sustainable and scalable production of plant natural products remains a major challenge at the interface of synthetic biology, metabolic engineering, and drug discovery, often constrained by plant-membrane-bound cytochrome P450s. To overcome the bottleneck in P450-catalyzed methylenedioxy-bridge (MDB) formation, we designed a concise, modular Escherichia coli pathway to the alkaloid berberine that bypasses multiple native steps and enables high-level accumulation of the P450-dependent intermediate. We then implemented integrated engineering of CjCYP719A1, including expression optimization, structure-guided design, consensus mutagenesis, and machine learning, to obtain a variant with 8.9-fold higher activity and improved thermostability. This enabled a berberine titer of 353 mg/L in scaled-up preparations, the highest reported to date, demonstrating industrial potential. Furthermore, mechanistic studies reveal their improved catalytic activity and thermostability. Together, this work provides a practical framework for functional expression and systematic optimization of plant-derived P450s to enable efficient production of plant natural products in E. coli.",
+        "authors": [
+          "Qin Y",
+          "Liu H",
+          "Zhang Y",
+          "Li F",
+          "Deng Z",
+          "Luo Z",
+          "Zhuang Y",
+          "Fu K",
+          "Yuan Z",
+          "Rao Y"
+        ],
+        "affiliations": [
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Haixia Institute of Science and Technology, School of Future Technology, Fujian Agriculture and Forestry University, Fuzhou 350002, Fujian, P. R. China.",
+          "School of Life Sciences and Health Engineering, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Haixia Institute of Science and Technology, School of Future Technology, Fujian Agriculture and Forestry University, Fuzhou 350002, Fujian, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Key Laboratory of Carbohydrate Chemistry and Biotechnology, Ministry of Education, School of Biotechnology, Jiangnan University, Wuxi 214122, P. R. China.",
+          "Haixia Institute of Science and Technology, School of Future Technology, Fujian Agriculture and Forestry University, Fuzhou 350002, Fujian, P. R. China.",
+          "School of Pharmacy, Nanjing University of Chinese Medicine, Nanjing 210023, China."
+        ],
+        "doi": "10.1021/jacsau.6c00169",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "JACS Au",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42063854/",
+        "category": null,
+        "date": "2026-04-27",
+        "mesh_terms": [],
+        "source_id": "42063854",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI",
+          "expression optimization",
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "의약품인 베르베린 생산 가능성을 제시하며, AI 기반 효소 최적화 기술이 산업 적용에 유용함",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI",
+          "expression optimization",
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "식물 자연산물의 지속 가능한 생산은 합성생물학과 대사공학에서 중요한 과제로, 식물 막에 결합된 사이토크롬 P450의 제한으로 어려움을 겪고 있다. 이 연구는 P450 촉매를 통한 메틸렌디옥시브리지(MDB) 형성의 병목 현상을 해결하기 위해 설계된 경량한 E. coli 경로를 제시한다.",
+        "method": "CjCYP719A1의 통합 공학을 위해 발현 최적화, 구조 기반 설계, 합의 돌연변이, 머신러닝을 적용하였다. 이로 인해 8.9배 활성 증가 및 열안정성(thermostability) 개선된 변이체를 도출하였다.",
+        "result": "확장된 실험에서 베타리닌 생산량은 353 mg/L에 달하며, 현재까지 최고 수준을 기록하였다. 메커니즘 연구는 촉매 활성과 열안정성의 개선을 입증하였다.",
+        "significance": "이 연구는 식물 유래 P450의 기능적 발현 및 시스템적 최적화를 위한 실용적 프레임워크를 제공하며, E. coli를 통한 식물 자연산물 생산의 산업적 잠재력을 입증하였다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Mass spectrometry integrates protein design into structural biology method development.",
+        "abstract": "Recent advances in machine learning (ML) have transformed protein science, enabling engineering and de novo design of artificial proteins with novel structures and functions. However, experimental analysis of key design features, such as oligomerization, folding, ligand binding, and dynamic conformational changes, remains critical. Here, we outline how mass spectrometry (MS) complements protein design through its ability to corroborate a wide range of design objectives. Furthermore, engineered proteins have become valuable tools for exploring the use of MS in detecting structural features, charge effects, and weak interactions by serving as testbeds for method development. Integrating ML and native MS thus creates a feedback loop: new designs challenge analytical techniques, while improved methods provide richer data to guide and improve future predictions. This synergy is vital for expanding the capabilities of protein engineering, including toward applications in synthetic biology and artificial protocell development.",
+        "authors": [
+          "Stevens A",
+          "Osterholz H",
+          "Viliuga V",
+          "Vosselman T",
+          "Kokane S",
+          "Marklund EG",
+          "Elofsson A",
+          "Leppert A",
+          "Landreh M"
+        ],
+        "affiliations": [
+          "Department of Cell and Molecular Biology, Uppsala University, Sweden.",
+          "Department of Cell and Molecular Biology, Uppsala University, Sweden.",
+          "Science for Life Laboratory and the Department of Biochemistry and Biophysics, Stockholm University, Sweden.",
+          "Max Planck Institute for Polymer Research, Mainz, Germany.",
+          "Department of Cell and Molecular Biology, Uppsala University, Sweden.",
+          "Department of Cell and Molecular Biology, Uppsala University, Sweden.",
+          "Department of Chemistry for Life Sciences, Uppsala University, Sweden.",
+          "Science for Life Laboratory and the Department of Biochemistry and Biophysics, Stockholm University, Sweden.",
+          "Department of Cell and Molecular Biology, Uppsala University, Sweden.",
+          "Department of Cell and Molecular Biology, Uppsala University, Sweden.",
+          "Department of Microbiology, Tumor and Cell Biology, Karolinska Institutet, Sweden."
+        ],
+        "doi": "10.1017/qrd.2025.10018",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "QRB discovery",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42063620/",
+        "category": null,
+        "date": "2026-01-01",
+        "mesh_terms": [],
+        "source_id": "42063620",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.75,
+        "category": "protein_engineering",
+        "reason": "머신러닝과 질량분석법의 통합을 통해 단백질 설계의 정밀도를 높히는 기술로, 의약품 개발 및 생물공학 분야에 활용 가능합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "머신러닝(ML)의 발전은 단백질 과학을 혁신적으로 변화시켜 인공 단백질의 설계와 공학을 가능하게 했다. 그러나 단백질 설계의 핵심 특성(예: 올리고머화, 폴딩, 리간드 결합, 동적 구조 변화)을 실험적으로 분석하는 것은 여전히 필수적이다.",
+        "method": "질량 분석법(MS)은 단백질 설계의 다양한 목표를 검증하는 데 기여하며, 공학화된 단백질은 MS 방법 개발을 위한 테스트베드로 활용된다. 이는 구조적 특성, 전하 효과, 약한 상호작용을 탐지하는 데 중점을 둔다.",
+        "result": "머신러닝과 원생질량 분석법(native MS)의 통합은 새로운 설계가 분석 기술을 도전하고, 개선된 방법이 향후 예측을 지도하는 피드백 루프를 형성한다. 이는 단백질 공학의 능력을 확장하는 핵심적인 상호작용이다.",
+        "significance": "이 협력은 합성생물학과 인공 프로토세포 개발과 같은 응용 분야에서 단백질 공학의 범위를 확대하는 데 필수적이다. 실험적 분석과 계산적 설계의 통합이 미래 기술 개발에 기여한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-04T22:41:15.400473+00:00"
+}

@@ -1,0 +1,68 @@
+{
+  "date": "2026-05-05",
+  "entries": [
+    {
+      "paper": {
+        "title": "Metabolic engineering of Escherichia coli for the biosynthesis of nylon 6 and nylon 6,6 monomers.",
+        "abstract": "Hexamethylenediamine (HMD), adipic acid, and ε-caprolactam (ε-CL) are essential C6 monomers used in the production of nylon 6,6 and nylon 6. Developing sustainable, bio-based routes to these compounds remains challenging due to pathway complexity. Here, we report a modular Escherichia coli platform for the de novo biosynthesis of all three monomers directly from glycerol. We divided the overall pathway into upstream and downstream modules, with the upstream module converting glycerol to adipic acid. To construct downstream module, two distinct strains were engineered to individually convert adipic acid into HMD or ε-CL. Both strains employed carboxylic acid reductases Macar from Mycobacteroides abscessus and Mmocar from Mycolicibacterium moriokaense, with the latter identified and validated in this work. Specifically, HMD biosynthesis incorporated aminotransferases PatA from E. coli, GabT from Streptomyces avermitilis, and the introduced Bcta from Burkholderia cenocepacia. ε-CL biosynthesis utilized a similar upstream pathway but relied critically on a lactamization step catalyzed by an HLadh-Smnox fusion enzyme containing a flexible linker for efficient NAD+ regeneration. The common precursor, adipic acid, was produced by an upstream strain optimized through reverse β-oxidation pathway reconstruction, PaaJ engineering, and metabolic flux balancing, achieving a titer of 6.1 g/L. In fed-batch fermentation, cocultivation of the engineered strains with delayed inoculation enabled temporally coordinated conversion of glycerol to HMD (230.9 mg/L) and ε-CL (808.0 µg/L), representing low yet the highest titers reported to date. This work opens up the possibility of a unified, modular microbial platform for the sustainable production of nylon monomers from a renewable carbon source.",
+        "authors": [
+          "Ahn DH",
+          "Chae TU",
+          "Lee SY"
+        ],
+        "affiliations": [
+          "Metabolic and Biomolecular Engineering National Research Laboratory and Systems Metabolic Engineering and Systems Healthcare Cross-Generation Collaborative Laboratory, Department of Chemical and Biomolecular Engineering (BrainKorea21 four), Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea.",
+          "BioInformatics Research Center and BioProcess Engineering Research Center, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea.",
+          "Metabolic and Biomolecular Engineering National Research Laboratory and Systems Metabolic Engineering and Systems Healthcare Cross-Generation Collaborative Laboratory, Department of Chemical and Biomolecular Engineering (BrainKorea21 four), Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea.",
+          "BioInformatics Research Center and BioProcess Engineering Research Center, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea.",
+          "Metabolic and Biomolecular Engineering National Research Laboratory and Systems Metabolic Engineering and Systems Healthcare Cross-Generation Collaborative Laboratory, Department of Chemical and Biomolecular Engineering (BrainKorea21 four), Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea.",
+          "BioInformatics Research Center and BioProcess Engineering Research Center, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea.",
+          "Graduate School of Engineering Biology, Korea Advanced Institute of Science and Technology, Daejeon 34141, Republic of Korea."
+        ],
+        "doi": "10.1073/pnas.2535786123",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Proceedings of the National Academy of Sciences of the United States of America",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42081707/",
+        "category": "metabolic engineering",
+        "date": "2026-05-19",
+        "mesh_terms": [
+          "Metabolic Engineering",
+          "Escherichia coli",
+          "Caprolactam",
+          "Glycerol",
+          "Polymers",
+          "Adipates",
+          "Nylons"
+        ],
+        "source_id": "42081707",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "이 논문은 폴리아미드 계열 화학물질인 니龙 6,6 및 니龙 6의 원료인 HMD, 아디핀산, ε-CL을 생물학적으로 합성하는 대규모 공정을 제시함. 이는 화학 산업에서 지속 가능한 화학 원료 생산에 기여할 수 있는 잠재력을 가짐.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "니龙 6,6 및 니龙 6 생산에 필수적인 헥사메틸렌다이아민(HMD), 아디프산, ε-카프로락톤(ε-CL)의 생합성 경로는 복잡성으로 인해 지속 가능한 생물 기반 생산이 어려웠다. 이 연구는 이러한 문제를 해결하기 위해 Escherichia coli를 기반으로 한 모듈러 플랫폼을 개발하였다.",
+        "method": "상류 모듈은 글리세롤을 아디프산으로 전환하는 역 β-산화 경로 재구성과 PaaJ 엔지니어링을 통해 최적화하였다. 하류 모듈에서는 Macar 및 Mmocar(이 연구에서 확인됨)을 활용해 아디프산을 HMD 또는 ε-CL로 전환하는 두 개의 균주를 설계하였다.",
+        "result": "상류 균주에서 아디프산 생산량은 6.1 g/L에 달하며, 공급배양에서 두 균주의 혼합 배양으로 HMD(230.9 mg/L)와 ε-CL(808.0 µg/L)의 농도가 기록되었다. 이는 현재까지 보고된 최고 수준의 생산량이다.",
+        "significance": "이 기술은 재생 가능 탄소원으로부터 니龙 단량체의 지속 가능한 생산을 가능하게 하며, 모듈러 구조를 통해 경로 복잡성을 해결하는 새로운 미생물 플랫폼을 제시한다. 산업적 응용 가능성과 환경적 지속 가능성 측면에서 중요하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-04T22:50:41.610013+00:00"
+}

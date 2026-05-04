@@ -1,0 +1,316 @@
+{
+  "date": "2026-05-01",
+  "entries": [
+    {
+      "paper": {
+        "title": "MuFaDDG: A Sequence-Based Multiscale Feature Fusion Framework for Protein Stability Changes Prediction.",
+        "abstract": "Predicting the thermodynamic stability of proteins upon single-point mutations is a pivotal step in both protein engineering and medicine. In the study of predicting protein thermodynamic stability, various computational methods, whether they extract features at the local-level or global-level, exhibit their respective advantages and limitations. To leverage the advantages of both features, we developed MuFaDDG, a novel sequence-based method that integrated multiscale feature fusion for improved prediction of protein stability changes (ΔΔG). MuFaDDG achieves comparable performance on the S669 benchmark, demonstrating strong capabilities in stabilizing mutations. Notably, it shows a significant advantage in the ACC metric, with values of 0.75, 0.88, and 0.81 on the direct, reverse, and overall datasets of the CAGI5 Challenge's Frataxin, respectively. Furthermore, our method outperforms leading sequence-based approaches including THPLM, DDGemb, DDGun, and INPS-Seq on protein Myoglobin stability prediction. Additionally, MuFaDDG demonstrates exceptional predictive performance with higher PCC and ACC on the protein ThreeFoil, which is uncurated by FireProtDB and ProThermDB databases. The source code and data are available at https://github.com/PengjiaMa23/MuFaDDG. Supplementary data are available at Bioinformatics online.",
+        "authors": [
+          "Gong J",
+          "Ma P",
+          "Ren Z",
+          "Li S",
+          "Fu Z",
+          "Sun P",
+          "Ni M",
+          "Bo X"
+        ],
+        "affiliations": [
+          "Department of Advanced & Interdisciplinary Biotechnology, Academy of Military Medical Sciences, Beijing, 100850, China.",
+          "School of Information Science and Technology, Northeast Normal University, Changchun, 130117, China.",
+          "Department of Advanced & Interdisciplinary Biotechnology, Academy of Military Medical Sciences, Beijing, 100850, China.",
+          "School of Information Science and Technology, Northeast Normal University, Changchun, 130117, China.",
+          "Changchun Veterinary Research Institute, Chinese Academy of Agricultural Sciences, State Key Laboratory of Pathogen and Biosecurity, Key Laboratory of Jilin Province for Zoonosis Prevention and Control, Changchun, 130122, China.",
+          "School of Information Science and Technology, Northeast Normal University, Changchun, 130117, China.",
+          "School of Information Science and Technology, Northeast Normal University, Changchun, 130117, China.",
+          "School of Information Science and Technology, Northeast Normal University, Changchun, 130117, China.",
+          "Department of Advanced & Interdisciplinary Biotechnology, Academy of Military Medical Sciences, Beijing, 100850, China.",
+          "Department of Advanced & Interdisciplinary Biotechnology, Academy of Military Medical Sciences, Beijing, 100850, China."
+        ],
+        "doi": "10.1093/bioinformatics/btag196",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioinformatics (Oxford, England)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42057285/",
+        "category": null,
+        "date": "2026-04-29",
+        "mesh_terms": [],
+        "source_id": "42057285",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "단백질 안정성 예측 기술은 의약품 개발 및 효소 공학에 활용 가능합니다. 성능 지표에서 우수한 결과를 보여줘 산업적 적용 가능성 높습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단일 돌연변이에 따른 단백질 열안정성(thermostability) 예측은 단백질 공학과 의학에서 핵심적인 단계이다. 기존 방법은 지역적(local-level) 또는 전역적(global-level) 특징을 추출하지만, 각각의 제약이 존재한다.",
+        "method": "MuFaDDG는 시퀀스 기반 방법으로 다중 스케일 특징 융합을 통합하여 단백질 안정성 변화(ΔΔG)를 개선하였다. 다중 스케일 특징을 결합해 예측 정확도를 높이는 기법을 개발하였다.",
+        "result": "S669 벤치마크에서 우수한 성능을 보였으며, CAGI5 챌린지 Frataxin 데이터셋에서 ACC 지표가 0.75, 0.88, 0.81을 기록하였다. Myoglobin 안정성 예측에서 THPLM, DDGemb 등 주요 방법들을 초과하였다.",
+        "significance": "FireProtDB 및 ProThermDB에 포함되지 않은 ThreeFoil 데이터셋에서도 높은 PCC와 ACC를 보여주며, 단백질 안정성 예측 분야에 혁신적인 기여를 제공한다. 소스 코드 및 데이터는 공개되어 있으며, 생명공학 및 의학 분야에 실용적 응용 가능성을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "The past, present and future of de novo protein design.",
+        "abstract": "With deep-learning-powered advances in protein design methods, there is an ongoing paradigm shift in protein engineering from random selection to intentional computational design methods. Here we describe the current state of de novo protein design. While there is still room for improvement in success rates and activities, the long-standing challenges of designing new protein structures, assemblies and protein binders are close to being solved. The key current questions in these areas are not how to design, but what to design, and open-source design methodology such as RFdiffusion and ProteinMPNN together with protein structure prediction tools enable biochemists and molecular biologists to broadly explore possible applications. There has also been considerable progress in the de novo design of small-molecule target binders, enzymes and multistate protein systems. Current challenges for methods development include design of catalysts for reactions with high energy barriers and, more generally, design of switches and nanomachines that integrate binding, conformational change and catalysis. Over the next five to ten years, we anticipate the design of sophisticated protein nanomachines and materials with functionality ranging far beyond that generated during natural evolution for a wide range of applications in medicine, technology and sustainability.",
+        "authors": [
+          "Yang W",
+          "Wang S",
+          "Lee GR",
+          "Zhang JZ",
+          "Courbet A",
+          "Juergens D",
+          "Wang X",
+          "Schlichthaerle T",
+          "Abedi M",
+          "Ragotte R",
+          "An L",
+          "Kalvet I",
+          "Pellock S",
+          "Mihaljevic L",
+          "Glasscock C",
+          "Pillai A",
+          "Broerman A",
+          "Ennist N",
+          "Haefner E",
+          "McNamara-Bordewick N",
+          "Haydon I",
+          "Stewart L",
+          "Bhardwaj G",
+          "Baker D"
+        ],
+        "affiliations": [
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Institute of Bio-Architecture and Bio-Interactions (IBABI), Shenzhen Medical Academy of Research and Translation (SMART), Shenzhen, China.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA.",
+          "Institute for Systems Genetics, NYU Langone Health, New York, NY, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA.",
+          "Department of Biological Sciences, Korea Advanced Institute of Science and Technology, Daejeon, Korea.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA.",
+          "Department of Bioengineering, University of California Los Angeles, Los Angeles, CA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Center for Drug Discovery, Northeastern University, Boston, MA, USA.",
+          "Department of Pharmaceutical Sciences, Northeastern University, Boston, MA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "TUM School of Natural Sciences, Technical University of Munich, Munich, Germany.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA.",
+          "Department of Bioengineering, University of California Los Angeles, Los Angeles, CA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of BioSciences, Rice University, Houston, TX, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Structural and Molecular Biochemistry, North Carolina State University, Raleigh, NC, USA.",
+          "Department of Physics, North Carolina State University, Raleigh, NC, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA.",
+          "Department of Medicinal Chemistry, University of Washington, Seattle, WA, USA.",
+          "Department of Biochemistry, University of Washington, Seattle, WA, USA. dabaker@uw.edu.",
+          "Institute for Protein Design, University of Washington, Seattle, WA, USA. dabaker@uw.edu.",
+          "Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA. dabaker@uw.edu."
+        ],
+        "doi": "10.1038/s41586-026-10328-7",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42056544/",
+        "category": "humans",
+        "date": "2026-04-01",
+        "mesh_terms": [
+          "Humans",
+          "Deep Learning",
+          "History, 21st Century",
+          "Models, Molecular",
+          "Protein Conformation",
+          "Protein Engineering",
+          "Proteins"
+        ],
+        "source_id": "42056544",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "protein_engineering",
+        "reason": "단백질 설계와 효소/나노머신 개발을 다루고 있어 의약품 개발과 화학 반응 촉매에 활용 가능합니다. 생물학적 기능을 확장한 신규 응용 분야를 제시하고 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "생물학적 설계 방법은 깊은 학습 기반 기술로 인해 무작위 선택에서 의도적 계산 설계로 전환되고 있다(thermostability). 기존의 단백질 구조 설계, 조립체 및 결합체 설계의 장기적 과제는 해결에 가까워졌다.",
+        "method": "RFdiffusion과 ProteinMPNN 등 오픈소스 설계 방법론이 결합하여 생물학적 응용 가능성을 넓히고 있다. 소분자 타겟 결합체, 효소 및 다상 단백질 시스템 설계에 대한 진척도 높아졌다.",
+        "result": "고에너지 장벽 반응 촉매 설계와 결합, 구조 변화, 촉매 통합이 가능한 스위치 및 나노머신 설계는 여전히 도전 과제이다. 5~10년 내 기능성 있는 단백질 나노머신 및 소재 설계가 기대된다.",
+        "significance": "의학, 기술, 지속 가능성 분야에 혁신적 응용을 제공할 수 있는 자연 진화를 넘어선 기능적 단백질 설계가 가능해지고 있다. 이는 생물학적 한계를 넘어서는 기술적 진보를 예고한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Exploring chromosomal position effects for predictable tuning of metabolic pathways in yeast.",
+        "abstract": "Precise control of gene expression is essential for optimizing metabolic pathways, yet current tuning strategies based on promoter strength or gene copy number remain largely empirical. Chromosomal position represents an additional regulatory axis, as identical gene expression cassettes can exhibit markedly different expression levels depending on their integration sites. Here, we systematically quantified the expression output of 98 intergenic regions (IGRs) in Saccharomyces cerevisiae using a fluorescent reporter and developed a predictive framework, Yeast IGR Prophet (YeIP), that infers expression potential directly from genomic context. By integrating multi-scale genomic features including transcriptional neighborhood, chromatin state, and chromosome topology, YeIP accurately predicted expression ranks and enabled the construction of a genome-wide atlas of expression hotspots and coldspots. Using this atlas, we rationally optimized a three-gene lycopene pathway solely through genomic integration site selection, achieving optimal transcriptional stoichiometry without modifying promoters or gene copy numbers. These results transform chromosomal integration sites from static genomic coordinates into programmable regulatory elements, establishing a predictive, data-driven framework for rational and scalable design of metabolic pathways in yeast.",
+        "authors": [
+          "Hong H",
+          "Cai Y",
+          "Wang J",
+          "Dong C",
+          "Zhang Q",
+          "Lian J"
+        ],
+        "affiliations": [
+          "Key Laboratory of Biomass Chemical Engineering of Ministry of Education & State Key Laboratory of Biobased Transportation Fuel Technology, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310027, China.",
+          "Zhejiang Key Laboratory of Intelligent Manufacturing for Functional Chemicals, ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University, Hangzhou 311200, China.",
+          "Key Laboratory of Biomass Chemical Engineering of Ministry of Education & State Key Laboratory of Biobased Transportation Fuel Technology, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310027, China.",
+          "Zhejiang Key Laboratory of Intelligent Manufacturing for Functional Chemicals, ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University, Hangzhou 311200, China.",
+          "Key Laboratory of Biomass Chemical Engineering of Ministry of Education & State Key Laboratory of Biobased Transportation Fuel Technology, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310027, China.",
+          "Zhejiang Key Laboratory of Intelligent Manufacturing for Functional Chemicals, ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University, Hangzhou 311200, China.",
+          "Key Laboratory of Biomass Chemical Engineering of Ministry of Education & State Key Laboratory of Biobased Transportation Fuel Technology, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310027, China.",
+          "Zhejiang Key Laboratory of Intelligent Manufacturing for Functional Chemicals, ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University, Hangzhou 311200, China.",
+          "Zhejiang Key Laboratory of Intelligent Manufacturing for Functional Chemicals, ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University, Hangzhou 311200, China.",
+          "ZJU-UIUC Institute, International Campus, Zhejiang University, Haining, Zhejiang 314400, China.",
+          "Key Laboratory of Biomass Chemical Engineering of Ministry of Education & State Key Laboratory of Biobased Transportation Fuel Technology, College of Chemical and Biological Engineering, Zhejiang University, Hangzhou 310027, China.",
+          "Zhejiang Key Laboratory of Intelligent Manufacturing for Functional Chemicals, ZJU-Hangzhou Global Scientific and Technological Innovation Center, Zhejiang University, Hangzhou 311200, China.",
+          "State Key Laboratory of Coordination Chemistry, School of Chemistry and Chemical Engineering, Nanjing University, Nanjing 210093, China."
+        ],
+        "doi": "10.1093/nar/gkag401",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nucleic acids research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42055549/",
+        "category": "chromosomes, fungal",
+        "date": "2026-04-23",
+        "mesh_terms": [
+          "Chromosomes, Fungal",
+          "Saccharomyces cerevisiae",
+          "Metabolic Engineering",
+          "DNA, Intergenic",
+          "Lycopene",
+          "Boosting Machine Learning Algorithms",
+          "Genome, Fungal",
+          "Models, Biological",
+          "Biosynthetic Pathways"
+        ],
+        "source_id": "42055549",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "발효 산업에서 대사 경로 최적화에 활용 가능하며, 리코펜 같은 천연 화합물 생산에 응용될 수 있음.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "유전자 발현 제어는 대사 경로 최적화에 필수적이지만, 현재는 프로모터 강도나 유전자 복제수 기반의 경험적 전략이 주로 사용되고 있다. 염색체 위치는 추가적인 조절 축으로 작용하며, 동일한 유전자 발현 캡슐이 통합 위치에 따라 발현 수준이 크게 달라진다.",
+        "method": "Saccharomyces cerevisiae에서 98개의 인트론 구간(IGRs)의 발현 출력을 형광 리포터를 통해 체계적으로 측정하고, 유전자 맥락에서 발현 잠재력을 추론하는 예측 프레임워크인 Yeast IGR Prophet(YeIP)를 개발하였다. 전사적 주변 환경, 염색질 상태, 염색체 구조 등을 통합해 모델을 구축하였다.",
+        "result": "YeIP는 발현 순위를 정확히 예측하고, 유전체 전체의 발현 핫스팟과 쿨스팟 지도를 생성하였다. 이 지도를 기반으로 통합 위치 선택만으로 세 유전자 라이코펜 경로를 합리적으로 최적화하여 전사적 스토이키오메트리를 달성하였다.",
+        "significance": "염색체 통합 위치를 정적 좌표에서 프로그래밍 가능한 조절 요소로 전환시켜, 대사 경로 설계에 대한 예측적 데이터 기반 프레임워크를 제시하였다. 이는 대사 경로의 합리적이고 확장 가능한 설계에 새로운 전략을 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Advances and opportunities for computational interrogation of plant proteins.",
+        "abstract": "Plants exhibit remarkable biochemical and physiological diversity, and are capable of adapting to a wide range of environmental conditions and stresses. This complexity makes them essential systems for understanding how life responds to a changing climate. Plant proteins are the molecular engines that carry out the reactions, signalling and regulation underlying these adaptive processes. However, studying plant proteins remains constrained by limited experimental throughput and the challenges of genetic manipulation, which vary widely across species. While synthetic biology and heterologous expression systems have expanded opportunities to investigate plant proteins, in planta studies are still limited by the availability and efficiency of genetic transformation methods. Computational approaches offer a powerful complement to experimental research by generating high-throughput, testable hypotheses that can accelerate discovery of plant protein function. In recent years, the power, versatility and ease of use of computational tools for protein research have expanded dramatically. These methods now enable detailed predictions of protein structure, dynamics and interactions, as well as insights into their evolutionary history and mechanistic function. In this review, we highlight the expanding computational toolkit for plant protein analysis, emphasising both established and emerging approaches. We summarise recent successes where computational methods have provided key biological insights into plant protein function and highlight the potential of such methods for scientific discovery in plant research. By integrating computation with experimentation, plant biology can overcome current limitations to studying plant proteins and move more rapidly toward a mechanistic understanding of plant processes, enabling advances in agriculture, ecology and climate resilience.",
+        "authors": [
+          "Bohling SM",
+          "Musharoff S",
+          "Gunn LH"
+        ],
+        "affiliations": [
+          "Plant Biology Section, Cornell University, Ithaca, New York, USA.",
+          "Department of Computational Biology, Cornell University, Ithaca, New York, USA.",
+          "Plant Biology Section, Cornell University, Ithaca, New York, USA."
+        ],
+        "doi": "10.1111/tpj.70899",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "The Plant journal : for cell and molecular biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42055456/",
+        "category": "plant proteins",
+        "date": "2026-05-01",
+        "mesh_terms": [
+          "Plant Proteins",
+          "Computational Biology",
+          "Plants"
+        ],
+        "source_id": "42055456",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "bioinformatics",
+        "reason": "식품 산업에서 작물 단백질 기능 이해가 농업 혁신에 기여할 수 있으며, 화학/의약 분야에서 단백질 구조 예측 기술이 신약 개발에 활용 가능합니다.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "식물은 생화학적 다양성과 환경 변화에 대한 적응 능력을 가진 생물체로, 기후 변화 이해에 핵심적 시스템이다. (thermal stability, genetic manipulation)",
+        "method": "컴퓨테이셔널 도구는 고속 실험 가설을 생성하며, 단백질 구조·동역학·상호작용을 예측할 수 있는 기능을 제공한다. (protein dynamics, evolutionary history)",
+        "result": "컴퓨테이셔널 방법은 식물 단백질 기능에 대한 핵심 생물학적 통찰을 제공하고, 농업·생태학적 발전을 가속화하고 있다. (agricultural advancement, ecological studies)",
+        "significance": "실험과 계산 통합을 통해 식물 단백질 연구의 제약을 극복하고, 기후 적응력 향상에 기여할 수 있다. (climate resilience, thermal stability)"
+      }
+    }
+  ],
+  "stats": {
+    "collected": 5,
+    "prefilter_passed": 5,
+    "llm_passed": 4,
+    "summarized": 4
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-04T22:31:44.269119+00:00"
+}

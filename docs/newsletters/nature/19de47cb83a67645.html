@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1777654790000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=6c7a1734c4&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Five inspiring science stories</a></h4>
+      <p>Species recovery, cancer-preventing vaccines and progress in developing renewable-energy sources are just some of the positive developments that have happened this year so far . Among them is artemether-lumefantrine, the first first-ever malaria treatment for babies and infants.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=96ea97e7f4&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Nations gather to end fossil fuels</a></h4>
+      <p>At the annual United Nations climate conference (COP30) last year, Colombia stepped up to host a new conference, alongside the Netherlands, to create a roadmap for countries to transition away from fossil fuels that doesn’t require consensus between all of the world’s countries, as the COP process does. At the conference, which just finished in Santa Marta, one of the first orders of business was to launch a panel of scientists that will advise willing countries to shift to clean energy. A separate group of researchers released a report listing 12 high-level actions that nations can take to support a fossil-fuel phaseout. “We’re not trying to replicate the [UN Intergovernmental Panel on Climate Change] here. We’re trying to give some practical policy insights” based on science, says climate-change economist Frank Jotzo, who was part of the editorial team.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=cfbbc77e56&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Menstruating organoid shows repair</a></h4>
+      <p>Researchers have developed organoids that can regenerate like the endometrium , the lining of the uterus that sheds and re-forms during the menstrual cycle. The team used the miniature 3D structures to simulate rarely seen repair processes, which could inform future therapeutic strategies for tissue renewal and wound healing.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=a90973b6a2&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Can B mesons break the Standard Model?</a></h4>
+      <p>Physicists know that their elegant theoretical description of forces and particles — the Standard Model — must be incomplete, because there are a host of phenomena it cannot explain. But observations continue to confirm the model’s accuracy with ever greater precision. Thank goodness an analysis from an experiment at the Large Hadron Collider at CERN, Europe’s particle physics laboratory, suggests at least one way out: the decay of particles called B meson. A new analysis found that the angle at which the final products emerge from the decay disagree with those predicted by the Standard Model. Evidence for this anomaly has been growing since 2015.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=523be02fdc&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Podcast: Immunity boost from breakfast</a></h4>
+      <p>Eating seems to prime immune cells for action, helping infection-fighting T cells proliferate more quickly in response to threats , finds research in mice and people. The study didn’t fine-tune what people ate to study their immune response, but that might be a good thing, suggests one of the authors, immunologist Greg Delgoffe. “Even across all 30 or so donors that we had tested, we always saw the postprandial effect,” he tells the Nature Podcast . “There may be some things that are better or not as good, but you&#39;re going to get this effect regardless.”</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
