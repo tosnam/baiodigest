@@ -1,0 +1,61 @@
+{
+  "date": "2026-05-06",
+  "entries": [
+    {
+      "paper": {
+        "title": "ARTEM server: an online tool for nucleic acid 3D motif searches, 3D structure superposition and structure-based alignment.",
+        "abstract": "ARTEM Server is an online platform for comparative analysis of nucleic acid 3D structures, combining two complementary superposition methods based on the ARTEM algorithm. The server provides access to searches for local tertiary motifs using the ARTEM tool, which identifies local isosteric structural arrangements without relying on sequence, interaction annotations, or backbone connectivity. It also offers global structure alignment and search modes via ARTEMIS, a recent extension of ARTEM that performs global sequence alignments based on rigid-body structural superposition. ARTEMIS supports both classical sequentially ordered superpositions and alignments involving sequence permutations, and can enumerate alternative suboptimal matches, enabling structural searches within large molecules or across databases. Benchmarks reported in the original publications demonstrate that ARTEM and ARTEMIS outperform other tools and are particularly effective at detecting 3D motif and 3D fold similarities across diverse backbone contexts, including cases that are challenging for sequence-ordered or annotation-dependent methods. ARTEM Server unifies these capabilities in a web interface, accepting PDB/mmCIF inputs, supporting multiple query and reference structures, and providing interactive 3D visualization and exportable alignment and motif-matching data. ARTEM Server offers a user-friendly web-based environment for exploration of global nucleic acid folds and local tertiary motifs. The web server is available at https://artemserver.genesilico.pl/.",
+        "authors": [
+          "Sordyl D",
+          "Cielesz J",
+          "Bohdan DR",
+          "Baulin EF",
+          "Bujnicki JM"
+        ],
+        "affiliations": [
+          "Laboratory of Bioinformatics and Protein Engineering, International Institute of Molecular and Cell Biology in Warsaw, ul. Ks. Trojdena 4, PL-02-109 Warsaw, Poland.",
+          "Laboratory of Bioinformatics and Protein Engineering, International Institute of Molecular and Cell Biology in Warsaw, ul. Ks. Trojdena 4, PL-02-109 Warsaw, Poland.",
+          "Laboratory of Bioinformatics and Protein Engineering, International Institute of Molecular and Cell Biology in Warsaw, ul. Ks. Trojdena 4, PL-02-109 Warsaw, Poland.",
+          "Laboratory of RNA Algorithms, IMol Polish Academy of Sciences, ul. M. Flisa 6, PL-02-247 Warsaw, Poland.",
+          "Laboratory of Bioinformatics and Protein Engineering, International Institute of Molecular and Cell Biology in Warsaw, ul. Ks. Trojdena 4, PL-02-109 Warsaw, Poland.",
+          "Laboratory of Bioinformatics and Protein Engineering, International Institute of Molecular and Cell Biology in Warsaw, ul. Ks. Trojdena 4, PL-02-109 Warsaw, Poland."
+        ],
+        "doi": "10.1093/nar/gkag428",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nucleic acids research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42083865/",
+        "category": null,
+        "date": "2026-05-05",
+        "mesh_terms": [],
+        "source_id": "42083865",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "bioinformatics",
+        "reason": "산업적 활용 가능성이 있어 관련 논문으로 판단했습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "nucleic acid 3D 구조 분석은 생물학적 기능 이해에 중요하지만, 기존 도구는 제한적인 성능을 보인다. 이에 ARTEM Server는 이를 해결하기 위한 온라인 플랫폼이다.",
+        "method": "ARTEM Server는 ARTEM 알고리즘 기반의 두 가지 상동화 방법을 결합하여 3D 구조 비교 분석을 제공한다. ARTEM은 시퀀스, 상호작용 어노테이션, 뼈대 연결에 의존하지 않고 로컬 3차 구조 모티프를 식별한다.",
+        "result": "benchmarks는 ARTEM과 ARTEMIS가 다른 도구보다 우수하며, 시퀀스 순서나 어노테이션 의존적인 방법이 어려운 다양한 뼈대 맥락에서 3D 모티프 및 폴드 유사성을 효과적으로 탐지한다. ARTEM Server는 PDB/mmCIF 입력을 지원하며, 여러 쿼리 및 참조 구조를 처리하고, 상호작용 3D 시각화 및 내보내기 가능한 정렬 및 모티프 매칭 데이터를 제공한다.",
+        "significance": "ARTEM Server는 사용자 친화적인 웹 기반 환경을 제공하여 전역 핵산 폴드 및 로컬 3차 모티프 탐색을 용이하게 한다. 웹 서버는 https://artemserver.genesilico.pl/에서 접근 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-05T22:16:33.576712+00:00"
+}
