@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-07 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-07</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42089695/" target="_blank" rel="noopener noreferrer">Limitations of the refolding pipeline for de novo protein design.</a></h3>
+    <p>Protein science : a publication of the Protein Society</p>
+    <p>Molecular Enzymology Group, University of Groningen, Groningen, The Netherlands.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>단백질 설계 평가 방법의 한계를 분석하여 산업용 설계 최적화에 기여 가능합니다. 실험적 성공 예측 지표 개선이 의약/화학 분야에 적용될 수 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>심층학습 기반 도구의 등장으로 계산적 단백질 설계가 대중화되었으며, 시퀀스 및 구조 설계가 분당 단위로 가능해짐(Computational protein design). 단백질 설계 캠페인에서 설계된 시퀀스가 목표 구조를 얼마나 잘 인코딩하는지 평가하기 위해 자가 일관성(refolding) 파이프라인을 주로 사용함(Self-consistency).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>다양한 모델과 구조 예측 설정이 refolding 메트릭에 미치는 영향을 체계적으로 평가함. 시퀀스-구조 호환성을 평가하는 데 사용되는 예측 지역 거리 차이 검사(predicted local distance difference test)와 자가 일관성 근접 거리 편차(self-consistency root-mean-square deviation)를 기준으로 분석함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>진화적 정보가 구조 예측 모델의 성능을 저하시켜 refolding 메트릭의 실험 성공률 예측 능력을 약화시키는 것으로 나타남. 특히 자연 시퀀스와 유사한 설계 시퀀스에 대해 이 현상이 두드러짐. 구조적 특성(예: 유연성)에 대한 민감도가 refolding 메트릭의 한계로 지적됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>refolding 기반 평가의 잠재적 한계를 경고하며, 메트릭의 신뢰성 있는 사용을 위한 보다 철저한 접근이 필요함. 단백질 설계 캠페인에서 실험적 성공률을 예측하는 데 있어 유의할 점을 강조함.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.70
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

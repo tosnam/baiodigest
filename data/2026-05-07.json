@@ -1,0 +1,66 @@
+{
+  "date": "2026-05-07",
+  "entries": [
+    {
+      "paper": {
+        "title": "Limitations of the refolding pipeline for de novo protein design.",
+        "abstract": "With the emergence of powerful deep learning-based tools, computational protein design has become a widely accessible technique. Nowadays, it is possible to perform both sequence and structure design in a matter of minutes, making the technology attractive to the broader scientific community. In protein design campaigns, one of the most common in silico strategies to evaluate how well a sequence encodes a target structure is the so-called self-consistency or refolding pipeline. In this approach, a structure prediction model is used to refold the designed sequence to probe whether it is compatible with the intended structure, and is evaluated via two metrics linked to experimental success: the confidence score of the predicted structure (predicted local distance difference test) and the self-consistency root-mean-square deviation, which measures how closely the refolded structure matches the target. In this work, we systematically evaluate how different models and structure prediction settings impact these metrics, and to what extent they can be used to reliably filter sequence design candidates. We show that evolutionary information can obscure folding models' abilities to assess sequence-structure compatibility, reducing the predictive performance of refolding metrics for experimental success, particularly for designs that share homology with natural sequences. We further highlight limitations of refolding metrics, including their sensitivity to structural features, such as flexibility. Our findings raise awareness of potential pitfalls in refolding-based evaluation and support more informed use of these metrics in protein design campaigns.",
+        "authors": [
+          "Korbeld KT",
+          "Viliuga V",
+          "Fürst MJLJ"
+        ],
+        "affiliations": [
+          "Molecular Enzymology Group, University of Groningen, Groningen, The Netherlands.",
+          "Molecular Enzymology Group, University of Groningen, Groningen, The Netherlands.",
+          "Department of Biochemistry and Biophysics and Science for Life Laboratory, Stockholm University, Stockholm, Sweden.",
+          "Biomolecular Mechanics, Max Planck Institute for Polymer Research, Mainz, Germany.",
+          "Molecular Enzymology Group, University of Groningen, Groningen, The Netherlands."
+        ],
+        "doi": "10.1002/pro.70613",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Protein science : a publication of the Protein Society",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42089695/",
+        "category": "proteins",
+        "date": "2026-06-01",
+        "mesh_terms": [
+          "Proteins",
+          "Protein Folding",
+          "Models, Molecular",
+          "Protein Refolding",
+          "Protein Engineering",
+          "Protein Conformation",
+          "Computational Biology"
+        ],
+        "source_id": "42089695",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "protein_engineering",
+        "reason": "단백질 설계 평가 방법의 한계를 분석하여 산업용 설계 최적화에 기여 가능합니다. 실험적 성공 예측 지표 개선이 의약/화학 분야에 적용될 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "심층학습 기반 도구의 등장으로 계산적 단백질 설계가 대중화되었으며, 시퀀스 및 구조 설계가 분당 단위로 가능해짐(Computational protein design). 단백질 설계 캠페인에서 설계된 시퀀스가 목표 구조를 얼마나 잘 인코딩하는지 평가하기 위해 자가 일관성(refolding) 파이프라인을 주로 사용함(Self-consistency).",
+        "method": "다양한 모델과 구조 예측 설정이 refolding 메트릭에 미치는 영향을 체계적으로 평가함. 시퀀스-구조 호환성을 평가하는 데 사용되는 예측 지역 거리 차이 검사(predicted local distance difference test)와 자가 일관성 근접 거리 편차(self-consistency root-mean-square deviation)를 기준으로 분석함.",
+        "result": "진화적 정보가 구조 예측 모델의 성능을 저하시켜 refolding 메트릭의 실험 성공률 예측 능력을 약화시키는 것으로 나타남. 특히 자연 시퀀스와 유사한 설계 시퀀스에 대해 이 현상이 두드러짐. 구조적 특성(예: 유연성)에 대한 민감도가 refolding 메트릭의 한계로 지적됨.",
+        "significance": "refolding 기반 평가의 잠재적 한계를 경고하며, 메트릭의 신뢰성 있는 사용을 위한 보다 철저한 접근이 필요함. 단백질 설계 캠페인에서 실험적 성공률을 예측하는 데 있어 유의할 점을 강조함."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-06T22:25:55.877887+00:00"
+}
