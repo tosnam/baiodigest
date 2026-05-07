@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing: Cancer | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing: Cancer</h2>
+  <p>1778166247000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=6a12578120&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">‘Enriched’ CAR T for blood cancer</a></h4>
+      <p>어려운 치료가 필요한 혈액암 환자 중 약 절반 이상이 장수 CAR T 세포(줄기세포 특성 보유)를 투여해 임상시험에서 완치에 이르렀습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=577538996c&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Drug in high demand gets fast-tracked</a></h4>
+      <p>미 식품의약국은 기존 치료에 실패한 만성 간질성 난소 낭종 환자에게 실험용 약물 daraxonrasib의 조기 접근을 허가했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=e37c13274a&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">AI detects early signs of pancreatic cancer</a></h4>
+      <p>AI는 82% 정확도로 1년 이상 전 CT 검사에서 난소암의 초기 징후를 감지할 수 있는 능력을 입증했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=68d96efe98&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Aspirin for Lynch Sydnrome</a></h4>
+      <p>유전적 질환인 릭 시드롬 환자에게 아스피린이 암 예방 효과를 가질 수 있다는 가능성을 탐구했습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=ed6cd58852&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Afterglow and exosomes</a></h4>
+      <p>지속적인 조명 없이도 암 세포를 감지할 수 있는 &#39;아이어글로우&#39; 기술 개발로 생물학적 신호 잡음 감소를 이끌었습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=cf55ebf648&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Access Nature and 54 other Nature journals</a></h4>
+      <p>네이처 저널과 54개 다른 과학 저널의 전자 접근 권한을 제공하는 서비스가 소개되었습니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

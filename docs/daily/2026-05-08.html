@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-08 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-08</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42092150/" target="_blank" rel="noopener noreferrer">Non-invasive profiling of the tumour microenvironment with spatial ecotypes.</a></h3>
+    <p>Nature</p>
+    <p>Chan Zuckerberg Biohub - San Francisco, San Francisco, CA, USA. amnewman@stanford.edu.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>암 치료에 대한 분석 기법 개발로 의약품 개발에 활용 가능하며, 머신러닝 기반 생물정보학적 접근법을 제공합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>종양마이크로환경(TME)의 다세포 프로그램이 암 발병 및 치료 반응에 중요한 역할을 하지만 임상적으로 식별과 프로파일링이 어려움(1-3).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>머신러닝 프레임워크를 통해 공간적으로 의존적인 세포 상태와 다세포 생태계를 분석하는 공간 생태형(SEs) 방법론 제안.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>다양한 인체 암종 데이터를 통합해 9개의 SEs를 식별, 각각 고유의 생물학적 특성과 임상 결과 연관성 발견. cfDNA에서 SEs 수준이 면역요법 반응과 유의미하게 연관됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>TME 조직 단위 규명 및 고체/액체 TME 프로파일링 플랫폼 개발로 위험도 분류와 치료 개인화에 잠재적 응용 가능성 제시.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.70
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42092140/" target="_blank" rel="noopener noreferrer">Expanding the human proteome with microproteins and peptideins.</a></h3>
+    <p>Nature</p>
+    <p>Oncode Institute, Utrecht, The Netherlands. s.a.a.vanheesch@prinsesmaximacentrum.nl.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>이 논문은 인간 단백질의 이해를 돕는 ncORF 및 펩티딘 분석을 다루고 있어 의약 산업에서 약물 표적 탐색에 기여할 수 있습니다. GENCODE와 PeptideAtlas를 지원하는 연구 도구는 생물의학 연구를 위한 기반이 됩니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>인간 유전체의 단백질 코딩 구조를 이해하는 것이 인간 건강 연구의 기초이지만, 이전 분석에서 놓친 요소가 여전히 미해결 문제다. 비정상적인 오픈 리딩 프레임(ncORF)의 번역이 인간 세포 및 질병 상태에서 관찰되며, 이는 생물학적 의미를 가진다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>TransCODE 컨소시엄과 협력해 ncORF의 단백질 수준 증거를 분석하고, &#39;peptidein&#39;이라는 새로운 개념을 도입했다. ORF 상대 분지 길이(ORBL) 분석을 통해 진화적 제약을 평가했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>7,264개 ncORF 중 약 25%가 대규모 프로테오믹스 실험(95,520건)에서 검출 가능한 펩타이드를 생성했다. OLMALINC 장비이RNA 유래 peptidein의 필수 세포 기능을 규명했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>GENCODE와 PeptideAtlas에 의해 지원되는 공개 도구를 개발해 인간 단백질체의 미해결 부분에 대한 의학적 탐구를 진전시켰다. peptidein의 진화적 제약이 기능적 중요성을 나타낸다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.70
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
