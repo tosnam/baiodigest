@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing</h2>
+  <p>1778257730000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=f16b7e0af1&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">David Attenborough at 100: in photos</a></h4>
+      <p>One of the world&#39;s best-known science communicators, David Attenborough , has presented pioneering documentaries, authored books and served as the face (and distinctive voice) of the natural world for millions of people. “His programmes have not only defined science and natural-history broadcasting, but they have also changed how we see our planet and our place within it,” says the BBC’s Jack Bootle.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=046bcd3345&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Be more Attenborough</a></h4>
+      <p>In a 2021 speech to the United Nations COP26 climate meeting, Attenborough told delegates: “In my lifetime I’ve witnessed a terrible decline. In yours, you could and should witness a wonderful recovery.” As we mark his centenary, the most fitting legacy of the next 100 years would be for humanity to achieve that necessary recovery, argues a Nature editorial .</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=36243c0686&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Fabricated citations are growing</a></h4>
+      <p>An audit of 2.5 million biomedical-science papers spanning 3 years has identified thousands that contain bogus references that can’t be traced to real publications — and the rate is increasing . The findings are “conservative underestimates”, says AI researcher and study co-author Maxim Topaz. “We’re scratching the tip of the iceberg.”</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=210a5f5134&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Five best science books this week</a></h4>
+      <p>Andrew Robinson’s pick of the top five science books to read this week includes an illustrated history of the first atomic test — known as Trinity — in New Mexico, and a brutally intimate memoir by David Sussillo of how his childhood marred with violence and neglect contributed to his career as a neuroscientist.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=13f95e00aa&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Visualize whirled peas</a></h4>
+      <p>Peas tend to be affordable and widely available — not to mention tasty and healthy, writes nutrition-education researcher and pea-vangelist Rachel Woods. She argues that the vegetable should come out of the side-dish shadows because of its high levels of protein, fibre and nutrients such as iron, and the ease with which it can be added to our diets. (Kids, if you’re reading this, I told you so.)</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=142d2eac1a&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Anaesthetized brains can process podcasts</a></h4>
+      <p>Researchers played podcasts to people under anaesthesia and found that a deep brain structure called the hippocampus still seemed to process language. “Much to our surprise,” neuroscientist Sameer Sheth tells the Nature Podcast , the results indicated “a very sophisticated form of processing of the natural speech that they were listening to”. Sheth and his colleagues used The Moth podcast, but he promises that “next time we will definitely use the Nature Podcast ”.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
