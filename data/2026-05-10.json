@@ -1,0 +1,87 @@
+{
+  "date": "2026-05-10",
+  "entries": [
+    {
+      "paper": {
+        "title": "Machine Learning-Based Non-Destructive Prediction of Juice Sac Granulation in Guanxi Honey Pomelo.",
+        "abstract": "The juice sac granulation of citrus fruits is a biological disorder that commonly occurs during the stages of growth, mature, and post-harvest, which severely affects the quality and reduces consumer acceptance of fruits. To explore the correlation between granulation and both external morphological characteristics and internal quality characteristics, 11 external and internal quality characteristics of Guanxi honey pomelo were collected and systematically analyzed by principal component analysis and linear regression. Then seven external quality characteristics and one critical characteristics, GR% were applied in machine learning modeling. The results indicated that several characteristics such as single fruit weight, single fruit volume, longitudinal diameter, and transverse diameter showed positive correlations with juice sac granulation rate (GR%), and were subsequently incorporated into classification model development. Among the five models evaluated, support vector machine demonstrated superior performance with a precision and recall rate of 100.00% and 100.00%, respectively, verifying its favorable accuracy and robustness. This research combined traditional statistical approaches with modern computational techniques, offering a reliable screening solution for juice sac granulation degree of Guanxi honey pomelo, which provided potential applicability in citrus processing industries and a theoretical foundation for non-destructive quality assessment.",
+        "authors": [
+          "Zheng S",
+          "Pan H",
+          "Liu Y",
+          "Ni H",
+          "Cai H",
+          "Hu Y",
+          "Chen F",
+          "Liu J",
+          "Li Z",
+          "He F"
+        ],
+        "affiliations": [
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "Research Center of Food and Biotechnology of Xiamen City, Xiamen, China.",
+          "Fujian Provincial Key Laboratory of Food Microbiology and Enzyme Engineering, Xiamen, China.",
+          "Department of Physics, School of Science, Jimei University, Xiamen, China.",
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "Research Center of Food and Biotechnology of Xiamen City, Xiamen, China.",
+          "Fujian Provincial Key Laboratory of Food Microbiology and Enzyme Engineering, Xiamen, China.",
+          "Department of Food, Nutrition and Packaging Sciences, Clemson University, Clemson, USA.",
+          "Beijing Key Laboratory of the Innovative Development of Functional Staple and Nutritional Intervention for Chronic Disease, Key Laboratory of Diabetes FSMP, State Administration for Market Regulation, China National Research Institute of Food and Fermentation Industries, Beijing, China.",
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "Research Center of Food and Biotechnology of Xiamen City, Xiamen, China.",
+          "Fujian Provincial Key Laboratory of Food Microbiology and Enzyme Engineering, Xiamen, China.",
+          "College of Ocean Food and Biological Engineering, Jimei University, Xiamen, China.",
+          "Research Center of Food and Biotechnology of Xiamen City, Xiamen, China.",
+          "Fujian Provincial Key Laboratory of Food Microbiology and Enzyme Engineering, Xiamen, China."
+        ],
+        "doi": "10.1111/1750-3841.71058",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of food science",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42104571/",
+        "category": "citrus",
+        "date": "2026-05-01",
+        "mesh_terms": [
+          "Citrus",
+          "Machine Learning",
+          "Fruit",
+          "Fruit and Vegetable Juices",
+          "Principal Component Analysis",
+          "Food Handling",
+          "Honey",
+          "Quality Control"
+        ],
+        "source_id": "42104571",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "other",
+        "reason": "식품 산업에서 과일 품질 평가에 활용 가능하며, 비파괴적 검사 기술로 적용 가능성이 높습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "인산과 열안정성(thermostability)은 과일 성장, 성숙, 수확 후 단계에서 흔히 발생하는 생물학적 이상으로, 품질에 심각한 영향을 미치고 소비자 수용도를 낮춥니다.",
+        "method": "11개의 외부 및 내부 품질 특성(Guangxi 황금 포멜로)을 주성분 분석 및 선형 회귀로 시스템적으로 분석하고, 7개 외부 특성과 GR%를 기계 학습 모델링에 적용했습니다.",
+        "result": "단과 무게, 단과 부피, 종 longitudinal diameter, 횡 diameter 등이 GR%와 양의 상관관계를 보였고, 지원 벡터 머신(SVM)은 100.00% 정확도와 100.00% 재현율을 달성했습니다.",
+        "significance": "통계적 접근법과 현대 계산 기법을 결합해 과일의 비파괴적 품질 평가 기법을 제시하며, 시스템적 처리 산업에 적용 가능성을 제시했습니다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-09T22:03:00.372949+00:00"
+}
