@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-11 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-11</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42105954/" target="_blank" rel="noopener noreferrer">Astaxanthin biomanufacturing under hierarchical constraints: Integrating synthetic biology and artificial intelligence for scalable production.</a></h3>
+    <p>Biotechnology advances</p>
+    <p>Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China. Electronic address: daweili@jnu.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>아스타잔틴은 식품 및 의약품 산업에서 고부가가치 성분으로 활용되며, 논문은 대규모 생산을 위한 대사 경로 최적화 프레임워크를 제시함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>아스타잔틴은 고가의 케토카로티노이드로 산업적 중요성이 증가하고 있지만, 내재된 생물학적 복잡성으로 인해 확장 가능한 생물제조가 제한되고 있다(thermostability, flux coupling). 이는 분자적 불안정성, 경로 수준의 흐름 경쟁, 시스템 수준의 세포 성장과 스트레스 유도 합성 간 트레이드오프로 인해 비선형 반응과 지속적인 최적화 플랫폼을 초래한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>AI 기반 프레임워크는 생물학적 계층 구조에 맞춰 분자, 경로, 시스템 수준에서 병렬적으로 작동한다(molecular-level, pathway-level, system-level). 분자 수준에서는 단백질 언어 모델과 시퀀스-구조 인식 기법을 활용해 효소 시퀀스 공간 탐색을 효율화한다. 경로 수준에서는 그래프 기반 학습 모델을 통해 네트워크 구조와 흐름 경쟁을 분석한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>이 프레임워크는 AI를 일반적인 예측 도구에서 구조화된 방법론으로 전환시켜, 표형 관찰, 경로 수준 추론, 분자 설계를 연동한다. 이는 복잡한 설계 공간의 조직화를 개선하고, 경험적 시도착오에 대한 의존도를 감소시킨다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>제안된 개념적 프레임워크는 조건부, 자원 집약적, 세포 생리학과 밀접하게 연결된 다른 이차 대사산물의 생합성에도 확장 가능하다. 이는 합성 생물학과 인공지능의 통합을 통한 스케일러블 생산 시스템 구축에 기여한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: metabolic engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42105763/" target="_blank" rel="noopener noreferrer">AI-predicted spatial transcriptomics unlocks breast cancer biomarkers from pathology.</a></h3>
+    <p>Cell</p>
+    <p>Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA; Translational Research Institute and Jim and Eleanor Randall Department of Surgery, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA. Electronic address: eytan.ruppin@cshs.org.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>의약 산업에서 암 치료 반응 예측 및 표적 치료 개발에 활용 가능합니다. 생물정보학 기반 AI 모델이 대규모 생물표지자 탐색에 기여할 수 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>공간 전사체 분석(stereotactic transcriptomics, ST)은 종양 동질성 이해에 혁신을 가져왔으나, 높은 비용으로 대규모 바이오마커 탐색에 제한이 있었다. 이에 따라 저비용 대체 방법이 필요했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Path2Space라는 딥러닝 모델을 개발해 히스토파스로지 슬라이드에서 공간 유전자 발현을 예측하였다. 이 모델은 대규모 유방암 ST 데이터를 기반으로 훈련되었으며, 21개 기존 방법보다 우수한 성능을 보였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>976개 유방암 TCGA 데이터를 분석해 세 가지 공간적으로 정의된 유방암 하위군을 식별하고, 생존 결과 차이를 발견하였다. 저비용 공간 TME 지도는 화학요법 및 트라스투주맙 반응 예측에 더 정확했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>Path2Space는 분자 검사 대체로 스케일 가능하고 빠르며 저비용이다. 대규모 환자군 분석을 통해 치료 바이오마커 탐색과 종양 생물학적 통찰을 가능하게 하며, 다양한 암 적용 가능성을 제시한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.85
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42105760/" target="_blank" rel="noopener noreferrer">Streptomyces enrichment in roots during drought is uncoupled from plant benefit and is driven by host suppression of iron uptake and immunity.</a></h3>
+    <p>Cell</p>
+    <p>Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA. Electronic address: dangl@email.unc.edu.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식물 균근 상호작용 이해에 기여하며, 농업에서 균근 활용 가능성 있음. 그러나 직접적인 산업 적용 기술은 제시되지 않음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>건조는 식물 뿌리 미생물군집을 재구성하지만, 이 현상의 메커니즘과 결과는 불확실하다(unclear). Streptomyces의 뿌리 집락 증가가 식물의 이점과 분리되어 발생한다는 사실이 밝혀졌다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>유전자 및 생리학적 조작을 통해 호스트의 철 흡수 및 면역 경로 억제가 Streptomyces 집락에 필수적임을 입증하였다. 160 mya 전후의 단일자리-이식물 분기점에서 건조 유도 철 흡수 억제가 보존됨을 확인하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>일부 Streptomyces 균주가 건조 시 식물 성장 촉진 및 철 흡수 회복을 유도하지만, 이 효과는 뿌리 집락 증가와 무관하다. 균주 간 상호작용(intra-Streptomyces antagonism)이 기능적 결과를 결정한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>두 단계 모델 제안으로 건조 시 호스트 경로 억제가 Streptomyces 집락을 유도하고, 균주 내 동적 변화가 기능적 결과를 조절함을 밝혔다. &#39;식물의 구원 요청(cry for help)&#39; 가설을 재정의하였다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.70
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,259 @@
+{
+  "date": "2026-05-11",
+  "entries": [
+    {
+      "paper": {
+        "title": "Astaxanthin biomanufacturing under hierarchical constraints: Integrating synthetic biology and artificial intelligence for scalable production.",
+        "abstract": "Astaxanthin is a high-value ketocarotenoid of growing industrial importance; however, its scalable biomanufacturing is constrained by inherent biological complexity. Production performance is governed by hierarchical constraints, including molecular instability, pathway-level flux competition, and system-level trade-offs between cellular growth and stress-induced synthesis. These tightly coupled constraints lead to nonlinear responses and persistent optimization plateaus. These challenges cannot be effectively resolved through localized genetic or process interventions.To address this challenge, this review reconceptualizes astaxanthin biosynthesis as a problem of hierarchical constraint management and proposes a hierarchy-aligned, AI-assisted framework. Within this framework, artificial intelligence operates through distinct pathways across biological scales. At the molecular level, protein language models and sequence-structure-aware approaches enable efficient exploration of enzyme sequence space, prioritizing variants that improve catalytic performance and stability. At the pathway level, graph-based learning models capture network topology, flux coupling, and branch competition, allowing identification of distributed metabolic bottlenecks and coordinated intervention targets. At the system level, convolutional neural networks and multimodal learning approaches quantify phenotypic states and integrate multi-omics data to characterize growth-production trade-offs and cellular state transitions. Large language models further function as an integrative layer, linking model outputs, experimental knowledge, and design constraints to support decision-making and hypothesis generation.By explicitly aligning computational abstractions with biological hierarchy, this framework transforms AI from a generic predictive tool into a structured methodology .It links phenotypic observation, pathway-level reasoning, and molecular design. This approach improves the organization of complex design spaces, reduces reliance on empirical trial-and-error, and supports rational, multiscale optimization. The conceptual framework is extendable to other secondary metabolites whose biosynthesis is conditional, resource-intensive, and tightly coupled to cellular physiology.",
+        "authors": [
+          "Zhang JZ",
+          "Nie ZY",
+          "Lau Y",
+          "Huang H",
+          "Wu SW",
+          "Chen YT",
+          "Huang D",
+          "Liang BY",
+          "Zou LG",
+          "Balamurugan S",
+          "Yang WD",
+          "Li HY",
+          "Li DW"
+        ],
+        "affiliations": [
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China; Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Department of Biotechnology, School of Bioengineering, SRM Institute of Science and Technology, Kattankulathur 603203, India.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China.",
+          "Key Laboratory of Eutrophication and Red Tide Prevention of Guangdong Higher Education Institutes, College of Life Science and Technology, Jinan University, Guangzhou 510632, China. Electronic address: daweili@jnu.edu.cn."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108915",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42105954/",
+        "category": null,
+        "date": "2026-05-07",
+        "mesh_terms": [],
+        "source_id": "42105954",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "아스타잔틴은 식품 및 의약품 산업에서 고부가가치 성분으로 활용되며, 논문은 대규모 생산을 위한 대사 경로 최적화 프레임워크를 제시함.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "아스타잔틴은 고가의 케토카로티노이드로 산업적 중요성이 증가하고 있지만, 내재된 생물학적 복잡성으로 인해 확장 가능한 생물제조가 제한되고 있다(thermostability, flux coupling). 이는 분자적 불안정성, 경로 수준의 흐름 경쟁, 시스템 수준의 세포 성장과 스트레스 유도 합성 간 트레이드오프로 인해 비선형 반응과 지속적인 최적화 플랫폼을 초래한다.",
+        "method": "AI 기반 프레임워크는 생물학적 계층 구조에 맞춰 분자, 경로, 시스템 수준에서 병렬적으로 작동한다(molecular-level, pathway-level, system-level). 분자 수준에서는 단백질 언어 모델과 시퀀스-구조 인식 기법을 활용해 효소 시퀀스 공간 탐색을 효율화한다. 경로 수준에서는 그래프 기반 학습 모델을 통해 네트워크 구조와 흐름 경쟁을 분석한다.",
+        "result": "이 프레임워크는 AI를 일반적인 예측 도구에서 구조화된 방법론으로 전환시켜, 표형 관찰, 경로 수준 추론, 분자 설계를 연동한다. 이는 복잡한 설계 공간의 조직화를 개선하고, 경험적 시도착오에 대한 의존도를 감소시킨다.",
+        "significance": "제안된 개념적 프레임워크는 조건부, 자원 집약적, 세포 생리학과 밀접하게 연결된 다른 이차 대사산물의 생합성에도 확장 가능하다. 이는 합성 생물학과 인공지능의 통합을 통한 스케일러블 생산 시스템 구축에 기여한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "AI-predicted spatial transcriptomics unlocks breast cancer biomarkers from pathology.",
+        "abstract": "Spatial transcriptomics (ST) assays are transforming our understanding of tumor heterogeneity, but their high cost limits their application in large-scale biomarker discovery. Here, we present \"Path2Space,\" a deep-learning model that predicts spatial gene expression directly from histopathology slides. Trained on extensive breast cancer ST data, Path2Space robustly predicts the spatial expression of thousands of genes, outperforming 21 established methods. Charting the tumor microenvironment (TME) of 976 breast cancer TCGA (The Cancer Genome Atlas) tumors, it accurately infers cell-type abundances and identifies three spatially defined breast cancer subgroups with distinct survival outcomes. Notably, the derived low-cost spatial TME landscapes enable more accurate predictions of patient response to chemotherapy and trastuzumab compared with costly conventional bulk-sequencing-based biomarkers. Path2Space thus offers a scalable, fast, and cost-effective alternative to molecular assays. It opens avenues for large cohort treatment biomarker discovery and translationally relevant insights into tumor biology, with potential applicability across many cancer indications.",
+        "authors": [
+          "Shulman ED",
+          "Campagnolo EM",
+          "Lodha R",
+          "Chung Y",
+          "Stemmer A",
+          "Cantore T",
+          "Ru B",
+          "Chang TG",
+          "Biswas S",
+          "Dhruba SR",
+          "Patiyal S",
+          "Patkar S",
+          "Wang A",
+          "Barman RK",
+          "Wang C",
+          "Paul R",
+          "Kalisetty SC",
+          "Hu T",
+          "Nasrallah MP",
+          "Patrick E",
+          "Yang J",
+          "Yuan Y",
+          "Sargsyan K",
+          "Plotkin A",
+          "Rajagopal PS",
+          "Sammut SJ",
+          "Lipkowitz S",
+          "Jiang P",
+          "Caldas C",
+          "Knott SRV",
+          "Aldape K",
+          "Lee JS",
+          "Hoang DT",
+          "Ruppin E"
+        ],
+        "affiliations": [
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA. Electronic address: eldad.shulman@nih.gov.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA; Center for Bioinformatics and Computational Biology, University of Maryland, College Park, College Park, MD 20742, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Department of Artificial Intelligence, Sungkyunkwan University, Suwon 16419, South Korea.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA; Faculty of Medical and Health Sciences, Tel Aviv University, Tel Aviv 6997801, Israel.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Artificial Intelligence Resource, Molecular Imaging Branch, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "School of Computer Science, The University of Sydney, Sydney, NSW 2006, Australia.",
+          "Office of the Director, Center for Cancer Research, National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, USA.",
+          "Office of the Director, Center for Cancer Research, National Cancer Institute, National Institutes of Health, Bethesda, MD 20892, USA.",
+          "Department of Anatomic Pathology and Laboratory Medicine, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA.",
+          "Department of Anatomic Pathology and Laboratory Medicine, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA.",
+          "School of Mathematics and Statistics, University of Sydney, Sydney, NSW 2006, Australia.",
+          "School of Mathematics and Statistics, University of Sydney, Sydney, NSW 2006, Australia.",
+          "Department of Medicine, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA.",
+          "OncoBiobank Shared Resource, Cancer Center, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA; IBD Institute, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA; International Biobanking and Education, Medical University of Graz, Graz 8036, Austria.",
+          "Department of Pathology, University of Maryland Medical Center, Baltimore, MD 21201, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA; Women's Malignancies Branch, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Breast Cancer Now Toby Robins Research Centre, Institute of Cancer Research, London SW3 6JB, UK; Royal Marsden Hospital NHS Foundation Trust, London SW3 6JJ, UK.",
+          "Women's Malignancies Branch, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Lautenberg Center for Immunology and Cancer Research, Institute for Medical Research Israel-Canada, Faculty of Medicine, Hebrew University of Jerusalem, Jerusalem 9112001, Israel; Department of Clinical Biochemistry and Institute of Metabolic Science, University of Cambridge, Cambridge CB2 0QQ, UK.",
+          "Department of Biomedical Sciences, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA; Samuel Oschin Cancer Center, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA.",
+          "Laboratory of Pathology, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Department of Artificial Intelligence, Sungkyunkwan University, Suwon 16419, South Korea; Department of Precision Medicine, School of Medicine, Sungkyunkwan University, Suwon 16419, South Korea; Department of Digital Health, Samsung Advanced Institute for Health Sciences and Technology, Sungkyunkwan University, Seoul 06351, South Korea.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA.",
+          "Cancer Data Science Laboratory, Center for Cancer Research, National Cancer Institute, Bethesda, MD 20892, USA; Translational Research Institute and Jim and Eleanor Randall Department of Surgery, Cedars-Sinai Medical Center, Los Angeles, CA 90048, USA. Electronic address: eytan.ruppin@cshs.org."
+        ],
+        "doi": "10.1016/j.cell.2026.04.023",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42105763/",
+        "category": null,
+        "date": "2026-05-08",
+        "mesh_terms": [],
+        "source_id": "42105763",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.85,
+        "category": "bioinformatics",
+        "reason": "의약 산업에서 암 치료 반응 예측 및 표적 치료 개발에 활용 가능합니다. 생물정보학 기반 AI 모델이 대규모 생물표지자 탐색에 기여할 수 있습니다.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "공간 전사체 분석(stereotactic transcriptomics, ST)은 종양 동질성 이해에 혁신을 가져왔으나, 높은 비용으로 대규모 바이오마커 탐색에 제한이 있었다. 이에 따라 저비용 대체 방법이 필요했다.",
+        "method": "Path2Space라는 딥러닝 모델을 개발해 히스토파스로지 슬라이드에서 공간 유전자 발현을 예측하였다. 이 모델은 대규모 유방암 ST 데이터를 기반으로 훈련되었으며, 21개 기존 방법보다 우수한 성능을 보였다.",
+        "result": "976개 유방암 TCGA 데이터를 분석해 세 가지 공간적으로 정의된 유방암 하위군을 식별하고, 생존 결과 차이를 발견하였다. 저비용 공간 TME 지도는 화학요법 및 트라스투주맙 반응 예측에 더 정확했다.",
+        "significance": "Path2Space는 분자 검사 대체로 스케일 가능하고 빠르며 저비용이다. 대규모 환자군 분석을 통해 치료 바이오마커 탐색과 종양 생물학적 통찰을 가능하게 하며, 다양한 암 적용 가능성을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Streptomyces enrichment in roots during drought is uncoupled from plant benefit and is driven by host suppression of iron uptake and immunity.",
+        "abstract": "Drought reshapes the plant root microbiota, yet the mechanistic drivers and consequences of this observation remain unclear. We discovered that suppression of host immunity and iron homeostasis is required for Streptomyces enrichment in roots during drought across diverse soils. Genetic and physiological manipulation of these host pathways confirmed their requirement in modulating Streptomyces root enrichment. Drought-induced suppression of iron uptake was conserved across the ∼160 mya monocot-eudicot divergence. Some Streptomyces strains enhanced plant growth and rescued iron uptake under drought. These benefits were uncoupled from Streptomyces root enrichment. They were instead shaped by intra-Streptomyces antagonism. We propose a two-step model: drought-driven downregulation of host iron and immune pathways enriches Streptomyces, while intra-genus dynamics fine-tune strain-level assembly and functional outcomes. Our data refine the idea that Streptomyces are enriched in roots during drought in response to a plant \"cry for help\" and consequently contribute to the alleviation of this abiotic stress.",
+        "authors": [
+          "Fitzpatrick CR",
+          "Allen Smith R",
+          "Hige J",
+          "Law TF",
+          "Russ D",
+          "Ajayi OE",
+          "Eida AA",
+          "Jacob P",
+          "Jowers M",
+          "Kumar N",
+          "Lai CTU",
+          "Anguita-Maeso M",
+          "Peterson SB",
+          "Saha C",
+          "Skelly T",
+          "Zhao Q",
+          "Zhou W",
+          "Grant SR",
+          "Mougous JD",
+          "Jones CD",
+          "Dangl JL"
+        ],
+        "affiliations": [
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Bioinformatics and Analytics Research Collaborative (BARC), University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Microbiology, University of Washington, Seattle, WA, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "High Throughput Sequencing Facility, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Microbiology, University of Washington, Seattle, WA, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA.",
+          "Department of Microbiology, University of Washington, Seattle, WA, USA; Howard Hughes Medical Institute, University of Washington, Seattle, WA, USA; Microbial Interactions and Microbiome Center, University of Washington, Seattle, WA, USA.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Integrative Program for Biological and Genome Sciences, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Department of Genetics, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA. Electronic address: cdjones@email.unc.edu.",
+          "Department of Biology, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA; Howard Hughes Medical Institute, University of North Carolina at Chapel Hill, Chapel Hill, NC, USA. Electronic address: dangl@email.unc.edu."
+        ],
+        "doi": "10.1016/j.cell.2026.04.027",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42105760/",
+        "category": null,
+        "date": "2026-05-08",
+        "mesh_terms": [],
+        "source_id": "42105760",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "other",
+        "reason": "식물 균근 상호작용 이해에 기여하며, 농업에서 균근 활용 가능성 있음. 그러나 직접적인 산업 적용 기술은 제시되지 않음.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "건조는 식물 뿌리 미생물군집을 재구성하지만, 이 현상의 메커니즘과 결과는 불확실하다(unclear). Streptomyces의 뿌리 집락 증가가 식물의 이점과 분리되어 발생한다는 사실이 밝혀졌다.",
+        "method": "유전자 및 생리학적 조작을 통해 호스트의 철 흡수 및 면역 경로 억제가 Streptomyces 집락에 필수적임을 입증하였다. 160 mya 전후의 단일자리-이식물 분기점에서 건조 유도 철 흡수 억제가 보존됨을 확인하였다.",
+        "result": "일부 Streptomyces 균주가 건조 시 식물 성장 촉진 및 철 흡수 회복을 유도하지만, 이 효과는 뿌리 집락 증가와 무관하다. 균주 간 상호작용(intra-Streptomyces antagonism)이 기능적 결과를 결정한다.",
+        "significance": "두 단계 모델 제안으로 건조 시 호스트 경로 억제가 Streptomyces 집락을 유도하고, 균주 내 동적 변화가 기능적 결과를 조절함을 밝혔다. '식물의 구원 요청(cry for help)' 가설을 재정의하였다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 4,
+    "prefilter_passed": 4,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-10T22:05:04.385764+00:00"
+}
