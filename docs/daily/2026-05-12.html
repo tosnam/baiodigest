@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-12 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-12</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42109174/" target="_blank" rel="noopener noreferrer">COMMBAT: a web platform for exploring expression control of biosynthetic gene clusters.</a></h3>
+    <p>Nucleic acids research</p>
+    <p>InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>BGC 조절 메커니즘 분석은 의약품 및 화학물질 개발에 활용 가능하며, COMMBAT 플랫폼은 대규모 데이터를 기반으로 효율적인 탐색을 지원합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>박테리아 유전체는 구조적으로 다양한 천연물 생성을 담당하는 생합성 유전자 클러스터(BGCs)를 포함하고 있지만, 특정 BGCs를 조절하는 전사 인자(TFs)를 예측하는 것은 어렵다. TF 결합 부위(TFBSs)는 일반적인 모티프와 차이가 있어 표준 모티프 스캐닝 방법의 효과가 제한된다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>COMMBAT은 모티프 매칭을 구형적 맥락과 유전자 기능 정보와 결합해 기능적 TFBSs를 예측한다. 4개의 공개 저장소에서 추출한 4000개 이상의 TF 위치 가중 행렬과 MIBiG 및 antiSMASH DB의 40만개 이상의 BGC 데이터를 통합한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>COMMBAT 웹 플랫폼은 주어진 TF가 조절할 수 있는 BGCs를 식별하거나 특정 BGCs를 조절하는 후보 TF를 예측할 수 있다. 대규모 데이터를 기반으로 자연산 탐색의 문화 조건 및 유전자 공학 전략을 우선순위화하는 자원을 제공한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>COMMBAT은 의약품, 농업, 생물공학 분야의 응용을 위한 천연물 발굴을 위한 규제 입력 예측을 지원하며, 유전자 클러스터의 조절 메커니즘 탐구에 기여한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42107196/" target="_blank" rel="noopener noreferrer">Engineering an ancestral Baeyer-Villiger monooxygenase for efficient oxidative C-C bond cleavage of long-chain keto-fatty acids.</a></h3>
+    <p>Enzyme and microbial technology</p>
+    <p>Department of Food Science and Biotechnology, Ewha Womans University, Seoul 03760, Republic of Korea. Electronic address: jbpark06@ewha.ac.kr.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>비료산화 효소의 구조 안정화로 화학/의약 산업용 생물촉매 효율 향상 가능. 산업용 대량 생산 시스템에 적용 가능한 고성능 효소 개발 성과.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>열안정성(thermostability)이 낮은 바이에어-빌리거 모노옥시제이스(BVMOs)는 산화적 열적 스트레스에 민감하여 효소 활성 저하가 발생한다. 이로 인해 전통적 효소 기반 생물변환 성능 향상이 어려웠다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>대규모 서열 마이닝(sequence mining)과 클러스터링, 조상 서열 재구성(ASR)을 통해 조상 효소를 생성하였다. 분자 역학 시뮬레이션 기반 루프 공학(loop engineering)을 통해 고활성 변이체를 개발하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>조상 효소 기반 생물체는 올레산으로부터 9-(비탄올소)비탄산을 26 mM까지 생성하며, 생물변환율 87%를 기록하였다. 이는 기존 효소(PpBVMO) 기반 생물촉매보다 13배 높은 에스터 농도를 보였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 BVMO의 구조적 안정성 향상과 전체 세포 생물변환 성능 개선을 위한 기초로, 산화적 C-C 결합 분열 반응의 효율성 향상에 기여할 수 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: ancestral sequence reconstruction
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

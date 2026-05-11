@@ -1,0 +1,120 @@
+{
+  "date": "2026-05-12",
+  "entries": [
+    {
+      "paper": {
+        "title": "COMMBAT: a web platform for exploring expression control of biosynthetic gene clusters.",
+        "abstract": "Bacterial genomes contain thousands of biosynthetic gene clusters (BGCs) responsible for the production of structurally diverse natural products with applications in medicine, agriculture, and biotechnology. Expression of these BGCs is tightly regulated by transcription factors (TFs) responding to environmental cues, yet predicting which TFs regulate specific BGCs remains challenging. In particular, TF binding sites (TFBSs) within BGCs often diverge from canonical motifs, limiting the effectiveness of standard motif-scanning approaches and hindering systematic exploration of BGC regulation. Here, we present COMMBAT (COnditions for Microbial Metabolite Biosynthesis Activated Transcription), a framework for large-scale prediction of TF-BGC regulatory interactions across bacterial genomes. COMMBAT integrates motif matching with genomic context and gene function information to predict functional TFBSs. The COMMBAT web platform (https://www.commbat.uliege.be) enables users to (i) identify BGCs potentially regulated by a given TF, and (ii) predict candidate TFs that control a specific BGC. With over 4000 TF position weight matrices from four public repositories and more than 400 000 BGCs from MIBiG and antiSMASH DB, COMMBAT provides a scalable resource to predict regulatory inputs and guide/prioritize culture conditions and genetic engineering strategies for natural product discovery.",
+        "authors": [
+          "Ribeiro Monteiro S",
+          "Rigolet A",
+          "Jeunehomme C",
+          "Gathot J",
+          "Kerdel Y",
+          "Henry M",
+          "Augustijn HE",
+          "Medema MH",
+          "van Wezel GP",
+          "Rigali S"
+        ],
+        "affiliations": [
+          "InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium.",
+          "Molecular Biotechnology, Institute of Biology, Leiden University, Sylviusweg 72, 2333 BE Leiden, The Netherlands.",
+          "InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium.",
+          "InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium.",
+          "InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium.",
+          "InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium.",
+          "Molecular Biotechnology, Institute of Biology, Leiden University, Sylviusweg 72, 2333 BE Leiden, The Netherlands.",
+          "Bioinformatics Group, Wageningen University & Research, Droevendaalsesteeg 1, 6708 PB Wageningen, The Netherlands.",
+          "Bioinformatics Group, Wageningen University & Research, Droevendaalsesteeg 1, 6708 PB Wageningen, The Netherlands.",
+          "Molecular Biotechnology, Institute of Biology, Leiden University, Sylviusweg 72, 2333 BE Leiden, The Netherlands.",
+          "InBioS-Center for Protein Engineering, University of Liège, Institut de Chimie, Liège B-4000, Belgium."
+        ],
+        "doi": "10.1093/nar/gkag416",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nucleic acids research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42109174/",
+        "category": null,
+        "date": "2026-05-11",
+        "mesh_terms": [],
+        "source_id": "42109174",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "bioinformatics",
+        "reason": "BGC 조절 메커니즘 분석은 의약품 및 화학물질 개발에 활용 가능하며, COMMBAT 플랫폼은 대규모 데이터를 기반으로 효율적인 탐색을 지원합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "박테리아 유전체는 구조적으로 다양한 천연물 생성을 담당하는 생합성 유전자 클러스터(BGCs)를 포함하고 있지만, 특정 BGCs를 조절하는 전사 인자(TFs)를 예측하는 것은 어렵다. TF 결합 부위(TFBSs)는 일반적인 모티프와 차이가 있어 표준 모티프 스캐닝 방법의 효과가 제한된다.",
+        "method": "COMMBAT은 모티프 매칭을 구형적 맥락과 유전자 기능 정보와 결합해 기능적 TFBSs를 예측한다. 4개의 공개 저장소에서 추출한 4000개 이상의 TF 위치 가중 행렬과 MIBiG 및 antiSMASH DB의 40만개 이상의 BGC 데이터를 통합한다.",
+        "result": "COMMBAT 웹 플랫폼은 주어진 TF가 조절할 수 있는 BGCs를 식별하거나 특정 BGCs를 조절하는 후보 TF를 예측할 수 있다. 대규모 데이터를 기반으로 자연산 탐색의 문화 조건 및 유전자 공학 전략을 우선순위화하는 자원을 제공한다.",
+        "significance": "COMMBAT은 의약품, 농업, 생물공학 분야의 응용을 위한 천연물 발굴을 위한 규제 입력 예측을 지원하며, 유전자 클러스터의 조절 메커니즘 탐구에 기여한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Engineering an ancestral Baeyer-Villiger monooxygenase for efficient oxidative C-C bond cleavage of long-chain keto-fatty acids.",
+        "abstract": "Baeyer-Villiger monooxygenases (BVMOs) catalyze regiospecific oxygenation of ketones into esters and lactones by using molecular oxygen and NADPH. However, the enzymes are often deactivated by oxidative and thermal stresses. Therefore, this study has focused on enhancement of structural stability of the BVMOs to improve whole-cell biotransformation performance. BVMOs, which catalyze oxidative C-C bond cleavage of keto-fatty acids (e.g., 10-ketostearic acid produced from oleic acid) into the corresponding esters, were used as model enzymes. Large scale sequence mining, clustering, and ancestral sequence reconstruction (ASR) led to the generation of an ancestral enzyme, which showed greater whole-cell biotransformation performance with high regioselectivity toward normal ester product than the extant enzymes (e.g., BVMO from Pseudomonas putida KT2440). Furthermore, molecular dynamics simulation-based loop engineering of the ancestral enzyme enabled the generation of highly active variants. One of the loop-engineered enzymes allowed the recombinant Escherichia coli cells coexpressing a fatty acid double bond hydratase and secondary alcohol dehydrogenase to produce 9-(nonanoyloxy)nonanoic acid to 26 mM with a bioconversion of 87% from oleic acid. The ester concentration was 13-fold greater than the extant enzyme-based whole-cell biocatalysts (e.g., PpBVMO). Therefore, this study will contribute to engineering of the BVMOs to improve the structural stability and whole-cell biotransformation performance.",
+        "authors": [
+          "Hwang SY",
+          "Kang M",
+          "Lee J",
+          "Kwon YU",
+          "Oh DK",
+          "Park JB"
+        ],
+        "affiliations": [
+          "Department of Food Science and Biotechnology, Ewha Womans University, Seoul 03760, Republic of Korea.",
+          "Department of Food Science and Biotechnology, Ewha Womans University, Seoul 03760, Republic of Korea.",
+          "Department of Food Science and Biotechnology, Ewha Womans University, Seoul 03760, Republic of Korea.",
+          "Department of Chemistry and Nano Science, Ewha Womans University, Seoul 03760, Republic of Korea.",
+          "Department of Bioscience and Biotechnology, Konkuk University, Seoul 05029, Republic of Korea.",
+          "Department of Food Science and Biotechnology, Ewha Womans University, Seoul 03760, Republic of Korea. Electronic address: jbpark06@ewha.ac.kr."
+        ],
+        "doi": "10.1016/j.enzmictec.2026.110900",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Enzyme and microbial technology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42107196/",
+        "category": null,
+        "date": "2026-05-06",
+        "mesh_terms": [],
+        "source_id": "42107196",
+        "matched_query_names": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "비료산화 효소의 구조 안정화로 화학/의약 산업용 생물촉매 효율 향상 가능. 산업용 대량 생산 시스템에 적용 가능한 고성능 효소 개발 성과.",
+        "matched_keywords": [
+          "ancestral sequence reconstruction"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)이 낮은 바이에어-빌리거 모노옥시제이스(BVMOs)는 산화적 열적 스트레스에 민감하여 효소 활성 저하가 발생한다. 이로 인해 전통적 효소 기반 생물변환 성능 향상이 어려웠다.",
+        "method": "대규모 서열 마이닝(sequence mining)과 클러스터링, 조상 서열 재구성(ASR)을 통해 조상 효소를 생성하였다. 분자 역학 시뮬레이션 기반 루프 공학(loop engineering)을 통해 고활성 변이체를 개발하였다.",
+        "result": "조상 효소 기반 생물체는 올레산으로부터 9-(비탄올소)비탄산을 26 mM까지 생성하며, 생물변환율 87%를 기록하였다. 이는 기존 효소(PpBVMO) 기반 생물촉매보다 13배 높은 에스터 농도를 보였다.",
+        "significance": "이 연구는 BVMO의 구조적 안정성 향상과 전체 세포 생물변환 성능 개선을 위한 기초로, 산화적 C-C 결합 분열 반응의 효율성 향상에 기여할 수 있다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 3,
+    "prefilter_passed": 3,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-11T22:12:02.685016+00:00"
+}
