@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-13 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-13</h2>
+  <p>총 1편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42114628/" target="_blank" rel="noopener noreferrer">Enzymatic plastic depolymerization: From lab promise to circular reality.</a></h3>
+    <p>Biotechnology advances</p>
+    <p>State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China; State Key Laboratory of Biocontrol, Guangdong Provincial Key Laboratory of Plant Resources, School of Life Sciences, Sun Yat-sen University, Guangzhou 510275, China. Electronic address: liwenjun3@mail.sysu.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>에니즈 기반 플라스틱 분해 기술은 화학 산업의 순환 경제 구현에 기여할 수 있으며, AI/ML 기반 효소 설계 기술이 산업적 적용 가능성에 영향을 미칩니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>세계적 플라스틱 생산량이 증가하고 있지만, 대부분의 재활용 전략은 진정한 순환 경제를 실현하지 못하고 있음(.circularity). 효소 기반 플라스틱 분해는 확장 가능한 솔루션으로 널리 홍보되고 있으나, 실제 적용 가능성은 미해결된 문제임(thermostability).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>이 리뷰는 실험실에서 성공한 효소 접근법이 혼합된 후소비자 플라스틱 폐기물에 적용 시 실패하는 이유를 비판적으로 분석함. 다종의 폴리머 및 공정을 통해 효소 분해가 폴리머 화학이 아닌 효소 가용성에 제한받는다는 사실을 규명함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>수분해 가능한 고분자 구조는 진정한 분해와 닫힌 루프 단량체 회수를 가능하게 하지만, 주요 폴리올레핀은 효소 공격에 저항하며 표면 산화에 그치는 것으로 나타남. 많은 진보 주장은 간접 측정이나 순수 기질에 의존함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>최적화된 효소 재활용 기술은 수분해 가능한 플라스틱의 재활용 비용이 $1.1-1.8/kg 수준에 도달할 수 있음. 그러나 폴리올레핀은 통합적 전처리 및 하이브리드 화학-효소 전략이 필요함. 2030-2040년 전망에서 효소 재활용은 제한적이지만 실현 가능한 순환 경제 기여 요소로 자리 잡을 것임.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

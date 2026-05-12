@@ -1,0 +1,66 @@
+{
+  "date": "2026-05-13",
+  "entries": [
+    {
+      "paper": {
+        "title": "Enzymatic plastic depolymerization: From lab promise to circular reality.",
+        "abstract": "Global plastic production continues to rise, yet most recycling strategies fail to deliver true circularity. Enzymatic plastic depolymerization has been widely promoted as a scalable solution. However, its real-world potential remains poorly defined. This review critically examines why many enzymatic approaches succeed in the laboratory yet break down when applied to heterogeneous post-consumer plastic waste. Evidence across polymers and processes shows that enzymatic depolymerization is fundamentally constrained by polymer chemistry rather than enzyme availability. Plastics with hydrolyzable backbones allow true depolymerization and closed-loop monomer recovery. In contrast, dominant polyolefins largely resist enzymatic attack, with reported effects limited to surface oxidation rather than verified chain scission. Many claimed advances rely on indirect measurements, pristine substrates, or abiotic pretreatments, overstating relevance to real waste streams. While enzyme engineering and artificial intelligence/machine learning (AI/ML)-guided design have significantly enhanced performance on hydrolyzable plastics, these gains frequently entail trade-offs in stability, specificity, and cost, and fail to address key limitations from solid-polymer interfaces and additives. Techno-economic studies indicate that optimized enzymatic recycling of hydrolyzable plastics could reach costs of $1.1-1.8/kg under favorable conditions. However, polyolefins require integrated pretreatment and hybrid chemo-enzymatic strategies for meaningful valorization. The review concludes with a constraint-aware 2030-2040 roadmap, positioning enzymatic recycling as a realistic but inherently limited contributor to a circular plastics economy.",
+        "authors": [
+          "Mohamad OAA",
+          "Elsamahy T",
+          "Liu YH",
+          "Li X",
+          "Li S",
+          "Rajivgandhi G",
+          "Zhang Y",
+          "Li WJ"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China; Department of Biological, Marine Sciences and Environmental Agriculture, Institute for Post Graduate Environmental Studies, Arish University, Al-Arish 45511, Egypt; Department of Environmental Protection, Faculty of Environmental Agricultural Sciences, Arish University, Al-Arish 45511, Egypt. Electronic address: osama@aru.edu.eg.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China. Electronic address: zhangym@ms.xjb.ac.cn.",
+          "State Key Laboratory of Ecological Safety and Sustainable Development in Arid Lands, Xinjiang Institute of Ecology and Geography, Chinese Academy of Sciences, Urumqi 830011, China; State Key Laboratory of Biocontrol, Guangdong Provincial Key Laboratory of Plant Resources, School of Life Sciences, Sun Yat-sen University, Guangzhou 510275, China. Electronic address: liwenjun3@mail.sysu.edu.cn."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108919",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42114628/",
+        "category": null,
+        "date": "2026-05-09",
+        "mesh_terms": [],
+        "source_id": "42114628",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "에니즈 기반 플라스틱 분해 기술은 화학 산업의 순환 경제 구현에 기여할 수 있으며, AI/ML 기반 효소 설계 기술이 산업적 적용 가능성에 영향을 미칩니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "세계적 플라스틱 생산량이 증가하고 있지만, 대부분의 재활용 전략은 진정한 순환 경제를 실현하지 못하고 있음(.circularity). 효소 기반 플라스틱 분해는 확장 가능한 솔루션으로 널리 홍보되고 있으나, 실제 적용 가능성은 미해결된 문제임(thermostability).",
+        "method": "이 리뷰는 실험실에서 성공한 효소 접근법이 혼합된 후소비자 플라스틱 폐기물에 적용 시 실패하는 이유를 비판적으로 분석함. 다종의 폴리머 및 공정을 통해 효소 분해가 폴리머 화학이 아닌 효소 가용성에 제한받는다는 사실을 규명함.",
+        "result": "수분해 가능한 고분자 구조는 진정한 분해와 닫힌 루프 단량체 회수를 가능하게 하지만, 주요 폴리올레핀은 효소 공격에 저항하며 표면 산화에 그치는 것으로 나타남. 많은 진보 주장은 간접 측정이나 순수 기질에 의존함.",
+        "significance": "최적화된 효소 재활용 기술은 수분해 가능한 플라스틱의 재활용 비용이 $1.1-1.8/kg 수준에 도달할 수 있음. 그러나 폴리올레핀은 통합적 전처리 및 하이브리드 화학-효소 전략이 필요함. 2030-2040년 전망에서 효소 재활용은 제한적이지만 실현 가능한 순환 경제 기여 요소로 자리 잡을 것임."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-12T22:14:16.728706+00:00"
+}
