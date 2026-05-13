@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Nature Briefing: Translational Research | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Nature newsletter</p>
+  <h2>Nature Briefing: Translational Research</h2>
+  <p>1778684534000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=3791685dc2&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Why the hantavirus vaccine remains elusive</a></h4>
+      <p>하안트바이러스 백신 개발이 어려운 이유를 조사한 기사로, 30년 이상 연구를 진행한 바이러스학자 조에이 호퍼의 연구와 현재 크루즈선에서 발생한 유태리아 바이러스 관련 상황을 다룹니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=20dcde7c85&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">A first for a new class of protein degraders</a></h4>
+      <p>첫 번째로 승인된 타겟팅 프로테올리시스-타겟팅 치머(PROTAC) 단백질 분해제가 FDA 승인을 받으며, 25년 만에 의약품 개발 분야의 혁신을 이끌고 있습니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=d083619c0d&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">‘Enriched’ CAR-T cells for blood cancer</a></h4>
+      <p>혈액암 치료에 &#39;풍부화된&#39; CAR-T 세포가 임상 시험에서 반응률을 높이는 데 성공했으며, 줄기세포 같은 특성을 지닌 면역세포의 역할을 강조합니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=168d0aacbe&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Where is pharma’s focus?</a></h4>
+      <p>제약 산업이 최근 몇십 년간 신경학과 심혈관 질환에서 종양학 및 면역학 분야로 집중되고 있으며, 이는 치료법 개발의 어려움 때문으로 분석됩니다.</p>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://nature.us17.list-manage.com/track/click?u=2c6057c528fdc6f73fa196d9d&amp;id=10791c3fa5&amp;e=d7548a2599" target="_blank" rel="noopener noreferrer">Make drug repurposing the new normal</a></h4>
+      <p>기존 약물의 새로운 용도를 찾는 재사용 전략이 급성 질환 치료에 효과적이지만, 현재까지 혁신적인 결과를 내지 못하고 있다는 논의가 제기됩니다.</p>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

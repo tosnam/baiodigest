@@ -1,0 +1,211 @@
+{
+  "date": "2026-05-14",
+  "entries": [
+    {
+      "paper": {
+        "title": "Directed evolution of enzymes at the crossroads of tradition and innovation.",
+        "abstract": "Directed evolution has become a central methodology for engineering proteins with improved or entirely new functions, enabling applications across biotechnology, medicine, and synthetic chemistry. By iteratively coupling genetic diversification with screening or selection, directed evolution allows functional optimization even when detailed structural or mechanistic knowledge is unavailable. While display-based selection platforms have enabled the efficient evolution of binders from extremely large libraries, enzyme evolution relies primarily on quantitative screening strategies that preserve genotype-phenotype linkage, often through compartmentalization. This review focuses primarily on enzyme directed evolution, using binder evolution as a comparative reference point to highlight key methodological differences and parallel advances. Major technological advances-including in vitro emulsions, droplet microfluidics, ultrahigh-throughput sorting, genetically encoded biosensors, and alternative detection modalities-have dramatically expanded screening capacity and analytical resolution. We also discuss why stability remains a central constraint on evolvability, why assay design continues to limit translational relevance, and how failures such as surrogate-substrate bias, droplet leakage, tracking errors, and overfitted machine-learning models can misdirect campaigns. By integrating classical strategies with emerging continuous and data-driven approaches, enzyme directed evolution is moving toward more predictive, automated, and industrially translatable workflows.",
+        "authors": [
+          "Tomkova M",
+          "Mirossay A",
+          "Sedlak E"
+        ],
+        "affiliations": [
+          "Center for Interdisciplinary Biosciences, P. J. Šafárik University in Košice, Košice, Slovakia.",
+          "Department of Pharmacology, Faculty of Medicine, P. J. Šafárik University in Košice, Košice, Slovakia.",
+          "Center for Interdisciplinary Biosciences, P. J. Šafárik University in Košice, Košice, Slovakia.",
+          "Department of Biochemistry, Faculty of Science, P. J. Šafárik University in Košice, Košice, Slovakia."
+        ],
+        "doi": "10.1002/2211-5463.70271",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "FEBS open bio",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42124363/",
+        "category": null,
+        "date": "2026-05-12",
+        "mesh_terms": [],
+        "source_id": "42124363",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "단백질 공학 기법을 통해 효소 기능 개선이 가능하며, 식품/화학/의약 분야에서 효소 활용이 확대될 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "지시적 진화(directed evolution)는 단백질의 기능을 개선하거나 완전히 새로운 기능을 부여하는 핵심 방법론으로, 생명공학, 의학, 합성화학 등 다양한 분야에 응용되고 있다. 구조적 또는 메커니즘적 지식이 부족한 상황에서도 기능 최적화가 가능하다.",
+        "method": "유전자 다양화(genetic diversification)와 스크리닝(screening) 또는 선택(selection)을 반복적으로 결합해 기능을 최적화한다. 효소 진화는 주로 정량적 스크리닝 전략을 사용하며, 유전자형-형질형 연계를 유지하기 위해 분획화(compartmentalization)를 통해 수행한다.",
+        "result": "초고속 스크리닝 기술(ultrahigh-throughput sorting), 유전적 인코딩 생물 센서(genetically encoded biosensors) 등 기술 발전으로 스크리닝 용량과 분석 정밀도가 크게 확대되었다. 그러나 안정성(thermostability)과 검사 설계가 진화 가능성과 이전 가능성에 제약을 가한다.",
+        "significance": "전통적 전략과 데이터 기반 접근법을 통합해 예측 가능하고 자동화된 산업용 워크플로우로 진화하고 있다. 실패 요인(예: 대체 기질 편향, 드롭스 누출)은 실험 방향을 틀 수 있으므로 주의가 필요하다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Microbial biosynthesis of stilbenoids: A comprehensive review.",
+        "abstract": "Stilbenoids represent a valuable class of plant polyphenols with significant pharmacological activities, such as anticancer, anti-inflammatory, and antioxidant effects, leading to a growing market demand. Traditional plant extraction or chemical synthesis faces challenges including low yield, process complexity, and environmental concerns. Microbial biosynthesis has consequently emerged as a transformative and eco-friendly alternative. This review provides a comprehensive analysis of recent advances in microbial stilbenoid production, including metabolic engineering strategies, pathway optimization, enzyme engineering, and host chassis development. The production milestones and current synthetic capabilities for key stilbenes (e.g., resveratrol, pterostilbene) are comprehensively summarized. Moreover, fundamental bottlenecks were discussed, particularly the catalytic limitations of key stilbene synthases, metabolic flux imbalances, and the lack of efficient enzymatic toolkits for post-modifications. Finally, we propose that the integration of emerging technologies, such as artificial intelligence-assisted enzyme design and systematical metabolic engineering will play a pivotal role in constructing robust microbial cell factories for the efficient and sustainable production of diverse stilbenoids.",
+        "authors": [
+          "Sun S",
+          "Zhang A",
+          "Zhang R",
+          "Liu X"
+        ],
+        "affiliations": [
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, National \"111\" Center for Cellular Regulation and Molecular Pharmaceutics, Hubei University of Technology, Wuhan 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, National \"111\" Center for Cellular Regulation and Molecular Pharmaceutics, Hubei University of Technology, Wuhan 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, National \"111\" Center for Cellular Regulation and Molecular Pharmaceutics, Hubei University of Technology, Wuhan 430068, China.",
+          "Cooperative Innovation Center of Industrial Fermentation (Ministry of Education & Hubei Province), Key Laboratory of Fermentation Engineering (Ministry of Education), Hubei Key Laboratory of Industrial Microbiology, National \"111\" Center for Cellular Regulation and Molecular Pharmaceutics, Hubei University of Technology, Wuhan 430068, China; State key Laboratory of Non-food Biomass Energy Technology, Nanning 530007, China. Electronic address: liuxiaonan@hbut.edu.cn."
+        ],
+        "doi": "10.1016/j.biotechadv.2026.108922",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Biotechnology advances",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42119751/",
+        "category": null,
+        "date": "2026-05-11",
+        "mesh_terms": [],
+        "source_id": "42119751",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI",
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "metabolic_engineering",
+        "reason": "식품/의약 산업에서 항암·항산화 성분인 스틸베노이드 생산에 활용 가능. 미생물 대사 경로 최적화 기술이 산업적 생산에 직접적 기여.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI",
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "스틸베노이드는 항암(anticancer), 항염증(anti-inflammatory), 항산화(antioxidant) 효과가 있는 식물 폴리페놀로, 시장 수요가 증가하고 있다. 전통적인 식물 추출 또는 화학 합성 방법은 수율이 낮고, 공정이 복잡하며, 환경 문제가 있다.",
+        "method": "이 리뷰는 미생물 기반 스틸베노이드 생산의 최근 성과를 분석하며, 대사 공학 전략, 경로 최적화, 효소 공학, 호스트 채스 개발을 중심으로 다룬다. 주요 스틸베노이드(예: 리서베라트롤, 페로스티리브레인)의 생산 성과와 제한 요소를 종합적으로 요약한다.",
+        "result": "핵심 효소인 스틸베노이드 합성효소의 촉매 한계, 대사 흐름 불균형, 후처리 효소 키트 부족 등의 기초적 장벽이 제시되었다. AI 기반 효소 설계와 체계적 대사 공학 통합이 생산 효율화에 기여할 수 있음을 제안한다.",
+        "significance": "미생물 세포 공장 구축을 위한 혁신 기술 통합이 지속 가능한 스틸베노이드 생산에 핵심적 역할을 할 것이며, 환경 친화적 대체 방안으로 주목받고 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Generative Protein Design: From Deep Learning Algorithms to Translational Applications.",
+        "abstract": "Deep learning has transformed protein design from a field long dominated by explicit energy-function optimization into one dominated by probabilistic generative modeling. In this review, we summarize the protein representation algorithmic basis for this transition, from sequence-centered encodings to geometric graph representations and, more recently, SE(3)-equivariant structural manifolds that directly respect three-dimensional symmetry. We classify current approaches into three methodological paradigms according to how sequence and structure are related during design: sequence-structure decoupled design, hybrid approaches, and sequence-structure co-design. For decoupled workflows, we discuss hallucination, backbone generation, and backbone-conditioned sequence design. For hybrid approaches, we examine integrated two-stage architectures and predictor-driven iterative co-refinement. For co-design, we review explicit joint generative formulations in which sequence and structure are treated as a coupled design state throughout generation. Additionally, we summarize evaluation principles for assessing the design results, such as physical validity, folding consistency, and design coverage, and then introduce some important applications in several fields. Taken together, these developments indicate that generative protein design is making progress from structure generation toward the programmable engineering of complex biological function.",
+        "authors": [
+          "Luo S",
+          "Zhou B"
+        ],
+        "affiliations": [
+          "College of Aulin, Northeast Forestry University, Harbin 150040, China.",
+          "College of Life Science, Northeast Forestry University, Harbin 150040, China."
+        ],
+        "doi": "10.3390/ijms27093917",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "International journal of molecular sciences",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42123499/",
+        "category": "deep learning",
+        "date": "2026-04-28",
+        "mesh_terms": [
+          "Deep Learning",
+          "Proteins",
+          "Protein Engineering",
+          "Algorithms",
+          "Protein Conformation",
+          "Models, Molecular",
+          "Humans",
+          "Protein Folding"
+        ],
+        "source_id": "42123499",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "protein_engineering",
+        "reason": "단백질 설계의 생성적 접근법은 의약품 개발 및 효소 설계에 활용 가능하며, 생명공학적 응용 분야에 기여할 수 있습니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "딥러닝(Deep Learning)은 단백질 설계를 전통적인 에너지 함수 최적화에서 확률적 생성 모델링으로 전환시켰다(thermostability). 이 논문은 단백질 표현 알고리즘의 전환 기반을 다룬다.",
+        "method": "설계 과정에서 서열과 구조의 관계를 기준으로 3가지 방법론(Paradigm)으로 분류한다: 분리 설계, 하이브리드 접근법, 공동 설계. 각 접근법의 기술적 차이를 설명한다.",
+        "result": "설계 결과 평가 기준으로 물리적 유효성, 접힘 일관성, 설계 범위를 제시한다. 복잡한 생물학적 기능 프로그래밍으로의 전환 가능성을 보여준다.",
+        "significance": "생성적 단백질 설계가 구조 생성에서 벗어나 실제 응용 분야로 확장되고 있음을 강조한다. 생명공학적 혁신을 위한 기초를 제공한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Deciphering lipid biosynthesis and regulation in Isatis species through combined metabolomic and transcriptomic analysis.",
+        "abstract": "Lipids play multifaceted roles beyond structure and storage, yet their diversity within medicinally important genera like Isatis is poorly characterized. This study conducted the integrated lipidomic and transcriptomic analysis of three Isatis species, namely, I. oblongata, I. tinctoria, and I. indigotica. Lipidomics identified 324 metabolites, with isoprene lipids being most abundant. Analysis revealed a conserved core lipidome (301 metabolites) alongside species-unique compounds. Statistical and machine-learning screening of 215 differential lipids identified six key metabolites with strong species-specific patterns, serving as potential chemical markers. Transcriptomics uncovered thousands of differentially expressed genes, including a conserved core set. Integrated analysis established a plausible transcriptional basis for the gradient accumulation of LysoPE 18:1, linked to differential expression of PLA2 and LPEAT genes. This multi-omics resource elucidates the regulatory basis of lipid metabolic divergence in Isatis, establishing a foundational framework for chemotaxonomy and future metabolic engineering in this genus.",
+        "authors": [
+          "Chen R",
+          "Liu Q",
+          "Cai Q",
+          "Qing Y",
+          "Wang L",
+          "Liu F",
+          "Cheng H",
+          "Geng X",
+          "Huang H",
+          "Chen X"
+        ],
+        "affiliations": [
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China.",
+          "College of Agricultural Engineering, Guangxi Vocational University of Agriculture, Nanning, 530000, China.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China.",
+          "College of Agricultural Engineering, Guangxi Vocational University of Agriculture, Nanning, 530000, China.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China. 18176608120@163.com.",
+          "Key Laboratory for Resource Plants Protection and Utilization of Yili Valley in Xinjiang, College of Biological Sciences and Technology, Yili Normal University, Yining, Xinjiang, 835000, China. cxl8109@163.com."
+        ],
+        "doi": "10.1186/s12870-026-08944-6",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "BMC plant biology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42121038/",
+        "category": null,
+        "date": "2026-05-13",
+        "mesh_terms": [],
+        "source_id": "42121038",
+        "matched_query_names": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.8,
+        "category": "metabolic_engineering",
+        "reason": "지방산 대사 경로 이해 및 유전자 마커 식별로 산업적 응용 가능. 품종 간 지방체 차이를 활용한 대사 공학 기초 자료 제공.",
+        "matched_keywords": [
+          "metabolic engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "지방산은 구조와 저장 외 다양한 기능을 수행하지만, 의약용 가치가 높은 이스atis 종의 지방질 다양성은 미해결된 문제이다. 이 연구는 세 가지 이스atis 종(I. oblongata, I. tinctoria, I. indigotica)의 통합적 지방체 분석과 전사체 분석을 통해 생합성 및 조절 메커니즘을 규명하였다.",
+        "method": "지방체 분석을 통해 324개의 대사체를 확인하고, 이소프렌 유도 지방체가 가장 풍부하였다. 통계적 분석과 머신러닝 기반 스크리닝을 통해 215개의 차이 지방체 중 6개의 주요 대사체를 식별하였다.",
+        "result": "종 간 공통 지방체(301개)와 종 특이성 대사체가 공존하며, LysoPE 18:1의 기울어진 축적은 PLA2 및 LPEAT 유전자 발현 차이에 기인한다고 추정되었다. 전사체 분석은 수천개의 차이 발현 유전자를 식별하였다.",
+        "significance": "다중 옴ик스 자원은 이스atis의 지방질 대사 분화 조절 기전을 밝혀, 화학계통학 및 유전자 공학 연구에 기초 자료를 제공한다. 이는 의약용 식물의 대사 경로 최적화에 활용 가능하다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 4,
+    "prefilter_passed": 4,
+    "llm_passed": 4,
+    "summarized": 4
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-13T22:19:06.370036+00:00"
+}
