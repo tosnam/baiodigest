@@ -1,0 +1,234 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-15 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-15</h2>
+  <p>총 4편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42129084/" target="_blank" rel="noopener noreferrer">Complementarity of Deep Learning and Physics-Based Approaches in the Design of New Antibodies.</a></h3>
+    <p>Methods in molecular biology (Clifton, N.J.)</p>
+    <p>BIOVIA Science Council, Dassault Systèmes, Vélizy-Villacoublay, France. floriane.eshak@astrazeneca.com.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>항체 설계에 AI와 물리학 기반 접근법을 활용해 의약품 개발에 직접적 적용 가능. 항체의 구조 및 상호작용 예측 기술은 바이오의약품 공학에 혁신 기여.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>항체 및 항체 유도체는 표적에 대한 높은 특이성과 친화도로 인해 최근 약물 개발의 주요 초점이 되고 있다(antibody-based therapeutics). 이들 생물학적 에이전트는 다양한 특성과 성질을 제공하여 약물 개발 및 공학에 흥미로운 잠재력을 가진다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>이 연구에서는 물리학 기반 접근법과 인공지능 도구를 활용한 실시간 시뮬레이션(in silico tools)을 중심으로 항체 접힘(antibody folding) 및 항체-항원 상호작용을 분석하였다. 또한, 항체 유도체의 설계를 위한 예측 모델을 개발하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>항체의 구조적 안정성(thermostability)과 상호작용 메커니즘을 이해하는 데 기여하였다. 이는 항체 공학에서 중요한 설계 요소로 활용될 수 있는 데이터를 제공한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 방법론은 항체 설계의 효율성과 정확성을 높이는 데 기여하며, 신규 항체 개발의 혁신적 접근 방식을 제시한다. 약물 개발 주기 단축 및 맞춤형 치료법 설계에 중요한 기반이 될 수 있다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42128177/" target="_blank" rel="noopener noreferrer">CHO Endogenous Weak Promoters Facilitating the Development of High-Yield Cell Lines.</a></h3>
+    <p>Journal of biotechnology</p>
+    <p>State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing Technology (SCIBT), Shanghai 200237, China; Shanghai BioEngine Sci-Tech Co., LTD, Shanghai 201203, PR China. Electronic address: wstan@ecust.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>CHO 세포를 이용한 바이오제약 생산 효율 향상에 직접적으로 관련됨. 항체 생산량 및 특정 생산성 지표 제공으로 산업적 적용 가능성이 높음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>CHO 세포에서 효율적이고 안정적인 외부 유전자 발현은 바이오치료 단백질 생산에서 핵심 과제이다. 내부 프로모터의 활용을 통한 세포선발(CELL LINE DEVELOPMENT, CLD)의 혁신이 필요하다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>CHO 유래 프로모터 라이브러리(0.5% ~ 629.3% SV40 프로모터 대비)를 구축하고, 선택 마커 유전자 발현 조절을 통한 실험을 수행하였다. UCOE 또는 PiggyBac(PB) 전위자 시스템과의 결합을 시도하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>선택 마커 프로모터 활성과 GFP 발현은 강한 부정적 상관관계(r = -0.93, P &lt; 0.001)을 보였으며, 초약한 프로모터는 저복제 수 cells를 제거하였다. Rps3 UCOE-2P-6 및 PB-P28 설계 세포선은 14일 피드배치 배양에서 최대 항체 농도 1.91g/L 및 4.69g/L를 달성하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 연구는 고생산성, 안정적인 유전자 발현 플랫폼 구축 전략을 제시하며, 차세대 바이오치료제 생산에 중요한 통찰을 제공한다. 대규모 생산에 적합한 신규 접근법으로 발전 가능성이 높다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42129562/" target="_blank" rel="noopener noreferrer">Sleep chart of biological ageing clocks in middle and late life.</a></h3>
+    <p>Nature</p>
+    <p>New York Genome Center (NYGC), New York, NY, USA. junhao.wen89@gmail.com.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>수면 패턴과 생물학적 노화 시계의 연관성을 분석해 질병 위험 요소를 규명함. 의약품 개발 및 건강 관리 제품 설계에 활용 가능.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>수면은 건강한 노화와 수명 연장에 필수적이다. 본 연구는 자-reported 수면 시간과 23개의 생물학적 노화 시계(omics 기술) 간의 관계를 평가하기 위해 Sleep Chart를 제안한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>UK Biobank 데이터를 활용해 9개의 뇌 및 신체 시스템과 3개의 omics 기술을 기반으로 수면 시간과 생물학적 연령 차이를 분석하였다. 유전자 상관관계와 생존 예측을 통해 위험 요소를 평가하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>수면 시간과 생물학적 연령 차이는 U형 패턴을 보이며, 6.4~7.8시간이 최적이다. 짧거나 긴 수면은 뇌 외 시스템 질병 및 사망률 증가와 관련이 있다. 긴 수면은 노화 시계를 통해, 짧은 수면은 직접적으로 우울증과 연결된다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>수면 시간과 생물학적 노화 시계 간의 다기관, 다omics U형 관계를 규명함으로써 수면 최적화가 건강한 노화와 질병 예방에 기여할 수 있음을 제시한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.70
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42127894/" target="_blank" rel="noopener noreferrer">Image-based, pooled phenotyping reveals multidimensional, disease-specific variant effects.</a></h3>
+    <p>Cell</p>
+    <p>Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Department of Bioengineering, University of Washington, Seattle, WA 98195, USA; Brotman Baty Institute for Precision Medicine, Seattle, WA 98195, USA. Electronic address: dfowler@uw.edu.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>유전자 변이의 질병 관련 영향 분석은 의약 산업의 약물 타겟 발굴에 활용 가능하지만, 식품/화학 산업에 직접적인 적용은 제한적입니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>유전적 변이는 복잡한 표현형 효과를 생성하여 현재 검출법 및 예측 모델을 혼란스럽게 한다 (confound). 이 연구는 이러한 문제를 해결하기 위해 변이 in situ 시퀀싱 (VIS-seq) 방법을 개발하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>VIS-seq는 분자 및 세포적 표현형에 대한 변이 효과를 다양한 세포 유형에서 측정하는 풀드, 이미지 기반 방법이다 (pooled, image-based method). LMNA 및 PTEN 변이에 적용하여 고차원 형태학 프로파일을 분석하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>VIS-seq는 약 3,000개의 LMNA 및 PTEN 변이를 분석하여 단백질 농도, 위치, 활성 및 세포 구조 변화를 포착하는 고차원 형태학 프로파일을 제공하였다. 특정 변이는 핵의 원형도를 증가시키거나, 다른 변이는 저농도로 인해 원형도를 감소시켰다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>VIS-seq는 변이 효과가 분자에서 세포 구조로 이어지는 복잡성을 해결하는 프레임워크를 제공하며, 대규모 세포 이미지와 변이 연결을 통해 질병 특이적 변이 효과를 분석할 수 있게 한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: omics + AI (top journals)
+      <br />
+      confidence: 0.60
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

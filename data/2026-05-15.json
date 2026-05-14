@@ -1,0 +1,293 @@
+{
+  "date": "2026-05-15",
+  "entries": [
+    {
+      "paper": {
+        "title": "Complementarity of Deep Learning and Physics-Based Approaches in the Design of New Antibodies.",
+        "abstract": "Antibodies and antibody derivatives have become the main focus in recent drug discovery due to their high specificity and affinity toward their targets. These biological agents offer a diverse range of characteristics and properties, rendering them interesting for drug development and engineering. In the last decade, approximately 175 antibody-based therapeutics have been under regulatory review or approved. These antibodies were engineered using various approaches, spanning from directed evolution to in silico drug design. In this chapter, we will mainly focus on utilizing in silico tools, such as physics-based approaches and artificial intelligence tools to understand the folding of antibodies and antibody fragments such as nanobodies, to decipher the antibody-antigen interactions, and to predict antibody properties. These aspects are essential for the engineering of antibodies and their derivatives.",
+        "authors": [
+          "Eshak F",
+          "Goupil-Lamy A"
+        ],
+        "affiliations": [
+          "Protein Structure and Biophysics, Discovery Sciences, R&D, AstraZeneca, Cambridge, CB2 0AA, UK.",
+          "BIOVIA Science Council, Dassault Systèmes, Vélizy-Villacoublay, France. floriane.eshak@astrazeneca.com."
+        ],
+        "doi": "10.1007/978-1-0716-5041-7_2",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Methods in molecular biology (Clifton, N.J.)",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42129084/",
+        "category": "deep learning",
+        "date": "2026-01-01",
+        "mesh_terms": [
+          "Deep Learning",
+          "Antibodies",
+          "Humans",
+          "Drug Design",
+          "Single-Domain Antibodies",
+          "Protein Engineering"
+        ],
+        "source_id": "42129084",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "항체 설계에 AI와 물리학 기반 접근법을 활용해 의약품 개발에 직접적 적용 가능. 항체의 구조 및 상호작용 예측 기술은 바이오의약품 공학에 혁신 기여.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "항체 및 항체 유도체는 표적에 대한 높은 특이성과 친화도로 인해 최근 약물 개발의 주요 초점이 되고 있다(antibody-based therapeutics). 이들 생물학적 에이전트는 다양한 특성과 성질을 제공하여 약물 개발 및 공학에 흥미로운 잠재력을 가진다.",
+        "method": "이 연구에서는 물리학 기반 접근법과 인공지능 도구를 활용한 실시간 시뮬레이션(in silico tools)을 중심으로 항체 접힘(antibody folding) 및 항체-항원 상호작용을 분석하였다. 또한, 항체 유도체의 설계를 위한 예측 모델을 개발하였다.",
+        "result": "항체의 구조적 안정성(thermostability)과 상호작용 메커니즘을 이해하는 데 기여하였다. 이는 항체 공학에서 중요한 설계 요소로 활용될 수 있는 데이터를 제공한다.",
+        "significance": "이 방법론은 항체 설계의 효율성과 정확성을 높이는 데 기여하며, 신규 항체 개발의 혁신적 접근 방식을 제시한다. 약물 개발 주기 단축 및 맞춤형 치료법 설계에 중요한 기반이 될 수 있다."
+      }
+    },
+    {
+      "paper": {
+        "title": "CHO Endogenous Weak Promoters Facilitating the Development of High-Yield Cell Lines.",
+        "abstract": "Efficient and stable transgene expression in Chinese hamster ovary (CHO) cells remains a critical challenge for biotherapeutic protein production. To advance the exploration and application of endogenous promoters in CHO cell line development (CLD), we established a comprehensive library of CHO-derived promoters with a wide range of expression strengths, spanning 0.5% to 629.3% relative to the SV40 promoter. This library enabled precise regulation of selection marker gene expression, revealing a strong negative correlation between marker promoter activity and target GFP expression (r = -0.93, P < 0.001). Ultra-weak promoters effectively eliminated low-copy-number cells during early selection, enriching high-expression phenotypes. Combining the four most effective promoters with either UCOE or the PiggyBac (PB) transposon system further enhanced transgene expression stability and productivity. Notably, cell lines engineered with the Rps3 UCOE-2P-6 and PB-P28 designs achieved maximum antibody titers of 1.91g/L and 4.69g/L, and specific productivities of 22.23pg/cell/day and 37.75pg/cell/day, respectively, in 14-day fed-batch cultures, while maintaining high productivity over 60 days of continuous passaging. Collectively, this study presents a scalable and robust strategy for constructing high-yield, stable mammalian expression platforms, providing valuable insights for next-generation biotherapeutic manufacturing.",
+        "authors": [
+          "Tian Y",
+          "Zhou YN",
+          "Xiao ZY",
+          "Zhao L",
+          "Ye Q",
+          "Tan WS"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing Technology (SCIBT), Shanghai 200237, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing Technology (SCIBT), Shanghai 200237, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing Technology (SCIBT), Shanghai 200237, China.",
+          "Shanghai BioEngine Sci-Tech Co., LTD, Shanghai 201203, PR China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing Technology (SCIBT), Shanghai 200237, China.",
+          "State Key Laboratory of Bioreactor Engineering, East China University of Science and Technology, Shanghai 200237, China; Shanghai Collaborative Innovation Center for Biomanufacturing Technology (SCIBT), Shanghai 200237, China; Shanghai BioEngine Sci-Tech Co., LTD, Shanghai 201203, PR China. Electronic address: wstan@ecust.edu.cn."
+        ],
+        "doi": "10.1016/j.jbiotec.2026.05.005",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42128177/",
+        "category": null,
+        "date": "2026-05-12",
+        "mesh_terms": [],
+        "source_id": "42128177",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "CHO 세포를 이용한 바이오제약 생산 효율 향상에 직접적으로 관련됨. 항체 생산량 및 특정 생산성 지표 제공으로 산업적 적용 가능성이 높음.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "CHO 세포에서 효율적이고 안정적인 외부 유전자 발현은 바이오치료 단백질 생산에서 핵심 과제이다. 내부 프로모터의 활용을 통한 세포선발(CELL LINE DEVELOPMENT, CLD)의 혁신이 필요하다.",
+        "method": "CHO 유래 프로모터 라이브러리(0.5% ~ 629.3% SV40 프로모터 대비)를 구축하고, 선택 마커 유전자 발현 조절을 통한 실험을 수행하였다. UCOE 또는 PiggyBac(PB) 전위자 시스템과의 결합을 시도하였다.",
+        "result": "선택 마커 프로모터 활성과 GFP 발현은 강한 부정적 상관관계(r = -0.93, P < 0.001)을 보였으며, 초약한 프로모터는 저복제 수 cells를 제거하였다. Rps3 UCOE-2P-6 및 PB-P28 설계 세포선은 14일 피드배치 배양에서 최대 항체 농도 1.91g/L 및 4.69g/L를 달성하였다.",
+        "significance": "이 연구는 고생산성, 안정적인 유전자 발현 플랫폼 구축 전략을 제시하며, 차세대 바이오치료제 생산에 중요한 통찰을 제공한다. 대규모 생산에 적합한 신규 접근법으로 발전 가능성이 높다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Sleep chart of biological ageing clocks in middle and late life.",
+        "abstract": "Optimal sleep has a vital role in promoting healthy ageing and enhancing longevity. Here we propose Sleep Chart to assess the relationship between self-reported sleep duration and 23 biological ageing clocks derived from in vivo imaging1, plasma proteomics2 and metabolomics3. First, a systemic, U-shaped pattern emerges between sleep duration and biological age gaps across nine brain and body systems and three omics technologies. The sample-specific lowest biological age gaps are achieved between 6.4 and 7.8 h of sleep duration, varying by organ and sex in the UK Biobank (aged 37-84 years). Furthermore, short (<6 h) and long (>8 h) sleep duration, compared with a normal sleep duration (6-8 h), are associated with increased risk of systemic diseases beyond the brain and all-cause mortality, with evidence from genetic correlations and time-to-incident survival predictions, such as depression and diabetes. Finally, the pathways by which long and short sleep duration are associated with late-life depression differ: ageing clocks may partially mediate the pathway for long sleep duration, while short sleep duration shows a more direct link. Although Mendelian randomization does not provide strong evidence that disease causally affects sleep, it cannot completely exclude such reverse causality. Our findings suggest a cross-organ, multi-omics U-shaped relationship between sleep duration and biological ageing clocks, highlighting the potential of sleep optimization to promote healthy ageing, lower disease risk and extend longevity.",
+        "authors": [
+          "MULTI Consortium",
+          "O'Toole CK",
+          "Song Z",
+          "Anagnostakis F",
+          "Yang Z",
+          "Tian YE",
+          "Duggan MR",
+          "Zou C",
+          "Leng Y",
+          "Cai Y",
+          "Bai W",
+          "Fu CHY",
+          "Rafii MS",
+          "Aisen P",
+          "Wang G",
+          "De Jager PL",
+          "Zeng J",
+          "Oh HS",
+          "Zhou X",
+          "Walker KA",
+          "Belsky DW",
+          "Zalesky A",
+          "Simonsick EM",
+          "Resnick SM",
+          "Ferrucci L",
+          "Davatzikos C",
+          "Wen J"
+        ],
+        "affiliations": [
+          "Laboratory of AI and Biomedical Science (LABS), Columbia University, New York, NY, USA.",
+          "Laboratory of AI and Biomedical Science (LABS), Columbia University, New York, NY, USA.",
+          "Laboratory of AI and Biomedical Science (LABS), Columbia University, New York, NY, USA.",
+          "Laboratory of AI and Biomedical Science (LABS), Columbia University, New York, NY, USA.",
+          "Department of Psychiatry, Melbourne Medical School, The University of Melbourne, Melbourne, Victoria, Australia.",
+          "Laboratory of Behavioral Neuroscience, National Institute on Aging, National Institutes of Health, Baltimore, MD, USA.",
+          "Department of Radiology, Columbia University, New York, NY, USA.",
+          "Department of Psychiatry and Behavioral Sciences, University of California, San Francisco, San Francisco, CA, USA.",
+          "Department of Otolaryngology, Head and Neck Surgery, Columbia University, New York, NY, USA.",
+          "Department of Brain Sciences, Imperial College London, London, UK.",
+          "Department of Computing, Imperial College London, London, UK.",
+          "School of Psychology, University of East London, London, UK.",
+          "Centre for Affective Disorders, Institute of Psychiatry, Psychology and Neuroscience, King's College London, London, UK.",
+          "National Institute for Health and Care Research (NIHR), Maudsley Biomedical Research Center (BRC), London, UK.",
+          "Alzheimer's Therapeutic Research Institute, Keck School of Medicine of the University of Southern California, San Diego, CA, USA.",
+          "Alzheimer's Therapeutic Research Institute, Keck School of Medicine of the University of Southern California, San Diego, CA, USA.",
+          "Department of Neurology, Columbia University, New York, NY, USA.",
+          "Center for Translational & Computational Neuroimmunology, Department of Neurology and the Taub Institute for Research on Alzheimer's Disease and the Aging Brain, Columbia University Irving Medical Center, New York, NY, USA.",
+          "Institute for Molecular Bioscience, University of Queensland, Brisbane, Queensland, Australia.",
+          "Nash Family Department of Neuroscience, Icahn School of Medicine at Mount Sinai, New York, NY, USA.",
+          "Brain and Body Research Center of the Friedman Brain Institute, Icahn School of Medicine at Mount Sinai, New York, NY, USA.",
+          "Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai, New York, NY, USA.",
+          "Ronald M. Loeb Center for Alzheimer's Disease, Icahn School of Medicine at Mount Sinai, New York, NY, USA.",
+          "Department of Computer Science, Columbia University, New York, NY, USA.",
+          "Laboratory of Behavioral Neuroscience, National Institute on Aging, National Institutes of Health, Baltimore, MD, USA.",
+          "Robert N. Butler Columbia Aging Center and Department of Epidemiology, Columbia University Mailman School of Public Health, New York, NY, USA.",
+          "Department of Psychiatry, Melbourne Medical School, The University of Melbourne, Melbourne, Victoria, Australia.",
+          "Longitudinal Studies Section, Translational Gerontology Branch, National Institute on Aging, Baltimore, MD, USA.",
+          "Laboratory of Behavioral Neuroscience, National Institute on Aging, National Institutes of Health, Baltimore, MD, USA.",
+          "National Institute on Aging, National Institutes of Health, Baltimore, MD, USA.",
+          "Artificial Intelligence in Biomedical Imaging Laboratory (AIBIL), Center for AI and Data Science for Integrated Diagnostics (AI2D), Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA, USA.",
+          "Laboratory of AI and Biomedical Science (LABS), Columbia University, New York, NY, USA. junhao.wen89@gmail.com.",
+          "Department of Radiology, Columbia University, New York, NY, USA. junhao.wen89@gmail.com.",
+          "Department of Computer Science, Columbia University, New York, NY, USA. junhao.wen89@gmail.com.",
+          "Department of Biomedical Engineering, Columbia University, New York, NY, USA. junhao.wen89@gmail.com.",
+          "New York Genome Center (NYGC), New York, NY, USA. junhao.wen89@gmail.com."
+        ],
+        "doi": "10.1038/s41586-026-10524-5",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42129562/",
+        "category": null,
+        "date": "2026-05-13",
+        "mesh_terms": [],
+        "source_id": "42129562",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.7,
+        "category": "bioinformatics",
+        "reason": "수면 패턴과 생물학적 노화 시계의 연관성을 분석해 질병 위험 요소를 규명함. 의약품 개발 및 건강 관리 제품 설계에 활용 가능.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "수면은 건강한 노화와 수명 연장에 필수적이다. 본 연구는 자-reported 수면 시간과 23개의 생물학적 노화 시계(omics 기술) 간의 관계를 평가하기 위해 Sleep Chart를 제안한다.",
+        "method": "UK Biobank 데이터를 활용해 9개의 뇌 및 신체 시스템과 3개의 omics 기술을 기반으로 수면 시간과 생물학적 연령 차이를 분석하였다. 유전자 상관관계와 생존 예측을 통해 위험 요소를 평가하였다.",
+        "result": "수면 시간과 생물학적 연령 차이는 U형 패턴을 보이며, 6.4~7.8시간이 최적이다. 짧거나 긴 수면은 뇌 외 시스템 질병 및 사망률 증가와 관련이 있다. 긴 수면은 노화 시계를 통해, 짧은 수면은 직접적으로 우울증과 연결된다.",
+        "significance": "수면 시간과 생물학적 노화 시계 간의 다기관, 다omics U형 관계를 규명함으로써 수면 최적화가 건강한 노화와 질병 예방에 기여할 수 있음을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Image-based, pooled phenotyping reveals multidimensional, disease-specific variant effects.",
+        "abstract": "Genetic variants produce complex phenotypic effects that confound current assays and predictive models. We developed variant in situ sequencing (VIS-seq), a pooled, image-based method measuring variant effects on molecular and cellular phenotypes in diverse cell types. Applying VIS-seq to ∼3,000 LMNA and PTEN variants yielded high-dimensional morphological profiles capturing changes in protein abundance, localization, activity, and cell architecture. VIS-seq identified a subset of linker-subdomain LMNA variants that increase nuclear circularity, in contrast to aggregating or low-abundance rod-subdomain variants that decrease circularity. VIS-seq also identified autism-associated PTEN variants that mislocalize and accurately distinguished autism-linked from tumor syndrome-linked and gnomAD control variants. Most variants impacted a multidimensional phenotypic continuum not recapitulated by any single functional readout. By linking variants to cell images at scale, VIS-seq illuminates how variant effects cascade from molecules to subcellular structures to cells, providing a framework for resolving the complexity of variant function.",
+        "authors": [
+          "Pendyala S",
+          "Partington K",
+          "Bradley N",
+          "McEwen AE",
+          "Straub G",
+          "Kim HJ",
+          "Fayer S",
+          "Holmes DL",
+          "Sitko KA",
+          "Garge RK",
+          "Wang ZR",
+          "Wheelock MK",
+          "Vandi AJ",
+          "Powell RL",
+          "Friedman CE",
+          "McDermot E",
+          "Kishore N",
+          "Roth FP",
+          "Rubin AF",
+          "Yang KC",
+          "Starita LM",
+          "Noble WS",
+          "Fowler DM"
+        ],
+        "affiliations": [
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Medical Scientist Training Program, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Department of Bioengineering, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Brotman Baty Institute for Precision Medicine, Seattle, WA 98195, USA; Department of Laboratory Medicine and Pathology, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Brotman Baty Institute for Precision Medicine, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Brotman Baty Institute for Precision Medicine, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA 98109, USA; Center for Cardiovascular Biology, University of Washington, Seattle, WA 98109, USA; Department of Medicine/Cardiology, University of Washington, Seattle, WA 98109, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Donnelly Centre, University of Toronto, Toronto, ON M5S 3E1, Canada; Lunenfeld-Tanenbaum Research Institute, Sinai Health, Toronto, ON M5G 1X5, Canada.",
+          "Donnelly Centre, University of Toronto, Toronto, ON M5S 3E1, Canada; Lunenfeld-Tanenbaum Research Institute, Sinai Health, Toronto, ON M5G 1X5, Canada; Department of Computational and Systems Biology, University of Pittsburgh School of Medicine, Pittsburgh, PA 15213, USA.",
+          "Collaborative Centre for Genomic Cancer Medicine, University of Melbourne, Melbourne, VIC 3010, Australia; Bioinformatics Division, Walter and Eliza Hall Institute of Medical Research, Parkville, VIC 3050, Australia.",
+          "Institute for Stem Cell and Regenerative Medicine, University of Washington School of Medicine, Seattle, WA 98109, USA; Center for Cardiovascular Biology, University of Washington, Seattle, WA 98109, USA; Department of Medicine/Cardiology, University of Washington, Seattle, WA 98109, USA; Cardiology, Hospital Specialty Medicine, VA Puget Sound HCS, Seattle, WA 98108, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Brotman Baty Institute for Precision Medicine, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA.",
+          "Department of Genome Sciences, University of Washington, Seattle, WA 98195, USA; Department of Bioengineering, University of Washington, Seattle, WA 98195, USA; Brotman Baty Institute for Precision Medicine, Seattle, WA 98195, USA. Electronic address: dfowler@uw.edu."
+        ],
+        "doi": "10.1016/j.cell.2026.04.031",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Cell",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42127894/",
+        "category": null,
+        "date": "2026-05-12",
+        "mesh_terms": [],
+        "source_id": "42127894",
+        "matched_query_names": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.6,
+        "category": "other",
+        "reason": "유전자 변이의 질병 관련 영향 분석은 의약 산업의 약물 타겟 발굴에 활용 가능하지만, 식품/화학 산업에 직접적인 적용은 제한적입니다.",
+        "matched_keywords": [
+          "omics + AI (top journals)"
+        ]
+      },
+      "summary": {
+        "background": "유전적 변이는 복잡한 표현형 효과를 생성하여 현재 검출법 및 예측 모델을 혼란스럽게 한다 (confound). 이 연구는 이러한 문제를 해결하기 위해 변이 in situ 시퀀싱 (VIS-seq) 방법을 개발하였다.",
+        "method": "VIS-seq는 분자 및 세포적 표현형에 대한 변이 효과를 다양한 세포 유형에서 측정하는 풀드, 이미지 기반 방법이다 (pooled, image-based method). LMNA 및 PTEN 변이에 적용하여 고차원 형태학 프로파일을 분석하였다.",
+        "result": "VIS-seq는 약 3,000개의 LMNA 및 PTEN 변이를 분석하여 단백질 농도, 위치, 활성 및 세포 구조 변화를 포착하는 고차원 형태학 프로파일을 제공하였다. 특정 변이는 핵의 원형도를 증가시키거나, 다른 변이는 저농도로 인해 원형도를 감소시켰다.",
+        "significance": "VIS-seq는 변이 효과가 분자에서 세포 구조로 이어지는 복잡성을 해결하는 프레임워크를 제공하며, 대규모 세포 이미지와 변이 연결을 통해 질병 특이적 변이 효과를 분석할 수 있게 한다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 4,
+    "prefilter_passed": 4,
+    "llm_passed": 4,
+    "summarized": 4
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-14T22:32:14.463944+00:00"
+}
