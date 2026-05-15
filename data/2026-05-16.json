@@ -1,0 +1,175 @@
+{
+  "date": "2026-05-16",
+  "entries": [
+    {
+      "paper": {
+        "title": "PythiaStudio: a one-stop protein engineering platform powered by Pythia model suite.",
+        "abstract": "Predicting how mutations affect protein stability and protein-protein binding affinity is crucial for protein engineering and drug development. Although several computational tools have been developed for these tasks, they often require specialized expertise and are difficult to integrate into unified workflows. Here, we present PythiaStudio (https://pythiastudio.wulab.xyz), a comprehensive web platform that integrates our recently developed Pythia, Pythia-PPI, and Pythia-Pocket models with complementary protein analysis tools. The platform enables users to predict mutational effects on protein stability and protein-protein binding affinity, ligand binding pocket, through an intuitive interface. Additional features include fitness and structure prediction. PythiaStudio provides interactive visualization tools, including mutation heatmaps, sortable result tables, and structure viewers. Importantly, the platform offers an integrated engineering workflow that combines stability and fitness predictions to guide rational protein design. We demonstrate the utility of this workflow through multiple cases, including different glycoside hydrolases and amidases. In these cases, the two-step computational redesign strategy successfully improved both thermostability and catalytic activity. PythiaStudio democratizes access to state-of-the-art deep learning-based protein engineering methods, enabling researchers without computational expertise to perform sophisticated protein engineering.",
+        "authors": [
+          "Sun J",
+          "Shi K",
+          "Li H",
+          "Cui Y",
+          "Wang L",
+          "Wu B"
+        ],
+        "affiliations": [
+          "State Key Laboratory of Microbial Diversity and Innovative Utilization, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "College of Life Sciences, University of Chinese Academy of Sciences, Beijing 100049, China.",
+          "State Key Laboratory of Microbial Diversity and Innovative Utilization, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "College of Life Sciences, University of Chinese Academy of Sciences, Beijing 100049, China.",
+          "Independent Researcher.",
+          "State Key Laboratory of Microbial Diversity and Innovative Utilization, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "Beijing Key Laboratory of Genetic Element Biosourcing & Intelligent Design for Biomanufacturing, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "State Key Laboratory of Microbial Diversity and Innovative Utilization, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "Beijing Key Laboratory of Genetic Element Biosourcing & Intelligent Design for Biomanufacturing, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "State Key Laboratory of Microbial Diversity and Innovative Utilization, Institute of Microbiology, Chinese Academy of Sciences, Beijing 100101, China.",
+          "College of Life Sciences, University of Chinese Academy of Sciences, Beijing 100049, China.",
+          "State Key Laboratory of Green Biomanufacturing, Beijing University of Chemical Technology, Beijing 100029, China."
+        ],
+        "doi": "10.1093/nar/gkag408",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nucleic acids research",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42136527/",
+        "category": null,
+        "date": "2026-05-15",
+        "mesh_terms": [],
+        "source_id": "42136527",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "ai_enzyme",
+        "reason": "단백질 공학 플랫폼으로 효소 설계 최적화 가능합니다. 항암제 개발 및 산업용 효소 개선에 활용 가능합니다.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "단백질 안정성(thermostability)과 단백질-단백질 결합 친화도(binding affinity)를 예측하는 것은 단백질 공학과 약물 개발에서 핵심적이다. 기존 도구들은 전문 지식이 필요하고 통합된 워크플로우(integrated workflow)로 활용하기 어렵다.",
+        "method": "PythiaStudio는 Pythia, Pythia-PPI, Pythia-Pocket 모델과 보완적 분석 도구를 통합한 웹 플랫폼이다. 사용자는 직관적인 인터페이스를 통해 돌연변이 효과를 예측하고, 구조 분석 및 운동성(fitness) 예측 기능을 활용할 수 있다.",
+        "result": "단백질 공학 사례에서 두 단계적 전략이 열안정성(thermostability)과 효소 활성(catalytic activity)을 동시에 개선했다. 시각화 도구와 정렬 가능한 결과 테이블을 통해 데이터 분석이 용이해졌다.",
+        "significance": "PythiaStudio는 비전문가도 사용할 수 있도록 최신 딥러닝 기반 공학 방법을 제공해 연구 접근성을 확대했다. 통합된 엔지니어링 워크플로우는 합리적인 단백질 설계를 가이드한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Understanding Cell Wall Enzyme Function: From Classical Approaches to New Biotechnology.",
+        "abstract": "Plant cell walls are complex networks of polysaccharides that underpin plant structure and provide dietary fibers that promote human health. These polymers are assembled and remodeled by carbohydrate-active enzymes (CAZymes), which have been more challenging to characterize in plants than in microbes for technical reasons and due to genetic redundancy. This review serves as a primer on strategies to gain functional insights into cell wall-related CAZymes, which are needed for advancing plant biology and the development of applications in food, bioenergy, and bioproducts such as materials with functional structures and composition. We summarize classical biochemical assays and genetic approaches alongside emerging solutions, including high-throughput screening, cell-free systems, microbial hosts, and plant-based platforms. We also highlight synthetic biology tools such as CRISPR/Cas9 genome editing and base editing, which accelerate functional annotation and enzyme engineering. Integrative approaches that combine modular expression systems, artificial intelligence (AI) protein models, and lab automation have the potential to efficiently design plant cell walls for improved nutrition and sustainable bioproducts in a circular bioeconomy.",
+        "authors": [
+          "Edwards M",
+          "Qiande M",
+          "Gomez Vargas AD",
+          "Jacobson T",
+          "Spicer RL",
+          "Lin A",
+          "Xie WJ",
+          "Voiniciuc C"
+        ],
+        "affiliations": [
+          "Plant Molecular and Cellular Biology Program, IFAS, University of Florida, Gainesville, FL.",
+          "Horticultural Sciences Department, IFAS, University of Florida, Gainesville, FL, USA.",
+          "Horticultural Sciences Department, IFAS, University of Florida, Gainesville, FL, USA.",
+          "Plant Molecular and Cellular Biology Program, IFAS, University of Florida, Gainesville, FL.",
+          "Horticultural Sciences Department, IFAS, University of Florida, Gainesville, FL, USA.",
+          "Horticultural Sciences Department, IFAS, University of Florida, Gainesville, FL, USA.",
+          "Department of Medicinal Chemistry, University of Florida, Gainesville, FL, USA.",
+          "Plant Molecular and Cellular Biology Program, IFAS, University of Florida, Gainesville, FL.",
+          "Horticultural Sciences Department, IFAS, University of Florida, Gainesville, FL, USA."
+        ],
+        "doi": "10.1093/jxb/erag227",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of experimental botany",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42135035/",
+        "category": null,
+        "date": "2026-05-14",
+        "mesh_terms": [],
+        "source_id": "42135035",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "protein_engineering",
+        "reason": "식품 산업에서 식물 섬유소를 활용하고, 효소 공학을 통해 지속 가능한 생물 제품 개발에 기여할 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "식물 세포벽은 구조 유지와 식이 섬유질 제공에 필수적인 다당류 복합망으로, 이는 탄수화물 활성 효소(CAZymes)에 의해 조립 및 재구성된다. 그러나 기술적 한계와 유전적 중복성으로 인해 식물에서 CAZymes의 특성화는 미생물에 비해 어렵다.",
+        "method": "전통적 생화학적 분석과 유전적 접근법을 비롯해 고속 스크리닝, 세포외 시스템, 미생물 호스트, 식물 기반 플랫폼 등 새로운 방법론이 결합되고 있다. CRISPR/Cas9 유전자 편집 및 베이스 편집 같은 합성생물학 도구도 기능 분석과 효소 공학에 활용되고 있다.",
+        "result": "통합적 접근법은 모듈러 표현 시스템, 인공지능(AI) 단백질 모델, 실험 자동화를 통해 식물 세포벽 설계에 기여하며, 영양 개선과 지속 가능한 생물제품 개발에 기여할 잠재력을 가진다.",
+        "significance": "이러한 전략은 식물 생물학 발전과 식품, 생물에너지, 기능적 소재 등 다양한 응용 분야에서 혁신을 이끌며, 순환 생물경제를 위한 지속 가능한 생물제품 개발에 핵심적 역할을 한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "From waste to wealth: AI-driven enzyme innovation for straw transformation.",
+        "abstract": "Straw is a renewable resource; however, its utilization poses challenges related to efficiency and environmental impact. Traditional enzyme engineering approaches face constraints arising from the scale of the protein sequence space and the limited availability of experimental data. Following an introduction to the structure of straw and its degrading enzymes, this review summarizes the historical development of straw-degrading enzymes from an experience-driven phase to an artificial intelligence (AI)-driven era. Within the context of AI, we highlight approaches for enzyme mining, directed evolution, and de novo generation, and provide a summary of seminal computational tools. In enzyme mining, protein large language models are employed to identify novel enzymes and distant homologs. For directed evolution, Design-Build-Test-Learn cycles are applied to improve enzyme performance. In case de novo generation, key catalytic motif design and function-based descriptions are applied to generate new protein sequences. Furthermore, we discuss the role of AI-powered enzyme engineering in enabling high-value straw-degrading enzymes applications across agriculture, green energy, and biomaterials, thereby supporting the development of a sustainable bio-based circular economy. This review provides a technical roadmap for utilizing AI to enable efficient straw utilization.",
+        "authors": [
+          "Sun X",
+          "Zhou L",
+          "Li Y",
+          "Shen Q",
+          "Wang Y",
+          "Jia B",
+          "Yao Y",
+          "Pu Z"
+        ],
+        "affiliations": [
+          "Xianghu Laboratory, Hangzhou 311200, China; Key Laboratory of Soybean Disease and Pest Control (Ministry of Agriculture and Rural Affairs), Nanjing Agricultural University, Nanjing 210095, China.",
+          "Zhejiang Agricultural Materials Group Technology Co., Ltd, Hangzhou 310051, China.",
+          "Xianghu Laboratory, Hangzhou 311200, China; Zhejiang Academy of Agricultural Sciences, Hangzhou 310021, China.",
+          "Institute of Environment, Resource, Soil and Fertilizers, Zhejiang Academy of Agricultural Sciences, Hangzhou 310021, China.",
+          "Key Laboratory of Soybean Disease and Pest Control (Ministry of Agriculture and Rural Affairs), Nanjing Agricultural University, Nanjing 210095, China.",
+          "Xianghu Laboratory, Hangzhou 311200, China. Electronic address: jiabaolei@xhlab.ac.cn.",
+          "Xianghu Laboratory, Hangzhou 311200, China; Institute of Environment, Resource, Soil and Fertilizers, Zhejiang Academy of Agricultural Sciences, Hangzhou 310021, China. Electronic address: yaoyanlai@xhlab.ac.cn.",
+          "Xianghu Laboratory, Hangzhou 311200, China. Electronic address: puzhongji@xhlab.ac.cn."
+        ],
+        "doi": "10.1016/j.biortech.2026.134875",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Bioresource technology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42134581/",
+        "category": null,
+        "date": "2026-05-13",
+        "mesh_terms": [],
+        "source_id": "42134581",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.9,
+        "category": "ai_enzyme",
+        "reason": "AI 기반 효소 공학을 통해 품종 변환 효소 개발이 가능하며, 식품/화학 산업에서 지속 가능한 원자재 활용에 기여할 수 있음.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "미국에서 재생 가능 자원이지만, 효율성과 환경적 영향 관련 이용에 어려움이 있음(utility challenges). 전통적인 효소 공학 접근법은 단백질 시퀀스 공간의 규모와 실험 데이터 부족으로 제약됨.",
+        "method": "AI 기반 효소 탐색에서 단백질 대규모 언어 모델을 활용해 새로운 효소 및 원격 동형체를 식별함. 유도 진화에서는 설계-구축-테스트-학습(D-B-T-L) 사이클을 적용해 효소 성능을 개선함. de novo 생성에서는 주요 촉매 모티프 설계와 기능 기반 기술을 적용함.",
+        "result": "AI 기반 효소 공학이 농업, 녹색 에너지, 생물소재 분야의 고가치 효소 응용을 가능하게 함. 이는 지속 가능한 생물 기반 순환 경제 개발을 지원함.",
+        "significance": "이 리뷰는 AI를 활용한 효율적인 갈아치기 자원 이용을 위한 기술적 로드맵을 제공함. 효소 공학 분야의 혁신적 전환점을 제시함."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 4,
+    "prefilter_passed": 3,
+    "llm_passed": 3,
+    "summarized": 3
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-15T22:11:42.731599+00:00"
+}

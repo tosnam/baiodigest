@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>ScienceAdviser | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">사이언스 newsletter</p>
+  <h2>ScienceAdviser</h2>
+  <p>1778853815000</p>
+</section>
+
+<section class="paper-card">
+  <h3>Top stories</h3>
+  <div class="newsletter-story-list">
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4Nzd9AAcAAAAAAWSR6EYteNofItUydm8IrPqjEAZNpq5IaZ67Hvi0ChamP04IHUlwwE0yY8oBpVNiKJN4EvBd2n5rRYrXzS7cIjOn9K78vp77Ym1JSDPhXg" target="_blank" rel="noopener noreferrer">Fighting deepfakes, and using bacteria to deliver medicine inside the body</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4Nzd9AAcAAAAAAWSR6EYXxX1MMq740SAa5BdAP3mYwqRykFkRESs2k8yVgtppivtDiNa6YBKPkI_mzcP95qv9nZEAQdaClNGmLJ2adcM-JIEIeabB2N-8rg" target="_blank" rel="noopener noreferrer">is estimated to have saved some 91 million lives</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4Nzd9AAcAAAAAAWSR6EYhOKaB_OFX0wHYN4uhdKckPSO5BJVGe1QwkkfZ3vZmc6ADAF8C_PuDti_tplsVXWu3qBFVmnNvb6kECExIo0UUGiOMBPxnuY80Qg" target="_blank" rel="noopener noreferrer">annual rainfall in much of the world has become more concentrated</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4Nzd9AAcAAAAAAWSR6EYkCDBDCV5I1bfyKbVGhFpev2ZsSGRlh9HNrH_Pm1QyQzolu_4Oc-wQX5hC3Kc3A-eCv1gk_yUw-1bBjhY1Cb0u6C-m6XTidMQXHg" target="_blank" rel="noopener noreferrer">almost three dozen venom peptides—a veritable “arsenal” thus far unique to this subfamily of ants</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4Nzd9AAcAAAAAAWSR6EYpE4m694vB9_PWEnn5GI-mjv27IXAIXnEeZbpvyW5f8-1upRnJLEx0txV7s8-Ddx9u7zQbnRTntl5csqmdqAt9W9_QY3pKJ0m8lQ" target="_blank" rel="noopener noreferrer">may have come down to egg size—but not in the way scientists thought</a></h4>
+    </article>
+    <article class="newsletter-story">
+      <h4><a href="https://click.aaas.sciencepubs.org/?qs=ABB7InYiOjEsImQiOjQ4Nzd9AAcAAAAAAWSR6EY0oCe1ZDECPhAzVHxcD68cq1z1bw7EegalbufpLLpT_sgnFl5ZJMW5NyFbw_fEPqpDrgHWhUSHnpYv7UcxIAlMw9PgCab2OBZhOg" target="_blank" rel="noopener noreferrer">even as some groups attempt to weaken it</a></h4>
+    </article>
+  </div>
+</section>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-16 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-16</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42136527/" target="_blank" rel="noopener noreferrer">PythiaStudio: a one-stop protein engineering platform powered by Pythia model suite.</a></h3>
+    <p>Nucleic acids research</p>
+    <p>State Key Laboratory of Green Biomanufacturing, Beijing University of Chemical Technology, Beijing 100029, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>단백질 공학 플랫폼으로 효소 설계 최적화 가능합니다. 항암제 개발 및 산업용 효소 개선에 활용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질 안정성(thermostability)과 단백질-단백질 결합 친화도(binding affinity)를 예측하는 것은 단백질 공학과 약물 개발에서 핵심적이다. 기존 도구들은 전문 지식이 필요하고 통합된 워크플로우(integrated workflow)로 활용하기 어렵다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>PythiaStudio는 Pythia, Pythia-PPI, Pythia-Pocket 모델과 보완적 분석 도구를 통합한 웹 플랫폼이다. 사용자는 직관적인 인터페이스를 통해 돌연변이 효과를 예측하고, 구조 분석 및 운동성(fitness) 예측 기능을 활용할 수 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>단백질 공학 사례에서 두 단계적 전략이 열안정성(thermostability)과 효소 활성(catalytic activity)을 동시에 개선했다. 시각화 도구와 정렬 가능한 결과 테이블을 통해 데이터 분석이 용이해졌다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>PythiaStudio는 비전문가도 사용할 수 있도록 최신 딥러닝 기반 공학 방법을 제공해 연구 접근성을 확대했다. 통합된 엔지니어링 워크플로우는 합리적인 단백질 설계를 가이드한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42135035/" target="_blank" rel="noopener noreferrer">Understanding Cell Wall Enzyme Function: From Classical Approaches to New Biotechnology.</a></h3>
+    <p>Journal of experimental botany</p>
+    <p>Horticultural Sciences Department, IFAS, University of Florida, Gainesville, FL, USA.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식품 산업에서 식물 섬유소를 활용하고, 효소 공학을 통해 지속 가능한 생물 제품 개발에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>식물 세포벽은 구조 유지와 식이 섬유질 제공에 필수적인 다당류 복합망으로, 이는 탄수화물 활성 효소(CAZymes)에 의해 조립 및 재구성된다. 그러나 기술적 한계와 유전적 중복성으로 인해 식물에서 CAZymes의 특성화는 미생물에 비해 어렵다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>전통적 생화학적 분석과 유전적 접근법을 비롯해 고속 스크리닝, 세포외 시스템, 미생물 호스트, 식물 기반 플랫폼 등 새로운 방법론이 결합되고 있다. CRISPR/Cas9 유전자 편집 및 베이스 편집 같은 합성생물학 도구도 기능 분석과 효소 공학에 활용되고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>통합적 접근법은 모듈러 표현 시스템, 인공지능(AI) 단백질 모델, 실험 자동화를 통해 식물 세포벽 설계에 기여하며, 영양 개선과 지속 가능한 생물제품 개발에 기여할 잠재력을 가진다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이러한 전략은 식물 생물학 발전과 식품, 생물에너지, 기능적 소재 등 다양한 응용 분야에서 혁신을 이끌며, 순환 생물경제를 위한 지속 가능한 생물제품 개발에 핵심적 역할을 한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42134581/" target="_blank" rel="noopener noreferrer">From waste to wealth: AI-driven enzyme innovation for straw transformation.</a></h3>
+    <p>Bioresource technology</p>
+    <p>Xianghu Laboratory, Hangzhou 311200, China. Electronic address: puzhongji@xhlab.ac.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>AI 기반 효소 공학을 통해 품종 변환 효소 개발이 가능하며, 식품/화학 산업에서 지속 가능한 원자재 활용에 기여할 수 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>미국에서 재생 가능 자원이지만, 효율성과 환경적 영향 관련 이용에 어려움이 있음(utility challenges). 전통적인 효소 공학 접근법은 단백질 시퀀스 공간의 규모와 실험 데이터 부족으로 제약됨.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>AI 기반 효소 탐색에서 단백질 대규모 언어 모델을 활용해 새로운 효소 및 원격 동형체를 식별함. 유도 진화에서는 설계-구축-테스트-학습(D-B-T-L) 사이클을 적용해 효소 성능을 개선함. de novo 생성에서는 주요 촉매 모티프 설계와 기능 기반 기술을 적용함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>AI 기반 효소 공학이 농업, 녹색 에너지, 생물소재 분야의 고가치 효소 응용을 가능하게 함. 이는 지속 가능한 생물 기반 순환 경제 개발을 지원함.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>이 리뷰는 AI를 활용한 효율적인 갈아치기 자원 이용을 위한 기술적 로드맵을 제공함. 효소 공학 분야의 혁신적 전환점을 제시함.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
