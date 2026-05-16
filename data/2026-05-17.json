@@ -1,0 +1,101 @@
+{
+  "date": "2026-05-17",
+  "entries": [
+    {
+      "paper": {
+        "title": "Computational engineering of the polyester hydrolase PHL7 for efficient poly(ethylene terephthalate) degradation in biocatalytic recycling processes.",
+        "abstract": "Polyethylene terephthalate (PET) plastic waste causes serious environmental pollution due to insufficient recycling rates. Enzymatic PET depolymerization offers a sustainable recycling strategy, but limited stability and activity of current PET-degrading enzymes restrict practical implementation. Here, we engineer Polyester Hydrolase Leipzig 7 (PHL7), a PET hydrolase from a compost metagenome, to enhance its stability and catalytic performance under recycling-relevant conditions. Using Rosetta PROSS-based computational design combined with rational mutagenesis, we introduce up to 24 mutations, generating variants with melting temperatures of 88-95 °C and over 110-fold higher activity in 0.1 M phosphate buffer compared to the parent enzyme. Benchmarking shows that the best variants (R4M6, R4M9, and R4M10) match or exceed the performance of established engineered PET hydrolases, including ICCG and LCC-A2, and approach that of TurboPETase across multiple conditions. Under high substrate loadings, the PHL7-R4 variants degrade 75-78% of 10% (w/w) PET within 24 h at 65 °C, outperforming ICCG, while an optimized variant R4M10-H185Y achieves up to 84% degradation of 20% (w/w) PET. X-ray structure determination and molecular dynamics simulations reveal key stabilizing and activity enhancing mechanisms. These engineered PHL7 variants represent robust biocatalysts for scalable enzymatic PET recycling.",
+        "authors": [
+          "Blázquez-Sánchez P",
+          "Gunkel J",
+          "Useini A",
+          "Zlobin A",
+          "Zakary JD",
+          "Schöler A",
+          "Graefe N",
+          "Engelberger F",
+          "Cantanhede F",
+          "Frank R",
+          "Zhao Z",
+          "Zarei A",
+          "Butenschön E",
+          "Matysik J",
+          "Zimmermann W",
+          "Sträter N",
+          "Sonnendecker C",
+          "Künze G"
+        ],
+        "affiliations": [
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute of Bioanalytical Chemistry, Centre for Biotechnology and Biomedicine, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Interdisciplinary Center for Bioinformatics, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany.",
+          "Centre for Biotechnology and Biomedicine, Biochemical Cell Technology, Leipzig University, Leipzig, Germany.",
+          "Institute of Analytical Chemistry, Leipzig University, Leipzig, Germany.",
+          "Institute of Analytical Chemistry, Leipzig University, Leipzig, Germany.",
+          "Institute of Analytical Chemistry, Leipzig University, Leipzig, Germany.",
+          "Institute of Analytical Chemistry, Leipzig University, Leipzig, Germany.",
+          "Institute of Analytical Chemistry, Leipzig University, Leipzig, Germany.",
+          "Institute of Bioanalytical Chemistry, Centre for Biotechnology and Biomedicine, Leipzig University, Leipzig, Germany.",
+          "Institute of Analytical Chemistry, Leipzig University, Leipzig, Germany. christian.sonnendecker@uni-leipzig.de.",
+          "Institute for Drug Discovery, Leipzig University, Leipzig, Germany. georg.kuenze@uni-leipzig.de.",
+          "Interdisciplinary Center for Bioinformatics, Leipzig University, Leipzig, Germany. georg.kuenze@uni-leipzig.de.",
+          "Center for Scalable Data Analytics and Artificial Intelligence, Leipzig University, Leipzig, Germany. georg.kuenze@uni-leipzig.de."
+        ],
+        "doi": "10.1038/s41467-026-70868-4",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Nature communications",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42140896/",
+        "category": "polyethylene terephthalates",
+        "date": "2026-05-15",
+        "mesh_terms": [
+          "Polyethylene Terephthalates",
+          "Biocatalysis",
+          "Protein Engineering",
+          "Hydrolases",
+          "Recycling",
+          "Enzyme Stability",
+          "Biodegradation, Environmental",
+          "Molecular Dynamics Simulation",
+          "Metagenome",
+          "Bacterial Proteins"
+        ],
+        "source_id": "42140896",
+        "matched_query_names": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "PET 분해 효소 PHL7의 안정성 및 활성 향상을 통해 화학 산업의 플라스틱 재활용에 활용 가능. 산업적 스케일링에 적합한 효소 개발로 주목받는 분야.",
+        "matched_keywords": [
+          "enzyme/protein engineering + AI"
+        ]
+      },
+      "summary": {
+        "background": "폴리에틸렌 테레포타이르트(PET) 플라스틱 폐기물은 재활용률 부족으로 인해 심각한 환경 오염을 유발합니다. 현재 PET 분해 효소의 제한된 열안정성(thermostability)과 활성(activity)은 실용화에 방해가 됩니다.",
+        "method": "Rosetta PROSS 기반 계산 설계와 합리적 돌연변이를 결합해 PHL7에 최대 24개의 돌연변이를 도입했습니다. 이는 0.1 M 인산 버퍼에서 부모 효소 대비 110배 이상의 활성을 나타냅니다.",
+        "result": "최적화된 변이체(R4M6, R4M9, R4M10)는 ICCG 및 LCC-A2와 비슷하거나 더 우수한 성능을 보이며, TurboPETase에 근접한 효율을 나타냅니다. PHL7-R4 변이는 65°C에서 10% (w/w) PET를 24시간 내 75-78% 분해합니다.",
+        "significance": "X선 결정구조와 분자 역학 시뮬레이션을 통해 안정성과 활성 증가 메커니즘을 규명했습니다. 이로 인해 확장 가능한 생물촉매로 활용 가능한 PET 분해 효소를 개발했습니다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 1,
+    "prefilter_passed": 1,
+    "llm_passed": 1,
+    "summarized": 1
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-16T22:03:30.244356+00:00"
+}
