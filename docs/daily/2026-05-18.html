@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-18 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-18</h2>
+  <p>총 2편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42142050/" target="_blank" rel="noopener noreferrer">Systematic Engineering of Komagataella phaffii for Efficient Kestose Biosynthesis: Integrating Expression Optimization with Secretory Pathway Engineering.</a></h3>
+    <p>Journal of agricultural and food chemistry</p>
+    <p>State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>kestose는 식품첨가물로 활용 가능한 프리바이오틱 성분이며, 효소 생산 기술은 의약품 합성에도 적용 가능합니다. 산업용 효소 생산 플랫폼 개발이 핵심입니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>kestose(kestose)는 다른 FOS(variants)에 비해 우수한 생물 활성과 달콤함을 가지는 최소한의 FOS(Fructooligosaccharide)이다. β-fructofuranosidase(β-Ffase)를 이용한 효소 합성은 어렵지만, 이 효소의 이종 발현 효율 향상이 여전히 도전 과제이다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>Komagataella phaffii에서 β-Ffase의 분비 효율을 향상시키기 위해 전사 요소 최적화를 진행하였다. 세포막 수송 경로 조절, including endoplasmic reticulum-associated degradation(ERAD) 및 소포체 이동 조절을 통한 분비 경로 공학을 수행하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>BA2-2 균주에서 외부 활성은 15.2배 증가(80.3 ± 5.6 U/mL)하며, 세포 내 보유율은 12.3%로 감소하였다. 이 균주를 이용한 일괄 생합성 전략으로 248.9 ± 20.6 g/L kestose를 생산하며 생산성은 4.08 ± 0.28 g/L/h를 기록하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>표현 최적화와 분비 경로 공학의 통합 전략은 산업용 kestose 생산을 위한 효율적인 미생물 플랫폼 개발을 가능하게 하였다. 이 방법은 이종 효소 생산의 기술적 장벽을 극복하는 시스템적 접근 방안을 제시한다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42142539/" target="_blank" rel="noopener noreferrer">Integrating Promoter Engineering and BGC Multiplication for Enhancement of the New Therapeutic Agent Chrysomycin A Production.</a></h3>
+    <p>Journal of biotechnology</p>
+    <p>School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China. Electronic address: hwzhang@zjut.edu.cn.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>의약품 생산 향상 기술로 식품/화학/의약 산업에 활용 가능합니다. BGC 증식 및 프로모터 공학 기법은 항생제 대량 생산에 직접적 응용 가능합니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>열안정성(thermostability)을 가진 크라이소마이신 A(CA)는 다약물내성 감염균에 효과적인 신약 후보물질로, 생산량 향상이 필요하다. 이 연구는 해양 유래 Streptomyces sp. 891을 대상으로 CA 생산을 증대시키기 위한 접근법을 제시한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>chrysomycin 생합성 유전자 클러스터(chry BGC)에 gapdh, rpsL, ermEp⁎ 프로모터를 도입하고, BGC 복제 및 특정 재조합(attB) 기법을 결합해 변형했다. 프로모터 교체와 BGC 복제를 통한 생산 효율을 최적화했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>gapdh 프로모터 도입으로 CA 생산량이 1499.38 ± 29.69mg/L로 70% 증가했다. rpsL 프로모터 조절 하에 두 개의 BGC 복제체를 가진 변형株는 1785.36 ± 42.72mg/L의 최고 생산량을 기록했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>대량 생산을 위한 고생산량 변형株를 제공하며, Streptomyces에서 항생제 과산출을 위한 새로운 전략(프로모터 교체 및 BGC 복제)을 제시했다. 이 기법은 항생제 개발에 혁신적인 잠재력을 지닌다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>

@@ -1,0 +1,121 @@
+{
+  "date": "2026-05-18",
+  "entries": [
+    {
+      "paper": {
+        "title": "Systematic Engineering of Komagataella phaffii for Efficient Kestose Biosynthesis: Integrating Expression Optimization with Secretory Pathway Engineering.",
+        "abstract": "Kestose is the smallest fructooligosaccharide (FOS) with superior bioactivity and sweetness relative to other FOS variants. Its enzymatic synthesis from sucrose relies on β-fructofuranosidase (β-Ffase), but efficient heterologous production of this enzyme remains challenging. Here, the yeast Komagataella phaffii was engineered for enhanced secretion of β-Ffase as an efficient biocatalyst. Initial optimization of transcriptional elements increased extracellular enzyme titer by 8.1-fold, but significant intracellular accumulation persisted. Targeted engineering of the secretory pathway, including modulation of endoplasmic reticulum-associated degradation (ERAD) and vesicle trafficking, further improved secretion efficiency. The highest-yielding strain, BA2-2, achieved a 15.2-fold increase in extracellular activity (80.3 ± 5.6 U/mL) and reduced intracellular retention to 12.3% in shake-flask cultures. Application of highly secreted β-Ffase from this strain in a one-pot bioconversion strategy enabled sucrose conversion to 248.9 ± 20.6 g/L kestose with a productivity of 4.08 ± 0.28 g/L/h. Collectively, these results validate a systematic engineering strategy that combines expression optimization with secretory pathway engineering, enabling the development of an efficient microbial platform for industrial kestose production.",
+        "authors": [
+          "Liao S",
+          "Li J",
+          "Ling X",
+          "Meng S",
+          "Zou J",
+          "Chen D",
+          "Ren J",
+          "Lu R",
+          "Qin S",
+          "Feng JX",
+          "Qin X"
+        ],
+        "affiliations": [
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China.",
+          "State Key Laboratory for Conservation and Utilization of Subtropical Agro-bioresources, Guangxi Technology Innovation Center for Microbial Resources Development and Utilization, College of Life Science and Technology, Guangxi University, Nanning 530004, China."
+        ],
+        "doi": "10.1021/acs.jafc.6c02107",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of agricultural and food chemistry",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42142050/",
+        "category": null,
+        "date": "2026-05-16",
+        "mesh_terms": [],
+        "source_id": "42142050",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "protein_engineering",
+        "reason": "kestose는 식품첨가물로 활용 가능한 프리바이오틱 성분이며, 효소 생산 기술은 의약품 합성에도 적용 가능합니다. 산업용 효소 생산 플랫폼 개발이 핵심입니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "kestose(kestose)는 다른 FOS(variants)에 비해 우수한 생물 활성과 달콤함을 가지는 최소한의 FOS(Fructooligosaccharide)이다. β-fructofuranosidase(β-Ffase)를 이용한 효소 합성은 어렵지만, 이 효소의 이종 발현 효율 향상이 여전히 도전 과제이다.",
+        "method": "Komagataella phaffii에서 β-Ffase의 분비 효율을 향상시키기 위해 전사 요소 최적화를 진행하였다. 세포막 수송 경로 조절, including endoplasmic reticulum-associated degradation(ERAD) 및 소포체 이동 조절을 통한 분비 경로 공학을 수행하였다.",
+        "result": "BA2-2 균주에서 외부 활성은 15.2배 증가(80.3 ± 5.6 U/mL)하며, 세포 내 보유율은 12.3%로 감소하였다. 이 균주를 이용한 일괄 생합성 전략으로 248.9 ± 20.6 g/L kestose를 생산하며 생산성은 4.08 ± 0.28 g/L/h를 기록하였다.",
+        "significance": "표현 최적화와 분비 경로 공학의 통합 전략은 산업용 kestose 생산을 위한 효율적인 미생물 플랫폼 개발을 가능하게 하였다. 이 방법은 이종 효소 생산의 기술적 장벽을 극복하는 시스템적 접근 방안을 제시한다."
+      }
+    },
+    {
+      "paper": {
+        "title": "Integrating Promoter Engineering and BGC Multiplication for Enhancement of the New Therapeutic Agent Chrysomycin A Production.",
+        "abstract": "Chrysomycin A (CA) is a promising drug candidate to treat multidrug-resistant Gram-positive bacterial infection with new modes of action. In order to improve CA production for new drug development, one marine-derived strain Streptomyces sp. 891 was firstly engineered to construct CA high-yield strains by a combination of promoter engineering technique and multiplication of the chrysomycin biosynthetic gene cluster (chry BGC). The results showed that introducing three promoters gapdh, rpsL and ermEp⁎ upstream or downstream of chry BGC in strain 891 significantly enhanced its CA production. Notably, the insertion of gapdh led to a CA titer of 1499.38 ± 29.69mg/L, representing a 70% increase. Furthermore, the engineered strain harboring two copies of chry BGC under the control of rpsL promoter and the site-specific recombination of attB possessed the highest CA titer of 1785.36 ± 42.72mg/L to date. This work not only provides a CA high-yield strain for large-scale production, but also establishes a novel strategy for overproduction of antibiotics in Streptomyces strains using promoter substitution and multiplication of the target BGC.",
+        "authors": [
+          "Wang J",
+          "Liu Y",
+          "Lei Y",
+          "Wu M",
+          "Hua Y",
+          "Zhang H"
+        ],
+        "affiliations": [
+          "School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China.",
+          "School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China.",
+          "School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China.",
+          "School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China.",
+          "School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China.",
+          "School of Pharmaceutical Sciences, Zhejiang University of Technology, Hangzhou 310014, China; National Key Laboratory of Green Chemical Synthesis and Transformation Technology, Zhejiang University of Technology, Hangzhou 310014, China; Zhejiang-Egypt Joint Laboratory on Intelligent Discovery of Marine Drugs, Zhejiang University of Technology, Hangzhou 310014, China. Electronic address: hwzhang@zjut.edu.cn."
+        ],
+        "doi": "10.1016/j.jbiotec.2026.05.004",
+        "source": "pubmed",
+        "source_type": "published",
+        "journal": "Journal of biotechnology",
+        "url": "https://pubmed.ncbi.nlm.nih.gov/42142539/",
+        "category": null,
+        "date": "2026-05-15",
+        "mesh_terms": [],
+        "source_id": "42142539",
+        "matched_query_names": [
+          "expression optimization"
+        ]
+      },
+      "filter_result": {
+        "relevant": true,
+        "confidence": 0.95,
+        "category": "metabolic_engineering",
+        "reason": "의약품 생산 향상 기술로 식품/화학/의약 산업에 활용 가능합니다. BGC 증식 및 프로모터 공학 기법은 항생제 대량 생산에 직접적 응용 가능합니다.",
+        "matched_keywords": [
+          "expression optimization"
+        ]
+      },
+      "summary": {
+        "background": "열안정성(thermostability)을 가진 크라이소마이신 A(CA)는 다약물내성 감염균에 효과적인 신약 후보물질로, 생산량 향상이 필요하다. 이 연구는 해양 유래 Streptomyces sp. 891을 대상으로 CA 생산을 증대시키기 위한 접근법을 제시한다.",
+        "method": "chrysomycin 생합성 유전자 클러스터(chry BGC)에 gapdh, rpsL, ermEp⁎ 프로모터를 도입하고, BGC 복제 및 특정 재조합(attB) 기법을 결합해 변형했다. 프로모터 교체와 BGC 복제를 통한 생산 효율을 최적화했다.",
+        "result": "gapdh 프로모터 도입으로 CA 생산량이 1499.38 ± 29.69mg/L로 70% 증가했다. rpsL 프로모터 조절 하에 두 개의 BGC 복제체를 가진 변형株는 1785.36 ± 42.72mg/L의 최고 생산량을 기록했다.",
+        "significance": "대량 생산을 위한 고생산량 변형株를 제공하며, Streptomyces에서 항생제 과산출을 위한 새로운 전략(프로모터 교체 및 BGC 복제)을 제시했다. 이 기법은 항생제 개발에 혁신적인 잠재력을 지닌다."
+      }
+    }
+  ],
+  "stats": {
+    "collected": 2,
+    "prefilter_passed": 2,
+    "llm_passed": 2,
+    "summarized": 2
+  },
+  "schema_version": "1.0",
+  "generated_at": "2026-05-17T22:02:52.545629+00:00"
+}
