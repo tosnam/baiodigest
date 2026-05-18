@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Digest 2026-05-19 | baioDigest</title>
+    <script>
+      (function () {
+        const storageKey = "baiodigest-theme";
+        const root = document.documentElement;
+        const systemDark =
+          window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        try {
+          const savedTheme = localStorage.getItem(storageKey);
+          if (savedTheme === "light" || savedTheme === "dark") {
+            root.dataset.theme = savedTheme;
+            return;
+          }
+        } catch (error) {
+        }
+        root.dataset.theme = systemDark ? "dark" : "light";
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&family=Noto+Serif+KR:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+    <link rel="stylesheet" href="/baiodigest/static/style.css" />
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header container">
+        <div class="site-brand">
+          <p class="site-kicker">Bio and AI research digest</p>
+          <h1><a href="/baiodigest/index.html">baioDigest</a></h1>
+        </div>
+        <nav aria-label="Primary">
+          <ul>
+            <li><a href="/baiodigest/index.html">Home</a></li>
+            <li><a href="/baiodigest/archive.html">Archive</a></li>
+            <li><a href="/baiodigest/newsletters.html">Newsletters</a></li>
+            <li><a href="/baiodigest/queries.html">Queries</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main class="site-main container">
+<section class="digest-header">
+  <p class="eyebrow">Daily digest</p>
+  <h2>2026-05-19</h2>
+  <p>총 3편의 논문을 정리했습니다.</p>
+</section>
+
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42148683/" target="_blank" rel="noopener noreferrer">ProtSATT: An Advanced Protein Solubility Predictor Based on Attention Mechanism.</a></h3>
+    <p>Journal of chemical information and modeling</p>
+    <p>College of Smart Agriculture (College of Artificial Intelligence), Nanjing Agricultural University, 1st WeiGang, Nanjing 210095, Jiangsu, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>단백질 용해도 예측이 생물의약품 개발에서 핵심적인데, 이 모델은 생산 효율 최적화에 기여할 수 있음. 단백질 공학 분야에 직접적인 기여가 있음.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>단백질 용해도는 바이오의약품 개발에서 생산 효율과 후처리 효용에 중요한 영향을 미치지만, 전통적 발현 시스템은 용해도가 낮은 응집을 겪고 있다(thermal stability). 현재 최적화 전략은 시간 소요되는 경험적 스크리닝에 의존하고 있다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>ProtSATT는 시퀀스 기반 계산 프레임워크로, UniRep, ESM-2, ProtT5 세 PLM의 시퀀스 레벨 임베딩을 통합하고, 주의 기반 특징 추출 및 융합을 수행한다(attention mechanism). 잠재공간에서 PLM 유도 표현식의 상호작용을 학습하여 후처리 회귀 및 분류 작업을 수행한다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>eSOL 데이터셋에서 R2 0.5450과 정확도 81.21%를 달성했으며, S. cerevisiae에서 추가 튜닝 없이 정확도 83.33%를 기록했다. E. coli 데이터셋에서는 이진 분류에서 평균 정확도 72.21%를 달성했다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>PLM 유도 표현식의 통합과 주의 기반 모델링은 단백질 공학 및 관련 분야에 유용한 계산 지원을 제공한다(computational support). 전처리 임베딩 후 6.0M 가중치 파라미터로 11,400 시퀀스/초 처리 성능을 보인다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: enzyme/protein engineering + AI
+      <br />
+      confidence: 0.90
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42144071/" target="_blank" rel="noopener noreferrer">Systems metabolic engineering overcomes bottlenecks for high-level L-cysteine production.</a></h3>
+    <p>Metabolic engineering</p>
+    <p>State Key Laboratory of Food Science and Resources, School of Food Science and Technology, Jiangnan University, Wuxi, Jiangsu, 214122, China.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>L-시스테인은 식품/의약/화학 산업에 광범위하게 활용되는 아미노산으로, 대규모 생산 기술 개발이 필요합니다. 본 논문은 대사 경로 최적화 및 생물반응기 확장 기술을 통해 산업적 생산 가능성을 입증했습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>L-시스테인(serine) 생산은 산업적으로 중요하지만, 엄격한 조절 메커니즘, 제품 세포독성, 심각한 탄소 손실 등 연결된 대사 병목 현상으로 인해 지속 가능한 바이오제조가 어려웠다(thermostability). 이 연구는 이러한 문제를 첳계적으로 해결하여 효율적인 E. coli 생산 시스템을 개발하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>다중 복사 통합과 탄소 흐름 재정렬을 결합해 대사 부담을 완화하고, 2-하이드록시글루타라트 축적을 단계적으로 해결해 L-서인산 공급 병목을 극복하였다. 성장 단계에 따른 동적 조절과 프로모터 공학을 통합해 수출체 표현을 맞춤화하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>5L 생물반응기에서 글리세롤을 기질로 사용해 최대 38.50 g/L의 생산량과 0.17 g/g 글리세롤의 수율을 달성하였다(fermentation efficiency). 이는 현재까지 기록된 최고 수준의 생산량과 수율을 기록하였다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>연결된 대사 병목을 첳계적으로 해결하는 프레임워크를 제시해 L-시스테인 산업 생산에 새로운 가능성을 열었다(sustainable biomanufacturing). 이 방법은 다른 대사산물 생산에도 적용 가능성이 높다.</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+<article class="paper-card">
+  <header class="paper-meta">
+    <h3><a href="https://pubmed.ncbi.nlm.nih.gov/42144691/" target="_blank" rel="noopener noreferrer">Engineering strategies to enhance microalgal pigment production: from stress physiology to industrial application.</a></h3>
+    <p>Functional plant biology : FPB</p>
+    <p>K.A. Timiryazev Institute of Plant Physiology RAS, Botanicheskaya Street 35, Moscow 127276, Russia.</p>
+  </header>
+
+  <section class="paper-detail-stack">
+    <section class="paper-detail-block">
+      <h4>왜 읽을 만한가</h4>
+      <p>식품 산업에서의 자연색소 활용 가능성을 제시하며, 유전자 편집 및 대사 경로 재구성 기술을 다루고 있습니다.</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>배경</h4>
+      <p>미세藻류는 식품, 사료, 화장품 등 다양한 산업에서 천연 색소로 활용 가능하지만, 성장과 색소 생성 사이의 긴장 관계로 상업적 생산이 제한적이다(thermal stress). 생물학적 기능은 스트레스 생리학과 전자 전달 조절, 산화-환원 균형에 의존한다(redox balance).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>방법</h4>
+      <p>적응적 실험 진화와 장기 실험 진화를 통해 생태적 적응과 공정 설계를 연결하였다(excitation pressure). CRISPR 기반 유전자 편집과 합성 프로모터 공학을 활용한 시스템 생물학 모델링을 개발하였다(systems biology modelling).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>결과</h4>
+      <p>색소 과다 생성은 상류 생리적 제약 해소로 인한 결과로 재구성되었다(pigment overproduction). astaxanthin, phycocyanin, scytonemin을 중심으로 스트레스 반응 모듈의 안정화를 달성하였다(stress-responsive modules).</p>
+    </section>
+
+    <section class="paper-detail-block">
+      <h4>활용</h4>
+      <p>산업적 적용을 위한 프로그래밍 가능한 색소 생산 시스템을 제시하였다(programmable pigments). 스트레스 내성 표형의 안정화를 통한 천연 색소 공급 확대가 가능하다(stress-resilient phenotypes).</p>
+    </section>
+  </section>
+
+  <footer class="paper-notes">
+    <small>
+      키워드: expression optimization
+      <br />
+      confidence: 0.95
+    </small>
+  </footer>
+</article>
+      </main>
+      <footer class="site-footer container">
+        <div class="site-footer-inner">
+          <p>Built by <a href="https://github.com/tosnam/baiodigest" target="_blank" rel="noopener noreferrer">@tosnam</a></p>
+          <button type="button" class="theme-toggle" data-theme-toggle aria-pressed="false">Theme</button>
+        </div>
+      </footer>
+    </div>
+    <script src="/baiodigest/static/theme.js"></script>
+  </body>
+</html>
